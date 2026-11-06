@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Football append-only event v2",
+  "type": "object",
+  "required": [
+    "id",
+    "record_id",
+    "recorded_at",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+$"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "file",
+        "version",
+        "start_line",
+        "end_line"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "version": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_line": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "match_id": {
+      "type": "string"
+    },
+    "score": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "MID-SNAPSHOT",
+        "PRE-KICK",
+        "SELECTION_ADDENDUM",
+        "MARKETUPDATE",
+        "PREMATCH_AUDIT"
+      ]
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

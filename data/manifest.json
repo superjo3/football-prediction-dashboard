@@ -1,0 +1,504 @@
+{
+  "schema_version": "2.0.0",
+  "release": "2.1",
+  "sources": [
+    {
+      "name": "R1_R2_Master.md",
+      "library_file_id": "libfile_e32fcdc400d481919ed168a5ed3245b5",
+      "version": 55,
+      "sha256": "f0ebf219fa4aec18cf438bef0111b8e5ea6e981aa8e8f9de568bed049779e7a0",
+      "file": "source/R1_R2_Master.md"
+    },
+    {
+      "name": "R1_R2_Master.md",
+      "file": "source/R1_R2_Master_v56.md",
+      "library_file_id": "libfile_e32fcdc400d481919ed168a5ed3245b5",
+      "version": 56,
+      "sha256": "864c63dc81b1ce20634aff086c33080ce4c5d5bb2460f72413b1637a558cf536"
+    },
+    {
+      "name": "R1_R2_Master.md",
+      "file": "source/R1_R2_Master_v57.md",
+      "library_file_id": "libfile_e32fcdc400d481919ed168a5ed3245b5",
+      "version": 57,
+      "sha256": "77da594d483e55dc5f7673de2f5e5ba9e6d88c91144358c67934d7d1d03c4238"
+    }
+  ],
+  "latest_source_version": 57,
+  "rounds": [
+    {
+      "id": "EPL-2026-27-GW06-20261005",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 6,
+      "model": "EPL R90-style 恢復線（非 OLD R90 Exact）",
+      "snapshot": "新盤版",
+      "source": {
+        "file": "source/R1_R2_Master.md",
+        "start_line": 115,
+        "end_line": 177,
+        "version": 55
+      },
+      "coverage": "partial-results",
+      "note": "來源只保存 R1/R2 比分，其餘8場未收錄賽果；1X2／大小未正式封存。"
+    },
+    {
+      "id": "EPL-2026-27-GW07-20261014",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 7,
+      "model": "EPL R90-style 恢復線（非 OLD R90 Exact）",
+      "snapshot": "新盤／近期結構版",
+      "source": {
+        "file": "source/R1_R2_Master.md",
+        "start_line": 628,
+        "end_line": 745,
+        "version": 55
+      },
+      "coverage": "complete-available-markets",
+      "note": "只有單雙為正式預測；R3屬候補，不計正式R3。"
+    },
+    {
+      "id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 8,
+      "model": "EPL R90-style 恢復線（非 OLD R90 Exact）",
+      "snapshot": "OPENPROXY",
+      "source": {
+        "file": "source/R1_R2_Master.md",
+        "start_line": 1283,
+        "end_line": 1396,
+        "version": 55
+      },
+      "coverage": "complete-available-markets",
+      "note": "R3依賽前補充封存納入；10/23為MID-SNAPSHOT，無完整PRE-KICK。"
+    },
+    {
+      "id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 9,
+      "model": "EPL R90-style 恢復線（非 OLD R90 Exact）",
+      "snapshot": "MARKETPROXY",
+      "source": {
+        "file": "source/R1_R2_Master.md",
+        "start_line": 1901,
+        "end_line": 1968,
+        "version": 55
+      },
+      "coverage": "complete-available-markets",
+      "note": "無完整PRE-KICK數據；檢討為未來研究建議，不回改本輪。"
+    },
+    {
+      "id": "LALIGA-2026-27-GW08-20261005",
+      "league": "LALIGA",
+      "season": "2026-27",
+      "gw": 8,
+      "model": "R90-X V3 / S-XOR",
+      "market_models": {
+        "parity": "R90-X V3 / S-XOR"
+      },
+      "snapshot": "2026-10-05 賽前版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 45,
+        "end_line": 114,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "只保存單雙；R3為候補，華歷簡奴–畢爾包腰斬排除。Master提到GW10/11/12，但沒有其逐場表，未補造。",
+      "expected_matches": 10,
+      "recorded_at": "20261005"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 5,
+      "model": "西甲德甲版 V1",
+      "market_models": {
+        "parity": "西甲德甲版 V1"
+      },
+      "snapshot": "2026-10-05 最新盤版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 178,
+        "end_line": 239,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "9/21初盤只被提及，未提供完整逐場快照。保留此10/05更新版；不偽建9/21版本。",
+      "expected_matches": 9,
+      "recorded_at": "20261005"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW06-20261012",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 6,
+      "model": "西甲德甲版 V1（近似重建）",
+      "market_models": {
+        "parity": "西甲德甲版 V1（近似重建）"
+      },
+      "snapshot": "2026-10-12 賽前版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 381,
+        "end_line": 466,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "逐場原始表只封存單雙。1X2／大小在結算表追述，另存為結算追述，不回填原始預測。R3候補不計。",
+      "expected_matches": 9,
+      "recorded_at": "20261012"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 7,
+      "model": "Bundesliga Parity V2-RG1",
+      "market_models": {
+        "parity": "V2-RG1",
+        "1x2": "V1近似參考",
+        "ou25": "V1近似參考"
+      },
+      "snapshot": "OPENPROXY",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1044,
+        "end_line": 1156,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "單雙V2-RG1；1X2／大小是原文另列的V1近似參考，非V2輸出。候補R3不計。缺完整PRE-KICK。",
+      "expected_matches": 9,
+      "recorded_at": "20261019"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 9,
+      "model": "Bundesliga V2-RG1 / MARKETPROXY",
+      "market_models": {
+        "1x2": "Bundesliga V2-RG1 / MARKETPROXY",
+        "ou25": "Bundesliga V2-RG1 / MARKETPROXY",
+        "parity": "Bundesliga V2-RG1 / MARKETPROXY"
+      },
+      "snapshot": "MARKETPROXY",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 2689,
+        "end_line": 2750,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "尚無賽果。原排序曾觸發SKEW_ALERT；11/05二次審計維持8雙1單，但調整R1/R2/R3，請切換版本查看。",
+      "expected_matches": 9,
+      "recorded_at": "20261104"
+    },
+    {
+      "id": "SERIEA-2026-27-GW06-20261006",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "gw": 6,
+      "model": "Xuan-Odds V4 / WF6 + Adaptive R90",
+      "market_models": {
+        "parity": "Xuan-Odds V4 / WF6 + Adaptive R90"
+      },
+      "snapshot": "賽前正式版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 295,
+        "end_line": 380,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "1X2與大小僅有結算總數，沒有逐場預測；保留摘要，不回填。",
+      "expected_matches": 10,
+      "recorded_at": "20261006"
+    },
+    {
+      "id": "SERIEA-2026-27-GW07-20261013-CORR1",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "gw": 7,
+      "model": "Xuan-Odds V4 / WF6 + R90 CORR1",
+      "market_models": {
+        "parity": "Xuan-Odds V4 / WF6 + R90 CORR1"
+      },
+      "snapshot": "CORR1 賽前修正版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 543,
+        "end_line": 627,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "僅單雙有正式逐場封存；1X2／大小為NO_PREMATCH_RECORD，禁止補算。",
+      "expected_matches": 10,
+      "recorded_at": "20261013"
+    },
+    {
+      "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "gw": 8,
+      "model": "Xuan-Odds V4 / WF6 + Adaptive R90",
+      "market_models": {
+        "1x2": "Xuan-Odds V4 / WF6 + Adaptive R90",
+        "ou25": "Xuan-Odds V4 / WF6 + Adaptive R90",
+        "parity": "Xuan-Odds V4 / WF6 + Adaptive R90"
+      },
+      "snapshot": "OPENPROXY",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 746,
+        "end_line": 841,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "R3另以賽前追加保存。10/23只交換1X2 R2/R3，非T-1h PRE-KICK；原版與更新版獨立可查。",
+      "expected_matches": 10,
+      "recorded_at": "20261020"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW06-20261006",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 6,
+      "model": "R80 V2 DrawGuard",
+      "market_models": {
+        "parity": "R80 V2 DrawGuard"
+      },
+      "snapshot": "2026-10-06 賽前版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 240,
+        "end_line": 294,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "全輪單雙結算摘要7/9，但僅R1/R2有比分；其餘7場不補造。R位為弱訊號相對排序。",
+      "expected_matches": 9,
+      "recorded_at": "20261006"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW07-20261012",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 7,
+      "model": "R80 V2 DrawGuard",
+      "market_models": {
+        "parity": "R80 V2 DrawGuard"
+      },
+      "snapshot": "2026-10-12 賽前版",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 467,
+        "end_line": 542,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "1X2全場與大小其餘7場只見結算追述；大小R1/R2有賽前文字。原始層不倒填；統計摘要另列。",
+      "expected_matches": 9,
+      "recorded_at": "20261012"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 8,
+      "model": "R80 V2 DrawGuard",
+      "market_models": {
+        "1x2": "R80 V2 DrawGuard",
+        "ou25": "R80 V2 DrawGuard",
+        "parity": "R80 V2 DrawGuard"
+      },
+      "snapshot": "OPENPROXY",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 976,
+        "end_line": 1043,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "無正式1X2 R位與R3封存，不事後補選。大小／單雙R1/R2為相對排序。",
+      "expected_matches": 9,
+      "recorded_at": "20261019"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 9,
+      "model": "R80 V2 DrawGuard / 1X2 Blend V0.1",
+      "market_models": {
+        "1x2": "1X2-Blend V0.1 challenger",
+        "ou25": "R80 V2 DrawGuard",
+        "parity": "R80 V2 DrawGuard"
+      },
+      "snapshot": "MARKETPROXY",
+      "source": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1836,
+        "end_line": 1900,
+        "version": 56
+      },
+      "coverage": "available-source",
+      "note": "1X2為未校準challenger；單雙全為弱訊號。11/04審計對未來停用Forced R位作投注依據，歷史結果保留。",
+      "expected_matches": 9,
+      "recorded_at": "20261030"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 8,
+      "model": "RG2-Xuan（恢復紀錄）",
+      "market_models": {
+        "1x2": "10/30方向（恢復）",
+        "ou25": "10/30方向（恢復）",
+        "parity": "RG2-Xuan（恢復）"
+      },
+      "snapshot": "RECOVERED",
+      "source": {
+        "file": "source/R1_R2_Master_v57.md",
+        "version": 57,
+        "start_line": 2815,
+        "end_line": 2878
+      },
+      "coverage": "recovered",
+      "note": "RECOVERED：11/05由10/30預測與11/03結算對話補回，非當日已封存快照。單雙為RG2-Xuan更新後排序；缺完整OPEN/PRE-KICK盤口。累計包含本恢復紀錄，不能視為全部當時已凍結的實績。",
+      "expected_matches": 9,
+      "recorded_at": "2026-11-05",
+      "original_predicted_at": "2026-10-30",
+      "original_settled_at": "2026-11-03"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 10,
+      "model": "{\"ou_parity\": \"LIGUE1-R80-V2.1-DRAWGUARD-FROZEN\", \"1x2\": \"1X2-Blend-V0.1 (70% de-vig market + 30% Dixon-Coles structure; ranking score, not calibrated true probability)\", \"parity_formal_selector\": \"V1/V2 Parity_Selected sparse selector CONTROL\", \"parity_v3\": \"RESEARCH_ONLY_NOT_PROMOTED\", \"xuan\": \"SHADOW_ONLY_NOT_USED\"}",
+      "snapshot": "DASHBOARD_UPDATE_PACKAGE",
+      "coverage": "package",
+      "note": "{\"status\": \"ARCHIVED_PREMATCH_MARKETPROXY\", \"PASS\": {\"1X2\": false, \"OU25_formal_selector\": true, \"parity_formal_selector\": true, \"parity_shadow_display_only\": true}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"direction_split\": \"3 ODD / 6 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"PRESENT_IN_REPRO_ZIP\", \"model_weights\": \"PRESENT_IN_REPRO_ZIP\", \"feature_matrix\": \"PRESENT_IN_REPRO_ZIP\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"NOT_RUN\", \"archive_identity\": \"FROZEN_MODEL_PACKAGE + MARKETPROXY\", \"sha256_manifest\": \"PRESENT_IN_REPRO_ZIP\", \"overwrite_old_predictions\": false}}",
+      "research_only": false,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+      "status": "ARCHIVED_PREMATCH_MARKETPROXY"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "gw": 9,
+      "model": "{\"parity\": \"Bundesliga Parity V2-RG1\", \"xuan\": \"SHADOW_ONLY\", \"one_x_two_ou\": \"Bundesliga R90-DE V1 / MARKETPROXY recovered component\", \"exact_binary_replay\": false}",
+      "snapshot": "DASHBOARD_UPDATE_PACKAGE",
+      "coverage": "package",
+      "note": "{\"status\": {\"open_marketproxy\": \"DONE\", \"skew_audit\": \"DONE\", \"archive_final\": \"DONE\", \"pre_kick\": \"PENDING\", \"result\": \"PENDING\", \"review\": \"PENDING\"}, \"PASS\": {\"1X2\": false, \"OU25\": false, \"parity\": false}, \"PARITY_SKEW_ALERT\": {\"triggered\": true, \"audit_passed\": true, \"final_split\": \"1 ODD / 8 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"MISSING\", \"model_weights\": \"MISSING\", \"feature_matrix\": \"MISSING\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"NOT_RUN\", \"archive_identity\": \"MARKETPROXY + SKEW_AUDIT\", \"overwrite_old_predictions\": false}}",
+      "research_only": false,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW09_20261105.json",
+      "status": {
+        "open_marketproxy": "DONE",
+        "skew_audit": "DONE",
+        "archive_final": "DONE",
+        "pre_kick": "PENDING",
+        "result": "PENDING",
+        "review": "PENDING"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW10-20261105-MARKETPROXY-RECOVERED",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 10,
+      "model": "{\"formal_identity\": \"EPL R90-style recovery line + GW9 fixed corrections\", \"exact_binary_replay\": false, \"recovery_flag\": \"RECOVERED_COMPONENT\", \"market_label\": \"MARKETPROXY\"}",
+      "snapshot": "DASHBOARD_UPDATE_PACKAGE",
+      "coverage": "package",
+      "note": "{\"status\": \"PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED\", \"PASS\": {\"1X2\": false, \"OU25\": false, \"parity\": false}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"direction_split\": \"4 ODD / 6 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"MISSING\", \"model_weights\": \"MISSING\", \"feature_matrix\": \"MISSING\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"MISSING\", \"archive_identity\": \"RECOVERED_COMPONENT\", \"overwrite_old_predictions\": false}}",
+      "research_only": false,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_EPL_GW10_20261105.json",
+      "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED"
+    },
+    {
+      "id": "SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "gw": 11,
+      "model": "{\"formal_identity\": \"Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback\", \"wf6_rules_priority\": [3, 1, 2, 8, 6, 4], \"exact_trigger_replay\": false, \"recovery_flag\": \"RECOVERED_COMPONENT\", \"market_label\": \"MARKETPROXY\"}",
+      "snapshot": "DASHBOARD_UPDATE_PACKAGE",
+      "coverage": "package",
+      "note": "{\"status\": \"PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED\", \"PASS\": {\"1X2\": false, \"OU25\": false, \"parity\": false}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"status\": \"NOT_RECORDED_AS_ALERT; 4 ODD / 6 EVEN from frozen directions\"}, \"integrity_flags\": {\"prediction_script\": \"MISSING\", \"model_weights\": \"MISSING\", \"feature_matrix\": \"MISSING\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"MISSING\", \"archive_identity\": \"RECOVERED_COMPONENT\", \"overwrite_old_predictions\": false}}",
+      "research_only": false,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_SERIEA_GW11_20261105.json",
+      "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED"
+    },
+    {
+      "id": "LALIGA-2026-27-GW12-20261105-RESEARCH-ARCHIVE-AUDIT",
+      "league": "LALIGA",
+      "season": "2026-27",
+      "gw": 12,
+      "model": "{\"league_native_official\": \"R90-X V3 / S-XOR (GW08 latest indexed)\", \"official_exact_binary_replay\": false, \"v1_exact\": \"NOT_RUN\", \"gw11_baseline_exact\": \"NOT_RUN\", \"v2\": \"V2-RESEARCH_MARKETPROXY (frozen 2026-11-04)\", \"xuan\": \"SHADOW_NOT_RUN\"}",
+      "snapshot": "Research",
+      "coverage": "package",
+      "note": "{\"status\": {\"pre_match_research\": \"DONE\", \"research_archive_audit\": \"DONE\", \"official_exact_model_prediction\": \"BLOCKED_NOT_RUN\", \"archive_final\": \"RESEARCH_ONLY\", \"pre_kick\": \"PENDING\", \"result\": \"PENDING\", \"review\": \"PENDING\"}, \"PASS\": {\"official_model\": \"PASS_NOT_RUN\", \"1X2_research\": false, \"OU25_research\": false, \"parity_high_confidence\": true}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"direction_split\": \"5 ODD / 5 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"MISSING\", \"model_weights\": \"MISSING\", \"feature_matrix\": \"MISSING\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"MISSING\", \"archive_identity\": \"RESEARCH_ONLY\", \"overwrite_old_predictions\": false}}",
+      "research_only": true,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW12_20261105.json",
+      "status": {
+        "pre_match_research": "DONE",
+        "research_archive_audit": "DONE",
+        "official_exact_model_prediction": "BLOCKED_NOT_RUN",
+        "archive_final": "RESEARCH_ONLY",
+        "pre_kick": "PENDING",
+        "result": "PENDING",
+        "review": "PENDING"
+      }
+    }
+  ],
+  "leagues": [
+    {
+      "id": "EPL",
+      "name": "英超",
+      "english": "Premier League",
+      "coverage": "normalized-available"
+    },
+    {
+      "id": "BUNDESLIGA",
+      "name": "德甲",
+      "english": "Bundesliga",
+      "coverage": "normalized-available"
+    },
+    {
+      "id": "LALIGA",
+      "name": "西甲",
+      "english": "La Liga",
+      "coverage": "normalized-available"
+    },
+    {
+      "id": "SERIEA",
+      "name": "義甲",
+      "english": "Serie A",
+      "coverage": "normalized-available"
+    },
+    {
+      "id": "LIGUE1",
+      "name": "法甲",
+      "english": "Ligue 1",
+      "coverage": "normalized-available"
+    }
+  ],
+  "LATEST_BY_LEAGUE": {
+    "LIGUE1": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+    "BUNDESLIGA": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "EPL": "EPL-2026-27-GW10-20261105-MARKETPROXY-RECOVERED",
+    "SERIEA": "SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED",
+    "LALIGA": "LALIGA-2026-27-GW08-20261005"
+  },
+  "LATEST_RESEARCH": {
+    "LALIGA": "LALIGA-2026-27-GW12-20261105-RESEARCH-ARCHIVE-AUDIT"
+  },
+  "github_status": "GITHUB_NOT_SYNCED"
+}

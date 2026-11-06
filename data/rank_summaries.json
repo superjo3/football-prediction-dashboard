@@ -1,0 +1,185 @@
+[
+  {
+    "league": "EPL",
+    "season": "2026-27",
+    "gw": 2,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 1
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 722,
+      "end_line": 733,
+      "version": 55
+    }
+  },
+  {
+    "league": "EPL",
+    "season": "2026-27",
+    "gw": 3,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 1
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 722,
+      "end_line": 733,
+      "version": 55
+    }
+  },
+  {
+    "league": "EPL",
+    "season": "2026-27",
+    "gw": 4,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 0
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 722,
+      "end_line": 733,
+      "version": 55
+    }
+  },
+  {
+    "league": "EPL",
+    "season": "2026-27",
+    "gw": 5,
+    "market": "parity",
+    "hits": {
+      "1": 0,
+      "2": 0
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 722,
+      "end_line": 733,
+      "version": 55
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 1,
+    "market": "parity",
+    "hits": {
+      "1": 1
+    },
+    "sample_each": 1,
+    "model": "西甲德甲版 V1",
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 422,
+      "end_line": 431,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 2,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 1
+    },
+    "sample_each": 1,
+    "model": "西甲德甲版 V1",
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 422,
+      "end_line": 431,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 3,
+    "market": "parity",
+    "hits": {
+      "1": 0,
+      "2": 1
+    },
+    "sample_each": 1,
+    "model": "西甲德甲版 V1",
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 422,
+      "end_line": 431,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 4,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 0
+    },
+    "sample_each": 1,
+    "model": "西甲德甲版 V1",
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 422,
+      "end_line": 431,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 5,
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 1
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 373,
+      "end_line": 375,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "season": "2026-27",
+    "gw": 5,
+    "market": "parity",
+    "hits": {
+      "1": 0,
+      "2": 1
+    },
+    "sample_each": 1,
+    "detail_available": false,
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 502,
+      "end_line": 513,
+      "version": 56
+    }
+  }
+]

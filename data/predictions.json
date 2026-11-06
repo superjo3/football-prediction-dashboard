@@ -1,0 +1,4365 @@
+[
+  {
+    "id": "EPL-2026-27-GW06-20261005-1",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-01",
+    "fixture": "阿仙奴 vs 列斯聯",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-2",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-02",
+    "fixture": "阿士東維拉 vs 賓福特",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-3",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-03",
+    "fixture": "車路士 vs 般尼茅夫",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-4",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-04",
+    "fixture": "葉士域治 vs 富咸",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-5",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-05",
+    "fixture": "新特蘭 vs 白禮頓",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-6",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-06",
+    "fixture": "曼聯 vs 熱刺",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-7",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-07",
+    "fixture": "水晶宮 vs 諾定咸森林",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-8",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-08",
+    "fixture": "侯城 vs 愛華頓",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-9",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-09",
+    "fixture": "利物浦 vs 曼城",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW06-20261005-10",
+    "record_id": "EPL-2026-27-GW06-20261005",
+    "match_id": "EPL-2026-27-GW06-10",
+    "fixture": "高雲地利 vs 紐卡素",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 115,
+      "end_line": 177,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-1",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-01",
+    "fixture": "愛華頓 vs 車路士",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-2",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-02",
+    "fixture": "賓福特 vs 利物浦",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-3",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-03",
+    "fixture": "富咸 vs 侯城",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-4",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-04",
+    "fixture": "曼城 vs 葉士域治",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-5",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-05",
+    "fixture": "紐卡素 vs 阿士東維拉",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-6",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-06",
+    "fixture": "般尼茅夫 vs 新特蘭",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-7",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-07",
+    "fixture": "白禮頓 vs 水晶宮",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-8",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-08",
+    "fixture": "列斯聯 vs 曼聯",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-9",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-09",
+    "fixture": "諾定咸森林 vs 阿仙奴",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW07-20261014-10",
+    "record_id": "EPL-2026-27-GW07-20261014",
+    "match_id": "EPL-2026-27-GW07-10",
+    "fixture": "熱刺 vs 高雲地利",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 628,
+      "end_line": 745,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-1",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-01",
+    "fixture": "葉士域治 vs 諾定咸森林",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-2",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-02",
+    "fixture": "阿士東維拉 vs 曼城",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": 2,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-3",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-03",
+    "fixture": "阿仙奴 vs 愛華頓",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-4",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-04",
+    "fixture": "高雲地利 vs 富咸",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-5",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-05",
+    "fixture": "車路士 vs 熱刺",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 1,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-6",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-06",
+    "fixture": "水晶宮 vs 紐卡素",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-7",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-07",
+    "fixture": "侯城 vs 賓福特",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-8",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-08",
+    "fixture": "利物浦 vs 白禮頓",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-9",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-09",
+    "fixture": "曼聯 vs 般尼茅夫",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW08-20261020-OPENPROXY-10",
+    "record_id": "EPL-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "EPL-2026-27-GW08-10",
+    "fixture": "新特蘭 vs 列斯聯",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "小",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1283,
+      "end_line": 1396,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-1",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-01",
+    "fixture": "車路士 vs 曼聯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 3,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-2",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-02",
+    "fixture": "般尼茅夫 vs 列斯聯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-3",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-03",
+    "fixture": "賓福特 vs 諾定咸森林",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-4",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-04",
+    "fixture": "高雲地利 vs 新特蘭",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "小",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-5",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-05",
+    "fixture": "侯城 vs 葉士域治",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-6",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-06",
+    "fixture": "曼城 vs 白禮頓",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": 1,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-7",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-07",
+    "fixture": "熱刺 vs 水晶宮",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": 3,
+      "parity": 3
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-8",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-08",
+    "fixture": "阿士東維拉 vs 富咸",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-9",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-09",
+    "fixture": "利物浦 vs 阿仙奴",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "小",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "EPL-2026-27-GW09-20261030-MARKETPROXY-10",
+    "record_id": "EPL-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "EPL-2026-27-GW09-10",
+    "fixture": "紐卡素 vs 愛華頓",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 1901,
+      "end_line": 1968,
+      "version": 55
+    }
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-1",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-01",
+    "fixture": "馬拉加 vs 愛斯賓奴",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "馬拉加 vs 愛斯賓奴",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-2",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-02",
+    "fixture": "華歷簡奴 vs 畢爾包",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "華歷簡奴 vs 畢爾包",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-3",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-03",
+    "fixture": "艾拉維斯 vs 馬德里體育會",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "艾拉維斯 vs 馬德里體育會",
+      "單",
+      "R3候補"
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-4",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-04",
+    "fixture": "巴塞隆拿 vs 加泰",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "巴塞隆拿 vs 加泰",
+      "單",
+      "R1"
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-5",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-05",
+    "fixture": "皇家馬德里 vs 維拉利爾",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "皇家馬德里 vs 維拉利爾",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-6",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-06",
+    "fixture": "艾爾切 vs 切爾達",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "艾爾切 vs 切爾達",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-7",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-07",
+    "fixture": "皇家蘇斯達 vs 拉科魯尼亞",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "皇家蘇斯達 vs 拉科魯尼亞",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-8",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-08",
+    "fixture": "貝迪斯 vs 奧沙辛拿",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "貝迪斯 vs 奧沙辛拿",
+      "單",
+      "R2"
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-9",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-09",
+    "fixture": "桑坦德 vs 華倫西亞",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "桑坦德 vs 華倫西亞",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "LALIGA-2026-27-GW08-20261005-10",
+    "record_id": "LALIGA-2026-27-GW08-20261005",
+    "match_id": "LALIGA-2026-27-GW08-10",
+    "fixture": "利雲特 vs 西維爾",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 73,
+      "end_line": 85,
+      "version": 56
+    },
+    "source_cells": [
+      "利雲特 vs 西維爾",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-1",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-01",
+    "fixture": "多特蒙德 vs 雲達不萊梅",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "多特蒙德 vs 雲達不萊梅",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-2",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-02",
+    "fixture": "霍芬海姆 vs 漢堡",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "霍芬海姆 vs 漢堡",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-3",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-03",
+    "fixture": "奧格斯堡 vs 拜仁慕尼黑",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "奧格斯堡 vs 拜仁慕尼黑",
+      "單",
+      "深盤單 A級訊號"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-4",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-04",
+    "fixture": "美因茨 vs 勒沃庫森",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "美因茨 vs 勒沃庫森",
+      "雙",
+      "R1"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-5",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-05",
+    "fixture": "柏林聯合 vs 艾禾斯堡",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "柏林聯合 vs 艾禾斯堡",
+      "雙",
+      "R2"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-6",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-06",
+    "fixture": "柏德博恩 vs 斯圖加特",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "柏德博恩 vs 斯圖加特",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-7",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-07",
+    "fixture": "RB萊比錫 vs 法蘭克福",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "RB萊比錫 vs 法蘭克福",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-8",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-08",
+    "fixture": "科隆 vs 門興",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "科隆 vs 門興",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST-9",
+    "record_id": "BUNDESLIGA-2026-27-GW05-20261005-LATEST",
+    "match_id": "BUNDESLIGA-2026-27-GW05-09",
+    "fixture": "弗萊堡 vs 沙爾克04",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 200,
+      "end_line": 210,
+      "version": 56
+    },
+    "source_cells": [
+      "弗萊堡 vs 沙爾克04",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-1",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-01",
+    "fixture": "法蘭克福 vs 科隆",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "法蘭克福 vs 科隆",
+      "雙",
+      "62.9%",
+      "R3／A級候補"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-2",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-02",
+    "fixture": "艾禾斯堡 vs 奧格斯堡",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "艾禾斯堡 vs 奧格斯堡",
+      "雙",
+      "64.6%",
+      "R1／A級"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-3",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-03",
+    "fixture": "漢堡 vs 史特加",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "漢堡 vs 史特加",
+      "雙",
+      "64.5%",
+      "R2／A級／史特加週中歐冠"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-4",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-04",
+    "fixture": "柏林聯合 vs 多特蒙德",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "柏林聯合 vs 多特蒙德",
+      "雙",
+      "50.3%",
+      "多特週中歐冠客場"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-5",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-05",
+    "fixture": "雲達不萊梅 vs 柏德博恩",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "雲達不萊梅 vs 柏德博恩",
+      "雙",
+      "58.6%",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-6",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-06",
+    "fixture": "沙爾克04 vs 美因茨",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "沙爾克04 vs 美因茨",
+      "雙",
+      "51.5%",
+      ""
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-7",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-07",
+    "fixture": "拜仁慕尼黑 vs RB萊比錫",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "拜仁慕尼黑 vs RB萊比錫",
+      "雙",
+      "57.5%",
+      "兩隊週中歐冠"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-8",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-08",
+    "fixture": "勒沃庫森 vs 弗賴堡",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "勒沃庫森 vs 弗賴堡",
+      "雙",
+      "61.0%",
+      "兩隊週四歐戰"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-9",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-09",
+    "fixture": "門興 vs 霍芬海姆",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 410,
+      "end_line": 420,
+      "version": 56
+    },
+    "source_cells": [
+      "門興 vs 霍芬海姆",
+      "雙",
+      "60.4%",
+      "霍芬海姆週四歐霸"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-1",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-01",
+    "fixture": "斯圖加特 vs 門興",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": 2,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "斯圖加特 vs 門興",
+      "雙",
+      "近期偏單→雙回歸",
+      "R4"
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-2",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-02",
+    "fixture": "柏德博恩 vs 漢堡",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "柏德博恩 vs 漢堡",
+      "雙",
+      "近期偏單→雙回歸",
+      ""
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-3",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-03",
+    "fixture": "科隆 vs 沙爾克04",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "科隆 vs 沙爾克04",
+      "雙",
+      "近期偏單→雙回歸",
+      ""
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-4",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-04",
+    "fixture": "美因茨 vs 雲達不萊梅",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "美因茨 vs 雲達不萊梅",
+      "雙",
+      "近期偏單→雙回歸",
+      ""
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-5",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-05",
+    "fixture": "奧格斯堡 vs 柏林聯合",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "奧格斯堡 vs 柏林聯合",
+      "雙",
+      "Default Even",
+      ""
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-6",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-06",
+    "fixture": "RB萊比錫 vs 艾禾斯堡",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": 2,
+      "1x2": 1,
+      "ou25": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "RB萊比錫 vs 艾禾斯堡",
+      "雙",
+      "近期偏單→雙回歸",
+      "R2"
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-7",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-07",
+    "fixture": "多特蒙德 vs 法蘭克福",
+    "directions": {
+      "parity": "雙",
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "多特蒙德 vs 法蘭克福",
+      "雙",
+      "Default Even",
+      ""
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-8",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-08",
+    "fixture": "霍芬海姆 vs 勒沃庫森",
+    "directions": {
+      "parity": "雙",
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "1x2": null,
+      "ou25": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "霍芬海姆 vs 勒沃庫森",
+      "雙",
+      "近期偏單→雙回歸",
+      "R3"
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY-9",
+    "record_id": "BUNDESLIGA-2026-27-GW07-20261019-V2RG1-OPENPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW07-09",
+    "fixture": "弗賴堡 vs 拜仁慕尼黑",
+    "directions": {
+      "parity": "單",
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": 1,
+      "1x2": null,
+      "ou25": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1085,
+      "end_line": 1095,
+      "version": 56
+    },
+    "source_cells": [
+      "弗賴堡 vs 拜仁慕尼黑",
+      "單",
+      "強客深盤",
+      "R1"
+    ],
+    "market_sources": {
+      "1x2": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1107,
+        "end_line": 1125,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 1085,
+        "end_line": 1095,
+        "version": 56
+      }
+    },
+    "market_status": {
+      "1x2": "V1近似參考",
+      "ou25": "V1近似參考",
+      "parity": "正式V2-RG1"
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-1",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-01",
+    "fixture": "漢堡 vs 門興",
+    "directions": {
+      "1x2": "和",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "漢堡 vs 門興",
+      "和",
+      "大2.5",
+      "雙",
+      "本輪最強平局候選；雙方1X2接近"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-2",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-02",
+    "fixture": "柏德博恩 vs 法蘭克福",
+    "directions": {
+      "1x2": "和",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "柏德博恩 vs 法蘭克福",
+      "和",
+      "大2.5",
+      "雙",
+      "第二平局候選；外部模型對主/客勝方向分歧高"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-3",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-03",
+    "fixture": "美因茨 vs 拜仁",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": 1,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "美因茨 vs 拜仁",
+      "拜仁客勝",
+      "大2.5",
+      "單",
+      "AHh >= +1.50 deep-away parity 規則觸發"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-4",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-04",
+    "fixture": "RB萊比錫 vs 奧格斯堡",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 3,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "RB萊比錫 vs 奧格斯堡",
+      "RB萊比錫主勝",
+      "大2.5",
+      "雙",
+      "主勝優勢明顯"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-5",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-05",
+    "fixture": "多特蒙德 vs 艾禾斯堡",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "多特蒙德 vs 艾禾斯堡",
+      "多特蒙德主勝",
+      "大2.5",
+      "雙",
+      "主勝優勢明顯"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-6",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-06",
+    "fixture": "史特加 vs 雲達不萊梅",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 3,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "史特加 vs 雲達不萊梅",
+      "史特加主勝",
+      "大2.5",
+      "雙",
+      "主勝偏強；大球偏強"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-7",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-07",
+    "fixture": "科隆 vs 勒沃庫森",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "科隆 vs 勒沃庫森",
+      "勒沃庫森客勝",
+      "大2.5",
+      "雙",
+      "平局列高賠候補，不升正式平局R位"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-8",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-08",
+    "fixture": "弗賴堡 vs 柏林聯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 3
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "弗賴堡 vs 柏林聯",
+      "弗賴堡主勝",
+      "大2.5（弱）",
+      "雙",
+      "O/U2.5 接近五五；不列大小精選"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY-9",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-09",
+    "fixture": "霍芬海姆 vs 沙爾克04",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2704,
+      "end_line": 2714,
+      "version": 56
+    },
+    "source_cells": [
+      "霍芬海姆 vs 沙爾克04",
+      "霍芬海姆主勝",
+      "大2.5",
+      "雙",
+      "主勝偏強"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-1",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-01",
+    "fixture": "熱拿亞 vs 費倫天拿",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "熱拿亞 vs 費倫天拿",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-2",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-02",
+    "fixture": "國際米蘭 vs 帕爾馬",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "國際米蘭 vs 帕爾馬",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-3",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-03",
+    "fixture": "拿玻里 vs 費辛隆尼",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "拿玻里 vs 費辛隆尼",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-4",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-04",
+    "fixture": "科木 vs 羅馬",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "科木 vs 羅馬",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-5",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-05",
+    "fixture": "拉素 vs 蒙沙",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "拉素 vs 蒙沙",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-6",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-06",
+    "fixture": "萊切 vs 博洛尼亞",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "萊切 vs 博洛尼亞",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-7",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-07",
+    "fixture": "莎索羅 vs AC米蘭",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "莎索羅 vs AC米蘭",
+      "單",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-8",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-08",
+    "fixture": "卡利亞里 vs 祖雲達斯",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "卡利亞里 vs 祖雲達斯",
+      "雙",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-9",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-09",
+    "fixture": "阿特蘭大 vs 威尼斯",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "阿特蘭大 vs 威尼斯",
+      "雙",
+      "R1"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW06-20261006-10",
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "match_id": "SERIEA-2026-27-GW06-10",
+    "fixture": "拖連奴 vs 烏甸尼斯",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 320,
+      "end_line": 331,
+      "version": 56
+    },
+    "source_cells": [
+      "拖連奴 vs 烏甸尼斯",
+      "雙",
+      "R2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-1",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-01",
+    "fixture": "費辛隆尼 vs 莎索羅",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "費辛隆尼 vs 莎索羅",
+      "雙",
+      "52.6%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-2",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-02",
+    "fixture": "威尼斯 vs 拿玻里",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "威尼斯 vs 拿玻里",
+      "雙",
+      "52.5%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-3",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-03",
+    "fixture": "博洛尼亞 vs 國際米蘭",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "博洛尼亞 vs 國際米蘭",
+      "雙",
+      "50.9%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-4",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-04",
+    "fixture": "羅馬 vs 熱拿亞",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "羅馬 vs 熱拿亞",
+      "雙",
+      "53.5%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-5",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-05",
+    "fixture": "烏甸尼斯 vs 萊切",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "烏甸尼斯 vs 萊切",
+      "單",
+      "51.6%",
+      "唯一單方向"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-6",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-06",
+    "fixture": "費倫天拿 vs 科木",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "費倫天拿 vs 科木",
+      "雙",
+      "51.6%",
+      "R90 Q第3"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-7",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-07",
+    "fixture": "AC米蘭 vs 阿特蘭大",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "AC米蘭 vs 阿特蘭大",
+      "雙",
+      "53.0%",
+      "R3候補／原strict Q第2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-8",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-08",
+    "fixture": "祖雲達斯 vs 拉素",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "祖雲達斯 vs 拉素",
+      "雙",
+      "51.4%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-9",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-09",
+    "fixture": "蒙沙 vs 卡利亞里",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "蒙沙 vs 卡利亞里",
+      "雙",
+      "51.4%",
+      "R2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW07-20261013-CORR1-10",
+    "record_id": "SERIEA-2026-27-GW07-20261013-CORR1",
+    "match_id": "SERIEA-2026-27-GW07-10",
+    "fixture": "帕爾馬 vs 拖連奴",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 601,
+      "end_line": 612,
+      "version": 56
+    },
+    "source_cells": [
+      "帕爾馬 vs 拖連奴",
+      "雙",
+      "51.6%",
+      "R1"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-1",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-01",
+    "fixture": "拖連奴 vs 蒙沙",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "小",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "拖連奴 vs 蒙沙",
+      "主勝",
+      "44.2%",
+      "小2.5",
+      "52.3%",
+      "單",
+      "WF6 Rule2；歷史29/43=67.4%，收縮代理約65.8%",
+      "單雙 R1"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-2",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-02",
+    "fixture": "卡利亞里 vs 博洛尼亞",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "小",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "卡利亞里 vs 博洛尼亞",
+      "客勝",
+      "38.6%",
+      "小2.5",
+      "56.4%",
+      "雙",
+      "Adaptive R90 約54.0%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-3",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-03",
+    "fixture": "科木 vs 莎索羅",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "科木 vs 莎索羅",
+      "主勝",
+      "64.0%",
+      "大2.5",
+      "66.1% proxy",
+      "雙",
+      "WF6 Rule6；歷史33/52=63.5%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-4",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-04",
+    "fixture": "拿玻里 vs 羅馬",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "拿玻里 vs 羅馬",
+      "客勝",
+      "37.9%",
+      "大2.5",
+      "50.5%",
+      "單",
+      "Adaptive R90 約50.7%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-5",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-05",
+    "fixture": "拉素 vs 帕爾馬",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "拉素 vs 帕爾馬",
+      "主勝",
+      "64.3%",
+      "大2.5",
+      "50.1%",
+      "單",
+      "Adaptive R90 約51.6%",
+      ""
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-6",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-06",
+    "fixture": "國際米蘭 vs 費倫天拿",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "國際米蘭 vs 費倫天拿",
+      "主勝",
+      "68.8%",
+      "大2.5",
+      "67.5% proxy",
+      "雙",
+      "Adaptive R90 約51.1%",
+      "1X2 R1 / 大小 R2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-7",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-07",
+    "fixture": "阿特蘭大 vs 費辛隆尼",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 1,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "阿特蘭大 vs 費辛隆尼",
+      "主勝",
+      "53.2%",
+      "大2.5",
+      "68.6% proxy",
+      "雙",
+      "Adaptive R90 約51.5%",
+      "大小 R1"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-8",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-08",
+    "fixture": "熱拿亞 vs 威尼斯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "小",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "熱拿亞 vs 威尼斯",
+      "主勝",
+      "44.5%",
+      "小2.5",
+      "50.7%",
+      "單",
+      "WF6 Rule2；歷史29/43=67.4%，收縮代理約65.8%",
+      "單雙 R2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-9",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-09",
+    "fixture": "萊切 vs 祖雲達斯",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "萊切 vs 祖雲達斯",
+      "客勝",
+      "64.5%",
+      "大2.5",
+      "52.0%",
+      "單",
+      "Adaptive R90 約51.3%",
+      "1X2 R2"
+    ]
+  },
+  {
+    "id": "SERIEA-2026-27-GW08-20261020-OPENPROXY-10",
+    "record_id": "SERIEA-2026-27-GW08-20261020-OPENPROXY",
+    "match_id": "SERIEA-2026-27-GW08-10",
+    "fixture": "烏甸尼斯 vs AC米蘭",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 770,
+      "end_line": 781,
+      "version": 56
+    },
+    "source_cells": [
+      "烏甸尼斯 vs AC米蘭",
+      "客勝",
+      "57.1%",
+      "大2.5",
+      "51.6%",
+      "單",
+      "Adaptive R90 約54.3%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-1",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-01",
+    "fixture": "朗斯 vs 里昂",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "朗斯 vs 里昂",
+      "雙",
+      "50.3%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-2",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-02",
+    "fixture": "里爾 vs 勒哈弗爾",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "里爾 vs 勒哈弗爾",
+      "單",
+      "50.8%",
+      "Gray Zone / Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-3",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-03",
+    "fixture": "布雷斯特 vs 昂熱",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "布雷斯特 vs 昂熱",
+      "雙",
+      "50.6%",
+      "Gray Zone / Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-4",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-04",
+    "fixture": "洛里昂 vs 巴黎FC",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "洛里昂 vs 巴黎FC",
+      "單",
+      "50.0%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-5",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-05",
+    "fixture": "摩納哥 vs 圖盧茲",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "摩納哥 vs 圖盧茲",
+      "雙",
+      "51.0%",
+      "R2"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-6",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-06",
+    "fixture": "PSG vs 勒芒",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "PSG vs 勒芒",
+      "單",
+      "51.9%",
+      "R1"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-7",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-07",
+    "fixture": "尼斯 vs 史特拉斯堡",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "尼斯 vs 史特拉斯堡",
+      "單",
+      "50.3%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-8",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-08",
+    "fixture": "雷恩 vs 歐塞爾",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "雷恩 vs 歐塞爾",
+      "單",
+      "50.5%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW06-20261006-9",
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "match_id": "LIGUE1-2026-27-GW06-09",
+    "fixture": "特魯瓦 vs 馬賽",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 263,
+      "end_line": 273,
+      "version": 56
+    },
+    "source_cells": [
+      "特魯瓦 vs 馬賽",
+      "雙",
+      "50.3%",
+      ""
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-1",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-01",
+    "fixture": "勒芒 vs 圖盧茲",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "勒芒 vs 圖盧茲",
+      "雙",
+      "52.36%",
+      "R1／High Entropy／Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-2",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-02",
+    "fixture": "史特拉斯堡 vs PSG",
+    "directions": {
+      "parity": "單",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "ou25": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "史特拉斯堡 vs PSG",
+      "單",
+      "50.06%",
+      "PSG週中歐冠"
+    ],
+    "market_sources": {
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 530,
+        "end_line": 534,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 490,
+        "end_line": 500,
+        "version": 56
+      }
+    }
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-3",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-03",
+    "fixture": "里爾 vs 布雷斯特",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "里爾 vs 布雷斯特",
+      "單",
+      "50.03%",
+      "Draw Risk／里爾週中歐冠"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-4",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-04",
+    "fixture": "特魯瓦 vs 朗斯",
+    "directions": {
+      "parity": "單",
+      "ou25": "大"
+    },
+    "ranks": {
+      "parity": null,
+      "ou25": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "特魯瓦 vs 朗斯",
+      "單",
+      "50.10%",
+      "朗斯週中歐冠"
+    ],
+    "market_sources": {
+      "ou25": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 530,
+        "end_line": 534,
+        "version": 56
+      },
+      "parity": {
+        "file": "source/R1_R2_Master_v56.md",
+        "start_line": 490,
+        "end_line": 500,
+        "version": 56
+      }
+    }
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-5",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-05",
+    "fixture": "昂熱 vs 馬賽",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "昂熱 vs 馬賽",
+      "雙",
+      "50.65%",
+      "Draw Risk／馬賽週中歐霸"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-6",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-06",
+    "fixture": "洛里昂 vs 摩納哥",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "洛里昂 vs 摩納哥",
+      "單",
+      "50.08%",
+      "摩納哥週中歐協"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-7",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-07",
+    "fixture": "勒哈弗爾 vs 歐塞爾",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "勒哈弗爾 vs 歐塞爾",
+      "雙",
+      "50.19%",
+      "Gray Zone／Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-8",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-08",
+    "fixture": "巴黎FC vs 雷恩",
+    "directions": {
+      "parity": "雙"
+    },
+    "ranks": {
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "巴黎FC vs 雷恩",
+      "雙",
+      "50.78%",
+      "R2／High Entropy／Draw Risk／雷恩週中歐霸"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-9",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-09",
+    "fixture": "里昂 vs 尼斯",
+    "directions": {
+      "parity": "單"
+    },
+    "ranks": {
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 490,
+      "end_line": 500,
+      "version": 56
+    },
+    "source_cells": [
+      "里昂 vs 尼斯",
+      "單",
+      "50.35%",
+      "里昂週中歐霸"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-1",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-01",
+    "fixture": "布雷斯特 vs 尼斯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "布雷斯特 vs 尼斯",
+      "2.20 / 3.50 / 3.00",
+      "42.34 / 26.61 / 31.05%",
+      "主勝",
+      "1.67 / 2.20",
+      "54.82%",
+      "大2.5",
+      "雙",
+      "50.35%",
+      "Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-2",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-02",
+    "fixture": "圖盧茲 vs 特魯瓦",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "圖盧茲 vs 特魯瓦",
+      "1.70 / 3.80 / 4.50",
+      "54.79 / 24.51 / 20.70%",
+      "主勝",
+      "1.62 / 2.30",
+      "57.15%",
+      "大2.5",
+      "雙 R1",
+      "51.77%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-3",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-03",
+    "fixture": "朗斯 vs 巴黎FC",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "朗斯 vs 巴黎FC",
+      "2.00 / 3.70 / 3.30",
+      "46.59 / 25.18 / 28.23%",
+      "主勝",
+      "1.62 / 2.30",
+      "58.76%",
+      "大2.5",
+      "單",
+      "50.03%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-4",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-04",
+    "fixture": "摩納哥 vs 里爾",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "摩納哥 vs 里爾",
+      "2.05 / 3.60 / 3.30",
+      "45.65 / 25.99 / 28.36%",
+      "主勝",
+      "1.73 / 2.10",
+      "54.96%",
+      "大2.5",
+      "雙",
+      "50.41%",
+      "Draw Risk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-5",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-05",
+    "fixture": "昂熱 vs 洛里昂",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "小",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "昂熱 vs 洛里昂",
+      "2.55 / 3.25 / 2.63",
+      "36.31 / 28.49 / 35.20%",
+      "主勝（極接近）",
+      "2.00 / 1.80",
+      "48.45%",
+      "小2.5",
+      "雙",
+      "50.66%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-6",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-06",
+    "fixture": "歐塞爾 vs 勒芒",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "歐塞爾 vs 勒芒",
+      "2.15 / 3.40 / 3.20",
+      "43.40 / 27.44 / 29.16%",
+      "主勝",
+      "1.73 / 2.10",
+      "53.87%",
+      "大2.5",
+      "雙",
+      "50.69%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-7",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-07",
+    "fixture": "馬賽 vs 勒哈弗爾",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "馬賽 vs 勒哈弗爾",
+      "1.57 / 4.10 / 5.25",
+      "59.45 / 22.77 / 17.78%",
+      "主勝",
+      "1.62 / 2.30",
+      "58.00%",
+      "大2.5",
+      "單 R2",
+      "51.17%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-8",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-08",
+    "fixture": "雷恩 vs 史特拉斯堡",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "雷恩 vs 史特拉斯堡",
+      "1.70 / 4.10 / 4.10",
+      "54.67 / 22.67 / 22.67%",
+      "主勝",
+      "1.44 / 2.75",
+      "65.49%",
+      "大2.5 R2",
+      "雙",
+      "50.13%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY-9",
+    "record_id": "LIGUE1-2026-27-GW08-20261019-OPENPROXY",
+    "match_id": "LIGUE1-2026-27-GW08-09",
+    "fixture": "PSG vs 里昂",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 1,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 992,
+      "end_line": 1002,
+      "version": 56
+    },
+    "source_cells": [
+      "PSG vs 里昂",
+      "1.40 / 5.00 / 6.50",
+      "66.87 / 18.72 / 14.40%",
+      "主勝",
+      "1.36 / 3.20",
+      "68.72%",
+      "大2.5 R1",
+      "單",
+      "50.53%",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-1",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-01",
+    "fixture": "勒阿弗爾 vs PSG",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": 1,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "勒阿弗爾 vs PSG",
+      "10.5 / 17.3 / 72.3%",
+      "PSG客勝 R1",
+      "69.6%",
+      "大2.5 R1",
+      "單 50.58%",
+      "單 R2",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-2",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-02",
+    "fixture": "尼斯 vs 雷恩",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "尼斯 vs 雷恩",
+      "31.5 / 24.1 / 44.4%",
+      "雷恩客勝",
+      "61.8%",
+      "大2.5 R2",
+      "雙 50.18%",
+      "雙",
+      "DeepDraw / DrawRisk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-3",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-03",
+    "fixture": "里爾 vs 朗斯",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "里爾 vs 朗斯",
+      "39.2 / 26.2 / 34.6%",
+      "里爾主勝（防和）",
+      "54.8%",
+      "大2.5",
+      "雙 50.16%",
+      "雙",
+      "GrayZone / DrawRisk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-4",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-04",
+    "fixture": "特魯瓦 vs 勒芒",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "特魯瓦 vs 勒芒",
+      "33.7 / 25.8 / 40.5%",
+      "勒芒客勝（模型/市場衝突）",
+      "52.4%",
+      "大2.5",
+      "雙 50.80%",
+      "雙 R1",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-5",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-05",
+    "fixture": "史特拉斯堡 vs 歐塞爾",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "史特拉斯堡 vs 歐塞爾",
+      "49.5 / 23.5 / 27.0%",
+      "主勝",
+      "60.6%",
+      "大2.5",
+      "單 50.20%",
+      "單",
+      "HighEntropy / DrawRisk"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-6",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-06",
+    "fixture": "里昂 vs 昂熱",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": 3,
+      "parity": 3
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "里昂 vs 昂熱",
+      "61.1 / 20.2 / 18.7%",
+      "里昂主勝 R2",
+      "61.6%",
+      "大2.5 R3",
+      "雙 50.26%",
+      "雙 R3",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-7",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-07",
+    "fixture": "巴黎FC vs 摩納哥",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "巴黎FC vs 摩納哥",
+      "42.8 / 26.7 / 30.5%",
+      "巴黎FC主勝",
+      "51.0%",
+      "大2.5",
+      "單 50.00%",
+      "單",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-8",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-08",
+    "fixture": "馬賽 vs 圖盧茲",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": 3,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "馬賽 vs 圖盧茲",
+      "49.6 / 23.8 / 26.5%",
+      "馬賽主勝 R3",
+      "59.9%",
+      "大2.5",
+      "單 50.03%",
+      "單",
+      "正常"
+    ]
+  },
+  {
+    "id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY-9",
+    "record_id": "LIGUE1-2026-27-GW09-20261030-MARKETPROXY",
+    "match_id": "LIGUE1-2026-27-GW09-09",
+    "fixture": "洛里昂 vs 布雷斯特",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "小",
+      "parity": "單"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1852,
+      "end_line": 1862,
+      "version": 56
+    },
+    "source_cells": [
+      "洛里昂 vs 布雷斯特",
+      "36.6 / 28.7 / 34.7%",
+      "洛里昂主勝（弱）",
+      "45.6%",
+      "小2.5",
+      "單 50.14%",
+      "單",
+      "正常"
+    ]
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-1",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-01",
+    "fixture": "艾禾斯堡 vs 美因茨",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 1
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2833,
+      "end_line": 2833
+    },
+    "source_cells": [
+      "艾禾斯堡 vs 美因茨",
+      "美因茨客勝",
+      "43%",
+      "大2.5",
+      "雙 R1",
+      "4-1",
+      "❌",
+      "✅",
+      "❌"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-2",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-02",
+    "fixture": "奧格斯堡 vs 弗賴堡",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2834,
+      "end_line": 2834
+    },
+    "source_cells": [
+      "奧格斯堡 vs 弗賴堡",
+      "弗賴堡客勝",
+      "43%",
+      "大2.5",
+      "雙",
+      "1-2",
+      "✅",
+      "✅",
+      "❌"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-3",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-03",
+    "fixture": "勒沃庫森 vs 斯圖加特",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 3,
+      "ou25": 2,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2835,
+      "end_line": 2835
+    },
+    "source_cells": [
+      "勒沃庫森 vs 斯圖加特",
+      "勒沃庫森主勝 R3",
+      "55%",
+      "大2.5 R2",
+      "雙",
+      "2-4",
+      "❌",
+      "✅",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-4",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-04",
+    "fixture": "門興格拉德巴赫 vs 柏德博恩",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2836,
+      "end_line": 2836
+    },
+    "source_cells": [
+      "門興格拉德巴赫 vs 柏德博恩",
+      "門興主勝",
+      "48%",
+      "大2.5",
+      "雙",
+      "0-0",
+      "❌",
+      "❌",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-5",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-05",
+    "fixture": "沙爾克04 vs RB萊比錫",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": 3,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2837,
+      "end_line": 2837
+    },
+    "source_cells": [
+      "沙爾克04 vs RB萊比錫",
+      "RB萊比錫客勝",
+      "46%",
+      "大2.5 R3",
+      "雙",
+      "0-2",
+      "✅",
+      "❌",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-6",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-06",
+    "fixture": "雲達不萊梅 vs 霍芬海姆",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2838,
+      "end_line": 2838
+    },
+    "source_cells": [
+      "雲達不萊梅 vs 霍芬海姆",
+      "霍芬海姆客勝",
+      "39%",
+      "大2.5",
+      "雙",
+      "2-0",
+      "❌",
+      "❌",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-7",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-07",
+    "fixture": "拜仁慕尼黑 vs 多特蒙德",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 1,
+      "ou25": 1,
+      "parity": 3
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2839,
+      "end_line": 2839
+    },
+    "source_cells": [
+      "拜仁慕尼黑 vs 多特蒙德",
+      "拜仁主勝 R1",
+      "76%",
+      "大2.5 R1",
+      "雙 R3",
+      "2-2",
+      "❌",
+      "✅",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-8",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-08",
+    "fixture": "柏林聯 vs 科隆",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": null,
+      "ou25": null,
+      "parity": 2
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2840,
+      "end_line": 2840
+    },
+    "source_cells": [
+      "柏林聯 vs 科隆",
+      "柏林聯主勝",
+      "39%",
+      "大2.5",
+      "雙 R2",
+      "1-1",
+      "❌",
+      "❌",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED-9",
+    "record_id": "BUNDESLIGA-2026-27-GW08-20261030-RECOVERED",
+    "match_id": "BUNDESLIGA-2026-27-GW08-09",
+    "fixture": "法蘭克福 vs 漢堡",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大",
+      "parity": "雙"
+    },
+    "ranks": {
+      "1x2": 2,
+      "ou25": null,
+      "parity": null
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2841,
+      "end_line": 2841
+    },
+    "source_cells": [
+      "法蘭克福 vs 漢堡",
+      "法蘭克福主勝 R2",
+      "64%",
+      "大2.5",
+      "雙",
+      "3-1",
+      "✅",
+      "✅",
+      "✅"
+    ],
+    "provenance": "RECOVERED",
+    "recorded_at": "2026-11-05",
+    "original_predicted_at": "2026-10-30"
+  }
+]

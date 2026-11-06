@@ -1,0 +1,117 @@
+[
+  {
+    "league": "EPL",
+    "line": "Exact",
+    "seasons": "2024-25, 2025-26",
+    "base": [
+      52,
+      76
+    ],
+    "xuan": [
+      54,
+      76
+    ],
+    "changed": 11,
+    "rescued": 3,
+    "harmed": 1,
+    "net": 2,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2172,
+      "end_line": 2190,
+      "version": 55
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "line": "XUAN_PROXY",
+    "seasons": "2023-24, 2024-25, 2025-26",
+    "base": [
+      53,
+      102
+    ],
+    "xuan": [
+      54,
+      102
+    ],
+    "changed": 18,
+    "rescued": 5,
+    "harmed": 4,
+    "net": 1,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2378,
+      "end_line": 2385,
+      "version": 55
+    }
+  },
+  {
+    "league": "LALIGA",
+    "line": "XUAN_PROXY",
+    "seasons": "2023-24, 2024-25",
+    "base": [
+      36,
+      76
+    ],
+    "xuan": [
+      33,
+      76
+    ],
+    "changed": 10,
+    "rescued": 0,
+    "harmed": 3,
+    "net": -3,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2378,
+      "end_line": 2385,
+      "version": 55
+    }
+  },
+  {
+    "league": "SERIEA",
+    "line": "XUAN_PROXY",
+    "seasons": "2023-24, 2024-25, 2025-26",
+    "base": [
+      59,
+      114
+    ],
+    "xuan": [
+      61,
+      114
+    ],
+    "changed": 8,
+    "rescued": 3,
+    "harmed": 1,
+    "net": 2,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2378,
+      "end_line": 2385,
+      "version": 55
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "line": "XUAN_PROXY",
+    "seasons": "2023-24, 2024-25, 2025-26",
+    "base": [
+      57,
+      102
+    ],
+    "xuan": [
+      55,
+      102
+    ],
+    "changed": 22,
+    "rescued": 4,
+    "harmed": 6,
+    "net": -2,
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2378,
+      "end_line": 2385,
+      "version": 55
+    }
+  }
+]

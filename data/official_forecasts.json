@@ -1,0 +1,1838 @@
+[
+  {
+    "schema": "DASHBOARD_UPDATE_PACKAGE_V1",
+    "league": "Ligue 1",
+    "season": "2026-27",
+    "gw": 10,
+    "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+    "archive_date": "2026-11-05",
+    "timezone": "Asia/Taipei",
+    "status": "ARCHIVED_PREMATCH_MARKETPROXY",
+    "model": {
+      "ou_parity": "LIGUE1-R80-V2.1-DRAWGUARD-FROZEN",
+      "1x2": "1X2-Blend-V0.1 (70% de-vig market + 30% Dixon-Coles structure; ranking score, not calibrated true probability)",
+      "parity_formal_selector": "V1/V2 Parity_Selected sparse selector CONTROL",
+      "parity_v3": "RESEARCH_ONLY_NOT_PROMOTED",
+      "xuan": "SHADOW_ONLY_NOT_USED"
+    },
+    "market_snapshot": "MARKET_PROXY_CURRENT; not verified Bet365 first-tick opening",
+    "league_environment": {
+      "lg_over150": 0.59375,
+      "lg_over50": 0.5833333333333334,
+      "lg_odd150": 0.45625,
+      "lg_odd50": 0.4833333333333333
+    },
+    "predictions": [
+      {
+        "match": "圖盧茲 vs 史特拉斯堡",
+        "kickoff_taipei": "2026-11-07 03:45",
+        "1x2": "主勝",
+        "1x2_score": 0.4071878260362556,
+        "1x2_margin": 0.0551493994545075,
+        "1x2_r": null,
+        "ou": "大2.5",
+        "ou_p_over": 0.590504957383515,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.4932363688253845,
+        "parity_conf": 0.5067636311746155,
+        "parity_shadow_r": "R1",
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0355280647242207,
+        "p11": 0.0953552382656848
+      },
+      {
+        "match": "歐塞爾 vs 巴黎FC",
+        "kickoff_taipei": "2026-11-08 00:15",
+        "1x2": "客勝",
+        "1x2_score": 0.5109536723672856,
+        "1x2_margin": 0.2648176997829397,
+        "1x2_r": "R3",
+        "ou": "大2.5",
+        "ou_p_over": 0.5599899379464142,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "單",
+        "parity_p_odd": 0.5021708649781405,
+        "parity_conf": 0.5021708649781405,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0814627755040379,
+        "p11": 0.1303953665519942
+      },
+      {
+        "match": "PSG vs 特魯瓦",
+        "kickoff_taipei": "2026-11-08 03:45",
+        "1x2": "主勝",
+        "1x2_score": 0.7994740702944422,
+        "1x2_margin": 0.6813586631452655,
+        "1x2_r": "R1",
+        "ou": "大2.5",
+        "ou_p_over": 0.7500010272426604,
+        "ou_r": "R1",
+        "ou_formal_selected": false,
+        "parity": "單",
+        "parity_p_odd": 0.5013754125657494,
+        "parity_conf": 0.5013754125657494,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "2-0",
+        "p00": 0.0498567499888148,
+        "p11": 0.0949536931174383
+      },
+      {
+        "match": "雷恩 vs 里爾",
+        "kickoff_taipei": "2026-11-08 22:00",
+        "1x2": "主勝",
+        "1x2_score": 0.4117577967951529,
+        "1x2_margin": 0.0946090687045032,
+        "1x2_r": null,
+        "ou": "大2.5",
+        "ou_p_over": 0.6064751708062085,
+        "ou_r": "R3",
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.4971717513458069,
+        "parity_conf": 0.5028282486541931,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": true,
+        "dc_mode": "1-1",
+        "p00": 0.1315299727322735,
+        "p11": 0.1409911011776985
+      },
+      {
+        "match": "勒芒 vs 摩納哥",
+        "kickoff_taipei": "2026-11-09 00:15",
+        "1x2": "客勝",
+        "1x2_score": 0.5264736275543578,
+        "1x2_margin": 0.2848468904362684,
+        "1x2_r": "R2",
+        "ou": "大2.5",
+        "ou_p_over": 0.5861011656019878,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.4997761129113338,
+        "parity_conf": 0.5002238870886662,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0378461084392076,
+        "p11": 0.0989921789580015
+      },
+      {
+        "match": "布雷斯特 vs 里昂",
+        "kickoff_taipei": "2026-11-09 00:15",
+        "1x2": "客勝",
+        "1x2_score": 0.4042776104346829,
+        "1x2_margin": 0.0727347094973704,
+        "1x2_r": null,
+        "ou": "大2.5",
+        "ou_p_over": 0.5018574613195363,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.4950732424622883,
+        "parity_conf": 0.5049267575377117,
+        "parity_shadow_r": "R3",
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0507133653903819,
+        "p11": 0.1127647027841173
+      },
+      {
+        "match": "勒阿弗爾 vs 洛里昂",
+        "kickoff_taipei": "2026-11-09 00:15",
+        "1x2": "客勝",
+        "1x2_score": 0.3835486310196738,
+        "1x2_margin": 0.0623036806930792,
+        "1x2_r": null,
+        "ou": "小2.5",
+        "ou_p_over": 0.4833779367702687,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.4991898573007371,
+        "parity_conf": 0.5008101426992628,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": true,
+        "dc_mode": "1-1",
+        "p00": 0.1250222576011107,
+        "p11": 0.1392898702513797
+      },
+      {
+        "match": "昂熱 vs 尼斯",
+        "kickoff_taipei": "2026-11-09 00:15",
+        "1x2": "客勝",
+        "1x2_score": 0.471793171547506,
+        "1x2_margin": 0.2048704413067938,
+        "1x2_r": null,
+        "ou": "大2.5",
+        "ou_p_over": 0.5365016754311053,
+        "ou_r": null,
+        "ou_formal_selected": false,
+        "parity": "雙",
+        "parity_p_odd": 0.494487612490414,
+        "parity_conf": 0.5055123875095859,
+        "parity_shadow_r": "R2",
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0811006336922332,
+        "p11": 0.126890278214141
+      },
+      {
+        "match": "朗斯 vs 馬賽",
+        "kickoff_taipei": "2026-11-09 03:45",
+        "1x2": "主勝",
+        "1x2_score": 0.4176119910832331,
+        "1x2_margin": 0.0688496806751934,
+        "1x2_r": null,
+        "ou": "大2.5",
+        "ou_p_over": 0.6699090172527489,
+        "ou_r": "R2",
+        "ou_formal_selected": false,
+        "parity": "單",
+        "parity_p_odd": 0.5005675782195256,
+        "parity_conf": 0.5005675782195256,
+        "parity_shadow_r": null,
+        "parity_formal_selected": false,
+        "draw_risk": false,
+        "dc_mode": "1-1",
+        "p00": 0.0301756509595415,
+        "p11": 0.0900181426483183
+      }
+    ],
+    "ranks": {
+      "1x2": [
+        {
+          "rank": "R1",
+          "match": "PSG vs 特魯瓦",
+          "pick": "主勝",
+          "blend_score": 0.7994740702944422,
+          "margin": 0.6813586631452655
+        },
+        {
+          "rank": "R2",
+          "match": "勒芒 vs 摩納哥",
+          "pick": "客勝",
+          "blend_score": 0.5264736275543578,
+          "margin": 0.2848468904362684
+        },
+        {
+          "rank": "R3",
+          "match": "歐塞爾 vs 巴黎FC",
+          "pick": "客勝",
+          "blend_score": 0.5109536723672856,
+          "margin": 0.2648176997829397
+        }
+      ],
+      "ou25_relative": [
+        {
+          "rank": "R1",
+          "match": "PSG vs 特魯瓦",
+          "pick": "大2.5",
+          "p_over": 0.7500010272426604,
+          "formal_selector": false
+        },
+        {
+          "rank": "R2",
+          "match": "朗斯 vs 馬賽",
+          "pick": "大2.5",
+          "p_over": 0.6699090172527489,
+          "formal_selector": false
+        },
+        {
+          "rank": "R3",
+          "match": "雷恩 vs 里爾",
+          "pick": "大2.5",
+          "p_over": 0.6064751708062085,
+          "formal_selector": false
+        }
+      ],
+      "parity_shadow": [
+        {
+          "rank": "R1",
+          "match": "圖盧茲 vs 史特拉斯堡",
+          "pick": "雙",
+          "p_odd": 0.4932363688253845,
+          "formal_selector": false
+        },
+        {
+          "rank": "R2",
+          "match": "昂熱 vs 尼斯",
+          "pick": "雙",
+          "p_odd": 0.494487612490414,
+          "formal_selector": false
+        },
+        {
+          "rank": "R3",
+          "match": "布雷斯特 vs 里昂",
+          "pick": "雙",
+          "p_odd": 0.4950732424622883,
+          "formal_selector": false
+        }
+      ]
+    },
+    "formal_betting_layer": {
+      "ou25_selector": "PASS_0_TRIGGERS",
+      "parity_selector": "PASS_0_TRIGGERS",
+      "parity_shadow_r1r2r3_required_display": true,
+      "parity_skew_alert": false,
+      "parity_direction_count": {
+        "odd": 3,
+        "even": 6
+      }
+    },
+    "draw_focus": [
+      {
+        "match": "雷恩 vs 里爾",
+        "p_draw": 0.3134012962183212,
+        "p11": 0.1409911011776985
+      },
+      {
+        "match": "勒阿弗爾 vs 洛里昂",
+        "p_draw": 0.3065817689750471,
+        "p11": 0.1392898702513797
+      }
+    ],
+    "previous_round": {
+      "gw": 9,
+      "1x2": "6/9",
+      "ou25": "5/9",
+      "parity": "2/9",
+      "ranks_1x2": "3/3",
+      "ranks_ou": "2/3",
+      "ranks_parity": "2/3"
+    },
+    "integrity": [
+      "No future GW10 results used.",
+      "Same-round freeze: GW10 features use only results through GW9.",
+      "Market values are a frozen current/proxy snapshot and must not be relabeled as official opening ticks.",
+      "Parity Shadow R1/R2/R3 are display/research continuity only; formal sparse parity selector has no GW10 trigger and therefore PASS.",
+      "Any PRE-KICK changes must create a new record and may not overwrite this record."
+    ],
+    "pre_kick_action": "Create LIGUE1-2026-27-GW10-*-PREKICK if T-1h comparable market data changes direction/rank; preserve this record.",
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.1-audit",
+    "fixtures": [
+      {
+        "home": "圖盧茲",
+        "away": "史特拉斯堡",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-07 03:45"
+      },
+      {
+        "home": "歐塞爾",
+        "away": "巴黎FC",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "kickoff_taipei": "2026-11-08 00:15"
+      },
+      {
+        "home": "PSG",
+        "away": "特魯瓦",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "kickoff_taipei": "2026-11-08 03:45"
+      },
+      {
+        "home": "雷恩",
+        "away": "里爾",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-08 22:00"
+      },
+      {
+        "home": "勒芒",
+        "away": "摩納哥",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-09 00:15"
+      },
+      {
+        "home": "布雷斯特",
+        "away": "里昂",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-09 00:15"
+      },
+      {
+        "home": "勒阿弗爾",
+        "away": "洛里昂",
+        "1X2": "客勝",
+        "OU25": "小2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-09 00:15"
+      },
+      {
+        "home": "昂熱",
+        "away": "尼斯",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "kickoff_taipei": "2026-11-09 00:15"
+      },
+      {
+        "home": "朗斯",
+        "away": "馬賽",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "kickoff_taipei": "2026-11-09 03:45"
+      }
+    ],
+    "1X2": [
+      {
+        "home": "圖盧茲",
+        "away": "史特拉斯堡",
+        "pick": "主勝"
+      },
+      {
+        "home": "歐塞爾",
+        "away": "巴黎FC",
+        "pick": "客勝"
+      },
+      {
+        "home": "PSG",
+        "away": "特魯瓦",
+        "pick": "主勝"
+      },
+      {
+        "home": "雷恩",
+        "away": "里爾",
+        "pick": "主勝"
+      },
+      {
+        "home": "勒芒",
+        "away": "摩納哥",
+        "pick": "客勝"
+      },
+      {
+        "home": "布雷斯特",
+        "away": "里昂",
+        "pick": "客勝"
+      },
+      {
+        "home": "勒阿弗爾",
+        "away": "洛里昂",
+        "pick": "客勝"
+      },
+      {
+        "home": "昂熱",
+        "away": "尼斯",
+        "pick": "客勝"
+      },
+      {
+        "home": "朗斯",
+        "away": "馬賽",
+        "pick": "主勝"
+      }
+    ],
+    "OU25": [
+      {
+        "home": "圖盧茲",
+        "away": "史特拉斯堡",
+        "pick": "大2.5"
+      },
+      {
+        "home": "歐塞爾",
+        "away": "巴黎FC",
+        "pick": "大2.5"
+      },
+      {
+        "home": "PSG",
+        "away": "特魯瓦",
+        "pick": "大2.5"
+      },
+      {
+        "home": "雷恩",
+        "away": "里爾",
+        "pick": "大2.5"
+      },
+      {
+        "home": "勒芒",
+        "away": "摩納哥",
+        "pick": "大2.5"
+      },
+      {
+        "home": "布雷斯特",
+        "away": "里昂",
+        "pick": "大2.5"
+      },
+      {
+        "home": "勒阿弗爾",
+        "away": "洛里昂",
+        "pick": "小2.5"
+      },
+      {
+        "home": "昂熱",
+        "away": "尼斯",
+        "pick": "大2.5"
+      },
+      {
+        "home": "朗斯",
+        "away": "馬賽",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "home": "圖盧茲",
+        "away": "史特拉斯堡",
+        "pick": "雙"
+      },
+      {
+        "home": "歐塞爾",
+        "away": "巴黎FC",
+        "pick": "單"
+      },
+      {
+        "home": "PSG",
+        "away": "特魯瓦",
+        "pick": "單"
+      },
+      {
+        "home": "雷恩",
+        "away": "里爾",
+        "pick": "雙"
+      },
+      {
+        "home": "勒芒",
+        "away": "摩納哥",
+        "pick": "雙"
+      },
+      {
+        "home": "布雷斯特",
+        "away": "里昂",
+        "pick": "雙"
+      },
+      {
+        "home": "勒阿弗爾",
+        "away": "洛里昂",
+        "pick": "雙"
+      },
+      {
+        "home": "昂熱",
+        "away": "尼斯",
+        "pick": "雙"
+      },
+      {
+        "home": "朗斯",
+        "away": "馬賽",
+        "pick": "單"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "match": "PSG vs 特魯瓦",
+          "pick": "主勝",
+          "blend_score": 0.7994740702944422,
+          "margin": 0.6813586631452655
+        },
+        {
+          "rank": "R2",
+          "match": "勒芒 vs 摩納哥",
+          "pick": "客勝",
+          "blend_score": 0.5264736275543578,
+          "margin": 0.2848468904362684
+        },
+        {
+          "rank": "R3",
+          "match": "歐塞爾 vs 巴黎FC",
+          "pick": "客勝",
+          "blend_score": 0.5109536723672856,
+          "margin": 0.2648176997829397
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "match": "PSG vs 特魯瓦",
+          "pick": "大2.5",
+          "p_over": 0.7500010272426604,
+          "formal_selector": false
+        },
+        {
+          "rank": "R2",
+          "match": "朗斯 vs 馬賽",
+          "pick": "大2.5",
+          "p_over": 0.6699090172527489,
+          "formal_selector": false
+        },
+        {
+          "rank": "R3",
+          "match": "雷恩 vs 里爾",
+          "pick": "大2.5",
+          "p_over": 0.6064751708062085,
+          "formal_selector": false
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "match": "圖盧茲 vs 史特拉斯堡",
+          "pick": "雙",
+          "p_odd": 0.4932363688253845,
+          "formal_selector": false
+        },
+        {
+          "rank": "R2",
+          "match": "昂熱 vs 尼斯",
+          "pick": "雙",
+          "p_odd": 0.494487612490414,
+          "formal_selector": false
+        },
+        {
+          "rank": "R3",
+          "match": "布雷斯特 vs 里昂",
+          "pick": "雙",
+          "p_odd": 0.4950732424622883,
+          "formal_selector": false
+        }
+      ]
+    },
+    "PASS": {
+      "1X2": false,
+      "OU25_formal_selector": true,
+      "parity_formal_selector": true,
+      "parity_shadow_display_only": true
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": false,
+      "direction_split": "3 ODD / 6 EVEN"
+    },
+    "XUAN_status": {
+      "status": "SHADOW_ONLY_NOT_USED",
+      "affects_formal_direction": false
+    },
+    "research_only": false,
+    "counts_as_official_forward_result": true,
+    "pre_kick_status": "PENDING",
+    "integrity_flags": {
+      "prediction_script": "PRESENT_IN_REPRO_ZIP",
+      "model_weights": "PRESENT_IN_REPRO_ZIP",
+      "feature_matrix": "PRESENT_IN_REPRO_ZIP",
+      "bet365_first_tick": "MISSING",
+      "xuan_exact_generator": "NOT_RUN",
+      "archive_identity": "FROZEN_MODEL_PACKAGE + MARKETPROXY",
+      "sha256_manifest": "PRESENT_IN_REPRO_ZIP",
+      "overwrite_old_predictions": false
+    },
+    "source_and_cutoff": {
+      "market_snapshot": "2026-11-05 current/proxy snapshot",
+      "source_files": [
+        "MARKET_INPUTS.csv",
+        "SOURCES.md",
+        "MODEL_OUTPUT_FULL.csv in REPRO zip"
+      ],
+      "exact_cutoff_time": "MISSING",
+      "market_type": "MARKETPROXY"
+    }
+  },
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.0",
+    "generated_at": "2026-11-05T20:42:00+08:00",
+    "league": "Bundesliga",
+    "league_zh": "德甲",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "parent_record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "audit_id": "BUNDESLIGA-2026-27-GW09-20261105-SKEW-AUDIT",
+    "status": {
+      "open_marketproxy": "DONE",
+      "skew_audit": "DONE",
+      "archive_final": "DONE",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING"
+    },
+    "model": {
+      "parity": "Bundesliga Parity V2-RG1",
+      "xuan": "SHADOW_ONLY",
+      "one_x_two_ou": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+      "exact_binary_replay": false
+    },
+    "integrity": {
+      "master_path": "/R1_R2 Master/R1_R2_Master.md",
+      "market_type": "MARKETPROXY",
+      "overwrite_old_predictions": false,
+      "parity_skew_alert": true,
+      "parity_skew_audit_passed": true
+    },
+    "ranks": {
+      "1x2": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "客勝",
+          "team": "拜仁"
+        },
+        {
+          "rank": "R2",
+          "home": "多特蒙德",
+          "away": "艾禾斯堡",
+          "pick": "主勝",
+          "team": "多特蒙德"
+        },
+        {
+          "rank": "R3",
+          "home": "RB萊比錫",
+          "away": "奧格斯堡",
+          "pick": "主勝",
+          "team": "RB萊比錫"
+        }
+      ],
+      "ou25": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "大2.5"
+        },
+        {
+          "rank": "R2",
+          "home": "多特蒙德",
+          "away": "艾禾斯堡",
+          "pick": "大2.5"
+        },
+        {
+          "rank": "R3",
+          "home": "史特加",
+          "away": "雲達不萊梅",
+          "pick": "大2.5"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "單",
+          "regime": "deep-away ODD",
+          "research_reliability": "15/22=68.18%"
+        },
+        {
+          "rank": "R2",
+          "home": "漢堡",
+          "away": "門興",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN",
+          "research_reliability": "100/180=55.56%"
+        },
+        {
+          "rank": "R3",
+          "home": "科隆",
+          "away": "勒沃庫森",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN",
+          "research_reliability": "100/180=55.56%"
+        }
+      ],
+      "draw_focus": [
+        {
+          "rank": "R1",
+          "home": "漢堡",
+          "away": "門興",
+          "pick": "和"
+        },
+        {
+          "rank": "R2",
+          "home": "柏德博恩",
+          "away": "法蘭克福",
+          "pick": "和"
+        },
+        {
+          "rank": "R3",
+          "home": "科隆",
+          "away": "勒沃庫森",
+          "pick": "和",
+          "status": "high_odds_shadow"
+        }
+      ]
+    },
+    "matches": [
+      {
+        "home": "漢堡",
+        "away": "門興",
+        "pick_1x2": "和",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "pick_1x2": "和",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick_1x2": "拜仁客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單"
+      },
+      {
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick_1x2": "RB萊比錫主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick_1x2": "多特蒙德主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick_1x2": "史特加主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick_1x2": "勒沃庫森客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "弗賴堡",
+        "away": "柏林聯",
+        "pick_1x2": "弗賴堡主勝",
+        "pick_ou25": "大2.5",
+        "ou_strength": "weak",
+        "pick_parity": "雙"
+      },
+      {
+        "home": "霍芬海姆",
+        "away": "沙爾克04",
+        "pick_1x2": "霍芬海姆主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙"
+      }
+    ],
+    "fixtures": [
+      {
+        "home": "漢堡",
+        "away": "門興",
+        "1X2": "和",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "1X2": "和",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "美因茨",
+        "away": "拜仁",
+        "1X2": "拜仁客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "1X2": "RB萊比錫主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "1X2": "多特蒙德主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "1X2": "史特加主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "1X2": "勒沃庫森客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "弗賴堡",
+        "away": "柏林聯",
+        "1X2": "弗賴堡主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "霍芬海姆",
+        "away": "沙爾克04",
+        "1X2": "霍芬海姆主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      }
+    ],
+    "1X2": [
+      {
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "和"
+      },
+      {
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "pick": "和"
+      },
+      {
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "拜仁客勝"
+      },
+      {
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick": "RB萊比錫主勝"
+      },
+      {
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "多特蒙德主勝"
+      },
+      {
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick": "史特加主勝"
+      },
+      {
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "勒沃庫森客勝"
+      },
+      {
+        "home": "弗賴堡",
+        "away": "柏林聯",
+        "pick": "弗賴堡主勝"
+      },
+      {
+        "home": "霍芬海姆",
+        "away": "沙爾克04",
+        "pick": "霍芬海姆主勝"
+      }
+    ],
+    "OU25": [
+      {
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "大2.5"
+      },
+      {
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "pick": "大2.5"
+      },
+      {
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "大2.5"
+      },
+      {
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick": "大2.5"
+      },
+      {
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "大2.5"
+      },
+      {
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick": "大2.5"
+      },
+      {
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "大2.5"
+      },
+      {
+        "home": "弗賴堡",
+        "away": "柏林聯",
+        "pick": "大2.5"
+      },
+      {
+        "home": "霍芬海姆",
+        "away": "沙爾克04",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "雙"
+      },
+      {
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "pick": "雙"
+      },
+      {
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "單"
+      },
+      {
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick": "雙"
+      },
+      {
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "雙"
+      },
+      {
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick": "雙"
+      },
+      {
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "雙"
+      },
+      {
+        "home": "弗賴堡",
+        "away": "柏林聯",
+        "pick": "雙"
+      },
+      {
+        "home": "霍芬海姆",
+        "away": "沙爾克04",
+        "pick": "雙"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "客勝",
+          "team": "拜仁"
+        },
+        {
+          "rank": "R2",
+          "home": "多特蒙德",
+          "away": "艾禾斯堡",
+          "pick": "主勝",
+          "team": "多特蒙德"
+        },
+        {
+          "rank": "R3",
+          "home": "RB萊比錫",
+          "away": "奧格斯堡",
+          "pick": "主勝",
+          "team": "RB萊比錫"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "大2.5"
+        },
+        {
+          "rank": "R2",
+          "home": "多特蒙德",
+          "away": "艾禾斯堡",
+          "pick": "大2.5"
+        },
+        {
+          "rank": "R3",
+          "home": "史特加",
+          "away": "雲達不萊梅",
+          "pick": "大2.5"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "home": "美因茨",
+          "away": "拜仁",
+          "pick": "單",
+          "regime": "deep-away ODD",
+          "research_reliability": "15/22=68.18%"
+        },
+        {
+          "rank": "R2",
+          "home": "漢堡",
+          "away": "門興",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN",
+          "research_reliability": "100/180=55.56%"
+        },
+        {
+          "rank": "R3",
+          "home": "科隆",
+          "away": "勒沃庫森",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN",
+          "research_reliability": "100/180=55.56%"
+        }
+      ]
+    },
+    "PASS": {
+      "1X2": false,
+      "OU25": false,
+      "parity": false
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": true,
+      "audit_passed": true,
+      "final_split": "1 ODD / 8 EVEN"
+    },
+    "XUAN_status": {
+      "status": "SHADOW_ONLY",
+      "affects_formal_direction": false
+    },
+    "research_only": false,
+    "counts_as_official_forward_result": true,
+    "pre_kick_status": "PENDING",
+    "integrity_flags": {
+      "prediction_script": "MISSING",
+      "model_weights": "MISSING",
+      "feature_matrix": "MISSING",
+      "bet365_first_tick": "MISSING",
+      "xuan_exact_generator": "NOT_RUN",
+      "archive_identity": "MARKETPROXY + SKEW_AUDIT",
+      "overwrite_old_predictions": false
+    },
+    "source_and_cutoff": {
+      "market_snapshot": "2026-11-04 current/market proxy; skew audit 2026-11-05",
+      "source_urls": "MISSING",
+      "exact_cutoff_time": "MISSING",
+      "market_type": "MARKETPROXY"
+    }
+  },
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.1-audit",
+    "generated_at": "2026-11-05",
+    "league": "EPL",
+    "league_zh": "英超",
+    "season": "2026-27",
+    "gw": 10,
+    "record_id": "EPL-2026-27-GW10-20261105-MARKETPROXY-RECOVERED",
+    "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED",
+    "model": {
+      "formal_identity": "EPL R90-style recovery line + GW9 fixed corrections",
+      "exact_binary_replay": false,
+      "recovery_flag": "RECOVERED_COMPONENT",
+      "market_label": "MARKETPROXY"
+    },
+    "fixtures": [
+      {
+        "home": "愛華頓",
+        "away": "高雲地利",
+        "1X2": "愛華頓主勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "列斯聯",
+        "away": "熱刺",
+        "1X2": "熱刺客勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "阿仙奴",
+        "away": "侯城",
+        "1X2": "阿仙奴主勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "富咸",
+        "away": "紐卡素",
+        "1X2": "富咸主勝",
+        "OU25": "小2.5",
+        "parity": "單"
+      },
+      {
+        "home": "諾定咸森林",
+        "away": "曼城",
+        "1X2": "曼城客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "白禮頓",
+        "away": "賓福特",
+        "1X2": "白禮頓主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "水晶宮",
+        "away": "利物浦",
+        "1X2": "利物浦客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "葉士域治",
+        "away": "般尼茅夫",
+        "1X2": "般尼茅夫客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "新特蘭",
+        "away": "車路士",
+        "1X2": "車路士客勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "曼聯",
+        "away": "阿士東維拉",
+        "1X2": "曼聯主勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      }
+    ],
+    "1X2": [
+      {
+        "home": "愛華頓",
+        "away": "高雲地利",
+        "pick": "愛華頓主勝"
+      },
+      {
+        "home": "列斯聯",
+        "away": "熱刺",
+        "pick": "熱刺客勝"
+      },
+      {
+        "home": "阿仙奴",
+        "away": "侯城",
+        "pick": "阿仙奴主勝"
+      },
+      {
+        "home": "富咸",
+        "away": "紐卡素",
+        "pick": "富咸主勝"
+      },
+      {
+        "home": "諾定咸森林",
+        "away": "曼城",
+        "pick": "曼城客勝"
+      },
+      {
+        "home": "白禮頓",
+        "away": "賓福特",
+        "pick": "白禮頓主勝"
+      },
+      {
+        "home": "水晶宮",
+        "away": "利物浦",
+        "pick": "利物浦客勝"
+      },
+      {
+        "home": "葉士域治",
+        "away": "般尼茅夫",
+        "pick": "般尼茅夫客勝"
+      },
+      {
+        "home": "新特蘭",
+        "away": "車路士",
+        "pick": "車路士客勝"
+      },
+      {
+        "home": "曼聯",
+        "away": "阿士東維拉",
+        "pick": "曼聯主勝"
+      }
+    ],
+    "OU25": [
+      {
+        "home": "愛華頓",
+        "away": "高雲地利",
+        "pick": "小2.5"
+      },
+      {
+        "home": "列斯聯",
+        "away": "熱刺",
+        "pick": "小2.5"
+      },
+      {
+        "home": "阿仙奴",
+        "away": "侯城",
+        "pick": "大2.5"
+      },
+      {
+        "home": "富咸",
+        "away": "紐卡素",
+        "pick": "小2.5"
+      },
+      {
+        "home": "諾定咸森林",
+        "away": "曼城",
+        "pick": "大2.5"
+      },
+      {
+        "home": "白禮頓",
+        "away": "賓福特",
+        "pick": "大2.5"
+      },
+      {
+        "home": "水晶宮",
+        "away": "利物浦",
+        "pick": "大2.5"
+      },
+      {
+        "home": "葉士域治",
+        "away": "般尼茅夫",
+        "pick": "大2.5"
+      },
+      {
+        "home": "新特蘭",
+        "away": "車路士",
+        "pick": "小2.5"
+      },
+      {
+        "home": "曼聯",
+        "away": "阿士東維拉",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "home": "愛華頓",
+        "away": "高雲地利",
+        "pick": "雙"
+      },
+      {
+        "home": "列斯聯",
+        "away": "熱刺",
+        "pick": "雙"
+      },
+      {
+        "home": "阿仙奴",
+        "away": "侯城",
+        "pick": "單"
+      },
+      {
+        "home": "富咸",
+        "away": "紐卡素",
+        "pick": "單"
+      },
+      {
+        "home": "諾定咸森林",
+        "away": "曼城",
+        "pick": "單"
+      },
+      {
+        "home": "白禮頓",
+        "away": "賓福特",
+        "pick": "雙"
+      },
+      {
+        "home": "水晶宮",
+        "away": "利物浦",
+        "pick": "雙"
+      },
+      {
+        "home": "葉士域治",
+        "away": "般尼茅夫",
+        "pick": "雙"
+      },
+      {
+        "home": "新特蘭",
+        "away": "車路士",
+        "pick": "雙"
+      },
+      {
+        "home": "曼聯",
+        "away": "阿士東維拉",
+        "pick": "單"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "match": "阿仙奴 vs 侯城",
+          "pick": "阿仙奴主勝"
+        },
+        {
+          "rank": "R2",
+          "match": "水晶宮 vs 利物浦",
+          "pick": "利物浦客勝"
+        },
+        {
+          "rank": "R3",
+          "match": "愛華頓 vs 高雲地利",
+          "pick": "愛華頓主勝"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "match": "列斯聯 vs 熱刺",
+          "pick": "小2.5"
+        },
+        {
+          "rank": "R2",
+          "match": "阿仙奴 vs 侯城",
+          "pick": "大2.5"
+        },
+        {
+          "rank": "R3",
+          "match": "葉士域治 vs 般尼茅夫",
+          "pick": "大2.5"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "match": "列斯聯 vs 熱刺",
+          "pick": "雙"
+        },
+        {
+          "rank": "R2",
+          "match": "諾定咸森林 vs 曼城",
+          "pick": "單"
+        },
+        {
+          "rank": "R3",
+          "match": "阿仙奴 vs 侯城",
+          "pick": "單"
+        }
+      ]
+    },
+    "PASS": {
+      "1X2": false,
+      "OU25": false,
+      "parity": false
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": false,
+      "direction_split": "4 ODD / 6 EVEN"
+    },
+    "XUAN_status": {
+      "XUAN_R1_Exact": "NOT_RUN",
+      "XUAN_CONFIRM_AGAINST": "NOT_RUN",
+      "XUAN_PROXY": "NOT_RUN"
+    },
+    "research_only": false,
+    "counts_as_official_forward_result": true,
+    "pre_kick_status": "PENDING",
+    "integrity_flags": {
+      "prediction_script": "MISSING",
+      "model_weights": "MISSING",
+      "feature_matrix": "MISSING",
+      "bet365_first_tick": "MISSING",
+      "xuan_exact_generator": "MISSING",
+      "archive_identity": "RECOVERED_COMPONENT",
+      "overwrite_old_predictions": false
+    },
+    "source_and_cutoff": {
+      "fixture_source": "PremierLeague.com 2026-27 fixtures / November amendments",
+      "market_sources": [
+        "OddsPortal current 1X2 comparison",
+        "BetMonitor O/U2.5 comparison"
+      ],
+      "retrieved_date": "2026-11-05",
+      "exact_cutoff_time": "MISSING",
+      "market_type": "MARKETPROXY"
+    }
+  },
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "league": "Serie A",
+    "season": "2026-27",
+    "matchday": 11,
+    "record_id": "SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED",
+    "archive_date_taipei": "2026-11-05",
+    "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED",
+    "model": {
+      "formal_identity": "Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+      "wf6_rules_priority": [
+        3,
+        1,
+        2,
+        8,
+        6,
+        4
+      ],
+      "exact_trigger_replay": false,
+      "recovery_flag": "RECOVERED_COMPONENT",
+      "market_label": "MARKETPROXY"
+    },
+    "fixtures": [
+      {
+        "home": "Venezia",
+        "away": "Udinese",
+        "1X2": "HOME",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      },
+      {
+        "home": "Cagliari",
+        "away": "Frosinone",
+        "1X2": "AWAY",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      },
+      {
+        "home": "Torino",
+        "away": "Lecce",
+        "1X2": "HOME",
+        "OU25": "UNDER",
+        "parity": "ODD"
+      },
+      {
+        "home": "Parma",
+        "away": "Bologna",
+        "1X2": "AWAY",
+        "OU25": "UNDER",
+        "parity": "ODD"
+      },
+      {
+        "home": "Roma",
+        "away": "Sassuolo",
+        "1X2": "HOME",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      },
+      {
+        "home": "Napoli",
+        "away": "Lazio",
+        "1X2": "AWAY",
+        "OU25": "OVER",
+        "parity": "ODD"
+      },
+      {
+        "home": "Genoa",
+        "away": "Milan",
+        "1X2": "AWAY",
+        "OU25": "UNDER",
+        "parity": "ODD"
+      },
+      {
+        "home": "Monza",
+        "away": "Atalanta",
+        "1X2": "AWAY",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      },
+      {
+        "home": "Inter",
+        "away": "Como",
+        "1X2": "HOME",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      },
+      {
+        "home": "Fiorentina",
+        "away": "Juventus",
+        "1X2": "AWAY",
+        "OU25": "OVER",
+        "parity": "EVEN"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "match": "Roma vs Sassuolo",
+          "pick": "Roma HOME"
+        },
+        {
+          "rank": "R2",
+          "match": "Genoa vs Milan",
+          "pick": "Milan AWAY"
+        },
+        {
+          "rank": "R3",
+          "match": "Fiorentina vs Juventus",
+          "pick": "Juventus AWAY"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "match": "Roma vs Sassuolo",
+          "pick": "OVER 2.5"
+        },
+        {
+          "rank": "R2",
+          "match": "Inter vs Como",
+          "pick": "OVER 2.5"
+        },
+        {
+          "rank": "R3",
+          "match": "Cagliari vs Frosinone",
+          "pick": "OVER 2.5"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "match": "Roma vs Sassuolo",
+          "pick": "EVEN"
+        },
+        {
+          "rank": "R2",
+          "match": "Cagliari vs Frosinone",
+          "pick": "EVEN"
+        },
+        {
+          "rank": "R3",
+          "match": "Inter vs Como",
+          "pick": "EVEN"
+        }
+      ]
+    },
+    "score_regression_watch": {
+      "0-0": [
+        "Torino vs Lecce"
+      ],
+      "1-1": [
+        "Napoli vs Lazio"
+      ]
+    },
+    "prekick_required": true,
+    "overwrite_policy": "DO_NOT_OVERWRITE_PREMATCH_RECORD; create separate PREKICK record if ranking/direction changes",
+    "schema_version": "1.1-audit",
+    "gw": 11,
+    "1X2": [
+      {
+        "home": "Venezia",
+        "away": "Udinese",
+        "pick": "HOME"
+      },
+      {
+        "home": "Cagliari",
+        "away": "Frosinone",
+        "pick": "AWAY"
+      },
+      {
+        "home": "Torino",
+        "away": "Lecce",
+        "pick": "HOME"
+      },
+      {
+        "home": "Parma",
+        "away": "Bologna",
+        "pick": "AWAY"
+      },
+      {
+        "home": "Roma",
+        "away": "Sassuolo",
+        "pick": "HOME"
+      },
+      {
+        "home": "Napoli",
+        "away": "Lazio",
+        "pick": "AWAY"
+      },
+      {
+        "home": "Genoa",
+        "away": "Milan",
+        "pick": "AWAY"
+      },
+      {
+        "home": "Monza",
+        "away": "Atalanta",
+        "pick": "AWAY"
+      },
+      {
+        "home": "Inter",
+        "away": "Como",
+        "pick": "HOME"
+      },
+      {
+        "home": "Fiorentina",
+        "away": "Juventus",
+        "pick": "AWAY"
+      }
+    ],
+    "OU25": [
+      {
+        "home": "Venezia",
+        "away": "Udinese",
+        "pick": "OVER"
+      },
+      {
+        "home": "Cagliari",
+        "away": "Frosinone",
+        "pick": "OVER"
+      },
+      {
+        "home": "Torino",
+        "away": "Lecce",
+        "pick": "UNDER"
+      },
+      {
+        "home": "Parma",
+        "away": "Bologna",
+        "pick": "UNDER"
+      },
+      {
+        "home": "Roma",
+        "away": "Sassuolo",
+        "pick": "OVER"
+      },
+      {
+        "home": "Napoli",
+        "away": "Lazio",
+        "pick": "OVER"
+      },
+      {
+        "home": "Genoa",
+        "away": "Milan",
+        "pick": "UNDER"
+      },
+      {
+        "home": "Monza",
+        "away": "Atalanta",
+        "pick": "OVER"
+      },
+      {
+        "home": "Inter",
+        "away": "Como",
+        "pick": "OVER"
+      },
+      {
+        "home": "Fiorentina",
+        "away": "Juventus",
+        "pick": "OVER"
+      }
+    ],
+    "parity": [
+      {
+        "home": "Venezia",
+        "away": "Udinese",
+        "pick": "EVEN"
+      },
+      {
+        "home": "Cagliari",
+        "away": "Frosinone",
+        "pick": "EVEN"
+      },
+      {
+        "home": "Torino",
+        "away": "Lecce",
+        "pick": "ODD"
+      },
+      {
+        "home": "Parma",
+        "away": "Bologna",
+        "pick": "ODD"
+      },
+      {
+        "home": "Roma",
+        "away": "Sassuolo",
+        "pick": "EVEN"
+      },
+      {
+        "home": "Napoli",
+        "away": "Lazio",
+        "pick": "ODD"
+      },
+      {
+        "home": "Genoa",
+        "away": "Milan",
+        "pick": "ODD"
+      },
+      {
+        "home": "Monza",
+        "away": "Atalanta",
+        "pick": "EVEN"
+      },
+      {
+        "home": "Inter",
+        "away": "Como",
+        "pick": "EVEN"
+      },
+      {
+        "home": "Fiorentina",
+        "away": "Juventus",
+        "pick": "EVEN"
+      }
+    ],
+    "PASS": {
+      "1X2": false,
+      "OU25": false,
+      "parity": false
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": false,
+      "status": "NOT_RECORDED_AS_ALERT; 4 ODD / 6 EVEN from frozen directions"
+    },
+    "XUAN_status": {
+      "formal_identity": "Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+      "exact_trigger_replay": false,
+      "expert_generator": "MISSING",
+      "status": "RECOVERED_COMPONENT"
+    },
+    "research_only": false,
+    "counts_as_official_forward_result": true,
+    "pre_kick_status": "PENDING",
+    "integrity_flags": {
+      "prediction_script": "MISSING",
+      "model_weights": "MISSING",
+      "feature_matrix": "MISSING",
+      "bet365_first_tick": "MISSING",
+      "xuan_exact_generator": "MISSING",
+      "archive_identity": "RECOVERED_COMPONENT",
+      "overwrite_old_predictions": false
+    },
+    "source_and_cutoff": {
+      "market_snapshot": "2026-11-05 current/early market proxy",
+      "market_sources": [
+        "OddsPortal multi-book",
+        "Pinnacle / Bet365 current proxy"
+      ],
+      "exact_cutoff_time": "MISSING",
+      "market_type": "MARKETPROXY"
+    }
+  }
+]

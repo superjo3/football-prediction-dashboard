@@ -1,0 +1,290 @@
+[
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-1",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-01",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-2",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-02",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-3",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-03",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-4",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-04",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-5",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-05",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-6",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-06",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-7",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-07",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-8",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-08",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW06-20261012-REPORTED-9",
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "match_id": "BUNDESLIGA-2026-27-GW06-09",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 435,
+      "end_line": 445,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-1",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-01",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-2",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-02",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-3",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-03",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-4",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-04",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-5",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-05",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-6",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-06",
+    "directions": {
+      "1x2": "客勝",
+      "ou25": "小"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-7",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-07",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-8",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-08",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  },
+  {
+    "id": "LIGUE1-2026-27-GW07-20261012-REPORTED-9",
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "match_id": "LIGUE1-2026-27-GW07-09",
+    "directions": {
+      "1x2": "主勝",
+      "ou25": "大"
+    },
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 939,
+      "end_line": 951,
+      "version": 56
+    },
+    "classification": "RESULT_REPORTED_ONLY"
+  }
+]

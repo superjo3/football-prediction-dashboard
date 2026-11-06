@@ -1,0 +1,610 @@
+[
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.0",
+    "generated_at": "2026-11-05T20:47:00+08:00",
+    "league": "LaLiga",
+    "league_zh": "西甲",
+    "season": "2026-27",
+    "gw": 12,
+    "record_id": "LALIGA-2026-27-GW12-20261105-RESEARCH-ARCHIVE-AUDIT",
+    "parent_record_id": "LALIGA-2026-27-GW12-20261104-DUALTRACK-RESEARCH",
+    "status": {
+      "pre_match_research": "DONE",
+      "research_archive_audit": "DONE",
+      "official_exact_model_prediction": "BLOCKED_NOT_RUN",
+      "archive_final": "RESEARCH_ONLY",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING"
+    },
+    "model": {
+      "league_native_official": "R90-X V3 / S-XOR (GW08 latest indexed)",
+      "official_exact_binary_replay": false,
+      "v1_exact": "NOT_RUN",
+      "gw11_baseline_exact": "NOT_RUN",
+      "v2": "V2-RESEARCH_MARKETPROXY (frozen 2026-11-04)",
+      "xuan": "SHADOW_NOT_RUN"
+    },
+    "integrity": {
+      "master_path": "/R1_R2 Master/R1_R2_Master.md",
+      "official_latest_unchanged": "LALIGA-2026-27-GW08-20261005",
+      "research_only": true,
+      "counts_as_official_model_forward_result": false,
+      "overwrite_old_predictions": false,
+      "opening_odds_verified": false,
+      "pre_kick_odds_verified": false,
+      "source_snapshot_sha256": "cb95c2e3b1fb1a34a26720d77a3898775d6b1693086b0cbad611e02d322caa01",
+      "model_weights_present": false,
+      "feature_builder_present": false,
+      "per_match_feature_matrix_present": false,
+      "bet365_first_tick_present": false,
+      "parity_skew_alert": false,
+      "parity_skew_rule": "5 odd / 5 even; no 7:3 skew alert"
+    },
+    "ranks": {
+      "1x2": [
+        {
+          "rank": "R1",
+          "home": "華倫西亞",
+          "away": "皇家馬德里",
+          "pick": "客勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "維拉利爾",
+          "away": "加泰",
+          "pick": "主勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "皇家蘇斯達",
+          "away": "華歷簡奴",
+          "pick": "主勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ],
+      "ou25": [
+        {
+          "rank": "R1",
+          "home": "馬德里體育會",
+          "away": "巴塞隆拿",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "華倫西亞",
+          "away": "皇家馬德里",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "皇家蘇斯達",
+          "away": "華歷簡奴",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "home": "西維爾",
+          "away": "艾拉維斯",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "奧沙辛拿",
+          "away": "畢爾包",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "愛斯賓奴",
+          "away": "拉科魯尼亞",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ]
+    },
+    "official_high_confidence_parity_ranks": [],
+    "matches": [
+      {
+        "kickoff_taipei": "2026/11/07 04:00",
+        "home": "西維爾",
+        "away": "艾拉維斯",
+        "pick_1x2": "主勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "雙",
+        "risk_note": "主勝優勢不大；偏小球",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/07 21:00",
+        "home": "馬拉加",
+        "away": "桑坦德",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "risk_note": "1X2 很接近；PASS精選",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/07 23:15",
+        "home": "愛斯賓奴",
+        "away": "拉科魯尼亞",
+        "pick_1x2": "主勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "雙",
+        "risk_note": "1X2高熵；PASS精選",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/08 01:30",
+        "home": "奧沙辛拿",
+        "away": "畢爾包",
+        "pick_1x2": "客勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "雙",
+        "risk_note": "客勝並非穩膽",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/08 04:00",
+        "home": "華倫西亞",
+        "away": "皇家馬德里",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "risk_note": "小心客隊輪換；大2.5≠大3.5",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/08 21:00",
+        "home": "艾爾切",
+        "away": "貝迪斯",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "risk_note": "客勝偏熱但非穩膽",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/08 23:15",
+        "home": "皇家蘇斯達",
+        "away": "華歷簡奴",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "risk_note": "高進球預期，不轉換為單雙高信心",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/09 01:30",
+        "home": "切爾達",
+        "away": "利雲特",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "risk_note": "略偏大；單雙低信心",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/09 01:30",
+        "home": "維拉利爾",
+        "away": "加泰",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "risk_note": "強勢主勝但有0-0/1-1冷門風險",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      },
+      {
+        "kickoff_taipei": "2026/11/09 04:00",
+        "home": "馬德里體育會",
+        "away": "巴塞隆拿",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "risk_note": "強強戰，1X2精選PASS",
+        "result": null,
+        "odds_open": null,
+        "odds_prekick": null
+      }
+    ],
+    "historical_reference": {
+      "type": "GW09-11 RESEARCH_ONLY NOT EXACT V3",
+      "1x2": {
+        "hits": 18,
+        "n": 30
+      },
+      "ou25": {
+        "hits": 17,
+        "n": 30
+      },
+      "parity": {
+        "hits": 21,
+        "n": 30
+      },
+      "parity_r1": {
+        "hits": 3,
+        "n": 3
+      },
+      "parity_r2": {
+        "hits": 2,
+        "n": 3
+      },
+      "parity_r1_r2": {
+        "hits": 5,
+        "n": 6
+      }
+    },
+    "missing_to_finalize_official": [
+      "R90-X V3 full executable source and feature builder",
+      "model settings/weights/feature ordering",
+      "frozen GW12 pre-match inputs",
+      "Bet365 opening/OPENPROXY provenance with timestamps",
+      "true model-generated 1X2, OU25, parity and R positions"
+    ],
+    "sources": [
+      "https://www.laliga.com/laliga-easports/resultados/2026-27/jornada-12",
+      "/R1_R2 Master/LALIGA-2026-27-GW12-20261104-DUALTRACK-RESEARCH.md"
+    ],
+    "fixtures": [
+      {
+        "home": "西維爾",
+        "away": "艾拉維斯",
+        "1X2": "主勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "馬拉加",
+        "away": "桑坦德",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "愛斯賓奴",
+        "away": "拉科魯尼亞",
+        "1X2": "主勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "奧沙辛拿",
+        "away": "畢爾包",
+        "1X2": "客勝",
+        "OU25": "小2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "華倫西亞",
+        "away": "皇家馬德里",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "艾爾切",
+        "away": "貝迪斯",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "皇家蘇斯達",
+        "away": "華歷簡奴",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      },
+      {
+        "home": "切爾達",
+        "away": "利雲特",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "維拉利爾",
+        "away": "加泰",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "馬德里體育會",
+        "away": "巴塞隆拿",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單"
+      }
+    ],
+    "1X2": [
+      {
+        "home": "西維爾",
+        "away": "艾拉維斯",
+        "pick": "主勝"
+      },
+      {
+        "home": "馬拉加",
+        "away": "桑坦德",
+        "pick": "客勝"
+      },
+      {
+        "home": "愛斯賓奴",
+        "away": "拉科魯尼亞",
+        "pick": "主勝"
+      },
+      {
+        "home": "奧沙辛拿",
+        "away": "畢爾包",
+        "pick": "客勝"
+      },
+      {
+        "home": "華倫西亞",
+        "away": "皇家馬德里",
+        "pick": "客勝"
+      },
+      {
+        "home": "艾爾切",
+        "away": "貝迪斯",
+        "pick": "客勝"
+      },
+      {
+        "home": "皇家蘇斯達",
+        "away": "華歷簡奴",
+        "pick": "主勝"
+      },
+      {
+        "home": "切爾達",
+        "away": "利雲特",
+        "pick": "主勝"
+      },
+      {
+        "home": "維拉利爾",
+        "away": "加泰",
+        "pick": "主勝"
+      },
+      {
+        "home": "馬德里體育會",
+        "away": "巴塞隆拿",
+        "pick": "客勝"
+      }
+    ],
+    "OU25": [
+      {
+        "home": "西維爾",
+        "away": "艾拉維斯",
+        "pick": "小2.5"
+      },
+      {
+        "home": "馬拉加",
+        "away": "桑坦德",
+        "pick": "大2.5"
+      },
+      {
+        "home": "愛斯賓奴",
+        "away": "拉科魯尼亞",
+        "pick": "小2.5"
+      },
+      {
+        "home": "奧沙辛拿",
+        "away": "畢爾包",
+        "pick": "小2.5"
+      },
+      {
+        "home": "華倫西亞",
+        "away": "皇家馬德里",
+        "pick": "大2.5"
+      },
+      {
+        "home": "艾爾切",
+        "away": "貝迪斯",
+        "pick": "大2.5"
+      },
+      {
+        "home": "皇家蘇斯達",
+        "away": "華歷簡奴",
+        "pick": "大2.5"
+      },
+      {
+        "home": "切爾達",
+        "away": "利雲特",
+        "pick": "大2.5"
+      },
+      {
+        "home": "維拉利爾",
+        "away": "加泰",
+        "pick": "大2.5"
+      },
+      {
+        "home": "馬德里體育會",
+        "away": "巴塞隆拿",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "home": "西維爾",
+        "away": "艾拉維斯",
+        "pick": "雙"
+      },
+      {
+        "home": "馬拉加",
+        "away": "桑坦德",
+        "pick": "單"
+      },
+      {
+        "home": "愛斯賓奴",
+        "away": "拉科魯尼亞",
+        "pick": "雙"
+      },
+      {
+        "home": "奧沙辛拿",
+        "away": "畢爾包",
+        "pick": "雙"
+      },
+      {
+        "home": "華倫西亞",
+        "away": "皇家馬德里",
+        "pick": "單"
+      },
+      {
+        "home": "艾爾切",
+        "away": "貝迪斯",
+        "pick": "單"
+      },
+      {
+        "home": "皇家蘇斯達",
+        "away": "華歷簡奴",
+        "pick": "單"
+      },
+      {
+        "home": "切爾達",
+        "away": "利雲特",
+        "pick": "雙"
+      },
+      {
+        "home": "維拉利爾",
+        "away": "加泰",
+        "pick": "雙"
+      },
+      {
+        "home": "馬德里體育會",
+        "away": "巴塞隆拿",
+        "pick": "單"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "home": "華倫西亞",
+          "away": "皇家馬德里",
+          "pick": "客勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "維拉利爾",
+          "away": "加泰",
+          "pick": "主勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "皇家蘇斯達",
+          "away": "華歷簡奴",
+          "pick": "主勝",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "home": "馬德里體育會",
+          "away": "巴塞隆拿",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "華倫西亞",
+          "away": "皇家馬德里",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "皇家蘇斯達",
+          "away": "華歷簡奴",
+          "pick": "大2.5",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "home": "西維爾",
+          "away": "艾拉維斯",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R2",
+          "home": "奧沙辛拿",
+          "away": "畢爾包",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        },
+        {
+          "rank": "R3",
+          "home": "愛斯賓奴",
+          "away": "拉科魯尼亞",
+          "pick": "雙",
+          "status": "RESEARCH_CANDIDATE_ONLY"
+        }
+      ]
+    },
+    "PASS": {
+      "official_model": "PASS_NOT_RUN",
+      "1X2_research": false,
+      "OU25_research": false,
+      "parity_high_confidence": true
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": false,
+      "direction_split": "5 ODD / 5 EVEN"
+    },
+    "XUAN_status": {
+      "status": "SHADOW_NOT_RUN",
+      "exact": "NOT_RUN"
+    },
+    "research_only": true,
+    "counts_as_official_forward_result": false,
+    "pre_kick_status": "PENDING",
+    "integrity_flags": {
+      "prediction_script": "MISSING",
+      "model_weights": "MISSING",
+      "feature_matrix": "MISSING",
+      "bet365_first_tick": "MISSING",
+      "xuan_exact_generator": "MISSING",
+      "archive_identity": "RESEARCH_ONLY",
+      "overwrite_old_predictions": false
+    },
+    "source_and_cutoff": {
+      "fixture_source": "LaLiga official jornada 12",
+      "prediction_direction_frozen": "2026-11-04",
+      "audit_date": "2026-11-05",
+      "exact_cutoff_time": "MISSING",
+      "market_type": "MARKETPROXY_RESEARCH"
+    }
+  }
+]

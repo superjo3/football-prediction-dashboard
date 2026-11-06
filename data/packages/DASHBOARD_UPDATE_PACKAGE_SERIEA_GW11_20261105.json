@@ -1,0 +1,352 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "league": "Serie A",
+  "season": "2026-27",
+  "matchday": 11,
+  "record_id": "SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED",
+  "archive_date_taipei": "2026-11-05",
+  "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED",
+  "model": {
+    "formal_identity": "Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+    "wf6_rules_priority": [
+      3,
+      1,
+      2,
+      8,
+      6,
+      4
+    ],
+    "exact_trigger_replay": false,
+    "recovery_flag": "RECOVERED_COMPONENT",
+    "market_label": "MARKETPROXY"
+  },
+  "fixtures": [
+    {
+      "home": "Venezia",
+      "away": "Udinese",
+      "1X2": "HOME",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    },
+    {
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "1X2": "AWAY",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    },
+    {
+      "home": "Torino",
+      "away": "Lecce",
+      "1X2": "HOME",
+      "OU25": "UNDER",
+      "parity": "ODD"
+    },
+    {
+      "home": "Parma",
+      "away": "Bologna",
+      "1X2": "AWAY",
+      "OU25": "UNDER",
+      "parity": "ODD"
+    },
+    {
+      "home": "Roma",
+      "away": "Sassuolo",
+      "1X2": "HOME",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    },
+    {
+      "home": "Napoli",
+      "away": "Lazio",
+      "1X2": "AWAY",
+      "OU25": "OVER",
+      "parity": "ODD"
+    },
+    {
+      "home": "Genoa",
+      "away": "Milan",
+      "1X2": "AWAY",
+      "OU25": "UNDER",
+      "parity": "ODD"
+    },
+    {
+      "home": "Monza",
+      "away": "Atalanta",
+      "1X2": "AWAY",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    },
+    {
+      "home": "Inter",
+      "away": "Como",
+      "1X2": "HOME",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Juventus",
+      "1X2": "AWAY",
+      "OU25": "OVER",
+      "parity": "EVEN"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "match": "Roma vs Sassuolo",
+        "pick": "Roma HOME"
+      },
+      {
+        "rank": "R2",
+        "match": "Genoa vs Milan",
+        "pick": "Milan AWAY"
+      },
+      {
+        "rank": "R3",
+        "match": "Fiorentina vs Juventus",
+        "pick": "Juventus AWAY"
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "match": "Roma vs Sassuolo",
+        "pick": "OVER 2.5"
+      },
+      {
+        "rank": "R2",
+        "match": "Inter vs Como",
+        "pick": "OVER 2.5"
+      },
+      {
+        "rank": "R3",
+        "match": "Cagliari vs Frosinone",
+        "pick": "OVER 2.5"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "match": "Roma vs Sassuolo",
+        "pick": "EVEN"
+      },
+      {
+        "rank": "R2",
+        "match": "Cagliari vs Frosinone",
+        "pick": "EVEN"
+      },
+      {
+        "rank": "R3",
+        "match": "Inter vs Como",
+        "pick": "EVEN"
+      }
+    ]
+  },
+  "score_regression_watch": {
+    "0-0": [
+      "Torino vs Lecce"
+    ],
+    "1-1": [
+      "Napoli vs Lazio"
+    ]
+  },
+  "prekick_required": true,
+  "overwrite_policy": "DO_NOT_OVERWRITE_PREMATCH_RECORD; create separate PREKICK record if ranking/direction changes",
+  "schema_version": "1.1-audit",
+  "gw": 11,
+  "1X2": [
+    {
+      "home": "Venezia",
+      "away": "Udinese",
+      "pick": "HOME"
+    },
+    {
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "pick": "AWAY"
+    },
+    {
+      "home": "Torino",
+      "away": "Lecce",
+      "pick": "HOME"
+    },
+    {
+      "home": "Parma",
+      "away": "Bologna",
+      "pick": "AWAY"
+    },
+    {
+      "home": "Roma",
+      "away": "Sassuolo",
+      "pick": "HOME"
+    },
+    {
+      "home": "Napoli",
+      "away": "Lazio",
+      "pick": "AWAY"
+    },
+    {
+      "home": "Genoa",
+      "away": "Milan",
+      "pick": "AWAY"
+    },
+    {
+      "home": "Monza",
+      "away": "Atalanta",
+      "pick": "AWAY"
+    },
+    {
+      "home": "Inter",
+      "away": "Como",
+      "pick": "HOME"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Juventus",
+      "pick": "AWAY"
+    }
+  ],
+  "OU25": [
+    {
+      "home": "Venezia",
+      "away": "Udinese",
+      "pick": "OVER"
+    },
+    {
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "pick": "OVER"
+    },
+    {
+      "home": "Torino",
+      "away": "Lecce",
+      "pick": "UNDER"
+    },
+    {
+      "home": "Parma",
+      "away": "Bologna",
+      "pick": "UNDER"
+    },
+    {
+      "home": "Roma",
+      "away": "Sassuolo",
+      "pick": "OVER"
+    },
+    {
+      "home": "Napoli",
+      "away": "Lazio",
+      "pick": "OVER"
+    },
+    {
+      "home": "Genoa",
+      "away": "Milan",
+      "pick": "UNDER"
+    },
+    {
+      "home": "Monza",
+      "away": "Atalanta",
+      "pick": "OVER"
+    },
+    {
+      "home": "Inter",
+      "away": "Como",
+      "pick": "OVER"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Juventus",
+      "pick": "OVER"
+    }
+  ],
+  "parity": [
+    {
+      "home": "Venezia",
+      "away": "Udinese",
+      "pick": "EVEN"
+    },
+    {
+      "home": "Cagliari",
+      "away": "Frosinone",
+      "pick": "EVEN"
+    },
+    {
+      "home": "Torino",
+      "away": "Lecce",
+      "pick": "ODD"
+    },
+    {
+      "home": "Parma",
+      "away": "Bologna",
+      "pick": "ODD"
+    },
+    {
+      "home": "Roma",
+      "away": "Sassuolo",
+      "pick": "EVEN"
+    },
+    {
+      "home": "Napoli",
+      "away": "Lazio",
+      "pick": "ODD"
+    },
+    {
+      "home": "Genoa",
+      "away": "Milan",
+      "pick": "ODD"
+    },
+    {
+      "home": "Monza",
+      "away": "Atalanta",
+      "pick": "EVEN"
+    },
+    {
+      "home": "Inter",
+      "away": "Como",
+      "pick": "EVEN"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Juventus",
+      "pick": "EVEN"
+    }
+  ],
+  "PASS": {
+    "1X2": false,
+    "OU25": false,
+    "parity": false
+  },
+  "PARITY_SKEW_ALERT": {
+    "triggered": false,
+    "status": "NOT_RECORDED_AS_ALERT; 4 ODD / 6 EVEN from frozen directions"
+  },
+  "XUAN_status": {
+    "formal_identity": "Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+    "exact_trigger_replay": false,
+    "expert_generator": "MISSING",
+    "status": "RECOVERED_COMPONENT"
+  },
+  "research_only": false,
+  "counts_as_official_forward_result": true,
+  "pre_kick_status": "PENDING",
+  "integrity_flags": {
+    "prediction_script": "MISSING",
+    "model_weights": "MISSING",
+    "feature_matrix": "MISSING",
+    "bet365_first_tick": "MISSING",
+    "xuan_exact_generator": "MISSING",
+    "archive_identity": "RECOVERED_COMPONENT",
+    "overwrite_old_predictions": false
+  },
+  "source_and_cutoff": {
+    "market_snapshot": "2026-11-05 current/early market proxy",
+    "market_sources": [
+      "OddsPortal multi-book",
+      "Pinnacle / Bet365 current proxy"
+    ],
+    "exact_cutoff_time": "MISSING",
+    "market_type": "MARKETPROXY"
+  }
+}

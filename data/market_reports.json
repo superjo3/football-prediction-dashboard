@@ -1,0 +1,178 @@
+[
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 6,
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "market": "1x2",
+    "hits": 5,
+    "n": 9,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 447,
+      "end_line": 456,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 6,
+    "record_id": "BUNDESLIGA-2026-27-GW06-20261012",
+    "market": "ou25",
+    "hits": 5,
+    "n": 9,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 447,
+      "end_line": 456,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 6,
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "market": "1x2",
+    "hits": 7,
+    "n": 10,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 363,
+      "end_line": 371,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 6,
+    "record_id": "SERIEA-2026-27-GW06-20261006",
+    "market": "ou25",
+    "hits": 4,
+    "n": 10,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 363,
+      "end_line": 371,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "season": "2026-27",
+    "gw": 6,
+    "record_id": "LIGUE1-2026-27-GW06-20261006",
+    "market": "parity",
+    "hits": 7,
+    "n": 9,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 283,
+      "end_line": 292,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "season": "2026-27",
+    "gw": 7,
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "market": "1x2",
+    "hits": 6,
+    "n": 9,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 953,
+      "end_line": 963,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "season": "2026-27",
+    "gw": 7,
+    "record_id": "LIGUE1-2026-27-GW07-20261012",
+    "market": "ou25",
+    "hits": 8,
+    "n": 9,
+    "scope": "來源結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 953,
+      "end_line": 963,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 5,
+    "record_id": null,
+    "market": "1x2",
+    "hits": 4,
+    "n": 10,
+    "scope": "僅Master結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1263,
+      "end_line": 1278,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 5,
+    "record_id": null,
+    "market": "ou25",
+    "hits": 5,
+    "n": 10,
+    "scope": "僅Master結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1263,
+      "end_line": 1278,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "season": "2026-27",
+    "gw": 5,
+    "record_id": null,
+    "market": "parity",
+    "hits": 7,
+    "n": 10,
+    "scope": "僅Master結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1263,
+      "end_line": 1278,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "season": "2026-27",
+    "gw": 5,
+    "record_id": null,
+    "market": "parity",
+    "hits": 6,
+    "n": 9,
+    "scope": "僅Master結算摘要",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2616,
+      "end_line": 2626,
+      "version": 56
+    }
+  }
+]

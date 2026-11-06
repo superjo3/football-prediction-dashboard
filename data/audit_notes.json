@@ -1,0 +1,52 @@
+[
+  {
+    "league": "LALIGA",
+    "message": "Master只含GW8完整逐場表；GW10/11/12僅被政策段落提及，未創建虛構輪次。",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2681,
+      "end_line": 2683,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "message": "GW8無逐場Record；GW9二次審計另存，原始排名不覆寫。",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2762,
+      "end_line": 2812,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "message": "GW6全輪7/9僅有結算摘要，逐筆可算為1/2；兩者分開顯示。",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 283,
+      "end_line": 292,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "message": "GW8更新版只換1X2 R2/R3，三場均命中；不重複累計、不事後擇優。",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 1777,
+      "end_line": 1784,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "message": "RECOVERED：11/05由10/30預測與11/03結算對話補回，非當日已封存快照。單雙為RG2-Xuan更新後排序；缺完整OPEN/PRE-KICK盤口。累計包含本恢復紀錄，不能視為全部當時已凍結的實績。",
+    "source": {
+      "file": "source/R1_R2_Master_v57.md",
+      "version": 57,
+      "start_line": 2815,
+      "end_line": 2878
+    }
+  }
+]

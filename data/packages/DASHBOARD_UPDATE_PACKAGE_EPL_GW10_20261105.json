@@ -1,0 +1,334 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "schema_version": "1.1-audit",
+  "generated_at": "2026-11-05",
+  "league": "EPL",
+  "league_zh": "英超",
+  "season": "2026-27",
+  "gw": 10,
+  "record_id": "EPL-2026-27-GW10-20261105-MARKETPROXY-RECOVERED",
+  "status": "PREMATCH_OFFICIAL_MARKETPROXY_RECOVERED",
+  "model": {
+    "formal_identity": "EPL R90-style recovery line + GW9 fixed corrections",
+    "exact_binary_replay": false,
+    "recovery_flag": "RECOVERED_COMPONENT",
+    "market_label": "MARKETPROXY"
+  },
+  "fixtures": [
+    {
+      "home": "愛華頓",
+      "away": "高雲地利",
+      "1X2": "愛華頓主勝",
+      "OU25": "小2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "列斯聯",
+      "away": "熱刺",
+      "1X2": "熱刺客勝",
+      "OU25": "小2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "阿仙奴",
+      "away": "侯城",
+      "1X2": "阿仙奴主勝",
+      "OU25": "大2.5",
+      "parity": "單"
+    },
+    {
+      "home": "富咸",
+      "away": "紐卡素",
+      "1X2": "富咸主勝",
+      "OU25": "小2.5",
+      "parity": "單"
+    },
+    {
+      "home": "諾定咸森林",
+      "away": "曼城",
+      "1X2": "曼城客勝",
+      "OU25": "大2.5",
+      "parity": "單"
+    },
+    {
+      "home": "白禮頓",
+      "away": "賓福特",
+      "1X2": "白禮頓主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "水晶宮",
+      "away": "利物浦",
+      "1X2": "利物浦客勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "葉士域治",
+      "away": "般尼茅夫",
+      "1X2": "般尼茅夫客勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "新特蘭",
+      "away": "車路士",
+      "1X2": "車路士客勝",
+      "OU25": "小2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "曼聯",
+      "away": "阿士東維拉",
+      "1X2": "曼聯主勝",
+      "OU25": "大2.5",
+      "parity": "單"
+    }
+  ],
+  "1X2": [
+    {
+      "home": "愛華頓",
+      "away": "高雲地利",
+      "pick": "愛華頓主勝"
+    },
+    {
+      "home": "列斯聯",
+      "away": "熱刺",
+      "pick": "熱刺客勝"
+    },
+    {
+      "home": "阿仙奴",
+      "away": "侯城",
+      "pick": "阿仙奴主勝"
+    },
+    {
+      "home": "富咸",
+      "away": "紐卡素",
+      "pick": "富咸主勝"
+    },
+    {
+      "home": "諾定咸森林",
+      "away": "曼城",
+      "pick": "曼城客勝"
+    },
+    {
+      "home": "白禮頓",
+      "away": "賓福特",
+      "pick": "白禮頓主勝"
+    },
+    {
+      "home": "水晶宮",
+      "away": "利物浦",
+      "pick": "利物浦客勝"
+    },
+    {
+      "home": "葉士域治",
+      "away": "般尼茅夫",
+      "pick": "般尼茅夫客勝"
+    },
+    {
+      "home": "新特蘭",
+      "away": "車路士",
+      "pick": "車路士客勝"
+    },
+    {
+      "home": "曼聯",
+      "away": "阿士東維拉",
+      "pick": "曼聯主勝"
+    }
+  ],
+  "OU25": [
+    {
+      "home": "愛華頓",
+      "away": "高雲地利",
+      "pick": "小2.5"
+    },
+    {
+      "home": "列斯聯",
+      "away": "熱刺",
+      "pick": "小2.5"
+    },
+    {
+      "home": "阿仙奴",
+      "away": "侯城",
+      "pick": "大2.5"
+    },
+    {
+      "home": "富咸",
+      "away": "紐卡素",
+      "pick": "小2.5"
+    },
+    {
+      "home": "諾定咸森林",
+      "away": "曼城",
+      "pick": "大2.5"
+    },
+    {
+      "home": "白禮頓",
+      "away": "賓福特",
+      "pick": "大2.5"
+    },
+    {
+      "home": "水晶宮",
+      "away": "利物浦",
+      "pick": "大2.5"
+    },
+    {
+      "home": "葉士域治",
+      "away": "般尼茅夫",
+      "pick": "大2.5"
+    },
+    {
+      "home": "新特蘭",
+      "away": "車路士",
+      "pick": "小2.5"
+    },
+    {
+      "home": "曼聯",
+      "away": "阿士東維拉",
+      "pick": "大2.5"
+    }
+  ],
+  "parity": [
+    {
+      "home": "愛華頓",
+      "away": "高雲地利",
+      "pick": "雙"
+    },
+    {
+      "home": "列斯聯",
+      "away": "熱刺",
+      "pick": "雙"
+    },
+    {
+      "home": "阿仙奴",
+      "away": "侯城",
+      "pick": "單"
+    },
+    {
+      "home": "富咸",
+      "away": "紐卡素",
+      "pick": "單"
+    },
+    {
+      "home": "諾定咸森林",
+      "away": "曼城",
+      "pick": "單"
+    },
+    {
+      "home": "白禮頓",
+      "away": "賓福特",
+      "pick": "雙"
+    },
+    {
+      "home": "水晶宮",
+      "away": "利物浦",
+      "pick": "雙"
+    },
+    {
+      "home": "葉士域治",
+      "away": "般尼茅夫",
+      "pick": "雙"
+    },
+    {
+      "home": "新特蘭",
+      "away": "車路士",
+      "pick": "雙"
+    },
+    {
+      "home": "曼聯",
+      "away": "阿士東維拉",
+      "pick": "單"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "match": "阿仙奴 vs 侯城",
+        "pick": "阿仙奴主勝"
+      },
+      {
+        "rank": "R2",
+        "match": "水晶宮 vs 利物浦",
+        "pick": "利物浦客勝"
+      },
+      {
+        "rank": "R3",
+        "match": "愛華頓 vs 高雲地利",
+        "pick": "愛華頓主勝"
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "match": "列斯聯 vs 熱刺",
+        "pick": "小2.5"
+      },
+      {
+        "rank": "R2",
+        "match": "阿仙奴 vs 侯城",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R3",
+        "match": "葉士域治 vs 般尼茅夫",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "match": "列斯聯 vs 熱刺",
+        "pick": "雙"
+      },
+      {
+        "rank": "R2",
+        "match": "諾定咸森林 vs 曼城",
+        "pick": "單"
+      },
+      {
+        "rank": "R3",
+        "match": "阿仙奴 vs 侯城",
+        "pick": "單"
+      }
+    ]
+  },
+  "PASS": {
+    "1X2": false,
+    "OU25": false,
+    "parity": false
+  },
+  "PARITY_SKEW_ALERT": {
+    "triggered": false,
+    "direction_split": "4 ODD / 6 EVEN"
+  },
+  "XUAN_status": {
+    "XUAN_R1_Exact": "NOT_RUN",
+    "XUAN_CONFIRM_AGAINST": "NOT_RUN",
+    "XUAN_PROXY": "NOT_RUN"
+  },
+  "research_only": false,
+  "counts_as_official_forward_result": true,
+  "pre_kick_status": "PENDING",
+  "integrity_flags": {
+    "prediction_script": "MISSING",
+    "model_weights": "MISSING",
+    "feature_matrix": "MISSING",
+    "bet365_first_tick": "MISSING",
+    "xuan_exact_generator": "MISSING",
+    "archive_identity": "RECOVERED_COMPONENT",
+    "overwrite_old_predictions": false
+  },
+  "source_and_cutoff": {
+    "fixture_source": "PremierLeague.com 2026-27 fixtures / November amendments",
+    "market_sources": [
+      "OddsPortal current 1X2 comparison",
+      "BetMonitor O/U2.5 comparison"
+    ],
+    "retrieved_date": "2026-11-05",
+    "exact_cutoff_time": "MISSING",
+    "market_type": "MARKETPROXY"
+  }
+}

@@ -1,0 +1,814 @@
+[
+  {
+    "model": "BASE",
+    "season": "2024-25",
+    "hits": 29,
+    "n": 38,
+    "scope": "封存研究摘要；非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2172,
+      "end_line": 2190,
+      "version": 55
+    }
+  },
+  {
+    "model": "BASE",
+    "season": "2025-26",
+    "hits": 23,
+    "n": 38,
+    "scope": "封存研究摘要；非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2172,
+      "end_line": 2190,
+      "version": 55
+    }
+  },
+  {
+    "model": "XUAN-R1 Exact",
+    "season": "2024-25",
+    "hits": 29,
+    "n": 38,
+    "scope": "封存研究摘要；非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2172,
+      "end_line": 2190,
+      "version": 55
+    }
+  },
+  {
+    "model": "XUAN-R1 Exact",
+    "season": "2025-26",
+    "hits": 25,
+    "n": 38,
+    "scope": "封存研究摘要；非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2172,
+      "end_line": 2190,
+      "version": 55
+    }
+  },
+  {
+    "model": "OLD R90",
+    "season": "2023-24",
+    "hits": 25,
+    "n": 38,
+    "scope": "倒測 retrospective only",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2201,
+      "end_line": 2207,
+      "version": 55
+    }
+  },
+  {
+    "model": "XUAN-CONFIRM",
+    "season": "2024-25＋2025-26",
+    "hits": 22,
+    "n": 23,
+    "scope": "探索性／資料重疊，不是正式前推；分組未涵蓋全部76筆",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2194,
+      "end_line": 2200,
+      "version": 55
+    }
+  },
+  {
+    "model": "XUAN-AGAINST",
+    "season": "2024-25＋2025-26",
+    "hits": 7,
+    "n": 16,
+    "scope": "探索性／資料重疊，不是正式前推；分組未涵蓋全部76筆",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2194,
+      "end_line": 2200,
+      "version": 55
+    }
+  },
+  {
+    "model": "無有效玄學訊號",
+    "season": "2024-25＋2025-26",
+    "hits": 23,
+    "n": 35,
+    "scope": "探索性／資料重疊，不是正式前推；分組未涵蓋全部76筆",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2194,
+      "end_line": 2200,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 全反對排除",
+    "season": "2024-25＋2025-26",
+    "hits": 47,
+    "n": 60,
+    "scope": "探索性／資料重疊，不是正式前推；分組未涵蓋全部76筆",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2194,
+      "end_line": 2200,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 候選A",
+    "season": "2021-22",
+    "hits": 11,
+    "n": 19,
+    "scope": "探索性高選擇性，非正式升級",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2135,
+      "end_line": 2145,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 候選A",
+    "season": "2022-23",
+    "hits": 12,
+    "n": 22,
+    "scope": "探索性高選擇性，非正式升級",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2135,
+      "end_line": 2145,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 候選A",
+    "season": "2023-24",
+    "hits": 6,
+    "n": 10,
+    "scope": "探索性高選擇性，非正式升級",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2135,
+      "end_line": 2145,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 候選A",
+    "season": "2024-25",
+    "hits": 19,
+    "n": 21,
+    "scope": "探索性高選擇性，非正式升級",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2135,
+      "end_line": 2145,
+      "version": 55
+    }
+  },
+  {
+    "model": "PASS / 候選A",
+    "season": "2025-26",
+    "hits": 13,
+    "n": 19,
+    "scope": "探索性高選擇性，非正式升級",
+    "source": {
+      "file": "source/R1_R2_Master.md",
+      "start_line": 2135,
+      "end_line": 2145,
+      "version": 55
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "BASE",
+    "season": "2023-24",
+    "hits": 20,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "XUAN_PROXY",
+    "season": "2023-24",
+    "hits": 20,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2023-24",
+    "hits": 24,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "BASE",
+    "season": "2024-25",
+    "hits": 17,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "XUAN_PROXY",
+    "season": "2024-25",
+    "hits": 18,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2024-25",
+    "hits": 19,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "BASE",
+    "season": "2025-26",
+    "hits": 16,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "XUAN_PROXY",
+    "season": "2025-26",
+    "hits": 16,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2025-26",
+    "hits": 19,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "BASE",
+    "season": "2023-24",
+    "hits": 19,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "XUAN_PROXY",
+    "season": "2023-24",
+    "hits": 18,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2023-24",
+    "hits": 16,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "BASE",
+    "season": "2024-25",
+    "hits": 17,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "XUAN_PROXY",
+    "season": "2024-25",
+    "hits": 15,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2024-25",
+    "hits": 20,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "BASE",
+    "season": "2023-24",
+    "hits": 22,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "XUAN_PROXY",
+    "season": "2023-24",
+    "hits": 23,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2023-24",
+    "hits": 22,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "BASE",
+    "season": "2024-25",
+    "hits": 17,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "XUAN_PROXY",
+    "season": "2024-25",
+    "hits": 17,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2024-25",
+    "hits": 14,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "BASE",
+    "season": "2025-26",
+    "hits": 20,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "XUAN_PROXY",
+    "season": "2025-26",
+    "hits": 21,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2025-26",
+    "hits": 24,
+    "n": 38,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "BASE",
+    "season": "2023-24",
+    "hits": 17,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "XUAN_PROXY",
+    "season": "2023-24",
+    "hits": 15,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2023-24",
+    "hits": 19,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "BASE",
+    "season": "2024-25",
+    "hits": 18,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "XUAN_PROXY",
+    "season": "2024-25",
+    "hits": 18,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2024-25",
+    "hits": 14,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "BASE",
+    "season": "2025-26",
+    "hits": 22,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "XUAN_PROXY",
+    "season": "2025-26",
+    "hits": 22,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "OLD / LEAGUE-NATIVE",
+    "season": "2025-26",
+    "hits": 16,
+    "n": 34,
+    "scope": "Common Proxy時間前推；非Exact，來源摘要非本次重跑",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2385,
+      "end_line": 2401,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "XUAN-CONFIRM Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 39,
+    "n": 68,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "XUAN-AGAINST Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 15,
+    "n": 34,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "model": "PASS shadow Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 39,
+    "n": 68,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "XUAN-CONFIRM Proxy",
+    "season": "2023-24＋2024-25",
+    "hits": 13,
+    "n": 34,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "XUAN-AGAINST Proxy",
+    "season": "2023-24＋2024-25",
+    "hits": 20,
+    "n": 42,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LALIGA",
+    "model": "PASS shadow Proxy",
+    "season": "2023-24＋2024-25",
+    "hits": 13,
+    "n": 34,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "XUAN-CONFIRM Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 33,
+    "n": 53,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "XUAN-AGAINST Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 28,
+    "n": 61,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "SERIEA",
+    "model": "PASS shadow Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 33,
+    "n": 53,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "XUAN-CONFIRM Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 27,
+    "n": 50,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "XUAN-AGAINST Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 28,
+    "n": 52,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  },
+  {
+    "league": "LIGUE1",
+    "model": "PASS shadow Proxy",
+    "season": "2023-24＋2024-25＋2025-26",
+    "hits": 27,
+    "n": 50,
+    "scope": "只記錄／不自動翻向或PASS；非Exact",
+    "source": {
+      "file": "source/R1_R2_Master_v56.md",
+      "start_line": 2439,
+      "end_line": 2456,
+      "version": 56
+    }
+  }
+]
