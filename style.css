@@ -12,3 +12,6 @@ nav a{font-size:14px}
 footer{font-size:12px}
 
 .ambertext{color:#9c752e}.textblock{max-height:none;background:transparent;padding:12px 0}.panel .textblock{font-size:14px}.filters select{max-width:420px}.leaguecard strong{white-space:nowrap}.heading h2{margin:0}.panel .notice{margin-top:16px}
+
+/* Personal parity picks */
+.personal-cell{min-width:175px;display:grid;gap:8px}.personal-cell label{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.personal-cell select{width:100px;padding:7px}.personal-cell select:disabled{background:#f3f5f6;color:#647580}.personal-stats{display:flex;gap:18px;flex-wrap:wrap}.personal-feedback{margin-bottom:0}.personal-panel input[hidden]{display:none}
