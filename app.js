@@ -173,7 +173,34 @@ function bundesligaOddsPanel(r,fixtures){
 }
 function packageCard(id){const p=packageFor(id);if(!p)return '';return `<div class="tiny">${p.research_only?'Research · ':''}${esc(displayValue(p.PASS))}<br>${(p.ranked_picks.parity||[]).map(x=>esc(x.rank+' '+(x.match||x.home+' vs '+x.away)+' → '+x.pick)).join('<br>')}</div>`}
 function packageSummary(id){const p=packageFor(id);if(!p)return '';const rs=p.results||p.result_summary||null,s=rs?.summary||rs?.per_market||null;const rb=s?`<div class="grid kpis">${[['1X2','1X2'],['OU25','O/U2.5'],['parity','單雙']].map(([k,l])=>{const v=s[k]||s[k.toLowerCase()];return v?`<div class="card"><span class="muted">${l}</span><div class="metric">${v.hits}/${v.n}</div></div>`:''}).join('')}</div>`:'';return `<div class="panel"><h2>最新 GW${p.gw} · ${p.research_only?'Research':'封存預測'}</h2><p>${esc(displayValue(p.status))}</p>${rb}${table(['市場','R1','R2','R3'],['1X2','OU25','parity'].map(m=>[m,...['R1','R2','R3'].map(rank=>{const x=(p.ranked_picks[m]||[]).find(x=>x.rank===rank);return x?esc((x.match||x.home+' vs '+x.away)+' → '+x.pick)+(x.formal_selector===false?' '+badge('SHADOW / 非正式精選','gray'):'')+(x.status?' '+badge(x.status,'gray'):''):'—'})]))}<p>PASS: ${esc(displayValue(p.PASS))}</p>${p.postmatch_review?.status==='COMPLETE'?'<p>'+badge('POSTMATCH REVIEW COMPLETE')+' · Model change: '+esc(p.postmatch_review.official_model_change||'NONE')+' / Research '+esc(p.postmatch_review.research_change||'NONE')+'</p>':''}</div>`}
-function packageSettlementPanel(p){const rs=p.result_summary;if(!rs||rs.state!=='SETTLEMENT_COMPLETE')return '';const ms=p.matches||[];const check=(v)=>v===true?'✅':v===false?'❌':'—';const rows=ms.map(m=>{const r=m.result||{};return [esc(m.home+' vs '+m.away),esc(r.score||'—'),esc(m.pick_1x2)+' '+check(r.hit_1x2),esc(m.pick_ou25)+' '+check(r.hit_ou25),esc(m.pick_parity)+' '+check(r.hit_parity)];});const cum=rs.research_cumulative_gw09_12||{};const stats=['1x2','ou25','parity'].map(k=>{const x=cum[k];return x?k+': '+x.hits+'/'+x.n:'—'}).join(' · ');const review=p.review?.state==='COMPLETE'?'<p>POSTMATCH_REVIEW COMPLETE · 正式模型 NONE · Research TEST（下一輪起）</p>':'';return '<div class="panel"><h2>賽果與三市場結算（Research，不計 Official）</h2><p>SETTLEMENT_COMPLETE · 10/10 · '+esc(stats)+'</p>'+table(['比賽','最終比分','1X2','O/U2.5','單雙'],rows)+review+'</div>';}
+function packageSettlementPanel(p){
+ const report=p.results||p.result_summary||p.settlement||null;
+ const research=!!p.research_only;
+ const ms=Array.isArray(report?.matches)?report.matches:Array.isArray(p.matches)?p.matches:[];
+ const scoreOf=m=>{
+  let v=m.score??m.result?.score;
+  if(Array.isArray(v)&&v.length===2)return v.map(Number);
+  if(typeof v==='string'&&/^\\d+\\s*-\\s*\\d+$/.test(v))return v.split('-').map(Number);
+  return null;
+ };
+ const rows=ms.map(m=>{
+  const score=scoreOf(m),f=(p.fixtures||[]).find(f=>f.home===m.home&&f.away===m.away)||m;
+  const pick1=f['1X2']||m.pick_1x2, pickOU=f.OU25||m.pick_ou25, pickParity=f.parity||m.pick_parity;
+  const n1=v=>{v=String(v||'').toUpperCase();return v.includes('DRAW')||v.includes('和')?'和':v.includes('AWAY')||v.includes('客勝')?'客勝':v.includes('HOME')||v.includes('主勝')?'主勝':null};
+  const no=v=>{v=String(v||'').toUpperCase();return v.includes('UNDER')||v.includes('小')?'小':v.includes('OVER')||v.includes('大')?'大':null};
+  const np=v=>{v=String(v||'').toUpperCase();return v.includes('EVEN')||v.includes('雙')?'雙':v.includes('ODD')||v.includes('單')?'單':null};
+  const a1=score?(score[0]>score[1]?'主勝':score[0]<score[1]?'客勝':'和'):null;
+  const ao=score?(score[0]+score[1]>2?'大':'小'):null;
+  const ap=score?((score[0]+score[1])%2?'單':'雙'):null;
+  const cell=(pick,norm,actual)=>{const v=norm(pick);if(!v)return 'PASS / MISSING';if(!actual)return esc(pick)+' '+badge('待結算','gray');return esc(pick)+' '+badge(v===actual?'命中':'未中',v===actual?'':'amber');};
+  return [esc(m.home+' vs '+m.away),score?esc(score.join(' – ')):'未收錄',cell(pick1,n1,a1),cell(pickOU,no,ao),cell(pickParity,np,ap)];
+ });
+ const settled=rows.filter((_,i)=>scoreOf(ms[i])).length;
+ if(!ms.length||!settled)return '';
+ const complete=settled===(p.fixtures||[]).length;
+ const subtitle=(research?'Research／不計 Official · ':'')+(complete?'SETTLEMENT_COMPLETE':'PARTIAL / INCOMPLETE')+' · '+settled+'/'+(p.fixtures||[]).length;
+ return '<div class="panel"><h2>逐場對答案｜最終比分與三市場命中</h2><p>'+esc(subtitle)+'</p>'+table(['比賽','最終比分','1X2','O/U2.5','單雙'],rows)+'<p class="muted">僅採已封存的賽前方向與正式結果；PASS、缺失及未結算不視為輸。Research 不納入 Official 統計。</p></div>';
+}
 function packagePage(id){const p=packageFor(id),r=roundById.get(id);return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)+packageSummary(id)+`<div class="panel"><h2>封存狀態與模型</h2>${table(['欄位','Package 原值'],['record_id','status','model','PASS','PARITY_SKEW_ALERT','XUAN_status','pre_kick_status','research_only','counts_as_official_forward_result','integrity_flags'].map(k=>[esc(k),esc(displayValue(p[k]))]))}<p>GitHub: ${esc(D.github_status)}</p><a href="${r.package_path}">原始 Dashboard Package JSON</a></div>${MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')}<div class="panel"><h2>本輪已封存預測</h2>${table(r.league==='BUNDESLIGA'?['比賽','1X2','OU25','單雙','賠率／盤口','我的單雙']:['比賽','1X2','OU25','單雙','我的單雙'],p.fixtures.map(f=>r.league==='BUNDESLIGA'?[esc(f.home+' vs '+f.away),bundesligaPredictionCell(r,f,'1X2'),bundesligaPredictionCell(r,f,'OU25'),esc(f.parity),bundesligaOddsCell(r,f),MyParity.cell(personalContext(r,f))]:[esc(f.home+' vs '+f.away),esc(f['1X2']),esc(f.OU25),esc(f.parity),MyParity.cell(personalContext(r,f))]))}</div>${packageSettlementPanel(p)}${bundesligaOddsPanel(r,p.fixtures)}`}
 
 
