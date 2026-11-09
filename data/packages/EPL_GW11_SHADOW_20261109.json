@@ -1,0 +1,164 @@
+{
+  "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "status": "SHADOW_PREMATCH_RESEARCH",
+  "model": "R90-MATH5-Q-RECONSTRUCTION-V0; NOT R90 EXACT",
+  "fixtures": [
+    {
+      "home": "Manchester City",
+      "away": "Fulham",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 20:30",
+      "match_id": "EPL-2026-27-GW11-01"
+    },
+    {
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-02"
+    },
+    {
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-03"
+    },
+    {
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-04"
+    },
+    {
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-05"
+    },
+    {
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-06"
+    },
+    {
+      "home": "Newcastle United",
+      "away": "Arsenal",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "單",
+      "kickoff_taipei": "11/22 01:30",
+      "match_id": "EPL-2026-27-GW11-07"
+    },
+    {
+      "home": "Hull City",
+      "away": "Brighton",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "單",
+      "kickoff_taipei": "11/22 22:00",
+      "match_id": "EPL-2026-27-GW11-08"
+    },
+    {
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/23 00:30",
+      "match_id": "EPL-2026-27-GW11-09"
+    },
+    {
+      "home": "Brentford",
+      "away": "Everton",
+      "1X2": "MISSING",
+      "OU25": "MISSING",
+      "parity": "雙",
+      "kickoff_taipei": "11/24 04:00",
+      "match_id": "EPL-2026-27-GW11-10"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [],
+    "OU25": [],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "Coventry City",
+        "away": "Crystal Palace",
+        "match": "Coventry City vs Crystal Palace",
+        "pick": "雙",
+        "formal_selector": false,
+        "status": "RESEARCH_ONLY"
+      },
+      {
+        "rank": "R2",
+        "home": "Tottenham",
+        "away": "Ipswich Town",
+        "match": "Tottenham vs Ipswich Town",
+        "pick": "雙",
+        "formal_selector": false,
+        "status": "RESEARCH_ONLY"
+      },
+      {
+        "rank": "R3",
+        "home": "Liverpool",
+        "away": "Manchester United",
+        "match": "Liverpool vs Manchester United",
+        "pick": "雙",
+        "formal_selector": false,
+        "status": "RESEARCH_ONLY"
+      }
+    ]
+  },
+  "PASS": {
+    "1X2": true,
+    "OU25": true,
+    "parity": false
+  },
+  "market_odds": [],
+  "source_and_cutoff": {
+    "prediction_cutoff_utc": "2026-11-09T12:28:43.958100+00:00",
+    "first_kickoff_utc": "2026-11-21T12:30:00+00:00",
+    "market_type": "2026-11-09 current page search snapshot; not Bet365 first tick; AH unavailable",
+    "bet365_first_tick": "MISSING"
+  },
+  "integrity_flags": {
+    "prematch_seal_sha256": "251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada",
+    "exact_binary_replay": false,
+    "no_hindsight": true
+  },
+  "formal_betting_layer": {
+    "parity_selector": "PASS_HIGH_CONFIDENCE",
+    "relative_rankings": "SHADOW_ONLY"
+  },
+  "research_only": true,
+  "counts_as_official_forward_result": false,
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "pre_kick_status": "PENDING",
+  "PARITY_SKEW_ALERT": {
+    "triggered": false
+  },
+  "XUAN_status": {
+    "status": "NOT_RUN"
+  }
+}
