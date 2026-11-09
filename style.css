@@ -37,3 +37,23 @@ footer{font-size:12px}
 .high-odds-badge{display:inline-block;margin-left:7px;padding:2px 7px;border-radius:999px;background:#f4cf78;color:#60450d;font-size:11px;font-weight:800;white-space:nowrap}
 .prediction-high-odds{background:#fff4d8;border-left:3px solid #d79a21;border-radius:5px;padding:6px 8px;min-width:110px}
 .prediction-high-odds .high-odds-badge{display:block;margin:4px 0 0;width:max-content}
+
+
+/* Five-league unified odds and PRE-KICK delta */
+.odds-cell{min-width:295px;max-width:500px}
+.odds-line{grid-template-columns:69px minmax(0,1fr);font-size:13px}
+.odds-line .odds-market-name{font-size:12px;font-weight:700;color:var(--muted)}
+.odds-line strong{font-size:12.5px;line-height:1.6}
+.odds-line strong span.odds-selected-value{color:#13392f;font-weight:850}
+.odds-line strong span.odds-hot-price{color:#744900;background:#ffe0a1;border-radius:3px;padding:1px 3px}
+.odds-line strong span.odds-sep{color:#9ba6ad}
+.odds-source{font-size:11px;color:var(--muted);overflow-wrap:anywhere;margin-top:3px}
+.odds-picked-price{font-size:12px;font-weight:700;color:#456073;display:inline-block;margin-left:5px}
+.market-prediction{min-width:108px}
+.odds-shift{font-size:12px;line-height:1.6}
+.odds-shift .odds-up{color:#985a1c;font-weight:800}
+.odds-shift .odds-down{color:#176b60;font-weight:800}
+.odds-shift-details{font-size:12px;line-height:1.75;color:#405866;padding:6px 0}
+.odds-move details summary{cursor:pointer;font-size:12px}
+.odds-highlight-panel table td:last-child{white-space:nowrap}
+@media(max-width:700px){.odds-cell{min-width:265px}.odds-line{grid-template-columns:65px minmax(0,1fr)}}
