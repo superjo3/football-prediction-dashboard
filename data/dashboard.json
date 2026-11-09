@@ -12950,6 +12950,13 @@
           }
         ],
         "note": "No GW9 prediction was changed. Any future adoption requires a new version and sufficient strict-forward evidence."
+      },
+      "odds_tracking": {
+        "scope": "EVERY_MATCH",
+        "status": "HISTORICAL_FIELDS_PARTIAL_OR_MISSING",
+        "open_or_proxy": "MARKETPROXY",
+        "pre_kick": "NOT_FOUND",
+        "missing_policy": "SHOW_MISSING_DO_NOT_BACKFILL"
       }
     },
     {
@@ -14674,5 +14681,29 @@
       ],
       "note": "No GW10 prediction was changed; no historical recalculation."
     }
-  ]
+  ],
+  "odds_tracking": {
+    "BUNDESLIGA": {
+      "enabled": true,
+      "scope": "EVERY_MATCH",
+      "required_markets": [
+        "1X2",
+        "OU25",
+        "AH"
+      ],
+      "snapshots": [
+        "OPEN_OR_OPENPROXY",
+        "PRE_KICK"
+      ],
+      "derived": [
+        "DEVIG_PROBABILITY",
+        "DELTA_P",
+        "MARKET_CONFIRM_AGAINST",
+        "STRONG_MOVEMENT",
+        "AH_LINE_MOVE"
+      ],
+      "missing_policy": "SHOW_MISSING_DO_NOT_BACKFILL",
+      "note": "From next Bundesliga forecast onward, every fixture must carry odds/lines. R1/R2/R3 are labels only; non-ranked matches must also retain odds."
+    }
+  }
 }
