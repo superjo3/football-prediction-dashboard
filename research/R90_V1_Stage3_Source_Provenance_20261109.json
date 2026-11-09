@@ -1,0 +1,278 @@
+{
+  "research_id": "EPL-R90-V1-RECOVERY-FORENSICS-STAGE3-20261109",
+  "status": "ORIGINAL_DIRECTION_AND_Q_WEIGHTS_NOT_FOUND",
+  "archive_count": 21,
+  "unique_archive_sha_count": 19,
+  "serialized_artifact_entries_including_duplicates": 7786,
+  "r90v2_features_filename_found": false,
+  "other_named_ranker_present": true,
+  "other_named_ranker_provenance": "Behavioral Clone only, not historical original",
+  "legacy_Q_has_unselected_match_scores": false,
+  "old_historical_picks_sha256": "d2839a1dec694a99c25f3c5abfeb76c70ee726308a6d73a11b7df45468eb09c5",
+  "original_weights_checked_by_hash": false,
+  "hist_q_by_season": {
+    "2022-23": {
+      "R1_hits": 31,
+      "R2_hits": 20,
+      "R1_mean_Q": 0.587877,
+      "R2_mean_Q": 0.56799,
+      "median_Q_gap": 0.021206,
+      "R1_only_hit_rounds": 16,
+      "R2_only_hit_rounds": 5
+    },
+    "2023-24": {
+      "R1_hits": 25,
+      "R2_hits": 21,
+      "R1_mean_Q": 0.58203,
+      "R2_mean_Q": 0.558453,
+      "median_Q_gap": 0.0181,
+      "R1_only_hit_rounds": 12,
+      "R2_only_hit_rounds": 8
+    },
+    "2024-25": {
+      "R1_hits": 28,
+      "R2_hits": 27,
+      "R1_mean_Q": 0.608007,
+      "R2_mean_Q": 0.569256,
+      "median_Q_gap": 0.024395,
+      "R1_only_hit_rounds": 7,
+      "R2_only_hit_rounds": 6
+    }
+  },
+  "qualification": "Archive name and text scan only; an unrecognized binary could exist under an unrelated name. Historic cutoffs unverified; no new wins claimed.",
+  "archives": [
+    {
+      "archive": "EPL_MultiMarket_Patterns_V2_Complete.zip",
+      "sha256": "3864beba18fa2adc4b74e82ac675f67b04497c68555481c80a88847963453783",
+      "members": 568,
+      "serialized_artifact_count": 523,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_CalendarResidual_V9_Complete.zip",
+      "sha256": "9feb3d3220f2b248d1980bd90d95ec6749a111db42a4fbee664095db182bb79f",
+      "members": 3269,
+      "serialized_artifact_count": 3195,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_Conditional_V4_Complete.zip",
+      "sha256": "80ec364bca2b7560538a35e7713cca0e105c86d3f4a4748011d95f93764410cf",
+      "members": 404,
+      "serialized_artifact_count": 367,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_CountDispersion_V12_Complete.zip",
+      "sha256": "bb27f973bb1aed23b3f0237046c16cbc4bacb3757c4259ba77c51851923f1b3c",
+      "members": 187,
+      "serialized_artifact_count": 110,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_CountDispersion_V12_Complete_2.zip",
+      "sha256": "bb27f973bb1aed23b3f0237046c16cbc4bacb3757c4259ba77c51851923f1b3c",
+      "members": 187,
+      "serialized_artifact_count": 110,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_CrossAdaptive_V8_Complete.zip",
+      "sha256": "46f9962839e04c55123dbcf991ca3a5c79d2fe96373322ef5afd280fbec3af2a",
+      "members": 1574,
+      "serialized_artifact_count": 1514,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_LowDimCalibrated_V11_Complete.zip",
+      "sha256": "ea288799aa230160f83874524001a1a5acd0b1ec49b2689b5841e2ff170af7f5",
+      "members": 152,
+      "serialized_artifact_count": 76,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_LowDimCalibrated_V11_Complete_2.zip",
+      "sha256": "ea288799aa230160f83874524001a1a5acd0b1ec49b2689b5841e2ff170af7f5",
+      "members": 152,
+      "serialized_artifact_count": 76,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_Metaphysics_V1_Complete.zip",
+      "sha256": "906f91a7571b692c0486c3aa034c234ccdf79aca9e524a552eacdec1de2612b4",
+      "members": 51,
+      "serialized_artifact_count": 21,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_Prematch_Conditions_V6_Complete.zip",
+      "sha256": "b24ba6c0470366e18f001913d3aa0518c7258b5b251933b8971c8d3bca7f028e",
+      "members": 46,
+      "serialized_artifact_count": 1,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_R1R2_V5_Complete.zip",
+      "sha256": "1b9814d8707429840862f23d462787537fa9f031af034ba6126e073f31663cd8",
+      "members": 294,
+      "serialized_artifact_count": 224,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_SeasonAdapt_V3_Complete.zip",
+      "sha256": "050187c9134fbfd0f2fe65d112063cb07d0d98931a1b834bafdd2cdc8789e4da",
+      "members": 480,
+      "serialized_artifact_count": 433,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_StreakRegime_V10_Complete.zip",
+      "sha256": "e7acb5c6a129089e2cc68c94b8a1ff14fa762eea49d45528926f72494badcca9",
+      "members": 296,
+      "serialized_artifact_count": 218,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_Parity_Team_Sequences_V7_Complete.zip",
+      "sha256": "18951a8e19c7affb01d452f7c33a3285c308697b6e4d54cd13861dcf7b1cf733",
+      "members": 985,
+      "serialized_artifact_count": 899,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "EPL_研究恢復檢查_20260916.zip",
+      "sha256": "458b7ed4c9fc1bf4d5c1c6c20e0cd4a8351fb5c1fd44f6d50dbac18a2baffade",
+      "members": 14,
+      "serialized_artifact_count": 0,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "R90_R1_70門檻測試封存包_V1.zip",
+      "sha256": "4c856ffade49f1a270e4e8488604b2e756d2ca053181d417455d8997483d0093",
+      "members": 31,
+      "serialized_artifact_count": 1,
+      "name_matches": {
+        "full_exact_matrix.pkl": [
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/data/full_exact_matrix.pkl"
+        ]
+      },
+      "text_references": {
+        "full_exact_matrix.pkl": [
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/SHA256SUMS.txt",
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/scripts/test_direction_on_cached_picks.py",
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/scripts/test_deployable_math_only.py",
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/scripts/build_exact_matrix_only.py",
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/scripts/cache_extra_selection.py",
+          "R90_R1_70ΘûÇµ¬╗µ╕¼Φ⌐ªσ░üσ¡ÿσîà_V1/scripts/search_exact_behavior_fast.py"
+        ]
+      }
+    },
+    {
+      "archive": "R90_TPZ_V2_增強分支完整封存包.zip",
+      "sha256": "7f03c4f2f35493c9fbc9361879d9898bf8374cb1d9213b9e5060d1448b8443d3",
+      "members": 25,
+      "serialized_artifact_count": 3,
+      "name_matches": {},
+      "text_references": {
+        "full_exact_matrix.pkl": [
+          "R90_TPZ_V2_RESEARCH/scripts/build_exact_matrix_only_reference.py"
+        ]
+      }
+    },
+    {
+      "archive": "R90_V1_Behavioral_Clone_V1.zip",
+      "sha256": "76c2f81d55a4b9027f3ea99b29c112403542752d54437a7e058af8a896264ed3",
+      "members": 32,
+      "serialized_artifact_count": 4,
+      "name_matches": {
+        "ranking_model.pkl": [
+          "R90_V1_CLONE/ranking_model.pkl"
+        ],
+        "old_r1_archive.csv": [
+          "R90_V1_CLONE/old_r1_archive.csv"
+        ]
+      },
+      "text_references": {
+        "ranking_model.pkl": [
+          "R90_V1_CLONE/README.md",
+          "R90_V1_CLONE/predict.py",
+          "R90_V1_CLONE/build_clone.py",
+          "R90_V1_CLONE/MANIFEST_SHA256.txt"
+        ],
+        "old_r1_archive.csv": [
+          "R90_V1_CLONE/README.md",
+          "R90_V1_CLONE/build_clone.py",
+          "R90_V1_CLONE/MANIFEST_SHA256.txt"
+        ]
+      }
+    },
+    {
+      "archive": "SerieA_R90_V1_full_model.zip",
+      "sha256": "813a2e361eec66c4f172a4f48a97861a3bccbe5ac0a577bdfdc98f76611f9b53",
+      "members": 21,
+      "serialized_artifact_count": 2,
+      "name_matches": {},
+      "text_references": {}
+    },
+    {
+      "archive": "英超_大2.5_單雙訊號模型_完整封存包_V1.zip",
+      "sha256": "e147791c26195212515e3fb3876f1f93af67bda71cb880bd39c4b5f0d42d9ea4",
+      "members": 47,
+      "serialized_artifact_count": 3,
+      "name_matches": {},
+      "text_references": {
+        "ranking_model.pkl": [
+          "EPL_O25_ODD_SIGNAL_V1/scripts/feature_engine.py"
+        ],
+        "full_exact_matrix.pkl": [
+          "EPL_O25_ODD_SIGNAL_V1/scripts/stage1_prepare.py"
+        ],
+        "old_r1_archive.csv": [
+          "EPL_O25_ODD_SIGNAL_V1/scripts/feature_engine.py"
+        ]
+      }
+    },
+    {
+      "archive": "英超架構德甲版_V1_完整模型包.zip",
+      "sha256": "a6dcd7c5d182ad75434dcc42fad1cad2680d505323c2c9c4b141dc72f2866231",
+      "members": 22,
+      "serialized_artifact_count": 6,
+      "name_matches": {
+        "selector_L1_C01": [
+          "models/selector_L1_C01.joblib"
+        ]
+      },
+      "text_references": {}
+    }
+  ],
+  "later_exact_matrix": {
+    "rows": 4180,
+    "columns": 260,
+    "model_feature_cols": 251,
+    "math_cols": 151,
+    "exact_cols": 73,
+    "legacy_R1_label_rows": 152,
+    "per_match_original_Q_for_unselected": false,
+    "old_direction_for_unselected": false,
+    "notes": "Old labels are joined from bc.load_old_picks() by build_exact_matrix_only.py; not source model outputs for the other fixtures."
+  },
+  "source_materials": {
+    "cached_exact_matrix_sha256": "d279994b29a69176bd6fc7519dd52756a8a164dca88d8a7de917817ad5949c08",
+    "feature_cache_r90v2_original": "MISSING"
+  }
+}
