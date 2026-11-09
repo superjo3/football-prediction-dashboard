@@ -419,7 +419,7 @@
     "coverage": "package",
     "note": "{\"status\": {\"pre_match_research\": \"DONE\", \"research_archive_audit\": \"DONE\", \"official_exact_model_prediction\": \"BLOCKED_NOT_RUN\", \"archive_final\": \"RESEARCH_ONLY\", \"pre_kick\": \"PENDING\", \"result\": \"PENDING\", \"review\": \"PENDING\"}, \"PASS\": {\"official_model\": \"PASS_NOT_RUN\", \"1X2_research\": false, \"OU25_research\": false, \"parity_high_confidence\": true}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"direction_split\": \"5 ODD / 5 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"MISSING\", \"model_weights\": \"MISSING\", \"feature_matrix\": \"MISSING\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"MISSING\", \"archive_identity\": \"RESEARCH_ONLY\", \"overwrite_old_predictions\": false}}",
     "research_only": true,
-    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW12_20261105.json",
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW12_20261109_REVIEWED.json",
     "status": {
       "pre_match_research": "DONE",
       "research_archive_audit": "DONE",
