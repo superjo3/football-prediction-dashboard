@@ -236,19 +236,28 @@ function oddsMarketRecord(r,f){
  const same=x=>!!x&&((x.match_id&&f.match_id&&x.match_id===f.match_id)||clean(x.fixture||x.match||[x.home,x.away].filter(Boolean).join(' vs '))===clean(fixture));
  const pools=[...(Array.isArray(p.market_odds)?p.market_odds:[]),...(Array.isArray(p.odds)?p.odds:[]),...(Array.isArray(D.market_odds)?D.market_odds:[])];
  const found=pools.find(same);
- if(found)return found;
- const m=(Array.isArray(p.matches)?p.matches:[]).find(same);
- if(m&&(Array.isArray(m.market_1x2)||Array.isArray(m.market_ou25))){
-  return {fixture,source_label:m.source_type||'MARKETPROXY_RESEARCH',open:{
-   '1X2':Array.isArray(m.market_1x2)&&m.market_1x2.length===3?{home:m.market_1x2[0],draw:m.market_1x2[1],away:m.market_1x2[2]}:null,
-   OU25:Array.isArray(m.market_ou25)&&m.market_ou25.length===2?{over:m.market_ou25[0],under:m.market_ou25[1]}:null,
-   AH:null},pre_kick:null,movement:{status:'BASELINE_ONLY'}};
+ let base=found||null;
+ if(!base){
+  const m=(Array.isArray(p.matches)?p.matches:[]).find(same);
+  if(m&&(Array.isArray(m.market_1x2)||Array.isArray(m.market_ou25))){
+   base={fixture,source_label:m.source_type||'MARKETPROXY_RESEARCH',open:{
+    '1X2':Array.isArray(m.market_1x2)&&m.market_1x2.length===3?{home:m.market_1x2[0],draw:m.market_1x2[1],away:m.market_1x2[2]}:null,
+    OU25:Array.isArray(m.market_ou25)&&m.market_ou25.length===2?{over:m.market_ou25[0],under:m.market_ou25[1]}:null,
+    AH:null},pre_kick:null,movement:{status:'BASELINE_ONLY'}};
+  }
  }
- const fprice=f.market_odds||f.odds;
- if(fprice&&typeof fprice==='object')return {fixture,source_label:p.source_and_cutoff?.market_type||'UNKNOWN',open:fprice,pre_kick:f.pre_kick_odds||null};
- return {fixture,source_label:p.source_and_cutoff?.market_type||'NOT_SAVED',pre_kick:null};
+ if(!base){
+  const fprice=f.market_odds||f.odds;
+  if(fprice&&typeof fprice==='object')base={fixture,source_label:p.source_and_cutoff?.market_type||'UNKNOWN',open:fprice,pre_kick:f.pre_kick_odds||null};
+ }
+ if(!base)base={fixture,source_label:p.source_and_cutoff?.market_type||'NOT_SAVED',pre_kick:null};
+ const snapshots=window.FOOTBALL_PREKICK_SNAPSHOTS?.snapshots||[];
+ const add=Array.isArray(snapshots)?snapshots.filter(x=>x&&x.record_id===r.id&&x.snapshot_type==='PRE_KICK'&&x.validated===true&&
+   ((x.match_id&&f.match_id&&x.match_id===f.match_id)||(!x.match_id&&clean(x.fixture)===clean(fixture)))&&x.odds&&x.captured_at_utc&&x.source_url&&x.bookmaker).sort((a,b)=>String(a.captured_at_utc).localeCompare(String(b.captured_at_utc))).at(-1):null;
+ if(!add)return base;
+ // This is a separately sealed snapshot; never rewrite the archived opening odds.
+ return {...base,pre_kick:add.odds,pre_kick_timestamp:add.captured_at_utc,pre_kick_bookmaker:add.bookmaker,pre_kick_source_url:add.source_url,same_bookmaker_verified:add.comparable_to_open===true};
 }
-
 function oddsSnapshot(o,kind){
  const v=kind==='pre'?(o.pre_kick||o.PRE_KICK||o.prekick||o.odds_pre_kick):(o.open||o.OPEN||o.OPENPROXY||o.openproxy||o.odds_open);
  const s=v&&typeof v==='object'&&!Array.isArray(v)?v:{};
