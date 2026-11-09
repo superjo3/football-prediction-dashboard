@@ -5,10 +5,10 @@
   "matchday": 12,
   "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
   "archive_date_taipei": "2026-11-09",
-  "status": "RESEARCH_PREMATCH_EARLY_MARKETPROXY_NOT_OFFICIAL_EXACT",
-  "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
-  "website_updated": false,
-  "github_updated": false,
+  "status": "PREMATCH_RESEARCH_EARLY_MARKETPROXY",
+  "dashboard_sync_status": "SYNCED_RESEARCH_ONLY",
+  "website_updated": true,
+  "github_updated": true,
   "model": {
     "formal_identity": "Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
     "exact_wf6_rerun": false,
@@ -27,79 +27,138 @@
     "market_source": "multi-book early/current comparison",
     "market_snapshot_date": "2026-11-09",
     "bet365_first_tick": "MISSING",
-    "market_type": "MARKETPROXY",
-    "official_exact": "NOT_RUN"
+    "market_type": "MARKETPROXY"
   },
   "fixtures": [
     {
       "home": "Como",
       "away": "Cagliari",
+      "fixture": "Como vs Cagliari",
       "1X2": "主勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.36,
+        "avg5_odd_rate": 0.30000000000000004,
+        "avg3_odd_rate": 0.5
+      }
     },
     {
       "home": "Lazio",
       "away": "Lecce",
+      "fixture": "Lazio vs Lecce",
       "1X2": "主勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.44999999999999996,
+        "avg5_odd_rate": 0.5,
+        "avg3_odd_rate": 0.3333333333333333
+      }
     },
     {
       "home": "Parma",
       "away": "Roma",
+      "fixture": "Parma vs Roma",
       "1X2": "客勝",
       "OU25": "大2.5",
-      "parity": "單"
+      "parity": "單",
+      "parity_research": {
+        "odd_score": 0.62,
+        "avg5_odd_rate": 0.6000000000000001,
+        "avg3_odd_rate": 0.6666666666666666
+      }
     },
     {
       "home": "Napoli",
       "away": "Torino",
+      "fixture": "Napoli vs Torino",
       "1X2": "主勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.32999999999999996,
+        "avg5_odd_rate": 0.4,
+        "avg3_odd_rate": 0.16666666666666666
+      }
     },
     {
       "home": "Juventus",
       "away": "Venezia",
+      "fixture": "Juventus vs Venezia",
       "1X2": "主勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.44999999999999996,
+        "avg5_odd_rate": 0.5,
+        "avg3_odd_rate": 0.3333333333333333
+      }
     },
     {
       "home": "Bologna",
       "away": "Udinese",
+      "fixture": "Bologna vs Udinese",
       "1X2": "主勝",
       "OU25": "小2.5",
-      "parity": "單"
+      "parity": "單",
+      "parity_research": {
+        "odd_score": 0.5499999999999999,
+        "avg5_odd_rate": 0.5,
+        "avg3_odd_rate": 0.6666666666666666
+      }
     },
     {
       "home": "Sassuolo",
       "away": "Genoa",
+      "fixture": "Sassuolo vs Genoa",
       "1X2": "和",
       "OU25": "小2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.42999999999999994,
+        "avg5_odd_rate": 0.4,
+        "avg3_odd_rate": 0.5
+      }
     },
     {
       "home": "Milan",
       "away": "Frosinone",
+      "fixture": "Milan vs Frosinone",
       "1X2": "主勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.31,
+        "avg5_odd_rate": 0.30000000000000004,
+        "avg3_odd_rate": 0.3333333333333333
+      }
     },
     {
       "home": "Atalanta",
       "away": "Inter",
+      "fixture": "Atalanta vs Inter",
       "1X2": "客勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.37999999999999995,
+        "avg5_odd_rate": 0.4,
+        "avg3_odd_rate": 0.3333333333333333
+      }
     },
     {
       "home": "Monza",
       "away": "Fiorentina",
+      "fixture": "Monza vs Fiorentina",
       "1X2": "客勝",
       "OU25": "大2.5",
-      "parity": "雙"
+      "parity": "雙",
+      "parity_research": {
+        "odd_score": 0.5,
+        "avg5_odd_rate": 0.5,
+        "avg3_odd_rate": 0.5
+      }
     }
   ],
   "ranked_picks": {
@@ -107,66 +166,69 @@
       {
         "rank": "R1",
         "match": "Parma vs Roma",
-        "pick": "Roma AWAY",
-        "market_fair_prob": 0.7181596424692414
+        "pick": "客勝",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R2",
         "match": "Como vs Cagliari",
-        "pick": "Como HOME",
-        "market_fair_prob": 0.7156985957051528
+        "pick": "主勝",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R3",
         "match": "Juventus vs Venezia",
-        "pick": "Juventus HOME",
-        "market_fair_prob": 0.7037304154007317
+        "pick": "主勝",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       }
     ],
     "OU25": [
       {
         "rank": "R1",
         "match": "Milan vs Frosinone",
-        "pick": "OVER 2.5",
-        "market_fair_prob": 0.6995515695067265
+        "pick": "大2.5",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R2",
         "match": "Atalanta vs Inter",
-        "pick": "OVER 2.5",
-        "market_fair_prob": 0.6705882352941177
+        "pick": "大2.5",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R3",
         "match": "Como vs Cagliari",
-        "pick": "OVER 2.5",
-        "market_fair_prob": 0.6045918367346939
+        "pick": "大2.5",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       }
     ],
     "parity": [
       {
         "rank": "R1",
         "match": "Milan vs Frosinone",
-        "pick": "EVEN",
-        "research_score": 0.69,
-        "odd_score": 0.31,
-        "distance_from_50": 0.19
+        "pick": "雙",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R2",
         "match": "Napoli vs Torino",
-        "pick": "EVEN",
-        "research_score": 0,
-        "odd_score": 0.32999999999999996,
-        "distance_from_50": 0.17000000000000004
+        "pick": "雙",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       },
       {
         "rank": "R3",
         "match": "Como vs Cagliari",
-        "pick": "EVEN",
-        "research_score": 0,
-        "odd_score": 0.36,
-        "distance_from_50": 0.14
+        "pick": "雙",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "formal_selector": false
       }
     ]
   },
@@ -182,23 +244,234 @@
     "Bologna-Udinese": "OU near 50/50; UNDER lean, not ranked",
     "Monza-Fiorentina": "parity recent windows cancel; LOW_CONF"
   },
-  "PASS": {
-    "1X2": false,
-    "OU25": false,
-    "parity": false
-  },
+  "schema_version": "1.2-research",
+  "league_zh": "義甲",
+  "gw": 12,
   "research_only": true,
   "counts_as_official_forward_result": false,
-  "gw": 12,
   "pre_kick_status": "PENDING",
+  "PASS": {
+    "official_model": true,
+    "1X2": false,
+    "OU25": false,
+    "parity": true,
+    "reason": "GW12 exact official model NOT_RUN; package is RESEARCH_ONLY"
+  },
   "PARITY_SKEW_ALERT": {
-    "triggered": false
+    "triggered": false,
+    "status": "NOT_EVALUATED_AS_OFFICIAL_RESEARCH_ONLY"
   },
   "XUAN_status": {
-    "status": "NOT_RUN"
+    "status": "RESEARCH_NOT_EXACT",
+    "exact": "NOT_RUN"
   },
-  "integrity_flags": {
-    "exact_weights": "MISSING",
-    "bet365_first_tick": "MISSING"
-  }
+  "odds_tracking": {
+    "scope": "EVERY_MATCH",
+    "baseline": "EARLY_MARKETPROXY_2026-11-09",
+    "pre_kick": "PENDING",
+    "missing_policy": "SHOW_MISSING_DO_NOT_BACKFILL",
+    "selected_odds_threshold": ">1.80"
+  },
+  "market_odds": [
+    {
+      "fixture": "Como vs Cagliari",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.32,
+          "draw": 5.31,
+          "away": 8.88
+        },
+        "OU25": {
+          "over": 1.55,
+          "under": 2.37
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Lazio vs Lecce",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.36,
+          "draw": 5.05,
+          "away": 8.31
+        },
+        "OU25": {
+          "over": 1.58,
+          "under": 2.35
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Parma vs Roma",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 9.03,
+          "draw": 5.36,
+          "away": 1.32
+        },
+        "OU25": {
+          "over": 1.56,
+          "under": 2.38
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Napoli vs Torino",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.47,
+          "draw": 4.48,
+          "away": 6.5
+        },
+        "OU25": {
+          "over": 1.69,
+          "under": 2.15
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Juventus vs Venezia",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.34,
+          "draw": 5.11,
+          "away": 8.44
+        },
+        "OU25": {
+          "over": 1.62,
+          "under": 2.29
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Bologna vs Udinese",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.73,
+          "draw": 3.74,
+          "away": 4.79
+        },
+        "OU25": {
+          "over": 1.9,
+          "under": 1.89
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Sassuolo vs Genoa",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 2.38,
+          "draw": 3.38,
+          "away": 2.92
+        },
+        "OU25": {
+          "over": 1.93,
+          "under": 1.88
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Milan vs Frosinone",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 1.55,
+          "draw": 4.66,
+          "away": 5.24
+        },
+        "OU25": {
+          "over": 1.34,
+          "under": 3.12
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Atalanta vs Inter",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 4.68,
+          "draw": 4.43,
+          "away": 1.63
+        },
+        "OU25": {
+          "over": 1.4,
+          "under": 2.85
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    },
+    {
+      "fixture": "Monza vs Fiorentina",
+      "source_label": "EARLY_MARKETPROXY / multi-book snapshot frozen 2026-11-09",
+      "open": {
+        "1X2": {
+          "home": 3.39,
+          "draw": 3.73,
+          "away": 2.03
+        },
+        "OU25": {
+          "over": 1.6,
+          "under": 2.3
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY_PREKICK_PENDING"
+      }
+    }
+  ]
 }
