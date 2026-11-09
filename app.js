@@ -183,7 +183,15 @@ function bundesligaOddsPanel(r,fixtures){
    +table(['比賽','賠率／盤口'],fixtures.map(f=>[esc(f.fixture||f.home+' vs '+f.away),bundesligaOddsCell(r,f)]))+'</div>';
 }
 function packageCard(id){const p=packageFor(id);if(!p)return '';return `<div class="tiny">${p.research_only?'Research · ':''}${esc(displayValue(p.PASS))}<br>${(p.ranked_picks.parity||[]).map(x=>esc(x.rank+' '+(x.match||x.home+' vs '+x.away)+' → '+x.pick)).join('<br>')}</div>`}
-function packageSummary(id){const p=packageFor(id);if(!p)return '';const rs=p.results||p.result_summary||null,s=rs?.summary||rs?.per_market||null;const rb=s?`<div class="grid kpis">${[['1X2','1X2'],['OU25','O/U2.5'],['parity','單雙']].map(([k,l])=>{const v=s[k]||s[k.toLowerCase()];return v?`<div class="card"><span class="muted">${l}</span><div class="metric">${v.hits}/${v.n}</div></div>`:''}).join('')}</div>`:'';return `<div class="panel"><h2>最新 GW${p.gw} · ${p.research_only?'Research':'封存預測'}</h2><p>${esc(displayValue(p.status))}</p>${rb}${table(['市場','R1','R2','R3'],['1X2','OU25','parity'].map(m=>[m,...['R1','R2','R3'].map(rank=>{const x=(p.ranked_picks[m]||[]).find(x=>x.rank===rank);return x?esc((x.match||x.home+' vs '+x.away)+' → '+x.pick)+(x.formal_selector===false?' '+badge('SHADOW / 非正式精選','gray'):'')+(x.status?' '+badge(x.status,'gray'):''):'—'})]))}<p>PASS: ${esc(displayValue(p.PASS))}</p>${p.postmatch_review?.status==='COMPLETE'?'<p>'+badge('POSTMATCH REVIEW COMPLETE')+' · Model change: '+esc(p.postmatch_review.official_model_change||'NONE')+' / Research '+esc(p.postmatch_review.research_change||'NONE')+'</p>':''}</div>`}
+function packageSummary(id){
+ const p=packageFor(id);if(!p)return '';
+ const round=roundById.get(id),state=round?roundStatus(round):null;
+ const ps=D.predictions.filter(x=>x.record_id===id);
+ const vals=Object.entries(M).map(([m,label])=>{let hits=0,n=0;for(const x of ps){const v=hit(x,m);if(v!==null){hits+=Number(v);n++}}return {label,hits,n}});
+ const kpis=vals.some(v=>v.n)?'<div class="grid kpis">'+vals.map(v=>'<div class="card"><span class="muted">'+esc(v.label)+'</span><div class="metric">'+v.hits+' / '+v.n+'</div></div>').join('')+'</div>':'';
+ const rtable=table(['市場','R1','R2','R3'],['1X2','OU25','parity'].map(m=>[m,...['R1','R2','R3'].map(rank=>{const x=(p.ranked_picks?.[m]||[]).find(x=>x.rank===rank);return x?esc((x.match||x.home+' vs '+x.away)+' → '+x.pick)+(x.formal_selector===false?' '+badge('SHADOW / 非正式精選','gray'):'')+(x.status?' '+badge(x.status,'gray'):''):'—'})]));
+ return '<div class="panel"><h2>最新 GW'+esc(p.gw)+' · '+(p.research_only?'Research':'封存預測')+'</h2><p><strong>目前核對狀態：</strong>'+esc(state?.label||'未核對')+'</p><details><summary>查看原始 Package 狀態</summary><pre class="raw">'+esc(displayValue(p.status))+'</pre></details>'+kpis+rtable+'<p>PASS: '+esc(displayValue(p.PASS))+'</p></div>';
+}
 function packageSettlementPanel(p){
  const ps=D.predictions.filter(x=>x.record_id===p.record_id);
  const scored=ps.filter(x=>Array.isArray(result(x)?.score)&&result(x).score.length===2);
