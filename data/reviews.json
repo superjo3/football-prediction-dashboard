@@ -243,5 +243,18 @@
     },
     "recorded_at": "2026-11-05",
     "provenance": "RECOVERED"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-POSTMATCH-REVIEW",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "recorded_at": "2026-11-09",
+    "title": "POSTMATCH_REVIEW",
+    "type": "REVIEW",
+    "text": "POSTMATCH_REVIEW COMPLETE\n1X2: KEEP 8/9, R1/R2/R3=3/3; WATCH Hamburg-Gladbach draw miss.\nO/U2.5: KEEP 7/9, R1/R2=2/2; WATCH Stuttgart-Bremen 1-0 and Freiburg-Union 2-0; TEST OU_WEAK_RANK_FILTER_TEST.\nParity: KEEP deep-away ODD R1 hit; WATCH full-round 4/9 under 8 EVEN / 1 ODD skew; REJECT forced rebalance; TEST PARITY_SKEW_FORWARD_DIAGNOSTIC.\nR3: WATCH O/U R3 and parity R3 both missed; no single-round deletion.\nPRE-KICK: NOT_EVALUABLE; no independent formal PRE-KICK record.\nPROMOTE: NONE. Formal model change: NONE.",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    },
+    "model_changes_status": "NONE; TEST only"
   }
 ]
