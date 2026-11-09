@@ -1,0 +1,180 @@
+{
+  "research_id": "EPL-R90-V1-RECOVERY-AUDIT-20261109",
+  "date": "2026-11-09",
+  "status": "HISTORICAL_OUTPUTS_RECOVERED__ORIGINAL_BINARY_MISSING",
+  "historical_records": {
+    "gw": 114,
+    "selected_picks": 228,
+    "r1_archive_match_verified": 114,
+    "r1_q_max_abs_difference": 1.5319431881488654e-05,
+    "r1_original_archive_2021_training_rows": 38,
+    "byseason": {
+      "2022-23": {
+        "r1": [
+          31,
+          38
+        ],
+        "r2": [
+          20,
+          38
+        ],
+        "combined": [
+          51,
+          76
+        ],
+        "always_even_at_selected_matches": [
+          32,
+          76
+        ],
+        "long_gap_rounds": 18
+      },
+      "2023-24": {
+        "r1": [
+          25,
+          38
+        ],
+        "r2": [
+          21,
+          38
+        ],
+        "combined": [
+          46,
+          76
+        ],
+        "always_even_at_selected_matches": [
+          36,
+          76
+        ],
+        "long_gap_rounds": 11
+      },
+      "2024-25": {
+        "r1": [
+          28,
+          38
+        ],
+        "r2": [
+          27,
+          38
+        ],
+        "combined": [
+          55,
+          76
+        ],
+        "always_even_at_selected_matches": [
+          47,
+          76
+        ],
+        "long_gap_rounds": 2
+      }
+    }
+  },
+  "temporal_integrity": {
+    "rounds_span_gt_7d": 31,
+    "rounds_span_gt_30d": 11,
+    "time_cutoff_not_saved": true,
+    "classification": "PREMATCH_FREEZE_UNVERIFIED"
+  },
+  "selector_imitation": [
+    {
+      "season": "2023-24",
+      "train": "2022-23",
+      "model": "logit_C0.1",
+      "R1_exact": 10,
+      "R2_exact": 4,
+      "R1R2_unordered_overlap": 28,
+      "both_matches_same_round": 1,
+      "R1_in_top3": 20,
+      "rounds": 38
+    },
+    {
+      "season": "2023-24",
+      "train": "2022-23",
+      "model": "extra_d3_leaf5",
+      "R1_exact": 18,
+      "R2_exact": 8,
+      "R1R2_unordered_overlap": 38,
+      "both_matches_same_round": 7,
+      "R1_in_top3": 24,
+      "rounds": 38
+    },
+    {
+      "season": "2023-24",
+      "train": "2022-23",
+      "model": "extra_d5_leaf5",
+      "R1_exact": 18,
+      "R2_exact": 5,
+      "R1R2_unordered_overlap": 37,
+      "both_matches_same_round": 5,
+      "R1_in_top3": 26,
+      "rounds": 38
+    },
+    {
+      "season": "2023-24",
+      "train": "2022-23",
+      "model": "extra_reg_d5_leaf5",
+      "R1_exact": 23,
+      "R2_exact": 8,
+      "R1R2_unordered_overlap": 44,
+      "both_matches_same_round": 11,
+      "R1_in_top3": 30,
+      "rounds": 38
+    },
+    {
+      "season": "2024-25",
+      "train": "2022-23,2023-24",
+      "model": "logit_C0.1",
+      "R1_exact": 21,
+      "R2_exact": 9,
+      "R1R2_unordered_overlap": 39,
+      "both_matches_same_round": 9,
+      "R1_in_top3": 26,
+      "rounds": 38
+    },
+    {
+      "season": "2024-25",
+      "train": "2022-23,2023-24",
+      "model": "extra_d3_leaf5",
+      "R1_exact": 14,
+      "R2_exact": 9,
+      "R1R2_unordered_overlap": 37,
+      "both_matches_same_round": 10,
+      "R1_in_top3": 22,
+      "rounds": 38
+    },
+    {
+      "season": "2024-25",
+      "train": "2022-23,2023-24",
+      "model": "extra_d5_leaf5",
+      "R1_exact": 12,
+      "R2_exact": 5,
+      "R1R2_unordered_overlap": 39,
+      "both_matches_same_round": 9,
+      "R1_in_top3": 25,
+      "rounds": 38
+    },
+    {
+      "season": "2024-25",
+      "train": "2022-23,2023-24",
+      "model": "extra_reg_d5_leaf5",
+      "R1_exact": 21,
+      "R2_exact": 11,
+      "R1R2_unordered_overlap": 51,
+      "both_matches_same_round": 16,
+      "R1_in_top3": 33,
+      "rounds": 38
+    }
+  ],
+  "source_sha256": {
+    "R90_V1_每輪挑2場_嚴格前推測試.xlsx": "e44f620826d78530ac3522de873c9a4aa832962e22104c6da33acea0017be406",
+    "R90_V1_Behavioral_Clone_V1.zip": "76c2f81d55a4b9027f3ea99b29c112403542752d54437a7e058af8a896264ed3",
+    "R90_R1_70門檻測試封存包_V1.zip": "4c856ffade49f1a270e4e8488604b2e756d2ca053181d417455d8997483d0093",
+    "R90_TPZ_V2_增強分支完整封存包.zip": "7f03c4f2f35493c9fbc9361879d9898bf8374cb1d9213b9e5060d1448b8443d3"
+  },
+  "original_model": {
+    "direction": "five-model median; exact weights not located",
+    "ranking": "L1 correctness selector C=0.1; exact weights not located",
+    "full_feature_builder": "not located",
+    "exact_future_replay": false,
+    "verified_2026_27_pred": false
+  }
+}
