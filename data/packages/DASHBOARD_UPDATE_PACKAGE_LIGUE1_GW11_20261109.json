@@ -1,0 +1,425 @@
+{
+  "schema": "DASHBOARD_UPDATE_PACKAGE_V1",
+  "schema_version": "1.2",
+  "league": "Ligue 1",
+  "season": "2026-27",
+  "gw": 11,
+  "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+  "archive_date": "2026-11-09",
+  "timezone": "Asia/Taipei",
+  "status": "ARCHIVED_PREMATCH_MARKETPROXY",
+  "dashboard_sync": "PENDING_BY_USER_REQUEST",
+  "model": {
+    "ou_parity": "LIGUE1-R80-V2.1-DRAWGUARD-FROZEN",
+    "1x2": "1X2-Blend-V0.1",
+    "post_gw10_tests": "RESEARCH_ONLY_NOT_PROMOTED"
+  },
+  "predictions": [
+    {
+      "match": "Troyes vs Le Havre",
+      "kickoff_taipei": "2026-11-21 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.4095909184525439,
+      "1x2_margin": 0.0864153893936426,
+      "1x2_r": null,
+      "ou25": "大2.5",
+      "ou_p_over": 0.547581063343443,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "雙",
+      "parity_p_odd": 0.4988498399164729,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Nice vs Paris SG",
+      "kickoff_taipei": "2026-11-22 00:15",
+      "1x2": "客勝",
+      "1x2_score": 0.6459919515882908,
+      "1x2_margin": 0.453838531692931,
+      "1x2_r": "R2",
+      "ou25": "大2.5",
+      "ou_p_over": 0.6639785250783724,
+      "ou_relative_r": "R1",
+      "ou_formal_selected": false,
+      "parity": "單",
+      "parity_p_odd": 0.5004393301463206,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Monaco vs Auxerre",
+      "kickoff_taipei": "2026-11-22 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.6426029886290155,
+      "1x2_margin": 0.443298020872598,
+      "1x2_r": "R3",
+      "ou25": "大2.5",
+      "ou_p_over": 0.6414600640095856,
+      "ou_relative_r": "R2",
+      "ou_formal_selected": false,
+      "parity": "單",
+      "parity_p_odd": 0.500333731297648,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Lens vs Toulouse",
+      "kickoff_taipei": "2026-11-22 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.5112453284438929,
+      "1x2_margin": 0.2551892789991716,
+      "1x2_r": null,
+      "ou25": "大2.5",
+      "ou_p_over": 0.5768744534174273,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "雙",
+      "parity_p_odd": 0.4987243775549241,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Lille vs Lyon",
+      "kickoff_taipei": "2026-11-22 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.395635906132638,
+      "1x2_margin": 0.0831240306568996,
+      "1x2_r": null,
+      "ou25": "小2.5",
+      "ou_p_over": 0.4810082089746759,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "雙",
+      "parity_p_odd": 0.4890754090785413,
+      "parity_shadow_r": "R1",
+      "parity_formal_selected": false,
+      "draw_risk": true,
+      "high_entropy": false
+    },
+    {
+      "match": "Strasbourg vs Brest",
+      "kickoff_taipei": "2026-11-22 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.4068959766331472,
+      "1x2_margin": 0.0558443916896847,
+      "1x2_r": null,
+      "ou25": "大2.5",
+      "ou_p_over": 0.5953729266186376,
+      "ou_relative_r": "R3",
+      "ou_formal_selected": false,
+      "parity": "單",
+      "parity_p_odd": 0.5014871157825301,
+      "parity_shadow_r": "R3",
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": true
+    },
+    {
+      "match": "Paris FC vs Angers",
+      "kickoff_taipei": "2026-11-22 22:00",
+      "1x2": "主勝",
+      "1x2_score": 0.6605108844729678,
+      "1x2_margin": 0.4583458538010564,
+      "1x2_r": "R1",
+      "ou25": "大2.5",
+      "ou_p_over": 0.56377935990329,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "單",
+      "parity_p_odd": 0.5042616094970936,
+      "parity_shadow_r": "R2",
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Lorient vs Rennes",
+      "kickoff_taipei": "2026-11-23 00:15",
+      "1x2": "客勝",
+      "1x2_score": 0.4342159562002139,
+      "1x2_margin": 0.1269007086327931,
+      "1x2_r": null,
+      "ou25": "大2.5",
+      "ou_p_over": 0.5514108304297458,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "雙",
+      "parity_p_odd": 0.4988748881576851,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    },
+    {
+      "match": "Marseille vs Le Mans",
+      "kickoff_taipei": "2026-11-23 03:45",
+      "1x2": "主勝",
+      "1x2_score": 0.6296703396510028,
+      "1x2_margin": 0.4302824241765747,
+      "1x2_r": null,
+      "ou25": "大2.5",
+      "ou_p_over": 0.5873988138481955,
+      "ou_relative_r": null,
+      "ou_formal_selected": false,
+      "parity": "單",
+      "parity_p_odd": 0.5008565354686809,
+      "parity_shadow_r": null,
+      "parity_formal_selected": false,
+      "draw_risk": false,
+      "high_entropy": false
+    }
+  ],
+  "ranks": {
+    "1x2": [
+      {
+        "rank": "R1",
+        "match": "Paris FC vs Angers",
+        "pick": "主勝"
+      },
+      {
+        "rank": "R2",
+        "match": "Nice vs Paris SG",
+        "pick": "客勝"
+      },
+      {
+        "rank": "R3",
+        "match": "Monaco vs Auxerre",
+        "pick": "主勝"
+      }
+    ],
+    "ou25_relative": [
+      {
+        "rank": "R1",
+        "match": "Nice vs Paris SG",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R2",
+        "match": "Monaco vs Auxerre",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R3",
+        "match": "Strasbourg vs Brest",
+        "pick": "大2.5"
+      }
+    ],
+    "parity_shadow": [
+      {
+        "rank": "R1",
+        "match": "Lille vs Lyon",
+        "pick": "雙"
+      },
+      {
+        "rank": "R2",
+        "match": "Paris FC vs Angers",
+        "pick": "單"
+      },
+      {
+        "rank": "R3",
+        "match": "Strasbourg vs Brest",
+        "pick": "單"
+      }
+    ]
+  },
+  "formal_betting_layer": {
+    "ou25_selector": "PASS_0_TRIGGERS",
+    "parity_selector": "PASS_0_TRIGGERS",
+    "parity_skew_alert": false,
+    "parity_direction_count": {
+      "odd": 5,
+      "even": 4
+    }
+  },
+  "strict_forward_before_gw11": {
+    "1x2": {
+      "R1": "2/2",
+      "R2": "1/2",
+      "R3": "2/2",
+      "R1+R2": "3/4",
+      "R1+R2+R3": "5/6"
+    },
+    "ou25_relative": {
+      "R1": "4/6",
+      "R2": "6/6",
+      "R3": "1/2",
+      "R1+R2": "10/12",
+      "R1+R2+R3_since_GW9": "4/6"
+    },
+    "parity_shadow": {
+      "R1": "3/6",
+      "R2": "4/6",
+      "R3": "2/2",
+      "R1+R2": "7/12",
+      "R1+R2+R3_since_GW9": "5/6"
+    }
+  },
+  "integrity": [
+    "GW11 features use completed results through GW10 only.",
+    "No GW11 result used.",
+    "Post-GW10 TEST changes not promoted or used.",
+    "Website/GitHub sync intentionally deferred."
+  ],
+  "next_action": "PRE-KICK snapshot; new Record if direction/rank changes; centralized Dashboard/GitHub sync later.",
+  "fixtures": [
+    {
+      "home": "Troyes",
+      "away": "Le Havre",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "2026-11-21 03:45"
+    },
+    {
+      "home": "Nice",
+      "away": "Paris SG",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "2026-11-22 00:15"
+    },
+    {
+      "home": "Monaco",
+      "away": "Auxerre",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "2026-11-22 03:45"
+    },
+    {
+      "home": "Lens",
+      "away": "Toulouse",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "2026-11-22 03:45"
+    },
+    {
+      "home": "Lille",
+      "away": "Lyon",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "雙",
+      "kickoff_taipei": "2026-11-22 03:45"
+    },
+    {
+      "home": "Strasbourg",
+      "away": "Brest",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "2026-11-22 03:45"
+    },
+    {
+      "home": "Paris FC",
+      "away": "Angers",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "2026-11-22 22:00"
+    },
+    {
+      "home": "Lorient",
+      "away": "Rennes",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "2026-11-23 00:15"
+    },
+    {
+      "home": "Marseille",
+      "away": "Le Mans",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "2026-11-23 03:45"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "match": "Paris FC vs Angers",
+        "pick": "主勝"
+      },
+      {
+        "rank": "R2",
+        "match": "Nice vs Paris SG",
+        "pick": "客勝"
+      },
+      {
+        "rank": "R3",
+        "match": "Monaco vs Auxerre",
+        "pick": "主勝"
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "match": "Nice vs Paris SG",
+        "pick": "大2.5",
+        "formal_selector": false
+      },
+      {
+        "rank": "R2",
+        "match": "Monaco vs Auxerre",
+        "pick": "大2.5",
+        "formal_selector": false
+      },
+      {
+        "rank": "R3",
+        "match": "Strasbourg vs Brest",
+        "pick": "大2.5",
+        "formal_selector": false
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "match": "Lille vs Lyon",
+        "pick": "雙",
+        "formal_selector": false
+      },
+      {
+        "rank": "R2",
+        "match": "Paris FC vs Angers",
+        "pick": "單",
+        "formal_selector": false
+      },
+      {
+        "rank": "R3",
+        "match": "Strasbourg vs Brest",
+        "pick": "單",
+        "formal_selector": false
+      }
+    ]
+  },
+  "PASS": {
+    "1X2": false,
+    "OU25": true,
+    "parity": true
+  },
+  "XUAN_status": {
+    "status": "RESEARCH_NOT_PROMOTED"
+  },
+  "research_only": false,
+  "counts_as_official_forward_result": true,
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "pre_kick_status": "PENDING",
+  "PARITY_SKEW_ALERT": {
+    "triggered": false
+  },
+  "integrity_flags": {
+    "exact_weights": "MISSING",
+    "bet365_first_tick": "MISSING"
+  }
+}
