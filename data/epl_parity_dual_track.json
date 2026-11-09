@@ -1,0 +1,59 @@
+{
+  "schema_version": "EPL-PARITY-DUAL-V1",
+  "policy_id": "EPL-PARITY-2TRACK-20261109",
+  "policy_created_local": "2026-11-09",
+  "league": "EPL",
+  "market": "parity",
+  "season": "2026-27",
+  "effective_from_gw": 11,
+  "tracks": [
+    {
+      "track_id": "OFFICIAL",
+      "label": "Official｜現行正式單雙",
+      "source": "最新 Master 已封存的 EPL 正式 Record；保留原有模型與方向",
+      "status": "ACTIVE",
+      "is_official": true
+    },
+    {
+      "track_id": "R90_RECOVERY_SHADOW",
+      "label": "Research｜R90 Recovery Shadow",
+      "source": "R90 V1 歷史恢復架構重新訓練的獨立模型；原始 Exact 權重尚未找到",
+      "status": "NOT_RUN",
+      "is_official": false,
+      "model_weights_status": "MISSING_OR_NOT_TRAINED",
+      "original_model_recovered": false
+    }
+  ],
+  "shadow_records": [],
+  "required_shadow_record_fields": [
+    "record_id",
+    "official_record_id",
+    "model_version",
+    "model_artifact_sha256",
+    "season",
+    "gw",
+    "market_snapshot",
+    "first_kickoff_utc",
+    "prediction_cutoff_utc",
+    "seal_sha256",
+    "status",
+    "predictions"
+  ],
+  "required_prediction_fields": ["match_id", "direction", "rank"],
+  "rules": {
+    "rank_slots": [1, 2, 3],
+    "all_fixtures_required": true,
+    "pass_allowed": true,
+    "pass_excluded_from_accuracy": true,
+    "time_cutoff_must_precede_first_kickoff": true,
+    "no_hindsight": true,
+    "no_backfill_prior_to_effective_gw": true,
+    "official_immutable": true,
+    "only_frozen_shadow_picks_are_settled": true,
+    "compare_using_same_fixtures_kickoffs_and_market_snapshots": true,
+    "settlement_fields": ["total", "R1", "R2", "R3", "R1_R2", "R1_R2_R3"],
+    "separate_stats_no_pooling": true,
+    "first_use_research_only": true,
+    "minimum_live_sealed_picks_before_promotion_review": 50
+  }
+}
