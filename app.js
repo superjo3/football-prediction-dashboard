@@ -64,7 +64,7 @@ function leaguebody(id){const gw=$('#gwfilter').value,model=$('#modelfilter').va
 $('#leaguebody').innerHTML=cards(id,null,'base',model)+`<div class="panel"><h2>輪次封存</h2>${rows.length?table(['GW','版本','模型','狀態','1X2','大小','單雙','單雙R位'],rows):'<div class="empty">沒有符合條件的紀錄。缺失快照不會補造。</div>'}</div><div class="panel"><h2>已匯入 R1 / R2 / R3 累計</h2>${ranktable(id,model)}<p class="muted">此處依模型篩選；不隨輪次／狀態篩選改變累計。不同歷代模型合計只表示封存軌跡，不能當成單一模型能力。</p></div>`+historical(id)+recent(id)}
 function raw(s){return `<details><summary>${esc(s.title)}　${source(s.source)}</summary><pre class="raw">${esc(s.text)}</pre></details>`}
 function sourceSection(r){return D.source_sections.find(s=>s.source.version===r.version&&s.source.start_line<=r.start_line&&s.source.end_line>=r.start_line)}
-function round(id,version='base'){if(packageFor(id))return packagePage(id);const r=roundById.get(id);if(!r)return empty();const st=roundStatus(r),u=D.updates.find(u=>u.id===version&&u.record_id===id);return heading(`${r.league} / 2026–27 / MATCHWEEK ${r.gw}`,`${names[r.league]} 第 ${r.gw} 輪`,`${esc(r.model)}<br><span class="tiny">${esc(r.id)}</span>`,`<a class="button" href="#league/${r.league}">← 返回${names[r.league]}</a>`)+`<div class="notice">${esc(r.note)} ${source(r.source)}</div><div class="filters"><label for="versionfilter">預測版本</label><select id="versionfilter"><option value="base" ${version==='base'?'selected':''}>${r.coverage==='recovered'?'恢復版（XUAN更新後）':'原始版＋賽前R3補充'}</option>${versions(id).map(u=>`<option value="${u.id}" ${version===u.id?'selected':''}>${esc(u.label)}</option>`).join('')}</select>${u?badge(u.type,'amber'):badge(r.snapshot,'gray')}</div>${u?`<div class="notice">目前顯示 ${esc(u.label)}，原始預測未變更。${source(u.source)} ${esc(u.status||'')}</div>`:''}<div class="timeline"><span class="stage done">${r.coverage==='recovered'?'恢復紀錄':'OPEN'} · ${esc(r.snapshot)}</span><span class="stage ${st.prekick?'done':'missing'}">PRE-KICK · ${st.prekick?'已收錄':'缺失'}</span><span class="stage ${st.hasResults?'done':'missing'}">RESULT · ${st.hasResults?`${st.scored}/${st.total}筆比分${st.excluded?'，另'+st.excluded+'場排除':''}`:'待結算'}</span><span class="stage ${st.review?'done':'missing'}">REVIEW · ${st.review?'已追加':'未收錄'}</span></div>`+cards(r.league,r,version)+`<div class="panel"><h2>本版本三市場 R1 / R2 / R3</h2>${selectionTable(id,version)}</div>${bundesligaOddsPanel(r,effective(id,version))}<div class="tabs" role="group" aria-label="詳情類別">${[['matches','比賽與命中'],['predictions','原始預測'],['updates','盤前更新／盤口'],['results','正式賽果'],['reviews','賽後檢討／修正']].map(([v,n],i)=>`<button data-tab="${v}" class="${i===0?'selected':''}">${n}</button>`).join('')}</div><div id="roundbody"></div>`}
+function round(id,version='base'){if(packageFor(id))return packagePage(id);const r=roundById.get(id);if(!r)return empty();const st=roundStatus(r),u=D.updates.find(u=>u.id===version&&u.record_id===id);return heading(`${r.league} / 2026–27 / MATCHWEEK ${r.gw}`,`${names[r.league]} 第 ${r.gw} 輪`,`${esc(r.model)}<br><span class="tiny">${esc(r.id)}</span>`,`<a class="button" href="#league/${r.league}">← 返回${names[r.league]}</a>`)+`<div class="notice">${esc(r.note)} ${source(r.source)}</div><div class="filters"><label for="versionfilter">預測版本</label><select id="versionfilter"><option value="base" ${version==='base'?'selected':''}>${r.coverage==='recovered'?'恢復版（XUAN更新後）':'原始版＋賽前R3補充'}</option>${versions(id).map(u=>`<option value="${u.id}" ${version===u.id?'selected':''}>${esc(u.label)}</option>`).join('')}</select>${u?badge(u.type,'amber'):badge(r.snapshot,'gray')}</div>${u?`<div class="notice">目前顯示 ${esc(u.label)}，原始預測未變更。${source(u.source)} ${esc(u.status||'')}</div>`:''}<div class="timeline"><span class="stage done">${r.coverage==='recovered'?'恢復紀錄':'OPEN'} · ${esc(r.snapshot)}</span><span class="stage ${st.prekick?'done':'missing'}">PRE-KICK · ${st.prekick?'已收錄':'缺失'}</span><span class="stage ${st.hasResults?'done':'missing'}">RESULT · ${st.hasResults?`${st.scored}/${st.total}筆比分${st.excluded?'，另'+st.excluded+'場排除':''}`:'待結算'}</span><span class="stage ${st.review?'done':'missing'}">REVIEW · ${st.review?'已追加':'未收錄'}</span></div>`+cards(r.league,r,version)+`<div class="panel"><h2>本版本三市場 R1 / R2 / R3</h2>${selectionTable(id,version)}</div>${marketHighOddsPanel(r,effective(id,version))}${marketOddsPanel(r,effective(id,version))}<div class="tabs" role="group" aria-label="詳情類別">${[['matches','比賽與命中'],['predictions','原始預測'],['updates','盤前更新／盤口'],['results','正式賽果'],['reviews','賽後檢討／修正']].map(([v,n],i)=>`<button data-tab="${v}" class="${i===0?'selected':''}">${n}</button>`).join('')}</div><div id="roundbody"></div>`}
 function selectionTable(id,version){const ps=effective(id,version);return table(['市場','R1','R2','R3'],Object.entries(M).map(([m,label])=>[label,...[1,2,3].map(rank=>{const p=ps.find(p=>p.ranks[m]===rank);if(!p)return '未正式封存';const h=hit(p,m);return `<strong>${esc(p.fixture)}</strong><br>${esc(p.directions[m])} ${h===null?badge('待結算','gray'):badge(h?'命中':'未中',h?'':'amber')}`})]))}
 function renderTextTable(text){const ls=text.split('\n');let out='',i=0;while(i<ls.length){if(ls[i].startsWith('|')){const rows=[];while(i<ls.length&&ls[i].startsWith('|')){const l=ls[i++];if(!/^\|[-: |]+\|$/.test(l))rows.push(l.trim().replace(/^\||\|$/g,'').split('|').map(x=>esc(x.replaceAll('**','').replaceAll('`','').trim())))}out+=table(rows[0]||[],rows.slice(1));}else{const chunk=[];while(i<ls.length&&!ls[i].startsWith('|'))chunk.push(ls[i++]);out+=`<pre class="raw textblock">${esc(chunk.join('\n'))}</pre>`}}return out}
 function roundbody(id,version,tab='matches'){
@@ -82,7 +82,7 @@ function roundbody(id,version,tab='matches'){
  $('#roundbody').innerHTML=html;
  if(tab==='matches'){matchtable(id,version);$('#fixturefilter').oninput=()=>matchtable(id,version);$('#rankonly').onchange=()=>matchtable(id,version)}
 }
-function matchtable(id,version){let ps=effective(id,version);const q=$('#fixturefilter').value.trim();if(q)ps=ps.filter(p=>p.fixture.includes(q));if($('#rankonly').checked)ps=ps.filter(p=>Object.values(p.ranks).some(Boolean));const r=roundById.get(id),headers=r?.league==='BUNDESLIGA'?['比賽','最終比分',...Object.values(M),'賠率／盤口','我的單雙']:['比賽','最終比分',...Object.values(M),'我的單雙'];$('#matches').innerHTML=`<div class="panel">${ps.length?table(headers,ps.map(p=>{const row=[`<div class="match"><strong>${esc(p.fixture)}</strong><div class="tiny muted">${p.match_id}</div></div>`,`<span class="score">${result(p)?.score?result(p).score.join(' – '):result(p)?.status==='ABANDONED'?'腰斬':'—'}</span>`,...Object.keys(M).map(m=>{const v=hit(p,m),reported=D.reported_predictions.find(x=>x.match_id===p.match_id&&x.record_id===id)?.directions[m];return `<div class="resultcell">${esc(p.directions[m]||'未收錄原始方向')}${p.ranks[m]?`<span class="ranktag">R${p.ranks[m]}</span>`:''}<span class="outcome ${v===true?'good':v===false?'bad':'muted'}">${v===null?result(p)?.status==='ABANDONED'?'排除統計':'— 無逐筆結算':`${v?'✓ 命中':'× 未中'} · 實際 ${actual(p,m)}`}</span>${!p.directions[m]&&reported?`<span class="outcome ambertext">結算追述：${esc(reported)}<br>另存，未倒填預測</span>`:''}${p.market_status?.[m]?`<span class="outcome muted">${esc(p.market_status[m])}</span>`:''}</div>`})];if(r?.league==='BUNDESLIGA')row.push(bundesligaOddsCell(r,p));row.push(MyParity.cell(personalContext(r,p)));return row})):'<div class="empty">沒有符合的場次。</div>'}<p class="muted">缺原始預測或賠率的欄位不反推；歷史未保存的賠率一律標 MISSING。</p></div>`;bindPersonal();}
+function matchtable(id,version){let ps=effective(id,version);const q=$('#fixturefilter').value.trim();if(q)ps=ps.filter(p=>p.fixture.includes(q));if($('#rankonly').checked)ps=ps.filter(p=>Object.values(p.ranks).some(Boolean));const r=roundById.get(id),headers=['比賽','最終比分',...Object.values(M),'賠率／盤口','我的單雙'];$('#matches').innerHTML=`<div class="panel">${ps.length?table(headers,ps.map(p=>{const row=[`<div class="match"><strong>${esc(p.fixture)}</strong><div class="tiny muted">${p.match_id}</div></div>`,`<span class="score">${result(p)?.score?result(p).score.join(' – '):result(p)?.status==='ABANDONED'?'腰斬':'—'}</span>`,...Object.keys(M).map(m=>{const v=hit(p,m),reported=D.reported_predictions.find(x=>x.match_id===p.match_id&&x.record_id===id)?.directions[m];return `<div class="resultcell">${esc(p.directions[m]||'未收錄原始方向')}${p.ranks[m]?`<span class="ranktag">R${p.ranks[m]}</span>`:''}<span class="outcome ${v===true?'good':v===false?'bad':'muted'}">${v===null?result(p)?.status==='ABANDONED'?'排除統計':'— 無逐筆結算':`${v?'✓ 命中':'× 未中'} · 實際 ${actual(p,m)}`}</span>${!p.directions[m]&&reported?`<span class="outcome ambertext">結算追述：${esc(reported)}<br>另存，未倒填預測</span>`:''}${p.market_status?.[m]?`<span class="outcome muted">${esc(p.market_status[m])}</span>`:''}</div>`})];row.push(marketOddsCell(r,p));row.push(MyParity.cell(personalContext(r,p)));return row})):'<div class="empty">沒有符合的場次。</div>'}<p class="muted">缺原始預測或賠率的欄位不反推；歷史未保存的賠率一律標 MISSING。</p></div>`;bindPersonal();}
 // EPL parity dual-track view: accepts only frozen Shadow records; never mixes Shadow with Official.
 function eplDualTrackView(compact=false){
  const cfg=window.EPL_PARITY_DUAL;
@@ -229,6 +229,160 @@ function bundesligaOddsPanel(r,fixtures){
  return '<div class="panel odds-panel"><div class="heading"><div><h2>每場賠率／盤口</h2><p class="muted">德甲固定保存：1X2、O/U2.5、AH；OPEN/OPENPROXY → PRE-KICK。模型選中方向賠率 &gt; 1.80 以琥珀色標示；高賠率不代表更高勝率。缺資料只顯示 MISSING，不事後補造。</p></div>'+badge('EVERY MATCH')+'</div>'
    +table(['比賽','賠率／盤口'],fixtures.map(f=>[esc(f.fixture||f.home+' vs '+f.away),bundesligaOddsCell(r,f)]))+'</div>';
 }
+function oddsMarketRecord(r,f){
+ const p=packageFor(r.id)||{};
+ const fixture=f.fixture||[f.home,f.away].filter(Boolean).join(' vs ');
+ const clean=x=>String(x||'').toLowerCase().replace(/[\s\u2010-\u2015_-]+/g,'').trim();
+ const same=x=>!!x&&((x.match_id&&f.match_id&&x.match_id===f.match_id)||clean(x.fixture||x.match||[x.home,x.away].filter(Boolean).join(' vs '))===clean(fixture));
+ const pools=[...(Array.isArray(p.market_odds)?p.market_odds:[]),...(Array.isArray(p.odds)?p.odds:[]),...(Array.isArray(D.market_odds)?D.market_odds:[])];
+ const found=pools.find(same);
+ if(found)return found;
+ const m=(Array.isArray(p.matches)?p.matches:[]).find(same);
+ if(m&&(Array.isArray(m.market_1x2)||Array.isArray(m.market_ou25))){
+  return {fixture,source_label:m.source_type||'MARKETPROXY_RESEARCH',open:{
+   '1X2':Array.isArray(m.market_1x2)&&m.market_1x2.length===3?{home:m.market_1x2[0],draw:m.market_1x2[1],away:m.market_1x2[2]}:null,
+   OU25:Array.isArray(m.market_ou25)&&m.market_ou25.length===2?{over:m.market_ou25[0],under:m.market_ou25[1]}:null,
+   AH:null},pre_kick:null,movement:{status:'BASELINE_ONLY'}};
+ }
+ const fprice=f.market_odds||f.odds;
+ if(fprice&&typeof fprice==='object')return {fixture,source_label:p.source_and_cutoff?.market_type||'UNKNOWN',open:fprice,pre_kick:f.pre_kick_odds||null};
+ return {fixture,source_label:p.source_and_cutoff?.market_type||'NOT_SAVED',pre_kick:null};
+}
+
+function oddsSnapshot(o,kind){
+ const v=kind==='pre'?(o.pre_kick||o.PRE_KICK||o.prekick||o.odds_pre_kick):(o.open||o.OPEN||o.OPENPROXY||o.openproxy||o.odds_open);
+ const s=v&&typeof v==='object'&&!Array.isArray(v)?v:{};
+ const x=s['1X2']||s.one_x_two||s.open_1x2||o[kind==='pre'?'pre_1x2':'open_1x2'];
+ const y=s.OU25||s.ou25||s['O/U2.5']||o[kind==='pre'?'pre_ou25':'open_ou25'];
+ const ah=s.AH||s.ah||o[kind==='pre'?'pre_ah':'open_ah'];
+ return {'1X2':Array.isArray(x)?{home:x[0],draw:x[1],away:x[2]}:x,'OU25':Array.isArray(y)?{over:y[0],under:y[1]}:y,AH:ah};
+}
+
+function oddsPrice(x){if(x===null||x===undefined||x==='')return null;const n=Number(x);return Number.isFinite(n)&&n>1&&n<1001?n:null}
+
+function oddsKey(m,pick){
+ const t=String(pick||'').trim().toUpperCase();
+ if(m==='1X2'){
+  if(t==='1'||t==='H'||t==='HOME'||t.includes('主勝'))return 'home';
+  if(t==='2'||t==='A'||t==='AWAY'||t.includes('客勝'))return 'away';
+  if(t==='X'||t==='D'||t==='DRAW'||t.includes('平')||t.includes('和'))return 'draw';
+ }
+ if(m==='OU25'){
+  if(t==='OVER'||t.startsWith('O2')||t.startsWith('OVER ')||t.includes('大'))return 'over';
+  if(t==='UNDER'||t.startsWith('U2')||t.startsWith('UNDER ')||t.includes('小'))return 'under';
+ }
+ return null;
+}
+
+function oddsPick(f,m){return m==='1X2'?f['1X2']||f.pick_1x2||f.directions?.['1x2']:f.OU25||f.pick_ou25||f.directions?.ou25}
+
+function oddsSelected(m,values,f){
+ const k=oddsKey(m,oddsPick(f,m));return k&&values&&typeof values==='object'?oddsPrice(values[k]):null;
+}
+
+function oddsFmtNumber(v){const n=oddsPrice(v);return n===null?'<span class="odds-missing">MISSING</span>':n.toFixed(2)}
+
+function oddsFullMarket(m,v,f){
+ if(!v||typeof v!=='object')return '<span class="odds-missing">MISSING</span>';
+ const cols=m==='1X2'?[['home','主'],['draw','和'],['away','客']]:[['over','大'],['under','小']];
+ const chosen=oddsKey(m,oddsPick(f,m));
+ return cols.map(([k,label])=>{
+  const num=oddsPrice(v[k]),classes=[k===chosen?'odds-selected-value':'',k===chosen&&num!==null&&num>1.80?'odds-hot-price':''].filter(Boolean).join(' ');
+  return '<span class="'+classes+'">'+label+' '+(num===null?'MISSING':num.toFixed(2))+'</span>';
+ }).join(' <span class="odds-sep">｜</span> ');
+}
+
+function oddsAHLine(v,f){
+ if(!v||typeof v!=='object'||v.line_home===null||v.line_home===undefined||v.line_home==='')return '<span class="odds-missing">MISSING</span>';
+ const n=Number(v.line_home);if(!Number.isFinite(n))return '<span class="odds-missing">MISSING</span>';
+ const nameH=f.home||String(f.fixture||'').split(' vs ')[0]||'主隊',nameA=f.away||String(f.fixture||'').split(' vs ')[1]||'客隊';
+ const fmt=x=>x>0?'+'+x:x===0?'0':String(x);
+ return '<span class="ah-readable"><strong>'+esc(nameH)+' '+fmt(n)+' @'+oddsFmtNumber(v.home)+'</strong><span>｜</span><strong>'+esc(nameA)+' '+fmt(-n)+' @'+oddsFmtNumber(v.away)+'</strong></span>';
+}
+
+function oddsLine(label,m,val,f){
+ const selected=m!=='AH'?oddsSelected(m,val,f):null;
+ const body=m==='AH'?oddsAHLine(val,f):oddsFullMarket(m,val,f);
+ return '<div class="odds-line '+(selected!==null&&selected>1.80?'odds-line-high':'')+'"><span class="odds-market-name">'+label+'</span><strong>'+body+'</strong></div>';
+}
+
+function oddsHasData(s){
+ return Object.values(s).some(v=>v&&typeof v==='object'&&Object.values(v).some(x=>oddsPrice(x)!==null));
+}
+
+function oddsPreStatus(p){
+ const v=p?.pre_kick_status;
+ if(typeof v==='string'&&v.toUpperCase().includes('PENDING'))return 'PENDING';
+ if(v&&typeof v==='object'&&String(v.status||'').toUpperCase().includes('PENDING'))return 'PENDING';
+ return 'MISSING';
+}
+
+function oddsDelta(s1,s2){const a=oddsPrice(s1),b=oddsPrice(s2);if(a===null||b===null)return null;return b-a}
+
+function oddsDiffText(v){if(v===null)return 'MISSING';const d=Math.round(v*100)/100;return (d>0?'↑ +':d<0?'↓ ':'＝ ')+d.toFixed(2)}
+
+function oddsMovement(o,f,p,op,pre){
+ if(!oddsHasData(pre))return '<div class="odds-move"><span class="odds-missing">賽前變化：'+oddsPreStatus(p)+'</span></div>';
+ let chunks=[];
+ for(const [m,title] of [['1X2','1X2'],['OU25','O/U2.5']]){
+  const key=oddsKey(m,oddsPick(f,m)),a=op[m],b=pre[m],dv=key?oddsDelta(a?.[key],b?.[key]):null;
+  if(dv!==null)chunks.push('<div class="odds-shift"><strong>'+title+' 預測方向</strong>：'+oddsFmtNumber(a[key])+' → '+oddsFmtNumber(b[key])+' <span class="'+(dv>0?'odds-up':dv<0?'odds-down':'')+'">'+oddsDiffText(dv)+'</span></div>');
+ }
+ const rows=[];
+ for(const [m,labels] of [['1X2',[['home','主'],['draw','和'],['away','客']]],['OU25',[['over','大'],['under','小']]]]){
+  if(!op[m]||!pre[m])continue;
+  const parts=labels.map(([k,t])=>{const v=oddsDelta(op[m][k],pre[m][k]);return v===null?null:t+' '+oddsDiffText(v)}).filter(Boolean);
+  if(parts.length)rows.push(m+'：'+parts.join('／'));
+ }
+ if(op.AH&&pre.AH&&op.AH.line_home!==null&&pre.AH.line_home!==null&&op.AH.line_home!==undefined&&pre.AH.line_home!==undefined&&Number.isFinite(Number(op.AH.line_home))&&Number.isFinite(Number(pre.AH.line_home))){
+  rows.push('AH 主讓球：'+String(op.AH.line_home)+' → '+String(pre.AH.line_home));
+  const h=oddsDelta(op.AH.home,pre.AH.home),a=oddsDelta(op.AH.away,pre.AH.away);
+  rows.push('AH 主水 '+oddsDiffText(h)+'／客水 '+oddsDiffText(a));
+ }
+ const multi=/MULTIBOOK|CROSSBOOK|CROSS_BOOK|PROXY/i.test(String(o.source_label||''))&&!o.same_bookmaker_verified;
+ return '<div class="odds-move">'+(chunks.join('')||'<span class="odds-missing">預測方向變化：MISSING</span>')
+  +(rows.length?'<details><summary>展開全部賠率與讓球盤變化</summary><div class="odds-shift-details">'+rows.map(x=>'<div>'+esc(x)+'</div>').join('')+'</div></details>':'')
+  +(multi?'<div class="tiny muted">比較盤可能混合莊家；僅列價差，不判定 Market Confirm / Against。</div>':'')
+  +'</div>';
+}
+
+function marketOddsCell(r,f){
+ const p=packageFor(r.id)||{},o=oddsMarketRecord(r,f),op=oddsSnapshot(o,'open'),pre=oddsSnapshot(o,'pre');
+ const label=String(o.source_label||p.source_and_cutoff?.market_type||'NOT_SAVED'),hasOpen=oddsHasData(op),hasPre=oddsHasData(pre);
+ const title=/MARKETPROXY|OPENPROXY|CROSSBOOK|MULTIBOOK|PROXY/i.test(label)?'OPENPROXY / CURRENT':'OPEN（已封存）';
+ const note='<div class="odds-source">資料：'+esc(label)+'</div>';
+ return '<div class="odds-cell">'
+  +'<div class="odds-head">'+title+'</div>'
+  +oddsLine('1X2', '1X2',op['1X2'],f)+oddsLine('O/U2.5','OU25',op.OU25,f)+oddsLine('AH','AH',op.AH,f)
+  +'<div class="odds-head">PRE-KICK '+(hasPre?'已封存':oddsPreStatus(p))+'</div>'
+  +oddsLine('1X2','1X2',pre['1X2'],f)+oddsLine('O/U2.5','OU25',pre.OU25,f)+oddsLine('AH','AH',pre.AH,f)
+  +oddsMovement(o,f,p,op,pre)+(hasOpen?note:'<div class="odds-missing">尚無本場可查的賠率快照</div>');
+}
+
+function marketPredictionCell(r,f,m){
+ const pick=oddsPick(f,m)||'MISSING',o=oddsMarketRecord(r,f),op=oddsSnapshot(o,'open'),n=oddsSelected(m,op[m],f);
+ const hot=n!==null&&n>1.80;
+ return '<div class="'+(hot?'prediction-high-odds':'market-prediction')+'"><strong>'+esc(pick)+'</strong><span class="odds-picked-price">'+(n!==null?' @'+n.toFixed(2):' · 賠率 MISSING')+'</span>'+(hot?'<span class="high-odds-badge">選中 '+n.toFixed(2)+' &gt; 1.80</span>':'')+'</div>';
+}
+
+function marketHighOddsPanel(r,fs){
+ if(!r||!fs?.length)return '';
+ const hits=[];let known=0;
+ for(const f of fs)for(const m of ['1X2','OU25']){
+  const op=oddsSnapshot(oddsMarketRecord(r,f),'open');
+  const n=oddsSelected(m,op[m],f);
+  if(n!==null){known++;if(n>1.8)hits.push([esc(f.fixture||f.home+' vs '+f.away),m==='1X2'?'1X2':'大小2.5',esc(oddsPick(f,m)), '<span class="high-odds-badge">'+n.toFixed(2)+' &gt; 1.80</span>']);}
+ }
+ return '<div class="panel odds-highlight-panel"><h2>本輪預測方向賠率 &gt; 1.80</h2><p class="muted">'+hits.length+' 筆超過門檻；'+known+'/'+(fs.length*2)+' 筆預測方向有封存比較價。僅計 1X2／大小2.5，不把機率當成賠率。此表不是投注建議。</p>'
+  +(hits.length?table(['比賽','市場','預測','初始快照價格'],hits):'<p class="odds-missing">無符合條件的已保存價格；未取得賠率的場次仍為 MISSING。</p>')+'</div>';
+}
+
+function marketOddsPanel(r,fixtures){
+ if(!r||!fixtures?.length)return '';
+ return '<div class="panel odds-panel"><div class="heading"><div><h2>每場賠率與 PRE-KICK 變化</h2><p class="muted">五大聯賽統一格式：1X2／大小2.5／亞洲讓球盤；初始快照 → PRE-KICK。只有選中方向有實際價格且 &gt; 1.80 才以琥珀色標示。OPENPROXY 不是已核實的 Bet365 首盤；缺值維持 MISSING／PENDING。</p></div>'+badge('EVERY MATCH')+'</div>'
+  +table(['比賽','賠率／盤口（含變化）'],fixtures.map(f=>[esc(f.fixture||f.home+' vs '+f.away),marketOddsCell(r,f)]))+'</div>';
+}
+
 function packageCard(id){const p=packageFor(id);if(!p)return '';return `<div class="tiny">${p.research_only?'Research · ':''}${esc(displayValue(p.PASS))}<br>${(p.ranked_picks.parity||[]).map(x=>esc(x.rank+' '+(x.match||x.home+' vs '+x.away)+' → '+x.pick)).join('<br>')}</div>`}
 function packageSummary(id){
  const p=packageFor(id);if(!p)return '';
@@ -262,9 +416,21 @@ function packageSettlementPanel(p){
  const rankRows=Object.entries(M).map(([m,name])=>[name,...[1,2,3].map(n=>{const x=ps.find(y=>y.ranks?.[m]===n);if(!x)return m==='parity'&&p.PASS?.parity?'PASS':'未選／PASS';const h=hit(x,m);return esc(x.fixture)+' · '+esc(x.directions[m]||'PASS')+' '+badge(rankNote(m),'gray')+' '+(h===null?badge('待結算','gray'):badge(h?'命中':'未中',h?'':'amber'))})]);
  return '<div class="panel"><h2>逐場對答案｜最終比分與三市場命中</h2>'+summary+table(['比賽','最終比分','1X2','O/U2.5','單雙'],rows)+'<h3>R1 / R2 / R3 對答案</h3>'+table(['市場','R1','R2','R3'],rankRows)+'<p class="muted">只按原封存預測與比分核算，PASS 不計；Research、Shadow、Relative 不計入正式精選績效。缺資料不補造。</p></div>';
 }
-function packagePage(id){const p=packageFor(id),r=roundById.get(id);return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)+packageSummary(id)+`<div class="panel"><h2>封存狀態與模型</h2>${table(['欄位','Package 原值'],['record_id','status','model','PASS','PARITY_SKEW_ALERT','XUAN_status','pre_kick_status','research_only','counts_as_official_forward_result','integrity_flags'].map(k=>[esc(k),esc(displayValue(p[k]))]))}<p>GitHub: ${esc(D.github_status)}</p><a href="${r.package_path}">原始 Dashboard Package JSON</a></div>${MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')}<div class="panel"><h2>本輪已封存預測</h2>${table(r.league==='BUNDESLIGA'?['比賽','1X2','OU25','單雙','賠率／盤口','我的單雙']:['比賽','1X2','OU25','單雙','我的單雙'],p.fixtures.map(f=>r.league==='BUNDESLIGA'?[esc(f.home+' vs '+f.away),bundesligaPredictionCell(r,f,'1X2'),bundesligaPredictionCell(r,f,'OU25'),esc(f.parity),bundesligaOddsCell(r,f),MyParity.cell(personalContext(r,f))]:[esc(f.home+' vs '+f.away),esc(f['1X2']),esc(f.OU25),esc(f.parity),MyParity.cell(personalContext(r,f))]))}</div>${packageSettlementPanel(p)}${bundesligaOddsPanel(r,p.fixtures)}`}
-
-
+function packagePage(id){
+ const p=packageFor(id),r=roundById.get(id);
+ if(!p||!r)return empty();
+ const fs=Array.isArray(p.fixtures)?p.fixtures:[];
+ const meta=table(['欄位','Package 原值'],['record_id','status','model','PASS','PARITY_SKEW_ALERT','XUAN_status','pre_kick_status','research_only','counts_as_official_forward_result','integrity_flags'].map(k=>[esc(k),esc(displayValue(p[k]))]));
+ const fixtureRows=fs.map(f=>[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25'),esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))]);
+ return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)
+ +packageSummary(id)
+ +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
+ +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
+ +marketHighOddsPanel(r,fs)
+ +'<div class="panel"><h2>本輪已封存預測與賠率</h2>'+table(['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+'</div>'
+ +packageSettlementPanel(p)
+ +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
+}
 function personalContext(r,f){
  const fixture=f.fixture||f.home+' vs '+f.away;
  const same=D.predictions.filter(x=>{const rr=roundById.get(x.record_id);return rr?.league===r.league&&rr.season===r.season&&rr.gw===r.gw&&x.fixture.replace(/\s+/g,'')===fixture.replace(/\s+/g,'')});
