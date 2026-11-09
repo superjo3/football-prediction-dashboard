@@ -1,0 +1,204 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "league": "Serie A",
+  "season": "2026-27",
+  "matchday": 12,
+  "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+  "archive_date_taipei": "2026-11-09",
+  "status": "RESEARCH_PREMATCH_EARLY_MARKETPROXY_NOT_OFFICIAL_EXACT",
+  "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
+  "website_updated": false,
+  "github_updated": false,
+  "model": {
+    "formal_identity": "Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+    "exact_wf6_rerun": false,
+    "exact_r90_rerun": false,
+    "1X2_OU_track": "EARLY_MARKETPROXY",
+    "parity_track": "RESEARCH_PARITY_CONSENSUS",
+    "research_gates": [
+      "DIRECTION_GUARD",
+      "SOURCE_GATE",
+      "AGREEMENT_GATE"
+    ],
+    "research_gates_status": "BACKTEST_REQUIRED_NOT_PROMOTED"
+  },
+  "source_and_cutoff": {
+    "fixture_source": "Lega Serie A Matchday 12",
+    "market_source": "multi-book early/current comparison",
+    "market_snapshot_date": "2026-11-09",
+    "bet365_first_tick": "MISSING",
+    "market_type": "MARKETPROXY",
+    "official_exact": "NOT_RUN"
+  },
+  "fixtures": [
+    {
+      "home": "Como",
+      "away": "Cagliari",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Lazio",
+      "away": "Lecce",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Parma",
+      "away": "Roma",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "單"
+    },
+    {
+      "home": "Napoli",
+      "away": "Torino",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Juventus",
+      "away": "Venezia",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Bologna",
+      "away": "Udinese",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "單"
+    },
+    {
+      "home": "Sassuolo",
+      "away": "Genoa",
+      "1X2": "和",
+      "OU25": "小2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Milan",
+      "away": "Frosinone",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Atalanta",
+      "away": "Inter",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    },
+    {
+      "home": "Monza",
+      "away": "Fiorentina",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "雙"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "match": "Parma vs Roma",
+        "pick": "Roma AWAY",
+        "market_fair_prob": 0.7181596424692414
+      },
+      {
+        "rank": "R2",
+        "match": "Como vs Cagliari",
+        "pick": "Como HOME",
+        "market_fair_prob": 0.7156985957051528
+      },
+      {
+        "rank": "R3",
+        "match": "Juventus vs Venezia",
+        "pick": "Juventus HOME",
+        "market_fair_prob": 0.7037304154007317
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "match": "Milan vs Frosinone",
+        "pick": "OVER 2.5",
+        "market_fair_prob": 0.6995515695067265
+      },
+      {
+        "rank": "R2",
+        "match": "Atalanta vs Inter",
+        "pick": "OVER 2.5",
+        "market_fair_prob": 0.6705882352941177
+      },
+      {
+        "rank": "R3",
+        "match": "Como vs Cagliari",
+        "pick": "OVER 2.5",
+        "market_fair_prob": 0.6045918367346939
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "match": "Milan vs Frosinone",
+        "pick": "EVEN",
+        "research_score": 0.69,
+        "odd_score": 0.31,
+        "distance_from_50": 0.19
+      },
+      {
+        "rank": "R2",
+        "match": "Napoli vs Torino",
+        "pick": "EVEN",
+        "research_score": 0,
+        "odd_score": 0.32999999999999996,
+        "distance_from_50": 0.17000000000000004
+      },
+      {
+        "rank": "R3",
+        "match": "Como vs Cagliari",
+        "pick": "EVEN",
+        "research_score": 0,
+        "odd_score": 0.36,
+        "distance_from_50": 0.14
+      }
+    ]
+  },
+  "parity_research_method": {
+    "history_window": "GW7-GW11 completed results",
+    "odd_score_formula": "0.7*pair_avg_last5_odd_rate + 0.3*pair_avg_last3_odd_rate",
+    "direction_rule": "ODD if odd_score>0.50 else EVEN",
+    "rank_rule": "descending abs(odd_score-0.50)",
+    "official": false
+  },
+  "notes": {
+    "Sassuolo-Genoa": "1X2 high entropy; DRAW lean, not ranked",
+    "Bologna-Udinese": "OU near 50/50; UNDER lean, not ranked",
+    "Monza-Fiorentina": "parity recent windows cancel; LOW_CONF"
+  },
+  "PASS": {
+    "1X2": false,
+    "OU25": false,
+    "parity": false
+  },
+  "research_only": true,
+  "counts_as_official_forward_result": false,
+  "gw": 12,
+  "pre_kick_status": "PENDING",
+  "PARITY_SKEW_ALERT": {
+    "triggered": false
+  },
+  "XUAN_status": {
+    "status": "NOT_RUN"
+  },
+  "integrity_flags": {
+    "exact_weights": "MISSING",
+    "bet365_first_tick": "MISSING"
+  }
+}
