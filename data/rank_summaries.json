@@ -181,5 +181,62 @@
       "end_line": 513,
       "version": 56
     }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "market": "1x2",
+    "hits": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+    },
+    "sample_each": 1,
+    "model": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+    "detail_available": true,
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "market": "ou25",
+    "hits": {
+      "1": 1,
+      "2": 1,
+      "3": 0
+    },
+    "sample_each": 1,
+    "model": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+    "detail_available": true,
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "market": "parity",
+    "hits": {
+      "1": 1,
+      "2": 1,
+      "3": 0
+    },
+    "sample_each": 1,
+    "model": "Bundesliga Parity V2-RG1",
+    "detail_available": true,
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
   }
 ]
