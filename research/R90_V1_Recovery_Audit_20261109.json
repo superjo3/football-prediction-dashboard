@@ -164,6 +164,13 @@
       "rounds": 38
     }
   ],
+  "same_picks_vs_even_2024_25": {
+    "r90_hits": 55,
+    "even_baseline_hits": 47,
+    "rescued": 17,
+    "harmed": 9,
+    "mcnemar_exact_p": 0.16863754391670227
+  },
   "source_sha256": {
     "R90_V1_每輪挑2場_嚴格前推測試.xlsx": "e44f620826d78530ac3522de873c9a4aa832962e22104c6da33acea0017be406",
     "R90_V1_Behavioral_Clone_V1.zip": "76c2f81d55a4b9027f3ea99b29c112403542752d54437a7e058af8a896264ed3",
