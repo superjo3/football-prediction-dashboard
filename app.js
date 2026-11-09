@@ -180,7 +180,7 @@ function packageSettlementPanel(p){
  const scoreOf=m=>{
   let v=m.score??m.result?.score;
   if(Array.isArray(v)&&v.length===2)return v.map(Number);
-  if(typeof v==='string'&&/^\\d+\\s*-\\s*\\d+$/.test(v))return v.split('-').map(Number);
+  if(typeof v==='string'&&/^\d+\s*-\s*\d+$/.test(v))return v.split('-').map(Number);
   return null;
  };
  const rows=ms.map(m=>{
