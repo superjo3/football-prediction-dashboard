@@ -76,3 +76,22 @@ verify_v2.py為本版固定基準；日後新增資料須新增相應驗證。ve
 - 修改 JSON 後使用 `python tools/build_epl_parity_dual.py --root .` 驗證並產生 JS，須同時提交兩檔。
 - 最新雙軌狀態可在網站「英超單雙兩版本」頁查看（`#eplparity`）；Shadow 在取得真正賽前凍結預測前為 `NOT_RUN`，**不與 Official 統計合併**。
 - 詳細規格與來源：`research/EPL_Parity_Dual_Track_Policy_20261109.md`。原 R90 Exact 權重尚未找到，歷史 73.7% 不等於新 Shadow 勝率。
+
+
+## 五大聯賽賠率顯示／PRE-KICK 差異（2026-11-09）
+
+所有聯賽輪次頁一致顯示 **每場 1X2、O/U2.5、亞洲讓球盤（AH）** 及賽前快照。主勝／和／客勝與大小球的「預測方向」若封存的比較價格 **嚴格大於 1.80**，以琥珀色標記，並於每輪獨立列表；等於 1.80 不觸發。**單雙沒有取得合法獨立賠率，不依機率換算價格。**
+
+價源先保留 OPEN / OPENPROXY 原始身份，Bet365 首盤未核實時不能標為 Bet365 OPEN。PRE-KICK 只能由帶來源、莊家、截取時間、驗證旗標的獨立快照追加；不能用目前價冒充過去價。每個市場顯示預測方向的基準價 → PRE-KICK 價與算術差額，另可展開 1X2 三方向、大小球兩方向及 AH 讓球線差；不同莊家／混合比較盤不推定 Confirm/Against。缺價顯示 MISSING，尚未截取的未來 PRE-KICK 顯示 PENDING。
+
+最新一輪資料覆蓋（封存初始市場比較價，非官方 Bet365 first tick）：
+
+| 聯賽 | 輪次 | 1X2 | O/U2.5 | AH | 預測價 >1.80 | PRE-KICK |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| EPL | GW11 | 10/10 | 10/10 | 0/10 | 6 | PENDING |
+| Bundesliga | GW10 | 9/9 | 9/9 | 9/9 | 3 | PENDING |
+| LaLiga Research | GW13 | 10/10 | 10/10 | 0/10 | 6 | PENDING |
+| Serie A Research | GW12 | 0/10 | 0/10 | 0/10 | 未知／缺賠率 | PENDING |
+| Ligue 1 | GW11 | 0/9 | 0/9 | 0/9 | 未知／缺賠率 | PENDING |
+
+西甲比較價取自原研究 Package 的 `matches[].market_1x2` 與 `market_ou25`，不是新查詢的官方初盤。主資料完整維持在 `data/packages/`；未來 PRE-KICK 獨立追加到 `data/market_prekick_snapshots.json` 並同步產生 `market-prekick.js`，不得改寫原賽前 Record。新增測試：`node tools/test_five_league_odds_ui_20261109.js`。
