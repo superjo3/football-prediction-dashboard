@@ -38,7 +38,7 @@ function table(headers,rows){return `<div class="tablewrap"><table><thead><tr>${
 function heading(k,h,sub,action=''){return `<div class="heading"><div><p class="eyebrow">${k}</p><h1>${h}</h1><p class="sub">${sub}</p></div>${action}</div>`}
 const getLeague=id=>D.leagues.find(l=>l.id===id);
 const leagueOptions=chosen=>D.leagues.map(l=>`<option value="${l.id}" ${l.id===chosen?'selected':''}>${l.name} · ${l.english}</option>`).join('');
-function latest(id){const rid=D.LATEST_RESEARCH?.[id]||D.LATEST_BY_LEAGUE?.[id];if(rid)return roundById.get(rid);return D.rounds.filter(r=>r.league===id).sort((a,b)=>b.gw-a.gw)[0]}
+function latest(id){const rid=(id==='EPL'?D.LATEST_BY_LEAGUE?.[id]:null)||D.LATEST_RESEARCH?.[id]||D.LATEST_BY_LEAGUE?.[id];if(rid)return roundById.get(rid);return D.rounds.filter(r=>r.league===id).sort((a,b)=>b.gw-a.gw)[0]}
 function versions(rid){return D.updates.filter(u=>u.record_id===rid&&u.selectable)}
 function latestLink(r){if(packageFor(r.id))return '#round/'+r.id;const u=versions(r.id).at(-1);return '#round/'+r.id+(u?'/'+u.id:'')}
 function roundStatus(r){
@@ -60,11 +60,11 @@ function recent(id){const top=latest(id)?.gw||0;return `<div class="panel"><h2>�
 function home(){return heading('FIVE LEAGUES / RESEARCH WORKSPACE','每一輪，都有跡可循。','五大聯賽已接入 · 原始預測、盤前更新、賽果與檢討分層保存。')+`<div class="grid leaguegrid">${D.leagues.map(l=>{const rs=D.rounds.filter(r=>r.league===l.id),r=latest(l.id);return `<a class="leaguecard" href="#league/${l.id}"><div class="code">${l.id}</div><strong>${l.name} <span class="muted">↗</span></strong>${badge(rs.length+'輪逐場')}<div class="muted">最新 GW${r.gw} · ${esc(roundStatus(r).label)}</div>${packageCard(r.id)}</a>`}).join('')}</div><div class="panel"><div class="heading"><h2>五大聯賽累計表現</h2>${badge('已匯入範圍 · 跨歷代版本','gray')}</div>${table(['聯賽','1X2','大小2.5','單雙','最新一輪'],D.leagues.map(l=>[esc(l.name),...Object.keys(M).map(m=>stattext(stats(l.id,m))),`<a class="good" href="${latestLink(latest(l.id))}">GW${latest(l.id).gw} →</a>`]))}<p class="muted">只累計已匯入逐場與明示的輪次結算摘要；不等於所有歷史輪次，亦非單一模型勝率。原文更長期累計可在各聯賽頁獨立查閱。</p></div><div class="filters"><label for="homeleague">查看聯賽</label><select id="homeleague">${leagueOptions(homeLeague)}</select></div><div id="homebody"></div>`}
 function homebody(){const id=homeLeague,r=latest(id);$('#homebody').innerHTML=MyParity.panel(personalContexts(),'我的單雙累計命中率')+packageSummary(r.id)+(id==='EPL'?eplDualTrackView(true):'')+cards(id)+`<div class="panel"><h2>${names[id]} · R1 / R2 / R3 已匯入累計</h2>${ranktable(id)}<p class="muted">原始版＋賽前R3補充為預設統計基準；更新版另比較，單輪不重複累加。候補R3不計。法甲R位為原文相對排名，非80%精選。</p></div>`+recent(id)+`<div class="heroaside"><h2>${names[id]}最新紀錄 · GW${r.gw}</h2><p>${esc(r.note)}</p><a href="${latestLink(r)}">查看最新版本 →</a></div>`+historical(id);bindPersonal()}
 function league(id){const l=getLeague(id);if(!l)return empty();const rs=D.rounds.filter(r=>r.league===id);return heading(l.english,names[id]+' · 賽季檔案','2026–27 · 保存已收錄原始版本；新舊模型分欄、候補與正式R位分開。',`<a class="button primary" href="${latestLink(latest(id))}">最新 GW${latest(id).gw} →</a>`)+(id==='EPL'?eplDualTrackView(true):'')+D.audit_notes.filter(n=>n.league===id&&!(n.message.includes('GW8無逐場Record')&&rs.some(r=>r.gw===8))).map(n=>`<div class="notice">${esc(n.message)} ${source(n.source)}</div>`).join('')+`<div class="filters"><label>賽季 <select id="seasonfilter"><option>2026-27</option></select></label><label>模型版本 <select id="modelfilter"><option value="">歷代紀錄（跨版本）</option>${[...new Set(rs.map(r=>r.model))].map(m=>`<option>${esc(m)}</option>`).join('')}</select></label><label>輪次 <select id="gwfilter"><option value="">全部輪次</option>${[...new Set([...rs.map(r=>r.gw),...D.rank_summaries.filter(s=>s.league===id).map(s=>s.gw),...D.market_reports.filter(s=>s.league===id).map(s=>s.gw)])].sort((a,b)=>a-b).map(g=>`<option>${g}</option>`).join('')}</select></label><label>狀態 <select id="statefilter"><option value="">全部狀態</option><option>OPEN</option><option>PRE-KICK</option><option>RESULT</option><option>REVIEW</option></select></label></div><div id="leaguebody"></div>`}
-function leaguebody(id){const gw=$('#gwfilter').value,model=$('#modelfilter').value,st=$('#statefilter').value;let rs=D.rounds.filter(r=>r.league===id&&(!model||r.model===model)&&(!gw||r.gw===+gw)).sort((a,b)=>b.gw-a.gw);rs=rs.filter(r=>{const s=roundStatus(r);return !st||st==='OPEN'&&!s.hasResults||st==='RESULT'&&s.hasResults||st==='PRE-KICK'&&s.prekick||st==='REVIEW'&&s.review});let rows=rs.map(r=>{const s=roundStatus(r);return [`<a class="good" href="#round/${r.id}"><strong>GW${r.gw} →</strong></a><div class="tiny">${versions(r.id).length?'含獨立更新版':''}</div>`,esc(r.snapshot),`<span class="mini">${esc(r.model)}</span>`,badge(s.label,s.hasResults?'':'gray')+' '+(s.review?badge('REVIEW'):'')+' '+badge(s.prekick?'PRE-KICK':'PRE-KICK 缺','gray'),...Object.keys(M).map(m=>stattext(rstats(r,m))),[1,2,3].map(n=>`R${n} ${stattext(rstats(r,'parity',n))}`).join('<br>')]});if(!model&&(!st||st==='RESULT')){const known=new Set(D.rounds.filter(r=>r.league===id).map(r=>r.gw));const gs=[...new Set([...D.rank_summaries,...D.market_reports].filter(q=>q.league===id&&!known.has(q.gw)&&(!gw||q.gw===+gw)).map(q=>q.gw))].sort((a,b)=>b-a);for(const g of gs){const q=D.rank_summaries.find(q=>q.league===id&&q.gw===g);rows.push(['GW'+g,'僅來源摘要','逐場資料未收錄',badge('RESULT 摘要','gray'),...Object.keys(M).map(m=>{const a=D.market_reports.find(a=>a.league===id&&a.gw===g&&a.market===m);return a?stattext({h:a.hits,n:a.n}):'—'}),q?Object.entries(q.hits).map(([k,h])=>`R${k} ${h}/1`).join(' · ')+'<br>'+source(q.source):'—'])}}
+function leaguebody(id){const gw=$('#gwfilter').value,model=$('#modelfilter').value,st=$('#statefilter').value;let rs=D.rounds.filter(r=>r.league===id&&!(id==='EPL'&&r.research_only&&r.id.includes('R90-RECOVERY-SHADOW'))&&(!model||r.model===model)&&(!gw||r.gw===+gw)).sort((a,b)=>b.gw-a.gw);rs=rs.filter(r=>{const s=roundStatus(r);return !st||st==='OPEN'&&!s.hasResults||st==='RESULT'&&s.hasResults||st==='PRE-KICK'&&s.prekick||st==='REVIEW'&&s.review});let rows=rs.map(r=>{const s=roundStatus(r);return [`<a class="good" href="#round/${r.id}"><strong>GW${r.gw} →</strong></a><div class="tiny">${versions(r.id).length?'含獨立更新版':''}</div>`,esc(r.snapshot),`<span class="mini">${esc(r.model)}</span>`,badge(s.label,s.hasResults?'':'gray')+' '+(s.review?badge('REVIEW'):'')+' '+badge(s.prekick?'PRE-KICK':'PRE-KICK 缺','gray'),...Object.keys(M).map(m=>stattext(rstats(r,m))),[1,2,3].map(n=>`R${n} ${stattext(rstats(r,'parity',n))}`).join('<br>')]});if(!model&&(!st||st==='RESULT')){const known=new Set(D.rounds.filter(r=>r.league===id).map(r=>r.gw));const gs=[...new Set([...D.rank_summaries,...D.market_reports].filter(q=>q.league===id&&!known.has(q.gw)&&(!gw||q.gw===+gw)).map(q=>q.gw))].sort((a,b)=>b-a);for(const g of gs){const q=D.rank_summaries.find(q=>q.league===id&&q.gw===g);rows.push(['GW'+g,'僅來源摘要','逐場資料未收錄',badge('RESULT 摘要','gray'),...Object.keys(M).map(m=>{const a=D.market_reports.find(a=>a.league===id&&a.gw===g&&a.market===m);return a?stattext({h:a.hits,n:a.n}):'—'}),q?Object.entries(q.hits).map(([k,h])=>`R${k} ${h}/1`).join(' · ')+'<br>'+source(q.source):'—'])}}
 $('#leaguebody').innerHTML=cards(id,null,'base',model)+`<div class="panel"><h2>輪次封存</h2>${rows.length?table(['GW','版本','模型','狀態','1X2','大小','單雙','單雙R位'],rows):'<div class="empty">沒有符合條件的紀錄。缺失快照不會補造。</div>'}</div><div class="panel"><h2>已匯入 R1 / R2 / R3 累計</h2>${ranktable(id,model)}<p class="muted">此處依模型篩選；不隨輪次／狀態篩選改變累計。不同歷代模型合計只表示封存軌跡，不能當成單一模型能力。</p></div>`+historical(id)+recent(id)}
 function raw(s){return `<details><summary>${esc(s.title)}　${source(s.source)}</summary><pre class="raw">${esc(s.text)}</pre></details>`}
 function sourceSection(r){return D.source_sections.find(s=>s.source.version===r.version&&s.source.start_line<=r.start_line&&s.source.end_line>=r.start_line)}
-function round(id,version='base'){if(packageFor(id))return packagePage(id);const r=roundById.get(id);if(!r)return empty();const st=roundStatus(r),u=D.updates.find(u=>u.id===version&&u.record_id===id);return heading(`${r.league} / 2026–27 / MATCHWEEK ${r.gw}`,`${names[r.league]} 第 ${r.gw} 輪`,`${esc(r.model)}<br><span class="tiny">${esc(r.id)}</span>`,`<a class="button" href="#league/${r.league}">← 返回${names[r.league]}</a>`)+`<div class="notice">${esc(r.note)} ${source(r.source)}</div><div class="filters"><label for="versionfilter">預測版本</label><select id="versionfilter"><option value="base" ${version==='base'?'selected':''}>${r.coverage==='recovered'?'恢復版（XUAN更新後）':'原始版＋賽前R3補充'}</option>${versions(id).map(u=>`<option value="${u.id}" ${version===u.id?'selected':''}>${esc(u.label)}</option>`).join('')}</select>${u?badge(u.type,'amber'):badge(r.snapshot,'gray')}</div>${u?`<div class="notice">目前顯示 ${esc(u.label)}，原始預測未變更。${source(u.source)} ${esc(u.status||'')}</div>`:''}<div class="timeline"><span class="stage done">${r.coverage==='recovered'?'恢復紀錄':'OPEN'} · ${esc(r.snapshot)}</span><span class="stage ${st.prekick?'done':'missing'}">PRE-KICK · ${st.prekick?'已收錄':'缺失'}</span><span class="stage ${st.hasResults?'done':'missing'}">RESULT · ${st.hasResults?`${st.scored}/${st.total}筆比分${st.excluded?'，另'+st.excluded+'場排除':''}`:'待結算'}</span><span class="stage ${st.review?'done':'missing'}">REVIEW · ${st.review?'已追加':'未收錄'}</span></div>`+cards(r.league,r,version)+`<div class="panel"><h2>本版本三市場 R1 / R2 / R3</h2>${selectionTable(id,version)}</div>${marketHighOddsPanel(r,effective(id,version))}${marketOddsPanel(r,effective(id,version))}<div class="tabs" role="group" aria-label="詳情類別">${[['matches','比賽與命中'],['predictions','原始預測'],['updates','盤前更新／盤口'],['results','正式賽果'],['reviews','賽後檢討／修正']].map(([v,n],i)=>`<button data-tab="${v}" class="${i===0?'selected':''}">${n}</button>`).join('')}</div><div id="roundbody"></div>`}
+function round(id,version='base'){if(id.includes('R90-RECOVERY-SHADOW')){const orig=eplOfficialRound(id);if(orig&&orig.id!==id)return packagePage(orig.id);}if(packageFor(id))return packagePage(id);const r=roundById.get(id);if(!r)return empty();const st=roundStatus(r),u=D.updates.find(u=>u.id===version&&u.record_id===id);return heading(`${r.league} / 2026–27 / MATCHWEEK ${r.gw}`,`${names[r.league]} 第 ${r.gw} 輪`,`${esc(r.model)}<br><span class="tiny">${esc(r.id)}</span>`,`<a class="button" href="#league/${r.league}">← 返回${names[r.league]}</a>`)+`<div class="notice">${esc(r.note)} ${source(r.source)}</div><div class="filters"><label for="versionfilter">預測版本</label><select id="versionfilter"><option value="base" ${version==='base'?'selected':''}>${r.coverage==='recovered'?'恢復版（XUAN更新後）':'原始版＋賽前R3補充'}</option>${versions(id).map(u=>`<option value="${u.id}" ${version===u.id?'selected':''}>${esc(u.label)}</option>`).join('')}</select>${u?badge(u.type,'amber'):badge(r.snapshot,'gray')}</div>${u?`<div class="notice">目前顯示 ${esc(u.label)}，原始預測未變更。${source(u.source)} ${esc(u.status||'')}</div>`:''}<div class="timeline"><span class="stage done">${r.coverage==='recovered'?'恢復紀錄':'OPEN'} · ${esc(r.snapshot)}</span><span class="stage ${st.prekick?'done':'missing'}">PRE-KICK · ${st.prekick?'已收錄':'缺失'}</span><span class="stage ${st.hasResults?'done':'missing'}">RESULT · ${st.hasResults?`${st.scored}/${st.total}筆比分${st.excluded?'，另'+st.excluded+'場排除':''}`:'待結算'}</span><span class="stage ${st.review?'done':'missing'}">REVIEW · ${st.review?'已追加':'未收錄'}</span></div>`+cards(r.league,r,version)+`<div class="panel"><h2>本版本三市場 R1 / R2 / R3</h2>${selectionTable(id,version)}</div>${marketHighOddsPanel(r,effective(id,version))}${marketOddsPanel(r,effective(id,version))}<div class="tabs" role="group" aria-label="詳情類別">${[['matches','比賽與命中'],['predictions','原始預測'],['updates','盤前更新／盤口'],['results','正式賽果'],['reviews','賽後檢討／修正']].map(([v,n],i)=>`<button data-tab="${v}" class="${i===0?'selected':''}">${n}</button>`).join('')}</div><div id="roundbody"></div>`}
 function selectionTable(id,version){const ps=effective(id,version);return table(['市場','R1','R2','R3'],Object.entries(M).map(([m,label])=>[label,...[1,2,3].map(rank=>{const p=ps.find(p=>p.ranks[m]===rank);if(!p)return '未正式封存';const h=hit(p,m);return `<strong>${esc(p.fixture)}</strong><br>${esc(p.directions[m])} ${h===null?badge('待結算','gray'):badge(h?'命中':'未中',h?'':'amber')}`})]))}
 function renderTextTable(text){const ls=text.split('\n');let out='',i=0;while(i<ls.length){if(ls[i].startsWith('|')){const rows=[];while(i<ls.length&&ls[i].startsWith('|')){const l=ls[i++];if(!/^\|[-: |]+\|$/.test(l))rows.push(l.trim().replace(/^\||\|$/g,'').split('|').map(x=>esc(x.replaceAll('**','').replaceAll('`','').trim())))}out+=table(rows[0]||[],rows.slice(1));}else{const chunk=[];while(i<ls.length&&!ls[i].startsWith('|'))chunk.push(ls[i++]);out+=`<pre class="raw textblock">${esc(chunk.join('\n'))}</pre>`}}return out}
 function roundbody(id,version,tab='matches'){
@@ -84,52 +84,95 @@ function roundbody(id,version,tab='matches'){
 }
 function matchtable(id,version){let ps=effective(id,version);const q=$('#fixturefilter').value.trim();if(q)ps=ps.filter(p=>p.fixture.includes(q));if($('#rankonly').checked)ps=ps.filter(p=>Object.values(p.ranks).some(Boolean));const r=roundById.get(id),headers=['比賽','最終比分',...Object.values(M),'賠率／盤口','我的單雙'];$('#matches').innerHTML=`<div class="panel">${ps.length?table(headers,ps.map(p=>{const row=[`<div class="match"><strong>${esc(p.fixture)}</strong><div class="tiny muted">${p.match_id}</div></div>`,`<span class="score">${result(p)?.score?result(p).score.join(' – '):result(p)?.status==='ABANDONED'?'腰斬':'—'}</span>`,...Object.keys(M).map(m=>{const v=hit(p,m),reported=D.reported_predictions.find(x=>x.match_id===p.match_id&&x.record_id===id)?.directions[m];return `<div class="resultcell">${esc(p.directions[m]||'未收錄原始方向')}${p.ranks[m]?`<span class="ranktag">R${p.ranks[m]}</span>`:''}<span class="outcome ${v===true?'good':v===false?'bad':'muted'}">${v===null?result(p)?.status==='ABANDONED'?'排除統計':'— 無逐筆結算':`${v?'✓ 命中':'× 未中'} · 實際 ${actual(p,m)}`}</span>${!p.directions[m]&&reported?`<span class="outcome ambertext">結算追述：${esc(reported)}<br>另存，未倒填預測</span>`:''}${p.market_status?.[m]?`<span class="outcome muted">${esc(p.market_status[m])}</span>`:''}</div>`})];row.push(marketOddsCell(r,p));row.push(MyParity.cell(personalContext(r,p)));return row})):'<div class="empty">沒有符合的場次。</div>'}<p class="muted">缺原始預測或賠率的欄位不反推；歷史未保存的賠率一律標 MISSING。</p></div>`;bindPersonal();}
 // EPL parity dual-track view: accepts only frozen Shadow records; never mixes Shadow with Official.
+// EPL Official and R90 Recovery Shadow remain separate frozen records; display them side-by-side.
+function eplOfficialRound(id){
+ const r=roundById.get(id);
+ if(r?.league==='EPL'&&r.research_only&&id.includes('R90-RECOVERY-SHADOW')){
+  const rec=(window.EPL_PARITY_DUAL?.shadow_records||[]).find(x=>x.record_id===id);
+  return rec?roundById.get(rec.official_record_id)||r:r;
+ }
+ return r;
+}
+function eplShadowRecord(r){
+ if(!r||r.league!=='EPL'||r.research_only)return null;
+ const cfg=window.EPL_PARITY_DUAL;
+ if(cfg?.policy_id!=='EPL-PARITY-2TRACK-20261109'||r.gw<cfg.effective_from_gw)return null;
+ const sh=(cfg.shadow_records||[]).find(x=>x.official_record_id===r.id&&x.gw===r.gw&&x.season===r.season);
+ if(!sh||!['PREMATCH_FROZEN','SETTLED','SETTLEMENT_INCOMPLETE'].includes(sh.status))return null;
+ if(!sh.prediction_cutoff_utc||!sh.first_kickoff_utc||!sh.model_artifact_sha256||!sh.seal_sha256)return null;
+ const cutoff=Date.parse(sh.prediction_cutoff_utc),kickoff=Date.parse(sh.first_kickoff_utc);
+ if(!Number.isFinite(cutoff)||!Number.isFinite(kickoff)||cutoff>=kickoff)return null;
+ const pack=packageFor(r.id),ids=new Set((pack?.fixtures||[]).map(f=>f.match_id));
+ if(ids.size!==10||!Array.isArray(sh.predictions)||sh.predictions.length!==10)return null;
+ if(new Set(sh.predictions.map(x=>x.match_id)).size!==10||sh.predictions.some(x=>!ids.has(x.match_id)||!['單','雙'].includes(x.direction)))return null;
+ if(![1,2,3].every(k=>sh.predictions.filter(x=>x.rank===k).length===1))return null;
+ return sh;
+}
+function eplOfficialRank(p,f){
+ const rank=(p?.ranked_picks?.parity||[]).find(x=>x.match_id===f.match_id||(x.home===f.home&&x.away===f.away)||x.match===[f.home,f.away].join(' vs '))?.rank;
+ if(typeof rank==='number')return rank;
+ const n=Number(String(rank||'').replace(/^R/i,''));return n>=1&&n<=3?n:null;
+}
+function eplParityPickCell(direction,rank,actualValue,kind){
+ if(!['單','雙'].includes(direction))return '<span class="odds-missing">NOT_RUN / MISSING</span>';
+ const resultText=actualValue===null?'<span class="outcome muted">待結算</span>':('<span class="outcome '+(direction===actualValue?'good':'bad')+'">'+(direction===actualValue?'✓ 命中':'× 未中')+'</span>');
+ return '<div class="resultcell"><strong>'+esc(direction)+'</strong>'+(rank?'<span class="ranktag">R'+rank+'</span>':'')+resultText+(kind==='shadow'?'<span class="outcome muted">Research／不計 Official</span>':'')+'</div>';
+}
+function eplParityComparisonCells(r,f){
+ const p=packageFor(r.id),shadow=eplShadowRecord(r),sp=shadow?.predictions.find(x=>x.match_id===f.match_id);
+ const op=D.predictions.find(x=>x.record_id===r.id&&x.match_id===f.match_id);
+ const actualValue=op?actual(op,'parity'):null;
+ const rankA=eplOfficialRank(p,f);
+ const a=eplParityPickCell(f.parity||op?.directions?.parity,rankA,actualValue,'official');
+ const b=sp?eplParityPickCell(sp.direction,sp.rank,actualValue,'shadow'):'<span class="odds-missing">NOT_RUN / 未驗證封存</span>';
+ return {a,b,actual:actualValue||'待結算',rankA,rankB:sp?.rank||null,directionA:f.parity||op?.directions?.parity,directionB:sp?.direction||null};
+}
+function eplParityOneTable(r,withLink=false){
+ const p=packageFor(r.id),fs=p?.fixtures||[];
+ const shadow=eplShadowRecord(r);
+ if(!fs.length)return '<div class="empty">本輪缺少已封存的逐場資料。</div>';
+ const rows=fs.map(f=>{
+  const c=eplParityComparisonCells(r,f);
+  return [esc([f.home,f.away].join(' vs ')),c.a,c.b,esc(c.actual)];
+ });
+ return '<div class="panel"><div class="heading"><div><h2>GW'+r.gw+' 英超單雙｜兩版合併比較</h2><p class="sub">每場只列一次：A Official 與 B R90 Recovery Shadow 並排，R1／R2／R3 各自標示</p></div>'+(withLink?'<a class="button" href="#round/'+esc(r.id)+'">查看完整輪次、1X2、大小與賠率 →</a>':'')+'</div>'
+  +table(['比賽','A · Official 正式版','B · Recovery Shadow','實際單雙'],rows)
+  +'<p class="muted">B 版：'+(shadow?'賽前獨立凍結，Research／非高信心投注精選':'NOT_RUN 或原始賽前封存尚未通過驗證')+'。兩版命中率分開結算；不改動原始 Record。</p></div>';
+}
+function eplParityRankResults(r,which){
+ const p=packageFor(r.id),s=eplShadowRecord(r),ps=D.predictions.filter(x=>x.record_id===r.id);
+ let out=[];
+ for(const f of p?.fixtures||[]){
+  const sp=s?.predictions.find(z=>z.match_id===f.match_id),op=ps.find(z=>z.match_id===f.match_id);
+  const entry=which==='shadow'?{dir:sp?.direction,rank:sp?.rank}: {dir:f.parity||op?.directions?.parity,rank:eplOfficialRank(p,f)};
+  const a=op?actual(op,'parity'):null;
+  if(['單','雙'].includes(entry.dir))out.push({...entry,actual:a});
+ }
+ return out;
+}
+function eplParityStatsText(r,which){
+ const xs=eplParityRankResults(r,which);
+ const format=(ranks)=>{
+  const matches=xs.filter(x=>(ranks===null||ranks.includes(x.rank))&&['單','雙'].includes(x.actual));
+  const h=matches.filter(x=>x.dir===x.actual).length;
+  return matches.length?((100*h/matches.length).toFixed(1)+'% ('+h+'/'+matches.length+')'):'— 待結算';
+ };
+ return '全輪 '+format(null)+' · R1 '+format([1])+' · R2 '+format([2])+' · R3 '+format([3])+' · R1+R2 '+format([1,2]);
+}
 function eplDualTrackView(compact=false){
  const cfg=window.EPL_PARITY_DUAL;
- if(!cfg||cfg.policy_id!=='EPL-PARITY-2TRACK-20261109')return '<div class="notice">英超單雙雙軌設定尚未載入；不產生代填結果。</div>';
- const rlist=D.rounds.filter(r=>r.league==='EPL'&&!r.research_only&&r.gw>=cfg.effective_from_gw).sort((a,b)=>a.gw-b.gw);
- const allOfficial=D.rounds.filter(r=>r.league==='EPL'&&!r.research_only).sort((a,b)=>a.gw-b.gw);
- const last=allOfficial.at(-1);
- const current=last?effective(last.id):[];
- const ranks=current.filter(p=>p.directions?.parity).sort((a,b)=>(a.ranks?.parity||99)-(b.ranks?.parity||99));
- const lastRanks=[1,2,3].map(k=>{const p=ranks.find(p=>p.ranks?.parity===k);return p?`<div>R${k}：${esc(p.fixture)} → <strong>${esc(p.directions.parity)}</strong></div>`:`<div>R${k}：未保存</div>`}).join('');
- const shadows=(cfg.shadow_records||[]).filter(x=>['PREMATCH_FROZEN','SETTLED','SETTLEMENT_INCOMPLETE'].includes(x.status)&&x.season===cfg.season&&x.gw>=cfg.effective_from_gw);
- const isValidShadow=s=>{
-  if(!s||!s.prediction_cutoff_utc||!s.first_kickoff_utc||!s.model_artifact_sha256||!s.seal_sha256)return false;
-  if(!Number.isFinite(Date.parse(s.prediction_cutoff_utc))||!Number.isFinite(Date.parse(s.first_kickoff_utc))||Date.parse(s.prediction_cutoff_utc)>=Date.parse(s.first_kickoff_utc))return false;
-  if(s.predictions?.length!==10||new Set(s.predictions.map(p=>p.match_id)).size!==10)return false;
-  return [1,2,3].every(k=>s.predictions.filter(p=>p.rank===k&&['單','雙'].includes(p.direction)).length===1);
- };
- const validShadow=shadows.filter(isValidShadow);
- const calcStats=(arr,rank=null)=>{let h=0,n=0;for(const entry of arr){if(rank!==null&&entry.rank!==rank)continue;if(!['單','雙'].includes(entry.direction)||!['單','雙'].includes(entry.actual))continue;h+=Number(entry.direction===entry.actual);n++}return {h,n}};
- const officialPicks=rlist.flatMap(r=>effective(r.id).filter(p=>p.directions?.parity).map(p=>({rank:p.ranks?.parity||null,direction:p.directions.parity,actual:actual(p,'parity')})));
- const shadowPicks=validShadow.flatMap(s=>{
-  const r=roundById.get(s.official_record_id);
-  if(!r||r.league!=='EPL'||r.gw!==s.gw)return [];
-  const ps=effective(r.id);
-  return s.predictions.map(p=>{const op=ps.find(z=>z.match_id===p.match_id);return {rank:p.rank,direction:p.direction,actual:op?actual(op,'parity'):null}});
- });
- const f=(arr)=>['R1','R2','R3','R1+R2'].map((label,i)=>{
-   const keys=i===3?[1,2]:[i+1];const n=arr.filter(x=>keys.includes(x.rank));const v=calcStats(n);return `${label} ${v.n?`${rate(v)} (${v.h}/${v.n})`:'— (無樣本)'}`;
- }).join(' · ');
- const officialMeta=`${rlist.length?`${rlist.length} 輪雙軌期間已收錄`: '雙軌期間尚未收錄正式賽前輪次'} · ${f(officialPicks)}`;
- const shadowMeta=`${validShadow.length?`${validShadow.length} 輪有效賽前封存`: 'NOT_RUN · 無已凍結 Shadow 新輪次'} · ${f(shadowPicks)}`;
- let html=`<div class="panel"><div class="heading"><div><h2>英超單雙｜Official + R90 Recovery Shadow</h2><p class="sub">2026–27 GW${cfg.effective_from_gw} 起 · 兩版方向與 R1／R2／R3 分開封存及結算</p></div>${compact?'<a class="button" href="#eplparity">查看雙版本 →</a>':''}</div><div class="grid kpis"><div class="card"><h3>Official｜現行正式版</h3>${badge('ACTIVE','good')}<p class="muted">${esc(officialMeta)}</p></div><div class="card"><h3>Research｜R90 Recovery Shadow</h3>${badge(validShadow.length?'RESEARCH / SHADOW':'NOT_RUN','gray')}<p class="muted">${esc(shadowMeta)}</p></div></div><p class="muted">現行 Official 不變；Shadow 原始 Exact 權重未找回，未經賽前凍結絕不顯示預測或命中率。歷史 R90 勝率不能繼承。</p>`;
- if(!compact){
-  html+=`<h3>最新已收錄的 Official（歷史版本，不倒填 Shadow）</h3><p>GW${last?.gw||'—'} · ${last?esc(last.id):'尚無'}</p><div>${lastRanks}</div>`;
-  const rows=rlist.map(r=>{
-   const offs=effective(r.id),sh=validShadow.find(x=>x.official_record_id===r.id);
-   const showPicks=(ps,directionField,rankField)=>[1,2,3].map(k=>{const p=ps.find(x=>x[rankField]===k);return p?`R${k} ${esc(p.fixture||offs.find(y=>y.match_id===p.match_id)?.fixture||p.match_id)}：${esc(p[directionField])}`:`R${k} —`}).join(' / ');
-   const official=showPicks(offs.map(x=>({...x,rank:x.ranks?.parity,direction:x.directions?.parity})), 'direction','rank');
-   const shadow=sh?showPicks(sh.predictions,'direction','rank'):'NOT_RUN';
-   return [`GW${r.gw}`,official,shadow,stattext(calcStats(offs.map(p=>({direction:p.directions?.parity,actual:actual(p,'parity')})))),sh?stattext(calcStats(sh.predictions.map(p=>{const op=offs.find(y=>y.match_id===p.match_id);return {direction:p.direction,actual:op?actual(op,'parity'):null}}))):'—'];
-  });
-  html+=`<h3>新雙軌逐輪比較</h3>${rows.length?table(['輪次','Official R1/R2/R3','Recovery Shadow R1/R2/R3','Official 全輪','Shadow 全輪'],rows):'<div class="empty">GW11 起尚無雙軌期間的已收錄輪次。Official 舊紀錄照常保留，Shadow 保持 NOT_RUN。</div>'}`;
-  html+=`<p class="muted">只比較同一正式比賽的比分與賽前凍結方向，PASS 不計。研究狀態：<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/EPL_Parity_Dual_Track_Policy_20261109.md" target="_blank" rel="noopener noreferrer">雙軌封存規則</a>。</p>`;
- }
- return html+'</div>';
+ if(cfg?.policy_id!=='EPL-PARITY-2TRACK-20261109')return '<div class="notice">英超單雙雙軌設定尚未載入；不代填 Shadow。</div>';
+ const officialRounds=D.rounds.filter(r=>r.league==='EPL'&&!r.research_only&&r.gw>=cfg.effective_from_gw).sort((a,b)=>b.gw-a.gw);
+ const latestR=officialRounds[0];
+ if(!latestR)return '<div class="notice">英超尚無 GW'+cfg.effective_from_gw+' 起的雙軌輪次；歷史 Official 保留。</div>';
+ const shadow=eplShadowRecord(latestR);
+ const desc='<p class="muted">A · Official：'+esc(eplParityStatsText(latestR,'official'))+'<br>B · Recovery Shadow：'+(shadow?esc(eplParityStatsText(latestR,'shadow')):'NOT_RUN · 無有效凍結資料')+'</p>';
+ if(compact)return '<div class="panel"><h2>英超 GW'+latestR.gw+'｜單雙雙版本同表</h2>'+desc+'<a class="button" href="#eplparity">開啟兩版逐場比較 →</a></div>';
+ const links=officialRounds.map(r=>'<a class="button" href="#round/'+esc(r.id)+'">GW'+r.gw+' 完整預測</a>').join(' ');
+ return eplParityOneTable(latestR,true)+'<div class="panel"><h3>兩版獨立命中率</h3>'+desc+'<p class="muted">GW11 起的每輪原始凍結不覆寫；賽前比較不等於正式勝率。</p>'+links+'</div>';
 }
-function eplParityDualPage(){return heading('EPL PARITY / DUAL TRACK','英超單雙 · 兩版並行','Official 不變；R90 Recovery Shadow 僅作嚴格賽前研究。')+eplDualTrackView(false)}
+function eplParityDualPage(){return heading('EPL PARITY / COMBINED','英超單雙 · 雙版本同表','每場一列：Official 與 Recovery Shadow 並排；原始模型與命中率仍獨立。')+eplDualTrackView(false)}
+
 function research(){return heading('PARITY RESEARCH LAB','單雙研究室','五大聯賽分開查看 · 來源封存摘要，非本次重新回測。')+`<div class="notice">英超單雙自 GW11 起分 Official 與 R90 Recovery Shadow，<a href="#eplparity">查看雙版本</a>；兩版命中率嚴格分開。</div><div class="notice">英超Exact與四聯賽Common Proxy分開。其他聯賽未有Exact資料時明示缺口，不能以Proxy冒充。</div><div class="filters"><label>聯賽 <select id="researchleague">${leagueOptions('EPL')}</select></label><label>模型 <select id="researchmodel"><option value="">全部模型</option></select></label><label>賽季 <select id="researchseason"><option value="">全部賽季</option></select></label></div><div id="researchtable"></div>`}
 function researchFilters(){const id=$('#researchleague').value,rows=D.research.filter(r=>(r.league||'EPL')===id);$('#researchmodel').innerHTML='<option value="">全部模型</option>'+[...new Set(rows.map(r=>r.model))].map(m=>`<option>${esc(m)}</option>`).join('');$('#researchseason').innerHTML='<option value="">全部賽季</option>'+[...new Set(rows.map(r=>r.season))].sort().map(s=>`<option>${esc(s)}</option>`).join('');researchtable()}
 function researchtable(){const id=$('#researchleague').value,m=$('#researchmodel').value,s=$('#researchseason').value;const rows=D.research.filter(r=>(r.league||'EPL')===id&&(!m||r.model===m)&&(!s||r.season===s));$('#researchtable').innerHTML=(id==='EPL'?'<div class="notice"><strong>R90 V1 第三階段來源稽核｜Research only</strong> · 檢查 21 份 ZIP（19 份不同封存），未找到原始英超方向及 Q 模型權重；251 欄 Exact 矩陣只存 152 筆舊 R1 身份，其他候選缺原始 Q。原 R90 未能精確重跑；不更動 Official。<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/R90_V1_Stage3_Recovery_Report_20261109.md" target="_blank" rel="noopener noreferrer">查看來源稽核</a></div>':'')+(id==='EPL'?'<div class="notice"><strong>舊 R90 V1：歷史輸出找回，模型權重尚缺</strong> · 復原 2022–25 共 114 輪、228 筆 R1/R2；R1 84/114（73.7%）、R2 68/114（59.6%），2024–25 R1＋R2 55/76（72.4%）。原 R1 與另一封存 114/114 場核對一致；新版模仿選場未達 Exact，缺原始方向權重與 Q 係數。同輪時間戳尚待驗證，Official 不變。<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/R90_V1_Recovery_Research_Report_20261109.md" target="_blank" rel="noopener noreferrer">查看恢復稽核</a></div>':'')+(id==='EPL'?'<div class="notice"><strong>V14 方向重建｜Research、未升級</strong> · 11 季 4,180 場；2025–26 同場全輪 V13 183/380（48.2%），V14 驗證期選出方法 177/380（46.6%），R1＋R2 34/76 vs 38/76（不同選場）。其餘候選最佳 41/76，但沒有統計顯著改善。此季已被先前研究看過，不是新盲測；Official 不變。<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/EPL_Parity_V14_Distribution_Report_20261109.md" target="_blank" rel="noopener noreferrer">V14 完整報告</a></div>':'')+(id==='EPL'?'<div class="notice"><strong>V12 vs V13 同場檢驗｜未升級</strong> · 2025–26 相同 76 場：V12 37/76（48.7%）、V13 39/76（51.3%）；嚴格時間 62 場：27/62 vs 28/62。差異不顯著。V13 R1＋R2 34/76（44.7%），信心排名缺乏辨識力。<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/EPL_Parity_V12_V13_Paired_Report_20261109.md" target="_blank" rel="noopener noreferrer">完整同場研究報告</a>（Research，非 Official）</div>':'')+(id==='EPL'?'<div class="notice"><strong>V13 完整歷史研究 · 不升級</strong>｜11 季 4,180 場；2025–26 保留季全輪 183/380（48.2%），R1＋R2 34/76（44.7%）。勝出研究模型未超越基準；Official 不變。<a href="https://github.com/superjo3/football-prediction-dashboard/blob/main/research/EPL_Parity_V13_FullHistory_Report_20261109.md" target="_blank" rel="noopener noreferrer">查看 V13 稽核報告</a></div>':'')+(id!=='EPL'?`<div class="notice">${names[id]} XUAN-R1 Exact：N/A，缺完整73欄；以下為Common Proxy／Native。CONFIRM、AGAINST與PASS只列合併期間，不補造分季。</div>`:'')+`<div class="panel">${rows.length?table(['模型','賽季','樣本','命中率','用途／限制','來源'],rows.map(r=>[esc(r.model),esc(r.season),r.n,stattext({h:r.hits,n:r.n}),esc(r.scope),source(r.source)])):'<div class="empty">沒有此條件的封存統計。</div>'}</div>`+(id==='EPL'?'<div class="notice">CONFIRM／AGAINST／無訊號分組共74筆，與76筆總樣本有2筆未說明的缺口；不自行補造分類。PASS漂亮數字屬探索性，不等同正式前推能力。</div>':'')+D.source_sections.filter(x=>x.source.version===56&&(id==='EPL'?x.title.includes('EPL 單雙玄學'):x.title.startsWith('Research Result｜CROSS-LEAGUE'))).map(raw).join('')}
@@ -430,13 +473,18 @@ function packagePage(id){
  if(!p||!r)return empty();
  const fs=Array.isArray(p.fixtures)?p.fixtures:[];
  const meta=table(['欄位','Package 原值'],['record_id','status','model','PASS','PARITY_SKEW_ALERT','XUAN_status','pre_kick_status','research_only','counts_as_official_forward_result','integrity_flags'].map(k=>[esc(k),esc(displayValue(p[k]))]));
- const fixtureRows=fs.map(f=>[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25'),esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))]);
+ const dual=r.league==='EPL'&&!r.research_only&&r.gw>=11;
+ const fixtureRows=fs.map(f=>{
+  const common=[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25')];
+  if(dual){const c=eplParityComparisonCells(r,f);return [...common,c.a,c.b,esc(c.actual),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
+  return [...common,esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];
+ });
  return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)
  +packageSummary(id)
  +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
  +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
  +marketHighOddsPanel(r,fs)
- +'<div class="panel"><h2>本輪已封存預測與賠率</h2>'+table(['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+'</div>'
+ +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':'')+'</div>'
  +packageSettlementPanel(p)
  +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
 }
