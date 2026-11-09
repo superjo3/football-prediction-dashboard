@@ -2187,5 +2187,887 @@
       "exact_cutoff_time": "MISSING",
       "market_type": "MARKETPROXY"
     }
+  },
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.1-audit",
+    "generated_at": "2026-11-09",
+    "league": "Bundesliga",
+    "league_zh": "德甲",
+    "season": "2026-27",
+    "gw": 10,
+    "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+    "parent_record_id": "BUNDESLIGA-2026-27-GW10-20261109-MARKETPROXY",
+    "status": {
+      "open_marketproxy": "DONE",
+      "skew_audit": "DONE",
+      "archive_final": "DONE",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING"
+    },
+    "model": {
+      "parity": "Bundesliga Parity V2-RG1",
+      "xuan": "SHADOW_NOT_RUN",
+      "one_x_two_ou": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+      "exact_binary_replay": false
+    },
+    "integrity": {
+      "master_path": "/R1_R2 Master/R1_R2_Master.md",
+      "market_type": "OPENPROXY_CURRENT / CROSSBOOK_PROXY + PINNACLE",
+      "overwrite_old_predictions": false,
+      "parity_skew_alert": true,
+      "parity_skew_audit_passed": true,
+      "parity_rank_tiebreak": "MISSING_V1_CONTROL => PASS",
+      "bet365_first_tick": "MISSING",
+      "prediction_script": "MISSING",
+      "model_weights": "MISSING",
+      "feature_matrix": "MISSING"
+    },
+    "fixtures": [
+      {
+        "home": "拜仁",
+        "away": "科隆",
+        "kickoff_taipei": "2026-11-21 03:30",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "門興",
+        "away": "多特蒙德",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "沙爾克04",
+        "away": "史特加",
+        "kickoff_taipei": "2026-11-22 01:30",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "kickoff_taipei": "2026-11-22 22:30",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      },
+      {
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "kickoff_taipei": "2026-11-23 00:30",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙"
+      }
+    ],
+    "matches": [
+      {
+        "home": "拜仁",
+        "away": "科隆",
+        "kickoff_taipei": "2026-11-21 03:30",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.888253,
+          "draw": 0.066979,
+          "away": 0.044768
+        },
+        "p_over25": 0.818182,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.4,
+          "away": 0.6
+        },
+        "rank_1x2": "R1",
+        "rank_ou25": "R1",
+        "rank_parity": null
+      },
+      {
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.753235,
+          "draw": 0.135865,
+          "away": 0.1109
+        },
+        "p_over25": 0.72314,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.8,
+          "away": 0.2
+        },
+        "rank_1x2": "R2",
+        "rank_ou25": "R2",
+        "rank_parity": null
+      },
+      {
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.396794,
+          "draw": 0.24903,
+          "away": 0.354176
+        },
+        "p_over25": 0.700219,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.4,
+          "away": 0.8
+        },
+        "rank_1x2": null,
+        "rank_ou25": "R3",
+        "rank_parity": null
+      },
+      {
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.217906,
+          "draw": 0.219923,
+          "away": 0.562171
+        },
+        "p_over25": 0.651659,
+        "parity_regime": "default EVEN",
+        "parity_totalOdd5": {
+          "home": 0.2,
+          "away": 0.4
+        },
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "home": "門興",
+        "away": "多特蒙德",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.203959,
+          "draw": 0.220011,
+          "away": 0.57603
+        },
+        "p_over25": 0.647059,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.6,
+          "away": 0.4
+        },
+        "rank_1x2": "R3",
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "kickoff_taipei": "2026-11-21 22:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.276839,
+          "draw": 0.252671,
+          "away": 0.47049
+        },
+        "p_over25": 0.632212,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.8,
+          "away": 0.6
+        },
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "home": "沙爾克04",
+        "away": "史特加",
+        "kickoff_taipei": "2026-11-22 01:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.236829,
+          "draw": 0.22831,
+          "away": 0.534861
+        },
+        "p_over25": 0.657143,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.6,
+          "away": 0.6
+        },
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "kickoff_taipei": "2026-11-22 22:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.350122,
+          "draw": 0.248268,
+          "away": 0.40161
+        },
+        "p_over25": 0.653207,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.6,
+          "away": 1
+        },
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "kickoff_taipei": "2026-11-23 00:30",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "p_1x2": {
+          "home": 0.552374,
+          "draw": 0.223549,
+          "away": 0.224076
+        },
+        "p_over25": 0.617073,
+        "parity_regime": "streak-exhaustion EVEN",
+        "parity_totalOdd5": {
+          "home": 0.4,
+          "away": 0.6
+        },
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      }
+    ],
+    "1X2": [
+      {
+        "home": "拜仁",
+        "away": "科隆",
+        "pick": "主勝",
+        "de_vig": {
+          "home": 0.888253,
+          "draw": 0.066979,
+          "away": 0.044768
+        }
+      },
+      {
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "pick": "主勝",
+        "de_vig": {
+          "home": 0.753235,
+          "draw": 0.135865,
+          "away": 0.1109
+        }
+      },
+      {
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "pick": "主勝",
+        "de_vig": {
+          "home": 0.396794,
+          "draw": 0.24903,
+          "away": 0.354176
+        }
+      },
+      {
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "pick": "客勝",
+        "de_vig": {
+          "home": 0.217906,
+          "draw": 0.219923,
+          "away": 0.562171
+        }
+      },
+      {
+        "home": "門興",
+        "away": "多特蒙德",
+        "pick": "客勝",
+        "de_vig": {
+          "home": 0.203959,
+          "draw": 0.220011,
+          "away": 0.57603
+        }
+      },
+      {
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "pick": "客勝",
+        "de_vig": {
+          "home": 0.276839,
+          "draw": 0.252671,
+          "away": 0.47049
+        }
+      },
+      {
+        "home": "沙爾克04",
+        "away": "史特加",
+        "pick": "客勝",
+        "de_vig": {
+          "home": 0.236829,
+          "draw": 0.22831,
+          "away": 0.534861
+        }
+      },
+      {
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "pick": "客勝",
+        "de_vig": {
+          "home": 0.350122,
+          "draw": 0.248268,
+          "away": 0.40161
+        }
+      },
+      {
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "pick": "主勝",
+        "de_vig": {
+          "home": 0.552374,
+          "draw": 0.223549,
+          "away": 0.224076
+        }
+      }
+    ],
+    "OU25": [
+      {
+        "home": "拜仁",
+        "away": "科隆",
+        "pick": "大2.5",
+        "p_over_proxy": 0.818182
+      },
+      {
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "pick": "大2.5",
+        "p_over_proxy": 0.72314
+      },
+      {
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "pick": "大2.5",
+        "p_over_proxy": 0.700219
+      },
+      {
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "pick": "大2.5",
+        "p_over_proxy": 0.651659
+      },
+      {
+        "home": "門興",
+        "away": "多特蒙德",
+        "pick": "大2.5",
+        "p_over_proxy": 0.647059
+      },
+      {
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "pick": "大2.5",
+        "p_over_proxy": 0.632212
+      },
+      {
+        "home": "沙爾克04",
+        "away": "史特加",
+        "pick": "大2.5",
+        "p_over_proxy": 0.657143
+      },
+      {
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "pick": "大2.5",
+        "p_over_proxy": 0.653207
+      },
+      {
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "pick": "大2.5",
+        "p_over_proxy": 0.617073
+      }
+    ],
+    "parity": [
+      {
+        "home": "拜仁",
+        "away": "科隆",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "pick": "雙",
+        "regime": "default EVEN"
+      },
+      {
+        "home": "門興",
+        "away": "多特蒙德",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "沙爾克04",
+        "away": "史特加",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      },
+      {
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN"
+      }
+    ],
+    "ranked_picks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "home": "拜仁",
+          "away": "科隆",
+          "pick": "主勝",
+          "de_vig_confidence": 0.888253
+        },
+        {
+          "rank": "R2",
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "pick": "主勝",
+          "de_vig_confidence": 0.753235
+        },
+        {
+          "rank": "R3",
+          "home": "門興",
+          "away": "多特蒙德",
+          "pick": "客勝",
+          "de_vig_confidence": 0.57603
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "home": "拜仁",
+          "away": "科隆",
+          "pick": "大2.5",
+          "p_over_proxy": 0.818182
+        },
+        {
+          "rank": "R2",
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "pick": "大2.5",
+          "p_over_proxy": 0.72314
+        },
+        {
+          "rank": "R3",
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "pick": "大2.5",
+          "p_over_proxy": 0.700219
+        }
+      ],
+      "parity": []
+    },
+    "PASS": {
+      "1X2": false,
+      "OU25": false,
+      "parity": true,
+      "parity_reason": "PARITY_SKEW_0_ODD_9_EVEN; frozen V2-RG1 direction audit passed, but exact V1 parity-confidence tie-break is unavailable, so official R1/R2/R3 are not forced."
+    },
+    "PARITY_SKEW_ALERT": {
+      "triggered": true,
+      "audit_passed": true,
+      "final_split": "0 ODD / 9 EVEN",
+      "direction_action": "KEEP_ALL_DIRECTIONS",
+      "rank_action": "PASS_R1_R2_R3"
+    },
+    "XUAN_status": {
+      "status": "SHADOW_NOT_RUN",
+      "affects_formal_direction": false
+    },
+    "research_only": false,
+    "counts_as_official_forward_result": true,
+    "pre_kick_status": "PENDING",
+    "research_tests": {
+      "OU_WEAK_RANK_FILTER_TEST": {
+        "status": "TEST_ONLY",
+        "official_effect": "NONE",
+        "note": "Top OU R1/R2/R3 are all strong market-proxy Over signals; no weak-rank exclusion applied."
+      },
+      "PARITY_SKEW_FORWARD_DIAGNOSTIC": {
+        "status": "TEST_ONLY",
+        "official_effect": "NONE",
+        "note": "0 ODD / 9 EVEN recorded for forward diagnosis; no artificial direction balancing."
+      }
+    },
+    "source_and_cutoff": {
+      "fixture_sources": [
+        "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/10",
+        "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2026-2027/matchday/10"
+      ],
+      "market_snapshot_date": "2026-11-09",
+      "market_type": "OPENPROXY_CURRENT",
+      "bet365_first_tick": "MISSING",
+      "market_sources": [
+        "https://oddseek.com/football/bayern-munich-vs-fc-koln-13662117",
+        "https://oddseek.com/football/bayer-leverkusen-vs-paderborn-13662116",
+        "https://oddseek.com/football/eintracht-frankfurt-vs-tsg-hoffenheim-13662133",
+        "https://oddseek.com/football/union-berlin-vs-rb-leipzig-13662137",
+        "https://oddseek.com/football/borussia-monchengladbach-vs-borussia-dortmund-13662119",
+        "https://oddseek.com/football/elversberg-vs-freiburg-13662118",
+        "https://oddseek.com/football/schalke-04-vs-vfb-stuttgart-13662141",
+        "https://oddseek.com/vi/football/augsburg-vs-mainz-05-13662136",
+        "https://oddseek.com/football/werder-bremen-vs-hamburger-sv-13662142"
+      ],
+      "opening_history_source": "Pinnacle first-recorded history where available via SteamWatch; values are OPENPROXY, not guaranteed first market tick."
+    },
+    "odds_tracking": {
+      "scope": "EVERY_MATCH",
+      "baseline": "OPENPROXY_CURRENT_2026-11-09",
+      "pre_kick": "PENDING",
+      "missing_policy": "SHOW_MISSING_DO_NOT_BACKFILL"
+    },
+    "market_odds": [
+      {
+        "fixture": "拜仁 vs 科隆",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 1.07,
+            "draw": 14.19,
+            "away": 21.23
+          },
+          "OU25": {
+            "over": 1.2,
+            "under": 5.4
+          },
+          "AH": {
+            "line_home": -3,
+            "home": 2,
+            "away": 1.83
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 1.06,
+          "draw": 14.2,
+          "away": 21.25
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "勒沃庫森 vs 柏德博恩",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 1.25,
+            "draw": 6.93,
+            "away": 8.49
+          },
+          "OU25": {
+            "over": 1.34,
+            "under": 3.5
+          },
+          "AH": {
+            "line_home": -1.75,
+            "home": 1.87,
+            "away": 1.96
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 1.23,
+          "draw": 7.03,
+          "away": 8.82
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "法蘭克福 vs 霍芬海姆",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 2.41,
+            "draw": 3.84,
+            "away": 2.7
+          },
+          "OU25": {
+            "over": 1.37,
+            "under": 3.2
+          },
+          "AH": {
+            "line_home": -0.25,
+            "home": 2.12,
+            "away": 1.76
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 2.28,
+          "draw": 3.81,
+          "away": 2.79
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "柏林聯 vs RB萊比錫",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 4.36,
+            "draw": 4.32,
+            "away": 1.69
+          },
+          "OU25": {
+            "over": 1.47,
+            "under": 2.75
+          },
+          "AH": {
+            "line_home": 1,
+            "home": 1.84,
+            "away": 2.02
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 4.09,
+          "draw": 4.18,
+          "away": 1.73
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "門興 vs 多特蒙德",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 4.66,
+            "draw": 4.32,
+            "away": 1.65
+          },
+          "OU25": {
+            "over": 1.5,
+            "under": 2.75
+          },
+          "AH": {
+            "line_home": 0.75,
+            "home": 2.05,
+            "away": 1.819
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 4.6,
+          "draw": 4.35,
+          "away": 1.62
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "艾禾斯堡 vs 弗賴堡",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 3.45,
+            "draw": 3.78,
+            "away": 2.03
+          },
+          "OU25": {
+            "over": 1.53,
+            "under": 2.63
+          },
+          "AH": {
+            "line_home": 0.5,
+            "home": 1.826,
+            "away": 2.02
+          }
+        },
+        "first_recorded_1X2": null,
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "沙爾克04 vs 史特加",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 4.02,
+            "draw": 4.17,
+            "away": 1.78
+          },
+          "OU25": {
+            "over": 1.44,
+            "under": 2.76
+          },
+          "AH": {
+            "line_home": 0.5,
+            "home": 2.09,
+            "away": 1.79
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 3.75,
+          "draw": 4.08,
+          "away": 1.82
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "奧格斯堡 vs 美因茨",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 2.73,
+            "draw": 3.85,
+            "away": 2.38
+          },
+          "OU25": {
+            "over": 1.46,
+            "under": 2.75
+          },
+          "AH": {
+            "line_home": 0.25,
+            "home": 1.78,
+            "away": 2.09
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 2.81,
+          "draw": 3.82,
+          "away": 2.27
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      },
+      {
+        "fixture": "雲達不萊梅 vs 漢堡",
+        "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+        "open": {
+          "1X2": {
+            "home": 1.72,
+            "draw": 4.25,
+            "away": 4.24
+          },
+          "OU25": {
+            "over": 1.57,
+            "under": 2.53
+          },
+          "AH": {
+            "line_home": -0.75,
+            "home": 1.854,
+            "away": 2
+          }
+        },
+        "first_recorded_1X2": {
+          "home": 1.67,
+          "draw": 4.27,
+          "away": 4.36
+        },
+        "pre_kick": null,
+        "movement": {
+          "status": "BASELINE_ONLY"
+        }
+      }
+    ]
   }
 ]

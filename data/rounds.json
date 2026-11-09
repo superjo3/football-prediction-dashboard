@@ -429,5 +429,25 @@
       "result": "PENDING",
       "review": "PENDING"
     }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 10,
+    "model": "{\"parity\":\"Bundesliga Parity V2-RG1\",\"xuan\":\"SHADOW_NOT_RUN\",\"one_x_two_ou\":\"Bundesliga R90-DE V1 / MARKETPROXY recovered component\",\"exact_binary_replay\":false}",
+    "snapshot": "DASHBOARD_UPDATE_PACKAGE",
+    "coverage": "package",
+    "note": "GW10 正式賽前封存｜1X2/O-U2.5 已排 R1/R2/R3；單雙全輪 0單9雙，PARITY_SKEW_ALERT 審計通過但正式 R1/R2/R3 PASS；PRE-KICK PENDING。",
+    "research_only": false,
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW10_20261109.json",
+    "status": {
+      "open_marketproxy": "DONE",
+      "skew_audit": "DONE",
+      "archive_final": "DONE",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING"
+    }
   }
 ]
