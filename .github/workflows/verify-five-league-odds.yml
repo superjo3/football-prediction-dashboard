@@ -1,0 +1,28 @@
+name: Verify five-league odds UI
+on:
+  push:
+    paths:
+      - app.js
+      - style.css
+      - five-league-sync.js
+      - market-prekick.js
+      - data/market_prekick_snapshots.json
+      - tools/test_five_league_odds_ui_20261109.js
+      - .github/workflows/verify-five-league-odds.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check five-league-sync.js
+          node --check market-prekick.js
+          node --check epl-parity-tracks.js
+          node --check tools/test_five_league_odds_ui_20261109.js
+      - name: Verify archived odds and PRE-KICK rendering
+        run: node tools/test_five_league_odds_ui_20261109.js
