@@ -626,7 +626,7 @@
   "settlement_status": "COMPLETE",
   "settlement_id": "BUNDESLIGA-2026-27-GW09-20261109-FINAL-RESULT",
   "postmatch_review_status": "COMPLETE",
-  "model_change": "NONE",
+  "model_change": "TEST",
   "research_test_status": [
     "OU_WEAK_RANK_FILTER_TEST",
     "PARITY_SKEW_FORWARD_DIAGNOSTIC"
@@ -698,5 +698,32 @@
       "PARITY_SKEW_FORWARD_DIAGNOSTIC"
     ],
     "pre_kick": "NOT_EVALUABLE"
+  },
+  "research_changelog": {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESEARCH_CHANGELOG",
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "type": "RESEARCH_CHANGELOG",
+    "status": "TEST_ONLY",
+    "promote": "NONE",
+    "formal_model_change": "NONE",
+    "effective_earliest": "GW10 Research only / new version required",
+    "tests": [
+      {
+        "id": "OU_WEAK_RANK_FILTER_TEST",
+        "status": "TEST",
+        "research_only": true,
+        "promoted": false
+      },
+      {
+        "id": "PARITY_SKEW_FORWARD_DIAGNOSTIC",
+        "status": "TEST",
+        "research_only": true,
+        "promoted": false
+      }
+    ],
+    "note": "No GW9 prediction was changed. Any future adoption requires a new version and sufficient strict-forward evidence."
   }
 }
