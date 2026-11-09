@@ -6,7 +6,7 @@
   "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
   "archive_date": "2026-11-05",
   "timezone": "Asia/Taipei",
-  "status": "ARCHIVED_PREMATCH_MARKETPROXY",
+  "status": "SETTLEMENT_COMPLETE",
   "model": {
     "ou_parity": "LIGUE1-R80-V2.1-DRAWGUARD-FROZEN",
     "1x2": "1X2-Blend-V0.1 (70% de-vig market + 30% Dixon-Coles structure; ranking score, not calibrated true probability)",
@@ -646,5 +646,87 @@
     ],
     "exact_cutoff_time": "MISSING",
     "market_type": "MARKETPROXY"
+  },
+  "settlement": {
+    "settlement_id": "LIGUE1-2026-27-GW10-20261109-RESULT",
+    "settlement_date": "2026-11-09",
+    "status": "COMPLETE",
+    "completed_matches": 9,
+    "pending_matches": 0,
+    "round": {
+      "1x2": "5/9 (55.6%)",
+      "ou25": "4/9 (44.4%)",
+      "parity_direction": "8/9 (88.9%)",
+      "parity_official_selector": "PASS 0 bets"
+    },
+    "ranks": {
+      "1x2": "R1 HIT / R2 MISS / R3 HIT = 2/3",
+      "ou25_relative": "R1 MISS / R2 HIT / R3 HIT = 2/3",
+      "ou25_formal": "PASS",
+      "parity_shadow": "R1 HIT / R2 HIT / R3 HIT = 3/3",
+      "parity_official": "PASS"
+    },
+    "strict_forward": {
+      "1x2": {
+        "R1": "2/2",
+        "R2": "1/2",
+        "R3": "2/2",
+        "R1+R2": "3/4",
+        "R1+R2+R3": "5/6"
+      },
+      "ou25_relative": {
+        "R1": "4/6",
+        "R2": "6/6",
+        "R3": "1/2",
+        "R1+R2": "10/12",
+        "R1+R2+R3_since_GW9": "4/6"
+      },
+      "parity_shadow": {
+        "R1": "3/6",
+        "R2": "4/6",
+        "R3": "2/2",
+        "R1+R2": "7/12",
+        "R1+R2+R3_since_GW9": "5/6"
+      },
+      "parity_official": "PASS_NO_NEW_DENOMINATOR"
+    },
+    "prekick_version": "NOT_FOUND_NOT_SETTLED",
+    "marker": "SETTLEMENT_COMPLETE"
+  },
+  "postmatch_review": {
+    "status": "COMPLETE",
+    "KEEP": [
+      "1X2 Blend V0.1 control",
+      "Formal sparse/PASS selectors",
+      "Official/Shadow separation",
+      "PARITY_SKEW_ALERT rules"
+    ],
+    "WATCH": [
+      "1X2 mid-confidence favorites and draw risk",
+      "OU low-score clustering",
+      "Parity regime volatility GW9->GW10"
+    ],
+    "TEST": [
+      "1X2-BLEND-DRAWRISK-META",
+      "LIGUE1-OU-LOW-SCORE-GUARD-TEST",
+      "LIGUE1-PARITY-V3-SELECTOR continue external-forward"
+    ],
+    "PROMOTE": [],
+    "REJECT": [
+      "Retroactive PRE-KICK reconstruction",
+      "Promoting parity from one strong round",
+      "Rewriting GW10 prematch record"
+    ],
+    "official_model_change": "NONE"
+  },
+  "research_changelog": {
+    "status": "TEST",
+    "items": [
+      "1X2-BLEND-DRAWRISK-META",
+      "LIGUE1-OU-LOW-SCORE-GUARD-TEST",
+      "LIGUE1-PARITY-V3-SELECTOR CONTINUE"
+    ],
+    "promoted": [],
+    "effective": "GW11+ research only; official unchanged"
   }
 }
