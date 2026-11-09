@@ -1,0 +1,92 @@
+{
+  "schema": "SYNC-MANIFEST-V2",
+  "timestamp_taipei": "2026-11-09 20:44",
+  "league_latest": {
+    "EPL": 11,
+    "BUNDESLIGA": 10,
+    "LALIGA": 13,
+    "SERIEA": 12,
+    "LIGUE1": 11
+  },
+  "new_rounds": [
+    {
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "league": "EPL",
+      "gw": 11,
+      "research_only": false,
+      "fixture_count": 10,
+      "package_path": "data/packages/EPL_GW11_OFFICIAL_20261109.json"
+    },
+    {
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "league": "EPL",
+      "gw": 11,
+      "research_only": true,
+      "fixture_count": 10,
+      "package_path": "data/packages/EPL_GW11_SHADOW_20261109.json"
+    },
+    {
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "league": "BUNDESLIGA",
+      "gw": 10,
+      "research_only": false,
+      "fixture_count": 9,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW10_20261109.json"
+    },
+    {
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "league": "LALIGA",
+      "gw": 13,
+      "research_only": true,
+      "fixture_count": 10,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261109.json"
+    },
+    {
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "league": "SERIEA",
+      "gw": 12,
+      "research_only": true,
+      "fixture_count": 10,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_SERIEA_GW12_20261109.json"
+    },
+    {
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "league": "LIGUE1",
+      "gw": 11,
+      "research_only": false,
+      "fixture_count": 9,
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW11_20261109.json"
+    }
+  ],
+  "new_predictions": 58,
+  "new_results": 0,
+  "official_latest_updates": {
+    "EPL": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+    "BUNDESLIGA": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+    "LIGUE1": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY"
+  },
+  "research_latest_updates": {
+    "LALIGA": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+    "SERIEA": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH"
+  },
+  "shadow_records": 1,
+  "source_master": "/R1_R2 Master/R1_R2_Master.md",
+  "source_master_version": 89,
+  "source_sha256": {
+    "EPL": "f122ee421d6ba14d551c403c2c8c1b02150968784c11bcd886a45868a4b2634d",
+    "BUNDESLIGA": "43d00c1ba0b3281a47efa3f1716fe27bff2f9d76dbc3080804cf17c34f3cee30",
+    "LALIGA": "0483ac7fe1bf75d68781d007c8538f212be73156e1de2b74549964f84e7ca4b4",
+    "SERIEA": "190c06c6e773ff0e00f3f8bfecc10b1a37c33e85276bd687e61d831ad867cf07",
+    "LIGUE1": "079bd8bbff93cb4b788a4b32164a08a9db487aadcd638961f1d304b51a13f2ac"
+  },
+  "rules": [
+    "Official/Research/Shadow never pooled",
+    "Bet365 first tick missing not fabricated",
+    "Research GW13 LaLiga/GW12 Serie A remain research",
+    "Bundesliga parity R1-R3 PASS",
+    "Ligue1 relative OU/parity NOT official ranks",
+    "EPL Official and Recovery Shadow separated",
+    "No historic forecasts overwritten",
+    "No pregame results manufactured"
+  ]
+}
