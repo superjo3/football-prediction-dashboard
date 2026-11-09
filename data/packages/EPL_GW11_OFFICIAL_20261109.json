@@ -1,0 +1,421 @@
+{
+  "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "status": "OPENPROXY_RECOVERED_COMPONENT",
+  "model": "EPL R90-style recovered; MARKETPROXY not Exact",
+  "fixtures": [
+    {
+      "home": "Manchester City",
+      "away": "Fulham",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 20:30",
+      "match_id": "EPL-2026-27-GW11-01"
+    },
+    {
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-02"
+    },
+    {
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-03"
+    },
+    {
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-04"
+    },
+    {
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-05"
+    },
+    {
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "11/21 23:00",
+      "match_id": "EPL-2026-27-GW11-06"
+    },
+    {
+      "home": "Newcastle United",
+      "away": "Arsenal",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "kickoff_taipei": "11/22 01:30",
+      "match_id": "EPL-2026-27-GW11-07"
+    },
+    {
+      "home": "Hull City",
+      "away": "Brighton",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/22 22:00",
+      "match_id": "EPL-2026-27-GW11-08"
+    },
+    {
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/23 00:30",
+      "match_id": "EPL-2026-27-GW11-09"
+    },
+    {
+      "home": "Brentford",
+      "away": "Everton",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "雙",
+      "kickoff_taipei": "11/24 04:00",
+      "match_id": "EPL-2026-27-GW11-10"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "match": "Manchester City vs Fulham",
+        "pick": "主勝",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R2",
+        "home": "Hull City",
+        "away": "Brighton",
+        "match": "Hull City vs Brighton",
+        "pick": "客勝",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R3",
+        "home": "Tottenham",
+        "away": "Ipswich Town",
+        "match": "Tottenham vs Ipswich Town",
+        "pick": "主勝",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "home": "Coventry City",
+        "away": "Crystal Palace",
+        "match": "Coventry City vs Crystal Palace",
+        "pick": "大2.5",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R2",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "match": "Manchester City vs Fulham",
+        "pick": "大2.5",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R3",
+        "home": "Liverpool",
+        "away": "Manchester United",
+        "match": "Liverpool vs Manchester United",
+        "pick": "大2.5",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "Brentford",
+        "away": "Everton",
+        "match": "Brentford vs Everton",
+        "pick": "雙",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R2",
+        "home": "Chelsea",
+        "away": "Leeds United",
+        "match": "Chelsea vs Leeds United",
+        "pick": "單",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      },
+      {
+        "rank": "R3",
+        "home": "Tottenham",
+        "away": "Ipswich Town",
+        "match": "Tottenham vs Ipswich Town",
+        "pick": "單",
+        "formal_selector": true,
+        "status": "PREMATCH_OFFICIAL"
+      }
+    ]
+  },
+  "PASS": {
+    "1X2": false,
+    "OU25": false,
+    "parity": false
+  },
+  "market_odds": [
+    {
+      "fixture": "Manchester City vs Fulham",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.46,
+          "draw": 4.81,
+          "away": 6.25
+        },
+        "OU25": {
+          "over": 1.5,
+          "under": 2.53
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Bournemouth vs Nottingham Forest",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 2.01,
+          "draw": 3.62,
+          "away": 3.63
+        },
+        "OU25": {
+          "over": 1.81,
+          "under": 2.01
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Aston Villa vs Sunderland",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.74,
+          "draw": 3.9,
+          "away": 4.55
+        },
+        "OU25": {
+          "over": 1.74,
+          "under": 2.08
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Chelsea vs Leeds United",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.81,
+          "draw": 3.8,
+          "away": 4.16
+        },
+        "OU25": {
+          "over": 1.73,
+          "under": 2.09
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Coventry City vs Crystal Palace",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 2.39,
+          "draw": 3.58,
+          "away": 2.81
+        },
+        "OU25": {
+          "over": 1.71,
+          "under": 2.1
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Tottenham vs Ipswich Town",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.54,
+          "draw": 4.36,
+          "away": 5.59
+        },
+        "OU25": {
+          "over": 1.58,
+          "under": 2.3
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Newcastle United vs Arsenal",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 5.42,
+          "draw": 4.18,
+          "away": 1.58
+        },
+        "OU25": {
+          "over": 1.69,
+          "under": 2.14
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Hull City vs Brighton",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 5.95,
+          "draw": 4.41,
+          "away": 1.52
+        },
+        "OU25": {
+          "over": 1.65,
+          "under": 2.22
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Liverpool vs Manchester United",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.74,
+          "draw": 4.03,
+          "away": 4.4
+        },
+        "OU25": {
+          "over": 1.58,
+          "under": 2.35
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    },
+    {
+      "fixture": "Brentford vs Everton",
+      "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+      "open": {
+        "1X2": {
+          "home": 1.99,
+          "draw": 3.68,
+          "away": 3.58
+        },
+        "OU25": {
+          "over": 1.74,
+          "under": 2.08
+        },
+        "AH": null
+      },
+      "pre_kick": null,
+      "movement": {
+        "status": "BASELINE_ONLY"
+      }
+    }
+  ],
+  "source_and_cutoff": {
+    "prediction_cutoff_utc": "2026-11-09T12:28:43.958100+00:00",
+    "first_kickoff_utc": "2026-11-21T12:30:00+00:00",
+    "market_type": "2026-11-09 current page search snapshot; not Bet365 first tick; AH unavailable",
+    "bet365_first_tick": "MISSING"
+  },
+  "integrity_flags": {
+    "prematch_seal_sha256": "251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada",
+    "exact_binary_replay": false,
+    "no_hindsight": true
+  },
+  "formal_betting_layer": {
+    "parity_selector": "R1_R2_R3_RELATIVE",
+    "historical_identity": "RECOVERED_COMPONENT"
+  },
+  "research_only": false,
+  "counts_as_official_forward_result": true,
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "pre_kick_status": "PENDING",
+  "PARITY_SKEW_ALERT": {
+    "triggered": false
+  },
+  "XUAN_status": {
+    "status": "NOT_RUN"
+  }
+}
