@@ -1,0 +1,4392 @@
+{
+  "schema": "DASHBOARD_FIVE_LEAGUE_SYNC_V1",
+  "generated_at_taipei": "2026-11-09T20:44:00+08:00",
+  "source_master_version": "Library /R1_R2 Master/R1_R2_Master.md v89",
+  "source_sha256": {
+    "EPL": "f122ee421d6ba14d551c403c2c8c1b02150968784c11bcd886a45868a4b2634d",
+    "BUNDESLIGA": "43d00c1ba0b3281a47efa3f1716fe27bff2f9d76dbc3080804cf17c34f3cee30",
+    "LALIGA": "0483ac7fe1bf75d68781d007c8538f212be73156e1de2b74549964f84e7ca4b4",
+    "SERIEA": "190c06c6e773ff0e00f3f8bfecc10b1a37c33e85276bd687e61d831ad867cf07",
+    "LIGUE1": "079bd8bbff93cb4b788a4b32164a08a9db487aadcd638961f1d304b51a13f2ac"
+  },
+  "status": "PREMATCH_NOT_SETTLED",
+  "rounds": [
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "league": "EPL",
+      "gw": 11,
+      "season": "2026-27",
+      "snapshot": "OPEN / MARKETPROXY",
+      "model": "EPL R90-style recovered; MARKETPROXY not Exact",
+      "coverage": "recovered",
+      "research_only": false,
+      "note": "賽前 R90-style recovered；原權重缺失，Bet365開盤缺失",
+      "package_path": "data/packages/EPL_GW11_OFFICIAL_20261109.json"
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "league": "EPL",
+      "gw": 11,
+      "season": "2026-27",
+      "snapshot": "RESEARCH / EARLY MARKETPROXY",
+      "model": "R90-MATH5-Q-RECONSTRUCTION-V0; NOT R90 EXACT",
+      "coverage": "full",
+      "research_only": true,
+      "note": "Shadow PREMATCH_FROZEN / 研究，不混入 Official 勝率",
+      "package_path": "data/packages/EPL_GW11_SHADOW_20261109.json"
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "league": "BUNDESLIGA",
+      "gw": 10,
+      "season": "2026-27",
+      "snapshot": "OPEN / MARKETPROXY",
+      "model": "Bundesliga R90-DE V1 / Parity V2-RG1 [PASS ranks]",
+      "coverage": "full",
+      "research_only": false,
+      "note": "正式 GW10；單雙 0單9雙，R1/R2/R3 正式 PASS",
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW10_20261109.json"
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "league": "LALIGA",
+      "gw": 13,
+      "season": "2026-27",
+      "snapshot": "RESEARCH / EARLY MARKETPROXY",
+      "model": "LaLiga V2 RESEARCH MARKETPROXY; Official Exact NOT_RUN",
+      "coverage": "full",
+      "research_only": true,
+      "note": "RESEARCH_ONLY；10/10 單方向，官方高信心單雙 PASS",
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261109.json"
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "league": "SERIEA",
+      "gw": 12,
+      "season": "2026-27",
+      "snapshot": "RESEARCH / EARLY MARKETPROXY",
+      "model": "SerieA EARLY-MARKETPROXY + PARITY_RESEARCH (not Exact)",
+      "coverage": "full",
+      "research_only": true,
+      "note": "RESEARCH_ONLY；正式 WF6/R90 Exact 未重跑",
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_SERIEA_GW12_20261109.json"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "league": "LIGUE1",
+      "gw": 11,
+      "season": "2026-27",
+      "snapshot": "OPEN / MARKETPROXY",
+      "model": "Ligue1 R80-V2.1-DrawGuard Frozen + 1X2 Blend V0.1",
+      "coverage": "full",
+      "research_only": false,
+      "note": "單雙正式 selector PASS；研究 R1/R2/R3 只列 Relative/Shadow",
+      "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW11_20261109.json"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-1",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-01",
+      "fixture": "Manchester City vs Fulham",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": 2,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-2",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-02",
+      "fixture": "Bournemouth vs Nottingham Forest",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-3",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-03",
+      "fixture": "Aston Villa vs Sunderland",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-4",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-04",
+      "fixture": "Chelsea vs Leeds United",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 2
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-5",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-05",
+      "fixture": "Coventry City vs Crystal Palace",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 1,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-6",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-06",
+      "fixture": "Tottenham vs Ipswich Town",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": 3
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-7",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-07",
+      "fixture": "Newcastle United vs Arsenal",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-8",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-08",
+      "fixture": "Hull City vs Brighton",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-9",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-09",
+      "fixture": "Liverpool vs Manchester United",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 3,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED-10",
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "match_id": "EPL-2026-27-GW11-10",
+      "fixture": "Brentford vs Everton",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 1
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-1",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-01",
+      "fixture": "Manchester City vs Fulham",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-2",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-02",
+      "fixture": "Bournemouth vs Nottingham Forest",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-3",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-03",
+      "fixture": "Aston Villa vs Sunderland",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-4",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-04",
+      "fixture": "Chelsea vs Leeds United",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-5",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-05",
+      "fixture": "Coventry City vs Crystal Palace",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 1
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-6",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-06",
+      "fixture": "Tottenham vs Ipswich Town",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 2
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-7",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-07",
+      "fixture": "Newcastle United vs Arsenal",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-8",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-08",
+      "fixture": "Hull City vs Brighton",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-9",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-09",
+      "fixture": "Liverpool vs Manchester United",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 3
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW-10",
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "match_id": "EPL-2026-27-GW11-10",
+      "fixture": "Brentford vs Everton",
+      "directions": {
+        "1x2": null,
+        "ou25": null,
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-1",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-01",
+      "fixture": "拜仁 vs 科隆",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": 1,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-2",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-02",
+      "fixture": "勒沃庫森 vs 柏德博恩",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": 2,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-3",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-03",
+      "fixture": "法蘭克福 vs 霍芬海姆",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 3,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-4",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-04",
+      "fixture": "柏林聯 vs RB萊比錫",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-5",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-05",
+      "fixture": "門興 vs 多特蒙德",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-6",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-06",
+      "fixture": "艾禾斯堡 vs 弗賴堡",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-7",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-07",
+      "fixture": "沙爾克04 vs 史特加",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-8",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-08",
+      "fixture": "奧格斯堡 vs 美因茨",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-9",
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "match_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL-09",
+      "fixture": "雲達不萊梅 vs 漢堡",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-1",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-01",
+      "fixture": "畢爾包 vs 愛斯賓奴",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-2",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-02",
+      "fixture": "艾拉維斯 vs 拉科魯尼亞",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 2
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-3",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-03",
+      "fixture": "華歷簡奴 vs 華倫西亞",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-4",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-04",
+      "fixture": "西維爾 vs 貝迪斯",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-5",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-05",
+      "fixture": "皇家馬德里 vs 切爾達",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": 2,
+        "parity": 3
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-6",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-06",
+      "fixture": "巴塞隆拿 vs 維拉利爾",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": 1,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-7",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-07",
+      "fixture": "桑坦德 vs 皇家蘇斯達",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 3,
+        "parity": 1
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-8",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-08",
+      "fixture": "奧沙辛拿 vs 馬拉加",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-9",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-09",
+      "fixture": "加泰 vs 馬德里體育會",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY-10",
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "match_id": "LALIGA-2026-27-GW13-10",
+      "fixture": "利雲特 vs 艾爾切",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-1",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-01",
+      "fixture": "Como vs Cagliari",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": 3,
+        "parity": 3
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-2",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-02",
+      "fixture": "Lazio vs Lecce",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-3",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-03",
+      "fixture": "Parma vs Roma",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-4",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-04",
+      "fixture": "Napoli vs Torino",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 2
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-5",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-05",
+      "fixture": "Juventus vs Venezia",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-6",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-06",
+      "fixture": "Bologna vs Udinese",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-7",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-07",
+      "fixture": "Sassuolo vs Genoa",
+      "directions": {
+        "1x2": "和",
+        "ou25": "小2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-8",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-08",
+      "fixture": "Milan vs Frosinone",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 1,
+        "parity": 1
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-9",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-09",
+      "fixture": "Atalanta vs Inter",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 2,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-10",
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "match_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH-10",
+      "fixture": "Monza vs Fiorentina",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "RESEARCH_ONLY",
+        "ou25": "RESEARCH_ONLY",
+        "parity": "RESEARCH_ONLY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-1",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-01",
+      "fixture": "Troyes vs Le Havre",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-2",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-02",
+      "fixture": "Nice vs Paris SG",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-3",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-03",
+      "fixture": "Monaco vs Auxerre",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-4",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-04",
+      "fixture": "Lens vs Toulouse",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-5",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-05",
+      "fixture": "Lille vs Lyon",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-6",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-06",
+      "fixture": "Strasbourg vs Brest",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-7",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-07",
+      "fixture": "Paris FC vs Angers",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-8",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-08",
+      "fixture": "Lorient vs Rennes",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-9",
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY-09",
+      "fixture": "Marseille vs Le Mans",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "market_status": {
+        "1x2": "MARKETPROXY",
+        "ou25": "MARKETPROXY",
+        "parity": "MARKETPROXY"
+      }
+    }
+  ],
+  "official_forecasts": [
+    {
+      "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 11,
+      "status": "OPENPROXY_RECOVERED_COMPONENT",
+      "model": "EPL R90-style recovered; MARKETPROXY not Exact",
+      "fixtures": [
+        {
+          "home": "Manchester City",
+          "away": "Fulham",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 20:30",
+          "match_id": "EPL-2026-27-GW11-01"
+        },
+        {
+          "home": "Bournemouth",
+          "away": "Nottingham Forest",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-02"
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Sunderland",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-03"
+        },
+        {
+          "home": "Chelsea",
+          "away": "Leeds United",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-04"
+        },
+        {
+          "home": "Coventry City",
+          "away": "Crystal Palace",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-05"
+        },
+        {
+          "home": "Tottenham",
+          "away": "Ipswich Town",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-06"
+        },
+        {
+          "home": "Newcastle United",
+          "away": "Arsenal",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "11/22 01:30",
+          "match_id": "EPL-2026-27-GW11-07"
+        },
+        {
+          "home": "Hull City",
+          "away": "Brighton",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/22 22:00",
+          "match_id": "EPL-2026-27-GW11-08"
+        },
+        {
+          "home": "Liverpool",
+          "away": "Manchester United",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/23 00:30",
+          "match_id": "EPL-2026-27-GW11-09"
+        },
+        {
+          "home": "Brentford",
+          "away": "Everton",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙",
+          "kickoff_taipei": "11/24 04:00",
+          "match_id": "EPL-2026-27-GW11-10"
+        }
+      ],
+      "ranked_picks": {
+        "1X2": [
+          {
+            "rank": "R1",
+            "home": "Manchester City",
+            "away": "Fulham",
+            "match": "Manchester City vs Fulham",
+            "pick": "主勝",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R2",
+            "home": "Hull City",
+            "away": "Brighton",
+            "match": "Hull City vs Brighton",
+            "pick": "客勝",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R3",
+            "home": "Tottenham",
+            "away": "Ipswich Town",
+            "match": "Tottenham vs Ipswich Town",
+            "pick": "主勝",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          }
+        ],
+        "OU25": [
+          {
+            "rank": "R1",
+            "home": "Coventry City",
+            "away": "Crystal Palace",
+            "match": "Coventry City vs Crystal Palace",
+            "pick": "大2.5",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R2",
+            "home": "Manchester City",
+            "away": "Fulham",
+            "match": "Manchester City vs Fulham",
+            "pick": "大2.5",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R3",
+            "home": "Liverpool",
+            "away": "Manchester United",
+            "match": "Liverpool vs Manchester United",
+            "pick": "大2.5",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          }
+        ],
+        "parity": [
+          {
+            "rank": "R1",
+            "home": "Brentford",
+            "away": "Everton",
+            "match": "Brentford vs Everton",
+            "pick": "雙",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R2",
+            "home": "Chelsea",
+            "away": "Leeds United",
+            "match": "Chelsea vs Leeds United",
+            "pick": "單",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          },
+          {
+            "rank": "R3",
+            "home": "Tottenham",
+            "away": "Ipswich Town",
+            "match": "Tottenham vs Ipswich Town",
+            "pick": "單",
+            "formal_selector": true,
+            "status": "PREMATCH_OFFICIAL"
+          }
+        ]
+      },
+      "PASS": {
+        "1X2": false,
+        "OU25": false,
+        "parity": false
+      },
+      "market_odds": [
+        {
+          "fixture": "Manchester City vs Fulham",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.46,
+              "draw": 4.81,
+              "away": 6.25
+            },
+            "OU25": {
+              "over": 1.5,
+              "under": 2.53
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Bournemouth vs Nottingham Forest",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 2.01,
+              "draw": 3.62,
+              "away": 3.63
+            },
+            "OU25": {
+              "over": 1.81,
+              "under": 2.01
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Aston Villa vs Sunderland",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.74,
+              "draw": 3.9,
+              "away": 4.55
+            },
+            "OU25": {
+              "over": 1.74,
+              "under": 2.08
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Chelsea vs Leeds United",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.81,
+              "draw": 3.8,
+              "away": 4.16
+            },
+            "OU25": {
+              "over": 1.73,
+              "under": 2.09
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Coventry City vs Crystal Palace",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 2.39,
+              "draw": 3.58,
+              "away": 2.81
+            },
+            "OU25": {
+              "over": 1.71,
+              "under": 2.1
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Tottenham vs Ipswich Town",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.54,
+              "draw": 4.36,
+              "away": 5.59
+            },
+            "OU25": {
+              "over": 1.58,
+              "under": 2.3
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Newcastle United vs Arsenal",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 5.42,
+              "draw": 4.18,
+              "away": 1.58
+            },
+            "OU25": {
+              "over": 1.69,
+              "under": 2.14
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Hull City vs Brighton",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 5.95,
+              "draw": 4.41,
+              "away": 1.52
+            },
+            "OU25": {
+              "over": 1.65,
+              "under": 2.22
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Liverpool vs Manchester United",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.74,
+              "draw": 4.03,
+              "away": 4.4
+            },
+            "OU25": {
+              "over": 1.58,
+              "under": 2.35
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "Brentford vs Everton",
+          "source_label": "MARKETPROXY_CURRENT_MULTIBOOK_NOT_BET365_OPEN",
+          "open": {
+            "1X2": {
+              "home": 1.99,
+              "draw": 3.68,
+              "away": 3.58
+            },
+            "OU25": {
+              "over": 1.74,
+              "under": 2.08
+            },
+            "AH": null
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        }
+      ],
+      "source_and_cutoff": {
+        "prediction_cutoff_utc": "2026-11-09T12:28:43.958100+00:00",
+        "first_kickoff_utc": "2026-11-21T12:30:00+00:00",
+        "market_type": "2026-11-09 current page search snapshot; not Bet365 first tick; AH unavailable",
+        "bet365_first_tick": "MISSING"
+      },
+      "integrity_flags": {
+        "prematch_seal_sha256": "251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada",
+        "exact_binary_replay": false,
+        "no_hindsight": true
+      },
+      "formal_betting_layer": {
+        "parity_selector": "R1_R2_R3_RELATIVE",
+        "historical_identity": "RECOVERED_COMPONENT"
+      },
+      "research_only": false,
+      "counts_as_official_forward_result": true,
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "pre_kick_status": "PENDING",
+      "PARITY_SKEW_ALERT": {
+        "triggered": false
+      },
+      "XUAN_status": {
+        "status": "NOT_RUN"
+      }
+    },
+    {
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "schema_version": "1.1-audit",
+      "generated_at": "2026-11-09",
+      "league": "Bundesliga",
+      "league_zh": "德甲",
+      "season": "2026-27",
+      "gw": 10,
+      "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+      "parent_record_id": "BUNDESLIGA-2026-27-GW10-20261109-MARKETPROXY",
+      "status": {
+        "open_marketproxy": "DONE",
+        "skew_audit": "DONE",
+        "archive_final": "DONE",
+        "pre_kick": "PENDING",
+        "result": "PENDING",
+        "review": "PENDING"
+      },
+      "model": {
+        "parity": "Bundesliga Parity V2-RG1",
+        "xuan": "SHADOW_NOT_RUN",
+        "one_x_two_ou": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+        "exact_binary_replay": false
+      },
+      "integrity": {
+        "master_path": "/R1_R2 Master/R1_R2_Master.md",
+        "market_type": "OPENPROXY_CURRENT / CROSSBOOK_PROXY + PINNACLE",
+        "overwrite_old_predictions": false,
+        "parity_skew_alert": true,
+        "parity_skew_audit_passed": true,
+        "parity_rank_tiebreak": "MISSING_V1_CONTROL => PASS",
+        "bet365_first_tick": "MISSING",
+        "prediction_script": "MISSING",
+        "model_weights": "MISSING",
+        "feature_matrix": "MISSING"
+      },
+      "fixtures": [
+        {
+          "home": "拜仁",
+          "away": "科隆",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 03:30"
+        },
+        {
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 22:30"
+        },
+        {
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 22:30"
+        },
+        {
+          "home": "柏林聯",
+          "away": "RB萊比錫",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 22:30"
+        },
+        {
+          "home": "門興",
+          "away": "多特蒙德",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 22:30"
+        },
+        {
+          "home": "艾禾斯堡",
+          "away": "弗賴堡",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 22:30"
+        },
+        {
+          "home": "沙爾克04",
+          "away": "史特加",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-22 01:30"
+        },
+        {
+          "home": "奧格斯堡",
+          "away": "美因茨",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-22 22:30"
+        },
+        {
+          "home": "雲達不萊梅",
+          "away": "漢堡",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-23 00:30"
+        }
+      ],
+      "matches": [
+        {
+          "home": "拜仁",
+          "away": "科隆",
+          "kickoff_taipei": "2026-11-21 03:30",
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.888253,
+            "draw": 0.066979,
+            "away": 0.044768
+          },
+          "p_over25": 0.818182,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.4,
+            "away": 0.6
+          },
+          "rank_1x2": "R1",
+          "rank_ou25": "R1",
+          "rank_parity": null
+        },
+        {
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "kickoff_taipei": "2026-11-21 22:30",
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.753235,
+            "draw": 0.135865,
+            "away": 0.1109
+          },
+          "p_over25": 0.72314,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.8,
+            "away": 0.2
+          },
+          "rank_1x2": "R2",
+          "rank_ou25": "R2",
+          "rank_parity": null
+        },
+        {
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "kickoff_taipei": "2026-11-21 22:30",
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.396794,
+            "draw": 0.24903,
+            "away": 0.354176
+          },
+          "p_over25": 0.700219,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.4,
+            "away": 0.8
+          },
+          "rank_1x2": null,
+          "rank_ou25": "R3",
+          "rank_parity": null
+        },
+        {
+          "home": "柏林聯",
+          "away": "RB萊比錫",
+          "kickoff_taipei": "2026-11-21 22:30",
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.217906,
+            "draw": 0.219923,
+            "away": 0.562171
+          },
+          "p_over25": 0.651659,
+          "parity_regime": "default EVEN",
+          "parity_totalOdd5": {
+            "home": 0.2,
+            "away": 0.4
+          },
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null
+        },
+        {
+          "home": "門興",
+          "away": "多特蒙德",
+          "kickoff_taipei": "2026-11-21 22:30",
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.203959,
+            "draw": 0.220011,
+            "away": 0.57603
+          },
+          "p_over25": 0.647059,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.6,
+            "away": 0.4
+          },
+          "rank_1x2": "R3",
+          "rank_ou25": null,
+          "rank_parity": null
+        },
+        {
+          "home": "艾禾斯堡",
+          "away": "弗賴堡",
+          "kickoff_taipei": "2026-11-21 22:30",
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.276839,
+            "draw": 0.252671,
+            "away": 0.47049
+          },
+          "p_over25": 0.632212,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.8,
+            "away": 0.6
+          },
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null
+        },
+        {
+          "home": "沙爾克04",
+          "away": "史特加",
+          "kickoff_taipei": "2026-11-22 01:30",
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.236829,
+            "draw": 0.22831,
+            "away": 0.534861
+          },
+          "p_over25": 0.657143,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.6,
+            "away": 0.6
+          },
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null
+        },
+        {
+          "home": "奧格斯堡",
+          "away": "美因茨",
+          "kickoff_taipei": "2026-11-22 22:30",
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.350122,
+            "draw": 0.248268,
+            "away": 0.40161
+          },
+          "p_over25": 0.653207,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.6,
+            "away": 1.0
+          },
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null
+        },
+        {
+          "home": "雲達不萊梅",
+          "away": "漢堡",
+          "kickoff_taipei": "2026-11-23 00:30",
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "雙",
+          "p_1x2": {
+            "home": 0.552374,
+            "draw": 0.223549,
+            "away": 0.224076
+          },
+          "p_over25": 0.617073,
+          "parity_regime": "streak-exhaustion EVEN",
+          "parity_totalOdd5": {
+            "home": 0.4,
+            "away": 0.6
+          },
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null
+        }
+      ],
+      "1X2": [
+        {
+          "home": "拜仁",
+          "away": "科隆",
+          "pick": "主勝",
+          "de_vig": {
+            "home": 0.888253,
+            "draw": 0.066979,
+            "away": 0.044768
+          }
+        },
+        {
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "pick": "主勝",
+          "de_vig": {
+            "home": 0.753235,
+            "draw": 0.135865,
+            "away": 0.1109
+          }
+        },
+        {
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "pick": "主勝",
+          "de_vig": {
+            "home": 0.396794,
+            "draw": 0.24903,
+            "away": 0.354176
+          }
+        },
+        {
+          "home": "柏林聯",
+          "away": "RB萊比錫",
+          "pick": "客勝",
+          "de_vig": {
+            "home": 0.217906,
+            "draw": 0.219923,
+            "away": 0.562171
+          }
+        },
+        {
+          "home": "門興",
+          "away": "多特蒙德",
+          "pick": "客勝",
+          "de_vig": {
+            "home": 0.203959,
+            "draw": 0.220011,
+            "away": 0.57603
+          }
+        },
+        {
+          "home": "艾禾斯堡",
+          "away": "弗賴堡",
+          "pick": "客勝",
+          "de_vig": {
+            "home": 0.276839,
+            "draw": 0.252671,
+            "away": 0.47049
+          }
+        },
+        {
+          "home": "沙爾克04",
+          "away": "史特加",
+          "pick": "客勝",
+          "de_vig": {
+            "home": 0.236829,
+            "draw": 0.22831,
+            "away": 0.534861
+          }
+        },
+        {
+          "home": "奧格斯堡",
+          "away": "美因茨",
+          "pick": "客勝",
+          "de_vig": {
+            "home": 0.350122,
+            "draw": 0.248268,
+            "away": 0.40161
+          }
+        },
+        {
+          "home": "雲達不萊梅",
+          "away": "漢堡",
+          "pick": "主勝",
+          "de_vig": {
+            "home": 0.552374,
+            "draw": 0.223549,
+            "away": 0.224076
+          }
+        }
+      ],
+      "OU25": [
+        {
+          "home": "拜仁",
+          "away": "科隆",
+          "pick": "大2.5",
+          "p_over_proxy": 0.818182
+        },
+        {
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "pick": "大2.5",
+          "p_over_proxy": 0.72314
+        },
+        {
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "pick": "大2.5",
+          "p_over_proxy": 0.700219
+        },
+        {
+          "home": "柏林聯",
+          "away": "RB萊比錫",
+          "pick": "大2.5",
+          "p_over_proxy": 0.651659
+        },
+        {
+          "home": "門興",
+          "away": "多特蒙德",
+          "pick": "大2.5",
+          "p_over_proxy": 0.647059
+        },
+        {
+          "home": "艾禾斯堡",
+          "away": "弗賴堡",
+          "pick": "大2.5",
+          "p_over_proxy": 0.632212
+        },
+        {
+          "home": "沙爾克04",
+          "away": "史特加",
+          "pick": "大2.5",
+          "p_over_proxy": 0.657143
+        },
+        {
+          "home": "奧格斯堡",
+          "away": "美因茨",
+          "pick": "大2.5",
+          "p_over_proxy": 0.653207
+        },
+        {
+          "home": "雲達不萊梅",
+          "away": "漢堡",
+          "pick": "大2.5",
+          "p_over_proxy": 0.617073
+        }
+      ],
+      "parity": [
+        {
+          "home": "拜仁",
+          "away": "科隆",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "勒沃庫森",
+          "away": "柏德博恩",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "法蘭克福",
+          "away": "霍芬海姆",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "柏林聯",
+          "away": "RB萊比錫",
+          "pick": "雙",
+          "regime": "default EVEN"
+        },
+        {
+          "home": "門興",
+          "away": "多特蒙德",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "艾禾斯堡",
+          "away": "弗賴堡",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "沙爾克04",
+          "away": "史特加",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "奧格斯堡",
+          "away": "美因茨",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        },
+        {
+          "home": "雲達不萊梅",
+          "away": "漢堡",
+          "pick": "雙",
+          "regime": "streak-exhaustion EVEN"
+        }
+      ],
+      "ranked_picks": {
+        "1X2": [
+          {
+            "rank": "R1",
+            "home": "拜仁",
+            "away": "科隆",
+            "pick": "主勝",
+            "de_vig_confidence": 0.888253
+          },
+          {
+            "rank": "R2",
+            "home": "勒沃庫森",
+            "away": "柏德博恩",
+            "pick": "主勝",
+            "de_vig_confidence": 0.753235
+          },
+          {
+            "rank": "R3",
+            "home": "門興",
+            "away": "多特蒙德",
+            "pick": "客勝",
+            "de_vig_confidence": 0.57603
+          }
+        ],
+        "OU25": [
+          {
+            "rank": "R1",
+            "home": "拜仁",
+            "away": "科隆",
+            "pick": "大2.5",
+            "p_over_proxy": 0.818182
+          },
+          {
+            "rank": "R2",
+            "home": "勒沃庫森",
+            "away": "柏德博恩",
+            "pick": "大2.5",
+            "p_over_proxy": 0.72314
+          },
+          {
+            "rank": "R3",
+            "home": "法蘭克福",
+            "away": "霍芬海姆",
+            "pick": "大2.5",
+            "p_over_proxy": 0.700219
+          }
+        ],
+        "parity": []
+      },
+      "PASS": {
+        "1X2": false,
+        "OU25": false,
+        "parity": true,
+        "parity_reason": "PARITY_SKEW_0_ODD_9_EVEN; frozen V2-RG1 direction audit passed, but exact V1 parity-confidence tie-break is unavailable, so official R1/R2/R3 are not forced."
+      },
+      "PARITY_SKEW_ALERT": {
+        "triggered": true,
+        "audit_passed": true,
+        "final_split": "0 ODD / 9 EVEN",
+        "direction_action": "KEEP_ALL_DIRECTIONS",
+        "rank_action": "PASS_R1_R2_R3"
+      },
+      "XUAN_status": {
+        "status": "SHADOW_NOT_RUN",
+        "affects_formal_direction": false
+      },
+      "research_only": false,
+      "counts_as_official_forward_result": true,
+      "pre_kick_status": "PENDING",
+      "research_tests": {
+        "OU_WEAK_RANK_FILTER_TEST": {
+          "status": "TEST_ONLY",
+          "official_effect": "NONE",
+          "note": "Top OU R1/R2/R3 are all strong market-proxy Over signals; no weak-rank exclusion applied."
+        },
+        "PARITY_SKEW_FORWARD_DIAGNOSTIC": {
+          "status": "TEST_ONLY",
+          "official_effect": "NONE",
+          "note": "0 ODD / 9 EVEN recorded for forward diagnosis; no artificial direction balancing."
+        }
+      },
+      "source_and_cutoff": {
+        "fixture_sources": [
+          "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/10",
+          "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2026-2027/matchday/10"
+        ],
+        "market_snapshot_date": "2026-11-09",
+        "market_type": "OPENPROXY_CURRENT",
+        "bet365_first_tick": "MISSING",
+        "market_sources": [
+          "https://oddseek.com/football/bayern-munich-vs-fc-koln-13662117",
+          "https://oddseek.com/football/bayer-leverkusen-vs-paderborn-13662116",
+          "https://oddseek.com/football/eintracht-frankfurt-vs-tsg-hoffenheim-13662133",
+          "https://oddseek.com/football/union-berlin-vs-rb-leipzig-13662137",
+          "https://oddseek.com/football/borussia-monchengladbach-vs-borussia-dortmund-13662119",
+          "https://oddseek.com/football/elversberg-vs-freiburg-13662118",
+          "https://oddseek.com/football/schalke-04-vs-vfb-stuttgart-13662141",
+          "https://oddseek.com/vi/football/augsburg-vs-mainz-05-13662136",
+          "https://oddseek.com/football/werder-bremen-vs-hamburger-sv-13662142"
+        ],
+        "opening_history_source": "Pinnacle first-recorded history where available via SteamWatch; values are OPENPROXY, not guaranteed first market tick."
+      },
+      "odds_tracking": {
+        "scope": "EVERY_MATCH",
+        "baseline": "OPENPROXY_CURRENT_2026-11-09",
+        "pre_kick": "PENDING",
+        "missing_policy": "SHOW_MISSING_DO_NOT_BACKFILL"
+      },
+      "market_odds": [
+        {
+          "fixture": "拜仁 vs 科隆",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 1.07,
+              "draw": 14.19,
+              "away": 21.23
+            },
+            "OU25": {
+              "over": 1.2,
+              "under": 5.4
+            },
+            "AH": {
+              "line_home": -3.0,
+              "home": 2.0,
+              "away": 1.83
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 1.06,
+            "draw": 14.2,
+            "away": 21.25
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "勒沃庫森 vs 柏德博恩",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 1.25,
+              "draw": 6.93,
+              "away": 8.49
+            },
+            "OU25": {
+              "over": 1.34,
+              "under": 3.5
+            },
+            "AH": {
+              "line_home": -1.75,
+              "home": 1.87,
+              "away": 1.96
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 1.23,
+            "draw": 7.03,
+            "away": 8.82
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "法蘭克福 vs 霍芬海姆",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 2.41,
+              "draw": 3.84,
+              "away": 2.7
+            },
+            "OU25": {
+              "over": 1.37,
+              "under": 3.2
+            },
+            "AH": {
+              "line_home": -0.25,
+              "home": 2.12,
+              "away": 1.76
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 2.28,
+            "draw": 3.81,
+            "away": 2.79
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "柏林聯 vs RB萊比錫",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 4.36,
+              "draw": 4.32,
+              "away": 1.69
+            },
+            "OU25": {
+              "over": 1.47,
+              "under": 2.75
+            },
+            "AH": {
+              "line_home": 1.0,
+              "home": 1.84,
+              "away": 2.02
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 4.09,
+            "draw": 4.18,
+            "away": 1.73
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "門興 vs 多特蒙德",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 4.66,
+              "draw": 4.32,
+              "away": 1.65
+            },
+            "OU25": {
+              "over": 1.5,
+              "under": 2.75
+            },
+            "AH": {
+              "line_home": 0.75,
+              "home": 2.05,
+              "away": 1.819
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 4.6,
+            "draw": 4.35,
+            "away": 1.62
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "艾禾斯堡 vs 弗賴堡",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 3.45,
+              "draw": 3.78,
+              "away": 2.03
+            },
+            "OU25": {
+              "over": 1.53,
+              "under": 2.63
+            },
+            "AH": {
+              "line_home": 0.5,
+              "home": 1.826,
+              "away": 2.02
+            }
+          },
+          "first_recorded_1X2": null,
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "沙爾克04 vs 史特加",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 4.02,
+              "draw": 4.17,
+              "away": 1.78
+            },
+            "OU25": {
+              "over": 1.44,
+              "under": 2.76
+            },
+            "AH": {
+              "line_home": 0.5,
+              "home": 2.09,
+              "away": 1.79
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 3.75,
+            "draw": 4.08,
+            "away": 1.82
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "奧格斯堡 vs 美因茨",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 2.73,
+              "draw": 3.85,
+              "away": 2.38
+            },
+            "OU25": {
+              "over": 1.46,
+              "under": 2.75
+            },
+            "AH": {
+              "line_home": 0.25,
+              "home": 1.78,
+              "away": 2.09
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 2.81,
+            "draw": 3.82,
+            "away": 2.27
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        },
+        {
+          "fixture": "雲達不萊梅 vs 漢堡",
+          "source_label": "OPENPROXY_CURRENT / CROSSBOOK_PROXY; 1X2/AH preferably Pinnacle where traceable",
+          "open": {
+            "1X2": {
+              "home": 1.72,
+              "draw": 4.25,
+              "away": 4.24
+            },
+            "OU25": {
+              "over": 1.57,
+              "under": 2.53
+            },
+            "AH": {
+              "line_home": -0.75,
+              "home": 1.854,
+              "away": 2.0
+            }
+          },
+          "first_recorded_1X2": {
+            "home": 1.67,
+            "draw": 4.27,
+            "away": 4.36
+          },
+          "pre_kick": null,
+          "movement": {
+            "status": "BASELINE_ONLY"
+          }
+        }
+      ],
+      "integrity_flags": {
+        "exact_weights": "MISSING",
+        "bet365_first_tick": "MISSING"
+      }
+    },
+    {
+      "schema": "DASHBOARD_UPDATE_PACKAGE_V1",
+      "schema_version": "1.2",
+      "league": "Ligue 1",
+      "season": "2026-27",
+      "gw": 11,
+      "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+      "archive_date": "2026-11-09",
+      "timezone": "Asia/Taipei",
+      "status": "ARCHIVED_PREMATCH_MARKETPROXY",
+      "dashboard_sync": "PENDING_BY_USER_REQUEST",
+      "model": {
+        "ou_parity": "LIGUE1-R80-V2.1-DRAWGUARD-FROZEN",
+        "1x2": "1X2-Blend-V0.1",
+        "post_gw10_tests": "RESEARCH_ONLY_NOT_PROMOTED"
+      },
+      "predictions": [
+        {
+          "match": "Troyes vs Le Havre",
+          "kickoff_taipei": "2026-11-21 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.4095909184525439,
+          "1x2_margin": 0.0864153893936426,
+          "1x2_r": null,
+          "ou25": "大2.5",
+          "ou_p_over": 0.547581063343443,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "雙",
+          "parity_p_odd": 0.4988498399164729,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Nice vs Paris SG",
+          "kickoff_taipei": "2026-11-22 00:15",
+          "1x2": "客勝",
+          "1x2_score": 0.6459919515882908,
+          "1x2_margin": 0.453838531692931,
+          "1x2_r": "R2",
+          "ou25": "大2.5",
+          "ou_p_over": 0.6639785250783724,
+          "ou_relative_r": "R1",
+          "ou_formal_selected": false,
+          "parity": "單",
+          "parity_p_odd": 0.5004393301463206,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Monaco vs Auxerre",
+          "kickoff_taipei": "2026-11-22 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.6426029886290155,
+          "1x2_margin": 0.443298020872598,
+          "1x2_r": "R3",
+          "ou25": "大2.5",
+          "ou_p_over": 0.6414600640095856,
+          "ou_relative_r": "R2",
+          "ou_formal_selected": false,
+          "parity": "單",
+          "parity_p_odd": 0.500333731297648,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Lens vs Toulouse",
+          "kickoff_taipei": "2026-11-22 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.5112453284438929,
+          "1x2_margin": 0.2551892789991716,
+          "1x2_r": null,
+          "ou25": "大2.5",
+          "ou_p_over": 0.5768744534174273,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "雙",
+          "parity_p_odd": 0.4987243775549241,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Lille vs Lyon",
+          "kickoff_taipei": "2026-11-22 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.395635906132638,
+          "1x2_margin": 0.0831240306568996,
+          "1x2_r": null,
+          "ou25": "小2.5",
+          "ou_p_over": 0.4810082089746759,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "雙",
+          "parity_p_odd": 0.4890754090785413,
+          "parity_shadow_r": "R1",
+          "parity_formal_selected": false,
+          "draw_risk": true,
+          "high_entropy": false
+        },
+        {
+          "match": "Strasbourg vs Brest",
+          "kickoff_taipei": "2026-11-22 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.4068959766331472,
+          "1x2_margin": 0.0558443916896847,
+          "1x2_r": null,
+          "ou25": "大2.5",
+          "ou_p_over": 0.5953729266186376,
+          "ou_relative_r": "R3",
+          "ou_formal_selected": false,
+          "parity": "單",
+          "parity_p_odd": 0.5014871157825301,
+          "parity_shadow_r": "R3",
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": true
+        },
+        {
+          "match": "Paris FC vs Angers",
+          "kickoff_taipei": "2026-11-22 22:00",
+          "1x2": "主勝",
+          "1x2_score": 0.6605108844729678,
+          "1x2_margin": 0.4583458538010564,
+          "1x2_r": "R1",
+          "ou25": "大2.5",
+          "ou_p_over": 0.56377935990329,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "單",
+          "parity_p_odd": 0.5042616094970936,
+          "parity_shadow_r": "R2",
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Lorient vs Rennes",
+          "kickoff_taipei": "2026-11-23 00:15",
+          "1x2": "客勝",
+          "1x2_score": 0.4342159562002139,
+          "1x2_margin": 0.1269007086327931,
+          "1x2_r": null,
+          "ou25": "大2.5",
+          "ou_p_over": 0.5514108304297458,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "雙",
+          "parity_p_odd": 0.4988748881576851,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        },
+        {
+          "match": "Marseille vs Le Mans",
+          "kickoff_taipei": "2026-11-23 03:45",
+          "1x2": "主勝",
+          "1x2_score": 0.6296703396510028,
+          "1x2_margin": 0.4302824241765747,
+          "1x2_r": null,
+          "ou25": "大2.5",
+          "ou_p_over": 0.5873988138481955,
+          "ou_relative_r": null,
+          "ou_formal_selected": false,
+          "parity": "單",
+          "parity_p_odd": 0.5008565354686809,
+          "parity_shadow_r": null,
+          "parity_formal_selected": false,
+          "draw_risk": false,
+          "high_entropy": false
+        }
+      ],
+      "ranks": {
+        "1x2": [
+          {
+            "rank": "R1",
+            "match": "Paris FC vs Angers",
+            "pick": "主勝"
+          },
+          {
+            "rank": "R2",
+            "match": "Nice vs Paris SG",
+            "pick": "客勝"
+          },
+          {
+            "rank": "R3",
+            "match": "Monaco vs Auxerre",
+            "pick": "主勝"
+          }
+        ],
+        "ou25_relative": [
+          {
+            "rank": "R1",
+            "match": "Nice vs Paris SG",
+            "pick": "大2.5"
+          },
+          {
+            "rank": "R2",
+            "match": "Monaco vs Auxerre",
+            "pick": "大2.5"
+          },
+          {
+            "rank": "R3",
+            "match": "Strasbourg vs Brest",
+            "pick": "大2.5"
+          }
+        ],
+        "parity_shadow": [
+          {
+            "rank": "R1",
+            "match": "Lille vs Lyon",
+            "pick": "雙"
+          },
+          {
+            "rank": "R2",
+            "match": "Paris FC vs Angers",
+            "pick": "單"
+          },
+          {
+            "rank": "R3",
+            "match": "Strasbourg vs Brest",
+            "pick": "單"
+          }
+        ]
+      },
+      "formal_betting_layer": {
+        "ou25_selector": "PASS_0_TRIGGERS",
+        "parity_selector": "PASS_0_TRIGGERS",
+        "parity_skew_alert": false,
+        "parity_direction_count": {
+          "odd": 5,
+          "even": 4
+        }
+      },
+      "strict_forward_before_gw11": {
+        "1x2": {
+          "R1": "2/2",
+          "R2": "1/2",
+          "R3": "2/2",
+          "R1+R2": "3/4",
+          "R1+R2+R3": "5/6"
+        },
+        "ou25_relative": {
+          "R1": "4/6",
+          "R2": "6/6",
+          "R3": "1/2",
+          "R1+R2": "10/12",
+          "R1+R2+R3_since_GW9": "4/6"
+        },
+        "parity_shadow": {
+          "R1": "3/6",
+          "R2": "4/6",
+          "R3": "2/2",
+          "R1+R2": "7/12",
+          "R1+R2+R3_since_GW9": "5/6"
+        }
+      },
+      "integrity": [
+        "GW11 features use completed results through GW10 only.",
+        "No GW11 result used.",
+        "Post-GW10 TEST changes not promoted or used.",
+        "Website/GitHub sync intentionally deferred."
+      ],
+      "next_action": "PRE-KICK snapshot; new Record if direction/rank changes; centralized Dashboard/GitHub sync later.",
+      "fixtures": [
+        {
+          "home": "Troyes",
+          "away": "Le Havre",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-21 03:45"
+        },
+        {
+          "home": "Nice",
+          "away": "Paris SG",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 00:15"
+        },
+        {
+          "home": "Monaco",
+          "away": "Auxerre",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 03:45"
+        },
+        {
+          "home": "Lens",
+          "away": "Toulouse",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-22 03:45"
+        },
+        {
+          "home": "Lille",
+          "away": "Lyon",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-22 03:45"
+        },
+        {
+          "home": "Strasbourg",
+          "away": "Brest",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 03:45"
+        },
+        {
+          "home": "Paris FC",
+          "away": "Angers",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 22:00"
+        },
+        {
+          "home": "Lorient",
+          "away": "Rennes",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙",
+          "kickoff_taipei": "2026-11-23 00:15"
+        },
+        {
+          "home": "Marseille",
+          "away": "Le Mans",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-23 03:45"
+        }
+      ],
+      "ranked_picks": {
+        "1X2": [
+          {
+            "rank": "R1",
+            "match": "Paris FC vs Angers",
+            "pick": "主勝"
+          },
+          {
+            "rank": "R2",
+            "match": "Nice vs Paris SG",
+            "pick": "客勝"
+          },
+          {
+            "rank": "R3",
+            "match": "Monaco vs Auxerre",
+            "pick": "主勝"
+          }
+        ],
+        "OU25": [
+          {
+            "rank": "R1",
+            "match": "Nice vs Paris SG",
+            "pick": "大2.5",
+            "formal_selector": false
+          },
+          {
+            "rank": "R2",
+            "match": "Monaco vs Auxerre",
+            "pick": "大2.5",
+            "formal_selector": false
+          },
+          {
+            "rank": "R3",
+            "match": "Strasbourg vs Brest",
+            "pick": "大2.5",
+            "formal_selector": false
+          }
+        ],
+        "parity": [
+          {
+            "rank": "R1",
+            "match": "Lille vs Lyon",
+            "pick": "雙",
+            "formal_selector": false
+          },
+          {
+            "rank": "R2",
+            "match": "Paris FC vs Angers",
+            "pick": "單",
+            "formal_selector": false
+          },
+          {
+            "rank": "R3",
+            "match": "Strasbourg vs Brest",
+            "pick": "單",
+            "formal_selector": false
+          }
+        ]
+      },
+      "PASS": {
+        "1X2": false,
+        "OU25": true,
+        "parity": true
+      },
+      "XUAN_status": {
+        "status": "RESEARCH_NOT_PROMOTED"
+      },
+      "research_only": false,
+      "counts_as_official_forward_result": true,
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "pre_kick_status": "PENDING",
+      "PARITY_SKEW_ALERT": {
+        "triggered": false
+      },
+      "integrity_flags": {
+        "exact_weights": "MISSING",
+        "bet365_first_tick": "MISSING"
+      }
+    }
+  ],
+  "research_forecasts": [
+    {
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "league": "EPL",
+      "season": "2026-27",
+      "gw": 11,
+      "status": "SHADOW_PREMATCH_RESEARCH",
+      "model": "R90-MATH5-Q-RECONSTRUCTION-V0; NOT R90 EXACT",
+      "fixtures": [
+        {
+          "home": "Manchester City",
+          "away": "Fulham",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 20:30",
+          "match_id": "EPL-2026-27-GW11-01"
+        },
+        {
+          "home": "Bournemouth",
+          "away": "Nottingham Forest",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-02"
+        },
+        {
+          "home": "Aston Villa",
+          "away": "Sunderland",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-03"
+        },
+        {
+          "home": "Chelsea",
+          "away": "Leeds United",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-04"
+        },
+        {
+          "home": "Coventry City",
+          "away": "Crystal Palace",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-05"
+        },
+        {
+          "home": "Tottenham",
+          "away": "Ipswich Town",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/21 23:00",
+          "match_id": "EPL-2026-27-GW11-06"
+        },
+        {
+          "home": "Newcastle United",
+          "away": "Arsenal",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "單",
+          "kickoff_taipei": "11/22 01:30",
+          "match_id": "EPL-2026-27-GW11-07"
+        },
+        {
+          "home": "Hull City",
+          "away": "Brighton",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "單",
+          "kickoff_taipei": "11/22 22:00",
+          "match_id": "EPL-2026-27-GW11-08"
+        },
+        {
+          "home": "Liverpool",
+          "away": "Manchester United",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/23 00:30",
+          "match_id": "EPL-2026-27-GW11-09"
+        },
+        {
+          "home": "Brentford",
+          "away": "Everton",
+          "1X2": "MISSING",
+          "OU25": "MISSING",
+          "parity": "雙",
+          "kickoff_taipei": "11/24 04:00",
+          "match_id": "EPL-2026-27-GW11-10"
+        }
+      ],
+      "ranked_picks": {
+        "1X2": [],
+        "OU25": [],
+        "parity": [
+          {
+            "rank": "R1",
+            "home": "Coventry City",
+            "away": "Crystal Palace",
+            "match": "Coventry City vs Crystal Palace",
+            "pick": "雙",
+            "formal_selector": false,
+            "status": "RESEARCH_ONLY"
+          },
+          {
+            "rank": "R2",
+            "home": "Tottenham",
+            "away": "Ipswich Town",
+            "match": "Tottenham vs Ipswich Town",
+            "pick": "雙",
+            "formal_selector": false,
+            "status": "RESEARCH_ONLY"
+          },
+          {
+            "rank": "R3",
+            "home": "Liverpool",
+            "away": "Manchester United",
+            "match": "Liverpool vs Manchester United",
+            "pick": "雙",
+            "formal_selector": false,
+            "status": "RESEARCH_ONLY"
+          }
+        ]
+      },
+      "PASS": {
+        "1X2": true,
+        "OU25": true,
+        "parity": false
+      },
+      "market_odds": [],
+      "source_and_cutoff": {
+        "prediction_cutoff_utc": "2026-11-09T12:28:43.958100+00:00",
+        "first_kickoff_utc": "2026-11-21T12:30:00+00:00",
+        "market_type": "2026-11-09 current page search snapshot; not Bet365 first tick; AH unavailable",
+        "bet365_first_tick": "MISSING"
+      },
+      "integrity_flags": {
+        "prematch_seal_sha256": "251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada",
+        "exact_binary_replay": false,
+        "no_hindsight": true
+      },
+      "formal_betting_layer": {
+        "parity_selector": "PASS_HIGH_CONFIDENCE",
+        "relative_rankings": "SHADOW_ONLY"
+      },
+      "research_only": true,
+      "counts_as_official_forward_result": false,
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "pre_kick_status": "PENDING",
+      "PARITY_SKEW_ALERT": {
+        "triggered": false
+      },
+      "XUAN_status": {
+        "status": "NOT_RUN"
+      }
+    },
+    {
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "schema_version": "1.0",
+      "generated_at": "2026-11-09T19:16:00+08:00",
+      "league": "LaLiga",
+      "league_zh": "西甲",
+      "season": "2026-27",
+      "gw": 13,
+      "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "source_record_type": "RESEARCH_MARKETPROXY",
+      "status": "RESEARCH_PREMATCH_FROZEN; OFFICIAL_NOT_RUN",
+      "model": {
+        "1x2": "1x2 MARKETPROXY devig max",
+        "ou25": "OU2.5 MARKETPROXY devig max",
+        "parity": "INDEPENDENT_GOAL_PARITY_XOR_LAST5_BETA1",
+        "native_r90_x_v3": "EXACT_NOT_RUN",
+        "v2_trained": "NOT_RUN",
+        "shadow_tests": [
+          "LALIGA-DRAW-LOW-SCORE-GUARD-TEST",
+          "LALIGA-OVEREXPOSURE-TEST"
+        ]
+      },
+      "integrity": {
+        "master_path": "/R1_R2 Master/R1_R2_Master.md",
+        "research_only": true,
+        "counts_as_official_forward": false,
+        "model_exact_replay": false,
+        "research_proxy_reproducible": true,
+        "bet365_first_tick_present": false,
+        "opening_odds_verified": false,
+        "no_existing_predictions_overwritten": true,
+        "dashboard_update_deferred": true,
+        "dashboard_sync_pending": false,
+        "parity_skew_alert": true,
+        "parity_odd_count": 10,
+        "parity_even_count": 0,
+        "official_parity_r1r2r3": "PASS"
+      },
+      "ranks": {
+        "1x2": [
+          {
+            "rank": "R1",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "巴塞隆拿",
+            "away": "維拉利爾",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "畢爾包",
+            "away": "愛斯賓奴",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ],
+        "ou25": [
+          {
+            "rank": "R1",
+            "home": "巴塞隆拿",
+            "away": "維拉利爾",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "桑坦德",
+            "away": "皇家蘇斯達",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ],
+        "parity": [
+          {
+            "rank": "R1",
+            "home": "桑坦德",
+            "away": "皇家蘇斯達",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "艾拉維斯",
+            "away": "拉科魯尼亞",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ]
+      },
+      "fixtures": [
+        {
+          "home": "畢爾包",
+          "away": "愛斯賓奴",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-21 04:00",
+          "match_id": "LALIGA-2026-27-GW13-01"
+        },
+        {
+          "home": "艾拉維斯",
+          "away": "拉科魯尼亞",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-21 21:00",
+          "match_id": "LALIGA-2026-27-GW13-02"
+        },
+        {
+          "home": "華歷簡奴",
+          "away": "華倫西亞",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-21 23:15",
+          "match_id": "LALIGA-2026-27-GW13-03"
+        },
+        {
+          "home": "西維爾",
+          "away": "貝迪斯",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 01:30",
+          "match_id": "LALIGA-2026-27-GW13-04"
+        },
+        {
+          "home": "皇家馬德里",
+          "away": "切爾達",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 04:00",
+          "match_id": "LALIGA-2026-27-GW13-05"
+        },
+        {
+          "home": "巴塞隆拿",
+          "away": "維拉利爾",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 21:00",
+          "match_id": "LALIGA-2026-27-GW13-06"
+        },
+        {
+          "home": "桑坦德",
+          "away": "皇家蘇斯達",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-22 23:15",
+          "match_id": "LALIGA-2026-27-GW13-07"
+        },
+        {
+          "home": "奧沙辛拿",
+          "away": "馬拉加",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-23 01:30",
+          "match_id": "LALIGA-2026-27-GW13-08"
+        },
+        {
+          "home": "加泰",
+          "away": "馬德里體育會",
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-23 04:00",
+          "match_id": "LALIGA-2026-27-GW13-09"
+        },
+        {
+          "home": "利雲特",
+          "away": "艾爾切",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單",
+          "kickoff_taipei": "2026-11-24 04:00",
+          "match_id": "LALIGA-2026-27-GW13-10"
+        }
+      ],
+      "matches": [
+        {
+          "match_id": "LALIGA-2026-27-GW13-01",
+          "home_key": "Athletic",
+          "away_key": "Espanyol",
+          "home": "畢爾包",
+          "away": "愛斯賓奴",
+          "taipei": "2026-11-21 04:00",
+          "market_1x2": [
+            1.49,
+            4.31,
+            6.75
+          ],
+          "market_ou25": [
+            1.8,
+            1.99
+          ],
+          "fair_1x2": [
+            0.638387,
+            0.220695,
+            0.140918
+          ],
+          "fair_over25": 0.525066,
+          "fair_under25": 0.474934,
+          "p_home_goals_odd_proxy": 0.428571,
+          "p_away_goals_odd_proxy": 0.571429,
+          "p_match_odd_research": 0.510204,
+          "p_total_odd_crosscheck": 0.428571,
+          "parity_crosscheck_agrees": false,
+          "parity_strength_proxy": 0.010204,
+          "last5_home_scored_odd": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "last5_away_scored_odd": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": "R3",
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": true,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-02",
+          "home_key": "Alaves",
+          "away_key": "Deportivo",
+          "home": "艾拉維斯",
+          "away": "拉科魯尼亞",
+          "taipei": "2026-11-21 21:00",
+          "market_1x2": [
+            2.06,
+            3.36,
+            3.61
+          ],
+          "market_ou25": [
+            2.14,
+            1.69
+          ],
+          "fair_1x2": [
+            0.457932,
+            0.280756,
+            0.261313
+          ],
+          "fair_over25": 0.441253,
+          "fair_under25": 0.558747,
+          "p_home_goals_odd_proxy": 0.714286,
+          "p_away_goals_odd_proxy": 0.285714,
+          "p_match_odd_research": 0.591837,
+          "p_total_odd_crosscheck": 0.571429,
+          "parity_crosscheck_agrees": true,
+          "parity_strength_proxy": 0.091837,
+          "last5_home_scored_odd": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "last5_away_scored_odd": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "小2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": "R2",
+          "draw_guard_test": true,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-03",
+          "home_key": "Rayo",
+          "away_key": "Valencia",
+          "home": "華歷簡奴",
+          "away": "華倫西亞",
+          "taipei": "2026-11-21 23:15",
+          "market_1x2": [
+            2.0,
+            3.45,
+            3.77
+          ],
+          "market_ou25": [
+            2.04,
+            1.78
+          ],
+          "fair_1x2": [
+            0.473886,
+            0.274716,
+            0.251398
+          ],
+          "fair_over25": 0.465969,
+          "fair_under25": 0.534031,
+          "p_home_goals_odd_proxy": 0.571429,
+          "p_away_goals_odd_proxy": 0.428571,
+          "p_match_odd_research": 0.510204,
+          "p_total_odd_crosscheck": 0.571429,
+          "parity_crosscheck_agrees": true,
+          "parity_strength_proxy": 0.010204,
+          "last5_home_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "last5_away_scored_odd": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "小2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": true,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-04",
+          "home_key": "Sevilla",
+          "away_key": "Betis",
+          "home": "西維爾",
+          "away": "貝迪斯",
+          "taipei": "2026-11-22 01:30",
+          "market_1x2": [
+            2.9,
+            3.56,
+            2.35
+          ],
+          "market_ou25": [
+            1.73,
+            2.1
+          ],
+          "fair_1x2": [
+            0.328014,
+            0.267203,
+            0.404783
+          ],
+          "fair_over25": 0.548303,
+          "fair_under25": 0.451697,
+          "p_home_goals_odd_proxy": 0.571429,
+          "p_away_goals_odd_proxy": 0.285714,
+          "p_match_odd_research": 0.530612,
+          "p_total_odd_crosscheck": 0.428571,
+          "parity_crosscheck_agrees": false,
+          "parity_strength_proxy": 0.030612,
+          "last5_home_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "last5_away_scored_odd": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-05",
+          "home_key": "RealMadrid",
+          "away_key": "Celta",
+          "home": "皇家馬德里",
+          "away": "切爾達",
+          "taipei": "2026-11-22 04:00",
+          "market_1x2": [
+            1.21,
+            6.59,
+            13.23
+          ],
+          "market_ou25": [
+            1.4,
+            2.82
+          ],
+          "fair_1x2": [
+            0.78427,
+            0.144001,
+            0.071728
+          ],
+          "fair_over25": 0.668246,
+          "fair_under25": 0.331754,
+          "p_home_goals_odd_proxy": 0.571429,
+          "p_away_goals_odd_proxy": 0.142857,
+          "p_match_odd_research": 0.55102,
+          "p_total_odd_crosscheck": 0.642857,
+          "parity_crosscheck_agrees": true,
+          "parity_strength_proxy": 0.05102,
+          "last5_home_scored_odd": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "last5_away_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": "R1",
+          "rank_ou25": "R2",
+          "rank_parity": "R3",
+          "draw_guard_test": false,
+          "overexposure_test": true,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-06",
+          "home_key": "Barcelona",
+          "away_key": "Villarreal",
+          "home": "巴塞隆拿",
+          "away": "維拉利爾",
+          "taipei": "2026-11-22 21:00",
+          "market_1x2": [
+            1.23,
+            6.91,
+            10.08
+          ],
+          "market_ou25": [
+            1.21,
+            3.99
+          ],
+          "fair_1x2": [
+            0.769215,
+            0.136922,
+            0.093863
+          ],
+          "fair_over25": 0.767308,
+          "fair_under25": 0.232692,
+          "p_home_goals_odd_proxy": 0.571429,
+          "p_away_goals_odd_proxy": 0.142857,
+          "p_match_odd_research": 0.55102,
+          "p_total_odd_crosscheck": 0.714286,
+          "parity_crosscheck_agrees": true,
+          "parity_strength_proxy": 0.05102,
+          "last5_home_scored_odd": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "last5_away_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": "R2",
+          "rank_ou25": "R1",
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": true,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-07",
+          "home_key": "Racing",
+          "away_key": "Sociedad",
+          "home": "桑坦德",
+          "away": "皇家蘇斯達",
+          "taipei": "2026-11-22 23:15",
+          "market_1x2": [
+            3.13,
+            3.91,
+            2.1
+          ],
+          "market_ou25": [
+            1.43,
+            2.74
+          ],
+          "fair_1x2": [
+            0.30386,
+            0.243244,
+            0.452896
+          ],
+          "fair_over25": 0.657074,
+          "fair_under25": 0.342926,
+          "p_home_goals_odd_proxy": 0.142857,
+          "p_away_goals_odd_proxy": 0.714286,
+          "p_match_odd_research": 0.653061,
+          "p_total_odd_crosscheck": 0.714286,
+          "parity_crosscheck_agrees": true,
+          "parity_strength_proxy": 0.153061,
+          "last5_home_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "last5_away_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "pick_1x2": "客勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": "R3",
+          "rank_parity": "R1",
+          "draw_guard_test": false,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-08",
+          "home_key": "Osasuna",
+          "away_key": "Malaga",
+          "home": "奧沙辛拿",
+          "away": "馬拉加",
+          "taipei": "2026-11-23 01:30",
+          "market_1x2": [
+            1.76,
+            3.69,
+            4.74
+          ],
+          "market_ou25": [
+            1.92,
+            1.89
+          ],
+          "fair_1x2": [
+            0.541046,
+            0.25806,
+            0.200895
+          ],
+          "fair_over25": 0.496063,
+          "fair_under25": 0.503937,
+          "p_home_goals_odd_proxy": 0.428571,
+          "p_away_goals_odd_proxy": 0.714286,
+          "p_match_odd_research": 0.530612,
+          "p_total_odd_crosscheck": 0.5,
+          "parity_crosscheck_agrees": null,
+          "parity_strength_proxy": 0.030612,
+          "last5_home_scored_odd": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "last5_away_scored_odd": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "小2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-09",
+          "home_key": "Getafe",
+          "away_key": "Atletico",
+          "home": "加泰",
+          "away": "馬德里體育會",
+          "taipei": "2026-11-23 04:00",
+          "market_1x2": [
+            5.52,
+            3.78,
+            1.63
+          ],
+          "market_ou25": [
+            2.07,
+            1.75
+          ],
+          "fair_1x2": [
+            0.171033,
+            0.249763,
+            0.579204
+          ],
+          "fair_over25": 0.458115,
+          "fair_under25": 0.541885,
+          "p_home_goals_odd_proxy": 0.428571,
+          "p_away_goals_odd_proxy": 0.571429,
+          "p_match_odd_research": 0.510204,
+          "p_total_odd_crosscheck": 0.5,
+          "parity_crosscheck_agrees": null,
+          "parity_strength_proxy": 0.010204,
+          "last5_home_scored_odd": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "last5_away_scored_odd": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "pick_1x2": "客勝",
+          "pick_ou25": "小2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": false,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        },
+        {
+          "match_id": "LALIGA-2026-27-GW13-10",
+          "home_key": "Levante",
+          "away_key": "Elche",
+          "home": "利雲特",
+          "away": "艾爾切",
+          "taipei": "2026-11-24 04:00",
+          "market_1x2": [
+            2.16,
+            3.73,
+            3.08
+          ],
+          "market_ou25": [
+            1.66,
+            2.19
+          ],
+          "fair_1x2": [
+            0.438522,
+            0.253943,
+            0.307535
+          ],
+          "fair_over25": 0.568831,
+          "fair_under25": 0.431169,
+          "p_home_goals_odd_proxy": 0.571429,
+          "p_away_goals_odd_proxy": 0.285714,
+          "p_match_odd_research": 0.530612,
+          "p_total_odd_crosscheck": 0.357143,
+          "parity_crosscheck_agrees": false,
+          "parity_strength_proxy": 0.030612,
+          "last5_home_scored_odd": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "last5_away_scored_odd": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "pick_1x2": "主勝",
+          "pick_ou25": "大2.5",
+          "pick_parity": "單",
+          "rank_1x2": null,
+          "rank_ou25": null,
+          "rank_parity": null,
+          "draw_guard_test": false,
+          "overexposure_test": true,
+          "official_parity_high_confidence": false,
+          "source_type": "RESEARCH_MARKETPROXY",
+          "status": "PREGAME",
+          "result": null
+        }
+      ],
+      "research_forecasts": {
+        "1x2": [
+          "主勝",
+          "主勝",
+          "主勝",
+          "客勝",
+          "主勝",
+          "主勝",
+          "客勝",
+          "主勝",
+          "客勝",
+          "主勝"
+        ],
+        "ou25": [
+          "大2.5",
+          "小2.5",
+          "小2.5",
+          "大2.5",
+          "大2.5",
+          "大2.5",
+          "大2.5",
+          "小2.5",
+          "小2.5",
+          "大2.5"
+        ],
+        "parity": [
+          "單",
+          "單",
+          "單",
+          "單",
+          "單",
+          "單",
+          "單",
+          "單",
+          "單",
+          "單"
+        ]
+      },
+      "official_forecasts": null,
+      "official_high_confidence_parity_ranks": [],
+      "result_summary": null,
+      "postmatch_review": null,
+      "sources": {
+        "fixtures": "https://www.laliga.com/laliga-easports/resultados/2026-27/jornada-13",
+        "results": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-12",
+        "market": "https://oddalerts.betmonitor.com/mobile/odds-comparison/football/spain-la-liga/10000184",
+        "market_1x2_crosscheck": "https://www.legalsportsbetting.es/guides/la-liga-betting-guide",
+        "historical_results": "https://guiagol.com/uk/league/laliga/results/"
+      },
+      "dashboard_hold_reason": "User explicitly requested no site update now; wait for consolidated sync",
+      "file_sha256": "930f55a7e4e90c043d109ece290c633e3ec26e582f9ca0478a0d323201147ab6",
+      "ranked_picks": {
+        "1X2": [
+          {
+            "rank": "R1",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "巴塞隆拿",
+            "away": "維拉利爾",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "畢爾包",
+            "away": "愛斯賓奴",
+            "pick": "主勝",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ],
+        "OU25": [
+          {
+            "rank": "R1",
+            "home": "巴塞隆拿",
+            "away": "維拉利爾",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "桑坦德",
+            "away": "皇家蘇斯達",
+            "pick": "大2.5",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ],
+        "parity": [
+          {
+            "rank": "R1",
+            "home": "桑坦德",
+            "away": "皇家蘇斯達",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R2",
+            "home": "艾拉維斯",
+            "away": "拉科魯尼亞",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          },
+          {
+            "rank": "R3",
+            "home": "皇家馬德里",
+            "away": "切爾達",
+            "pick": "單",
+            "status": "RESEARCH_CANDIDATE_ONLY",
+            "counts_in_official": false
+          }
+        ]
+      },
+      "PASS": {
+        "1X2": false,
+        "OU25": false,
+        "parity": true
+      },
+      "XUAN_status": {
+        "official_exact": "NOT_RUN"
+      },
+      "research_only": true,
+      "counts_as_official_forward_result": false,
+      "pre_kick_status": "PENDING",
+      "PARITY_SKEW_ALERT": {
+        "triggered": false
+      },
+      "integrity_flags": {
+        "exact_weights": "MISSING",
+        "bet365_first_tick": "MISSING"
+      }
+    },
+    {
+      "package_type": "DASHBOARD_UPDATE_PACKAGE",
+      "league": "Serie A",
+      "season": "2026-27",
+      "matchday": 12,
+      "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+      "archive_date_taipei": "2026-11-09",
+      "status": "RESEARCH_PREMATCH_EARLY_MARKETPROXY_NOT_OFFICIAL_EXACT",
+      "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
+      "website_updated": false,
+      "github_updated": false,
+      "model": {
+        "formal_identity": "Serie A Xuan-Odds V4 / WF6 + Adaptive R90 fallback",
+        "exact_wf6_rerun": false,
+        "exact_r90_rerun": false,
+        "1X2_OU_track": "EARLY_MARKETPROXY",
+        "parity_track": "RESEARCH_PARITY_CONSENSUS",
+        "research_gates": [
+          "DIRECTION_GUARD",
+          "SOURCE_GATE",
+          "AGREEMENT_GATE"
+        ],
+        "research_gates_status": "BACKTEST_REQUIRED_NOT_PROMOTED"
+      },
+      "source_and_cutoff": {
+        "fixture_source": "Lega Serie A Matchday 12",
+        "market_source": "multi-book early/current comparison",
+        "market_snapshot_date": "2026-11-09",
+        "bet365_first_tick": "MISSING",
+        "market_type": "MARKETPROXY",
+        "official_exact": "NOT_RUN"
+      },
+      "fixtures": [
+        {
+          "home": "Como",
+          "away": "Cagliari",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Lazio",
+          "away": "Lecce",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Parma",
+          "away": "Roma",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        {
+          "home": "Napoli",
+          "away": "Torino",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Juventus",
+          "away": "Venezia",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Bologna",
+          "away": "Udinese",
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        {
+          "home": "Sassuolo",
+          "away": "Genoa",
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Milan",
+          "away": "Frosinone",
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Atalanta",
+          "away": "Inter",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        {
+          "home": "Monza",
+          "away": "Fiorentina",
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        }
+      ],
+      "ranked_picks": {
+        "1X2": [
+          {
+            "rank": "R1",
+            "match": "Parma vs Roma",
+            "pick": "Roma AWAY",
+            "market_fair_prob": 0.7181596424692414
+          },
+          {
+            "rank": "R2",
+            "match": "Como vs Cagliari",
+            "pick": "Como HOME",
+            "market_fair_prob": 0.7156985957051528
+          },
+          {
+            "rank": "R3",
+            "match": "Juventus vs Venezia",
+            "pick": "Juventus HOME",
+            "market_fair_prob": 0.7037304154007317
+          }
+        ],
+        "OU25": [
+          {
+            "rank": "R1",
+            "match": "Milan vs Frosinone",
+            "pick": "OVER 2.5",
+            "market_fair_prob": 0.6995515695067265
+          },
+          {
+            "rank": "R2",
+            "match": "Atalanta vs Inter",
+            "pick": "OVER 2.5",
+            "market_fair_prob": 0.6705882352941177
+          },
+          {
+            "rank": "R3",
+            "match": "Como vs Cagliari",
+            "pick": "OVER 2.5",
+            "market_fair_prob": 0.6045918367346939
+          }
+        ],
+        "parity": [
+          {
+            "rank": "R1",
+            "match": "Milan vs Frosinone",
+            "pick": "EVEN",
+            "research_score": 0.69,
+            "odd_score": 0.31,
+            "distance_from_50": 0.19
+          },
+          {
+            "rank": "R2",
+            "match": "Napoli vs Torino",
+            "pick": "EVEN",
+            "research_score": 0,
+            "odd_score": 0.32999999999999996,
+            "distance_from_50": 0.17000000000000004
+          },
+          {
+            "rank": "R3",
+            "match": "Como vs Cagliari",
+            "pick": "EVEN",
+            "research_score": 0,
+            "odd_score": 0.36,
+            "distance_from_50": 0.14
+          }
+        ]
+      },
+      "parity_research_method": {
+        "history_window": "GW7-GW11 completed results",
+        "odd_score_formula": "0.7*pair_avg_last5_odd_rate + 0.3*pair_avg_last3_odd_rate",
+        "direction_rule": "ODD if odd_score>0.50 else EVEN",
+        "rank_rule": "descending abs(odd_score-0.50)",
+        "official": false
+      },
+      "notes": {
+        "Sassuolo-Genoa": "1X2 high entropy; DRAW lean, not ranked",
+        "Bologna-Udinese": "OU near 50/50; UNDER lean, not ranked",
+        "Monza-Fiorentina": "parity recent windows cancel; LOW_CONF"
+      },
+      "PASS": {
+        "1X2": false,
+        "OU25": false,
+        "parity": false
+      },
+      "research_only": true,
+      "counts_as_official_forward_result": false,
+      "gw": 12,
+      "pre_kick_status": "PENDING",
+      "PARITY_SKEW_ALERT": {
+        "triggered": false
+      },
+      "XUAN_status": {
+        "status": "NOT_RUN"
+      },
+      "integrity_flags": {
+        "exact_weights": "MISSING",
+        "bet365_first_tick": "MISSING"
+      }
+    }
+  ],
+  "results": [],
+  "latest_official": {
+    "EPL": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+    "BUNDESLIGA": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+    "LIGUE1": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY"
+  },
+  "latest_research": {
+    "LALIGA": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+    "SERIEA": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH"
+  },
+  "checks": {
+    "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED": {
+      "fixtures": 10,
+      "research_only": false,
+      "record_status": "OPENPROXY_RECOVERED_COMPONENT",
+      "official_parity_rank_count": 3
+    },
+    "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW": {
+      "fixtures": 10,
+      "research_only": true,
+      "record_status": "SHADOW_PREMATCH_RESEARCH",
+      "official_parity_rank_count": null
+    },
+    "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL": {
+      "fixtures": 9,
+      "research_only": false,
+      "record_status": {
+        "open_marketproxy": "DONE",
+        "skew_audit": "DONE",
+        "archive_final": "DONE",
+        "pre_kick": "PENDING",
+        "result": "PENDING",
+        "review": "PENDING"
+      },
+      "official_parity_rank_count": 0
+    },
+    "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY": {
+      "fixtures": 10,
+      "research_only": true,
+      "record_status": "RESEARCH_PREMATCH_FROZEN; OFFICIAL_NOT_RUN",
+      "official_parity_rank_count": null
+    },
+    "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH": {
+      "fixtures": 10,
+      "research_only": true,
+      "record_status": "RESEARCH_PREMATCH_EARLY_MARKETPROXY_NOT_OFFICIAL_EXACT",
+      "official_parity_rank_count": null
+    },
+    "LIGUE1-2026-27-GW11-20261109-MARKETPROXY": {
+      "fixtures": 9,
+      "research_only": false,
+      "record_status": "ARCHIVED_PREMATCH_MARKETPROXY",
+      "official_parity_rank_count": 0
+    },
+    "parity_official_ligue11": "PASS_0_TRIGGERS",
+    "parity_official_bundes10": "PASS_0_ODD_9_EVEN",
+    "result_calculation": "NONE_PREMATCH_ONLY",
+    "master_policy": "OFFICIAL_SHADOW_SEPARATED"
+  }
+}
