@@ -256,5 +256,35 @@
       "version": 69
     },
     "model_changes_status": "NONE; TEST only"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESEARCH_CHANGELOG",
+    "league": "BUNDESLIGA",
+    "season": "2026-27",
+    "gw": 9,
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+    "type": "RESEARCH_CHANGELOG",
+    "status": "TEST_ONLY",
+    "promote": "NONE",
+    "formal_model_change": "NONE",
+    "effective_earliest": "GW10 Research only / new version required",
+    "tests": [
+      {
+        "id": "OU_WEAK_RANK_FILTER_TEST",
+        "status": "TEST",
+        "research_only": true,
+        "promoted": false
+      },
+      {
+        "id": "PARITY_SKEW_FORWARD_DIAGNOSTIC",
+        "status": "TEST",
+        "research_only": true,
+        "promoted": false
+      }
+    ],
+    "note": "No GW9 prediction was changed. Any future adoption requires a new version and sufficient strict-forward evidence.",
+    "recorded_at": "2026-11-09",
+    "title": "RESEARCH_CHANGELOG",
+    "text": "TEST_ONLY: OU_WEAK_RANK_FILTER_TEST; PARITY_SKEW_FORWARD_DIAGNOSTIC. PROMOTE NONE. Formal model change NONE. Effective only from a new future research version after sufficient strict-forward evidence."
   }
 ]
