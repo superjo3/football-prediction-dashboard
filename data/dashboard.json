@@ -4,8 +4,8 @@
   "source": {
     "name": "R1_R2_Master.md",
     "library_file_id": "libfile_e32fcdc400d481919ed168a5ed3245b5",
-    "version": 74,
-    "sha256": "44bbc4eb0a11337473847b1ddd6e66e050af31be17073c71e055506cf1e0988e"
+    "version": 76,
+    "sha256": "6834966f11c780388096fde7880dc33ab37fee4bc824e745eee8035d9c8925f2"
   },
   "leagues": [
     {
@@ -399,10 +399,10 @@
       "model": "{\"ou_parity\": \"LIGUE1-R80-V2.1-DRAWGUARD-FROZEN\", \"1x2\": \"1X2-Blend-V0.1 (70% de-vig market + 30% Dixon-Coles structure; ranking score, not calibrated true probability)\", \"parity_formal_selector\": \"V1/V2 Parity_Selected sparse selector CONTROL\", \"parity_v3\": \"RESEARCH_ONLY_NOT_PROMOTED\", \"xuan\": \"SHADOW_ONLY_NOT_USED\"}",
       "snapshot": "DASHBOARD_UPDATE_PACKAGE",
       "coverage": "package",
-      "note": "{\"status\": \"ARCHIVED_PREMATCH_MARKETPROXY\", \"PASS\": {\"1X2\": false, \"OU25_formal_selector\": true, \"parity_formal_selector\": true, \"parity_shadow_display_only\": true}, \"PARITY_SKEW_ALERT\": {\"triggered\": false, \"direction_split\": \"3 ODD / 6 EVEN\"}, \"integrity_flags\": {\"prediction_script\": \"PRESENT_IN_REPRO_ZIP\", \"model_weights\": \"PRESENT_IN_REPRO_ZIP\", \"feature_matrix\": \"PRESENT_IN_REPRO_ZIP\", \"bet365_first_tick\": \"MISSING\", \"xuan_exact_generator\": \"NOT_RUN\", \"archive_identity\": \"FROZEN_MODEL_PACKAGE + MARKETPROXY\", \"sha256_manifest\": \"PRESENT_IN_REPRO_ZIP\", \"overwrite_old_predictions\": false}}",
+      "note": "GW10 settlement complete: 1X2 5/9, O/U2.5 4/9, parity base 8/9; 1X2 R1/R2/R3=2/3; O/U relative R1/R2/R3=2/3; parity Shadow R1/R2/R3=3/3; formal O/U selector PASS, formal parity selector PASS; postmatch review complete; research TEST only; PRE-KICK record not found.",
       "research_only": false,
       "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
-      "status": "ARCHIVED_PREMATCH_MARKETPROXY"
+      "status": "SETTLEMENT_COMPLETE"
     },
     {
       "id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
@@ -4855,6 +4855,204 @@
       "provenance": "RECOVERED",
       "recorded_at": "2026-11-05",
       "original_predicted_at": "2026-10-30"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-1",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-01",
+      "fixture": "圖盧茲 vs 史特拉斯堡",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 1
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-2",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-02",
+      "fixture": "歐塞爾 vs 巴黎FC",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 3,
+        "ou25": null,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-3",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-03",
+      "fixture": "PSG vs 特魯瓦",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": 1,
+        "ou25": 1,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-4",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-04",
+      "fixture": "雷恩 vs 里爾",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 3,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-5",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-05",
+      "fixture": "勒芒 vs 摩納哥",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": 2,
+        "ou25": null,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-6",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-06",
+      "fixture": "布雷斯特 vs 里昂",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 3
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-7",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-07",
+      "fixture": "勒阿弗爾 vs 洛里昂",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "小",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-8",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-08",
+      "fixture": "昂熱 vs 尼斯",
+      "directions": {
+        "1x2": "客勝",
+        "ou25": "大",
+        "parity": "雙"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": null,
+        "parity": 2
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY-9",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-09",
+      "fixture": "朗斯 vs 馬賽",
+      "directions": {
+        "1x2": "主勝",
+        "ou25": "大",
+        "parity": "單"
+      },
+      "ranks": {
+        "1x2": null,
+        "ou25": 2,
+        "parity": null
+      },
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "provenance": "FORMAL_PREMATCH_MARKETPROXY",
+      "recorded_at": "2026-11-05"
     }
   ],
   "updates": [
@@ -7517,6 +7715,132 @@
         "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
         "version": 69
       }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-1",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-01",
+      "score": [
+        3,
+        1
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-2",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-02",
+      "score": [
+        0,
+        1
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-3",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-03",
+      "score": [
+        1,
+        0
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-4",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-04",
+      "score": [
+        1,
+        2
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-5",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-05",
+      "score": [
+        1,
+        1
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-6",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-06",
+      "score": [
+        2,
+        0
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-7",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-07",
+      "score": [
+        0,
+        2
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-8",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-08",
+      "score": [
+        0,
+        2
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-RESULT-9",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "match_id": "LIGUE1-2026-27-GW10-09",
+      "score": [
+        1,
+        2
+      ],
+      "recorded_at": "2026-11-09",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      }
     }
   ],
   "reviews": [
@@ -7777,6 +8101,19 @@
         "version": 69
       },
       "model_changes_status": "NONE; TEST only"
+    },
+    {
+      "id": "LIGUE1-2026-27-GW10-20261109-POSTMATCH-REVIEW",
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "recorded_at": "2026-11-09",
+      "title": "POSTMATCH_REVIEW",
+      "type": "REVIEW",
+      "text": "POSTMATCH_REVIEW COMPLETE\n1X2: KEEP control; round 5/9, R1/R2/R3=2/3. WATCH mid-confidence favorites and draw risk; TEST 1X2-BLEND-DRAWRISK-META.\nO/U2.5: KEEP sparse/PASS control; round 4/9, relative R1/R2/R3=2/3. WATCH low-score clustering; TEST LIGUE1-OU-LOW-SCORE-GUARD-TEST.\nParity: base 8/9, Shadow R1/R2/R3=3/3, but Official selector PASS 0 bets. KEEP Official/Shadow separation; WATCH regime volatility; TEST LIGUE1-PARITY-V3-SELECTOR external-forward only.\nSKEW: 3 odd / 6 even prematch, alert FALSE; KEEP.\nPRE-KICK: NOT_EVALUABLE; no independent formal PRE-KICK record.\nPROMOTE: NONE. Formal model change: NONE.",
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "model_changes_status": "NONE; TEST only"
     }
   ],
   "rank_summaries": [
@@ -8018,6 +8355,85 @@
       "source": {
         "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
         "version": 69
+      }
+    },
+    {
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 10,
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "market": "1x2",
+      "sample_each": 1,
+      "detail_available": true,
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "hits": {
+        "1": 1,
+        "2": 0,
+        "3": 1
+      },
+      "cumulative": {
+        "R1": "2/2",
+        "R2": "1/2",
+        "R3": "2/2",
+        "R1+R2": "3/4",
+        "R1+R2+R3": "5/6"
+      }
+    },
+    {
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 10,
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "market": "ou25",
+      "sample_each": 1,
+      "detail_available": true,
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "hits": {
+        "1": 0,
+        "2": 1,
+        "3": 1
+      },
+      "rank_layer": "RELATIVE_ONLY",
+      "formal_selector": "PASS",
+      "cumulative": {
+        "R1": "4/6",
+        "R2": "6/6",
+        "R3": "1/2",
+        "R1+R2": "10/12",
+        "R1+R2+R3_since_GW9": "4/6"
+      }
+    },
+    {
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 10,
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "market": "parity",
+      "sample_each": 1,
+      "detail_available": true,
+      "source": {
+        "file": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW10_20261105.json",
+        "version": 76
+      },
+      "hits": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "rank_layer": "SHADOW_ONLY",
+      "formal_selector": "PASS",
+      "cumulative": {
+        "R1": "3/6",
+        "R2": "4/6",
+        "R3": "2/2",
+        "R1+R2": "7/12",
+        "R1+R2+R3_since_GW9": "5/6"
       }
     }
   ],
@@ -11591,7 +12007,7 @@
       "sha256": "77da594d483e55dc5f7673de2f5e5ba9e6d88c91144358c67934d7d1d03c4238"
     }
   ],
-  "latest_source_version": 69,
+  "latest_source_version": 76,
   "official_forecasts": [
     {
       "schema": "DASHBOARD_UPDATE_PACKAGE_V1",
@@ -15983,6 +16399,39 @@
         }
       ],
       "note": "No GW11 prediction was changed; no historical recalculation."
+    },
+    {
+      "id": "LIGUE1-POSTGW10-TEST-V1",
+      "league": "LIGUE1",
+      "season": "2026-27",
+      "gw": 10,
+      "record_id": "LIGUE1-2026-27-GW10-20261105-MARKETPROXY",
+      "type": "RESEARCH_CHANGELOG",
+      "status": "TEST_ONLY",
+      "promote": "NONE",
+      "formal_model_change": "NONE",
+      "effective_earliest": "GW11 forward only",
+      "tests": [
+        {
+          "id": "1X2-BLEND-DRAWRISK-META",
+          "status": "TEST",
+          "research_only": true,
+          "promoted": false
+        },
+        {
+          "id": "LIGUE1-OU-LOW-SCORE-GUARD-TEST",
+          "status": "TEST",
+          "research_only": true,
+          "promoted": false
+        },
+        {
+          "id": "LIGUE1-PARITY-V3-SELECTOR",
+          "status": "TEST_CONTINUE",
+          "research_only": true,
+          "promoted": false
+        }
+      ],
+      "note": "No GW10 prediction was changed; no retroactive PRE-KICK reconstruction; no promotion from one round."
     }
   ],
   "odds_tracking": {
