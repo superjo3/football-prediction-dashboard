@@ -66,3 +66,13 @@ verify_v2.py為本版固定基準；日後新增資料須新增相應驗證。ve
 
 ## 我的單雙
 每輪單雙旁可選單／雙與自己的R1／R2／R3；可只填部分場次。未填、待結算不算輸，腰斬排除；比分追加後自動計算全部自選與各順位命中率。首頁及「我的單雙」頁顯示累計。自選只存於目前瀏覽器localStorage，可匯出／匯入JSON備份；不跨裝置自動同步。已知開賽時間或已結算後禁止直接修改；缺開賽時間時以比分收錄為鎖定點。備份還原另有標示，個人紀錄與官方封存永遠分離。
+
+
+## EPL 單雙雙版本（自 2026–27 GW11 起）
+
+英超單雙自 GW11 起採 **Official**（沿用既有正式封存）與 **R90 Recovery Shadow**（Research／Shadow）兩條獨立模型線。雙方各記全輪、R1/R2/R3、賽前時間戳、OPEN/PRE-KICK、比分與命中率；PASS 排除，未實際執行顯示 `NOT_RUN`，不補造歷史。
+
+- `data/epl_parity_dual_track.json` 為雙軌設定與未來 Shadow 賽前封存來源；`epl-parity-tracks.js` 是離線頁面讀取的產物。
+- 修改 JSON 後使用 `python tools/build_epl_parity_dual.py --root .` 驗證並產生 JS，須同時提交兩檔。
+- 最新雙軌狀態可在網站「英超單雙兩版本」頁查看（`#eplparity`）；Shadow 在取得真正賽前凍結預測前為 `NOT_RUN`，**不與 Official 統計合併**。
+- 詳細規格與來源：`research/EPL_Parity_Dual_Track_Policy_20261109.md`。原 R90 Exact 權重尚未找到，歷史 73.7% 不等於新 Shadow 勝率。
