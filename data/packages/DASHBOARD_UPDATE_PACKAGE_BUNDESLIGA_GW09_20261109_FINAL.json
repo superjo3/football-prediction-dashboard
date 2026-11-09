@@ -1,0 +1,702 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "schema_version": "1.0",
+  "generated_at": "2026-11-09T10:07:00+08:00",
+  "league": "Bundesliga",
+  "league_zh": "德甲",
+  "season": "2026-27",
+  "gw": 9,
+  "record_id": "BUNDESLIGA-2026-27-GW09-20261105-ARCHIVE-FINAL",
+  "parent_record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+  "audit_id": "BUNDESLIGA-2026-27-GW09-20261105-SKEW-AUDIT",
+  "status": {
+    "open_marketproxy": "DONE",
+    "skew_audit": "DONE",
+    "archive_final": "DONE",
+    "pre_kick": "NOT_FOUND",
+    "result": "COMPLETE",
+    "review": "COMPLETE"
+  },
+  "model": {
+    "parity": "Bundesliga Parity V2-RG1",
+    "xuan": "SHADOW_ONLY",
+    "one_x_two_ou": "Bundesliga R90-DE V1 / MARKETPROXY recovered component",
+    "exact_binary_replay": false
+  },
+  "integrity": {
+    "master_path": "/R1_R2 Master/R1_R2_Master.md",
+    "market_type": "MARKETPROXY",
+    "overwrite_old_predictions": false,
+    "parity_skew_alert": true,
+    "parity_skew_audit_passed": true
+  },
+  "ranks": {
+    "1x2": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "客勝",
+        "team": "拜仁"
+      },
+      {
+        "rank": "R2",
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "主勝",
+        "team": "多特蒙德"
+      },
+      {
+        "rank": "R3",
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick": "主勝",
+        "team": "RB萊比錫"
+      }
+    ],
+    "ou25": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R2",
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R3",
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "單",
+        "regime": "deep-away ODD",
+        "research_reliability": "15/22=68.18%"
+      },
+      {
+        "rank": "R2",
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN",
+        "research_reliability": "100/180=55.56%"
+      },
+      {
+        "rank": "R3",
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN",
+        "research_reliability": "100/180=55.56%"
+      }
+    ],
+    "draw_focus": [
+      {
+        "rank": "R1",
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "和"
+      },
+      {
+        "rank": "R2",
+        "home": "柏德博恩",
+        "away": "法蘭克福",
+        "pick": "和"
+      },
+      {
+        "rank": "R3",
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "和",
+        "status": "high_odds_shadow"
+      }
+    ]
+  },
+  "matches": [
+    {
+      "home": "漢堡",
+      "away": "門興",
+      "pick_1x2": "和",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "3-1",
+        "status": "COMPLETE",
+        "hit_1x2": false,
+        "hit_ou25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "柏德博恩",
+      "away": "法蘭克福",
+      "pick_1x2": "和",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "2-2",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "美因茨",
+      "away": "拜仁",
+      "pick_1x2": "拜仁客勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "單",
+      "result": {
+        "score": "1-2",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "RB萊比錫",
+      "away": "奧格斯堡",
+      "pick_1x2": "RB萊比錫主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "5-2",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "多特蒙德",
+      "away": "艾禾斯堡",
+      "pick_1x2": "多特蒙德主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "2-1",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "史特加",
+      "away": "雲達不萊梅",
+      "pick_1x2": "史特加主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "1-0",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": false,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "科隆",
+      "away": "勒沃庫森",
+      "pick_1x2": "勒沃庫森客勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "1-2",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "弗賴堡",
+      "away": "柏林聯",
+      "pick_1x2": "弗賴堡主勝",
+      "pick_ou25": "大2.5",
+      "ou_strength": "weak",
+      "pick_parity": "雙",
+      "result": {
+        "score": "2-0",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": false,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "霍芬海姆",
+      "away": "沙爾克04",
+      "pick_1x2": "霍芬海姆主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "result": {
+        "score": "2-1",
+        "status": "COMPLETE",
+        "hit_1x2": true,
+        "hit_ou25": true,
+        "hit_parity": false
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "home": "漢堡",
+      "away": "門興",
+      "1X2": "和",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "3-1",
+        "status": "COMPLETE",
+        "hit_1X2": false,
+        "hit_OU25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "柏德博恩",
+      "away": "法蘭克福",
+      "1X2": "和",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "2-2",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "美因茨",
+      "away": "拜仁",
+      "1X2": "拜仁客勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "result": {
+        "score": "1-2",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "RB萊比錫",
+      "away": "奧格斯堡",
+      "1X2": "RB萊比錫主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "5-2",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "多特蒙德",
+      "away": "艾禾斯堡",
+      "1X2": "多特蒙德主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "2-1",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "史特加",
+      "away": "雲達不萊梅",
+      "1X2": "史特加主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "1-0",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": false,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "科隆",
+      "away": "勒沃庫森",
+      "1X2": "勒沃庫森客勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "1-2",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": false
+      }
+    },
+    {
+      "home": "弗賴堡",
+      "away": "柏林聯",
+      "1X2": "弗賴堡主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "2-0",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": false,
+        "hit_parity": true
+      }
+    },
+    {
+      "home": "霍芬海姆",
+      "away": "沙爾克04",
+      "1X2": "霍芬海姆主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "result": {
+        "score": "2-1",
+        "status": "COMPLETE",
+        "hit_1X2": true,
+        "hit_OU25": true,
+        "hit_parity": false
+      }
+    }
+  ],
+  "1X2": [
+    {
+      "home": "漢堡",
+      "away": "門興",
+      "pick": "和"
+    },
+    {
+      "home": "柏德博恩",
+      "away": "法蘭克福",
+      "pick": "和"
+    },
+    {
+      "home": "美因茨",
+      "away": "拜仁",
+      "pick": "拜仁客勝"
+    },
+    {
+      "home": "RB萊比錫",
+      "away": "奧格斯堡",
+      "pick": "RB萊比錫主勝"
+    },
+    {
+      "home": "多特蒙德",
+      "away": "艾禾斯堡",
+      "pick": "多特蒙德主勝"
+    },
+    {
+      "home": "史特加",
+      "away": "雲達不萊梅",
+      "pick": "史特加主勝"
+    },
+    {
+      "home": "科隆",
+      "away": "勒沃庫森",
+      "pick": "勒沃庫森客勝"
+    },
+    {
+      "home": "弗賴堡",
+      "away": "柏林聯",
+      "pick": "弗賴堡主勝"
+    },
+    {
+      "home": "霍芬海姆",
+      "away": "沙爾克04",
+      "pick": "霍芬海姆主勝"
+    }
+  ],
+  "OU25": [
+    {
+      "home": "漢堡",
+      "away": "門興",
+      "pick": "大2.5"
+    },
+    {
+      "home": "柏德博恩",
+      "away": "法蘭克福",
+      "pick": "大2.5"
+    },
+    {
+      "home": "美因茨",
+      "away": "拜仁",
+      "pick": "大2.5"
+    },
+    {
+      "home": "RB萊比錫",
+      "away": "奧格斯堡",
+      "pick": "大2.5"
+    },
+    {
+      "home": "多特蒙德",
+      "away": "艾禾斯堡",
+      "pick": "大2.5"
+    },
+    {
+      "home": "史特加",
+      "away": "雲達不萊梅",
+      "pick": "大2.5"
+    },
+    {
+      "home": "科隆",
+      "away": "勒沃庫森",
+      "pick": "大2.5"
+    },
+    {
+      "home": "弗賴堡",
+      "away": "柏林聯",
+      "pick": "大2.5"
+    },
+    {
+      "home": "霍芬海姆",
+      "away": "沙爾克04",
+      "pick": "大2.5"
+    }
+  ],
+  "parity": [
+    {
+      "home": "漢堡",
+      "away": "門興",
+      "pick": "雙"
+    },
+    {
+      "home": "柏德博恩",
+      "away": "法蘭克福",
+      "pick": "雙"
+    },
+    {
+      "home": "美因茨",
+      "away": "拜仁",
+      "pick": "單"
+    },
+    {
+      "home": "RB萊比錫",
+      "away": "奧格斯堡",
+      "pick": "雙"
+    },
+    {
+      "home": "多特蒙德",
+      "away": "艾禾斯堡",
+      "pick": "雙"
+    },
+    {
+      "home": "史特加",
+      "away": "雲達不萊梅",
+      "pick": "雙"
+    },
+    {
+      "home": "科隆",
+      "away": "勒沃庫森",
+      "pick": "雙"
+    },
+    {
+      "home": "弗賴堡",
+      "away": "柏林聯",
+      "pick": "雙"
+    },
+    {
+      "home": "霍芬海姆",
+      "away": "沙爾克04",
+      "pick": "雙"
+    }
+  ],
+  "ranked_picks": {
+    "1X2": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "客勝",
+        "team": "拜仁"
+      },
+      {
+        "rank": "R2",
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "主勝",
+        "team": "多特蒙德"
+      },
+      {
+        "rank": "R3",
+        "home": "RB萊比錫",
+        "away": "奧格斯堡",
+        "pick": "主勝",
+        "team": "RB萊比錫"
+      }
+    ],
+    "OU25": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R2",
+        "home": "多特蒙德",
+        "away": "艾禾斯堡",
+        "pick": "大2.5"
+      },
+      {
+        "rank": "R3",
+        "home": "史特加",
+        "away": "雲達不萊梅",
+        "pick": "大2.5"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "美因茨",
+        "away": "拜仁",
+        "pick": "單",
+        "regime": "deep-away ODD",
+        "research_reliability": "15/22=68.18%"
+      },
+      {
+        "rank": "R2",
+        "home": "漢堡",
+        "away": "門興",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN",
+        "research_reliability": "100/180=55.56%"
+      },
+      {
+        "rank": "R3",
+        "home": "科隆",
+        "away": "勒沃庫森",
+        "pick": "雙",
+        "regime": "streak-exhaustion EVEN",
+        "research_reliability": "100/180=55.56%"
+      }
+    ]
+  },
+  "PASS": {
+    "1X2": false,
+    "OU25": false,
+    "parity": false
+  },
+  "PARITY_SKEW_ALERT": {
+    "triggered": true,
+    "audit_passed": true,
+    "final_split": "1 ODD / 8 EVEN"
+  },
+  "XUAN_status": {
+    "status": "SHADOW_ONLY",
+    "affects_formal_direction": false
+  },
+  "research_only": false,
+  "counts_as_official_forward_result": true,
+  "pre_kick_status": "NOT_FOUND",
+  "integrity_flags": {
+    "prediction_script": "MISSING",
+    "model_weights": "MISSING",
+    "feature_matrix": "MISSING",
+    "bet365_first_tick": "MISSING",
+    "xuan_exact_generator": "NOT_RUN",
+    "archive_identity": "MARKETPROXY + SKEW_AUDIT",
+    "overwrite_old_predictions": false
+  },
+  "source_and_cutoff": {
+    "market_snapshot": "2026-11-04 current/market proxy; skew audit 2026-11-05",
+    "source_urls": "MISSING",
+    "exact_cutoff_time": "MISSING",
+    "market_type": "MARKETPROXY"
+  },
+  "settlement_status": "COMPLETE",
+  "settlement_id": "BUNDESLIGA-2026-27-GW09-20261109-FINAL-RESULT",
+  "postmatch_review_status": "COMPLETE",
+  "model_change": "NONE",
+  "research_test_status": [
+    "OU_WEAK_RANK_FILTER_TEST",
+    "PARITY_SKEW_FORWARD_DIAGNOSTIC"
+  ],
+  "result_summary": {
+    "completed_matches": 9,
+    "pending_matches": 0,
+    "1X2": {
+      "hits": 8,
+      "total": 9,
+      "rate": 0.8888888888888888
+    },
+    "OU25": {
+      "hits": 7,
+      "total": 9,
+      "rate": 0.7777777777777778
+    },
+    "parity": {
+      "hits": 4,
+      "total": 9,
+      "rate": 0.4444444444444444
+    },
+    "ranks": {
+      "1X2": {
+        "R1": true,
+        "R2": true,
+        "R3": true,
+        "hits": 3,
+        "total": 3
+      },
+      "OU25": {
+        "R1": true,
+        "R2": true,
+        "R3": false,
+        "hits": 2,
+        "total": 3
+      },
+      "parity": {
+        "R1": true,
+        "R2": true,
+        "R3": false,
+        "hits": 2,
+        "total": 3
+      }
+    },
+    "strict_forward_native": {
+      "full_round": {
+        "1X2": "40/72=55.6%",
+        "OU25": "52/72=72.2%",
+        "parity": "32/72=44.4%"
+      },
+      "ranked": {
+        "1X2": "4/5=80.0%",
+        "OU25": "4/5=80.0%",
+        "parity_V2_RG1": "3/5=60.0%"
+      }
+    },
+    "cross_version_including_gw8_recovered": {
+      "1X2": "43/81=53.1%",
+      "OU25": "57/81=70.4%",
+      "parity": "39/81=48.1%"
+    }
+  },
+  "postmatch_review": {
+    "status": "COMPLETE",
+    "model_change": "NONE",
+    "tests": [
+      "OU_WEAK_RANK_FILTER_TEST",
+      "PARITY_SKEW_FORWARD_DIAGNOSTIC"
+    ],
+    "pre_kick": "NOT_EVALUABLE"
+  }
+}
