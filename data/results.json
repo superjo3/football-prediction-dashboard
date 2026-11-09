@@ -2173,5 +2173,131 @@
     },
     "recorded_at": "2026-11-05",
     "original_settled_at": "2026-11-03"
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-1",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-01",
+    "score": [
+      3,
+      1
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-2",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-02",
+    "score": [
+      2,
+      2
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-3",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-03",
+    "score": [
+      1,
+      2
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-4",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-04",
+    "score": [
+      5,
+      2
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-5",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-05",
+    "score": [
+      2,
+      1
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-6",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-06",
+    "score": [
+      1,
+      0
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-7",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-07",
+    "score": [
+      1,
+      2
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-8",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-08",
+    "score": [
+      2,
+      0
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
+  },
+  {
+    "id": "BUNDESLIGA-2026-27-GW09-20261109-RESULT-9",
+    "record_id": "BUNDESLIGA-2026-27-GW09-20261104-MARKETPROXY",
+    "match_id": "BUNDESLIGA-2026-27-GW09-09",
+    "score": [
+      2,
+      1
+    ],
+    "recorded_at": "2026-11-09",
+    "source": {
+      "file": "source/BUNDESLIGA_GW09_SETTLEMENT_20261109.md",
+      "version": 69
+    }
   }
 ]
