@@ -1,0 +1,88 @@
+{
+  "schema_version": "BUNDESLIGA-PARITY-DUAL-V1",
+  "league": "BUNDESLIGA",
+  "season": "2026-27",
+  "gw": 10,
+  "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+  "record_updated": "2026-11-10",
+  "official": {
+    "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+    "model": "V2-RG1",
+    "rank_status": "PASS",
+    "directions": "9 EVEN",
+    "is_official": true
+  },
+  "phase2": {
+    "record_id": "BUNDESLIGA-2026-27-GW10-20261109-PARITY-PHASE2-SHADOW",
+    "status": "RESEARCH_SHADOW_ARCHIVED",
+    "model": "Phase2 Streak Ranking",
+    "confidence_source": "RECOVERED_V1_CONFIDENCE—not Exact live"
+  },
+  "phase12": {
+    "status": "RESEARCH_PREVIEW_NOT_PREMATCH_SEALED",
+    "model": "Phase12 Conditional Resonance 八字＋梅花＋紫微",
+    "source": "GW10_Phase12_Conditional_Preview_20261109.csv",
+    "not_original_exact_73": true
+  },
+  "history": {
+    "phase2": "88/136（64.71%）",
+    "phase12": "92/136（67.65%）",
+    "scope": "2024–26 retrospective, not blind"
+  },
+  "fixtures": [
+    {
+      "home": "拜仁",
+      "away": "科隆",
+      "phase2_rank": 8,
+      "phase12_rank": 8
+    },
+    {
+      "home": "勒沃庫森",
+      "away": "柏德博恩",
+      "phase2_rank": 4,
+      "phase12_rank": 4
+    },
+    {
+      "home": "法蘭克福",
+      "away": "霍芬海姆",
+      "phase2_rank": 5,
+      "phase12_rank": 5
+    },
+    {
+      "home": "柏林聯",
+      "away": "RB萊比錫",
+      "phase2_rank": 9,
+      "phase12_rank": 9
+    },
+    {
+      "home": "門興",
+      "away": "多特蒙德",
+      "phase2_rank": 6,
+      "phase12_rank": 6
+    },
+    {
+      "home": "艾禾斯堡",
+      "away": "弗賴堡",
+      "phase2_rank": 2,
+      "phase12_rank": 3
+    },
+    {
+      "home": "沙爾克04",
+      "away": "史特加",
+      "phase2_rank": 1,
+      "phase12_rank": 2
+    },
+    {
+      "home": "奧格斯堡",
+      "away": "美因茨",
+      "phase2_rank": 3,
+      "phase12_rank": 1
+    },
+    {
+      "home": "雲達不萊梅",
+      "away": "漢堡",
+      "phase2_rank": 7,
+      "phase12_rank": 7
+    }
+  ]
+}
