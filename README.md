@@ -95,3 +95,8 @@ verify_v2.py為本版固定基準；日後新增資料須新增相應驗證。ve
 | Ligue 1 | GW11 | 0/9 | 0/9 | 0/9 | 未知／缺賠率 | PENDING |
 
 西甲比較價取自原研究 Package 的 `matches[].market_1x2` 與 `market_ou25`，不是新查詢的官方初盤。主資料完整維持在 `data/packages/`；未來 PRE-KICK 獨立追加到 `data/market_prekick_snapshots.json` 並同步產生 `market-prekick.js`，不得改寫原賽前 Record。新增測試：`node tools/test_five_league_odds_ui_20261109.js`。
+
+
+## EPL 固定單雙雙軌 V1（2026-11-12）
+
+英超 2026–27 單雙 A（GW11 R90-style MARKETPROXY 代理）＋B（R90 Math5-Q Shadow）**固定推論引擎**位於 `tools/epl_fixed_runner_v1/`，包含實際 `.joblib` 權重、固定先驗、GW11 CSV 輸入、完整基準 CSV 與測試。每次 GitHub push 都由 `.github/workflows/verify-epl-fixed-runner.yml` 自動驗證 10 個反後視／可重播測試，以及原封存 GW11 CSV 完全相同的 SHA-256。模型不會因前端 Dashboard 更新而重新訓練，也沒有重寫原始 Official Record。真實 GW12 等輪次仍須有可稽核的賽前資料來源；本執行器**不**是舊 R90 Exact 的重建。完整可攜歷史／推論封存 ZIP 另存於 ChatGPT Library `/R1_R2 Master/EPL_Fixed_Runner_V1_20261112/`。

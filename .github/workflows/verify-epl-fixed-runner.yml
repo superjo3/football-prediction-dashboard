@@ -1,0 +1,31 @@
+name: Verify EPL deterministic two-track runner
+on:
+  push:
+    paths:
+      - 'tools/epl_fixed_runner_v1/**'
+      - '.github/workflows/verify-epl-fixed-runner.yml'
+  pull_request:
+    paths:
+      - 'tools/epl_fixed_runner_v1/**'
+      - '.github/workflows/verify-epl-fixed-runner.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay-and-anti-leakage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install frozen inference requirements
+        run: python -m pip install -r tools/epl_fixed_runner_v1/requirements.txt
+      - name: Verify repeatability, alternative-round test and anti-leakage rules
+        run: python tools/epl_fixed_runner_v1/tests/test_pipeline.py
+      - name: Verify GW11 input-builder replay without changing the model
+        run: |
+          cd tools/epl_fixed_runner_v1
+          python prepare_input.py --meta inputs/gw11_meta.json --fixtures inputs/gw11_fixtures.csv --odds inputs/gw11_odds.csv --teams inputs/gw11_team_stats.csv --output /tmp/epl_gw11_prepared.json
+          python run_epl_fixed.py --input /tmp/epl_gw11_prepared.json --mode replay --output-dir /tmp/epl_gw11_replay
+          echo '4d5ea7a0e7ab84bf667ecf6a3958b41f6250682d091432682ce63272420cf08d  /tmp/epl_gw11_replay/MODEL_OUTPUTS.csv' | sha256sum --check
