@@ -1,0 +1,147 @@
+{
+  "schema": "EPL-TEAM-PRIOR-V1",
+  "baseline_season_start": 2025,
+  "description": "Parity rate from last ten matches of 2025-26 season; frozen at GW11. New teams without 2025 prior require explicit versioned mapping.",
+  "teams": {
+    "Manchester City": {
+      "alias": "Man City",
+      "rate": 0.6,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Fulham": {
+      "alias": "Fulham",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Bournemouth": {
+      "alias": "Bournemouth",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Nottingham Forest": {
+      "alias": "Nott'm Forest",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Aston Villa": {
+      "alias": "Aston Villa",
+      "rate": 0.5,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Sunderland": {
+      "alias": "Sunderland",
+      "rate": 0.7,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Chelsea": {
+      "alias": "Chelsea",
+      "rate": 0.8,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Leeds United": {
+      "alias": "Leeds",
+      "rate": 0.5,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Coventry City": {
+      "alias": "Coventry",
+      "rate": 0.5,
+      "sample_count": 0,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Crystal Palace": {
+      "alias": "Crystal Palace",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Tottenham": {
+      "alias": "Tottenham",
+      "rate": 0.6,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Ipswich Town": {
+      "alias": "Ipswich",
+      "rate": 0.5,
+      "sample_count": 0,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Newcastle United": {
+      "alias": "Newcastle",
+      "rate": 0.6,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Arsenal": {
+      "alias": "Arsenal",
+      "rate": 0.9,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Hull City": {
+      "alias": "Hull",
+      "rate": 0.5,
+      "sample_count": 0,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Brighton": {
+      "alias": "Brighton",
+      "rate": 0.7,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Liverpool": {
+      "alias": "Liverpool",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Manchester United": {
+      "alias": "Man United",
+      "rate": 0.7,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Brentford": {
+      "alias": "Brentford",
+      "rate": 0.3,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    },
+    "Everton": {
+      "alias": "Everton",
+      "rate": 0.4,
+      "sample_count": 10,
+      "baseline_season_start": 2025,
+      "source": "historical_feature_cache_label_last10"
+    }
+  }
+}

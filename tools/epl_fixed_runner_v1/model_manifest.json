@@ -1,0 +1,47 @@
+{
+  "schema": "EPL-FIXED-MODEL-V1",
+  "model_label": "EPL-GW11-FROZEN-PROXY-COMPONENTS",
+  "official": "EPL-R90-STYLE-MARKETPROXY-V0-FROZEN (not original Exact)",
+  "shadow": "R90-MATH5-Q-RECONSTRUCTION-V0-FROZEN (not original Exact)",
+  "model_path": "assets/R90_RECOVERY_MATH5_SHADOW_GW11.joblib",
+  "model_sha256": "c9142f32d71088fe2cdddd9c8b183962347a7b5aab041921c63eca5667909917",
+  "prior_path": "assets/prior_rates_2025.json",
+  "prior_sha256": "d2957668036bb51f21e11851d83a8c2de99fc88883fc8acedb7a89a970602e2c",
+  "training_data_only_used_for_provenance": "provenance/EPL_Parity_History_FeatureCache_4180.pkl",
+  "training_data_sha256": "51a007f185c4036b3c6e17b1e33b28ebcf82b72cf04e913fc8c2288e429b6d6e",
+  "features": [
+    "p_home",
+    "p_draw",
+    "p_away",
+    "p_over25",
+    "market_lambda",
+    "h_gf10",
+    "h_ga10",
+    "a_gf10",
+    "a_ga10"
+  ],
+  "shadow_model_names": [
+    "l1_math_c010",
+    "l1_math_c003",
+    "l1_market_c003",
+    "hgb_math",
+    "extratrees_math"
+  ],
+  "predict_seed_fixed_in_artifact": true,
+  "retraining_during_inference": false,
+  "prior_update_policy": "explicit_version_change_only",
+  "use_limit": "EPL 2026-27 as long as all 20 teams have validated stats and frozen prior mappings; no live provider acquisition; records not automatically Official",
+  "supported_seasons": [
+    "2026-27"
+  ],
+  "inference_python": "3.13.x",
+  "neutral_prior_policy": "If previous season last10 sample_count <6, frozen prior rate must be 0.5; never estimate from future results",
+  "official_archive_policy": "This runner reproduces GW11 official MARKETPROXY decision heuristic exactly, but is not old R90 Exact; new records are NOT automatically official",
+  "prematch_requirements": [
+    "trusted captured_at_utc source timestamp for market odds and team stats",
+    "capture_time_verified true and source_url",
+    "through_gw prior to target gw",
+    "cutoff precedes first kickoff",
+    "10 unique fixtures, valid market quotes, 20 teams"
+  ]
+}
