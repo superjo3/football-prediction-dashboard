@@ -83,7 +83,7 @@
       "p18_direction_proxy": "單",
       "p17_p18_same_proxy": false,
       "p17_p18_keep_proxy": false,
-      "imputation_main_agreement_frequency": null
+      "imputation_main_agreement_frequency": 0.3925
     },
     {
       "home": "艾禾斯堡",
@@ -94,7 +94,7 @@
       "p18_direction_proxy": "單",
       "p17_p18_same_proxy": true,
       "p17_p18_keep_proxy": false,
-      "imputation_main_agreement_frequency": null
+      "imputation_main_agreement_frequency": 0.0275
     },
     {
       "home": "沙爾克04",
@@ -105,7 +105,7 @@
       "p18_direction_proxy": "單",
       "p17_p18_same_proxy": true,
       "p17_p18_keep_proxy": false,
-      "imputation_main_agreement_frequency": null
+      "imputation_main_agreement_frequency": 0.165
     },
     {
       "home": "奧格斯堡",
@@ -116,7 +116,7 @@
       "p18_direction_proxy": "單",
       "p17_p18_same_proxy": true,
       "p17_p18_keep_proxy": false,
-      "imputation_main_agreement_frequency": null
+      "imputation_main_agreement_frequency": 0.0125
     },
     {
       "home": "雲達不萊梅",
