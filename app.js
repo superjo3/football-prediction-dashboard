@@ -488,6 +488,12 @@ function bundesParityCell(direction,rank,type){
   +(type==='phase12'?'<span class="outcome muted">Research / 未完成正式賽前封存</span>':'')
   +'</div>';
 }
+function bundesV3Cell(x){
+ const a=x.p17_direction_proxy,b=x.p18_direction_proxy,agree=a===b,keep=agree&&a==='雙';
+ return '<div class="resultcell"><strong>P17 '+esc(a)+' / P18 '+esc(b)+'</strong>'
+   +'<span class="outcome">'+(agree?'兩者一致':'兩者不一致')+' · '+(keep?'<span class="good">KEEP 候選</span>':'<span class="muted">PASS</span>')+'</span>'
+   +'<span class="outcome muted">研究代理 · 7項原始特徵缺失 · 非 Exact</span></div>';
+}
 function bundesDualOverview(){
  const c=window.BUNDESLIGA_PARITY_DUAL;
  const r=c&&roundById.get(c.record_id),p=r&&packageFor(r.id);
@@ -496,10 +502,12 @@ function bundesDualOverview(){
  const b=[...c.fixtures].sort((x,y)=>x.phase12_rank-y.phase12_rank);
  const fmt=x=>'<strong>'+esc(x.home+' vs '+x.away)+'</strong> → 雙';
  const rows=[0,1,2].map(i=>['R'+(i+1),fmt(a[i]),fmt(b[i])]);
- return '<div class="panel"><h2>德甲 GW10 單雙｜Phase2 × Phase12 玄學共振</h2>'
+ const v3=c.fixtures.filter(x=>x.p17_p18_keep_proxy);
+ return '<div class="panel"><h2>德甲 GW10 單雙｜三版本研究比較</h2>'
   +'<p><strong>正式 V2-RG1：</strong>9場全雙，正式 R1／R2／R3 為 PASS。以下兩版都是研究順位，不計 Official 命中率。</p>'
   +table(['排名','Phase2 Shadow（已封存）','Phase12 三術共振（研究預覽）'],rows)
-  +'<p class="muted">2024–26 R1+R2 歷史回放：Phase2 '+esc(c.history.phase2)+'；Phase12 '+esc(c.history.phase12)+'。此期間已參與研究，不是新盲測。Phase12尚未完成賽前正式封存；研究只改選場，不翻單雙方向。</p>'
+  +'<p><strong>V3 · Phase2 × P17 × P18：</strong>'+v3.length+' / 9場三方同向 KEEP 候選（'+v3.map(x=>esc(x.home+' vs '+x.away)).join('、')+'）；其餘PASS。P17與P18兩者本身同向7/9場，但其中4場共同判單，與主模型判雙不一致。</p>'
+  +'<p class="muted">2024–26 R1+R2 歷史回放：Phase2 '+esc(c.history.phase2)+'；Phase12 '+esc(c.history.phase12)+'；V3探索期同向R位35/45（77.78%，覆蓋45/136，並非每輪固定兩場）。V3第10輪為缺少7項原始特徵的研究代理，非Exact，不能將補值穩定度視為命中率。Phase12未完成正式賽前封存；三版不計入Official。</p>'
   +'<a class="button" href="#round/'+esc(c.record_id)+'">查看9場同表及賠率 →</a></div>';
 }
 
@@ -513,7 +521,7 @@ function packagePage(id){
  const fixtureRows=fs.map(f=>{
   const common=[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25')];
   if(dual){const c=eplParityComparisonCells(r,f);return [...common,c.a,c.b,esc(c.actual),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
-  if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away);return [...common,bundesParityCell(f.parity,null,'official'),bundesParityCell(f.parity,x.phase2_rank,'phase2'),bundesParityCell(f.parity,x.phase12_rank,'phase12'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
+  if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away);return [...common,bundesParityCell(f.parity,null,'official'),bundesParityCell(f.parity,x.phase2_rank,'phase2'),bundesParityCell(f.parity,x.phase12_rank,'phase12'),bundesV3Cell(x),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   return [...common,esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];
  });
  return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)
@@ -522,7 +530,7 @@ function packagePage(id){
  +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
  +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
  +marketHighOddsPanel(r,fs)
- +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':german?'｜德甲單雙三軌同表':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':german?'<p class="muted">德甲 Phase2 已封存 Shadow；Phase12 僅 Research Preview（未完成正式賽前封存）。正式單雙R位仍PASS，兩研究版均不計Official；賠率、1.8標記及PRE-KICK狀態保持不變。</p>':'')+'</div>'
+ +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':german?'<p class="muted">德甲正式V2-RG1不變；Phase2 Shadow、Phase12研究預覽、V3 P17/P18研究代理分開顯示。V3共有7場P17/P18同向，僅3場再與主模型同向（KEEP候選），其餘PASS；缺7項原始特徵，非Exact，並非正式封存高信心選場。三種研究均不計Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
  +packageSettlementPanel(p)
  +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
 }
