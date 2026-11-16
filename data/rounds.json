@@ -449,5 +449,29 @@
       "result": "PENDING",
       "review": "PENDING"
     }
+  },
+  {
+    "id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+    "league": "LALIGA",
+    "season": "2026-27",
+    "gw": 13,
+    "model": "Research original marketproxy / last5 XOR",
+    "snapshot": "2026-11-09 原版預測（獨立保留）",
+    "coverage": "complete-pregame-research",
+    "research_only": true,
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261109.json",
+    "note": "原11/9研究預測10單0雙；不可修改或替換"
+  },
+  {
+    "id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1",
+    "league": "LALIGA",
+    "season": "2026-27",
+    "gw": 13,
+    "model": "V2-RESEARCH-REBUILT-V1 (new reconstruction, NOT GW12 Exact)",
+    "snapshot": "2026-11-16 新建重建版；11/09封存輸入",
+    "coverage": "complete-pregame-research",
+    "research_only": true,
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_REBUILT.json",
+    "note": "10場三市場新研究結果；9單1雙；原第12輪V2無Exact程式，本版非其原始公式；正式PASS"
   }
 ]
