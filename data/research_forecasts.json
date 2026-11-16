@@ -1048,5 +1048,1260 @@
       "summary": "1X2 4 misses all draws; O/U 4 misses all predicted over vs actual under; parity only Elche-Betis miss; ranks Research 3/3,2/3,3/3; Official PASS; no PREKICK odds or exact features.",
       "official_predictions_unchanged": true
     }
+  },
+  {
+    "package_type": "DASHBOARD_UPDATE_PACKAGE",
+    "schema_version": "1.0",
+    "generated_at": "2026-11-16T21:44:00+08:00",
+    "league": "LaLiga",
+    "league_zh": "西甲",
+    "season": "2026-27",
+    "gw": 13,
+    "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1",
+    "source_record_type": "V2_RESEARCH_REBUILT_NEW_METHOD_TEST",
+    "status": {
+      "prematch": "FROZEN_REBUILT_20261116",
+      "research": "TEST_ONLY",
+      "official_exact": "NOT_RUN",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING",
+      "dashboard_sync": "REQUESTED",
+      "github_sync": "PENDING"
+    },
+    "model": {
+      "name": "LALIGA-V2-RESEARCH-REBUILT-V1",
+      "identity": "NEW_RECONSTRUCTION_NOT_GW12_EXACT",
+      "1x2": "DEVIG_MARKET_1X2",
+      "ou25": "DEVIG_MARKET_OU25",
+      "parity": "WEIGHTED_3_SIGNAL_ODD_PROSPECTIVE_RESEARCH",
+      "official_native_v3": "NOT_RUN",
+      "model_change": "TEST_ONLY"
+    },
+    "integrity": {
+      "master_path": "/R1_R2 Master/R1_R2_Master.md",
+      "research_only": true,
+      "counts_as_official_forward": false,
+      "model_exact_replay": false,
+      "research_proxy_reproducible": true,
+      "bet365_first_tick_present": false,
+      "opening_odds_verified": false,
+      "no_existing_predictions_overwritten": true,
+      "dashboard_update_deferred": true,
+      "dashboard_sync_pending": false,
+      "parity_skew_alert": true,
+      "parity_odd_count": 10,
+      "parity_even_count": 0,
+      "official_parity_r1r2r3": "PASS",
+      "gw12_v2_exact_reproduced": false,
+      "original_gw13_frozen_unchanged": true,
+      "market_snapshot_reused_from": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+      "original_input_sha256": "930f55a7e4e90c043d109ece290c633e3ec26e582f9ca0478a0d323201147ab6",
+      "formal_parity_pass": true,
+      "same_source_book_open_vs_prekick": "NOT_AVAILABLE",
+      "reconstruction_method_validated_as_original": false
+    },
+    "ranks": {
+      "1x2": [
+        {
+          "rank": "R1",
+          "home": "皇家馬德里",
+          "away": "切爾達",
+          "pick": "主勝",
+          "margin": 0.640269,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R2",
+          "home": "巴塞隆拿",
+          "away": "維拉利爾",
+          "pick": "主勝",
+          "margin": 0.632292,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R3",
+          "home": "畢爾包",
+          "away": "愛斯賓奴",
+          "pick": "主勝",
+          "margin": 0.417692,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        }
+      ],
+      "ou25": [
+        {
+          "rank": "R1",
+          "home": "巴塞隆拿",
+          "away": "維拉利爾",
+          "pick": "大2.5",
+          "margin": 0.534615,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R2",
+          "home": "皇家馬德里",
+          "away": "切爾達",
+          "pick": "大2.5",
+          "margin": 0.336493,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R3",
+          "home": "桑坦德",
+          "away": "皇家蘇斯達",
+          "pick": "大2.5",
+          "margin": 0.314149,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "home": "巴塞隆拿",
+          "away": "維拉利爾",
+          "pick": "單",
+          "margin": 0.143058,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R2",
+          "home": "桑坦德",
+          "away": "皇家蘇斯達",
+          "pick": "單",
+          "margin": 0.141214,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        },
+        {
+          "rank": "R3",
+          "home": "皇家馬德里",
+          "away": "切爾達",
+          "pick": "單",
+          "margin": 0.119468,
+          "status": "RESEARCH_CANDIDATE_ONLY",
+          "counts_in_official": false
+        }
+      ]
+    },
+    "fixtures": [
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-01",
+        "kickoff_taipei": "2026-11-21 04:00",
+        "home": "畢爾包",
+        "away": "愛斯賓奴",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.519526,
+        "odds_openproxy_1x2": [
+          1.49,
+          4.31,
+          6.75
+        ],
+        "odds_openproxy_ou25": [
+          1.8,
+          1.99
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "rank_1x2": "R3",
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-02",
+        "kickoff_taipei": "2026-11-21 21:00",
+        "home": "艾拉維斯",
+        "away": "拉科魯尼亞",
+        "1X2": "主勝",
+        "OU25": "小2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.568538,
+        "odds_openproxy_1x2": [
+          2.06,
+          3.36,
+          3.61
+        ],
+        "odds_openproxy_ou25": [
+          2.14,
+          1.69
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "DRAW_LOW_SCORE_GUARD_TEST"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-03",
+        "kickoff_taipei": "2026-11-21 23:15",
+        "home": "華歷簡奴",
+        "away": "華倫西亞",
+        "1X2": "主勝",
+        "OU25": "小2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.545892,
+        "odds_openproxy_1x2": [
+          2,
+          3.45,
+          3.77
+        ],
+        "odds_openproxy_ou25": [
+          2.04,
+          1.78
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "DRAW_LOW_SCORE_GUARD_TEST"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-04",
+        "kickoff_taipei": "2026-11-22 01:30",
+        "home": "西維爾",
+        "away": "貝迪斯",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.511451,
+        "odds_openproxy_1x2": [
+          2.9,
+          3.56,
+          2.35
+        ],
+        "odds_openproxy_ou25": [
+          1.73,
+          2.1
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-05",
+        "kickoff_taipei": "2026-11-22 04:00",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.619468,
+        "odds_openproxy_1x2": [
+          1.21,
+          6.59,
+          13.23
+        ],
+        "odds_openproxy_ou25": [
+          1.4,
+          2.82
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "OVEREXPOSURE_TEST"
+        ],
+        "rank_1x2": "R1",
+        "rank_ou25": "R2",
+        "rank_parity": "R3"
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-06",
+        "kickoff_taipei": "2026-11-22 21:00",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.643058,
+        "odds_openproxy_1x2": [
+          1.23,
+          6.91,
+          10.08
+        ],
+        "odds_openproxy_ou25": [
+          1.21,
+          3.99
+        ],
+        "odds_prekick": null,
+        "flags": [],
+        "rank_1x2": "R2",
+        "rank_ou25": "R1",
+        "rank_parity": "R1"
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-07",
+        "kickoff_taipei": "2026-11-22 23:15",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "1X2": "客勝",
+        "OU25": "大2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.641214,
+        "odds_openproxy_1x2": [
+          3.13,
+          3.91,
+          2.1
+        ],
+        "odds_openproxy_ou25": [
+          1.43,
+          2.74
+        ],
+        "odds_prekick": null,
+        "flags": [],
+        "rank_1x2": null,
+        "rank_ou25": "R3",
+        "rank_parity": "R2"
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-08",
+        "kickoff_taipei": "2026-11-23 01:30",
+        "home": "奧沙辛拿",
+        "away": "馬拉加",
+        "1X2": "主勝",
+        "OU25": "小2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.535671,
+        "odds_openproxy_1x2": [
+          1.76,
+          3.69,
+          4.74
+        ],
+        "odds_openproxy_ou25": [
+          1.92,
+          1.89
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "LOW_PARITY_MARGIN"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-09",
+        "kickoff_taipei": "2026-11-23 04:00",
+        "home": "加泰",
+        "away": "馬德里體育會",
+        "1X2": "客勝",
+        "OU25": "小2.5",
+        "parity": "單",
+        "p_match_odd_research": 0.532081,
+        "odds_openproxy_1x2": [
+          5.52,
+          3.78,
+          1.63
+        ],
+        "odds_openproxy_ou25": [
+          2.07,
+          1.75
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "LOW_PARITY_MARGIN"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-10",
+        "kickoff_taipei": "2026-11-24 04:00",
+        "home": "利雲特",
+        "away": "艾爾切",
+        "1X2": "主勝",
+        "OU25": "大2.5",
+        "parity": "雙",
+        "p_match_odd_research": 0.49407,
+        "odds_openproxy_1x2": [
+          2.16,
+          3.73,
+          3.08
+        ],
+        "odds_openproxy_ou25": [
+          1.66,
+          2.19
+        ],
+        "odds_prekick": null,
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "rank_1x2": null,
+        "rank_ou25": null,
+        "rank_parity": null
+      }
+    ],
+    "matches": [
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-01",
+        "home": "畢爾包",
+        "away": "愛斯賓奴",
+        "kickoff_taipei": "2026-11-21 04:00",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          1.49,
+          4.31,
+          6.75
+        ],
+        "market_ou25": [
+          1.8,
+          1.99
+        ],
+        "p_odd_rebuilt": 0.519526,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.638387,
+            "draw": 0.220695,
+            "away": 0.140918
+          },
+          "p_ou25_fair": {
+            "over": 0.525066,
+            "under": 0.474934
+          },
+          "recent_home_scored_odd": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "recent_away_scored_odd": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "recent_home_total_odd": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "recent_away_total_odd": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.428571,
+          "p_away_scored_odd": 0.571429,
+          "p_xor_odd": 0.510204,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.594733,
+          "p_recent_total_odd": 0.428571,
+          "p_odd_rebuilt": 0.519526
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "SELECTED R3; absolute_margin=0.417692; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.050132; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.019526; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-02",
+        "home": "艾拉維斯",
+        "away": "拉科魯尼亞",
+        "kickoff_taipei": "2026-11-21 21:00",
+        "pick_1x2": "主勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          2.06,
+          3.36,
+          3.61
+        ],
+        "market_ou25": [
+          2.14,
+          1.69
+        ],
+        "p_odd_rebuilt": 0.568538,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.457932,
+            "draw": 0.280756,
+            "away": 0.261313
+          },
+          "p_ou25_fair": {
+            "over": 0.441253,
+            "under": 0.558747
+          },
+          "recent_home_scored_odd": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "recent_away_scored_odd": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "recent_home_total_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "recent_away_total_odd": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.714286,
+          "p_away_scored_odd": 0.285714,
+          "p_xor_odd": 0.591837,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.548897,
+          "p_recent_total_odd": 0.571429,
+          "p_odd_rebuilt": 0.568538
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.177176; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.117493; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.068538; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "DRAW_LOW_SCORE_GUARD_TEST"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-03",
+        "home": "華歷簡奴",
+        "away": "華倫西亞",
+        "kickoff_taipei": "2026-11-21 23:15",
+        "pick_1x2": "主勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          2,
+          3.45,
+          3.77
+        ],
+        "market_ou25": [
+          2.04,
+          1.78
+        ],
+        "p_odd_rebuilt": 0.545892,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.473886,
+            "draw": 0.274716,
+            "away": 0.251398
+          },
+          "p_ou25_fair": {
+            "over": 0.465969,
+            "under": 0.534031
+          },
+          "recent_home_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "recent_away_scored_odd": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "recent_home_total_odd": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "recent_away_total_odd": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "p_home_scored_odd": 0.571429,
+          "p_away_scored_odd": 0.428571,
+          "p_xor_odd": 0.510204,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.553506,
+          "p_recent_total_odd": 0.571429,
+          "p_odd_rebuilt": 0.545892
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.199169; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.068063; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.045892; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "DRAW_LOW_SCORE_GUARD_TEST"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-04",
+        "home": "西維爾",
+        "away": "貝迪斯",
+        "kickoff_taipei": "2026-11-22 01:30",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          2.9,
+          3.56,
+          2.35
+        ],
+        "market_ou25": [
+          1.73,
+          2.1
+        ],
+        "p_odd_rebuilt": 0.511451,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.328014,
+            "draw": 0.267203,
+            "away": 0.404783
+          },
+          "p_ou25_fair": {
+            "over": 0.548303,
+            "under": 0.451697
+          },
+          "recent_home_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "recent_away_scored_odd": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recent_home_total_odd": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "recent_away_total_odd": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.571429,
+          "p_away_scored_odd": 0.285714,
+          "p_xor_odd": 0.530612,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.55924,
+          "p_recent_total_odd": 0.428571,
+          "p_odd_rebuilt": 0.511451
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.076769; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.096606; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.011451; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-05",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "kickoff_taipei": "2026-11-22 04:00",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          1.21,
+          6.59,
+          13.23
+        ],
+        "market_ou25": [
+          1.4,
+          2.82
+        ],
+        "p_odd_rebuilt": 0.619468,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.78427,
+            "draw": 0.144001,
+            "away": 0.071728
+          },
+          "p_ou25_fair": {
+            "over": 0.668246,
+            "under": 0.331754
+          },
+          "recent_home_scored_odd": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "recent_away_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recent_home_total_odd": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "recent_away_total_odd": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.571429,
+          "p_away_scored_odd": 0.142857,
+          "p_xor_odd": 0.55102,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.653262,
+          "p_recent_total_odd": 0.642857,
+          "p_odd_rebuilt": 0.619468
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "SELECTED R1; absolute_margin=0.640269; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "SELECTED R2; absolute_margin=0.336493; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "SELECTED R3; absolute_margin=0.119468; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "OVEREXPOSURE_TEST"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-06",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "kickoff_taipei": "2026-11-22 21:00",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          1.23,
+          6.91,
+          10.08
+        ],
+        "market_ou25": [
+          1.21,
+          3.99
+        ],
+        "p_odd_rebuilt": 0.643058,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.769215,
+            "draw": 0.136922,
+            "away": 0.093863
+          },
+          "p_ou25_fair": {
+            "over": 0.767308,
+            "under": 0.232692
+          },
+          "recent_home_scored_odd": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "recent_away_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recent_home_total_odd": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "recent_away_total_odd": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.571429,
+          "p_away_scored_odd": 0.142857,
+          "p_xor_odd": 0.55102,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.658664,
+          "p_recent_total_odd": 0.714286,
+          "p_odd_rebuilt": 0.643058
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "SELECTED R2; absolute_margin=0.632292; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "SELECTED R1; absolute_margin=0.534615; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "SELECTED R1; absolute_margin=0.143058; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-07",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "kickoff_taipei": "2026-11-22 23:15",
+        "pick_1x2": "客勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          3.13,
+          3.91,
+          2.1
+        ],
+        "market_ou25": [
+          1.43,
+          2.74
+        ],
+        "p_odd_rebuilt": 0.641214,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.30386,
+            "draw": 0.243244,
+            "away": 0.452896
+          },
+          "p_ou25_fair": {
+            "over": 0.657074,
+            "under": 0.342926
+          },
+          "recent_home_scored_odd": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recent_away_scored_odd": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "recent_home_total_odd": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "recent_away_total_odd": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "p_home_scored_odd": 0.142857,
+          "p_away_scored_odd": 0.714286,
+          "p_xor_odd": 0.653061,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.577525,
+          "p_recent_total_odd": 0.714286,
+          "p_odd_rebuilt": 0.641214
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.149036; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "SELECTED R3; absolute_margin=0.314149; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "SELECTED R2; absolute_margin=0.141214; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-08",
+        "home": "奧沙辛拿",
+        "away": "馬拉加",
+        "kickoff_taipei": "2026-11-23 01:30",
+        "pick_1x2": "主勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          1.76,
+          3.69,
+          4.74
+        ],
+        "market_ou25": [
+          1.92,
+          1.89
+        ],
+        "p_odd_rebuilt": 0.535671,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.541046,
+            "draw": 0.25806,
+            "away": 0.200895
+          },
+          "p_ou25_fair": {
+            "over": 0.496063,
+            "under": 0.503937
+          },
+          "recent_home_scored_odd": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "recent_away_scored_odd": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "recent_home_total_odd": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "recent_away_total_odd": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "p_home_scored_odd": 0.428571,
+          "p_away_scored_odd": 0.714286,
+          "p_xor_odd": 0.530612,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.566218,
+          "p_recent_total_odd": 0.5,
+          "p_odd_rebuilt": 0.535671
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.282986; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.007874; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.035671; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "LOW_PARITY_MARGIN"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-09",
+        "home": "加泰",
+        "away": "馬德里體育會",
+        "kickoff_taipei": "2026-11-23 04:00",
+        "pick_1x2": "客勝",
+        "pick_ou25": "小2.5",
+        "pick_parity": "單",
+        "market_1x2": [
+          5.52,
+          3.78,
+          1.63
+        ],
+        "market_ou25": [
+          2.07,
+          1.75
+        ],
+        "p_odd_rebuilt": 0.532081,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.171033,
+            "draw": 0.249763,
+            "away": 0.579204
+          },
+          "p_ou25_fair": {
+            "over": 0.458115,
+            "under": 0.541885
+          },
+          "recent_home_scored_odd": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "recent_away_scored_odd": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "recent_home_total_odd": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recent_away_total_odd": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "p_home_scored_odd": 0.428571,
+          "p_away_scored_odd": 0.571429,
+          "p_xor_odd": 0.510204,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.57255,
+          "p_recent_total_odd": 0.5,
+          "p_odd_rebuilt": 0.532081
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.329442; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.083770; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.032081; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "LOW_PARITY_MARGIN"
+        ],
+        "result": null
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-V2RB-10",
+        "home": "利雲特",
+        "away": "艾爾切",
+        "kickoff_taipei": "2026-11-24 04:00",
+        "pick_1x2": "主勝",
+        "pick_ou25": "大2.5",
+        "pick_parity": "雙",
+        "market_1x2": [
+          2.16,
+          3.73,
+          3.08
+        ],
+        "market_ou25": [
+          1.66,
+          2.19
+        ],
+        "p_odd_rebuilt": 0.49407,
+        "feature_values": {
+          "p_1x2_fair": {
+            "home": 0.438522,
+            "draw": 0.253943,
+            "away": 0.307535
+          },
+          "p_ou25_fair": {
+            "over": 0.568831,
+            "under": 0.431169
+          },
+          "recent_home_scored_odd": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "recent_away_scored_odd": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "recent_home_total_odd": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "recent_away_total_odd": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "p_home_scored_odd": 0.571429,
+          "p_away_scored_odd": 0.285714,
+          "p_xor_odd": 0.530612,
+          "p_odd_given_non_draw_prior": 0.763158,
+          "p_draw_adjusted_odd": 0.569359,
+          "p_recent_total_odd": 0.357143,
+          "p_odd_rebuilt": 0.49407
+        },
+        "decision_log": {
+          "1x2": "argmax no-vig 1X2",
+          "ou25": "argmax no-vig OU2.5",
+          "parity": "0.30*XOR +0.40*(1-P_draw)*P_odd_non_draw_prior +0.30*recent total-odd ; >=0.5 => odd",
+          "risk": "flags annotate, do NOT flip automatically",
+          "rank_1x2": "NOT_TOP3; absolute_margin=0.130987; threshold_for_formal=0.12; Research ranking only",
+          "rank_ou25": "NOT_TOP3; absolute_margin=0.137662; threshold_for_formal=0.08; Research ranking only",
+          "rank_parity": "NOT_TOP3; absolute_margin=0.005930; threshold_for_formal=0.10; Research ranking only"
+        },
+        "flags": [
+          "OVEREXPOSURE_TEST",
+          "LOW_PARITY_MARGIN"
+        ],
+        "result": null
+      }
+    ],
+    "research_forecasts": {
+      "1x2": [
+        "主勝",
+        "主勝",
+        "主勝",
+        "客勝",
+        "主勝",
+        "主勝",
+        "客勝",
+        "主勝",
+        "客勝",
+        "主勝"
+      ],
+      "ou25": [
+        "大2.5",
+        "小2.5",
+        "小2.5",
+        "大2.5",
+        "大2.5",
+        "大2.5",
+        "大2.5",
+        "小2.5",
+        "小2.5",
+        "大2.5"
+      ],
+      "parity": [
+        "單",
+        "單",
+        "單",
+        "單",
+        "單",
+        "單",
+        "單",
+        "單",
+        "單",
+        "雙"
+      ]
+    },
+    "official_forecasts": null,
+    "official_high_confidence_parity_ranks": [],
+    "result_summary": null,
+    "postmatch_review": null,
+    "sources": {
+      "fixtures": "https://www.laliga.com/laliga-easports/resultados/2026-27/jornada-13",
+      "results": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-12",
+      "market": "https://oddalerts.betmonitor.com/mobile/odds-comparison/football/spain-la-liga/10000184",
+      "market_1x2_crosscheck": "https://www.legalsportsbetting.es/guides/la-liga-betting-guide",
+      "historical_results": "https://guiagol.com/uk/league/laliga/results/"
+    },
+    "dashboard_hold_reason": null,
+    "file_sha256": "930f55a7e4e90c043d109ece290c633e3ec26e582f9ca0478a0d323201147ab6",
+    "parent_record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+    "parity_skew_alert": true,
+    "PARITY_SKEW_ALERT": true,
+    "research_only": true,
+    "counts_as_official_forward_result": false,
+    "PASS": {
+      "parity": "OFFICIAL_PASS_ALL",
+      "1x2": "OFFICIAL_EXACT_NOT_RUN",
+      "ou25": "OFFICIAL_EXACT_NOT_RUN"
+    },
+    "reproducibility": {
+      "source_zip": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1.zip",
+      "code": "run_v2_rebuilt.py",
+      "formula": "0.30*XOR +0.40*((1-p_draw)*prior_odd_given_nondraw) +0.30*recent_total_odd",
+      "feature_file": "V2RB_OUTPUT_FULL.json",
+      "as_of_market": "2026-11-09T19:16:00+08:00",
+      "date_of_reconstruction": "2026-11-16",
+      "provenance": "reconstructed post GW12; NOT exact historical method",
+      "rank": "sort descending margin, kick-off, home name; 3 candidates each; Official=PASS"
+    }
   }
 ]
