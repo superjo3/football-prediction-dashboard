@@ -1,0 +1,425 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "schema_version": "1.0",
+  "generated_at": "2026-11-17T16:00:00+08:00",
+  "league": "LaLiga",
+  "league_zh": "西甲",
+  "season": "2026-27",
+  "gw": 13,
+  "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+  "source_record_type": "LOGIT_EXTENDED_FIXED_6SEASON_FROZEN_GW13_PROXY_RESEARCH",
+  "research_only": true,
+  "counts_as_official_forward_result": false,
+  "model": {
+    "name": "V2-EXTENDED · six-season fixed logistic regression",
+    "identity": "SEPARATE_RESEARCH_NOT_GW12_V2_EXACT",
+    "parity": "LOGIT_EXTENDED_FROZEN_2025-26",
+    "1x2": "NOT_RUN",
+    "ou25": "NOT_RUN",
+    "frozen_method": "StandardScaler + LogisticRegression(C=0.3, solver=lbfgs, random_state=7)",
+    "selection": "Top 3 by abs(p_odd-0.5), tie kickoff, home, away"
+  },
+  "status": {
+    "prematch": "NEW_RESEARCH_SHADOW_FROZEN_20261117",
+    "research": "TEST_ONLY",
+    "official_exact": "NOT_RUN",
+    "pre_kick": "PENDING",
+    "result": "PENDING",
+    "review": "PENDING",
+    "github_sync": "PENDING"
+  },
+  "integrity": {
+    "research_only": true,
+    "counts_as_official_forward": false,
+    "reproducible": true,
+    "no_existing_predictions_overwritten": true,
+    "gw12_exact_replay": false,
+    "input_market_type": "MULTI_BOOK_PROXY_NOT_B365_FIRST_TICK",
+    "source_A_record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+    "src_A_sha256": "4b938aec53a6c462ee2cad9ecfceb9f2fc4103c2879897b5ba16e09750a83202",
+    "training_seasons": 6,
+    "training_games": 2280,
+    "2026_27_history_cutoff": "2026-11-20 Europe-local (all 119 completed before)",
+    "ranks_high_conf": "ONLY IF STRICT_GATE_PASS",
+    "high_conf_stated": "1/10 matches, 1 of R1–R3",
+    "parity_pred_odd": 6,
+    "parity_pred_even": 4
+  },
+  "PASS": {
+    "official_parity": "PASS",
+    "official_1x2": "NOT_RUN",
+    "official_ou25": "NOT_RUN"
+  },
+  "ranks": {
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "pick": "單",
+        "p_odd_research": 0.605821,
+        "high_conf_gate": true,
+        "status": "RESEARCH_CANDIDATE_ONLY"
+      },
+      {
+        "rank": "R2",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "pick": "單",
+        "p_odd_research": 0.55978,
+        "high_conf_gate": false,
+        "status": "RESEARCH_CANDIDATE_ONLY"
+      },
+      {
+        "rank": "R3",
+        "home": "艾拉維斯",
+        "away": "拉科魯尼亞",
+        "pick": "單",
+        "p_odd_research": 0.543182,
+        "high_conf_gate": false,
+        "status": "RESEARCH_CANDIDATE_ONLY"
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-01",
+      "home": "畢爾包",
+      "away": "愛斯賓奴",
+      "kickoff_taipei": "2026-11-21 04:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": null,
+      "p_odd_research": 0.529607,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        1.49,
+        4.31,
+        6.75
+      ],
+      "odds_openproxy_ou25": [
+        1.8,
+        1.99
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-02",
+      "home": "艾拉維斯",
+      "away": "拉科魯尼亞",
+      "kickoff_taipei": "2026-11-21 21:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": "R3",
+      "p_odd_research": 0.543182,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        2.06,
+        3.36,
+        3.61
+      ],
+      "odds_openproxy_ou25": [
+        2.14,
+        1.69
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-03",
+      "home": "華歷簡奴",
+      "away": "華倫西亞",
+      "kickoff_taipei": "2026-11-21 23:15",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": null,
+      "p_odd_research": 0.527889,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        2.0,
+        3.45,
+        3.77
+      ],
+      "odds_openproxy_ou25": [
+        2.04,
+        1.78
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-04",
+      "home": "西維爾",
+      "away": "貝迪斯",
+      "kickoff_taipei": "2026-11-22 01:30",
+      "1X2": null,
+      "OU25": null,
+      "parity": "雙",
+      "rank_parity": null,
+      "p_odd_research": 0.47517,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        2.9,
+        3.56,
+        2.35
+      ],
+      "odds_openproxy_ou25": [
+        1.73,
+        2.1
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-05",
+      "home": "皇家馬德里",
+      "away": "切爾達",
+      "kickoff_taipei": "2026-11-22 04:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": "R1",
+      "p_odd_research": 0.605821,
+      "high_conf_gate": true,
+      "odds_openproxy_1x2": [
+        1.21,
+        6.59,
+        13.23
+      ],
+      "odds_openproxy_ou25": [
+        1.4,
+        2.82
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-06",
+      "home": "巴塞隆拿",
+      "away": "維拉利爾",
+      "kickoff_taipei": "2026-11-22 21:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": "R2",
+      "p_odd_research": 0.55978,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        1.23,
+        6.91,
+        10.08
+      ],
+      "odds_openproxy_ou25": [
+        1.21,
+        3.99
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-07",
+      "home": "桑坦德",
+      "away": "皇家蘇斯達",
+      "kickoff_taipei": "2026-11-22 23:15",
+      "1X2": null,
+      "OU25": null,
+      "parity": "單",
+      "rank_parity": null,
+      "p_odd_research": 0.539618,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        3.13,
+        3.91,
+        2.1
+      ],
+      "odds_openproxy_ou25": [
+        1.43,
+        2.74
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-08",
+      "home": "奧沙辛拿",
+      "away": "馬拉加",
+      "kickoff_taipei": "2026-11-23 01:30",
+      "1X2": null,
+      "OU25": null,
+      "parity": "雙",
+      "rank_parity": null,
+      "p_odd_research": 0.492924,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        1.76,
+        3.69,
+        4.74
+      ],
+      "odds_openproxy_ou25": [
+        1.92,
+        1.89
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-09",
+      "home": "加泰",
+      "away": "馬德里體育會",
+      "kickoff_taipei": "2026-11-23 04:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "雙",
+      "rank_parity": null,
+      "p_odd_research": 0.486549,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        5.52,
+        3.78,
+        1.63
+      ],
+      "odds_openproxy_ou25": [
+        2.07,
+        1.75
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-EXTENDED-10",
+      "home": "利雲特",
+      "away": "艾爾切",
+      "kickoff_taipei": "2026-11-24 04:00",
+      "1X2": null,
+      "OU25": null,
+      "parity": "雙",
+      "rank_parity": null,
+      "p_odd_research": 0.489775,
+      "high_conf_gate": false,
+      "odds_openproxy_1x2": [
+        2.16,
+        3.73,
+        3.08
+      ],
+      "odds_openproxy_ou25": [
+        1.66,
+        2.19
+      ],
+      "odds_prekick": null,
+      "research_only": true,
+      "result": null
+    }
+  ],
+  "matches": [
+    {
+      "home": "畢爾包",
+      "away": "愛斯賓奴",
+      "pick_parity": "單",
+      "p_odd": 0.529607,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "艾拉維斯",
+      "away": "拉科魯尼亞",
+      "pick_parity": "單",
+      "p_odd": 0.543182,
+      "rank": "R3",
+      "status": "PENDING"
+    },
+    {
+      "home": "華歷簡奴",
+      "away": "華倫西亞",
+      "pick_parity": "單",
+      "p_odd": 0.527889,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "西維爾",
+      "away": "貝迪斯",
+      "pick_parity": "雙",
+      "p_odd": 0.47517,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "皇家馬德里",
+      "away": "切爾達",
+      "pick_parity": "單",
+      "p_odd": 0.605821,
+      "rank": "R1",
+      "status": "PENDING"
+    },
+    {
+      "home": "巴塞隆拿",
+      "away": "維拉利爾",
+      "pick_parity": "單",
+      "p_odd": 0.55978,
+      "rank": "R2",
+      "status": "PENDING"
+    },
+    {
+      "home": "桑坦德",
+      "away": "皇家蘇斯達",
+      "pick_parity": "單",
+      "p_odd": 0.539618,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "奧沙辛拿",
+      "away": "馬拉加",
+      "pick_parity": "雙",
+      "p_odd": 0.492924,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "加泰",
+      "away": "馬德里體育會",
+      "pick_parity": "雙",
+      "p_odd": 0.486549,
+      "rank": null,
+      "status": "PENDING"
+    },
+    {
+      "home": "利雲特",
+      "away": "艾爾切",
+      "pick_parity": "雙",
+      "p_odd": 0.489775,
+      "rank": null,
+      "status": "PENDING"
+    }
+  ],
+  "result_summary": {
+    "status": "PENDING",
+    "research_parity_wins": null,
+    "research_parity_games": null
+  },
+  "sources": {
+    "training_research_record": "LALIGA-2026-27-GW01-GW12-20261117-RESEARCH-FROZEN-6SEASON-HOLDOUT-V1",
+    "manual_A_record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+    "proxy_market_snapshot": "GW13 2026-11-09 old frozen Marketproxy; not Bet365 first opening tick"
+  },
+  "notes": [
+    "Only parity computed by B; cannot fabricate 1X2 or OU2.5",
+    "Comparative GW9-12 A 30/40 vs B 21/40, different model classes",
+    "GW13 B is prospective research generated 2026-11-17; GW1-12 B results are retrospective archive-backtested",
+    "Proxy odds compatibility with six-season Bet365 training is imperfect",
+    "Historical A and B independent statistics; not Official"
+  ]
+}
