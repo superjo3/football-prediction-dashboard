@@ -21,6 +21,31 @@ window.MyParity=(()=>{
   const k=round_key+'|'+fixture.replace(/\s+/g,'').toLowerCase();
   if(!state.picks[k])state.picks[k]={pick,rank,round_key,league,season:'2026-27',gw,fixture,record_id:null,saved_at:'2026-11-09T00:00:00.000Z',retrospective:true,source:'USER_REPORTED_AFTER_SETTLEMENT'};
  }
+ // Explicit user selections reported 2026-11-17. These are not model predictions.
+ // Keep fixture identity and rounds exact; do not imply a verified pre-kick timestamp.
+ const CURRENT_USER_PICKS=[
+  ['SERIEA',12,'Milan vs Frosinone','單',null],
+  ['SERIEA',12,'Napoli vs Torino','單',1],
+  ['LALIGA',13,'巴塞隆拿 vs 維拉利爾','單',null],
+  ['LALIGA',13,'艾拉維斯 vs 拉科魯尼亞','雙',null],
+  ['LALIGA',13,'皇家馬德里 vs 切爾達','雙',null],
+  ['LIGUE1',11,'里爾 vs 里昂','雙',null],
+  ['LIGUE1',11,'尼斯 vs PSG','單',null]
+ ];
+ for(const [league,gw,fixture,pick,rank] of CURRENT_USER_PICKS){
+  const round_key=[league,'2026-27',gw].join('|');
+  const k=round_key+'|'+fixture.replace(/\\s+/g,'').toLowerCase();
+  // Chat-entered selections override older default suggestions but never browser edits.
+  const existing=state.picks[k];
+  if(!existing||existing.source==='USER_REPORTED_AFTER_SETTLEMENT')
+   state.picks[k]={pick,rank,round_key,league,season:'2026-27',gw,fixture,record_id:null,reported_on:'2026-11-17',source:'USER_CHAT_REPORTED_2026-11-17',time_unverified:true};
+ }
+ // The EPL next-round fixture list has not been imported. Do not attach to archived GW10.
+ const PENDING_EPL=[
+  {team:'伯明罕',pick:'雙',rank:null},
+  {team:'切爾西',pick:'單',rank:null},
+  {team:'熱刺',pick:'雙',rank:null}
+ ];
  const roundKey=c=>[c.league,c.season,c.gw].join('|');
  const key=c=>roundKey(c)+'|'+c.fixture.replace(/\s+/g,'').toLowerCase();
  function score(c){return Array.isArray(c.score)&&c.score.length===2&&c.score.every(n=>Number.isInteger(n)&&n>=0)?c.score:null;}
@@ -33,7 +58,7 @@ window.MyParity=(()=>{
  }
  function rate(s){return s.n?`${(100*s.h/s.n).toFixed(1)}%（${s.h}/${s.n}）`:'—（尚無結算）';}
  function status(c,p){if(!p)return locked(c)?'已開賽／已結算，不能補填':'留空不計入統計';const o=outcome(c,p);return o==='hit'?'✓ 命中':o==='miss'?'× 未中':o==='excluded'?'腰斬／排除統計':'待結算';}
- function cell(c){const p=state.picks[key(c)],disabled=locked(c)?'disabled':'';return `<div class="personal-cell"><label>我的單雙<select data-personal-pick="${esc(key(c))}" aria-label="${esc(c.fixture)} 我的單雙" ${disabled}><option value="">不選</option>${['單','雙'].map(v=>`<option ${p?.pick===v?'selected':''}>${v}</option>`).join('')}</select></label><label>我的順位<select data-personal-rank="${esc(key(c))}" aria-label="${esc(c.fixture)} 我的順位" ${disabled||!p?'disabled':''}><option value="">不排名</option>${[1,2,3].map(v=>`<option value="${v}" ${p?.rank===v?'selected':''}>R${v}</option>`).join('')}</select></label><span class="outcome ${p&&outcome(c,p)==='hit'?'good':p&&outcome(c,p)==='miss'?'bad':'muted'}">${status(c,p)}</span>${p?`<span class="tiny muted">${p.retrospective?'事後補登 · 賽前時間未驗證 · ':p.restored?'備份還原 · ':''}${p.retrospective?'網站預設紀錄':'已保存 '+esc(new Date(p.saved_at).toLocaleString('zh-TW'))}</span>`:''}</div>`;}
+ function cell(c){const p=state.picks[key(c)],disabled=locked(c)?'disabled':'';return `<div class="personal-cell"><label>我的單雙<select data-personal-pick="${esc(key(c))}" aria-label="${esc(c.fixture)} 我的單雙" ${disabled}><option value="">不選</option>${['單','雙'].map(v=>`<option ${p?.pick===v?'selected':''}>${v}</option>`).join('')}</select></label><label>我的順位<select data-personal-rank="${esc(key(c))}" aria-label="${esc(c.fixture)} 我的順位" ${disabled||!p?'disabled':''}><option value="">不排名</option>${[1,2,3].map(v=>`<option value="${v}" ${p?.rank===v?'selected':''}>R${v}</option>`).join('')}</select></label><span class="outcome ${p&&outcome(c,p)==='hit'?'good':p&&outcome(c,p)==='miss'?'bad':'muted'}">${status(c,p)}</span>${p?`<span class="tiny muted">${p.retrospective?'事後補登 · 賽前時間未驗證 · ':p.restored?'備份還原 · ':''}${p.retrospective?'網站預設紀錄':p.time_unverified?'2026-11-17 對話自選 · 賽前時間未驗證':'已保存 '+esc(new Date(p.saved_at).toLocaleString('zh-TW'))}</span>`:''}</div>`;}
  function panel(contexts,title='我的單雙命中率'){const s=summary(contexts);const retro=[...new Map(contexts.map(c=>[key(c),c])).values()].filter(c=>state.picks[key(c)]?.retrospective);const rh=retro.filter(c=>outcome(c,state.picks[key(c)])==='hit').length;const rn=retro.filter(c=>['hit','miss'].includes(outcome(c,state.picks[key(c)]))).length;return `<section class="panel personal-panel"><h2>${esc(title)}</h2><div class="personal-stats"><strong>我的自選累計 ${rate(s)}</strong>${s.ranks.map((r,i)=>`<span>我的 R${i+1}：${rate(r)}</span>`).join('')}</div>${retro.length?`<p><strong>其中補登：${rn?rh+'/'+rn:'待結算'}</strong> · ${retro.length} 場（賽前時間未驗證，獨立於正式前推命中率）</p>`:''}<p class="muted">已選 ${s.total} 場 · 待結算 ${s.pending} 場 · 排除 ${s.excluded} 場。只計你有填、且已有正式比分的場次；不選與待結算都不算輸。R1／R2／R3 各輪、各聯賽獨立，可只填一場。</p><p class="muted">自選自動保存於此瀏覽器，不會跨裝置同步。網站追加比分後會自動對答案；已開賽或已結算的場次不能自行補填；經使用者明確要求的補登另行標記，不計入已驗證賽前績效。未提供開賽時間的場次，於網站收錄賽果時鎖定。</p><div class="filters"><a class="button" href="#mypicks">查看全部自選 →</a><button type="button" data-personal-export>匯出自選備份</button><label class="button">匯入自選備份<input type="file" accept="application/json,.json" data-personal-import hidden></label></div><p class="personal-feedback ${error?'bad':'muted'}" role="status" aria-live="polite">${esc(error||'選擇後自動保存；請定期匯出備份，清除瀏覽器資料會刪除自選紀錄。')}</p></section>`;}
  function save(c,pick,rank,contexts){if(locked(c)){error='這場已開賽或已結算，無法更改。';return false;}const next=JSON.parse(JSON.stringify(state));const k=key(c);
   if(!pick)delete next.picks[k];else{
@@ -52,6 +77,6 @@ window.MyParity=(()=>{
   }if(!persist(next))throw Error(error);return {added,skipped};
  }
  function bind(contexts,refresh){const byKey=new Map(contexts.map(c=>[key(c),c]));document.querySelectorAll('[data-personal-pick]').forEach(el=>el.onchange=()=>{const c=byKey.get(el.dataset.personalPick);if(c)save(c,el.value,state.picks[key(c)]?.rank??null,contexts);refresh();});document.querySelectorAll('[data-personal-rank]').forEach(el=>el.onchange=()=>{const c=byKey.get(el.dataset.personalRank),p=c&&state.picks[key(c)];if(p)save(c,p.pick,el.value?Number(el.value):null,contexts);refresh();});document.querySelectorAll('[data-personal-export]').forEach(el=>el.onclick=exportFile);document.querySelectorAll('[data-personal-import]').forEach(el=>el.onchange=async()=>{try{if(!el.files[0])return;const r=importState(JSON.parse(await el.files[0].text()),contexts);refresh();document.querySelectorAll('.personal-feedback').forEach(x=>x.textContent=`已匯入 ${r.added} 場，略過 ${r.skipped} 場（已有紀錄、未收錄場次或無法驗證賽前時間）。`);}catch(e){error='匯入失敗：'+e.message;refresh();}});}
- function page(contexts){const unique=[...new Map(contexts.map(c=>[key(c),c])).values()].filter(c=>state.picks[key(c)]);return panel(contexts,'我的全部單雙命中率')+`<div class="panel"><h2>我的自選紀錄</h2>${unique.length?`<div class="tablewrap"><table><thead><tr><th>聯賽／輪次</th><th>比賽</th><th>比分</th><th>我的單雙</th></tr></thead><tbody>${unique.map(c=>`<tr><td>${esc(c.league)} · GW${c.gw}</td><td><a href="#round/${esc(c.record_id)}">${esc(c.fixture)}</a></td><td>${score(c)?c.score.join(' – '):'—'}</td><td>${cell(c)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">還沒有自選紀錄。到最新一輪，在「我的單雙」選擇你想預測的場次即可。</p>'}</div>`;}
+ function page(contexts){const unique=[...new Map(contexts.map(c=>[key(c),c])).values()].filter(c=>state.picks[key(c)]);return panel(contexts,'我的全部單雙命中率')+`<div class="panel"><h2>英超待配對自選（3 筆）</h2><p class="muted">2026-11-17 由使用者提供；目前網站只收錄至 EPL GW10，尚未收錄這三隊的下一輪對賽與開賽時間，因此先獨立保存，不計入本輪或已結算命中率。</p>${PENDING_EPL.map(x=>'<p><strong>'+esc(x.team)+'</strong>：'+esc(x.pick)+' · 待確認場次</p>').join('')}</div><div class="panel"><h2>我的自選紀錄</h2>${unique.length?`<div class="tablewrap"><table><thead><tr><th>聯賽／輪次</th><th>比賽</th><th>比分</th><th>我的單雙</th></tr></thead><tbody>${unique.map(c=>`<tr><td>${esc(c.league)} · GW${c.gw}</td><td><a href="#round/${esc(c.record_id)}">${esc(c.fixture)}</a></td><td>${score(c)?c.score.join(' – '):'—'}</td><td>${cell(c)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">還沒有自選紀錄。到最新一輪，在「我的單雙」選擇你想預測的場次即可。</p>'}</div>`;}
  return {key,cell,panel,bind,page,summary};
 })();
