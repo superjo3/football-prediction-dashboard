@@ -1,0 +1,1834 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "schema_version": "1.0",
+  "generated_at": "2026-11-16",
+  "league": "LaLiga",
+  "league_zh": "西甲",
+  "season": "2026-27",
+  "gw": 13,
+  "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+  "parent_record_id": "LALIGA-2026-27-GW12-20261104-DUALTRACK-RESEARCH",
+  "source_record_type": "V2_RESEARCH_GW12_QUALITATIVE_CONTINUITY_A",
+  "research_only": true,
+  "counts_as_official_forward_result": false,
+  "model": {
+    "name": "GW12 V2-RESEARCH qualitative continuity A",
+    "exact_gw12_replay": false,
+    "human_decisions_fully_logged": true,
+    "objective_features_reproducible": true,
+    "weights_added_to_direction": false,
+    "formal_native_model": "R90-X V3 EXACT NOT_RUN"
+  },
+  "status": {
+    "pre_match": "FROZEN_20261116",
+    "research": "CONTINUITY_A_QUALITATIVE",
+    "official_exact": "NOT_RUN",
+    "pre_kick": "PENDING",
+    "result": "PENDING",
+    "review": "PENDING",
+    "github_sync": "PENDING"
+  },
+  "integrity": {
+    "original_gw12_record_unchanged": true,
+    "original_gw13_1109_record_unchanged": true,
+    "original_gw13_1113_shadow_unchanged": true,
+    "rebuild_B_not_promoted": true,
+    "open_first_tick_verified": false,
+    "multi_book_proxy": true,
+    "parity_skew_alert": false,
+    "parity_odd_count": 4,
+    "parity_even_count": 6,
+    "manual_human_decisions_auto_recomputable": false,
+    "scores_validated_not_calibrated": true
+  },
+  "PASS": {
+    "official_high_confidence_parity": "PASS_ALL",
+    "1x2": "OFFICIAL_EXACT_NOT_RUN",
+    "ou25": "OFFICIAL_EXACT_NOT_RUN"
+  },
+  "ranks": {
+    "1x2": [
+      {
+        "rank": "R1",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "pick": "主勝",
+        "manual_reason": "主勝去水78.4%，主客強弱差高，研究R1。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R2",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "pick": "主勝",
+        "manual_reason": "主勝去水76.9%，強市場優勢，研究R2。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R3",
+        "home": "畢爾包",
+        "away": "愛斯賓奴",
+        "pick": "主勝",
+        "manual_reason": "主隊市場支持63.8%，客隊市場僅14.1%；主勝優先，仍注意客隊守勢。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      }
+    ],
+    "ou25": [
+      {
+        "rank": "R1",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "pick": "大2.5",
+        "manual_reason": "大球市場76.7%，主隊最近五場全場0/5小球，研究R1；大小市場不直接決定單雙。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R2",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "pick": "大2.5",
+        "manual_reason": "大球66.8%，主隊近五場全場均總球單數但也有高進球樣本；大球R2。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R3",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "pick": "大2.5",
+        "manual_reason": "大球65.7%，雙方近期高球比率高，研究R3。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "pick": "單",
+        "manual_reason": "主客全場單數3/5與5/5，共8/10單；XOR約65.3%，和局僅主隊1/5客隊0/5，兩種獨立結構同向；研究R1。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R2",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "pick": "單",
+        "manual_reason": "巴塞近五場全場總球5/5單，兩隊合計8/10單；和局13.7%，近期兩隊合計僅1/10和局；偏單為研究R2。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      },
+      {
+        "rank": "R3",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "pick": "單",
+        "manual_reason": "皇馬近五場全場總球5/5單，兩隊共7/10單；和局市場僅14.4%，且主隊近期0/5和局；偏單。切爾達近期3/5和局及0-0為主要反向風險。",
+        "status": "RESEARCH_CANDIDATE_ONLY",
+        "counts_in_official": false
+      }
+    ]
+  },
+  "ranked_picks": {
+    "1x2": [
+      {
+        "rank": "R1",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "match": "皇家馬德里 vs 切爾達",
+        "pick": "主勝",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R2",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "match": "巴塞隆拿 vs 維拉利爾",
+        "pick": "主勝",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R3",
+        "home": "畢爾包",
+        "away": "愛斯賓奴",
+        "match": "畢爾包 vs 愛斯賓奴",
+        "pick": "主勝",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      }
+    ],
+    "ou25": [
+      {
+        "rank": "R1",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "match": "巴塞隆拿 vs 維拉利爾",
+        "pick": "大2.5",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R2",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "match": "皇家馬德里 vs 切爾達",
+        "pick": "大2.5",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R3",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "match": "桑坦德 vs 皇家蘇斯達",
+        "pick": "大2.5",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "match": "桑坦德 vs 皇家蘇斯達",
+        "pick": "單",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R2",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "match": "巴塞隆拿 vs 維拉利爾",
+        "pick": "單",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      },
+      {
+        "rank": "R3",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "match": "皇家馬德里 vs 切爾達",
+        "pick": "單",
+        "formal_selector": false,
+        "status": "RESEARCH"
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-01",
+      "home": "畢爾包",
+      "away": "愛斯賓奴",
+      "home_key": "Athletic",
+      "away_key": "Espanyol",
+      "kickoff_taipei": "2026-11-21 04:00",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        1.49,
+        4.31,
+        6.75
+      ],
+      "odds_openproxy_ou25": [
+        1.8,
+        1.99
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_overexposure",
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": "R3",
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-02",
+      "home": "艾拉維斯",
+      "away": "拉科魯尼亞",
+      "home_key": "Alaves",
+      "away_key": "Deportivo",
+      "kickoff_taipei": "2026-11-21 21:00",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "單",
+      "odds_openproxy_1x2": [
+        2.06,
+        3.36,
+        3.61
+      ],
+      "odds_openproxy_ou25": [
+        2.14,
+        1.69
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_low_draw"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-03",
+      "home": "華歷簡奴",
+      "away": "華倫西亞",
+      "home_key": "Rayo",
+      "away_key": "Valencia",
+      "kickoff_taipei": "2026-11-21 23:15",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        2,
+        3.45,
+        3.77
+      ],
+      "odds_openproxy_ou25": [
+        2.04,
+        1.78
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_low_draw",
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-04",
+      "home": "西維爾",
+      "away": "貝迪斯",
+      "home_key": "Sevilla",
+      "away_key": "Betis",
+      "kickoff_taipei": "2026-11-22 01:30",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        2.9,
+        3.56,
+        2.35
+      ],
+      "odds_openproxy_ou25": [
+        1.73,
+        2.1
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-05",
+      "home": "皇家馬德里",
+      "away": "切爾達",
+      "home_key": "RealMadrid",
+      "away_key": "Celta",
+      "kickoff_taipei": "2026-11-22 04:00",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "odds_openproxy_1x2": [
+        1.21,
+        6.59,
+        13.23
+      ],
+      "odds_openproxy_ou25": [
+        1.4,
+        2.82
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_overexposure"
+      ],
+      "rank_1x2": "R1",
+      "rank_ou25": "R2",
+      "rank_parity": "R3"
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-06",
+      "home": "巴塞隆拿",
+      "away": "維拉利爾",
+      "home_key": "Barcelona",
+      "away_key": "Villarreal",
+      "kickoff_taipei": "2026-11-22 21:00",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "odds_openproxy_1x2": [
+        1.23,
+        6.91,
+        10.08
+      ],
+      "odds_openproxy_ou25": [
+        1.21,
+        3.99
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_overexposure"
+      ],
+      "rank_1x2": "R2",
+      "rank_ou25": "R1",
+      "rank_parity": "R2"
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-07",
+      "home": "桑坦德",
+      "away": "皇家蘇斯達",
+      "home_key": "Racing",
+      "away_key": "Sociedad",
+      "kickoff_taipei": "2026-11-22 23:15",
+      "1X2": "客勝",
+      "OU25": "大2.5",
+      "parity": "單",
+      "odds_openproxy_1x2": [
+        3.13,
+        3.91,
+        2.1
+      ],
+      "odds_openproxy_ou25": [
+        1.43,
+        2.74
+      ],
+      "odds_prekick": null,
+      "risk_flags": [],
+      "rank_1x2": null,
+      "rank_ou25": "R3",
+      "rank_parity": "R1"
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-08",
+      "home": "奧沙辛拿",
+      "away": "馬拉加",
+      "home_key": "Osasuna",
+      "away_key": "Malaga",
+      "kickoff_taipei": "2026-11-23 01:30",
+      "1X2": "主勝",
+      "OU25": "小2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        1.76,
+        3.69,
+        4.74
+      ],
+      "odds_openproxy_ou25": [
+        1.92,
+        1.89
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-09",
+      "home": "加泰",
+      "away": "馬德里體育會",
+      "home_key": "Getafe",
+      "away_key": "Atletico",
+      "kickoff_taipei": "2026-11-23 04:00",
+      "1X2": "客勝",
+      "OU25": "小2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        5.52,
+        3.78,
+        1.63
+      ],
+      "odds_openproxy_ou25": [
+        2.07,
+        1.75
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-10",
+      "home": "利雲特",
+      "away": "艾爾切",
+      "home_key": "Levante",
+      "away_key": "Elche",
+      "kickoff_taipei": "2026-11-24 04:00",
+      "1X2": "主勝",
+      "OU25": "大2.5",
+      "parity": "雙",
+      "odds_openproxy_1x2": [
+        2.16,
+        3.73,
+        3.08
+      ],
+      "odds_openproxy_ou25": [
+        1.66,
+        2.19
+      ],
+      "odds_prekick": null,
+      "risk_flags": [
+        "flag_overexposure",
+        "flag_xor_neutral"
+      ],
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null
+    }
+  ],
+  "matches": [
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-01",
+      "home": "畢爾包",
+      "away": "愛斯賓奴",
+      "pick_1x2": "主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "fixture": "畢爾包 vs 愛斯賓奴",
+      "odds_1x2": [
+        1.49,
+        4.31,
+        6.75
+      ],
+      "odds_ou25": [
+        1.8,
+        1.99
+      ],
+      "numeric_features": {
+        "p_home": 0.638387,
+        "p_draw": 0.220695,
+        "p_away": 0.140918,
+        "p_over25": 0.525066,
+        "p_under25": 0.474934,
+        "odd_goal_xor_diagnostic": 0.510204,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 2,
+          "odd_total": 1,
+          "draws": 2,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-17",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Valencia"
+            },
+            {
+              "date": "2026-10-21",
+              "team_goals": 1,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Levante"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 4,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Getafe"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Sociedad"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Osasuna"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 4,
+          "games": [
+            {
+              "date": "2026-10-09",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Malaga"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Atletico"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Racing"
+            },
+            {
+              "date": "2026-10-30",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Villarreal"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Deportivo"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主隊市場支持63.8%，客隊市場僅14.1%；主勝優先，仍注意客隊守勢。",
+        "ou25": "大球市場52.5%僅微幅領先，小球防守樣本較多；大球只是弱選擇。",
+        "parity": "兩隊近五場全場單數共4/10，且愛斯賓奴小球4/5；平局市場22.1%、雙方各2/5和局，偏雙（1-1或2-0）。XOR約50.9%不支持強押單。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_EVEN",
+        "LOW_SCORE_EVEN",
+        "DRAW_EVEN",
+        "XOR_NEUTRAL"
+      ],
+      "selection": {
+        "1x2": "R3",
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-02",
+      "home": "艾拉維斯",
+      "away": "拉科魯尼亞",
+      "pick_1x2": "主勝",
+      "pick_ou25": "小2.5",
+      "pick_parity": "單",
+      "fixture": "艾拉維斯 vs 拉科魯尼亞",
+      "odds_1x2": [
+        2.06,
+        3.36,
+        3.61
+      ],
+      "odds_ou25": [
+        2.14,
+        1.69
+      ],
+      "numeric_features": {
+        "p_home": 0.457932,
+        "p_draw": 0.280756,
+        "p_away": 0.261313,
+        "p_over25": 0.441253,
+        "p_under25": 0.558747,
+        "odd_goal_xor_diagnostic": 0.591837,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 4,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Atletico"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Celta"
+            },
+            {
+              "date": "2026-10-23",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Malaga"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 1,
+              "opp_goals": 6,
+              "is_home": false,
+              "opponent": "Barcelona"
+            },
+            {
+              "date": "2026-11-06",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Sevilla"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 1,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 2,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Sociedad"
+            },
+            {
+              "date": "2026-10-16",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Levante"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Atletico"
+            },
+            {
+              "date": "2026-11-02",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Osasuna"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Espanyol"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝市場45.8%，和局28.1%、客勝26.1%，最高項主勝但差距有限；不列高信心。",
+        "ou25": "小球市場55.9%，兩隊近期有0-0與1-1樣本，保留小球。",
+        "parity": "進球XOR約59.2%及兩隊近五場全場單數6/10均偏單；但和局28.1%、雙方各2/5和局，存在反向雙的風險，選單但低信心。"
+      },
+      "parity_tags": [
+        "XOR_ODD",
+        "TOTAL_PARITY_ODD",
+        "DRAW_EVEN_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-03",
+      "home": "華歷簡奴",
+      "away": "華倫西亞",
+      "pick_1x2": "主勝",
+      "pick_ou25": "小2.5",
+      "pick_parity": "雙",
+      "fixture": "華歷簡奴 vs 華倫西亞",
+      "odds_1x2": [
+        2,
+        3.45,
+        3.77
+      ],
+      "odds_ou25": [
+        2.04,
+        1.78
+      ],
+      "numeric_features": {
+        "p_home": 0.473886,
+        "p_draw": 0.274716,
+        "p_away": 0.251398,
+        "p_over25": 0.465969,
+        "p_under25": 0.534031,
+        "odd_goal_xor_diagnostic": 0.510204,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-09-19",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Osasuna"
+            },
+            {
+              "date": "2026-10-19",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Getafe"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 0,
+              "opp_goals": 3,
+              "is_home": true,
+              "opponent": "Elche"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 3,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Celta"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Sociedad"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 2,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 2,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Racing"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Athletic"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Villarreal"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Elche"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 0,
+              "opp_goals": 3,
+              "is_home": true,
+              "opponent": "RealMadrid"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝47.4%略高於和局27.5%、客勝25.1%；主勝但高熵。",
+        "ou25": "小球市場53.4%，近期兩隊有多個低比分與和局，偏小。",
+        "parity": "XOR約51.0%無方向性；兩隊各2/5和局且華倫西亞近期0-0，1-1/0-0風險值得保留，人工偏雙；近五場全場單數6/10為反向證據，低信心。"
+      },
+      "parity_tags": [
+        "XOR_NEUTRAL",
+        "DRAW_EVEN",
+        "LOW_SCORE_EVEN",
+        "TOTAL_PARITY_ODD_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-04",
+      "home": "西維爾",
+      "away": "貝迪斯",
+      "pick_1x2": "客勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "fixture": "西維爾 vs 貝迪斯",
+      "odds_1x2": [
+        2.9,
+        3.56,
+        2.35
+      ],
+      "odds_ou25": [
+        1.73,
+        2.1
+      ],
+      "numeric_features": {
+        "p_home": 0.328014,
+        "p_draw": 0.267203,
+        "p_away": 0.404783,
+        "p_over25": 0.548303,
+        "p_under25": 0.451697,
+        "odd_goal_xor_diagnostic": 0.530612,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 1,
+          "draws": 2,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-12",
+              "team_goals": 3,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Levante"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 1,
+              "opp_goals": 4,
+              "is_home": false,
+              "opponent": "RealMadrid"
+            },
+            {
+              "date": "2026-10-26",
+              "team_goals": 2,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Osasuna"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 1,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Getafe"
+            },
+            {
+              "date": "2026-11-06",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Alaves"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 1,
+          "odd_total": 3,
+          "draws": 1,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 5,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Osasuna"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 2,
+              "opp_goals": 5,
+              "is_home": true,
+              "opponent": "Barcelona"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Celta"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Malaga"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 2,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Elche"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "客勝40.5%僅比主勝32.8%高7.7pp，德比高熵，不列R。",
+        "ou25": "大球54.8%偏大，兩隊近五場亦有多場大球；選大但不等同單數。",
+        "parity": "兩隊近五場總球單數共4/10，西維爾2/5和局；XOR 53.1%弱偏單，無足夠優勢，人工以總球奇偶與平局情境偏雙，低信心。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_EVEN",
+        "DRAW_EVEN",
+        "XOR_ODD_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-05",
+      "home": "皇家馬德里",
+      "away": "切爾達",
+      "pick_1x2": "主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "單",
+      "fixture": "皇家馬德里 vs 切爾達",
+      "odds_1x2": [
+        1.21,
+        6.59,
+        13.23
+      ],
+      "odds_ou25": [
+        1.4,
+        2.82
+      ],
+      "numeric_features": {
+        "p_home": 0.78427,
+        "p_draw": 0.144001,
+        "p_away": 0.071728,
+        "p_over25": 0.668246,
+        "p_under25": 0.331754,
+        "odd_goal_xor_diagnostic": 0.55102,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 5,
+          "draws": 0,
+          "under25": 1,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Villarreal"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 4,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Sevilla"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Barcelona"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 3,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Racing"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 3,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Valencia"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 0,
+          "odd_total": 2,
+          "draws": 3,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Elche"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Alaves"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Betis"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 0,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Rayo"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Levante"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝去水78.4%，主客強弱差高，研究R1。",
+        "ou25": "大球66.8%，主隊近五場全場均總球單數但也有高進球樣本；大球R2。",
+        "parity": "皇馬近五場全場總球5/5單，兩隊共7/10單；和局市場僅14.4%，且主隊近期0/5和局；偏單。切爾達近期3/5和局及0-0為主要反向風險。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_ODD",
+        "LOW_DRAW_ODD",
+        "XOR_ODD",
+        "AWAY_DRAWS_CONFLICT"
+      ],
+      "selection": {
+        "1x2": "R1",
+        "ou25": "R2",
+        "parity": "R3"
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-06",
+      "home": "巴塞隆拿",
+      "away": "維拉利爾",
+      "pick_1x2": "主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "單",
+      "fixture": "巴塞隆拿 vs 維拉利爾",
+      "odds_1x2": [
+        1.23,
+        6.91,
+        10.08
+      ],
+      "odds_ou25": [
+        1.21,
+        3.99
+      ],
+      "numeric_features": {
+        "p_home": 0.769215,
+        "p_draw": 0.136922,
+        "p_away": 0.093863,
+        "p_over25": 0.767308,
+        "p_under25": 0.232692,
+        "odd_goal_xor_diagnostic": 0.55102,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 5,
+          "draws": 0,
+          "under25": 0,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 3,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Getafe"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 5,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Betis"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "RealMadrid"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 6,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Alaves"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Atletico"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 0,
+          "odd_total": 3,
+          "draws": 1,
+          "under25": 4,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "RealMadrid"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Elche"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Valencia"
+            },
+            {
+              "date": "2026-10-30",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Espanyol"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 2,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Getafe"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝去水76.9%，強市場優勢，研究R2。",
+        "ou25": "大球市場76.7%，主隊最近五場全場0/5小球，研究R1；大小市場不直接決定單雙。",
+        "parity": "巴塞近五場全場總球5/5單，兩隊合計8/10單；和局13.7%，近期兩隊合計僅1/10和局；偏單為研究R2。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_ODD",
+        "LOW_DRAW_ODD",
+        "XOR_ODD"
+      ],
+      "selection": {
+        "1x2": "R2",
+        "ou25": "R1",
+        "parity": "R2"
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-07",
+      "home": "桑坦德",
+      "away": "皇家蘇斯達",
+      "pick_1x2": "客勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "單",
+      "fixture": "桑坦德 vs 皇家蘇斯達",
+      "odds_1x2": [
+        3.13,
+        3.91,
+        2.1
+      ],
+      "odds_ou25": [
+        1.43,
+        2.74
+      ],
+      "numeric_features": {
+        "p_home": 0.30386,
+        "p_draw": 0.243244,
+        "p_away": 0.452896,
+        "p_over25": 0.657074,
+        "p_under25": 0.342926,
+        "odd_goal_xor_diagnostic": 0.653061,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 0,
+          "odd_total": 3,
+          "draws": 1,
+          "under25": 1,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 2,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Valencia"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 0,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Osasuna"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Espanyol"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 0,
+              "opp_goals": 3,
+              "is_home": true,
+              "opponent": "RealMadrid"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Malaga"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 4,
+          "odd_total": 5,
+          "draws": 0,
+          "under25": 1,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 3,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Deportivo"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 5,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Malaga"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Levante"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Athletic"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Rayo"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "客勝市場45.3%，主勝30.4%，和局24.3%；研究方向客但高熵，不列R。",
+        "ou25": "大球65.7%，雙方近期高球比率高，研究R3。",
+        "parity": "主客全場單數3/5與5/5，共8/10單；XOR約65.3%，和局僅主隊1/5客隊0/5，兩種獨立結構同向；研究R1。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_ODD",
+        "XOR_ODD",
+        "LOW_RECENT_DRAW_ODD"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": "R3",
+        "parity": "R1"
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-08",
+      "home": "奧沙辛拿",
+      "away": "馬拉加",
+      "pick_1x2": "主勝",
+      "pick_ou25": "小2.5",
+      "pick_parity": "雙",
+      "fixture": "奧沙辛拿 vs 馬拉加",
+      "odds_1x2": [
+        1.76,
+        3.69,
+        4.74
+      ],
+      "odds_ou25": [
+        1.92,
+        1.89
+      ],
+      "numeric_features": {
+        "p_home": 0.541046,
+        "p_draw": 0.25806,
+        "p_away": 0.200895,
+        "p_over25": 0.496063,
+        "p_under25": 0.503937,
+        "odd_goal_xor_diagnostic": 0.530612,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 2,
+          "odd_total": 2,
+          "draws": 1,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 2,
+              "opp_goals": 5,
+              "is_home": false,
+              "opponent": "Betis"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 2,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Racing"
+            },
+            {
+              "date": "2026-10-26",
+              "team_goals": 0,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Sevilla"
+            },
+            {
+              "date": "2026-11-02",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Deportivo"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Athletic"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 4,
+          "odd_total": 3,
+          "draws": 2,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-09",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Espanyol"
+            },
+            {
+              "date": "2026-10-18",
+              "team_goals": 2,
+              "opp_goals": 5,
+              "is_home": true,
+              "opponent": "Sociedad"
+            },
+            {
+              "date": "2026-10-23",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Alaves"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Betis"
+            },
+            {
+              "date": "2026-11-07",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Racing"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝54.1%，市場優勢中等；不列前3。",
+        "ou25": "小球50.4%非常接近50/50，僅弱偏小。",
+        "parity": "XOR約53.1%，兩隊全場總單數合計5/10，近期奧沙辛拿與馬拉加都有1-1；沒有一致偏單訊號，保守記錄雙，但方向不穩定。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_NEUTRAL",
+        "DRAW_EVEN",
+        "XOR_ODD_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-09",
+      "home": "加泰",
+      "away": "馬德里體育會",
+      "pick_1x2": "客勝",
+      "pick_ou25": "小2.5",
+      "pick_parity": "雙",
+      "fixture": "加泰 vs 馬德里體育會",
+      "odds_1x2": [
+        5.52,
+        3.78,
+        1.63
+      ],
+      "odds_ou25": [
+        2.07,
+        1.75
+      ],
+      "numeric_features": {
+        "p_home": 0.171033,
+        "p_draw": 0.249763,
+        "p_away": 0.579204,
+        "p_over25": 0.458115,
+        "p_under25": 0.541885,
+        "odd_goal_xor_diagnostic": 0.510204,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 2,
+          "odd_total": 1,
+          "draws": 1,
+          "under25": 2,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 0,
+              "opp_goals": 3,
+              "is_home": false,
+              "opponent": "Barcelona"
+            },
+            {
+              "date": "2026-10-19",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Rayo"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 0,
+              "opp_goals": 4,
+              "is_home": false,
+              "opponent": "Athletic"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 3,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Sevilla"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 0,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Villarreal"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 4,
+          "draws": 0,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-10-10",
+              "team_goals": 2,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Alaves"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Espanyol"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 1,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Deportivo"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 2,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Levante"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Barcelona"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "客勝57.9%，市場較明顯支持客隊；客勝但沒有足夠R1-3市場差。",
+        "ou25": "小球54.2%，主隊近期5場總球4/5雙，和低進球情境一致。",
+        "parity": "加泰近期全場單數僅1/5，兩隊合計5/10；XOR約51.0%無方向性，人工偏雙。馬體會近期4/5總單是明確反向訊號，故低信心。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_NEUTRAL",
+        "HOME_EVEN",
+        "XOR_NEUTRAL",
+        "AWAY_ODD_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    },
+    {
+      "match_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A-10",
+      "home": "利雲特",
+      "away": "艾爾切",
+      "pick_1x2": "主勝",
+      "pick_ou25": "大2.5",
+      "pick_parity": "雙",
+      "fixture": "利雲特 vs 艾爾切",
+      "odds_1x2": [
+        2.16,
+        3.73,
+        3.08
+      ],
+      "odds_ou25": [
+        1.66,
+        2.19
+      ],
+      "numeric_features": {
+        "p_home": 0.438522,
+        "p_draw": 0.253943,
+        "p_away": 0.307535,
+        "p_over25": 0.568831,
+        "p_under25": 0.431169,
+        "odd_goal_xor_diagnostic": 0.530612,
+        "home_last5": {
+          "n": 5,
+          "odd_goals": 3,
+          "odd_total": 1,
+          "draws": 2,
+          "under25": 3,
+          "games": [
+            {
+              "date": "2026-10-16",
+              "team_goals": 1,
+              "opp_goals": 1,
+              "is_home": false,
+              "opponent": "Deportivo"
+            },
+            {
+              "date": "2026-10-21",
+              "team_goals": 3,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Athletic"
+            },
+            {
+              "date": "2026-10-25",
+              "team_goals": 1,
+              "opp_goals": 2,
+              "is_home": false,
+              "opponent": "Sociedad"
+            },
+            {
+              "date": "2026-10-31",
+              "team_goals": 0,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Atletico"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Celta"
+            }
+          ]
+        },
+        "away_last5": {
+          "n": 5,
+          "odd_goals": 1,
+          "odd_total": 2,
+          "draws": 2,
+          "under25": 4,
+          "games": [
+            {
+              "date": "2026-10-11",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": true,
+              "opponent": "Celta"
+            },
+            {
+              "date": "2026-10-17",
+              "team_goals": 0,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Villarreal"
+            },
+            {
+              "date": "2026-10-24",
+              "team_goals": 3,
+              "opp_goals": 0,
+              "is_home": false,
+              "opponent": "Rayo"
+            },
+            {
+              "date": "2026-11-01",
+              "team_goals": 0,
+              "opp_goals": 1,
+              "is_home": true,
+              "opponent": "Valencia"
+            },
+            {
+              "date": "2026-11-08",
+              "team_goals": 0,
+              "opp_goals": 2,
+              "is_home": true,
+              "opponent": "Betis"
+            }
+          ]
+        }
+      },
+      "manual_reasons": {
+        "1x2": "主勝43.9%，客勝30.8%，和局25.4%；三方接近，不可當穩膽。",
+        "ou25": "大球56.9%，但兩隊最近各自3/5、4/5小球，大球暴露風險高，順位PASS。",
+        "parity": "兩隊全場總單數共3/10，利雲特近5場1/5單、艾爾切2/5單，且雙方各有2/5和局；人工偏雙。XOR約53.1%弱偏單，標衝突。"
+      },
+      "parity_tags": [
+        "TOTAL_PARITY_EVEN",
+        "DRAW_EVEN",
+        "LOW_SCORE_EVEN",
+        "XOR_ODD_CONFLICT"
+      ],
+      "selection": {
+        "1x2": null,
+        "ou25": null,
+        "parity": null
+      },
+      "result": null
+    }
+  ],
+  "research_forecasts": [
+    {
+      "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+      "type": "V2_QUALITATIVE_CONTINUITY_A",
+      "results": "PENDING"
+    }
+  ],
+  "official_forecasts": [],
+  "result_summary": {
+    "state": "PENDING",
+    "completed_matches": 0,
+    "per_market": {}
+  },
+  "postmatch_review": {
+    "status": "PENDING"
+  },
+  "sources": {
+    "market_snapshot": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+    "original_gw12": "LALIGA-2026-27-GW12-20261104-DUALTRACK-RESEARCH"
+  },
+  "reproducibility": {
+    "objective_replay_command": "python run_features.py",
+    "manual_decisions": "DECISION_LOG.json",
+    "limitations": "HUMAN_JUDGMENT_NOT_MATHEMATICALLY_RECONSTRUCTIBLE",
+    "source_cutoff": "2026-11-09",
+    "prematch_decision_date": "2026-11-16"
+  }
+}
