@@ -1,0 +1,20 @@
+{
+  "schema": "user-parity-correction-addendum-v1",
+  "original_archive": "data/user-picks/USER_PARITY_PICKS_2026-11-17.json",
+  "prior_mapping_addendum": "data/user-picks/USER_PARITY_PICKS_2026-11-17_MAPPING_ADDENDUM.json",
+  "reported_date_taipei": "2026-11-17",
+  "correction_source": "user_chat_explicit_correction",
+  "supersedes_mapping_for": "USER-20261117-01",
+  "original_team_text": "伯明罕",
+  "correct_fixture": "Brentford vs Everton",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "match_id": "EPL-2026-27-GW11-10",
+  "direction": "雙",
+  "rank": null,
+  "mapping_status": "FIXTURE_MAPPED",
+  "settlement_status": "PENDING",
+  "note": "Original user message remains intact in immutable archive; this later explicit clarification determines the matching EPL GW11 fixture. Do not count twice or silently rewrite original.",
+  "statistical_integrity": "Do not infer a verified prematch timestamp."
+}
