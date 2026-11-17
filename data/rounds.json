@@ -473,5 +473,26 @@
     "research_only": true,
     "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_REBUILT.json",
     "note": "10場三市場新研究結果；9單1雙；原第12輪V2無Exact程式，本版非其原始公式；正式PASS"
+  },
+  {
+    "id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+    "league": "LALIGA",
+    "season": "2026-27",
+    "gw": 13,
+    "model": "V2-RESEARCH qualitative continuity A / human decision log (NOT GW12 Exact)",
+    "snapshot": "2026-11-16 new prematch independent research record; 2026-11-09 archived proxy odds",
+    "coverage": "complete-pregame-research",
+    "research_only": true,
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_CONTINUITY_A.json",
+    "status": {
+      "pre_match": "FROZEN_20261116",
+      "research": "CONTINUITY_A_QUALITATIVE",
+      "official_exact": "NOT_RUN",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING",
+      "github_sync": "PENDING"
+    },
+    "note": "GW12 V2 original four-step qualitative approach: market, form/risk, independent parity, conservative human ranking; 4 odd 6 even; NOT official or GW12 Exact"
   }
 ]
