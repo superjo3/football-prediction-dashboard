@@ -28,23 +28,24 @@
 
 ## LATEST_OFFICIAL
 
-**Record ID:** `BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL`
+**Record ID:** `EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED`
 
 ## LATEST_BY_LEAGUE
 
 | 聯賽 | 最新 Record ID | 輪次 | R1 | R2 | 狀態 |
 |---|---|---|---|---|---|
 | **西甲 LaLiga** | `LALIGA-2026-27-GW08-20261005` | 第8輪 | 巴塞隆拿 vs 加泰 → **單** | 貝迪斯 vs 奧沙辛拿 → **單** | **最後可辨識正式 official；GW12 另列 LATEST_RESEARCH，不混入正式分母** |
-| **英超 EPL** | `EPL-2026-27-GW10-20261105-MARKETPROXY-RECOVERED` | 第10輪 | 列斯聯 vs 熱刺 → **雙 ❌** | 諾定咸森林 vs 曼城 → **單 ❌** | **已結算｜1X2 5/10；O/U2.5 7/10；單雙 4/10；三市場R1/R2/R3=3/3、2/3、1/3；POSTMATCH_REVIEW COMPLETE** |
+| **英超 EPL** | `EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED` | 第11輪 | 賓福特 vs 愛華頓 → **雙** | 車路士 vs 列斯聯 → **單**（相對 R2／證據不足） | **賽前 MARKETPROXY RECOVERED_COMPONENT；B版 R90 Shadow 已獨立封存／高信心 PASS；PRE-KICK PENDING，網站同步延後** |
 | **德甲 Bundesliga** | `BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL` | 第10輪 | **PASS**（0單9雙 SKEW） | **PASS**（V1 tie-break MISSING） | **正式賽前已封存｜1X2/OU2.5 全輪＋R1/R2/R3；單雙全輪0單9雙，正式R1/R2/R3 PASS；PRE-KICK PENDING** |
-| **法甲 Ligue 1** | `LIGUE1-2026-27-GW10-20261105-MARKETPROXY` | 第10輪 | **正式PASS**｜Shadow 圖盧茲 vs 史特拉斯堡 → **雙 ✅** | **正式PASS**｜Shadow 昂熱 vs 尼斯 → **雙（待賽）** | **部分結算 3/9｜1X2 3/3；O/U2.5 1/3；單雙底層 3/3；正式單雙 selector PASS；尚有6場待賽** |
+| **法甲 Ligue 1** | `LIGUE1-2026-27-GW11-20261109-MARKETPROXY` | 第11輪 | **正式PASS**｜Shadow 里爾 vs 里昂 → **雙** | **正式PASS**｜Shadow 巴黎FC vs 昂熱 → **單** | **正式賽前 MARKETPROXY；1X2/OU/單雙完整方向已封存；O/U formal=PASS；單雙 formal=PASS；Dashboard/GitHub 依使用者指示暫不同步** |
 | **義甲 Serie A** | `SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED` | 第11輪 | 羅馬 vs 莎索羅 → **雙** | 卡利亞里 vs 弗羅西諾內 → **雙** | **正式賽前 MARKETPROXY／RECOVERED；等待 PRE-KICK 與賽果** |
 
 ## LATEST_RESEARCH
 
 | 聯賽 | 最新 Research Record ID | 輪次 | 狀態 |
 |---|---|---|---|
-| **西甲 LaLiga** | `LALIGA-2026-27-GW12-20261105-RESEARCH-ARCHIVE-AUDIT` | 第12輪 | **RESEARCH_ONLY / RESEARCH_ARCHIVED；不計 official forward denominator** |
+| **西甲 LaLiga** | `LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A` | 第13輪 | **V2-RESEARCH 原四步驟定性延續線 A／逐場特徵＋人工完整決策紀錄；非 GW12 Exact、非 Official；GW13 11/9 及 11/13 舊版與 B 版全部獨立保留** |
+| **英超 EPL** | `EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW` | 第11輪 | **SHADOW_PREMATCH_SEALED／研究相對R1-R3，SKEW_ALERT，正式高信心 PASS，不混入Official** |
 
 ---
 
@@ -4122,3 +4123,1302 @@ GW9/GW10 沒有可辨識、可獨立驗證的 Official Serie A 賽前 Record，�
 - Effective earliest: `GW13 Research only`。
 - Baseline: `GW12 final settlement`，從此輪後開始前推，禁止用本輪事後調閾值聲稱賽前已有此規則。
 - `POSTMATCH_REVIEW_COMPLETE`
+
+---
+
+## Result Addendum｜LIGUE1-2026-27-GW10-20261105-MARKETPROXY｜2026-11-09
+
+**Settlement ID:** `LIGUE1-2026-27-GW10-20261109-RESULT`
+
+- 聯賽：法國甲組聯賽 Ligue 1
+- 賽季／輪次：2026–27 第10輪
+- 結算日期：2026-11-09（Asia/Taipei）
+- 狀態：**SETTLEMENT_COMPLETE**
+- 對答案基準：只使用賽前正式封存 `LIGUE1-2026-27-GW10-20261105-MARKETPROXY`；原 Record 完全不變，不依賽果修改任何方向、R位或 PASS。
+- 其他賽前版本：未發現獨立 `OPEN` / `PRE-KICK` / `LIVE` GW10 Record，因此本次只結算 MARKETPROXY；不得以賽後終盤補造 PRE-KICK。
+- 正式賽果：圖盧茲 3-1 史特拉斯堡；歐塞爾 0-1 巴黎FC；PSG 1-0 特魯瓦；雷恩 1-2 里爾；昂熱 0-2 尼斯；布雷斯特 2-0 里昂；勒阿弗爾 0-2 洛里昂；勒芒 1-1 摩納哥；朗斯 1-2 馬賽。
+
+### 三市場完整對答案
+
+| 比賽 | 實際比分 | 1X2預測 | 1X2 | O/U2.5預測 | O/U | 單雙底層預測 | 單雙 |
+|---|---:|---|---|---|---|---|---|
+| 圖盧茲 vs 史特拉斯堡 | 3-1 | 主勝 | ✅ | 大2.5 | ✅ | **雙 Shadow R1** | ✅ |
+| 歐塞爾 vs 巴黎FC | 0-1 | **客勝 R3** | ✅ | 大2.5 | ❌ | 單 | ✅ |
+| PSG vs 特魯瓦 | 1-0 | **主勝 R1** | ✅ | **大2.5 Relative R1** | ❌ | 單 | ✅ |
+| 雷恩 vs 里爾 | 1-2 | 主勝 | ❌ | **大2.5 Relative R3** | ✅ | 雙 | ❌ |
+| 勒芒 vs 摩納哥 | 1-1 | **客勝 R2** | ❌ | 大2.5 | ❌ | 雙 | ✅ |
+| 布雷斯特 vs 里昂 | 2-0 | 客勝 | ❌ | 大2.5 | ❌ | **雙 Shadow R3** | ✅ |
+| 勒阿弗爾 vs 洛里昂 | 0-2 | 客勝 | ✅ | 小2.5 | ✅ | 雙 | ✅ |
+| 昂熱 vs 尼斯 | 0-2 | 客勝 | ✅ | 大2.5 | ❌ | **雙 Shadow R2** | ✅ |
+| 朗斯 vs 馬賽 | 1-2 | 主勝 | ❌ | **大2.5 Relative R2** | ✅ | 單 | ✅ |
+
+### 本輪命中率
+
+- **1X2：5/9 = 55.6%**。
+- **O/U2.5 全輪方向：4/9 = 44.4%**。
+- **單雙底層方向：8/9 = 88.9%**。
+- **單雙 Official `Parity_Selected`：PASS（0注）**，不計正式投注命中率。
+- O/U 正式 80% 級稀疏 selector：**PASS（0注）**；Relative R位只作既有連續追蹤，不與正式 sparse selector 混算。
+
+### R1 / R2 / R3 結算
+
+#### 1X2｜Official
+- R1 PSG vs 特魯瓦 → PSG主勝：✅
+- R2 勒芒 vs 摩納哥 → 摩納哥客勝：❌（1-1）
+- R3 歐塞爾 vs 巴黎FC → 巴黎FC客勝：✅
+- 本輪：**2/3 = 66.7%**。
+- 嚴格前推累計：**R1 2/2=100%；R2 1/2=50.0%；R3 2/2=100%；R1+R2 3/4=75.0%；R1+R2+R3 5/6=83.3%**。
+
+#### O/U2.5｜Relative Shadow/Ranking；Formal selector 分開
+- Relative R1 PSG vs 特魯瓦 → 大2.5：❌
+- Relative R2 朗斯 vs 馬賽 → 大2.5：✅
+- Relative R3 雷恩 vs 里爾 → 大2.5：✅
+- 本輪 Relative：**2/3 = 66.7%**。
+- Relative 嚴格前推累計：**R1 4/6=66.7%；R2 6/6=100%；R3 1/2=50.0%；R1+R2 10/12=83.3%；R1+R2+R3（自GW9起）4/6=66.7%**。
+- Formal sparse selector：**PASS 0注**，分母不增加。
+
+#### 單雙｜Official / Shadow 分開
+- Official `Parity_Selected`：**PASS 0注**，正式投注命中率分母不增加。
+- Shadow R1 圖盧茲 vs 史特拉斯堡 → 雙：✅
+- Shadow R2 昂熱 vs 尼斯 → 雙：✅
+- Shadow R3 布雷斯特 vs 里昂 → 雙：✅
+- 本輪 Shadow：**3/3 = 100%**。
+- Shadow 連續追蹤累計：**R1 3/6=50.0%；R2 4/6=66.7%；R3 2/2=100%；R1+R2 7/12=58.3%；R1+R2+R3（自GW9起）5/6=83.3%**。
+- Research `LIGUE1-PARITY-V3-SELECTOR` 與 XUAN：未升正式，不混入 Official。
+
+### 版本與市場移動
+
+- 本輪只存在正式 `MARKETPROXY` Record；未發現獨立 PRE-KICK / LIVE Record。
+- 因此 OPEN→PRE-KICK Confirm / Against / Strong / Line Move：**NOT_AVAILABLE / 不結算**。
+- 禁止用賽後可見終盤回填或推測成 PRE-KICK。
+
+**SETTLEMENT_COMPLETE**
+
+---
+
+## POSTMATCH_REVIEW｜LIGUE1-2026-27-GW10｜2026-11-09
+
+- 基準：只檢討已封存預測與實際賽果，不回改 GW10 原 Record；任何研究修正只允許自 GW11 之後開始。
+
+### 1X2
+- **KEEP**：`1X2-Blend V0.1` 繼續作正式 control。GW9+GW10 全輪合計 11/18=61.1%，R1/R2/R3 兩輪合計 5/6=83.3%，目前精選層仍優於全輪。
+- **WATCH**：GW10 四場錯誤集中在中等信心／結構不乾淨場：雷恩主勝、摩納哥客勝、里昂客勝、朗斯主勝；其中 R2 摩納哥被 1-1 和局擊中，顯示中段熱門與和局風險仍需監控。
+- **TEST**：研究線測試 `1X2-BLEND-DRAWRISK-META`，僅評估 R2/R3 是否應在高和局概率、主客分差不足時降級或 PASS；不得用 GW10 結果回頭調 V0.1。
+
+### O/U2.5
+- **KEEP**：Formal sparse selector 的 PASS 機制。GW10 無正式 trigger，事後全輪僅 4/9，證明沒有為湊 R1/R2/R3 而把 Relative 排名冒充高命中正式精選是合理的。
+- **WATCH**：大球底層本輪 8/9 場偏大但實際只有 4 場大球，尤其 PSG–特魯瓦 1-0、勒芒–摩納哥 1-1、布雷斯特–里昂 2-0、昂熱–尼斯 0-2 都落入低比分／2球區。
+- **TEST**：建立 `LIGUE1-OU-LOW-SCORE-GUARD-TEST`，只在 Research 檢驗近期低比分環境、強熱門單邊進球與 1-1/2-0 聚集是否能改善出手 selector；不直接翻正式 O/U 方向。
+
+### 單雙
+- **KEEP**：Official `Parity_Selected` 稀疏 selector 與 PASS 規則不變。雖 GW10 底層 8/9、Shadow R1/R2/R3 3/3，但 Forced/Shadow selector 在 GW5–GW9 的前推表現不足，單輪成功不能推翻既有 Critical Audit。
+- **WATCH**：GW9 底層 2/9、GW10 8/9，兩輪劇烈擺動，顯示 parity direction/regime 仍高度不穩定，不能把 GW10 當成永久 regime 轉換證據。
+- **TEST**：`LIGUE1-PARITY-V3-SELECTOR` 繼續以 external live-forward 方式測試組件一致性、快速 league regime、drawp/balance/AH/Poisson/team parity form 的 meta-selector；GW10 只新增一輪前推樣本，不改參數。
+- **REJECT**：因 GW10 Shadow 3/3 就把 Forced R1/R2/R3 升回正式投注 selector。
+
+### R1/R2/R3 排序品質
+- 1X2：R1✅ / R2❌ / R3✅，排序品質 **WATCH**；最高信心 R1 有效，但 R2 未能避開和局。
+- O/U Relative：R1❌ / R2✅ / R3✅，`abs/score最高=最可靠` 本輪未成立，**WATCH**；Formal PASS **KEEP**。
+- 單雙 Shadow：R1✅ / R2✅ / R3✅，本輪排序結果佳但只屬 Shadow，**WATCH / TEST**，不得 PROMOTE。
+
+### PASS / SKEW / 市場變化
+- PASS：O/U Formal PASS 與單雙 Official PASS 均 **KEEP**；PASS 不計命中率。
+- SKEW：賽前底層 3單/6雙，未達 >70% 門檻；實際 4單/5雙，`PARITY_SKEW_ALERT=FALSE` 合理，**KEEP**。
+- OPEN→PRE-KICK：本輪沒有獨立 PRE-KICK Record，故 **NOT_AVAILABLE**；**REJECT** 任何賽後補造市場移動結論。
+
+### 跨輪判讀
+- 1X2：兩輪精選 5/6，暫時正向但樣本仍小 → **WATCH**，不 PROMOTE 新版本。
+- O/U：GW9 5/9、GW10 4/9，兩輪全輪 9/18=50.0% → 底層需 **TEST**，Formal sparse/PASS **KEEP**。
+- 單雙：GW9 2/9、GW10 8/9 → 明顯高 variance / regime instability；**TEST** selector，不修改正式 control。
+
+### Review 決策
+- **KEEP**：現行正式模型身份、Official/Shadow 分離、稀疏 selector、PASS、SKEW 規則。
+- **WATCH**：1X2 中段熱門＋和局風險；O/U 低比分聚集；parity 兩輪劇烈擺動。
+- **TEST**：1X2 DrawRisk meta、O/U Low-Score Guard、Parity V3 external-forward。
+- **PROMOTE**：NONE。
+- **REJECT**：賽後回填 PRE-KICK；因單輪 8/9 或 Shadow 3/3 直接升級 parity；用結果回改 GW10。
+
+**POSTMATCH_REVIEW_COMPLETE**
+
+---
+
+## RESEARCH_CHANGELOG｜LIGUE1-GW10-POSTMATCH｜2026-11-09
+
+- `1X2-BLEND-DRAWRISK-META`：**TEST**。只作 R2/R3 降級/PASS 研究，不翻方向；需新輪 strict-forward 驗證後才可評估升級。
+- `LIGUE1-OU-LOW-SCORE-GUARD-TEST`：**TEST**。只研究是否值得出手，不以 GW10 結果回訓正式 R80 V2.1。
+- `LIGUE1-PARITY-V3-SELECTOR`：**TEST / CONTINUE**。GW10 記為新 external live-forward 樣本；參數與歷史結果不回改。
+- Official model change：**NONE**；沒有任何 PROMOTED 規則。
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-RANK-GUARD-V1｜2026-11-09
+
+**Status:** `TEST_ONLY / NEXT_ROUND_FORWARD_ONLY / NOT_PROMOTED`
+
+### 目的
+只修正義甲單雙的 **selector / ranking gate**，不修改底層單雙方向模型、不修改 WF6 凍結規則、不改 Adaptive R90 原始方向。
+
+### 正式模型保持不變
+- Official base：`Serie A Xuan-Odds V4 / WF6（3,1,2,8,6,4） + Adaptive R90 fallback`
+- 本研究層只決定某場是否有資格進 **R1 / R2 / R3**
+- 全輪10場單雙方向照舊輸出；研究 gate 不翻方向
+
+### Guard V1 入選規則
+- 有正式 WF6 trigger：直接進候選池；多個 WF6 trigger 同向共振優先級最高。
+- 無 WF6 trigger 時，Adaptive R90 fallback 想進 R1/R2，至少要有 **2 個獨立 parity 訊號同向**。
+- 獨立 parity 訊號可包含：主隊近5場、客隊近5場、主隊主場、客隊客場、Adaptive R90 selector/Q、合法事前 Xuan/WF6 confirm。
+- O/U2.5 **不能**單獨算作 parity 主訊號；`Under >=55%` 不可單獨把「雙」升成 R1/R2。
+- 若 parity probability / selector margin `<=52.5%` 且沒有 regime 共振，不得進 R1/R2；只可 R3 候補或 PASS。
+
+### R1 / R2 / R3 分層
+- **R1**：WF6 強觸發，或 >=3 個獨立 parity 訊號同向。
+- **R2**：>=2 個獨立 parity 訊號同向，且無重大衝突。
+- **R3**：1 個強訊號 + 1 個弱確認可候補，但明確低於 R1/R2。
+- 不再為了湊滿三場強行塞 R3；不足條件允許 `PASS`。
+
+### Concentration Gate
+若 R1/R2/R3 全部同方向：
+- 啟動 `PARITY_RANK_CONCENTRATION_CHECK`
+- 三場主要依據不得只是同一種 fallback 特徵。
+- 若高度同質：保留最強 R1；R2/R3 降級或 PASS。
+- 不反向下注，只降低排序信心與入選數量。
+
+### Conflict Gate
+以下任一情況禁止升 R1：
+- 主客近期 parity 結構明顯衝突
+- R90 與主/客場 parity 明顯反向
+- MARKETPROXY → PRE-KICK >=3pp Against，但沒有其他強共振
+- 主要理由只有 O/U
+
+### 嚴格前推比較
+下一輪起同時保存：
+- `OFFICIAL_R1/R2/R3`
+- `GUARD_V1_R1/R2/R3`
+- `OFFICIAL_R1+R2`
+- `GUARD_V1_R1+R2`
+- `OFFICIAL_R1+R2+R3`
+- `GUARD_V1_R1+R2+R3`
+- PASS 次數 / 入選場數
+- WF6-trigger / fallback / correction-overlay 分層績效
+
+### Promotion 條件
+- 不因單輪勝負 PROMOTE。
+- 至少累積多輪嚴格前推，再比較 Guard V1 是否穩定優於 Official。
+- 必須檢查是否只是靠大量 PASS 人為提高命中率。
+- 不允許回頭挑場補樣本。
+
+### 當前決策
+- `MODEL_CHANGE = NONE`
+- `RESEARCH_CHANGE = TEST`
+- `SERIEA-PARITY-RANK-GUARD-V1 = ACTIVE_TEST_FROM_NEXT_ROUND`
+- 舊輪不得重算，不得把 Guard V1 套回 GW11 當成事前規則。
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-RANK-GUARD-V1｜BACKTEST STATUS｜2026-11-09
+
+### 狀態修正
+前一筆 `ACTIVE_TEST_FROM_NEXT_ROUND` 狀態降級為：
+
+`BACKTEST_REQUIRED / NOT_ACTIVE / NOT_PROMOTED`
+
+原因：selector / ranking gate 屬於會改變 R1/R2/R3 入選集合的規則，必須先完成歷史嚴格回測，不應直接進下一輪 shadow。
+
+### 第一階段可驗證歷史證據｜既有 OOS Audit
+
+目前 Master 已有以下可追溯的義甲歷史 OOS 統計：
+
+| 條件 | 命中 | 樣本 | 勝率 |
+|---|---:|---:|---:|
+| R90 所有「雙」精選 | 104 | 195 | 53.3% |
+| R90「雙」+ P(Under2.5)>=55% | 36 | 69 | 52.2% |
+| R90「雙」+ 雙方近5場單率皆>=60% | 38 | 60 | 63.3% |
+| R90「雙」+ 雙方近5場單率皆>=60% + P(Under2.5)>=55% | 17 | 22 | 77.3% |
+
+### 初步判讀
+- `O/U-only` 不具篩選增益：53.3% → 52.2%，因此 Guard V1 的「O/U 不得單獨升級 R位」有歷史支持。
+- 加入雙方近期 parity 序列共振後：53.3% → 63.3%，有正向增益。
+- 再疊加 Under 條件後達 77.3%，但只有 22 場，屬小樣本 regime，不可直接 PROMOTE。
+- 以上只能支持 Guard V1 的部分設計理念，**不是 Guard V1 完整回測**。
+
+### 完整回測缺口
+要完整重跑 `SERIEA-PARITY-RANK-GUARD-V1`，至少需要逐場歷史資料包含：
+- 每輪原始 R90 candidate / Q / probability
+- 主隊近5場 parity tendency
+- 客隊近5場 parity tendency
+- 主隊主場 parity tendency
+- 客隊客場 parity tendency
+- WF6 trigger / rule source
+- 每輪原始 R1/R2/R3 / fallback 候選池
+- 實際單雙結果
+
+目前 Library 索引可確認 StableRouter 歷史包曾包含：
+- `data/historical_features.csv.gz`
+- `results/fixed2_history_2022_26.csv`
+- `top8_stable_rules.csv`
+- `scripts/apply_historical_router.py`
+- `dependencies/`
+
+但上述 raw artifacts 目前未以可直接讀取的獨立 Library 檔案形式出現；只有 README/摘要可檢索。因此在沒有 raw match-level rows 前，不得宣稱 Guard V1 完整歷史回測完成。
+
+### 完整回測設計｜固定，不再事後改門檻
+回測時固定使用以下 Guard V1：
+1. WF6 trigger 優先。
+2. 無 WF6 時，R1/R2 至少 2 個獨立 parity 訊號同向。
+3. R1 要求 >=3 個獨立同向訊號或 WF6 強觸發。
+4. probability / selector margin <=52.5% 且無 regime 共振，不得進 R1/R2。
+5. O/U 不算獨立主 parity 訊號。
+6. 三個 R 位同方向時啟動 Concentration Gate。
+7. 條件不足允許 PASS，不強制湊滿三場。
+8. 逐輪只用該輪之前可知資料；同輪凍結。
+
+### 回測必須輸出的比較
+- Original selector：R1、R2、R1+R2、R1+R2+R3
+- Guard V1：R1、R2、R1+R2、R1+R2+R3
+- 每季命中率
+- 全期間命中率
+- PASS 數量 / 覆蓋率
+- 每輪至少中1場比例
+- 兩場全中 / 全錯比例
+- WF6 / fallback / correction-overlay 分層績效
+- Guard 改動了哪些場、救回幾場、害掉幾場
+- 95% CI / 小樣本警告
+- 不以大量 PASS 人為美化命中率
+
+### 決策
+- `MODEL_CHANGE = NONE`
+- `GUARD_V1 = BACKTEST_REQUIRED`
+- `NEXT_ROUND_SHADOW = BLOCKED_UNTIL_BACKTEST`
+- `PROMOTE = NONE`
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-SELECTOR-RETHINK｜2026-11-09
+
+### 核心結論
+
+`SERIEA-PARITY-RANK-GUARD-V1` 目前 **沒有被證明有效**。它只保留為待測假說，不進下一輪 shadow，更不取代正式 selector。
+
+### 已驗證為「沒有足夠幫助」的路線
+
+#### 1. StableRouter / 歷史漂亮規則
+- 全歷史事後選規則：195/304 = 64.1%，屬探索性結果。
+- 嚴格 expanding chronological：
+  - 2023-24：36/76 = 47.4%
+  - 2024-25：46/76 = 60.5%
+  - 2025-26：42/76 = 55.3%
+  - 合計：124/228 = **54.4%**
+- 判定：`REJECT_AS_PRIMARY_IMPROVEMENT_PATH`。不可再以事後漂亮規則作 R1/R2 改善主線。
+
+#### 2. XUAN_PROXY 直接改選 R1
+- Serie A 2023-24～2025-26：
+  - BASE：59/114 = 51.8%
+  - XUAN_PROXY：61/114 = 53.5%
+  - Native R1：60/114 = 52.6%
+- 只有 +2 場淨改善，幅度太小。
+- 判定：`REJECT_AS_STANDALONE_RERANKER`。
+
+### 目前仍值得繼續驗證的訊號
+
+#### A. CONFIRM / AGAINST 分離
+- CONFIRM：33/53 = **62.3%**
+- AGAINST：28/61 = **45.9%**
+- 分離：**+16.4pp**
+- PASS shadow（只留 CONFIRM）：覆蓋率 46.5%，命中 62.3%
+- 限制：2024-25 CONFIRM 只有 52.9%，存在 regime drift；不可直接 PROMOTE。
+
+#### B. 近期 parity 共振
+- R90 所有「雙」精選：104/195 = 53.3%
+- 雙 + 雙方近5場單率皆>=60%：38/60 = **63.3%**
+- 雙 + 上述共振 + Under>=55%：17/22 = **77.3%**
+- 限制：後者樣本 n=22 太小；只能作候選 gate，不能當正式規則。
+
+### 新的改善框架｜SERIEA-PARITY-SELECTOR-V2-RESEARCH
+
+不改底層單雙方向，專注「哪些場值得進 R1/R2/R3」。
+
+固定比較四條線：
+
+1. `CONTROL`
+   - 現行 Official selector / ranking
+
+2. `CONFIRM_PASS`
+   - 只在可事前判定為 CONFIRM 時保留入選
+   - AGAINST 不翻方向，只降級／PASS
+
+3. `PARITY_CONSENSUS`
+   - 要求至少兩個真正 parity 結構訊號同向
+   - O/U 不算主要 parity 訊號
+   - 條件不足允許 PASS
+
+4. `HYBRID_CONFIRM_CONSENSUS`
+   - CONFIRM + parity consensus 同時成立才升 R1/R2
+   - 用來測較低覆蓋率是否換來真正穩定提升
+
+### 回測／驗證規格
+
+必須採 expanding chronological / walk-forward：
+- 每一季只用之前賽季決定 gate
+- 同輪凍結
+- 不用 closing odds
+- 不用賽後資料
+- 不因目標季結果重新調門檻
+
+每條線固定輸出：
+- R1
+- R2
+- R1+R2
+- R1+R2+R3
+- 覆蓋率
+- PASS 次數
+- 每輪至少中1場
+- 兩場全中
+- 兩場全錯
+- 每季結果
+- 合計結果
+- 救回 / 害掉
+- WF6 / fallback 分層
+
+### 驗收原則
+
+不以「單一總勝率最高」決定升級。至少要同時滿足：
+- 相對 CONTROL 有可重複 uplift
+- 最近兩個獨立驗證季不能只靠單季爆發
+- 不能靠把大量場次 PASS 掉來人工美化
+- R1/R2 提升要比 R3 更優先
+- 若 uplift 小於約 3pp 或跨季不穩定，視為沒有實質改善
+- 若某方案在一季明顯低於 50%，直接列高風險，不 PROMOTE
+
+### 當前狀態
+
+- `GUARD_V1 = NOT_VALIDATED`
+- `STABLEROUTER = REJECT_AS_PRIMARY_PATH`
+- `XUAN_PROXY_RERANK = REJECT_AS_STANDALONE`
+- `SERIEA-PARITY-SELECTOR-V2-RESEARCH = BACKTEST_REQUIRED`
+- `MODEL_CHANGE = NONE`
+- `PROMOTE = NONE`
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-SELECTOR-V2｜PHASE2｜2026-11-09
+
+### 研究目的
+繼續改善義甲單雙 R1/R2 selector / ranking；正式底層方向模型不變。本階段專門檢查「歷史規則準度是否能泛化」以及 Xuan/CONFIRM 是否可作穩定 gate。
+
+### 原始資料恢復
+已找回 `seriea_xuan_odds_rule_universe.csv`，共 **45,128 條** Xuan × market regime 規則，含 2021-22 至 2025-26 各季樣本數與命中率；另找到 `seriea_xuan_odds_stable_2d_full.csv` 的穩定規則摘要。
+
+### A. 歷史規則準度 → 下一季預測力
+在規則至少有合理歷史樣本的條件下，前季 pooled accuracy 與下一季 accuracy 的 Spearman 相關：
+- 2023-24：**+0.126**
+- 2024-25：**-0.071**
+- 2025-26：**+0.001**
+
+判讀：歷史規則排名對未來季幾乎沒有穩定排序能力。不能再以「過去命中率最高」直接作下一季 R1/R2 ranking。
+
+### B. 固定開發期 → 留兩季驗證
+固定用 2021-22～2023-24 選規則，再完全不調參驗證 2024-25、2025-26。
+
+代表性門檻：
+- 每個開發季至少 5 場
+- 開發期 pooled accuracy >=60%
+- 開發期最差季 >=55%
+- 開發期總樣本 >=30
+
+共選 459 條規則；在 holdout：
+- 2024-25：加權命中 **48.99%**
+- 2025-26：加權命中 **49.30%**
+
+收緊到 pooled 62% / 65%、每季最少 8 場等多組合理門檻，holdout 仍大致落在 **45%～51%**，沒有穩定改善。
+
+**判定：`XUAN_RULE_ACCURACY_RANKING = REJECT_AS_SELECTOR_PATH`**。
+
+### C. 五季事後穩定規則只作診斷
+45,128 條規則中，要求五季每季至少 8 場且每季命中 >=60%，事後只剩 **3 條**。
+這只能證明極少數 regime 在歷史上穩定；因為使用了全部五季答案篩選，**不得拿來當正式 selector 或回測勝率**。只能從下一季開始真正前推觀察。
+
+### D. CONFIRM / AGAINST 再驗證
+Common-Proxy 歷史：
+- CONFIRM：33/53 = **62.3%**
+- AGAINST：28/61 = **45.9%**
+
+但 221 欄 Rich Proxy：
+- CONFIRM：31/60 = **51.7%**
+- AGAINST：31/54 = **57.4%**（方向反轉）
+
+因此 `CONFIRM` 的優勢**依賴代理表示方式**，不是穩定可泛化 gate。
+
+**判定：`CONFIRM_HARD_VETO = REJECT`**；只能保留為弱確認訊號，且要先做 regime reliability 檢查。
+
+### E. 近期 parity consensus
+既有 OOS audit：
+- R90 所有「雙」：104/195 = **53.3%**
+- + 雙方近5場單率都 >=60%：38/60 = **63.3%**
+- 再 + Under>=55%：17/22 = **77.3%**
+
+統計提醒：
+- 38/60 對 53.3% baseline 的單尾 binomial p 約 **0.077**，屬值得研究但尚未達強證據。
+- 17/22 對 baseline p 約 **0.019**，但這是小樣本、且屬多條件探索，必須防 multiple-testing / selection bias，不可直接 PROMOTE。
+
+### Phase2 結論
+1. **淘汰**：用歷史 rule accuracy 直接排 R1/R2。
+2. **淘汰**：把 Xuan CONFIRM 當硬 PASS/VETO。
+3. **保留研究**：近期 parity consensus，因為它直接描述球隊進球奇偶結構，而非事後規則排名。
+4. **新方向**：建立 `SERIEA-PARITY-RELIABILITY-GATE-V1`，只用少量可前推、可解釋訊號決定「是否值得進 R位」，而不是改方向。
+
+### SERIEA-PARITY-RELIABILITY-GATE-V1｜待回測固定規格
+候選場先沿用 Official/base parity direction，再計算 reliability：
+- Base selector confidence / Q margin（若可取得）
+- 主隊近期 parity tendency
+- 客隊近期 parity tendency
+- 主隊主場 parity tendency
+- 客隊客場 parity tendency
+- 短窗 vs 長窗是否一致
+- 同方向訊號數量與衝突數量
+- PRE-KICK market move 僅作風險確認，不直接判單雙；無正式 PRE-KICK 就不使用
+- Xuan 僅可作弱 confirm/against，不得直接翻方向或硬 VETO
+
+Ranking 原則：
+- 高 reliability 才可進 R1/R2
+- 中 reliability 只可 R3
+- 低 reliability = PASS
+- 不強制每輪湊滿三場
+
+### 驗證要求
+- 先完成歷史 match-level walk-forward；若原始 candidate/Q rows 不足，標 `BACKTEST_BLOCKED`，不得用 rule-universe 摘要冒充逐場回測。
+- 至少比較 CONTROL vs RELIABILITY_GATE：R1、R2、R1+R2、R1+R2+R3、覆蓋率、PASS率、救回/害掉、每季結果。
+- 若提升 <3pp、最近兩個驗證季不一致、或只靠大幅 PASS 美化命中率 → `REJECT`。
+
+### 當前狀態
+- `MODEL_CHANGE = NONE`
+- `SERIEA-PARITY-RANK-GUARD-V1 = NOT_VALIDATED`
+- `XUAN_RULE_ACCURACY_RANKING = REJECTED`
+- `CONFIRM_HARD_VETO = REJECTED`
+- `SERIEA-PARITY-RELIABILITY-GATE-V1 = BACKTEST_REQUIRED`
+- `PROMOTE = NONE`
+
+
+---
+
+# Record｜BUNDESLIGA-2026-27-GW10-20261109-PARITY-PHASE2-SHADOW
+
+**Record ID:** `BUNDESLIGA-2026-27-GW10-20261109-PARITY-PHASE2-SHADOW`
+
+- 聯賽：Bundesliga 德甲
+- 賽季／輪次：2026–27 第10輪
+- 封存日期：2026-11-09（GMT+8）
+- 狀態：**RESEARCH_FORWARD / SHADOW / NOT_OFFICIAL**
+- Parent Official：`BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL`
+- 1X2 / O-U：沿用 Parent Official，本 Record 只重跑單雙。
+- 單雙候選：`Bundesliga Parity Repair Phase2`
+- 固定條件：R1/R2/R3 每輪必須存在；不人工平衡單雙比例。
+
+## Phase2 規則
+1. `STREAK_EXHAUSTION_RANK` 加回，但只作 R位排序層。
+2. 本輪方向引擎仍沿用 V2-RG1 凍結方向：若 `AHh >= +1.50` → 單；否則雙。
+3. tie-break 由 `abs(P_odd-0.5)` 改為方向一致信心：單看 `P_odd`；雙看 `1-P_odd`。
+4. `P_odd` 使用 Bundesliga R90-DE V1 原模型包 + 2026-27 GW1-GW9 已完賽資料 + 2026-11-09 MARKETPROXY 重建；S-XOR exact live component 缺失，因此標 `RECOVERED_V1_CONFIDENCE`，只作排序分數，不宣稱校準真概率。
+
+## 第10輪單雙重跑
+
+| 排名 | 比賽 | Phase2方向 | STREAK rank | Recovered P(單) | 方向一致信心 | 狀態 |
+|---|---|---|---|---:|---:|---|
+| **R1** | **沙爾克04 vs 史特加** | **雙** | YES | 32.9% | **67.1%** | Shadow R1 |
+| **R2** | **艾禾斯堡 vs 弗賴堡** | **雙** | YES | 40.2% | **59.8%** | Shadow R2 |
+| **R3** | **奧格斯堡 vs 美因茨** | **雙** | YES | 40.3% | **59.7%** | Shadow R3 |
+| R4 | 勒沃庫森 vs 柏德博恩 | 雙 | YES | 41.7% | 58.3% |  |
+| R5 | 法蘭克福 vs 霍芬海姆 | 雙 | YES | 42.8% | 57.2% |  |
+| R6 | 門興 vs 多特蒙德 | 雙 | YES | 46.0% | 54.0% |  |
+| R7 | 雲達不萊梅 vs 漢堡 | 雙 | YES | 48.0% | 52.0% |  |
+| R8 | 拜仁 vs 科隆 | 雙 | YES | 60.0% | 40.0% | 方向與V1恢復分數衝突，仍因streak regime排在default之前 |
+| R9 | 柏林聯 vs RB萊比錫 | 雙 | NO / default | 54.0% | 46.0% | default regime |
+
+### 本輪方向分布
+- 單：0
+- 雙：9
+- `PARITY_SKEW_ALERT = TRUE`
+- 重要：Phase2 本次**只修正 R1/R2/R3 排名**，沒有證據支持為了降低偏雙而翻方向，因此不人工改成單。
+
+## 歷史回放依據
+- 舊 RG1 R1/R2/R3：127/204 = 62.25%。
+- Phase2（streak ranking + direction-aligned confidence）：132/204 = 64.71%。
+- R1：41/68 = 60.29%；R2：47/68 = 69.12%；R3：44/68 = 64.71%。
+
+`SHADOW_ARCHIVED`
+
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-SOURCE-GATE-V1｜2026-11-09
+
+**Status:** `BACKTEST_REQUIRED / LIVE_FORWARD_AUDIT_ACTIVE / NOT_PROMOTED`
+
+### 研究結論轉向
+
+最新審計顯示，義甲單雙的主要問題不宜再只視為「selector 門檻不夠嚴」，而應優先拆成**訊號來源層**：
+
+1. `WF6 Exact Trigger`
+2. `Adaptive R90 fallback`
+3. `Correction / diagnostic overlay`
+4. `RECOVERED_COMPONENT`
+
+上述來源不得再混成同一個 R1/R2/R3 勝率。
+
+### WF6 六條凍結規則｜歷史穩定性描述
+
+固定優先順序：`3,1,2,8,6,4`。六條規則可由 `seriea_xuan_odds_stable_2d_full.csv` 對應回固定規則表。
+
+| Rule | Expert | 條件核心 | 歷史 n | 歷史命中 | 五季最低單季命中 |
+|---|---|---|---:|---:|---:|
+| 3 | Ziwei | fav_prob × entropy_ou | 62 | 41/62 = 66.1% | 60.0% |
+| 1 | Fengshui | AHh × p_ah_home | 43 | 30/43 = 69.8% | 66.7% |
+| 2 | Fengshui | p_ah_home × abs_home_away_gap | 43 | 29/43 = 67.4% | 60.0% |
+| 8 | Ziwei | AHh × abs_home_away_gap | 54 | 34/54 = 63.0% | 60.0% |
+| 6 | Plum | AHh × abs_home_away_gap | 52 | 33/52 = 63.5% | 60.0% |
+| 4 | Ziwei | entropy_ou × margin_1x2 | 54 | 35/54 = 64.8% | 60.0% |
+
+**重要限制：**
+- 這些規則是經歷史資料篩選後保留，存在 selection bias。
+- 上表只能描述歷史穩定性，不能當作盲測勝率。
+- 真正可用的證據是規則凍結後的 2026–27 live-forward。
+
+### 2026–27 Source-layer Live-Forward Audit
+
+只計能從賽前 Record 明確辨識來源的正式 R 位。
+
+#### WF6 Exact / 可辨識真觸發
+- GW6 R1 阿特蘭大–威尼斯：Rule8 + Rule6 同向共振 → ✅
+- GW8 R1 拖連奴–蒙沙：Rule2 → ✅
+- GW8 R2 熱拿亞–威尼斯：Rule2 → ✅
+- GW8 R3 科木–莎索羅：Rule6 → ✅
+
+**目前可辨識 WF6 unique picks：4/4 = 100%**
+
+#### 非 WF6：fallback / correction
+- GW6 R2 拖連奴–烏甸尼斯：Adaptive R90 fallback + 低總進球盤型 → ❌
+- GW7 R1 帕爾馬–拖連奴：Correction Regime（歷史強條件17/22）→ ❌
+- GW7 R2 蒙沙–卡利亞里：R90 Q最高 + 近期 parity 共振 → ✅
+- GW7 R3 AC米蘭–阿特蘭大：strict R90 fallback → ❌
+
+**目前可辨識 fallback/correction：1/4 = 25%**
+
+#### Recovered / 無法合法拆 Exact source
+GW11 的 `MARKETPROXY-RECOVERED` 因完整 Xuan generator 缺失，不得把 R1/R2/R3 事後歸入 WF6：
+- R1 羅馬–莎索羅 雙 → ❌
+- R2 卡利亞里–弗羅西諾內 雙 → ❌
+- R3 國際米蘭–科木 雙 → ✅
+
+**RECOVERED_COMPONENT：1/3 = 33.3%**，獨立保存，不與 WF6/fallback 合併。
+
+#### GW5
+GW5 正式 R1/R2 兩場皆命中，但目前可追溯 Master 未保存兩場各自確切 source-line，因此**不得事後硬分配到 WF6 或 fallback**。
+
+### 初步統計
+
+WF6 4/4 vs 可辨識 fallback/correction 1/4：
+- 差距：+75pp
+- Fisher exact 單尾 p ≈ 0.0714
+- 樣本太小，**不足以 PROMOTE**，但已構成值得持續驗證的 source-layer 訊號。
+
+### 對舊 correction 的判定
+
+GW7 的 `17/22 = 77.3%` 歷史強條件在第一次 live-forward R1 即失敗。
+因此：
+- 不再把該 77.3% 當作可直接升 R1 的 confidence proxy。
+- `O/U + recent parity` correction 不再擁有高於 WF6 的優先級。
+- correction 只能保留為研究特徵，不可單獨升級正式 R位。
+
+### 新研究架構｜SOURCE GATE
+
+從下一個可執行回測起固定比較：
+
+1. `CONTROL`
+   - 現有 Official selector。
+
+2. `WF6_FIRST`
+   - Exact WF6 trigger 按凍結優先順序進 R位。
+   - 沒有 Exact WF6 時仍列出 R1/R2/R3 相對候選，但標記 `LOW_CONF / FALLBACK`，不得冒充 WF6 級信心。
+
+3. `WF6_ONLY_PASS`
+   - 只有 Exact WF6 trigger 才屬可下注 R位。
+   - 不足三場時，R1/R2/R3 欄仍保留，但缺額標 `PASS`，符合固定輸出格式。
+
+4. `WF6_PLUS_RELIABILITY`
+   - WF6 優先。
+   - fallback 只有在獨立 parity reliability gate 通過後才可補入。
+
+### 回測驗收
+
+必須輸出：
+- WF6 trigger picks 的命中率與覆蓋率
+- fallback picks 的命中率與覆蓋率
+- correction picks 的命中率與覆蓋率
+- R1 / R2 / R3 分層
+- 每季結果
+- PASS 數量
+- CONTROL vs WF6_FIRST vs WF6_ONLY_PASS vs WF6_PLUS_RELIABILITY
+- 救回 / 害掉 / 都中 / 都錯
+- 不以高 PASS 率人工美化
+
+### 當前決策
+
+- `FORMAL_MODEL_CHANGE = NONE`
+- `HISTORICAL_RULE_RERANK = REJECTED`
+- `CONFIRM_HARD_VETO = REJECTED`
+- `CORRECTION_77P3_AS_R1_BOOST = REJECTED`
+- `SERIEA-PARITY-SOURCE-GATE-V1 = BACKTEST_REQUIRED`
+- `WF6_LIVE_FORWARD = ENCOURAGING_BUT_N_TOO_SMALL`
+- `PROMOTE = NONE`
+
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-SOURCE-GATE-V1｜PHASE2｜2026-11-09
+
+**Status:** `BACKTEST_REQUIRED / LIVE_FORWARD_AUDIT_ACTIVE / NOT_PROMOTED`
+
+### 1. Rule-mining 泛化檢查｜REJECT
+
+以 `seriea_xuan_odds_rule_universe.csv` 的 45,128 條規則做固定開發／驗證切分：
+
+- 開發：2021-22～2023-24
+- 驗證：2024-25～2025-26
+
+只使用開發期挑規則，不看驗證期結果。
+
+代表性門檻：
+- 開發每季最低命中 >=60%、開發樣本 >=25：438條候選，驗證加權命中 **48.4%**
+- 開發每季最低命中 >=60%、開發樣本 >=40：71條候選，驗證加權命中 **50.4%**
+- 更嚴：開發每季最低命中 >=62.5%、開發樣本 >=40：34條候選，驗證加權命中 **51.4%**
+
+結論：
+`HISTORICAL_RULE_MINING = REJECTED_AS_SELECTOR_SOURCE`
+過去看起來穩定的規則，整體不能穩定預測下一個獨立賽季。
+
+### 2. WF6 歷史漂亮數字的重新解讀
+
+固定 WF6 六條規則在完整五季的個別歷史命中約 63%～70%，但六條本身是在看過完整歷史後凍結，存在 future-selection bias。
+
+因此：
+- 2024-25 / 2025-26 的漂亮命中不能當成真正 holdout。
+- 真正有效證據仍只以 2026-27 凍結後 live-forward 為主。
+- `WF6 historical rate` 不得直接當單場 calibrated probability。
+
+### 3. 多術共振的「獨立性」問題
+
+Rule 6 與 Rule 8：
+- 使用完全相同的市場 regime：`AHh bin0 × abs_home_away_gap bin3`
+- Rule6：Plum，反指後支持 EVEN
+- Rule8：Ziwei，支持 EVEN
+
+因此 GW6「Rule8 + Rule6 同向」雖有兩個 expert，但它們由**同一市場 regime**觸發，不可視為兩個完全獨立來源。
+
+固定修正：
+- 同一 market-regime 的多 expert 同向，只計 **1 個 regime source**
+- 可另外標 expert-confirmation，但不得雙倍加權
+- 不再用「2+ expert 同向」直接產生 70%+ confidence proxy
+
+`MULTI_EXPERT_SAME_REGIME_CONFIDENCE_BOOST = REJECTED`
+
+### 4. Expert-consensus 是否能泛化
+
+使用開發期 2021-24 判定同一市場 regime 中有多少 expert 表現良好，再看 2024-26 驗證：
+
+- 同一 regime 出現更多「開發期好 expert」並沒有帶來更高驗證命中。
+- 甚至 >=5 個 expert 同向的規則集合，後兩季規則層加權命中約 **49.3%**。
+
+因此：
+`EXPERT_COUNT_AS_CONFIDENCE = REJECTED`
+
+未來 Source Gate 只計真正獨立的資料來源／regime，不計 expert 人數堆疊。
+
+### 5. WF6 內部歷史排名不應決定 R1/R2
+
+六條 WF6 的「前季歷史命中高低」對下一季沒有穩定排序力。
+將規則依過去 posterior / historical accuracy 分成高低組，後續命中沒有穩定 uplift。
+
+因此：
+- 不用 Rule1 歷史69.8% > Rule6歷史63.5% 這種方式直接排 R1/R2。
+- WF6 trigger 先視為同一 source tier；排序優先看事前 fixture-level reliability / source independence，不看歷史表面勝率。
+
+### 6. Live-forward 證據的保守估計
+
+目前可明確辨識：
+- WF6：4/4
+- fallback/correction：1/4
+
+Fisher exact 單尾約 `p=0.071`。
+
+Bayesian sensitivity：
+- flat prior 下，`P(WF6 > fallback)` 約 **97.6%**
+- 若以 Adaptive 基準 58.9%、prior strength=20 做保守先驗，`P(WF6 > fallback)` 約 **81.6%**
+
+判定：
+`WF6_SOURCE_EDGE = ENCOURAGING / NOT_PROVEN`
+
+4/4 不足以 PROMOTE，也不足以把 fallback 全部 PASS。
+
+### 7. Source Gate V1 修正版
+
+後續研究固定為：
+
+1. `WF6_INDEPENDENT_SOURCE`
+   - Exact WF6 trigger 優先。
+   - 相同 market-regime 多 expert 不重複計權。
+
+2. `WF6_CONCENTRATION_CHECK`
+   - 同一 Rule / 同一 regime 同輪若佔多個 R位，標記 concentration。
+   - 不自動刪除，但不得把「兩場同Rule」誤解為兩個獨立高信心證據。
+
+3. `FALLBACK_LOW_CONF`
+   - R90 fallback 可以保留 R1/R2/R3 相對排名。
+   - 不得再用歷史 correction 把 51%～54% 原始分數包裝成70%級信心。
+
+4. `RELIABILITY_CHALLENGER`
+   - fallback 另做 reliability gate 研究。
+   - 在有完整 match-level raw rows 前，不宣稱已完成回測。
+
+### 8. 當前決策
+
+- `FORMAL_MODEL_CHANGE = NONE`
+- `WF6_FIRST = KEEP_AS_RESEARCH_HYPOTHESIS`
+- `WF6_ONLY_PASS = NOT_PROMOTED`
+- `MULTI_EXPERT_SAME_REGIME_BOOST = REJECTED`
+- `HISTORICAL_RULE_RERANK = REJECTED`
+- `EXPERT_COUNT_CONFIDENCE = REJECTED`
+- `FALLBACK_CORRECTION_HIGH_CONF = REJECTED`
+- `SOURCE_GATE_V1 = CONTINUE_LIVE_FORWARD + BACKTEST_WHEN_MATCH_ROWS_AVAILABLE`
+- `PROMOTE = NONE`
+
+
+---
+
+## RESEARCH_CHANGELOG｜SERIEA-PARITY-DIRECTION-GUARD-V1 + R90-AGREEMENT-GATE-V1｜2026-11-09
+
+**Status:** `BACKTEST_REQUIRED / NOT_ACTIVE / NOT_PROMOTED`
+
+### A. GW11 paired audit：R90 baseline vs RECOVERED official
+
+此審計使用賽前已存在的 `gw11_r90_current_proxy.csv`（2026-11-04 建立）作 R90 baseline，與 2026-11-05 正式封存的
+`SERIEA-2026-27-GW11-20261105-MARKETPROXY-RECOVERED` 比較。不是依賽果重建 baseline。
+
+#### 方向變更明細
+
+| 比賽 | 11/4 R90 baseline | 11/5 RECOVERED official | 實際 | 變更效果 |
+|---|---|---|---|---|
+| Venezia–Udinese | 單 | 雙 | 單 | **HARMED** |
+| Cagliari–Frosinone | 單 | 雙 | 單 | **HARMED** |
+| Torino–Lecce | 單 | 單 | 雙 | BOTH_MISS |
+| Parma–Bologna | 雙 | 單 | 單 | **RESCUED** |
+| Roma–Sassuolo | 單 | 雙 | 單 | **HARMED** |
+| Napoli–Lazio | 單 | 單 | 雙 | BOTH_MISS |
+| Genoa–Milan | 單 | 單 | 單 | BOTH_HIT |
+| Monza–Atalanta | 單 | 雙 | 單 | **HARMED** |
+| Inter–Como | 雙 | 雙 | 雙 | BOTH_HIT |
+| Fiorentina–Juventus | 單 | 雙 | 雙 | **RESCUED** |
+
+- RECOVERED 相對 R90 baseline 共翻向 **6/10**。
+- 6 場翻向中：**救回2、害掉4**，淨效果 **-2場**。
+- R90 baseline 全輪：**6/10 = 60%**。
+- RECOVERED official 全輪：**4/10 = 40%**。
+- 同一正式 R 位 match set 若保留 R90 原方向：
+  - R1 Roma–Sassuolo：R90 單 ✅；Official 雙 ❌
+  - R2 Cagliari–Frosinone：R90 單 ✅；Official 雙 ❌
+  - R3 Inter–Como：R90 雙 ✅；Official 雙 ✅
+  - 因此該 match set 為 **R90方向 3/3** vs **RECOVERED方向 1/3**；R1+R2 為 **2/2 vs 0/2**。
+- 此為單輪 paired audit，屬事後研究證據，不可直接 PROMOTE。
+
+### B. 候選規則｜SERIEA-PARITY-DIRECTION-GUARD-V1
+
+固定假說：
+
+1. **Adaptive R90 賽前 baseline direction 是 fallback 方向錨點。**
+2. 下列非 Exact 層只能：
+   - rerank
+   - 降級
+   - PASS / risk flag
+   - 不得翻轉 R90 direction
+3. 禁止翻向的非 Exact 層：
+   - `RECOVERED_COMPONENT`
+   - MARKETPROXY heuristic
+   - O/U diagnostic
+   - recent parity correction
+   - XUAN_PROXY / non-reproducible Xuan
+4. 只有可重現且事前凍結的 **Exact WF6 Trigger** 才可合法 override R90 direction。
+5. 若 Exact WF6 所需輸入不完整，該場不得以「模擬 WF6」翻向；只能沿用 R90 或 PASS。
+6. PRE-KICK movement 可 rerank / PASS，但 O/U 或 market move 不自動翻 Odd/Even。
+
+**目的：**避免 GW11 類型的「Recovered layer 把有用 baseline 方向大量翻掉」。
+
+### C. Q ranking audit｜GW5 + GW11 raw rows
+
+兩輪共有 20 場可讀取完整 R90 `Q / agreement / p1..p5`：
+
+- 每輪 Q Top2：**3/4 = 75%**
+- Q Rank 3–5：**4/6 = 66.7%**
+- Q Rank 6–10：**6/10 = 60%**
+- Q 對命中的排序關係只有弱正向；GW11 單輪 Q AUC = **0.50**。
+- 結論：**Q 不足以單獨作 fallback R1/R2 gate**。
+
+### D. 探索候選｜SERIEA-R90-AGREEMENT-GATE-V1
+
+在 GW5 + GW11 的同一批 20 場 exploratory sample：
+
+- `agreement >= 0.8`：**10/14 = 71.4%**
+- `Q >= 0.50`：**5/7 = 71.4%**
+- `Q >= 0.50 AND agreement >= 0.8`：**4/5 = 80.0%**
+- 每輪 `Q Top5 AND agreement >= 0.8`：**6/7 = 85.7%**
+  - GW5：4/5
+  - GW11：2/2
+
+**重要：**上述 gate 是在同一小樣本中探索得到，不能視為 OOS 勝率。
+
+固定待回測版本：
+- 只測 `per-round Q Top5 AND agreement >= 0.8`
+- 不再用 GW5/GW11 結果微調 0.8 或 Top5 門檻
+- 通過者才具 fallback R1/R2 候選資格
+- 未通過仍可輸出全輪方向，但 R位降級／PASS
+- 必須以歷史 match-level R90 raw rows 做 chronological / season holdout 驗證後才能啟用
+
+### E. 研究優先序更新
+
+1. `DIRECTION_GUARD`：先驗證「非 Exact 不翻 R90 baseline」是否能穩定避免 harm。
+2. `SOURCE_GATE`：WF6 Exact 與 fallback/recovered 分層。
+3. `AGREEMENT_GATE`：只作 fallback reliability selector。
+4. 已 REJECT：
+   - large historical rule mining 作主要 reranker
+   - Xuan proxy hard rerank
+   - CONFIRM hard veto
+   - O/U-only parity upgrade
+   - `17/22=77.3%` correction 直接升 R1
+   - 同一 market regime 的多 expert 當多個獨立證據
+
+### 當前決策
+
+- `FORMAL_MODEL_CHANGE = NONE`
+- `SERIEA-PARITY-DIRECTION-GUARD-V1 = BACKTEST_REQUIRED`
+- `SERIEA-R90-AGREEMENT-GATE-V1 = BACKTEST_REQUIRED`
+- `SERIEA-PARITY-SOURCE-GATE-V1 = BACKTEST_REQUIRED`
+- `NEXT_ROUND_OFFICIAL = UNCHANGED`
+- `PROMOTE = NONE`
+
+
+---
+
+## LaLiga GW13｜研究版賽前封存索引｜2026-11-09
+
+- Record ID：`LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY`
+- 身分：`RESEARCH_ARCHIVED / MARKETPROXY`；正式 `R90-X V3 Exact=NOT_RUN`。
+- 原始封存：`/R1_R2 Master/LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY.md`；完整10場1X2／大小2.5／單雙和研究R1-R3，方向不可事後修改。
+- **可重現研究包**：`/R1_R2 Master/LALIGA-2026-27-GW13-20261109-REPRO-PACKAGE.zip`；含 `run_gw13.py`、52筆歷史比分、10場市場輸入、逐場特徵／輸出、SHA256SUMS。ZIP SHA256 `d439a0589c4b00000ae2775d599ed1d86b4e6d310e454ed3344c6a78af659750`，已執行重播與逐檔SHA驗證。不是原版 V3 完整執行包。
+- 賽程2026-11-21～24台灣時間；賠率為2026-11-09 market/current multi-book proxy，並非原始Bet365 opening。
+- 1X2研究R位：R1 皇家馬德里主勝，R2 巴塞隆拿主勝，R3 畢爾包主勝。
+- O/U2.5研究R位：R1 巴塞隆拿大，R2 皇家馬德里大，R3 桑坦德－皇家蘇斯達大。
+- 單雙Research方向：10單0雙，`PARITY_SKEW_ALERT=TRUE`；研究R1 桑坦德－皇家蘇斯達單、R2 艾拉維斯－拉科魯尼亞單、R3 皇家馬德里－切爾達單；**Official parity PASS 0場**，不進正式勝率。
+- GW12 Postmatch Review 兩個 TEST 只作影子標籤，不改現有研究基準預測。
+- **Dashboard 更新明確延後**：`DASHBOARD_SYNC=DEFERRED_BY_USER`，不推GitHub、不改網站、不設 `DASHBOARD_SYNC_PENDING`；之後集中同步需重新檢查資格。準備包在本次可重現ZIP中的 `DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261109.json`，尚未顯示為已結算。
+- `LATEST_RESEARCH[LaLiga]` 追加至 `LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY`；`LATEST_BY_LEAGUE[LaLiga]`（正式）與 `LATEST_OFFICIAL` **維持不變**。
+- OPEN/PREKICK、Result Addendum、Postmatch Review：各自PENDING；正式／Research／Shadow績效獨立，PASS排除分母。
+
+---
+
+# Record｜LIGUE1-2026-27-GW11-20261109-MARKETPROXY
+
+**Record ID:** `LIGUE1-2026-27-GW11-20261109-MARKETPROXY`
+
+- 聯賽：法國甲組聯賽 Ligue 1
+- 賽季／輪次：2026–27 第11輪
+- 封存日期：2026-11-09（Asia/Taipei）
+- 狀態：**正式賽前 MARKETPROXY 前推封存／等待 PRE-KICK 與賽果**
+- 同輪凍結：GW11 所有場次只使用 GW1–GW10 已完成資料，不使用 GW11 任何先開賽結果。
+- 市場身份：Pinnacle / 公開市場 early-current proxy；不是可證明的 Bet365 first-tick opening。
+- 網站狀態：**本輪依使用者指示不更新 Football Prediction Dashboard / GitHub；只建立 Master 與 Dashboard Update Package，待後續集中同步。**
+
+## 模型身份
+
+- O/U2.5＋單雙：`法甲專用 R80 V2.1 DrawGuard` 凍結模型。
+- 1X2：`1X2-Blend V0.1`（70% 去水市場＋30% Dixon-Coles 結構）；只作排序分數，不是校準真實概率。
+- 單雙正式投注層：2026-11-04 Critical Audit 後凍結 `Parity_Selected` sparse selector。
+- `LIGUE1-PARITY-V3-SELECTOR`、`1X2-BLEND-DRAWRISK-META`、`LIGUE1-OU-LOW-SCORE-GUARD-TEST` 均維持 **Research / TEST only**，本輪不得影響正式方向或順位。
+
+## GW11 完整正式方向
+
+| 比賽（台北時間） | 1X2 | O/U2.5 | 單雙底層 | 診斷 |
+|---|---|---|---|---|
+| 特魯瓦 vs 勒阿弗爾（11/21 03:45） | **特魯瓦主勝** | **大2.5** | **雙** | 正常；DC mode 1-1 |
+| 尼斯 vs PSG（11/22 00:15） | **PSG客勝 R2** | **大2.5 Relative R1** | **單** | 正常 |
+| 摩納哥 vs 歐塞爾（11/22 03:45） | **摩納哥主勝 R3** | **大2.5 Relative R2** | **單** | 正常 |
+| 朗斯 vs 圖盧茲（11/22 03:45） | **朗斯主勝** | **大2.5** | **雙** | 正常；DC mode 1-1 |
+| 里爾 vs 里昂（11/22 03:45） | **里爾主勝** | **小2.5** | **雙 Shadow R1** | **DrawRisk**；DC draw 30.14%，1-1 13.96% |
+| 史特拉斯堡 vs 布雷斯特（11/22 03:45） | **史特拉斯堡主勝** | **大2.5 Relative R3** | **單 Shadow R3** | HighEntropy |
+| 巴黎FC vs 昂熱（11/22 22:00） | **巴黎FC主勝 R1** | **大2.5** | **單 Shadow R2** | 正常 |
+| 洛里昂 vs 雷恩（11/23 00:15） | **雷恩客勝** | **大2.5** | **雙** | 正常；DC mode 1-1 |
+| 馬賽 vs 勒芒（11/23 03:45） | **馬賽主勝** | **大2.5** | **單** | 正常 |
+
+## 三市場 R1 / R2 / R3
+
+### 1X2｜Official
+
+- **R1：巴黎FC vs 昂熱 → 巴黎FC主勝**｜Blend top **66.05%**｜margin **45.83pp**。
+- **R2：尼斯 vs PSG → PSG客勝**｜Blend top **64.60%**｜margin **45.38pp**。
+- **R3：摩納哥 vs 歐塞爾 → 摩納哥主勝**｜Blend top **64.26%**｜margin **44.33pp**。
+
+GW11 封存前嚴格前推：R1 **2/2=100%**；R2 **1/2=50%**；R3 **2/2=100%**；R1+R2 **3/4=75%**；R1+R2+R3 **5/6=83.3%**。
+
+### O/U2.5｜Relative R1/R2/R3；Formal sparse selector 另列
+
+- **Relative R1：尼斯 vs PSG → 大2.5**｜P(Over) **66.40%**。
+- **Relative R2：摩納哥 vs 歐塞爾 → 大2.5**｜P(Over) **64.15%**。
+- **Relative R3：史特拉斯堡 vs 布雷斯特 → 大2.5**｜P(Over) **59.54%**。
+- **Formal 80%-tier sparse selector：PASS（0 triggers）**。
+
+GW11 封存前 Relative 嚴格前推：R1 **4/6=66.7%**；R2 **6/6=100%**；R3 **1/2=50%**；R1+R2 **10/12=83.3%**；R1+R2+R3（自GW9）**4/6=66.7%**。
+
+### 單雙｜Shadow R1/R2/R3；Official sparse selector 另列
+
+- **Shadow R1：里爾 vs 里昂 → 雙**｜P(單) **48.91%**。
+- **Shadow R2：巴黎FC vs 昂熱 → 單**｜P(單) **50.43%**。
+- **Shadow R3：史特拉斯堡 vs 布雷斯特 → 單**｜P(單) **50.15%**。
+- **Official `Parity_Selected`：PASS（0 triggers）**。
+- 全輪底層方向：**單5／雙4**，`PARITY_SKEW_ALERT = FALSE`。
+
+GW11 封存前 Shadow 嚴格前推：R1 **3/6=50%**；R2 **4/6=66.7%**；R3 **2/2=100%**；R1+R2 **7/12=58.3%**；R1+R2+R3（自GW9）**5/6=83.3%**。以上只屬 Shadow continuity，不得與 Official selector 混算。
+
+## Draw Focus / 0-0 / 1-1 診斷
+
+- **里爾 vs 里昂**：DC draw **30.14%**，1-1 **13.96%**，0-0 **11.48%**，正式標 `DrawRisk`；不覆寫 1X2 的里爾主勝。
+- **特魯瓦 vs 勒阿弗爾**：DC draw **28.02%**，1-1 **13.22%**，0-0 **9.64%**；只作和局／比分研究。
+
+## 市場資料限制
+
+- 本輪市場輸入採 2026-11-09 可取得之 Pinnacle / 公開 early-current proxy；多數賽事可同時保存 opening proxy 與 current snapshot。
+- 馬賽 vs 勒芒的 current 市場可核實，但本次來源未完整返回相同格式的 opening 1X2 / O-U2.5 數值，該欄明確保留 `MISSING`，不得自行補造。
+- OPEN→CURRENT 只是 early movement；正式 PRE-KICK 仍須在開賽前約60分鐘另存快照。
+- 若 PRE-KICK 改變方向或 R1/R2/R3 排序，只能新增 `LIGUE1-2026-27-GW11-...-PREKICK`，不得覆寫本 Record。
+
+## 資料完整性
+
+- 使用 GW1–GW10 完整已知賽果建立 GW11 特徵。
+- 未使用 GW11 未來賽果。
+- 正式模型仍是 GW10 結算後的 control；Postmatch Review 新增 TEST 項目未升級。
+- O/U 本輪底層為 **8大1小**，但 Formal sparse selector 仍 0 triggers，因此不把相對 R 位冒充高信心正式 selector。
+- 單雙底層 **5單4雙**，未觸發 skew。
+
+## 下一步
+
+- PRE-KICK：開賽前約60分鐘保存同源盤口快照；若正式方向或 R 位改變，建立新 Record。
+- 賽後：依三階段流程結算 1X2 / O-U2.5 / 單雙與三市場 R1/R2/R3；Official / Relative / Shadow 分開。
+- Dashboard / GitHub：**本輪暫不同步；待使用者後續集中更新。**
+
+---
+## Record｜SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH
+**Record ID:** `SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH`
+
+- 聯賽：Serie A
+- 賽季／輪次：2026–27 第12輪
+- 比賽日期：2026-11-21 ～ 2026-11-23（義大利時間）
+- 封存日期：2026-11-09（GMT+8）
+- 狀態：**PREMATCH RESEARCH / EARLY MARKETPROXY / DASHBOARD_SYNC_PENDING**
+- 網站：**NOT_UPDATED**
+- GitHub：**NOT_TOUCHED**
+- 賽程來源：Lega Serie A Matchday 12。
+- 市場資料：2026-11-09 可核實多莊 early/current odds comparison；**不是 Bet365 official first-tick opening**，因此統一標 `MARKETPROXY`。
+- 正式模型身份仍維持：`Serie A Xuan-Odds V4 / WF6（3,1,2,8,6,4） + Adaptive R90 fallback`。
+- 誠信限制：GW12 Exact WF6 / Exact R90 生成器尚未恢復，因此**本筆不得宣稱是 Exact 模型重跑**。1X2／O-U2.5 為 early market proxy track；單雙為 `PARITY_RESEARCH_TRACK`，使用已凍結的近期 parity consensus 規則，不覆蓋 Official 模型。
+- 研究保護：`DIRECTION_GUARD / SOURCE_GATE / AGREEMENT_GATE` 均仍為 `BACKTEST_REQUIRED / NOT_PROMOTED`，本筆不把它們當正式升級。
+
+### GW12 完整預測
+
+| 比賽 | 1X2 | O/U2.5 | 單雙 Research | 備註 |
+|---|---|---|---|---|
+| Como vs Cagliari | **HOME** | **OVER 2.5** | **EVEN** |  |
+| Lazio vs Lecce | **HOME** | **OVER 2.5** | **EVEN** |  |
+| Parma vs Roma | **AWAY** | **OVER 2.5** | **ODD** |  |
+| Napoli vs Torino | **HOME** | **OVER 2.5** | **EVEN** |  |
+| Juventus vs Venezia | **HOME** | **OVER 2.5** | **EVEN** |  |
+| Bologna vs Udinese | **HOME** | **UNDER 2.5** | **ODD** |  |
+| Sassuolo vs Genoa | **DRAW** | **UNDER 2.5** | **EVEN** | 1X2高熵／和局風險高 |
+| Milan vs Frosinone | **HOME** | **OVER 2.5** | **EVEN** |  |
+| Atalanta vs Inter | **AWAY** | **OVER 2.5** | **EVEN** |  |
+| Monza vs Fiorentina | **AWAY** | **OVER 2.5** | **EVEN** | 單雙近期結構互相抵消，LOW_CONF |
+
+### 1X2 R1 / R2 / R3
+- **R1：Parma vs Roma → Roma AWAY**｜market fair proxy 約 71.8%
+- **R2：Como vs Cagliari → Como HOME**｜market fair proxy 約 71.6%
+- **R3：Juventus vs Venezia → Juventus HOME**｜market fair proxy 約 70.4%
+
+### O/U2.5 R1 / R2 / R3
+- **R1：Milan vs Frosinone → OVER 2.5**｜market fair proxy 約 70.0%
+- **R2：Atalanta vs Inter → OVER 2.5**｜market fair proxy 約 67.1%
+- **R3：Como vs Cagliari → OVER 2.5**｜market fair proxy 約 60.5%
+
+### 單雙 Research R1 / R2 / R3
+- **R1：Milan vs Frosinone → EVEN**｜近5/近3 parity consensus odd-score=0.310；距50/50=0.190
+- **R2：Napoli vs Torino → EVEN**｜近5/近3 parity consensus odd-score=0.330；距50/50=0.170
+- **R3：Como vs Cagliari → EVEN**｜近5/近3 parity consensus odd-score=0.360；距50/50=0.140
+
+> 單雙 R位只屬 `RESEARCH`，不得混入 Official 命中率；Exact WF6/R90 未重跑。
+
+### Early market proxy（2026-11-09）
+
+| 比賽 | 1X2 | O2.5 | U2.5 |
+|---|---|---:|---:|
+| Como vs Cagliari | 1.32 / 5.31 / 8.88 | 1.55 | 2.37 |
+| Lazio vs Lecce | 1.36 / 5.05 / 8.31 | 1.58 | 2.35 |
+| Parma vs Roma | 9.03 / 5.36 / 1.32 | 1.56 | 2.38 |
+| Napoli vs Torino | 1.47 / 4.48 / 6.50 | 1.69 | 2.15 |
+| Juventus vs Venezia | 1.34 / 5.11 / 8.44 | 1.62 | 2.29 |
+| Bologna vs Udinese | 1.73 / 3.74 / 4.79 | 1.90 | 1.89 |
+| Sassuolo vs Genoa | 2.38 / 3.38 / 2.92 | 1.93 | 1.88 |
+| Milan vs Frosinone | 1.55 / 4.66 / 5.24 | 1.34 | 3.12 |
+| Atalanta vs Inter | 4.68 / 4.43 / 1.63 | 1.40 | 2.85 |
+| Monza vs Fiorentina | 3.39 / 3.73 / 2.03 | 1.60 | 2.30 |
+
+### 單雙 Research 固定規則
+- 只用已完賽 GW7–GW11 的賽前可得歷史結果計算每隊近5場與近3場總進球單雙。
+- fixture `odd_score = 0.7 × 兩隊近5場平均單率 + 0.3 × 兩隊近3場平均單率`。
+- `odd_score > 0.50 → 單`；否則 → 雙。
+- R位依 `|odd_score - 0.50|` 由大到小，僅作 Research ranking。
+- 這是固定的 GW12 research proxy，**不因賽果回調門檻**。
+- 若後續取得 Exact WF6/R90 或正式 PRE-KICK，只能建立新版本，不得覆蓋本筆。
+
+### 風控
+- 1X2：Sassuolo–Genoa 為高熵場，方向暫記 DRAW；不列 R位。
+- O/U：Bologna–Udinese 與 Sassuolo–Genoa 接近五五，不列 R位。
+- 單雙：Monza–Fiorentina 近5/近3結構完全互相抵消，標 `LOW_CONF`。
+- PRE-KICK：之後若同源去水機率方向變化 >=3pp，另建 Market Confirm / Against；>=5pp Strong；不得覆寫本筆。
+
+`PREMATCH_RESEARCH_ARCHIVED`
+`DASHBOARD_SYNC_PENDING`
+
+
+---
+
+## Research Policy Addendum｜EPL 單雙雙軌 Official vs R90 Recovery Shadow｜2026-11-09
+
+**Policy ID**：`EPL-PARITY-2TRACK-20261109`。自英超 2026–27 GW11 開始，每輪單雙固定有 **兩條互不覆蓋的模型線**：
+
+- **A｜OFFICIAL**：現有英超正式模型及原始賽前封存；保留原方向、R1/R2/R3、PASS、OPEN/PRE-KICK 與結果，不重跑不改寫。
+- **B｜R90_RECOVERY_SHADOW**：從舊 R90 架構研究恢復的獨立 Shadow。**原始英超 Exact 權重尚缺，尚未完成新的可執行模型與新輪次賽前封存；目前 `NOT_RUN`。** 不得借用歷史 R90 73.7% 當作 Shadow 預測命中率。
+
+兩版各自應輸出全輪10場方向（可標 PASS），各自保存 R1 / R2 / R3、模型版本、來源 SHA256、賽前 cutoff 與最早開賽時間；賽後分別核對全輪與 R1/R2/R3、R1+R2、R1+R2+R3，PASS 不計。Official / Shadow 統計完全隔離；只在同場、相同賽前條件並且兩邊都有效凍結時才做成對比較。**禁止事後倒填 Shadow**、不得把既有 GW6–10 補成 Shadow 盲測。升級需要至少 50–100 筆新輪次凍結預測的真實前推證據。
+
+Dashboard 規格：`data/epl_parity_dual_track.json`；完整協議：`research/EPL_Parity_Dual_Track_Policy_20261109.md`。此 Addendum 僅補充英超單雙雙軌運作規則，所有既有 Official / Other leagues Record 均不變。
+
+`EPL_PARITY_DUAL_POLICY_ACTIVE / SHADOW_NOT_RUN`
+
+---
+
+## Record｜EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED
+
+**市場身份：** 正式賽前 `MARKETPROXY / RECOVERED_COMPONENT`；非原 R90 Exact；與最近 EPL GW10 control 類別一致。
+**開賽首場：** 2026-11-21T12:30:00+00:00；**賽前快照 cutoff：** 2026-11-09T12:28:43.958100+00:00。
+**封存 SHA256：** `251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada`。
+**上輪帶入：** EPL 單雙正式 R1 5/9（55.6%）、R2 6/9（66.7%）、R1+R2 11/18（61.1%）、R3 2/3（66.7%）。均為歷史前推而非本輪真實機率。
+**市場：** Bet365 first opening tick `MISSING`；AH `MISSING`；PRE-KICK `PENDING`。可用多莊 OPENPROXY 1X2、O/U，已保存完整快照。
+**封存與網站：** `LIBRARY_ONLY / DASHBOARD_SYNC_DEFERRED`。
+
+### 正式三市場與 R 位
+
+| 比賽／台灣時間 | 1X2 | O/U2.5 | 單雙 Official |
+|---|---|---|---|
+| 曼城 vs 富咸（11/21 20:30） | 主勝 R1 | 大 R2 | 雙  |
+| 般尼茅夫 vs 諾定咸森林（11/21 23:00） | 主勝  | 大  | 雙  |
+| 阿士東維拉 vs 新特蘭（11/21 23:00） | 主勝  | 大  | 單  |
+| 車路士 vs 列斯聯（11/21 23:00） | 主勝  | 大  | 單 R2 |
+| 高雲地利 vs 水晶宮（11/21 23:00） | 主勝  | 大 R1 | 雙  |
+| 熱刺 vs 葉士域治（11/21 23:00） | 主勝 R3 | 大  | 單 R3 |
+| 紐卡素 vs 阿仙奴（11/22 01:30） | 客勝  | 大  | 單  |
+| 侯城 vs 白禮頓（11/22 22:00） | 客勝 R2 | 大  | 雙  |
+| 利物浦 vs 曼聯（11/23 00:30） | 主勝  | 大 R3 | 雙  |
+| 賓福特 vs 愛華頓（11/24 04:00） | 主勝  | 小  | 雙 R1 |
+
+**A parity：單4／雙6，PARITY_SKEW_ALERT=FALSE**。R1 兩訊號共振；R2／R3 僅相對選場，信心不足不得宣稱高勝率。
+
+### 正式版模型界線
+
+現行 R90-style `RECOVERED_COMPONENT` 與前期 EPL 模型身份相同，但本輪原始 Exact 五模型權重未被恢復，因此這是賽前市場與既定結構風控的可追溯代理重算，**不是**原版 Exact。開盤 Bet365/AH 不得倒填；賽後只追加 Result Addendum。
+
+## Research Record｜EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW
+
+**Parent Official：** `EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED`。
+**身分：** `RESEARCH_ONLY / R90-MATH5-Q-RECONSTRUCTION-V0 / PREMATCH_SEALED`；非舊 R90 Exact、也不繼承歷史 73.7%。
+**模型來源：** `R90_RECOVERY_MATH5_SHADOW_GW11.joblib`，SHA256 `c9142f32d71088fe2cdddd9c8b183962347a7b5aab041921c63eca5667909917`。
+**相同截止：** 2026-11-09T12:28:43.958100+00:00；**相同市場輸入：** 本輪 10 場 `MARKETPROXY`。
+**封存 SHA256：** `251e778fea5b4d797e093a29a715f070d1653da3fed14f785a5b9f2c32d2bada`。
+
+### Shadow 單雙方向及相對 R 位
+
+| 比賽 | 研究方向 | R位 | P(單) 模型分數 | Q 可信度代理 |
+|---|---|---|---|---|
+| 曼城 vs 富咸 | **雙** | — | 0.4846 | 0.4646 |
+| 般尼茅夫 vs 諾定咸森林 | **雙** | — | 0.4882 | 0.4871 |
+| 阿士東維拉 vs 新特蘭 | **雙** | — | 0.4971 | 0.4887 |
+| 車路士 vs 列斯聯 | **雙** | — | 0.4949 | 0.4649 |
+| 高雲地利 vs 水晶宮 | **雙** | R1 | 0.4953 | 0.5395 |
+| 熱刺 vs 葉士域治 | **雙** | R2 | 0.4988 | 0.5154 |
+| 紐卡素 vs 阿仙奴 | **單** | — | 0.5022 | 0.4235 |
+| 侯城 vs 白禮頓 | **單** | — | 0.5117 | 0.4347 |
+| 利物浦 vs 曼聯 | **雙** | R3 | 0.4992 | 0.5148 |
+| 賓福特 vs 愛華頓 | **雙** | — | 0.4933 | 0.4956 |
+
+**Shadow PARITY_SKEW_ALERT=TRUE：單2／雙8**，已執行異常稽核，保持原輸出而不為平衡人工翻向。Shadow R1/R2/R3 僅相對順位，正式高信心投注 `PASS`，不混入 Official 11/18。
+
+**歷史外推稽核：** 2025–26 全輪182/380；R1 13/38、R2 25/38、R1+R2 38/76=50.0%。這不是舊 R90 Exact，未能證明70%。
+
+### 雙版共同封存來源
+
+- 相同輪次、相同10場、相同 cutoff、相同 MARKETPROXY；Bet365 first opening／AH=`MISSING`。
+- 完整市場與方向：`EPL_GW11_TWO_TRACK_PREMATCH_20261109.md` / `GW11_MODEL_OUTPUTS.csv`。
+- 研究模型與版本：`EPL_GW11_TWO_TRACK_REPRO_20261109.zip`，含模型權重、程式、特徵資料、原始市場快照與校驗碼。
+- 尚未比賽，任何勝率顯示 `PENDING`，不得當0%。
+- 此回合**不更新 GitHub 網站 / Dashboard Package**，日後集中同步。
+
+
+
+---
+
+## SERIEA PARITY DIRECTION POLICY FREEZE｜2026-11-09
+
+**Decision:** `R90_BASE_DIRECTION_KEEP / NO_RECOVERED_FLIP`
+
+- 義甲單雙主方向以 Adaptive R90 原始方向為 baseline。
+- RECOVERED_COMPONENT、heuristic、O/U correction、近期型態診斷、Xuan proxy 不得直接翻轉 R90 原方向。
+- 研究層只允許做 R1/R2/R3 排序、信心升降、PASS/降級與風險標記。
+- 只有可重現、已凍結規則命中的 Exact WF6 trigger 才可 override R90 baseline direction。
+- 若沒有 Exact WF6，方向維持 R90。
+- `Recovered flip authority = REVOKED`。
+- GW12 先前 Research parity 預測不得冒充 R90 Exact 正式方向；若後續能重建 GW12 R90 原始方向，應另存 baseline 版本並與 Research 分開比較。
+
+
+---
+
+## Odds Addendum｜LIGUE1-2026-27-GW11-20261109-MARKETPROXY｜2026-11-09
+
+- 目的：依使用者要求，比照德甲補齊 GW11 每場賠率；**不改原預測方向／R1-R3／PASS**。
+- 基準：本輪模型執行當下已凍結的 `MARKET_INPUTS.csv`，Pinnacle / oddshistory early-current proxy。
+- 顯示：Current 1X2、Current O/U2.5、AH；另保留 first-recorded OPENPROXY；PRE-KICK 尚未到時間，維持 `PENDING`。
+- `🔥 >1.80`：只標記**模型實際選中方向**的 current decimal odds > 1.80；不代表提高模型信心。
+- Bet365 first-tick：`MISSING`；不得回填或冒充。
+
+| 比賽 | Current 1X2 主/和/客 | Current O2.5/U2.5 | AH 主隊線 (主/客) | 模型1X2選擇賠率 | 模型O/U選擇賠率 | >1.80 |
+|---|---|---|---|---:|---:|---|
+| 特魯瓦 vs 勒阿弗爾 | 2.010 / 3.650 / 3.630 | 1.781 / 2.080 | -0.5 (2.009/1.847) | **主勝 2.010** | **大2.5 1.781** | 🔥 1X2 主勝 2.010 |
+| 尼斯 vs PSG | 5.930 / 5.100 / 1.450 | 1.392 / 2.970 | +1.25 (1.917/1.934) | **客勝 1.450** | **大2.5 1.392** | — |
+| 摩納哥 vs 歐塞爾 | 1.390 / 5.160 / 7.100 | 1.500 / 2.610 | -1.25 (1.833/2.030) | **主勝 1.390** | **大2.5 1.500** | — |
+| 朗斯 vs 圖盧茲 | 1.769 / 4.160 / 4.080 | 1.628 / 2.310 | -0.75 (2.000/1.854) | **主勝 1.769** | **大2.5 1.628** | — |
+| 里爾 vs 里昂 | 2.370 / 3.320 / 3.090 | 1.961 / 1.877 | -0.25 (2.040/1.826) | **主勝 2.370** | **小2.5 1.877** | 🔥 1X2 主勝 2.370；O/U 小2.5 1.877 |
+| 史特拉斯堡 vs 布雷斯特 | 2.180 / 3.790 / 3.080 | 1.613 / 2.340 | -0.25 (1.917/1.934) | **主勝 2.180** | **大2.5 1.613** | 🔥 1X2 主勝 2.180 |
+| 巴黎FC vs 昂熱 | 1.389 / 4.910 / 7.640 | 1.657 / 2.250 | -1.25 (1.884/1.970) | **主勝 1.389** | **大2.5 1.657** | — |
+| 洛里昂 vs 雷恩 | 3.040 / 3.540 / 2.300 | 1.735 / 2.120 | +0.25 (1.862/2.000) | **客勝 2.300** | **大2.5 1.735** | 🔥 1X2 客勝 2.300 |
+| 馬賽 vs 勒芒 | 1.446 / 4.900 / 6.320 | 1.613 / 2.340 | -1.25 (1.961/1.892) | **主勝 1.446** | **大2.5 1.613** | — |
+
+### OPENPROXY → CURRENT（賽前基準）
+- First-recorded OPENPROXY 已同步保存到 Dashboard Package 的 `market_odds[].first_recorded_1X2` / `first_recorded_OU25`。
+- `PRE-KICK` 尚未產生；之後仍由既定 T-60～30 分鐘流程另存，不覆寫本 baseline。
+- 馬賽 vs 勒芒：同源 current 可得，但 first-recorded opening 欄位為 `MISSING`，依規則不補造。
+
+### 模型選中方向賠率 >1.80
+- **特魯瓦 vs 勒阿弗爾**：1X2 **主勝 2.010**
+- **里爾 vs 里昂**：1X2 **主勝 2.370**；O/U **小2.5 1.877**
+- **史特拉斯堡 vs 布雷斯特**：1X2 **主勝 2.180**
+- **洛里昂 vs 雷恩**：1X2 **客勝 2.300**
+
+- 網站 / GitHub：**仍維持 PENDING_BY_USER_REQUEST，本次不更新。**
+
+
+---
+
+## Research Record｜LALIGA-2026-27-GW13-20261113-REPRO-RESEARCH-V1-SHADOW
+
+- **2026-11-13（Asia/Taipei）新建**，獨立於 11/9 已封存的 `LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY`；不得倒填為11/9預測。
+- 狀態：`REPRODUCIBILITY_VERIFIED / RESEARCH_SHADOW / NO_OFFICIAL_PROMOTION / DASHBOARD_DEFERRED_BY_USER`。
+- **本輪模型資料凍結**：11/9 19:16 UTC+8；保留原 MarketProxy、歷史 CSV；所有權重、34特徵順序、訓練程式、每場機率、R1/R2/R3 與 SHA-256 皆已封存。
+- **歷史**：西甲 2020–21 至 2025–26 共2280場；2023–24、2024–25、2025–26 共1140場前推回溯。以先前年份訓練，曆週前凍結，曆週不能冒充官方GW。
+- **三市場結果**：1X2 626/1140 市場基準（新LR607/1140）；O/U2.5 673/1140 市場基準（新LR666/1140）；Parity新draw-conditional prior594/1140（舊last5 proxy549/1140）。2025–26 parity 193/380=50.8%，R1/R2 38/72=52.8%；未達 75%，`PROMOTE=NONE`。
+- **新GW13 Shadow方向**：1X2和O/U維持11/9舊MarketProxy全10場方向；單雙變動**2場**：艾拉維斯－拉科魯尼亞改雙、華歷簡奴－華倫西亞改雙；其餘8場單。新順位：單雙R1巴塞隆拿－維拉利爾單、R2皇家馬德里－切爾達單、R3畢爾包－愛斯賓奴單。此排序只屬RESEARCH；Official parity=PASS。
+- **SKEW**：8單2雙，`PARITY_SKEW_ALERT=TRUE`；沒有強行平衡或依賽果事後翻轉。
+- **研究規則**：`P(單) = (1 - P_market(和局)) * P_train(單|非和局)`；使用歷史未來資料隔離；尚未校準成真實勝率。
+- **可重現**：`run.py`+`verify.py` 固定依賴重跑，四份輸出 SHA-256 相同；模型 JSON 係數獨立推論逐場驗證通過；原11/9輸入與輸出SHA未變。
+- **實體封存**：`/R1_R2 Master/LALIGA-2026-27-GW13-20261113-REPRO-RESEARCH-V1.zip`（含六季原始檔、訓練/推論/驗證程式、權重、輸入輸出、歷史評估、使用說明、哈希）。
+- **Dashboard Package**：`/R1_R2 Master/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261113_SHADOW_DEFERRED.json`，Research-only、`DEFERRED_BY_USER`。未更新網站、未提交GitHub。
+- **保護**：`LATEST_OFFICIAL` / `LATEST_BY_LEAGUE[LaLiga]` 均維持原值；不可將GW13 Shadow成績混入正式前推績效；下輪新的Research改善要先建新 Record。
+
+
+---
+
+## Research Recovery Audit｜LALIGA-GW12-V2-METHOD-RECOVERY-AUDIT-20261116
+
+- Audit date: 2026-11-16 (Asia/Taipei). **此筆只是原 GW12 V2-RESEARCH 方法溯源稽核，不是新的預測 Record、不是新模型、也不是事後更改 11/04 封存。**
+- Original prematch record: `LALIGA-2026-27-GW12-20261104-DUALTRACK-RESEARCH`；SHA-256 `cb95c2e3b1fb1a34a26720d77a3898775d6b1693086b0cbad611e02d322caa01`，與原 11/05 Dashboard JSON 來源雜湊一致。
+- Verified archival replay: 10 場 × (1X2/O-U2.5/單雙) = 30 個方向，及三市場各 R1/R2/R3 共 9 個研究候選，一一一致。原版單雙 5 單／5 雙；R1 西維爾–艾拉維斯雙、R2 奧沙辛拿–畢爾包雙、R3 愛斯賓奴–拉科魯尼亞雙；Official parity=PASS。
+- GW12 original method actually documented: Sportingbet / Betmonitor 早期代理盤口、先前西甲研究風控、保守人工排序；非 V1/V3 Exact，也非已定量訓練的固定公式。
+- Missing: 2026/11/04 逐場數值市場快照、特徵矩陣、固定參數／權重、完整人工判斷流程與 selector 程式，故 **EXACT_EXECUTION_UNAVAILABLE**。
+- **Method recovery classification: `PARTIAL_DOCUMENTARY_RECOVERY`；`ORIGINAL_V2_EXECUTABLE_RESTORED=FALSE`；`PROMOTE=NONE`。** 不得把第13輪最近5場 XOR 或 draw-conditional Shadow 冒稱第12輪 V2 延續，不得用第12輪賽果反推定參。
+- Files: `/R1_R2 Master/LALIGA_GW12_V2_METHOD_RECOVERY_AUDIT_20261116.md` and `/R1_R2 Master/LALIGA_GW12_V2_METHOD_RECOVERY_AUDIT_20261116.zip`（內含原始 pregame 快照、原 Package、研究檔、method facts、SHA256、`verify_frozen_gw12.py`）。
+- `LATEST_BY_LEAGUE`, `LATEST_OFFICIAL`, `LATEST_RESEARCH` all **unchanged**；Official/Research/Shadow performance denominator all **unchanged**；Dashboard/GitHub **NOT_RUN**。
+
+---
+
+# 西甲 GW13 V2-RESEARCH 重建版｜新增賽前 Research Record
+
+Record ID：`LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1`
+
+狀態：`RESEARCH_TEST_ONLY / NOT_GW12_EXACT / NOT_OFFICIAL`。2026-11-16 再建版本，**不可倒填 11/9**。
+
+第12輪 V2 實際由盤口、保守風控與人工排序構成，沒有逐場數值與可執行的原決策器。本次係採相同判斷架構重新定義新數學公式，不聲稱原版重現。
+
+## 固定定量決策
+
+- 1X2：賠率倒數去水，三方取最大；同值時按主、和、客。
+- 大小2.5：賠率倒數去水，大／小取最大。
+- 單雙：0.30×兩隊各自近5場進球奇偶 XOR ＋0.40×(1－盤口去水和局機率)×歷史非和局總球單數率 ＋0.30×兩隊各自近5場全場總球單數率的平均。>=0.5 選單，否則雙。
+- 各市場排序：依勝負隱含最高與次高機率差、大小方向機率差、單雙距0.5絕對差，由大到小、開賽時間、主隊識別排序，前3列為 Research R1/R2/R3。
+- 風控：和局機率>=27%且小球機率>=50%標 DRAW_LOW_SCORE_GUARD_TEST；大球最優且一隊近5場大球率<=40%標 OVEREXPOSURE_TEST；單雙邊際<0.04標 LOW_PARITY_MARGIN；旗標不強制翻向。
+- 同一份11/9封存盤口是 MULTI_BOOK_MARKETPROXY，非Bet365 opening first tick；沒有PREKICK，不可推導市場變化。
+- 所有參數本次起凍結，只作下一輪及之後前推的測試。不能用GW12的9/10成績為新公式背書。
+
+## 三市場完整方向與研究順位
+
+| 比賽 | 1X2 | 大小2.5 | 單雙 | P(單) | 風控 |
+|---|---|---|---|---:|---|
+| 畢爾包－愛斯賓奴 | 主勝 R3 | 大2.5 | 單 | 0.5195 | OVEREXPOSURE_TEST,LOW_PARITY_MARGIN |
+| 艾拉維斯－拉科魯尼亞 | 主勝 | 小2.5 | 單 | 0.5685 | DRAW_LOW_SCORE_GUARD_TEST |
+| 華歷簡奴－華倫西亞 | 主勝 | 小2.5 | 單 | 0.5459 | DRAW_LOW_SCORE_GUARD_TEST |
+| 西維爾－貝迪斯 | 客勝 | 大2.5 | 單 | 0.5115 | OVEREXPOSURE_TEST,LOW_PARITY_MARGIN |
+| 皇家馬德里－切爾達 | 主勝 R1 | 大2.5 R2 | 單 R3 | 0.6195 | OVEREXPOSURE_TEST |
+| 巴塞隆拿－維拉利爾 | 主勝 R2 | 大2.5 R1 | 單 R1 | 0.6431 | — |
+| 桑坦德－皇家蘇斯達 | 客勝 | 大2.5 R3 | 單 R2 | 0.6412 | — |
+| 奧沙辛拿－馬拉加 | 主勝 | 小2.5 | 單 | 0.5357 | LOW_PARITY_MARGIN |
+| 加泰－馬德里體育會 | 客勝 | 小2.5 | 單 | 0.5321 | LOW_PARITY_MARGIN |
+| 利雲特－艾爾切 | 主勝 | 大2.5 | 雙 | 0.4941 | OVEREXPOSURE_TEST,LOW_PARITY_MARGIN |
+
+## 稽核
+
+- 單雙分布：{'單': 9, '雙': 1}；`PARITY_SKEW_ALERT=True`。
+- 完整機率、原始賠率、逐場特徵／序列、每市場分數與決策說明：ZIP內`V2RB_OUTPUT_FULL.json`。
+- 原11/9研究版、11/13 Shadow 及第12輪的預測全部原封不動。
+- 官方單雙精選：PASS（0筆）。新研究 R 位不計Official命中率。
+- 這次固定配方是**新研究假說，沒有正式時間前推證據**；不可說已恢復原V2 Exact，也不可宣稱新方向優於舊模型。
+- website: RESEARCH_ONLY；新版本排在研究區，與Official隔離。
+
+
+---
+
+## 研究模型身份鎖定｜西甲第13輪 V2-RESEARCH 延續線 A（2026-11-16）
+
+- **目前西甲研究主線：** `LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A`。本輪僅能說「第12輪 V2 分析程序的定性延續」，不能稱為第12輪 V2 Exact 可自動再現。
+- **只允許原四步驟：** 公開市場盤口 → 西甲近期表現／風控 → 獨立單雙人工判斷（不以大小球直接導出）→ 保守人工 R1/R2/R3 排序。當場人工信心、選場理由、反向證據完全封存。
+- **客觀資料可重跑：** 11/09 舊賽前代理盤口、52 場完成賽事、每隊近五場、去水 1X2／大小、奇偶診斷、平局及低比分資料；`run_features.py` 重跑 10 場輸出二次 SHA256 完全一致。
+- **人工方向僅可追溯，不能假稱自動計算：** `DECISION_LOG.json` 原始定性理由全文已封；不能事後根據 11/21 以後的賽果改寫。未來要達完全無人可重算的 V2，須事前先證明有效、固定人工決策規則，再另建新版本。
+- **本輪 Research 方向：** 四單六雙；單雙 R1 桑坦德–皇家蘇斯達單，R2 巴塞隆拿–維拉利爾單，R3 皇馬–切爾達單；Official = PASS。1X2/OU 仍單獨封存，參見完整 Record。
+- **其他研究版本不替代：** 11/09 原 GX13 proxy = 10單、11/13 Shadow = 8單2雙、11/16 B weighted = 9單1雙，各版獨立不覆蓋、不合算、不把 B 的公式視為 A 的方法。
+- **PROMOTE NONE；Research only。** 賽前 MARKETPROXY 不得冒充 Bet365 OPEN；PRE-KICK 尚未採樣；新方向尚無可用嚴格前推樣本。
+- 本輪封存：`/R1_R2 Master/LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A.md`；`/R1_R2 Master/LALIGA-GW13-20261116-V2-RESEARCH-CONTINUITY-A-REPRO.zip`；`/R1_R2 Master/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_CONTINUITY_A.json`。
+- **賽前原紀錄原封不動；只更新最新研究索引，不變更 LATEST_OFFICIAL／西甲 LATEST_BY_LEAGUE。**
