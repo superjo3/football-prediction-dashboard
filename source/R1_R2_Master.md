@@ -5422,3 +5422,46 @@ Record ID：`LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1`
 - **PROMOTE NONE；Research only。** 賽前 MARKETPROXY 不得冒充 Bet365 OPEN；PRE-KICK 尚未採樣；新方向尚無可用嚴格前推樣本。
 - 本輪封存：`/R1_R2 Master/LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A.md`；`/R1_R2 Master/LALIGA-GW13-20261116-V2-RESEARCH-CONTINUITY-A-REPRO.zip`；`/R1_R2 Master/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_CONTINUITY_A.json`。
 - **賽前原紀錄原封不動；只更新最新研究索引，不變更 LATEST_OFFICIAL／西甲 LATEST_BY_LEAGUE。**
+
+
+---
+
+## 西甲 V2 六季客觀特徵前推研究｜2026-11-17（只追加，不更改賽前 Record）
+
+- Research Record: `LALIGA-RESEARCH-V2-SIX-SEASON-FORWARD-20261117`。
+- Status: `RESEARCH_ONLY / HISTORICAL_TEST / ORIGINAL_V2_EXACT_NOT_AVAILABLE / PROMOTE_NONE`。
+- 2020/21–2025/26 西甲史料六季 2,280 場；以 2020/21–2021/22 起始訓練，2022/23–2025/26 四個向前賽季 1,520 場測試，同曆週賽果不得提前入特徵。
+- 全輪單雙：全單基準 801/1520=52.70%；近5場總球 776/1520=51.05%；XOR5 753/1520=49.54%；和局條件修正 761/1520=50.07%；V2 特徵 BASIC 固定回歸 769/1520=50.59%；擴充版 754/1520=49.61%。無方法勝過簡單全單基準，未證明整體70%。
+- 歷史曆週（不是官方GW）共141個至少5場的組別；BASIC 研究 R1 76/141=53.90%，R2 67/141=47.52%，合併143/282=50.71%，未達75%。正式精選不可由此導出。
+- 本研究只測量第12輪原版 V2 使用的可量化訊號及額外固定回歸候選；不冒稱重現第12輪失傳的人工決策函數，不覆蓋GW12原5單5雙或GW13延續線A原4單6雙。
+- 原始封存資料、程式、逐場特徵、逐場預測、選場排序、各輪訓練參數、SHA256及驗證器存於 `/R1_R2 Master/LALIGA-V2-SIXSEASON-FORWARD-RESEARCH-20261117.zip`，報告 `/R1_R2 Master/LALIGA-V2-SIXSEASON-FORWARD-RESEARCH-20261117.md`。兩次重跑稽核：16個來源與結果檔 SHA256 全部一致。
+- 研究前推不等於完全全新盲測，2025/26曾在其他既有研究被檢視。沒有模型 promotion；`LATEST_BY_LEAGUE`、`LATEST_OFFICIAL`、`LATEST_RESEARCH`、Dashboard及Official績效全部不動。
+
+
+---
+
+## RESEARCH_APPEND | 西甲 2026–27 第1～12輪（2026-11-17）｜六季固定模型本季回溯測試
+
+- Record ID: `LALIGA-2026-27-GW01-GW12-20261117-RESEARCH-FROZEN-6SEASON-HOLDOUT-V1`
+- 類型：`RESEARCH_ONLY / RETROSPECTIVE_HOLDOUT / NO_PROMOTION`。不是新的賽前正式預測，**不是原版 V2 Exact**。原有所有 Official/Research/Shadow 賽前方向保持不變。
+- 訓練：西甲 2020–21 至 2025–26 六季，共 2,280 場；不使用本季賽果重新訓練。
+- 本季測試：2026–27 官方 GW1～GW12 已賽共 **119 場**，第8輪9場。逐官方輪次在該輪最早比賽日期之前凍結近期特徵；歷史 Bet365 非 C 盤口為代理早期盤口，不是 First Tick，不保證賠率在同輪最早開賽前已被取得。
+- 全輪單雙：全單基準 66/119=55.46%；XOR5 74/119=62.18%；TOTAL5 75/119=63.03%；DRAWCOND 67/119=56.30%；BASIC 71/119=59.66%；EXTENDED 74/119=62.18%。
+- 固定 EXTENDED 研究順位（官方輪次）：R1 10/12=83.33%；R2 11/12=91.67%；R3 9/12=75.00%；R1+R2 21/24=87.50%；R1～R3 30/36=83.33%。其中36個候選只有3個通過既有高信心 gate，**不能宣稱正式 R1/R2 達標**。
+- GW9～GW12 同場對比：**原已封存人工 V2 研究 30/40=75%**；新固定 EXTENDED 21/40=52.5%（少9場）；XOR5 22/40、TOTAL5 27/40、DRAWCOND 25/40、BASIC 23/40。不可因 EXTENDED R1+R2 好而覆蓋原 V2。
+- 統計限制：本季在研究結束後才讀入市場快照與結果，屬回溯留出集測試，不是賽前實際封存；候選模式選擇也可能受已知本季結果影響；不能宣稱確定有樣本外優勢。
+- 完整檔：`/R1_R2 Master/LALIGA-2026-27-GW01-GW12-6SEASON-FROZEN-RESEARCH-20261117.md`；可重現包 `LALIGA-2026-27-GW01-GW12-6SEASON-FROZEN-RESEARCH-20261117.zip`。兩次重跑的核心輸出 SHA-256 一致。
+- 研究分類：`KEEP original V2 snapshots; WATCH EXTENDED R selector; TEST forward; PROMOTE NONE`。不改 `LATEST_BY_LEAGUE[LaLiga]`、`LATEST_OFFICIAL` 或現行西甲最新賽前預測索引；**Dashboard 不更新**。
+
+
+---
+
+## RESEARCH_APPEND｜西甲 GW13 V2-A / EXTENDED-B 並列封存與網站顯示（2026-11-17）
+
+- **A 主研究線維持不變**：`LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A`，原版 V2 定性延續與完整人工決策紀錄，4單6雙；研究 R1 桑坦德–皇家蘇斯達單、R2 巴塞隆拿–維拉利爾單、R3 皇家馬德里–切爾達單。並非 GW12 原 Exact 自動演算法；正式高信心單雙 PASS。
+- **B 新的獨立研究 Record**：`LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH`，LOGIT EXTENDED，六季2020–21～2025–26共2,280場訓練，凍結係數與原研究公式；全輪6單4雙；研究 R1 皇家馬德里–切爾達單、R2 巴塞隆拿–維拉利爾單、R3 艾拉維斯–拉科魯尼亞單。僅 R1 符合本研究嚴格信心 gate；不改 Official PASS。
+- **兩場分歧**：畢爾包–愛斯賓奴（A雙／B單）、華歷簡奴–華倫西亞（A雙／B單）。共10場；賽果與PRE-KICK均待完成，禁止事後改預測。
+- **B 市場來源限制**：2026-11-09 既封存多莊家代理 1X2／大小2.5，非 Bet365 opening first-tick，也不等於原六季訓練 Bet365 非C規格；預測是2026-11-17賽前新研究，不可倒填11/09。
+- **歷史比較不能混算**：GW9–12 原賽前A研究30/40（75%）、B回溯留出21/40（52.5%）；研究R1＋R2 A 7/8、B 8/8。B 本季GW1–12回溯留出全輪74/119、研究R1＋R2 21/24；A 只有GW9–12的歷史同規格預測。B不等於已連續12輪真實事前發布。
+- 模型及決策原始資料：`/R1_R2 Master/LALIGA-V2-A-vs-EXTENDED-B-GW13-20261117.zip`、`/R1_R2 Master/LALIGA-GW13-20261117-A-VS-EXTENDED-DUALTRACK.md`、`/R1_R2 Master/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261117_EXTENDED_FROZEN_PROXY_RESEARCH.json`。
+- Dashboard顯示A/B同場、獨立R1／R2／R3及各自歷史績效；**LATEST_RESEARCH[LaLiga] 仍指向 A，LATEST_OFFICIAL、LATEST_BY_LEAGUE[LaLiga] 不變；沒有升級任何模型，PROMOTE NONE**。
