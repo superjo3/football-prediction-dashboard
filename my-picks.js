@@ -34,7 +34,7 @@ window.MyParity=(()=>{
  ];
  for(const [league,gw,fixture,pick,rank] of CURRENT_USER_PICKS){
   const round_key=[league,'2026-27',gw].join('|');
-  const k=round_key+'|'+fixture.replace(/\\s+/g,'').toLowerCase();
+  const k=round_key+'|'+fixture.replace(/\s+/g,'').toLowerCase();
   // Chat-entered selections override older default suggestions but never browser edits.
   const existing=state.picks[k];
   if(!existing||existing.source==='USER_REPORTED_AFTER_SETTLEMENT')
