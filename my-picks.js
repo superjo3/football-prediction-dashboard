@@ -24,6 +24,7 @@ window.MyParity=(()=>{
  // Explicit user selections reported 2026-11-17. These are not model predictions.
  // Keep fixture identity and rounds exact; do not imply a verified pre-kick timestamp.
  const CURRENT_USER_PICKS=[
+  ['EPL',11,'Brentford vs Everton','雙',null],
   ['EPL',11,'Chelsea vs Leeds United','單',null],
   ['EPL',11,'Tottenham vs Ipswich Town','雙',null],
   ['SERIEA',12,'Milan vs Frosinone','單',null],
@@ -43,10 +44,7 @@ window.MyParity=(()=>{
    state.picks[k]={pick,rank,round_key,league,season:'2026-27',gw,fixture,record_id:null,reported_on:'2026-11-17',source:'USER_CHAT_REPORTED_2026-11-17',time_unverified:true};
  }
  // The EPL next-round fixture list has not been imported. Do not attach to archived GW10.
- const PENDING_EPL=[
-  {team:'伯明罕',pick:'雙',rank:null},
-  
- ];
+ const PENDING_EPL=[];
  const roundKey=c=>[c.league,c.season,c.gw].join('|');
  const key=c=>roundKey(c)+'|'+c.fixture.replace(/\s+/g,'').toLowerCase();
  function score(c){return Array.isArray(c.score)&&c.score.length===2&&c.score.every(n=>Number.isInteger(n)&&n>=0)?c.score:null;}
@@ -78,6 +76,6 @@ window.MyParity=(()=>{
   }if(!persist(next))throw Error(error);return {added,skipped};
  }
  function bind(contexts,refresh){const byKey=new Map(contexts.map(c=>[key(c),c]));document.querySelectorAll('[data-personal-pick]').forEach(el=>el.onchange=()=>{const c=byKey.get(el.dataset.personalPick);if(c)save(c,el.value,state.picks[key(c)]?.rank??null,contexts);refresh();});document.querySelectorAll('[data-personal-rank]').forEach(el=>el.onchange=()=>{const c=byKey.get(el.dataset.personalRank),p=c&&state.picks[key(c)];if(p)save(c,p.pick,el.value?Number(el.value):null,contexts);refresh();});document.querySelectorAll('[data-personal-export]').forEach(el=>el.onclick=exportFile);document.querySelectorAll('[data-personal-import]').forEach(el=>el.onchange=async()=>{try{if(!el.files[0])return;const r=importState(JSON.parse(await el.files[0].text()),contexts);refresh();document.querySelectorAll('.personal-feedback').forEach(x=>x.textContent=`已匯入 ${r.added} 場，略過 ${r.skipped} 場（已有紀錄、未收錄場次或無法驗證賽前時間）。`);}catch(e){error='匯入失敗：'+e.message;refresh();}});}
- function page(contexts){const unique=[...new Map(contexts.map(c=>[key(c),c])).values()].filter(c=>state.picks[key(c)]);return panel(contexts,'我的全部單雙命中率')+`<div class="panel"><h2>英超待配對自選（1 筆）</h2><p class="muted">2026-11-17 由使用者提供；GW11 已找到切爾西與熱刺的對賽；但 GW11 比賽名單沒有伯明罕，因此這一筆先獨立保存，不計入本輪或已結算命中率。</p>${PENDING_EPL.map(x=>'<p><strong>'+esc(x.team)+'</strong>：'+esc(x.pick)+' · 待確認場次</p>').join('')}</div><div class="panel"><h2>我的自選紀錄</h2>${unique.length?`<div class="tablewrap"><table><thead><tr><th>聯賽／輪次</th><th>比賽</th><th>比分</th><th>我的單雙</th></tr></thead><tbody>${unique.map(c=>`<tr><td>${esc(c.league)} · GW${c.gw}</td><td><a href="#round/${esc(c.record_id)}">${esc(c.fixture)}</a></td><td>${score(c)?c.score.join(' – '):'—'}</td><td>${cell(c)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">還沒有自選紀錄。到最新一輪，在「我的單雙」選擇你想預測的場次即可。</p>'}</div>`;}
+ function page(contexts){const unique=[...new Map(contexts.map(c=>[key(c),c])).values()].filter(c=>state.picks[key(c)]);return panel(contexts,'我的全部單雙命中率')+`<div class="panel"><h2>英超待配對自選（0 筆）</h2><p class="muted">2026-11-17 由使用者提供；已確認原先誤記的「伯明罕」應為 Brentford vs Everton，英超 GW11 三筆已全部配對，不計入本輪或已結算命中率。</p>${PENDING_EPL.map(x=>'<p><strong>'+esc(x.team)+'</strong>：'+esc(x.pick)+' · 待確認場次</p>').join('')}</div><div class="panel"><h2>我的自選紀錄</h2>${unique.length?`<div class="tablewrap"><table><thead><tr><th>聯賽／輪次</th><th>比賽</th><th>比分</th><th>我的單雙</th></tr></thead><tbody>${unique.map(c=>`<tr><td>${esc(c.league)} · GW${c.gw}</td><td><a href="#round/${esc(c.record_id)}">${esc(c.fixture)}</a></td><td>${score(c)?c.score.join(' – '):'—'}</td><td>${cell(c)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="muted">還沒有自選紀錄。到最新一輪，在「我的單雙」選擇你想預測的場次即可。</p>'}</div>`;}
  return {key,cell,panel,bind,page,summary};
 })();
