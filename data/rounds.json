@@ -494,5 +494,26 @@
       "github_sync": "PENDING"
     },
     "note": "GW12 V2 original four-step qualitative approach: market, form/risk, independent parity, conservative human ranking; 4 odd 6 even; NOT official or GW12 Exact"
+  },
+  {
+    "id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+    "league": "LALIGA",
+    "season": "2026-27",
+    "gw": 13,
+    "model": "LOGIT EXTENDED · fixed six-season / multi-book proxy Research",
+    "snapshot": "2026-11-17 · independent prematch research model, 6-season fixed",
+    "coverage": "complete-pregame-parity-research",
+    "research_only": true,
+    "package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261117_EXTENDED_FROZEN_PROXY_RESEARCH.json",
+    "status": {
+      "prematch": "NEW_RESEARCH_SHADOW_FROZEN_20261117",
+      "research": "TEST_ONLY",
+      "official_exact": "NOT_RUN",
+      "pre_kick": "PENDING",
+      "result": "PENDING",
+      "review": "PENDING",
+      "github_sync": "PENDING"
+    },
+    "note": "B fixed EXTENDED GW13: 6單4雙；R1皇馬單、R2巴塞單、R3艾拉維斯單；11/09代理盤口非Bet365 first-tick，Official PASS"
   }
 ]
