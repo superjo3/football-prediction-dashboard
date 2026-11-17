@@ -1,0 +1,38 @@
+{
+  "schema": "user-parity-mapping-addendum-v1",
+  "original_archive": "data/user-picks/USER_PARITY_PICKS_2026-11-17.json",
+  "date_taipei": "2026-11-17",
+  "reason": "Corrected earlier erroneous claim that EPL GW11 was not present: found in five-league-sync.js",
+  "immutable_original_record": true,
+  "corrections": [
+    {
+      "pick_id": "USER-20261117-02",
+      "league": "EPL",
+      "gw": 11,
+      "fixture": "Chelsea vs Leeds United",
+      "match_id": "EPL-2026-27-GW11-04",
+      "direction": "單",
+      "mapping_status": "FIXTURE_MAPPED"
+    },
+    {
+      "pick_id": "USER-20261117-03",
+      "league": "EPL",
+      "gw": 11,
+      "fixture": "Tottenham vs Ipswich Town",
+      "match_id": "EPL-2026-27-GW11-06",
+      "direction": "雙",
+      "mapping_status": "FIXTURE_MAPPED"
+    },
+    {
+      "pick_id": "USER-20261117-01",
+      "league": "EPL",
+      "gw": null,
+      "fixture": null,
+      "direction": "雙",
+      "mapping_status": "PENDING_FIXTURE_MAPPING",
+      "note": "Birmingham does not occur among website EPL GW11 ten matches; preserve without guessing."
+    }
+  ],
+  "statistical_status": "NOT_SETTLED",
+  "timestamp_precision": "DATE_ONLY_NOT_EXACT_PREKICK_VERIFIED"
+}
