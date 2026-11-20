@@ -1,0 +1,42 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at_utc": "2026-11-20T21:06:08Z",
+  "checked_at_taipei": "2026-11-21T05:06:08+08:00",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_schedule_sha": "8043491d0bc094e6f283a87a71abf89d0a9aa779",
+  "fixture_count": 53,
+  "league_counts": {
+    "EPL": 11,
+    "BUNDESLIGA": 10,
+    "LALIGA": 11,
+    "SERIEA": 11,
+    "LIGUE1": 10
+  },
+  "window_end_required_utc": "2026-11-27T21:06:08Z",
+  "existing_schedule_last_kickoff_utc": "2026-11-27T20:00:00.000Z",
+  "seven_day_extension_status": "NOT_PERSISTED",
+  "schedule_verification": {
+    "scope": "EPL Manchester City vs Fulham and EPL Nov 21-29 fixtures; Bundesliga 20-29 Nov listing",
+    "sources": [
+      "https://www.premierleague.com/en/news/4725574",
+      "https://www.mancity.com/news/mens/fulham-premier-league-november-2026-match-preview-63930344",
+      "https://www.footballwebpages.co.uk/german-bundesliga/german-bundesliga/fixtures-results/german-bundesliga"
+    ],
+    "verified_existing_fixture_ids": [
+      "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM"
+    ],
+    "full_53_fixture_reverification": false,
+    "change_events_added": 0
+  },
+  "eligible_t60_fixture_ids": [],
+  "new_pre_kick_records": 0,
+  "pre_kick_recorded": 0,
+  "odds_snapshot_status": "NO_ELIGIBLE_FIXTURES",
+  "next_fixture": {
+    "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+    "kickoff_at_utc": "2026-11-21T12:30:00.000Z",
+    "t60_due_at_utc": "2026-11-21T11:30:00.000Z"
+  },
+  "original_records_modified": false,
+  "notes": "Existing schedule is not a rolling seven-day complete verified schedule. No odds were requested because no fixture is within 0-60 minutes before kickoff. Previous MISSED_T60 entries remain unchanged."
+}
