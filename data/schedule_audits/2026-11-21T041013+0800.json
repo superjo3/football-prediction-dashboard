@@ -1,0 +1,33 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T04:10:13+08:00",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_schedule_sha": "8043491d0bc094e6f283a87a71abf89d0a9aa779",
+  "fixture_count": 53,
+  "missed_t60": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "kickoff_at_taipei": "2026-11-21 03:30 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed with no timestamp-verified full-market T-60 or APPROX_T60 snapshot in checked records; no backfill claimed"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "kickoff_at_taipei": "2026-11-21 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed with no timestamp-verified full-market T-60 or APPROX_T60 snapshot in checked records; no backfill claimed"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "kickoff_at_taipei": "2026-11-21 04:00 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed with no timestamp-verified full-market T-60 or APPROX_T60 snapshot in checked records; no backfill claimed"
+    }
+  ],
+  "new_pre_kick_records": 0,
+  "pre_kick_recorded_verified": 0,
+  "seven_day_schedule_extension": "NOT_PERSISTED",
+  "original_schedule_untouched": true,
+  "official_research_shadow_untouched": true,
+  "notes": "Append-only status event; source schedule still shows PENDING and is not overwritten. No timestamp-proven historical odds backfill."
+}
