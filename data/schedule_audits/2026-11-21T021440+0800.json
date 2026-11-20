@@ -1,0 +1,40 @@
+{
+  "audit_at": "2026-11-21T02:14:40+08:00",
+  "audit_at_utc": "2026-11-20T18:14:40Z",
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_fixture_count": 53,
+  "coverage_note": "Existing schedule ends 2026-11-27T23:59:59Z, does not fully cover rolling 7 days from audit time; extension NOT_PERSISTED",
+  "verified_fixtures": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "kickoff_at_utc": "2026-11-20T19:30:00Z",
+      "source": "https://fcbayern.com/de/spiele/profis/bundesliga/2026-2027/fc-bayern-muenchen-1-fc-koeln-21-11-2026/liveticker",
+      "verification": "MATCH"
+    }
+  ],
+  "upcoming": [
+    {
+      "fixture": "Bayern Munich vs Cologne",
+      "kickoff_taipei": "2026-11-21T03:30:00+08:00",
+      "minutes_to_kickoff": 75.3333,
+      "t60_taipei": "2026-11-21T02:30:00+08:00"
+    },
+    {
+      "fixture": "Troyes vs Le Havre",
+      "kickoff_taipei": "2026-11-21T03:45:00+08:00",
+      "minutes_to_kickoff": 90.3333,
+      "t60_taipei": "2026-11-21T02:45:00+08:00"
+    },
+    {
+      "fixture": "Athletic Club vs Espanyol",
+      "kickoff_taipei": "2026-11-21T04:00:00+08:00",
+      "minutes_to_kickoff": 105.3333,
+      "t60_taipei": "2026-11-21T03:00:00+08:00"
+    }
+  ],
+  "eligible_t60_fixtures": [],
+  "new_snapshots": 0,
+  "pre_kick_record_status": "NO_ELIGIBLE_FIXTURES",
+  "original_records_modified": false,
+  "notes": "No odds queried. No pre-kick records or Dashboard Packages modified. Full schedule source revalidation not completed."
+}
