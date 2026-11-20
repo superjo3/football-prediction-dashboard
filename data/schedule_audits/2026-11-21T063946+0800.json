@@ -1,0 +1,24 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T06:39:46+08:00",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_fixture_count": 53,
+  "t60_window_matches": 0,
+  "new_pre_kick_records": 0,
+  "pre_kick_recorded": 0,
+  "seven_day_schedule_extension": "NOT_PERSISTED",
+  "schedule_coverage_note": "Existing schedule ends 2026-11-28 04:00 Asia/Taipei; required horizon is 2026-11-28 06:39:46 Asia/Taipei",
+  "previous_missed_t60": [
+    "Bayern Munich vs Cologne",
+    "Troyes vs Le Havre",
+    "Athletic Club vs Espanyol"
+  ],
+  "next_known_fixture": {
+    "home": "Manchester City",
+    "away": "Fulham",
+    "kickoff_taipei": "2026-11-21T20:30:00+08:00",
+    "target_t60_taipei": "2026-11-21T19:30:00+08:00"
+  },
+  "status": "AUDIT_ONLY_NO_T60",
+  "preserve_existing_records": true
+}
