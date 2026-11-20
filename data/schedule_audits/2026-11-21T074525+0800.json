@@ -1,0 +1,28 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at_taipei": "2026-11-21T07:45:25+08:00",
+  "checked_at_utc": "2026-11-20T23:45:25Z",
+  "repository": "superjo3/football-prediction-dashboard",
+  "branch": "main",
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_fixture_count": 53,
+  "verified_in_this_run": [
+    {
+      "league": "EPL",
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+      "kickoff_at_utc": "2026-11-21T12:30:00Z",
+      "kickoff_at_taipei": "2026-11-21T20:30:00+08:00",
+      "source": "https://www.premierleague.com/en/news/4725574",
+      "last_verified_at": "2026-11-20T23:45:25Z"
+    }
+  ],
+  "next_t60_taipei": "2026-11-21T19:30:00+08:00",
+  "currently_in_t60_window": [],
+  "new_verified_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "prior_missed_t60_preserved": true,
+  "seven_day_window_end_taipei": "2026-11-28T07:45:25+08:00",
+  "seven_day_schedule_extension": "NOT_PERSISTED",
+  "all_leagues_fully_reverified": false,
+  "notes": "Append-only audit. Original schedule and official prediction records unchanged. No eligible T-60 window at audit time. Seven-day coverage not proven; do not infer absence of fixtures from last recorded kickoff."
+}
