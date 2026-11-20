@@ -1,0 +1,24 @@
+{
+  "schema_version": "FIVE_LEAGUE_SCHEDULE_AUDIT_V1",
+  "checked_at": "2026-11-21T00:58:31+08:00",
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_fixture_count": 53,
+  "coverage_at_least_next_7_days": true,
+  "t60_window": "0_to_60_minutes_before_kickoff",
+  "eligible_fixture_ids": [],
+  "new_pre_kick_snapshots": 0,
+  "result": "NO_ELIGIBLE_FIXTURES",
+  "partial_source_checks": [
+    {
+      "fixture": "Manchester City vs Fulham",
+      "verified_kickoff_utc": "2026-11-21T12:30:00Z",
+      "source": "https://www.premierleague.com/en/news/4725574"
+    },
+    {
+      "fixture": "Bayern Munich vs Cologne",
+      "verified_kickoff_utc": "2026-11-20T19:30:00Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=10&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a"
+    }
+  ],
+  "note": "Only two fixtures independently rechecked; remaining fixtures retain previous last_verified_at. Original schedule, official predictions and dashboard packages unchanged. No odds fetched outside T60."
+}
