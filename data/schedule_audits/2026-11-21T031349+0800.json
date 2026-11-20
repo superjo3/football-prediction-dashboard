@@ -1,0 +1,50 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T03:13:49+08:00",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_schedule_sha": "8043491d0bc094e6f283a87a71abf89d0a9aa779",
+  "fixture_count": 53,
+  "window_coverage": "INCOMPLETE_7_DAYS",
+  "window_end_utc": "2026-11-27T23:59:59Z",
+  "eligible_fixtures": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "league": "BUNDESLIGA",
+      "home": "Bayern Munich",
+      "away": "Cologne",
+      "kickoff_at_utc": "2026-11-20T19:30:00.000Z",
+      "minutes_to_kickoff": 16.18,
+      "pre_kick_status_in_schedule": "PENDING"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "league": "LALIGA",
+      "home": "Athletic Club",
+      "away": "Espanyol",
+      "kickoff_at_utc": "2026-11-20T20:00:00.000Z",
+      "minutes_to_kickoff": 46.18,
+      "pre_kick_status_in_schedule": "PENDING"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "league": "LIGUE1",
+      "home": "Troyes",
+      "away": "Le Havre",
+      "kickoff_at_utc": "2026-11-20T19:45:00.000Z",
+      "minutes_to_kickoff": 31.18,
+      "pre_kick_status_in_schedule": "PENDING"
+    }
+  ],
+  "market_sources_checked": [
+    "https://goal888.com/en/match/bayern-munchen-vs-fc-koln-mpj0/odds/",
+    "https://oddshistory.io/match/2026-11-20-troyes-vs-le-havre",
+    "https://oddshistory.io/match/2026-11-20-athletic-bilbao-vs-rcd-espanyol"
+  ],
+  "market_data_limitation": "Source pages do not provide a verifiable live snapshot timestamp for this check; cannot claim T-60 or APPROX_T60 capture. Bayern Bet365 displayed pre-match values are not confirmed timestamped at current check and O/U2.5 is missing.",
+  "snapshot_records_created": 0,
+  "pre_kick_recorded_verified": 0,
+  "status": "NOT_PERSISTED",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "official_records_modified": false,
+  "notes": "Append-only audit; fixture source timestamps not reverified globally; do not mark PRE_KICK_RECORDED. Recheck next run and mark MISSED_T60 after kickoff if no verified capture."
+}
