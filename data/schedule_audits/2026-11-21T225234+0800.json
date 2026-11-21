@@ -1,0 +1,127 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at_utc": "2026-11-21T14:52:34Z",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_fixture_count": 53,
+  "existing_snapshot_count": 0,
+  "verified_source": "https://www.premierleague.com/en/news/4725574",
+  "verified_scope": "EPL Nov 21 and Nov 28 fixtures only; other leagues not independently refreshed",
+  "due_unverified": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-BOURNEMOUTH-NOTTINGHAM-FOREST",
+      "league": "EPL",
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "minutes_to_kickoff_at_check": 7.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-ASTON-VILLA-SUNDERLAND",
+      "league": "EPL",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "minutes_to_kickoff_at_check": 7.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-CHELSEA-LEEDS-UNITED",
+      "league": "EPL",
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "minutes_to_kickoff_at_check": 7.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-COVENTRY-CITY-CRYSTAL-PALACE",
+      "league": "EPL",
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "minutes_to_kickoff_at_check": 7.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-TOTTENHAM-IPSWICH-TOWN",
+      "league": "EPL",
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "minutes_to_kickoff_at_check": 7.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-RAYO-VALLECANO-VALENCIA",
+      "league": "LALIGA",
+      "home": "Rayo Vallecano",
+      "away": "Valencia",
+      "kickoff_at_utc": "2026-11-21T15:15:00.000Z",
+      "minutes_to_kickoff_at_check": 22.43,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No source-timestamp-verifiable complete 1X2+OU2.5+AH same-bookmaker quote"
+    }
+  ],
+  "missed_as_of_check": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BAYER-LEVERKUSEN-PADERBORN",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BORUSSIA-MONCHENGLADBACH-BORUSSIA-DORTMUND",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-EINTRACHT-FRANKFURT-HOFFENHEIM",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-ELVERSBERG-FREIBURG",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-UNION-BERLIN-RB-LEIPZIG",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-ALAVES-DEPORTIVO-LA-CORUNA",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-COMO-CAGLIARI",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-LAZIO-LECCE",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "status": "MISSED_T60_AUDIT_ONLY"
+    }
+  ],
+  "valid_snapshots_added": 0,
+  "pre_kick_recorded_added": 0,
+  "full_seven_day_schedule_status": "NOT_PERSISTED",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "odds_snapshot_status": "NOT_PERSISTED",
+  "integrity": "No original files modified. Historical prices without verifiable quote timestamps excluded."
+}
