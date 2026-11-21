@@ -1,0 +1,43 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T21:24:33+08:00",
+  "checked_at_utc": "2026-11-21T13:24:33Z",
+  "repository": "superjo3/football-prediction-dashboard",
+  "schedule_source": "data/fixture_schedule_20261120_20261127.json",
+  "existing_fixture_count": 53,
+  "existing_snapshot_source": "data/market_prekick_snapshots.json",
+  "existing_verified_snapshots": 0,
+  "window_matches": [
+    {
+      "league": "SERIEA",
+      "home": "Como",
+      "away": "Cagliari",
+      "kickoff_at_taipei": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff_at_check": 35.45,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "Odds sources found, but exact quote timestamps and full single-bookmaker 1X2/OU2.5/AH at check time cannot be authenticated",
+      "source_candidates": [
+        "https://oddsrun.com/match/football/it/199/11997936/italy-serie-a/como-vs-cagliari/",
+        "https://sports.williamhill.it/betting/it-it/calcio/italia/serie-a/como-vs-cagliari"
+      ]
+    },
+    {
+      "league": "SERIEA",
+      "home": "Lazio",
+      "away": "Lecce",
+      "kickoff_at_taipei": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff_at_check": 35.45,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "Available pages do not prove that all quotes represent the actual capture time; cannot claim T-60",
+      "source_candidates": [
+        "https://fonbet.com/sports/football/country/italy/11924/69622927",
+        "https://goal888.com/en/match/lazio-vs-lecce-mokj/odds/"
+      ]
+    }
+  ],
+  "new_verified_snapshots": 0,
+  "seven_day_schedule_coverage": "INCOMPLETE_NOT_VERIFIED_THROUGH_2026-11-28T21:24:33+08:00",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "no_existing_records_modified": true,
+  "notes": "No PRE_KICK_RECORDED written. Existing schedule retains historical entries. This audit is append-only. If matches reach kickoff without validated quotes, mark MISSED_T60 on subsequent audit."
+}
