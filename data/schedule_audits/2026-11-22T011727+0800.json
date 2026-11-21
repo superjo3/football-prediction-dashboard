@@ -1,0 +1,168 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "audit_at_utc": "2026-11-21T17:17:27Z",
+  "audit_at_taipei": "2026-11-22T01:17:27+08:00",
+  "repository": "superjo3/football-prediction-dashboard",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_prekick": "data/market_prekick_snapshots.json",
+  "schedule_entries_read": 53,
+  "required_until_utc": "2026-11-28T17:17:27Z",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "schedule_window_coverage": "INCOMPLETE",
+  "official_fixture_reverification": "NOT_COMPLETED_THIS_RUN",
+  "active_t60_window": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-NEWCASTLE-UNITED-ARSENAL",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "minutes_to_kickoff": 12.55,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "Available public odds pages do not establish contemporaneous same-bookmaker timestamp for full 1X2/OU2.5/AH"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-SCHALKE-STUTTGART",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "minutes_to_kickoff": 12.55,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "Available public odds pages do not establish contemporaneous same-bookmaker timestamp for full 1X2/OU2.5/AH"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-SEVILLA-REAL-BETIS",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "minutes_to_kickoff": 12.55,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "Available public odds pages do not establish contemporaneous same-bookmaker timestamp for full 1X2/OU2.5/AH"
+    }
+  ],
+  "missed_t60_audit_only": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+      "kickoff_at_utc": "2026-11-21T12:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-BOURNEMOUTH-NOTTINGHAM-FOREST",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-ASTON-VILLA-SUNDERLAND",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-CHELSEA-LEEDS-UNITED",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-COVENTRY-CITY-CRYSTAL-PALACE",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-TOTTENHAM-IPSWICH-TOWN",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "kickoff_at_utc": "2026-11-20T19:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BAYER-LEVERKUSEN-PADERBORN",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BORUSSIA-MONCHENGLADBACH-BORUSSIA-DORTMUND",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-EINTRACHT-FRANKFURT-HOFFENHEIM",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-ELVERSBERG-FREIBURG",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-UNION-BERLIN-RB-LEIPZIG",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "kickoff_at_utc": "2026-11-20T20:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-ALAVES-DEPORTIVO-LA-CORUNA",
+      "kickoff_at_utc": "2026-11-21T13:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-RAYO-VALLECANO-VALENCIA",
+      "kickoff_at_utc": "2026-11-21T15:15:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-COMO-CAGLIARI",
+      "kickoff_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-LAZIO-LECCE",
+      "kickoff_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-PARMA-ROMA",
+      "kickoff_at_utc": "2026-11-21T17:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "kickoff_at_utc": "2026-11-20T19:45:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-NICE-PSG",
+      "kickoff_at_utc": "2026-11-21T16:15:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated snapshot in PRE-KICK main file"
+    }
+  ],
+  "verified_new_snapshots": 0,
+  "pre_kick_recorded_added": 0,
+  "snapshot_status": "NOT_PERSISTED",
+  "research_sources": [
+    "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+    "https://1x2.expert/en/match/180236-newcastle-vs-arsenal",
+    "https://stake3088.com/sports/soccer/germany/bundesliga/46983478-schalke-04-stuttgart",
+    "https://soccerbets.com/match/spain/laliga/sevilla-vs-betis/s5dpwvkgotzy"
+  ],
+  "notes": "Append-only audit. No snapshot created; no OPEN, Official, Research, Shadow or R ranks modified. Seven-day extension remains unverified and NOT_PERSISTED."
+}
