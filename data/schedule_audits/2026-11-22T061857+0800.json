@@ -1,0 +1,24 @@
+{
+  "audit_type": "FIVE_LEAGUE_T60_HOURLY_AUDIT",
+  "checked_at_taipei": "2026-11-22T06:18:57+08:00",
+  "checked_at_utc": "2026-11-21T22:18:57Z",
+  "base_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_extension": "data/schedule_extensions/2026-11-22T061857+0800.json",
+  "newly_persisted_schedule_fixtures": 3,
+  "seven_day_complete": false,
+  "seven_day_schedule_status": "PARTIAL_PERSISTED",
+  "next_known_fixture": {
+    "league": "SERIEA",
+    "home": "Juventus",
+    "away": "Venezia",
+    "kickoff_at_utc": "2026-11-22T11:30:00Z",
+    "t60_due_at_utc": "2026-11-22T10:30:00Z",
+    "source": "https://www.juventus.com/it/news/articoli/serie-a-dove-vedere-juventus-venezia",
+    "verified": "2026-11-22"
+  },
+  "within_t60": [],
+  "new_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "odds_status": "NO_CAPTURE_REQUIRED",
+  "original_records_modified": false
+}
