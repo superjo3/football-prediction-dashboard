@@ -1,0 +1,87 @@
+{
+  "schema_version": "T60_AUDIT_V1",
+  "checked_at": "2026-11-21T22:23:36+08:00",
+  "scope": [
+    "EPL",
+    "BUNDESLIGA",
+    "LALIGA",
+    "SERIEA",
+    "LIGUE1"
+  ],
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_coverage": "INCOMPLETE_NOT_EXTENDED_TO_2026-11-28T22:23:36+08:00",
+  "snapshot_file": "data/market_prekick_snapshots.json",
+  "snapshot_existing_count": 0,
+  "validated_new_snapshots": 0,
+  "window_games": [
+    {
+      "league": "EPL",
+      "fixture": "Bournemouth vs Nottingham Forest",
+      "kickoff_at_taipei": "2026-11-21T23:00:00+08:00",
+      "target_t60": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff": 36.4,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "pre_kick_recorded": false,
+      "reason": "No contemporaneously timestamped complete 1X2 OU2.5 AH odds from a single verified bookmaker"
+    },
+    {
+      "league": "EPL",
+      "fixture": "Aston Villa vs Sunderland",
+      "kickoff_at_taipei": "2026-11-21T23:00:00+08:00",
+      "target_t60": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff": 36.4,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "pre_kick_recorded": false,
+      "reason": "No contemporaneously timestamped complete 1X2 OU2.5 AH odds from a single verified bookmaker"
+    },
+    {
+      "league": "EPL",
+      "fixture": "Chelsea vs Leeds United",
+      "kickoff_at_taipei": "2026-11-21T23:00:00+08:00",
+      "target_t60": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff": 36.4,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "pre_kick_recorded": false,
+      "reason": "No contemporaneously timestamped complete 1X2 OU2.5 AH odds from a single verified bookmaker"
+    },
+    {
+      "league": "EPL",
+      "fixture": "Coventry City vs Crystal Palace",
+      "kickoff_at_taipei": "2026-11-21T23:00:00+08:00",
+      "target_t60": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff": 36.4,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "pre_kick_recorded": false,
+      "reason": "No contemporaneously timestamped complete 1X2 OU2.5 AH odds from a single verified bookmaker"
+    },
+    {
+      "league": "EPL",
+      "fixture": "Tottenham vs Ipswich Town",
+      "kickoff_at_taipei": "2026-11-21T23:00:00+08:00",
+      "target_t60": "2026-11-21T22:00:00+08:00",
+      "minutes_to_kickoff": 36.4,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "pre_kick_recorded": false,
+      "reason": "No contemporaneously timestamped complete 1X2 OU2.5 AH odds from a single verified bookmaker"
+    }
+  ],
+  "missed_t60": [
+    {
+      "league": "SERIEA",
+      "fixture": "Como vs Cagliari",
+      "kickoff_at_taipei": "2026-11-21T22:00:00+08:00",
+      "status": "MISSED_T60"
+    },
+    {
+      "league": "SERIEA",
+      "fixture": "Lazio vs Lecce",
+      "kickoff_at_taipei": "2026-11-21T22:00:00+08:00",
+      "status": "MISSED_T60"
+    }
+  ],
+  "verified_sources": [
+    "https://www.premierleague.com/en/news/4725574",
+    "https://www.legaseriea.it/serie-a/calendario-risultati"
+  ],
+  "notes": "No new odds written; no predictions, OPEN, official, research, shadow or R1/R2/R3 overwritten. Historical status recorded only in this append-only audit; schedule master not extended."
+}
