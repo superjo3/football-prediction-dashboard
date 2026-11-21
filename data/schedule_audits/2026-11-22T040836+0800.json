@@ -1,0 +1,76 @@
+{
+  "schema_version": "T60_AUDIT_V1",
+  "audit_at": "2026-11-22T04:08:36+08:00",
+  "repository": "superjo3/football-prediction-dashboard",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_snapshot": "data/market_prekick_snapshots.json",
+  "schedule_fixture_count": 53,
+  "schedule_window_end_utc": "2026-11-27T23:59:59Z",
+  "seven_day_coverage": "NOT_PERSISTED",
+  "in_t60_window": [],
+  "new_verified_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "missed_t60_newly_audited": [
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-REAL-MADRID-CELTA-VIGO",
+      "league": "LALIGA",
+      "kickoff_at_utc": "2026-11-21T20:00:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 04:00 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-NAPOLI-TORINO",
+      "league": "SERIEA",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://football-italia.net/serie-a-fixtures/"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-MONACO-AUXERRE",
+      "league": "LIGUE1",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-STRASBOURG-BREST",
+      "league": "LIGUE1",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LENS-TOULOUSE",
+      "league": "LIGUE1",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LILLE-LYON",
+      "league": "LIGUE1",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "status": "MISSED_T60",
+      "reason": "Kickoff passed; no timestamp-verifiable complete pre-kick snapshot in repository",
+      "source_schedule": "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+    }
+  ],
+  "master_status": "UNCHANGED",
+  "snapshot_status": "UNCHANGED",
+  "notes": [
+    "Append-only audit; no official model or existing data overwritten",
+    "Seven-day rolling schedule not verified or extended",
+    "MISSED_T60 only audited, not reflected in schedule master"
+  ]
+}
