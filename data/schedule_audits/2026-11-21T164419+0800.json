@@ -1,0 +1,29 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at_local": "2026-11-21T16:44:19+08:00",
+  "checked_at_utc": "2026-11-21T08:44:19Z",
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_entries_inspected": 53,
+  "pre_kick_file": "data/market_prekick_snapshots.json",
+  "existing_verified_snapshots": 0,
+  "within_0_60_minutes": [],
+  "new_snapshots": 0,
+  "pre_kick_recorded_new": 0,
+  "next_known_fixture": {
+    "league": "EPL",
+    "home": "Manchester City",
+    "away": "Fulham",
+    "kickoff_local": "2026-11-21T12:30:00+00:00",
+    "kickoff_utc": "2026-11-21T12:30:00Z",
+    "kickoff_taipei": "2026-11-21T20:30:00+08:00",
+    "t60_taipei": "2026-11-21T19:30:00+08:00",
+    "verified_source": "https://www.mancity.com/tickets/mens/man-city-v-fulham-21-nov-2026",
+    "last_verified_at": "2026-11-21T08:44:19Z"
+  },
+  "seven_day_required_through_taipei": "2026-11-28T16:44:19+08:00",
+  "seven_day_complete": false,
+  "seven_day_status": "NOT_PERSISTED",
+  "status": "NO_T60_DUE",
+  "verification_scope": "Verified Manchester City vs Fulham official club source; full five-league schedule not reverified",
+  "notes": "Read 53 schedule entries and empty pre-kick snapshot collection. No live odds due. OPEN/Official/Research/Shadow/R ranks unchanged."
+}
