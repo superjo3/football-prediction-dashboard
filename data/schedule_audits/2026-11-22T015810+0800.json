@@ -1,0 +1,39 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "audit_at_utc": "2026-11-21T17:58:10Z",
+  "audit_at_taipei": "2026-11-22T01:58:10+08:00",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_prekick": "data/market_prekick_snapshots.json",
+  "schedule_entries_read": 53,
+  "required_until_utc": "2026-11-28T17:58:10Z",
+  "schedule_window_coverage": "INCOMPLETE",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "active_t60_window": [],
+  "newly_missed_t60": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-NEWCASTLE-UNITED-ARSENAL",
+      "kickoff_at_utc": "2026-11-21T17:30:00Z",
+      "status": "MISSED_T60"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-SCHALKE-STUTTGART",
+      "kickoff_at_utc": "2026-11-21T17:30:00Z",
+      "status": "MISSED_T60"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-SEVILLA-REAL-BETIS",
+      "kickoff_at_utc": "2026-11-21T17:30:00Z",
+      "status": "MISSED_T60"
+    }
+  ],
+  "next_known_fixture": {
+    "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-REAL-MADRID-CELTA-VIGO",
+    "kickoff_at_utc": "2026-11-21T20:00:00Z",
+    "t60_due_at_utc": "2026-11-21T19:00:00Z",
+    "source": "https://careers-guardian.fixtur.es/en/matches/primera-division/round/13"
+  },
+  "verified_new_snapshots": 0,
+  "pre_kick_recorded_added": 0,
+  "snapshot_status": "NOT_PERSISTED",
+  "notes": "Append-only audit. Current fixture schedule incomplete for seven days; no valid full same-bookmaker timestamped odds snapshot. Main schedule and PRE-KICK file unchanged; all predictions and OPEN unchanged."
+}
