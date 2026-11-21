@@ -1,0 +1,35 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T10:52:37+08:00",
+  "checked_at_utc": "2026-11-21T02:52:37Z",
+  "schedule_source": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_existing_fixture_count": 53,
+  "required_window_end": "2026-11-28T10:52:37+08:00",
+  "existing_schedule_declared_end": "2026-11-28T07:59:59+08:00",
+  "last_existing_fixture_kickoff": "2026-11-28T03:45:00+08:00",
+  "gap_verification": {
+    "range_start": "2026-11-28T03:45:00+08:00",
+    "range_end": "2026-11-28T10:52:37+08:00",
+    "source_urls": [
+      "https://www.theguardian.com/football/fixtures/2026/Nov/28",
+      "https://matchangle.com/en/football/2026-11-28/",
+      "https://soccersharp.net/schedule/2026-11-28"
+    ],
+    "finding": "No five-league kickoff found within the gap through 10:52 Taipei; Nov 28 listed matches begin later in the day",
+    "status": "SECONDARY_SOURCES_CHECKED"
+  },
+  "seven_day_coverage": "PARTIAL_VERIFIED_NO_GAP_MATCHES_FOUND",
+  "external_fixture_reverification": "NOT_COMPLETED_FOR_ALL_53",
+  "t60_window_fixtures": [],
+  "new_pre_kick_records": 0,
+  "pre_kick_recorded": 0,
+  "odds_capture": "NOT_TRIGGERED",
+  "next_known_fixture": {
+    "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+    "kickoff_at_taipei": "2026-11-21T20:30:00+08:00",
+    "t60_at_taipei": "2026-11-21T19:30:00+08:00"
+  },
+  "prior_missed_t60": "Preserved; not overwritten",
+  "official_predictions_modified": false,
+  "notes": "Append-only audit. Full fixture-by-fixture source revalidation not completed. No T60 snapshots created; no fabricated odds."
+}
