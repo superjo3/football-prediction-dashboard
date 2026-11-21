@@ -1,0 +1,33 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at_local": "2026-11-21T20:16:24+08:00",
+  "checked_at_utc": "2026-11-21T12:16:24Z",
+  "schedule_file": "data/fixture_schedule_20261120_20261127.json",
+  "pre_kick_file": "data/market_prekick_snapshots.json",
+  "fixture_checked": {
+    "league": "EPL",
+    "season": "2026-27",
+    "GW": 11,
+    "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+    "home": "Manchester City",
+    "away": "Fulham",
+    "kickoff_local": "2026-11-21T12:30:00+00:00",
+    "kickoff_utc": "2026-11-21T12:30:00Z",
+    "kickoff_taipei": "2026-11-21T20:30:00+08:00",
+    "t60_target_taipei": "2026-11-21T19:30:00+08:00",
+    "minutes_to_kickoff_at_check": 13.6,
+    "source": "https://www.mancity.com/tickets/mens/man-city-v-fulham-21-nov-2026",
+    "last_verified_at": "2026-11-21T12:16:24Z",
+    "pre_kick_status": "APPROX_T60_SOURCE_NOT_TIMESTAMP_VERIFIED",
+    "pre_kick_recorded": false
+  },
+  "odds_source_candidates": [
+    "https://live355.com/event/c543093e-e3a5-4a02-afb0-30b2fd50c84c",
+    "https://www.sportsbet.io/sports?event=manchester-city-v-fulham-fc-0010c6b77400000000000000"
+  ],
+  "odds_issue": "Pages show odds but no independently verified observation timestamp corresponding to this run; web crawl times may be yesterday; cannot claim snapshot_at or minutes_to_kickoff for prices",
+  "new_validated_snapshots": 0,
+  "seven_day_complete": false,
+  "seven_day_status": "NOT_PERSISTED",
+  "notes": "No validated T-60 odds; preserve existing predictions and snapshots; schedule remaining four leagues not reverified"
+}
