@@ -1,0 +1,49 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T09:09:27+08:00",
+  "checked_at_utc": "2026-11-21T01:09:27.000Z",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_schedule_blob_sha": "8043491d0bc094e6f283a87a71abf89d0a9aa779",
+  "fixture_count": 53,
+  "league_counts": {
+    "EPL": 11,
+    "BUNDESLIGA": 10,
+    "LALIGA": 11,
+    "SERIEA": 11,
+    "LIGUE1": 10
+  },
+  "required_window_end_utc": "2026-11-28T01:09:27.000Z",
+  "latest_existing_fixture_utc": "2026-11-27T20:00:00.000Z",
+  "seven_day_schedule_extension": "NOT_PERSISTED",
+  "schedule_external_reverification": "NOT_COMPLETED",
+  "t60_window_fixture_ids": [],
+  "new_pre_kick_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "missed_candidates": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "kickoff_at_utc": "2026-11-20T19:30:00.000Z",
+      "derived_status": "MISSED_T60",
+      "note": "No verified snapshot confirmed by this audit; check independent PRE-KICK records before changing canonical status"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "kickoff_at_utc": "2026-11-20T20:00:00.000Z",
+      "derived_status": "MISSED_T60",
+      "note": "No verified snapshot confirmed by this audit; check independent PRE-KICK records before changing canonical status"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "kickoff_at_utc": "2026-11-20T19:45:00.000Z",
+      "derived_status": "MISSED_T60",
+      "note": "No verified snapshot confirmed by this audit; check independent PRE-KICK records before changing canonical status"
+    }
+  ],
+  "missed_candidates_persisted_as_canonical": false,
+  "notes": [
+    "Append-only audit; source fixture schedule and OPEN/Official/Research/Shadow/R ranks unchanged",
+    "No market quotes were requested because no fixture entered T-60 window",
+    "Prior MISSED_T60 reports are not overwritten; this audit does not independently verify PRE-KICK record files",
+    "Seven-day coverage and full fixture source verification remain incomplete"
+  ]
+}
