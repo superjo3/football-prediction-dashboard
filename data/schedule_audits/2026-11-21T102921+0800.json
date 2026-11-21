@@ -1,0 +1,24 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "checked_at": "2026-11-21T10:29:21+08:00",
+  "checked_at_utc": "2026-11-21T02:29:21Z",
+  "schedule_source": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_source_branch": "main",
+  "schedule_existing_fixture_count": 53,
+  "window_required_end": "2026-11-28T10:29:21+08:00",
+  "schedule_existing_window_end": "2026-11-28T07:59:59+08:00",
+  "seven_day_coverage": "NOT_PERSISTED",
+  "external_fixture_reverification": "NOT_COMPLETED",
+  "t60_window_fixtures": [],
+  "new_pre_kick_records": 0,
+  "pre_kick_recorded": 0,
+  "odds_capture": "NOT_TRIGGERED",
+  "next_known_fixture": {
+    "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+    "kickoff_at_taipei": "2026-11-21T20:30:00+08:00",
+    "t60_at_taipei": "2026-11-21T19:30:00+08:00"
+  },
+  "prior_missed_t60": "Not reverified in this run; prior audit records preserved",
+  "official_predictions_modified": false,
+  "notes": "Audit based on repository schedule; no independent full seven-day fixture verification. No snapshot added. No source timestamp was fabricated."
+}
