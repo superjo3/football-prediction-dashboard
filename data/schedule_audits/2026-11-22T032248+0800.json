@@ -1,0 +1,86 @@
+{
+  "schema_version": "T60_AUDIT_V1",
+  "checked_at": "2026-11-22T03:22:48+08:00",
+  "fixture_master": "data/fixture_schedule_20261120_20261127.json",
+  "fixture_count": 53,
+  "existing_valid_snapshots": 0,
+  "window_fixtures": [
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-REAL-MADRID-CELTA-VIGO",
+      "league": "LALIGA",
+      "home": "Real Madrid",
+      "away": "Celta Vigo",
+      "kickoff_at_utc": "2026-11-21T20:00:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 04:00 +08:00",
+      "minutes_to_kickoff": 37.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-NAPOLI-TORINO",
+      "league": "SERIEA",
+      "home": "Napoli",
+      "away": "Torino",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "minutes_to_kickoff": 22.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-MONACO-AUXERRE",
+      "league": "LIGUE1",
+      "home": "Monaco",
+      "away": "Auxerre",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "minutes_to_kickoff": 22.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-STRASBOURG-BREST",
+      "league": "LIGUE1",
+      "home": "Strasbourg",
+      "away": "Brest",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "minutes_to_kickoff": 22.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LENS-TOULOUSE",
+      "league": "LIGUE1",
+      "home": "Lens",
+      "away": "Toulouse",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "minutes_to_kickoff": 22.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LILLE-LYON",
+      "league": "LIGUE1",
+      "home": "Lille",
+      "away": "Lyon",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "kickoff_at_taipei": "2026-11-22 03:45 +08:00",
+      "minutes_to_kickoff": 22.2,
+      "status": "APPROX_T60_NOT_VERIFIED",
+      "reason": "No timestamp-verifiable complete same-bookmaker 1X2, OU2.5, AH quote; not a valid snapshot"
+    }
+  ],
+  "odds_sources_examined": [
+    "https://1x2.expert/en/match/180451-real-madrid-vs-celta-vigo",
+    "https://oddsfilter.com/event/1001570461-real-madrid-celta-vigo",
+    "https://www.sportsbet.io/sports?event=real-madrid-v-rc-celta-de-vigo-0010c6e62700000000000000"
+  ],
+  "odds_note": "Odds pages show values but no trustworthy quote timestamp for the current check; do not represent as T60",
+  "new_valid_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "seven_day_schedule_status": "NOT_PERSISTED_INCOMPLETE",
+  "schedule_window_end": "2026-11-27T23:59:59Z",
+  "existing_forecasts_untouched": true
+}
