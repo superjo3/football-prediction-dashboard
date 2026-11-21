@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-21T12:26:42+08:00",
+  "leagues": [
+    "EPL",
+    "Bundesliga",
+    "LaLiga",
+    "Serie A",
+    "Ligue 1"
+  ],
+  "schedule_status": "PARTIAL_VERIFIED",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "source": "https://www.premierleague.com/en/news/4725574",
+  "verified_fixture": {
+    "league": "EPL",
+    "season": "2026-27",
+    "GW": 11,
+    "fixture_id": null,
+    "home": "Manchester City",
+    "away": "Fulham",
+    "kickoff_local": "2026-11-21T12:30:00+00:00",
+    "kickoff_utc": "2026-11-21T12:30:00Z",
+    "kickoff_taipei": "2026-11-21T20:30:00+08:00",
+    "T60_taipei": "2026-11-21T19:30:00+08:00",
+    "last_verified_at": "2026-11-21T12:26:42+08:00"
+  },
+  "T60_window_matches": [],
+  "new_snapshots": 0,
+  "PRE_KICK_RECORDED": 0,
+  "existing_records": "NOT_REVERIFIED",
+  "note": "No matches currently within 0-60 minutes to kickoff based on verified EPL source. Five-league complete 7-day schedule not verified. No odds fabricated; no existing predictions modified."
+}
