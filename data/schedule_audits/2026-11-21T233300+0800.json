@@ -1,0 +1,91 @@
+{
+  "schema_version": "FIVE_LEAGUE_T60_AUDIT_V1",
+  "audit_at_utc": "2026-11-21T15:33:00Z",
+  "audit_at_taipei": "2026-11-21T23:33:00+08:00",
+  "repository": "superjo3/football-prediction-dashboard",
+  "source_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "source_prekick": "data/market_prekick_snapshots.json",
+  "schedule_entries_read": 53,
+  "schedule_window_coverage": "INCOMPLETE",
+  "required_until_utc": "2026-11-28T15:33:00Z",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "official_fixture_reverification": "NOT_COMPLETED_THIS_RUN",
+  "verified_new_snapshots": 0,
+  "pre_kick_recorded_added": 0,
+  "active_t60_window": [
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-NICE-PSG",
+      "kickoff_at_utc": "2026-11-21T16:15:00.000Z"
+    }
+  ],
+  "missed_t60_audit_only": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-BOURNEMOUTH-NOTTINGHAM-FOREST",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-ASTON-VILLA-SUNDERLAND",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-CHELSEA-LEEDS-UNITED",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-COVENTRY-CITY-CRYSTAL-PALACE",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-TOTTENHAM-IPSWICH-TOWN",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BAYER-LEVERKUSEN-PADERBORN",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BORUSSIA-MONCHENGLADBACH-BORUSSIA-DORTMUND",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-EINTRACHT-FRANKFURT-HOFFENHEIM",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-ELVERSBERG-FREIBURG",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-UNION-BERLIN-RB-LEIPZIG",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-RAYO-VALLECANO-VALENCIA",
+      "kickoff_at_utc": "2026-11-21T15:15:00.000Z",
+      "status": "MISSED_T60",
+      "reason": "No validated PRE_KICK snapshot before kickoff; historical verified T-60 unavailable"
+    }
+  ],
+  "snapshot_status": "NOT_PERSISTED",
+  "notes": "Append-only audit. Existing fixture schedule and all forecasts, OPEN, Official, Research, Shadow, R1/R2/R3 left untouched. Fixture dates in source schedule were not independently reverified this run."
+}
