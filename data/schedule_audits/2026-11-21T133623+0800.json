@@ -1,0 +1,39 @@
+{
+  "audit_at": "2026-11-21T13:36:23+08:00",
+  "window_end": "2026-11-28T13:36:23+08:00",
+  "scope": [
+    "EPL",
+    "Bundesliga",
+    "LaLiga",
+    "Serie A",
+    "Ligue 1"
+  ],
+  "existing_schedule_path": "data/fixture_schedule_20261120_20261127.json",
+  "existing_schedule_count_previous_audit": 53,
+  "verified_this_run": [
+    {
+      "league": "EPL",
+      "home": "Manchester City",
+      "away": "Fulham",
+      "kickoff_at_utc": "2026-11-21T12:30:00Z",
+      "kickoff_at_taipei": "2026-11-21T20:30:00+08:00",
+      "t60_at_taipei": "2026-11-21T19:30:00+08:00",
+      "source": "https://www.premierleague.com/en/news/4725574",
+      "last_verified_at": "2026-11-21T13:36:23+08:00",
+      "fixture_id_status": "OFFICIAL_ID_NOT_VERIFIED"
+    }
+  ],
+  "t60_window_fixtures": [],
+  "new_snapshots": 0,
+  "pre_kick_recorded_new": 0,
+  "pre_kick_snapshot_file": "data/market_prekick_snapshots.json",
+  "snapshot_status": "NO_NEW_VERIFIED_SNAPSHOT",
+  "schedule_coverage_status": "PARTIAL_NOT_FULLY_VERIFIED",
+  "schedule_extension_status": "NOT_PERSISTED",
+  "notes": [
+    "Existing fixture schedule was read, and existing pre-kick snapshot file contains no snapshots.",
+    "No known fixture in T-60 capture window at this run time.",
+    "Four other leagues not independently reverified; full 7-day completeness cannot be certified.",
+    "Historical records and model predictions left unchanged."
+  ]
+}
