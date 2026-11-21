@@ -1,0 +1,62 @@
+{
+  "schema_version": "FIVE_LEAGUE_SCHEDULE_EXTENSION_V1",
+  "checked_at_taipei": "2026-11-22T06:18:57+08:00",
+  "append_only": true,
+  "base_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "coverage_complete": false,
+  "coverage_target_taipei": "2026-11-29T06:18:57+08:00",
+  "notes": "Only independently corroborated Nov 28 EPL fixtures added; all five-league seven-day completeness remains unverified. Original master untouched.",
+  "fixtures": [
+    {
+      "league": "EPL",
+      "season": "2026-27",
+      "GW": 12,
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-LEEDS-UNITED-COVENTRY-CITY",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "kickoff_local": "2026-11-28T15:00:00",
+      "local_timezone": "Europe/London",
+      "kickoff_at_utc": "2026-11-28T15:00:00Z",
+      "kickoff_at_taipei": "2026-11-28T23:00:00+08:00",
+      "source": "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures",
+      "last_verified_at": "2026-11-21T22:18:57Z",
+      "t60_due_at_utc": "2026-11-28T14:00:00.000Z",
+      "pre_kick_status": "PENDING"
+    },
+    {
+      "league": "EPL",
+      "season": "2026-27",
+      "GW": 12,
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-MANCHESTER-UNITED-BRENTFORD",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "home": "Manchester United",
+      "away": "Brentford",
+      "kickoff_local": "2026-11-28T15:00:00",
+      "local_timezone": "Europe/London",
+      "kickoff_at_utc": "2026-11-28T15:00:00Z",
+      "kickoff_at_taipei": "2026-11-28T23:00:00+08:00",
+      "source": "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures",
+      "last_verified_at": "2026-11-21T22:18:57Z",
+      "t60_due_at_utc": "2026-11-28T14:00:00.000Z",
+      "pre_kick_status": "PENDING"
+    },
+    {
+      "league": "EPL",
+      "season": "2026-27",
+      "GW": 12,
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-IPSWICH-TOWN-ASTON-VILLA",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "kickoff_local": "2026-11-28T17:30:00",
+      "local_timezone": "Europe/London",
+      "kickoff_at_utc": "2026-11-28T17:30:00Z",
+      "kickoff_at_taipei": "2026-11-29T01:30:00+08:00",
+      "source": "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures",
+      "last_verified_at": "2026-11-21T22:18:57Z",
+      "t60_due_at_utc": "2026-11-28T16:30:00.000Z",
+      "pre_kick_status": "PENDING"
+    }
+  ]
+}
