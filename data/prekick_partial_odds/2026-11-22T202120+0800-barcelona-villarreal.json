@@ -1,0 +1,68 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V2",
+  "record_id": "PARTIAL-LALIGA-20261122-BARCELONA-VILLARREAL-20261122T122120Z",
+  "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-BARCELONA-VILLARREAL",
+  "status": "PARTIAL_ODDS",
+  "observed_at_utc": "2026-11-22T12:21:20Z",
+  "kickoff_at_utc": "2026-11-22T13:00:00Z",
+  "minutes_to_kickoff": 38.667,
+  "source_label": "LIVE_OBSERVED_AT",
+  "source_update_time_verified": false,
+  "bookmaker": "singaporepools",
+  "source_url": "https://sgodds.com/football/current-odds/Barcelona-vs-Villarreal-149352",
+  "odds": {
+    "1X2": {
+      "home": 1.15,
+      "draw": 7.5,
+      "away": 9.5
+    },
+    "OU25": {
+      "over": null,
+      "under": null
+    },
+    "AH": {
+      "line_home": -2.25,
+      "home": 1.82,
+      "away": 1.9
+    }
+  },
+  "other_market": {
+    "OU45": {
+      "over": 1.9,
+      "under": 1.77
+    }
+  },
+  "open_same_source": {
+    "1X2": {
+      "home": 1.17,
+      "draw": 6,
+      "away": 10
+    },
+    "AH": {
+      "line_home": -2.25,
+      "home": 1.93,
+      "away": 1.88
+    },
+    "OU45": {
+      "over": 2.03,
+      "under": 1.67
+    }
+  },
+  "missing_markets": [
+    "OU2.5_over",
+    "OU2.5_under"
+  ],
+  "reason": "MARKET_MISSING: SGOdds lists O/U4.5 not O/U2.5; no verifiable bookmaker refresh timestamp; not a certified T-60 quote",
+  "validation": {
+    "pre_kick_recorded": false,
+    "market_complete": false,
+    "same_bookmaker": true,
+    "source_refresh_verified": false
+  },
+  "attempted_sources": [
+    "https://sgodds.com/football/current-odds/Barcelona-vs-Villarreal-149352",
+    "https://oddshistory.io/match/2026-11-22-barcelona-vs-villarreal",
+    "https://legalbet.uk/game-center/barcelona-villarreal-22-11-2026/"
+  ],
+  "notes": "Legalbet lists OU2.5 but was published two days earlier and is not used as a current quote. Observed time is automation run reference, not proven source publication time."
+}
