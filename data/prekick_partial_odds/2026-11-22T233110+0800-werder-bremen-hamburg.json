@@ -1,0 +1,35 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V2",
+  "record_id": "2026-11-22T233110+0800-BUNDESLIGA-2026-27-GW10-2026-11-22-WERDER-BREMEN-HAMBURG",
+  "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-WERDER-BREMEN-HAMBURG",
+  "league": "BUNDESLIGA",
+  "kickoff_at": "2026-11-22T16:30:00.000Z",
+  "due_at": "2026-11-22T15:30:00.000Z",
+  "observed_at": "2026-11-22T15:31:10Z",
+  "minutes_to_kickoff": 58.833,
+  "status": "PARTIAL_ODDS",
+  "observation_label": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "bookmaker": "LEON",
+  "source_url": "https://leon.bet/bets/soccer/germany/bundesliga/1970324853861378-werder-bremen-hamburger-sv",
+  "odds": {
+    "1X2": {
+      "home": 1.62,
+      "draw": 4.53,
+      "away": 5.5
+    },
+    "OU25": {
+      "over": 1.58,
+      "under": 2.33
+    },
+    "AH": {
+      "line_home": -0.75,
+      "home": 1.66,
+      "away": 2.13
+    }
+  },
+  "missing_fields": [],
+  "source_update_time_verified": false,
+  "pre_kick_recorded": false,
+  "reason": "All three markets shown on LEON page but no independently verifiable quote update time; source may be cached; not validated precise pre-kick.",
+  "append_only": true
+}
