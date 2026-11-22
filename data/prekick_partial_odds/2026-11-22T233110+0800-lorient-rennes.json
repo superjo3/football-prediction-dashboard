@@ -1,0 +1,39 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V2",
+  "record_id": "2026-11-22T233110+0800-LIGUE1-2026-27-GW11-2026-11-22-LORIENT-RENNES",
+  "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-LORIENT-RENNES",
+  "league": "LIGUE1",
+  "kickoff_at": "2026-11-22T16:15:00.000Z",
+  "due_at": "2026-11-22T15:15:00.000Z",
+  "observed_at": "2026-11-22T15:31:10Z",
+  "minutes_to_kickoff": 43.833,
+  "status": "PARTIAL_ODDS",
+  "observation_label": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "bookmaker": "Bet365 (third-party listing)",
+  "source_url": "https://www.singlebet.net/odds/lorient-vs-rennes-2026-11-22-3862060/",
+  "odds": {
+    "1X2": {
+      "home": 2.88,
+      "draw": 3.5,
+      "away": 2.4
+    },
+    "OU25": {
+      "over": 1.91,
+      "under": 1.91
+    },
+    "AH": {
+      "line_home": null,
+      "home": null,
+      "away": null
+    }
+  },
+  "missing_fields": [
+    "AH.line_home",
+    "AH.home",
+    "AH.away"
+  ],
+  "source_update_time_verified": false,
+  "pre_kick_recorded": false,
+  "reason": "Bookmaker-attributed 1X2 and OU2.5 only; same-book AH unavailable; page refresh time unverified.",
+  "append_only": true
+}
