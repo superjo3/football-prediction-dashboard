@@ -1,0 +1,24 @@
+{
+  "schema_version": "FIVE_LEAGUE_SCHEDULE_AUDIT_V1",
+  "checked_at_taipei": "2026-11-22T09:11:10+08:00",
+  "source_repository": "superjo3/football-prediction-dashboard",
+  "base_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "extensions": [
+    "data/schedule_extensions/2026-11-22T061857+0800.json",
+    "data/schedule_extensions/2026-11-22T071346+0800.json"
+  ],
+  "pre_kick_master": "data/market_prekick_snapshots.json",
+  "pre_kick_master_status": "PENDING_NO_VALIDATED_PREKICK_SNAPSHOTS",
+  "new_verified_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "window_check": "NO_KNOWN_FIXTURES_WITHIN_0_TO_60_MINUTES",
+  "coverage_target_taipei": "2026-11-29T09:11:10+08:00",
+  "coverage_complete": false,
+  "coverage_status": "PARTIAL_PERSISTED",
+  "limitations": [
+    "Future seven-day schedule not independently reverified in this run",
+    "No verified complete Bet365 1X2 OU2.5 AH snapshot",
+    "No existing official/research/shadow/open predictions modified"
+  ],
+  "note": "Append-only audit; schedule master and snapshot master unchanged."
+}
