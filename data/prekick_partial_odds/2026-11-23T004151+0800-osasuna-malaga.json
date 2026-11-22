@@ -1,0 +1,36 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V1",
+  "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-OSASUNA-MALAGA",
+  "league": "LALIGA",
+  "home": "Osasuna",
+  "away": "Malaga",
+  "kickoff_at": "2026-11-22T17:30:00Z",
+  "due_at": "2026-11-22T16:30:00Z",
+  "run_at": "2026-11-22T16:41:51Z",
+  "minutes_to_kickoff": 48.15,
+  "status": "PARTIAL_ODDS",
+  "observation_type": "LIVE_OBSERVED_AT",
+  "source_update_time_verified": false,
+  "bookmaker": "Sportsbet.io",
+  "source_url": "https://www.sportsbet.io/sports/soccer/spain/matches/today?event=ca-osasuna-v-malaga-cf-0010c6e63100000000000000",
+  "odds": {
+    "1X2": {
+      "home": 1.87,
+      "draw": 3.55,
+      "away": 4.5
+    },
+    "OU25": {
+      "over": 2.02,
+      "under": 1.85
+    },
+    "AH": {
+      "line_home": -0.5,
+      "home": 1.87,
+      "away": 2
+    }
+  },
+  "missing_markets": [],
+  "validated": false,
+  "reason": "Full markets displayed on a public page crawled today, but no source-side last-update timestamp or confirmation prices were refreshed at run time; therefore NOT PRE_KICK_RECORDED.",
+  "crossbook_proxy": false
+}
