@@ -1,0 +1,303 @@
+{
+  "schema_version": "FIVE_LEAGUE_PREKICK_GAP_AUDIT_V1",
+  "audit_type": "RETROSPECTIVE_MISSING_SNAPSHOTS",
+  "evaluated_at_taipei": "2026-11-22T10:41:00+08:00",
+  "source_paths": [
+    "data/fixture_schedule_20261120_20261127.json",
+    "data/schedule_extensions/2026-11-22T061857+0800.json",
+    "data/schedule_extensions/2026-11-22T071346+0800.json",
+    "data/market_prekick_snapshots.json"
+  ],
+  "snapshot_count_at_audit": 0,
+  "lookback_hours": 24,
+  "window_fixture_count": 26,
+  "warning": "This audit certifies missing recorded snapshots, not whether odds were available or fetching attempted. Do not infer a specific failure without execution logs.",
+  "fixtures": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+      "league": "EPL",
+      "home": "Manchester City",
+      "away": "Fulham",
+      "kickoff_at_utc": "2026-11-21T12:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T11:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-BOURNEMOUTH-NOTTINGHAM-FOREST",
+      "league": "EPL",
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-ASTON-VILLA-SUNDERLAND",
+      "league": "EPL",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-CHELSEA-LEEDS-UNITED",
+      "league": "EPL",
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-COVENTRY-CITY-CRYSTAL-PALACE",
+      "league": "EPL",
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-TOTTENHAM-IPSWICH-TOWN",
+      "league": "EPL",
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "kickoff_at_utc": "2026-11-21T15:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-NEWCASTLE-UNITED-ARSENAL",
+      "league": "EPL",
+      "home": "Newcastle United",
+      "away": "Arsenal",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T16:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BAYER-LEVERKUSEN-PADERBORN",
+      "league": "BUNDESLIGA",
+      "home": "Bayer Leverkusen",
+      "away": "Paderborn",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BORUSSIA-MONCHENGLADBACH-BORUSSIA-DORTMUND",
+      "league": "BUNDESLIGA",
+      "home": "Borussia Monchengladbach",
+      "away": "Borussia Dortmund",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-EINTRACHT-FRANKFURT-HOFFENHEIM",
+      "league": "BUNDESLIGA",
+      "home": "Eintracht Frankfurt",
+      "away": "Hoffenheim",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-ELVERSBERG-FREIBURG",
+      "league": "BUNDESLIGA",
+      "home": "Elversberg",
+      "away": "Freiburg",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-UNION-BERLIN-RB-LEIPZIG",
+      "league": "BUNDESLIGA",
+      "home": "Union Berlin",
+      "away": "RB Leipzig",
+      "kickoff_at_utc": "2026-11-21T14:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-SCHALKE-STUTTGART",
+      "league": "BUNDESLIGA",
+      "home": "Schalke",
+      "away": "Stuttgart",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T16:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-ALAVES-DEPORTIVO-LA-CORUNA",
+      "league": "LALIGA",
+      "home": "Alaves",
+      "away": "Deportivo La Coruna",
+      "kickoff_at_utc": "2026-11-21T13:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T12:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-RAYO-VALLECANO-VALENCIA",
+      "league": "LALIGA",
+      "home": "Rayo Vallecano",
+      "away": "Valencia",
+      "kickoff_at_utc": "2026-11-21T15:15:00.000Z",
+      "t60_due_at_utc": "2026-11-21T14:15:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-SEVILLA-REAL-BETIS",
+      "league": "LALIGA",
+      "home": "Sevilla",
+      "away": "Real Betis",
+      "kickoff_at_utc": "2026-11-21T17:30:00.000Z",
+      "t60_due_at_utc": "2026-11-21T16:30:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-REAL-MADRID-CELTA-VIGO",
+      "league": "LALIGA",
+      "home": "Real Madrid",
+      "away": "Celta Vigo",
+      "kickoff_at_utc": "2026-11-21T20:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T19:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-COMO-CAGLIARI",
+      "league": "SERIEA",
+      "home": "Como",
+      "away": "Cagliari",
+      "kickoff_at_utc": "2026-11-21T14:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-LAZIO-LECCE",
+      "league": "SERIEA",
+      "home": "Lazio",
+      "away": "Lecce",
+      "kickoff_at_utc": "2026-11-21T14:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T13:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-PARMA-ROMA",
+      "league": "SERIEA",
+      "home": "Parma",
+      "away": "Roma",
+      "kickoff_at_utc": "2026-11-21T17:00:00.000Z",
+      "t60_due_at_utc": "2026-11-21T16:00:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-NAPOLI-TORINO",
+      "league": "SERIEA",
+      "home": "Napoli",
+      "away": "Torino",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "t60_due_at_utc": "2026-11-21T18:45:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-NICE-PSG",
+      "league": "LIGUE1",
+      "home": "Nice",
+      "away": "PSG",
+      "kickoff_at_utc": "2026-11-21T16:15:00.000Z",
+      "t60_due_at_utc": "2026-11-21T15:15:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-MONACO-AUXERRE",
+      "league": "LIGUE1",
+      "home": "Monaco",
+      "away": "Auxerre",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "t60_due_at_utc": "2026-11-21T18:45:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-STRASBOURG-BREST",
+      "league": "LIGUE1",
+      "home": "Strasbourg",
+      "away": "Brest",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "t60_due_at_utc": "2026-11-21T18:45:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LENS-TOULOUSE",
+      "league": "LIGUE1",
+      "home": "Lens",
+      "away": "Toulouse",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "t60_due_at_utc": "2026-11-21T18:45:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LILLE-LYON",
+      "league": "LIGUE1",
+      "home": "Lille",
+      "away": "Lyon",
+      "kickoff_at_utc": "2026-11-21T19:45:00.000Z",
+      "t60_due_at_utc": "2026-11-21T18:45:00.000Z",
+      "status": "NO_VERIFIED_T60_SNAPSHOT",
+      "reason": "Verified snapshot master empty; cannot infer which source or scheduling attempt failed",
+      "next_action": "Diagnose per-fixture source availability and scheduler history; never backfill unverified odds"
+    }
+  ]
+}
