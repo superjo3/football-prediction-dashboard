@@ -1,0 +1,34 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V1",
+  "append_only": true,
+  "fixture_id": "EPL-2026-27-GW11-2026-11-22-HULL-CITY-BRIGHTON",
+  "kickoff_at_utc": "2026-11-22T14:00:00Z",
+  "run_at_utc": "2026-11-22T13:20:39Z",
+  "minutes_to_kickoff": 39.35,
+  "status": "PARTIAL_ODDS",
+  "time_quality": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "source_timestamp_verified": false,
+  "bookmaker": "bet365",
+  "source_url": "https://sportbetting-nga.net/football-matches/premier-league-hull-brighton-pm38wnt/",
+  "odds": {
+    "1X2": {
+      "home": 6.25,
+      "draw": 4.33,
+      "away": 1.5
+    },
+    "OU25": {
+      "over": null,
+      "under": null
+    },
+    "AH": {
+      "line_home": null,
+      "home": null,
+      "away": null
+    }
+  },
+  "missing_markets": [
+    "OU25",
+    "AH"
+  ],
+  "reason": "Public source displayed listed bookmaker prices when checked, but has no verifiable effective timestamp; this is not an exact T-60 snapshot and missing markets cannot be substituted from other bookmakers."
+}
