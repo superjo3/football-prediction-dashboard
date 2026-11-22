@@ -1,0 +1,33 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V1",
+  "append_only": true,
+  "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-SASSUOLO-GENOA",
+  "kickoff_at_utc": "2026-11-22T14:00:00Z",
+  "run_at_utc": "2026-11-22T13:20:39Z",
+  "minutes_to_kickoff": 39.35,
+  "status": "PARTIAL_ODDS",
+  "time_quality": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "source_timestamp_verified": false,
+  "bookmaker": "bet365",
+  "source_url": "https://www.singlebet.net/odds/sassuolo-vs-genoa-2026-11-22-3860159/",
+  "odds": {
+    "1X2": {
+      "home": 2.7,
+      "draw": 3.3,
+      "away": 2.7
+    },
+    "OU25": {
+      "over": 1.91,
+      "under": 1.91
+    },
+    "AH": {
+      "line_home": null,
+      "home": null,
+      "away": null
+    }
+  },
+  "missing_markets": [
+    "AH"
+  ],
+  "reason": "Public source displayed listed bookmaker prices when checked, but has no verifiable effective timestamp; this is not an exact T-60 snapshot and missing markets cannot be substituted from other bookmakers."
+}
