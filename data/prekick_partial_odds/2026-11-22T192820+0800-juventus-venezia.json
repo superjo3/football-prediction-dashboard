@@ -1,0 +1,52 @@
+{
+  "record_id": "PARTIAL-SERIEA-20261122-JUVENTUS-VENEZIA-20261122T112820Z",
+  "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-JUVENTUS-VENEZIA",
+  "status": "PARTIAL_ODDS",
+  "reason": "SOURCE_REFRESH_TIMESTAMP_NOT_SHOWN; LIVE_OBSERVED_AT; NOT VERIFIED EXACT T60; bookmaker singaporepools, not Bet365",
+  "observed_at_utc": "2026-11-22T11:28:20Z",
+  "minutes_to_kickoff": 1.667,
+  "kickoff_at_utc": "2026-11-22T11:30:00Z",
+  "source_url": "https://sgodds.com/football/current-odds/Juventus-vs-Venezia-149307",
+  "bookmaker": "singaporepools",
+  "source_label": "LIVE_OBSERVED_AT",
+  "snapshot_quality": "APPROX_T60_UNVERIFIED_SOURCE_REFRESH",
+  "odds": {
+    "1X2": {
+      "home": 1.37,
+      "draw": 4.4,
+      "away": 6.5
+    },
+    "OU25": {
+      "over": 1.55,
+      "under": 2.25
+    },
+    "AH": {
+      "line_home": -1.5,
+      "home": 2.05,
+      "away": 1.63
+    }
+  },
+  "open_same_source": {
+    "1X2": {
+      "home": 1.3,
+      "draw": 4.8,
+      "away": 7.5
+    },
+    "OU25": {
+      "over": 1.55,
+      "under": 2.25
+    },
+    "AH": {
+      "line_home": -1.5,
+      "home": 1.9,
+      "away": 1.75
+    }
+  },
+  "validation": {
+    "markets_present": true,
+    "source_update_time_verified": false,
+    "bookmaker_same": true,
+    "pre_kick_recorded": false
+  },
+  "notes": "Page says 10-minute updates but does not identify last refresh; captured values are observed webpage, not certified live book quotes."
+}
