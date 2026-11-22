@@ -1,0 +1,33 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V1",
+  "append_only": true,
+  "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-PARIS-FC-ANGERS",
+  "kickoff_at_utc": "2026-11-22T14:00:00Z",
+  "run_at_utc": "2026-11-22T13:20:39Z",
+  "minutes_to_kickoff": 39.35,
+  "status": "PARTIAL_ODDS",
+  "time_quality": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "source_timestamp_verified": false,
+  "bookmaker": "bet365",
+  "source_url": "https://goal888.com/en/match/paris-fc-vs-angers-mou2/odds/",
+  "odds": {
+    "1X2": {
+      "home": 1.29,
+      "draw": 5.5,
+      "away": 9
+    },
+    "OU25": {
+      "over": null,
+      "under": null
+    },
+    "AH": {
+      "line_home": -1.75,
+      "home": 2,
+      "away": 1.85
+    }
+  },
+  "missing_markets": [
+    "OU25"
+  ],
+  "reason": "Public source displayed listed bookmaker prices when checked, but has no verifiable effective timestamp; this is not an exact T-60 snapshot and missing markets cannot be substituted from other bookmakers."
+}
