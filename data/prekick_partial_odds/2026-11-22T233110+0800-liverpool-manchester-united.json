@@ -1,0 +1,42 @@
+{
+  "schema_version": "PREKICK_PARTIAL_ODDS_V2",
+  "record_id": "2026-11-22T233110+0800-EPL-2026-27-GW11-2026-11-22-LIVERPOOL-MANCHESTER-UNITED",
+  "fixture_id": "EPL-2026-27-GW11-2026-11-22-LIVERPOOL-MANCHESTER-UNITED",
+  "league": "EPL",
+  "kickoff_at": "2026-11-22T16:30:00.000Z",
+  "due_at": "2026-11-22T15:30:00.000Z",
+  "observed_at": "2026-11-22T15:31:10Z",
+  "minutes_to_kickoff": 58.833,
+  "status": "PARTIAL_ODDS",
+  "observation_label": "LIVE_OBSERVED_AT_UNVERIFIED_SOURCE_UPDATE",
+  "bookmaker": "Bet365 (third-party listing)",
+  "source_url": "https://oddsfilter.com/event/1001557473-liverpool-manchester-united",
+  "odds": {
+    "1X2": {
+      "home": null,
+      "draw": null,
+      "away": null
+    },
+    "OU25": {
+      "over": 1.5,
+      "under": 2.62
+    },
+    "AH": {
+      "line_home": null,
+      "home": null,
+      "away": null
+    }
+  },
+  "missing_fields": [
+    "1X2.home",
+    "1X2.draw",
+    "1X2.away",
+    "AH.line_home",
+    "AH.home",
+    "AH.away"
+  ],
+  "source_update_time_verified": false,
+  "pre_kick_recorded": false,
+  "reason": "Only Bet365 OU2.5 clearly attributed; no bookmaker-matched full 1X2/AH verified; source refresh time not confirmed at run.",
+  "append_only": true
+}
