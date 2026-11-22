@@ -1,0 +1,28 @@
+{
+  "schema_version": "FIVE_LEAGUE_SCHEDULE_AUDIT_V1",
+  "checked_at_taipei": "2026-11-22T09:37:03+08:00",
+  "source_repository": "superjo3/football-prediction-dashboard",
+  "base_schedule": "data/fixture_schedule_20261120_20261127.json",
+  "extensions": [
+    "data/schedule_extensions/2026-11-22T061857+0800.json",
+    "data/schedule_extensions/2026-11-22T071346+0800.json"
+  ],
+  "pre_kick_master": "data/market_prekick_snapshots.json",
+  "pre_kick_master_status": "PENDING_NO_VALIDATED_PREKICK_SNAPSHOTS",
+  "known_fixture_count": 73,
+  "known_future_fixture_count_at_previous_audit": 44,
+  "window_check": "NO_KNOWN_FIXTURES_WITHIN_0_TO_60_MINUTES",
+  "new_verified_snapshots": 0,
+  "pre_kick_recorded": 0,
+  "coverage_target_taipei": "2026-11-29T09:37:03+08:00",
+  "coverage_complete": false,
+  "coverage_status": "PARTIAL_PERSISTED",
+  "schedule_extension_this_run": "NONE",
+  "limitations": [
+    "Existing records checked; no independent official verification of full next-seven-day schedule in this run",
+    "Fixture IDs in extensions are derived, not official",
+    "No complete timestamp-verified single-bookmaker 1X2/OU2.5/AH snapshot available or needed in current window",
+    "No changes to original schedule, OPEN, Official, Research, Shadow, predictions or R1/R2/R3"
+  ],
+  "note": "Append-only audit; source master and snapshot master unchanged."
+}
