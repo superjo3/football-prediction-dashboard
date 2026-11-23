@@ -1,0 +1,556 @@
+{
+  "schema": "THREE_STAGE_POSTMATCH_V1",
+  "date_taipei": "2026-11-23",
+  "league": "SERIEA",
+  "gw": 12,
+  "season": "2026-27",
+  "record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+  "original_package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_SERIEA_GW12_20261109.json",
+  "source_urls": [
+    "https://minutolive.com/league/serie-a/results",
+    "https://www.inter.it/en/match_center/5381"
+  ],
+  "model_class": "RESEARCH_ONLY",
+  "original_prematch_record_untouched": true,
+  "settlement": {
+    "status": "SETTLEMENT_INCOMPLETE",
+    "completed": 9,
+    "pending": 1,
+    "fixtures": [
+      {
+        "match_id": "SERIEA-2026-27-GW12-01",
+        "home": "Como",
+        "away": "Cagliari",
+        "score": [
+          2,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-02",
+        "home": "Lazio",
+        "away": "Lecce",
+        "score": [
+          3,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-03",
+        "home": "Parma",
+        "away": "Roma",
+        "score": [
+          1,
+          5
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-04",
+        "home": "Napoli",
+        "away": "Torino",
+        "score": [
+          1,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-05",
+        "home": "Juventus",
+        "away": "Venezia",
+        "score": [
+          4,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-06",
+        "home": "Bologna",
+        "away": "Udinese",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-07",
+        "home": "Sassuolo",
+        "away": "Genoa",
+        "score": [
+          0,
+          2
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-08",
+        "home": "Milan",
+        "away": "Frosinone",
+        "score": [
+          5,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-09",
+        "home": "Atalanta",
+        "away": "Inter",
+        "score": [
+          4,
+          4
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "SERIEA-2026-27-GW12-10",
+        "home": "Monza",
+        "away": "Fiorentina",
+        "score": null,
+        "state": "PENDING",
+        "actual": null,
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": null,
+          "OU25": null,
+          "parity": null
+        }
+      }
+    ],
+    "ranks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "fixture": "Parma vs Roma",
+          "match_id": "SERIEA-2026-27-GW12-03",
+          "pick": "客勝",
+          "score": [
+            1,
+            5
+          ],
+          "actual": "客勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Como vs Cagliari",
+          "match_id": "SERIEA-2026-27-GW12-01",
+          "pick": "主勝",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Juventus vs Venezia",
+          "match_id": "SERIEA-2026-27-GW12-05",
+          "pick": "主勝",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "fixture": "Milan vs Frosinone",
+          "match_id": "SERIEA-2026-27-GW12-08",
+          "pick": "大2.5",
+          "score": [
+            5,
+            1
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Atalanta vs Inter",
+          "match_id": "SERIEA-2026-27-GW12-09",
+          "pick": "大2.5",
+          "score": [
+            4,
+            4
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Como vs Cagliari",
+          "match_id": "SERIEA-2026-27-GW12-01",
+          "pick": "大2.5",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "RESEARCH_ONLY"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "fixture": "Milan vs Frosinone",
+          "match_id": "SERIEA-2026-27-GW12-08",
+          "pick": "雙",
+          "score": [
+            5,
+            1
+          ],
+          "actual": "雙",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Napoli vs Torino",
+          "match_id": "SERIEA-2026-27-GW12-04",
+          "pick": "雙",
+          "score": [
+            1,
+            0
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Como vs Cagliari",
+          "match_id": "SERIEA-2026-27-GW12-01",
+          "pick": "雙",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "雙",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        }
+      ]
+    },
+    "rank_summaries": {
+      "1X2": {
+        "hit": 3,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      },
+      "OU25": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      },
+      "parity": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      }
+    },
+    "full_summaries": {
+      "1X2": {
+        "hit": 6,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      },
+      "OU25": {
+        "hit": 7,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      },
+      "parity": {
+        "hit": 5,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      }
+    },
+    "pass_flags": {
+      "official_model": true,
+      "1X2": false,
+      "OU25": false,
+      "parity": true,
+      "reason": "GW12 exact official model NOT_RUN; package is RESEARCH_ONLY"
+    }
+  },
+  "review": {
+    "errors": {
+      "1X2": [
+        {
+          "fixture": "Bologna vs Udinese",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "Sassuolo vs Genoa",
+          "score": [
+            0,
+            2
+          ],
+          "prediction": "和",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "Atalanta vs Inter",
+          "score": [
+            4,
+            4
+          ],
+          "prediction": "客勝",
+          "actual": "和"
+        }
+      ],
+      "OU25": [
+        {
+          "fixture": "Como vs Cagliari",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "Napoli vs Torino",
+          "score": [
+            1,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        }
+      ],
+      "parity": [
+        {
+          "fixture": "Lazio vs Lecce",
+          "score": [
+            3,
+            0
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "Parma vs Roma",
+          "score": [
+            1,
+            5
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        },
+        {
+          "fixture": "Napoli vs Torino",
+          "score": [
+            1,
+            0
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "Bologna vs Udinese",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        }
+      ]
+    },
+    "diagnostics": [
+      "Research-only; official model NOT_RUN",
+      "Parity research R2 Napoli 1-0 miss even, Milan 5-1 and Como 2-0 even hit",
+      "Atalanta 4-4 Inter is high-goal outlier; do not alter rule based on result"
+    ],
+    "market_swing": "NOT_EVALUABLE_NO_VERIFIED_T60_ODDS",
+    "decisions": [
+      "KEEP original",
+      "WATCH draw/low-total/skew",
+      "TEST on future sealed rounds only",
+      "PROMOTE_NONE"
+    ]
+  },
+  "dashboard_update_package": {
+    "state": "DEFERRED_BY_USER",
+    "main_updated": false,
+    "website_updated": false,
+    "forward_cumulative": "NOT_RECALCULATED_PRIOR_VERIFIED_FORWARD_HISTORY_MISSING",
+    "no_reprediction": true
+  }
+}
