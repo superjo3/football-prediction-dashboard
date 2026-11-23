@@ -1,0 +1,562 @@
+{
+  "schema": "THREE_STAGE_POSTMATCH_V1",
+  "date_taipei": "2026-11-23",
+  "league": "LALIGA",
+  "gw": 13,
+  "season": "2026-27",
+  "record_id": "LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY",
+  "original_package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261109.json",
+  "source_urls": [
+    "https://www.laliga.com/en-ES/laliga-easports/results"
+  ],
+  "model_class": "RESEARCH_ONLY",
+  "original_prematch_record_untouched": true,
+  "settlement": {
+    "status": "SETTLEMENT_INCOMPLETE",
+    "completed": 9,
+    "pending": 1,
+    "fixtures": [
+      {
+        "match_id": "LALIGA-2026-27-GW13-01",
+        "home": "畢爾包",
+        "away": "愛斯賓奴",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-02",
+        "home": "艾拉維斯",
+        "away": "拉科魯尼亞",
+        "score": [
+          3,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-03",
+        "home": "華歷簡奴",
+        "away": "華倫西亞",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-04",
+        "home": "西維爾",
+        "away": "貝迪斯",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-05",
+        "home": "皇家馬德里",
+        "away": "切爾達",
+        "score": [
+          2,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-06",
+        "home": "巴塞隆拿",
+        "away": "維拉利爾",
+        "score": [
+          3,
+          2
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-07",
+        "home": "桑坦德",
+        "away": "皇家蘇斯達",
+        "score": [
+          3,
+          2
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-08",
+        "home": "奧沙辛拿",
+        "away": "馬拉加",
+        "score": [
+          1,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-09",
+        "home": "加泰",
+        "away": "馬德里體育會",
+        "score": [
+          0,
+          3
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LALIGA-2026-27-GW13-10",
+        "home": "利雲特",
+        "away": "艾爾切",
+        "score": null,
+        "state": "PENDING",
+        "actual": null,
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": null,
+          "OU25": null,
+          "parity": null
+        }
+      }
+    ],
+    "ranks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "fixture": "皇家馬德里 vs 切爾達",
+          "match_id": "LALIGA-2026-27-GW13-05",
+          "pick": "主勝",
+          "score": [
+            2,
+            1
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "巴塞隆拿 vs 維拉利爾",
+          "match_id": "LALIGA-2026-27-GW13-06",
+          "pick": "主勝",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "畢爾包 vs 愛斯賓奴",
+          "match_id": "LALIGA-2026-27-GW13-01",
+          "pick": "主勝",
+          "score": [
+            0,
+            1
+          ],
+          "actual": "客勝",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "RESEARCH_ONLY"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "fixture": "巴塞隆拿 vs 維拉利爾",
+          "match_id": "LALIGA-2026-27-GW13-06",
+          "pick": "大2.5",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "皇家馬德里 vs 切爾達",
+          "match_id": "LALIGA-2026-27-GW13-05",
+          "pick": "大2.5",
+          "score": [
+            2,
+            1
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "桑坦德 vs 皇家蘇斯達",
+          "match_id": "LALIGA-2026-27-GW13-07",
+          "pick": "大2.5",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "fixture": "桑坦德 vs 皇家蘇斯達",
+          "match_id": "LALIGA-2026-27-GW13-07",
+          "pick": "單",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R2",
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "match_id": "LALIGA-2026-27-GW13-02",
+          "pick": "單",
+          "score": [
+            3,
+            1
+          ],
+          "actual": "雙",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "RESEARCH_ONLY"
+        },
+        {
+          "rank": "R3",
+          "fixture": "皇家馬德里 vs 切爾達",
+          "match_id": "LALIGA-2026-27-GW13-05",
+          "pick": "單",
+          "score": [
+            2,
+            1
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "RESEARCH_ONLY"
+        }
+      ]
+    },
+    "rank_summaries": {
+      "1X2": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      },
+      "OU25": {
+        "hit": 3,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      },
+      "parity": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "RESEARCH_ONLY"
+      }
+    },
+    "full_summaries": {
+      "1X2": {
+        "hit": 5,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      },
+      "OU25": {
+        "hit": 5,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      },
+      "parity": {
+        "hit": 7,
+        "n": 9,
+        "pending": 1,
+        "class": "RESEARCH_ONLY"
+      }
+    },
+    "pass_flags": {
+      "1X2": false,
+      "OU25": false,
+      "parity": true
+    }
+  },
+  "review": {
+    "errors": {
+      "1X2": [
+        {
+          "fixture": "畢爾包 vs 愛斯賓奴",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "華歷簡奴 vs 華倫西亞",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "西維爾 vs 貝迪斯",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "客勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "桑坦德 vs 皇家蘇斯達",
+          "score": [
+            3,
+            2
+          ],
+          "prediction": "客勝",
+          "actual": "主勝"
+        }
+      ],
+      "OU25": [
+        {
+          "fixture": "畢爾包 vs 愛斯賓奴",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "score": [
+            3,
+            1
+          ],
+          "prediction": "小2.5",
+          "actual": "大2.5"
+        },
+        {
+          "fixture": "西維爾 vs 貝迪斯",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "加泰 vs 馬德里體育會",
+          "score": [
+            0,
+            3
+          ],
+          "prediction": "小2.5",
+          "actual": "大2.5"
+        }
+      ],
+      "parity": [
+        {
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "score": [
+            3,
+            1
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        },
+        {
+          "fixture": "西維爾 vs 貝迪斯",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        }
+      ]
+    },
+    "diagnostics": [
+      "Research-only; official model NOT_RUN",
+      "Odd bias research candidate: Alaves 3-1 even miss, Santander 3-2 odd and Real 2-1 odd hit",
+      "A/B method to be reported separately; no post-result upgrade"
+    ],
+    "market_swing": "NOT_EVALUABLE_NO_VERIFIED_T60_ODDS",
+    "decisions": [
+      "KEEP original",
+      "WATCH draw/low-total/skew",
+      "TEST on future sealed rounds only",
+      "PROMOTE_NONE"
+    ]
+  },
+  "dashboard_update_package": {
+    "state": "DEFERRED_BY_USER",
+    "main_updated": false,
+    "website_updated": false,
+    "forward_cumulative": "NOT_RECALCULATED_PRIOR_VERIFIED_FORWARD_HISTORY_MISSING",
+    "no_reprediction": true
+  }
+}
