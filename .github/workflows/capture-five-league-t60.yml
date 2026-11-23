@@ -1,0 +1,67 @@
+name: Capture five-league T-60 odds and audit
+on:
+  schedule:
+    # GitHub Actions cron is best-effort; actual observed lead time is recorded per fixture.
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: five-league-prekick-t60
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Unit tests - do not claim fake complete markets
+        run: node --test tools/prekick_t60_runner.test.js
+      - name: Check five league fixtures and capture pre-kick odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: node tools/prekick_t60_runner.js
+      - name: Persist immutable audit plus any new snapshots or schedule amendments
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prekick_audits/ data/schedule_extensions/ data/market_prekick_snapshots.json
+          if git diff --cached --quiet; then
+            echo "NOT_PERSISTED: monitor produced no new audit"
+            exit 1
+          fi
+          git commit -m "audit: record verified T-60 odds attempts and fixture source checks"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Commit successfully pushed"
+              break
+            fi
+            if [ "$attempt" = 3 ]; then
+              echo "NOT_PERSISTED: push failed after retries"
+              exit 1
+            fi
+            git pull --rebase origin main
+          done
+          git fetch origin main
+          audit_path=$(ls -1t data/prekick_audits/*-automation.json | head -1)
+          test -n "$audit_path"
+          git show "origin/main:$audit_path" | cmp - "$audit_path" || {
+            echo "NOT_PERSISTED: remote audit readback differs"
+            exit 1
+          }
+          git show origin/main:data/market_prekick_snapshots.json | cmp - data/market_prekick_snapshots.json || {
+            echo "NOT_PERSISTED: remote odds readback differs"
+            exit 1
+          }
+          echo "PERSISTED_READBACK_VERIFIED: $audit_path"
