@@ -1,0 +1,59 @@
+{
+  "schema": "POSTMATCH_REVIEW_PARTIAL_V1",
+  "status": "REVIEW_PARTIAL_WAIT_FINAL",
+  "round": "LALIGA-2026-27-GW13",
+  "created_date_taipei": "2026-11-23",
+  "linked_addendum": "data/pending-sync/LALIGA_GW13_20261123_SETTLEMENT_PARTIAL.json",
+  "sample_size": {
+    "completed": 9,
+    "pending": 1
+  },
+  "findings": [
+    {
+      "type": "A_VS_B_PARITY",
+      "fact": "A 4/9, B 6/9 completed; B improved 2/9 with flips Athletic-Espanyol and Rayo-Valencia (A EVEN wrong, B ODD correct).",
+      "decision": "WATCH",
+      "constraint": "One round only; do not promote B based on hindsight."
+    },
+    {
+      "type": "RANKING",
+      "fact": "A parity R1/R2/R3 3/3; B parity R1/R2 2/2 and R3 Alaves odd miss (2/3 all ranks). A rank1 Racing odd, rank2 Barcelona odd, rank3 Real Madrid odd all hit.",
+      "decision": "KEEP_A_ARCHIVED_RANKS",
+      "constraint": "Do not rewrite or reorder pre-match ranks."
+    },
+    {
+      "type": "SHARED_ERRORS",
+      "fact": "Both models failed parity in Alaves-Deportivo (even), Osasuna-Malaga (odd), Getafe-Atletico (odd).",
+      "decision": "TEST",
+      "hypothesis": "Examine low-score underdog and high-confidence selection gates on held-out samples; not a new rule."
+    },
+    {
+      "type": "A_THREE_MARKETS",
+      "fact": "A 1X2 5/9 (R1 1/1,R2 1/1,R3 0/1); A O/U2.5 5/9 (R1/R2/R3 3/3); A parity 4/9 (R1/R2/R3 3/3).",
+      "decision": "WATCH"
+    },
+    {
+      "type": "PARITY_SKEW",
+      "fact": "Of 9 completed, 7 odd / 2 even. A pre-round selections were 4 odd / 6 even, B 6 odd / 4 even (includes unplayed game).",
+      "decision": "TEST",
+      "constraint": "No forced direction balance; leave original recorded predictions unchanged."
+    },
+    {
+      "type": "SOURCE_INTEGRITY",
+      "fact": "No verified identical-source Bet365 OPEN and T-60 PRE-KICK paired odds; no valid odds-delta audit possible.",
+      "decision": "WATCH"
+    },
+    {
+      "type": "MODEL_IDENTITY",
+      "fact": "A qualitative continuity (not GW12 exact replay) and B frozen extended research must stay separate from Official.",
+      "decision": "KEEP_SEPARATE"
+    }
+  ],
+  "promotion": "NO_PROMOTION",
+  "next_actions": [
+    "Verify Levante vs Elche after scheduled 2026-11-24 04:00 Asia/Taipei kickoff",
+    "Append final result without modifying this partial snapshot",
+    "Recompute full-round A/B and personal selected stats",
+    "Apply chronology-safe multi-round tests before model changes"
+  ]
+}
