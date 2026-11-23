@@ -1,0 +1,743 @@
+{
+  "schema": "RESULT_ADDENDUM_PARTIAL_V1",
+  "status": "SETTLEMENT_INCOMPLETE",
+  "round": "LALIGA-2026-27-GW13",
+  "created_date_taipei": "2026-11-23",
+  "verified_completed": 9,
+  "total_fixtures": 10,
+  "pending": [
+    {
+      "fixture": "利雲特 vs 艾爾切",
+      "kickoff_taipei": "2026-11-24 04:00"
+    }
+  ],
+  "source_url": "https://www.laliga.com/laliga-easports/resultados/2026-27/jornada-13",
+  "evidence_checked_at_date_taipei": "2026-11-23",
+  "source_predictions": {
+    "A": {
+      "path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261116_V2_CONTINUITY_A.json",
+      "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+      "blob_sha": "264931707f58b03bacc6fda938ded8c85719cc50",
+      "level": "RESEARCH_ONLY",
+      "exact_prior_model_replay": false
+    },
+    "B": {
+      "path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LALIGA_GW13_20261117_EXTENDED_FROZEN_PROXY_RESEARCH.json",
+      "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+      "blob_sha": "52e316c0bae66f5c471e7dfdae079f26436929f8",
+      "level": "RESEARCH_ONLY",
+      "fixed_runner": true
+    }
+  },
+  "no_prematch_edits": true,
+  "official_settlement": "NOT_APPLICABLE_TO_RESEARCH_ONLY",
+  "open_and_prekick": "OPENPROXY_AVAILABLE; BET365_FIRST_TICK_AND_PREKICK_MISSING",
+  "rows": [
+    {
+      "fixture": "畢爾包 vs 愛斯賓奴",
+      "kickoff_taipei": "2026-11-21 04:00",
+      "score": [
+        0,
+        1
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "客勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "大2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": "R3",
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": false,
+          "ou25": false,
+          "parity": false
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.529607,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          1.49,
+          4.31,
+          6.75
+        ],
+        "odds_ou25": [
+          1.8,
+          1.99
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "艾拉維斯 vs 拉科魯尼亞",
+      "kickoff_taipei": "2026-11-21 21:00",
+      "score": [
+        3,
+        1
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "雙"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "小2.5",
+          "parity": "單"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": true,
+          "ou25": false,
+          "parity": false
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": "R3",
+        "p_odd_research": 0.543182,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": false
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          2.06,
+          3.36,
+          3.61
+        ],
+        "odds_ou25": [
+          2.14,
+          1.69
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "華歷簡奴 vs 華倫西亞",
+      "kickoff_taipei": "2026-11-21 23:15",
+      "score": [
+        0,
+        1
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "客勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "小2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": false,
+          "ou25": true,
+          "parity": false
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.527889,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          2,
+          3.45,
+          3.77
+        ],
+        "odds_ou25": [
+          2.04,
+          1.78
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "西維爾 vs 貝迪斯",
+      "kickoff_taipei": "2026-11-22 01:30",
+      "score": [
+        1,
+        1
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "和",
+        "ou25": "小2.5",
+        "parity": "雙"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "客勝",
+          "ou25": "大2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": false,
+          "ou25": false,
+          "parity": true
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "雙"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.47517,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          2.9,
+          3.56,
+          2.35
+        ],
+        "odds_ou25": [
+          1.73,
+          2.1
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "皇家馬德里 vs 切爾達",
+      "kickoff_taipei": "2026-11-22 04:00",
+      "score": [
+        2,
+        1
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "大2.5",
+          "parity": "單"
+        },
+        "ranks": {
+          "1x2": "R1",
+          "ou25": "R2",
+          "parity": "R3"
+        },
+        "hits": {
+          "1x2": true,
+          "ou25": true,
+          "parity": true
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": "R1",
+        "p_odd_research": 0.605821,
+        "high_conf_gate": true,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          1.21,
+          6.59,
+          13.23
+        ],
+        "odds_ou25": [
+          1.4,
+          2.82
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "巴塞隆拿 vs 維拉利爾",
+      "kickoff_taipei": "2026-11-22 21:00",
+      "score": [
+        3,
+        2
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "大2.5",
+          "parity": "單"
+        },
+        "ranks": {
+          "1x2": "R2",
+          "ou25": "R1",
+          "parity": "R2"
+        },
+        "hits": {
+          "1x2": true,
+          "ou25": true,
+          "parity": true
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": "R2",
+        "p_odd_research": 0.55978,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          1.23,
+          6.91,
+          10.08
+        ],
+        "odds_ou25": [
+          1.21,
+          3.99
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "桑坦德 vs 皇家蘇斯達",
+      "kickoff_taipei": "2026-11-22 23:15",
+      "score": [
+        3,
+        2
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "主勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "客勝",
+          "ou25": "大2.5",
+          "parity": "單"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": "R3",
+          "parity": "R1"
+        },
+        "hits": {
+          "1x2": false,
+          "ou25": true,
+          "parity": true
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "單"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.539618,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": true
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          3.13,
+          3.91,
+          2.1
+        ],
+        "odds_ou25": [
+          1.43,
+          2.74
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "奧沙辛拿 vs 馬拉加",
+      "kickoff_taipei": "2026-11-23 01:30",
+      "score": [
+        1,
+        0
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "主勝",
+        "ou25": "小2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "小2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": true,
+          "ou25": true,
+          "parity": false
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "雙"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.492924,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": false
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          1.76,
+          3.69,
+          4.74
+        ],
+        "odds_ou25": [
+          1.92,
+          1.89
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "加泰 vs 馬德里體育會",
+      "kickoff_taipei": "2026-11-23 04:00",
+      "score": [
+        0,
+        3
+      ],
+      "match_status": "FINAL",
+      "actual": {
+        "1x2": "客勝",
+        "ou25": "大2.5",
+        "parity": "單"
+      },
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "客勝",
+          "ou25": "小2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": {
+          "1x2": true,
+          "ou25": false,
+          "parity": false
+        }
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "雙"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.486549,
+        "high_conf_gate": false,
+        "hits": {
+          "parity": false
+        }
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          5.52,
+          3.78,
+          1.63
+        ],
+        "odds_ou25": [
+          2.07,
+          1.75
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    },
+    {
+      "fixture": "利雲特 vs 艾爾切",
+      "kickoff_taipei": "2026-11-24 04:00",
+      "score": null,
+      "match_status": "NOT_STARTED",
+      "actual": null,
+      "A": {
+        "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+        "pred": {
+          "1x2": "主勝",
+          "ou25": "大2.5",
+          "parity": "雙"
+        },
+        "ranks": {
+          "1x2": null,
+          "ou25": null,
+          "parity": null
+        },
+        "hits": null
+      },
+      "B": {
+        "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+        "pred": {
+          "parity": "雙"
+        },
+        "rank_parity": null,
+        "p_odd_research": 0.489775,
+        "high_conf_gate": false,
+        "hits": null
+      },
+      "opening_proxy": {
+        "odds_1x2": [
+          2.16,
+          3.73,
+          3.08
+        ],
+        "odds_ou25": [
+          1.66,
+          2.19
+        ]
+      },
+      "pre_kick_status": "MISSING"
+    }
+  ],
+  "totals": {
+    "A": {
+      "1x2": {
+        "hits": 5,
+        "n": 9,
+        "pending": 1,
+        "ranks": {
+          "R1": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "皇家馬德里 vs 切爾達"
+            ]
+          },
+          "R2": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "巴塞隆拿 vs 維拉利爾"
+            ]
+          },
+          "R3": {
+            "hits": 0,
+            "n": 1,
+            "fixtures": [
+              "畢爾包 vs 愛斯賓奴"
+            ]
+          }
+        }
+      },
+      "ou25": {
+        "hits": 5,
+        "n": 9,
+        "pending": 1,
+        "ranks": {
+          "R1": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "巴塞隆拿 vs 維拉利爾"
+            ]
+          },
+          "R2": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "皇家馬德里 vs 切爾達"
+            ]
+          },
+          "R3": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "桑坦德 vs 皇家蘇斯達"
+            ]
+          }
+        }
+      },
+      "parity": {
+        "hits": 4,
+        "n": 9,
+        "pending": 1,
+        "ranks": {
+          "R1": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "桑坦德 vs 皇家蘇斯達"
+            ]
+          },
+          "R2": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "巴塞隆拿 vs 維拉利爾"
+            ]
+          },
+          "R3": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "皇家馬德里 vs 切爾達"
+            ]
+          }
+        }
+      }
+    },
+    "B": {
+      "parity": {
+        "hits": 6,
+        "n": 9,
+        "pending": 1,
+        "ranks": {
+          "R1": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "皇家馬德里 vs 切爾達"
+            ]
+          },
+          "R2": {
+            "hits": 1,
+            "n": 1,
+            "fixtures": [
+              "巴塞隆拿 vs 維拉利爾"
+            ]
+          },
+          "R3": {
+            "hits": 0,
+            "n": 1,
+            "fixtures": [
+              "艾拉維斯 vs 拉科魯尼亞"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "user_parity": {
+    "source_archive": "data/user-picks/USER_PARITY_PICKS_2026-11-17.json",
+    "timestamp_verified": false,
+    "selections": [
+      {
+        "fixture": "巴塞隆拿 vs 維拉利爾",
+        "pick": "單",
+        "score": [
+          3,
+          2
+        ],
+        "actual": "單",
+        "hit": true
+      },
+      {
+        "fixture": "艾拉維斯 vs 拉科魯尼亞",
+        "pick": "雙",
+        "score": [
+          3,
+          1
+        ],
+        "actual": "雙",
+        "hit": true
+      },
+      {
+        "fixture": "皇家馬德里 vs 切爾達",
+        "pick": "雙",
+        "score": [
+          2,
+          1
+        ],
+        "actual": "單",
+        "hit": false
+      }
+    ],
+    "summary": {
+      "hits": 2,
+      "n": 3
+    }
+  },
+  "historical_cumulative": "NOT_CALCULATED_AS_THIS_GW_IS_INCOMPLETE; do not mix Research with Official"
+}
