@@ -1,0 +1,596 @@
+{
+  "schema": "THREE_STAGE_POSTMATCH_V1",
+  "date_taipei": "2026-11-23",
+  "league": "EPL",
+  "gw": 11,
+  "season": "2026-27",
+  "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "original_package_path": "data/packages/EPL_GW11_OFFICIAL_20261109.json",
+  "source_urls": [
+    "https://minutolive.com/league/premier-league/results",
+    "https://www.liverpoolfc.com/news/match-report-liverpool-4-0-manchester-united-premier-league"
+  ],
+  "model_class": "OFFICIAL_RECOVERED",
+  "original_prematch_record_untouched": true,
+  "settlement": {
+    "status": "SETTLEMENT_INCOMPLETE",
+    "completed": 9,
+    "pending": 1,
+    "fixtures": [
+      {
+        "match_id": "EPL-2026-27-GW11-01",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-02",
+        "home": "Bournemouth",
+        "away": "Nottingham Forest",
+        "score": [
+          2,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-03",
+        "home": "Aston Villa",
+        "away": "Sunderland",
+        "score": [
+          0,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-04",
+        "home": "Chelsea",
+        "away": "Leeds United",
+        "score": [
+          1,
+          4
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-05",
+        "home": "Coventry City",
+        "away": "Crystal Palace",
+        "score": [
+          3,
+          2
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-06",
+        "home": "Tottenham",
+        "away": "Ipswich Town",
+        "score": [
+          2,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-07",
+        "home": "Newcastle United",
+        "away": "Arsenal",
+        "score": [
+          2,
+          2
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-08",
+        "home": "Hull City",
+        "away": "Brighton",
+        "score": [
+          2,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-09",
+        "home": "Liverpool",
+        "away": "Manchester United",
+        "score": [
+          4,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-10",
+        "home": "Brentford",
+        "away": "Everton",
+        "score": null,
+        "state": "PENDING",
+        "actual": null,
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": null,
+          "OU25": null,
+          "parity": null
+        }
+      }
+    ],
+    "ranks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "fixture": "Manchester City vs Fulham",
+          "match_id": "EPL-2026-27-GW11-01",
+          "pick": "主勝",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "和",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Hull City vs Brighton",
+          "match_id": "EPL-2026-27-GW11-08",
+          "pick": "客勝",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Tottenham vs Ipswich Town",
+          "match_id": "EPL-2026-27-GW11-06",
+          "pick": "主勝",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "fixture": "Coventry City vs Crystal Palace",
+          "match_id": "EPL-2026-27-GW11-05",
+          "pick": "大2.5",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Manchester City vs Fulham",
+          "match_id": "EPL-2026-27-GW11-01",
+          "pick": "大2.5",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Liverpool vs Manchester United",
+          "match_id": "EPL-2026-27-GW11-09",
+          "pick": "大2.5",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "fixture": "Brentford vs Everton",
+          "match_id": "EPL-2026-27-GW11-10",
+          "pick": "雙",
+          "score": null,
+          "actual": null,
+          "state": "PENDING",
+          "hit": null,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "Chelsea vs Leeds United",
+          "match_id": "EPL-2026-27-GW11-04",
+          "pick": "單",
+          "score": [
+            1,
+            4
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "Tottenham vs Ipswich Town",
+          "match_id": "EPL-2026-27-GW11-06",
+          "pick": "單",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "雙",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        }
+      ]
+    },
+    "rank_summaries": {
+      "1X2": {
+        "hit": 1,
+        "n": 3,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "parity": {
+        "hit": 1,
+        "n": 2,
+        "pending": 1,
+        "class": "OFFICIAL"
+      }
+    },
+    "full_summaries": {
+      "1X2": {
+        "hit": 4,
+        "n": 9,
+        "pending": 1,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 4,
+        "n": 9,
+        "pending": 1,
+        "class": "OFFICIAL"
+      },
+      "parity": {
+        "hit": 5,
+        "n": 9,
+        "pending": 1,
+        "class": "OFFICIAL"
+      }
+    },
+    "pass_flags": {
+      "1X2": false,
+      "OU25": false,
+      "parity": false
+    }
+  },
+  "review": {
+    "errors": {
+      "1X2": [
+        {
+          "fixture": "Manchester City vs Fulham",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "Aston Villa vs Sunderland",
+          "score": [
+            0,
+            0
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "Chelsea vs Leeds United",
+          "score": [
+            1,
+            4
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "Newcastle United vs Arsenal",
+          "score": [
+            2,
+            2
+          ],
+          "prediction": "客勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "Hull City vs Brighton",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "客勝",
+          "actual": "主勝"
+        }
+      ],
+      "OU25": [
+        {
+          "fixture": "Manchester City vs Fulham",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "Bournemouth vs Nottingham Forest",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "Aston Villa vs Sunderland",
+          "score": [
+            0,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "Tottenham vs Ipswich Town",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "Hull City vs Brighton",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        }
+      ],
+      "parity": [
+        {
+          "fixture": "Aston Villa vs Sunderland",
+          "score": [
+            0,
+            0
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        },
+        {
+          "fixture": "Coventry City vs Crystal Palace",
+          "score": [
+            3,
+            2
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "Tottenham vs Ipswich Town",
+          "score": [
+            2,
+            0
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        },
+        {
+          "fixture": "Newcastle United vs Arsenal",
+          "score": [
+            2,
+            2
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        }
+      ]
+    },
+    "diagnostics": [
+      "1X2 R1 Manchester City 1-1 Fulham and R2 Hull 2-0 Brighton missed; draw risk and upset need WATCH",
+      "OU R2 Man City 1-1 failed; Liverpool 4-0 Man Utd R3 hit",
+      "Parity R3 Tottenham 2-0 Ipswich failed odd; R1 Brentford still pending"
+    ],
+    "market_swing": "NOT_EVALUABLE_NO_VERIFIED_T60_ODDS",
+    "decisions": [
+      "KEEP original",
+      "WATCH draw/low-total/skew",
+      "TEST on future sealed rounds only",
+      "PROMOTE_NONE"
+    ]
+  },
+  "dashboard_update_package": {
+    "state": "DEFERRED_BY_USER",
+    "main_updated": false,
+    "website_updated": false,
+    "forward_cumulative": "NOT_RECALCULATED_PRIOR_VERIFIED_FORWARD_HISTORY_MISSING",
+    "no_reprediction": true
+  }
+}
