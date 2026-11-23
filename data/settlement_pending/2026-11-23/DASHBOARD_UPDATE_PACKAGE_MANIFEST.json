@@ -1,0 +1,249 @@
+{
+  "schema": "DASHBOARD_UPDATE_PACKAGE_MANIFEST_V1",
+  "date_taipei": "2026-11-23",
+  "branch": "settlement-pending-20261123",
+  "website_update": "DEFERRED_BY_USER",
+  "summary": [
+    {
+      "league": "EPL",
+      "gw": 11,
+      "status": "SETTLEMENT_INCOMPLETE",
+      "done": 9,
+      "pending": 1,
+      "ranks": {
+        "1X2": {
+          "hit": 1,
+          "n": 3,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "parity": {
+          "hit": 1,
+          "n": 2,
+          "pending": 1,
+          "class": "OFFICIAL"
+        }
+      },
+      "full": {
+        "1X2": {
+          "hit": 4,
+          "n": 9,
+          "pending": 1,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 4,
+          "n": 9,
+          "pending": 1,
+          "class": "OFFICIAL"
+        },
+        "parity": {
+          "hit": 5,
+          "n": 9,
+          "pending": 1,
+          "class": "OFFICIAL"
+        }
+      }
+    },
+    {
+      "league": "BUNDESLIGA",
+      "gw": 10,
+      "status": "FINAL",
+      "done": 9,
+      "pending": 0,
+      "ranks": {
+        "1X2": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 1,
+          "n": 3,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "parity": {
+          "hit": 0,
+          "n": 0,
+          "pending": 0,
+          "class": "FORMAL_PASS_NO_RANKS"
+        }
+      },
+      "full": {
+        "1X2": {
+          "hit": 6,
+          "n": 9,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 4,
+          "n": 9,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "parity": {
+          "hit": 6,
+          "n": 9,
+          "pending": 0,
+          "class": "DIRECTION_ONLY_FORMAL_PASS"
+        }
+      }
+    },
+    {
+      "league": "LALIGA",
+      "gw": 13,
+      "status": "SETTLEMENT_INCOMPLETE",
+      "done": 9,
+      "pending": 1,
+      "ranks": {
+        "1X2": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        },
+        "OU25": {
+          "hit": 3,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        },
+        "parity": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        }
+      },
+      "full": {
+        "1X2": {
+          "hit": 5,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        },
+        "OU25": {
+          "hit": 5,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        },
+        "parity": {
+          "hit": 7,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        }
+      }
+    },
+    {
+      "league": "SERIEA",
+      "gw": 12,
+      "status": "SETTLEMENT_INCOMPLETE",
+      "done": 9,
+      "pending": 1,
+      "ranks": {
+        "1X2": {
+          "hit": 3,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        },
+        "OU25": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        },
+        "parity": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "RESEARCH_ONLY"
+        }
+      },
+      "full": {
+        "1X2": {
+          "hit": 6,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        },
+        "OU25": {
+          "hit": 7,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        },
+        "parity": {
+          "hit": 5,
+          "n": 9,
+          "pending": 1,
+          "class": "RESEARCH_ONLY"
+        }
+      }
+    },
+    {
+      "league": "LIGUE1",
+      "gw": 11,
+      "status": "FINAL",
+      "done": 9,
+      "pending": 0,
+      "ranks": {
+        "1X2": {
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 1,
+          "n": 3,
+          "pending": 0,
+          "class": "FORMAL_PASS_SHADOW"
+        },
+        "parity": {
+          "hit": 1,
+          "n": 3,
+          "pending": 0,
+          "class": "FORMAL_PASS_SHADOW"
+        }
+      },
+      "full": {
+        "1X2": {
+          "hit": 3,
+          "n": 9,
+          "pending": 0,
+          "class": "OFFICIAL"
+        },
+        "OU25": {
+          "hit": 5,
+          "n": 9,
+          "pending": 0,
+          "class": "DIRECTION_ONLY_FORMAL_PASS"
+        },
+        "parity": {
+          "hit": 6,
+          "n": 9,
+          "pending": 0,
+          "class": "DIRECTION_ONLY_FORMAL_PASS"
+        }
+      }
+    }
+  ],
+  "policy": "Keep sealed predictions, PASS excluded; Research and Shadow separate; no pre-kick backfill; append-only",
+  "pending_games": [
+    "Brentford vs Everton",
+    "Levante vs Elche",
+    "Monza vs Fiorentina"
+  ]
+}
