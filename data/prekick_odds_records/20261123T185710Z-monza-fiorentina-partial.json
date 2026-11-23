@@ -1,0 +1,43 @@
+{
+  "schema_version": "FIVE_LEAGUE_PREKICK_PARTIAL_V1",
+  "record_id": "PARTIAL-20261123T185710Z-SERIEA-MONZA-FIORENTINA",
+  "fixture_id": "SERIEA-2026-27-GW12-2026-11-23-MONZA-FIORENTINA",
+  "league": "SERIEA",
+  "home": "Monza",
+  "away": "Fiorentina",
+  "kickoff_at": "2026-11-23T19:45:00.000Z",
+  "due_at": "2026-11-23T18:45:00.000Z",
+  "captured_at_utc": "2026-11-23T18:57:10.725Z",
+  "minutes_to_kickoff": 47.82,
+  "status": "PARTIAL_ODDS",
+  "observation_type": "LIVE_OBSERVED_AT",
+  "bookmaker": "bet365",
+  "source_type": "third_party_aggregator",
+  "source_url": "https://www.singlebet.net/odds/monza-vs-fiorentina-2026-11-23-3860156/",
+  "source_quote_updated_at": null,
+  "source_timestamp_verified": false,
+  "validated_full_market": false,
+  "odds": {
+    "1X2": {
+      "home": 4,
+      "draw": 3.6,
+      "away": 1.9
+    },
+    "OU25": {
+      "over": 1.67,
+      "under": 2.2
+    },
+    "AH": {
+      "line_home": null,
+      "home": null,
+      "away": null
+    }
+  },
+  "missing_fields": [
+    "AH.line_home",
+    "AH.home",
+    "AH.away"
+  ],
+  "crossbook_proxy": false,
+  "notes": "Bet365 values visible on SingleBet during pre-kick window. Web page does not prove bookmaker-side update time. No complete validated PRE_KICK_RECORDED claim. Do not use this observation to modify predictions."
+}
