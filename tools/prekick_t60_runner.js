@@ -218,7 +218,7 @@ function snapshot(f, event, book, now, source) {
     bookmaker: book.key, bookmaker_title: book.title,
     odds: book.odds, market_last_update: book.market_last_update,
     missing_markets: book.missing, stale_market_timestamps: book.stale,
-    crossbook_proxy: false, source_time_type: book.stale.length ? 'SOURCE_TIME_UNVERIFIED' : 'API_MARKET_LAST_UPDATE',
+    crossbook_proxy: false, source_time_type: book.stale.length ? 'LIVE_OBSERVED_AT' : 'API_MARKET_LAST_UPDATE',
     status: book.complete ? 'PRE_KICK_RECORDED' : 'PARTIAL_ODDS',
     validated: book.complete, comparable_to_open: false,
     ah_market_type: 'PROVIDER_SPREADS_HANDICAP_NOT_INDEPENDENTLY_ASIAN_VERIFIED'};
@@ -243,7 +243,7 @@ function buildAuditRow(f, now, state, source) {
 async function run() {
   const now = new Date();
   const fixtures = allFixtures();
-  const checkFull = process.argv.includes('--check-schedule') ||
+  const checkFull = process.argv.includes('--check-schedule') || process.env.GITHUB_EVENT_NAME === 'push' ||
     (now.getUTCHours() % 6 === 0 && now.getUTCMinutes() < 10);
   const schedule = await verifySchedule(fixtures, now, checkFull);
   const file = path.join(dataDir, 'market_prekick_snapshots.json');
@@ -252,6 +252,12 @@ async function run() {
   const existing = new Set(master.snapshots.map(x => x.record_id));
   const done = new Set(master.snapshots.filter(x => x.status === 'PRE_KICK_RECORDED' && x.validated)
     .map(x => x.fixture_id));
+  const existingPartial = new Map();
+  for (const rec of master.snapshots.filter(x => x.status === 'PARTIAL_ODDS')) {
+    const prior = existingPartial.get(rec.fixture_id);
+    const quality = x => (x.missing_markets || []).length + (x.stale_market_timestamps || []).length;
+    if (!prior || quality(rec) < quality(prior)) existingPartial.set(rec.fixture_id, rec);
+  }
   const oddsUrlBase = 'https://api.the-odds-api.com/v4/sports/';
   const sourceLabel = 'https://the-odds-api.com/liveapi/guides/v4/';
   const apiKey = process.env.ODDS_API_KEY || '';
@@ -304,8 +310,11 @@ async function run() {
             row.status = rec.status; row.bookmaker = book.key; row.record_id = rec.record_id;
             row.reason = rec.missing_markets.concat(rec.stale_market_timestamps.map(x => 'STALE_TIMESTAMP:' + x)).join('; ') ||
               'Provider handicap not verified as Asian handicap';
-            if (!existing.has(rec.record_id)) { appended.push(rec); existing.add(rec.record_id); }
-            else row.reason += '; duplicate unchanged snapshot not appended';
+            const prior = existingPartial.get(rec.fixture_id);
+            const quality = x => (x.missing_markets || []).length + (x.stale_market_timestamps || []).length;
+            if (!existing.has(rec.record_id) && (!prior || quality(rec) < quality(prior))) {
+              appended.push(rec); existing.add(rec.record_id); existingPartial.set(rec.fixture_id, rec);
+            } else row.reason += '; unchanged or not-improved partial snapshot not appended';
           }
         }
       }
