@@ -1,0 +1,256 @@
+{
+  "schema": "DASHBOARD_UPDATE_PACKAGE_STAGED_V1",
+  "round": "LALIGA-2026-27-GW13",
+  "settlement_status": "SETTLEMENT_INCOMPLETE",
+  "review_status": "REVIEW_PARTIAL",
+  "dashboard_sync_status": "HOLD_DO_NOT_SYNC",
+  "generated_date_taipei": "2026-11-23",
+  "source_addendum": "data/pending-sync/LALIGA_GW13_20261123_SETTLEMENT_PARTIAL.json",
+  "source_review": "data/pending-sync/LALIGA_GW13_20261123_REVIEW_PARTIAL.json",
+  "payload": {
+    "scores": [
+      {
+        "fixture": "畢爾包 vs 愛斯賓奴",
+        "score": [
+          0,
+          1
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "艾拉維斯 vs 拉科魯尼亞",
+        "score": [
+          3,
+          1
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "華歷簡奴 vs 華倫西亞",
+        "score": [
+          0,
+          1
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "西維爾 vs 貝迪斯",
+        "score": [
+          1,
+          1
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "皇家馬德里 vs 切爾達",
+        "score": [
+          2,
+          1
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "巴塞隆拿 vs 維拉利爾",
+        "score": [
+          3,
+          2
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "桑坦德 vs 皇家蘇斯達",
+        "score": [
+          3,
+          2
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "奧沙辛拿 vs 馬拉加",
+        "score": [
+          1,
+          0
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "加泰 vs 馬德里體育會",
+        "score": [
+          0,
+          3
+        ],
+        "status": "FINAL"
+      },
+      {
+        "fixture": "利雲特 vs 艾爾切",
+        "score": null,
+        "status": "NOT_STARTED"
+      }
+    ],
+    "summary": {
+      "A": {
+        "1x2": {
+          "hits": 5,
+          "n": 9,
+          "pending": 1,
+          "ranks": {
+            "R1": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "皇家馬德里 vs 切爾達"
+              ]
+            },
+            "R2": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "巴塞隆拿 vs 維拉利爾"
+              ]
+            },
+            "R3": {
+              "hits": 0,
+              "n": 1,
+              "fixtures": [
+                "畢爾包 vs 愛斯賓奴"
+              ]
+            }
+          }
+        },
+        "ou25": {
+          "hits": 5,
+          "n": 9,
+          "pending": 1,
+          "ranks": {
+            "R1": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "巴塞隆拿 vs 維拉利爾"
+              ]
+            },
+            "R2": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "皇家馬德里 vs 切爾達"
+              ]
+            },
+            "R3": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "桑坦德 vs 皇家蘇斯達"
+              ]
+            }
+          }
+        },
+        "parity": {
+          "hits": 4,
+          "n": 9,
+          "pending": 1,
+          "ranks": {
+            "R1": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "桑坦德 vs 皇家蘇斯達"
+              ]
+            },
+            "R2": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "巴塞隆拿 vs 維拉利爾"
+              ]
+            },
+            "R3": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "皇家馬德里 vs 切爾達"
+              ]
+            }
+          }
+        }
+      },
+      "B": {
+        "parity": {
+          "hits": 6,
+          "n": 9,
+          "pending": 1,
+          "ranks": {
+            "R1": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "皇家馬德里 vs 切爾達"
+              ]
+            },
+            "R2": {
+              "hits": 1,
+              "n": 1,
+              "fixtures": [
+                "巴塞隆拿 vs 維拉利爾"
+              ]
+            },
+            "R3": {
+              "hits": 0,
+              "n": 1,
+              "fixtures": [
+                "艾拉維斯 vs 拉科魯尼亞"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "user_picks": {
+      "source_archive": "data/user-picks/USER_PARITY_PICKS_2026-11-17.json",
+      "timestamp_verified": false,
+      "selections": [
+        {
+          "fixture": "巴塞隆拿 vs 維拉利爾",
+          "pick": "單",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "單",
+          "hit": true
+        },
+        {
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "pick": "雙",
+          "score": [
+            3,
+            1
+          ],
+          "actual": "雙",
+          "hit": true
+        },
+        {
+          "fixture": "皇家馬德里 vs 切爾達",
+          "pick": "雙",
+          "score": [
+            2,
+            1
+          ],
+          "actual": "單",
+          "hit": false
+        }
+      ],
+      "summary": {
+        "hits": 2,
+        "n": 3
+      }
+    }
+  },
+  "integrity": {
+    "no_prematch_overwrite": true,
+    "no_results_as_predictions": true,
+    "model_results_separated": true,
+    "official_results_untouched": true
+  },
+  "future_update_instruction": "Merge only after FINAL settlement, then explicit user-directed concentrated Dashboard sync; do not change app.js/data.js now."
+}
