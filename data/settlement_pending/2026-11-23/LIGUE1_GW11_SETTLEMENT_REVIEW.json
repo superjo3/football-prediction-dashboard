@@ -1,0 +1,573 @@
+{
+  "schema": "THREE_STAGE_POSTMATCH_V1",
+  "date_taipei": "2026-11-23",
+  "league": "LIGUE1",
+  "gw": 11,
+  "season": "2026-27",
+  "record_id": "LIGUE1-2026-27-GW11-20261109-MARKETPROXY",
+  "original_package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_LIGUE1_GW11_20261109.json",
+  "source_urls": [
+    "https://www.psg.fr/en/content/results-of-matchday-11-of-ligue-1-2026-2027-ogc-nice-paris-saint-germain"
+  ],
+  "model_class": "OFFICIAL_WITH_PASS",
+  "original_prematch_record_untouched": true,
+  "settlement": {
+    "status": "FINAL",
+    "completed": 9,
+    "pending": 0,
+    "fixtures": [
+      {
+        "match_id": "LIGUE1-2026-27-GW11-01",
+        "home": "特魯瓦",
+        "away": "勒阿弗爾",
+        "score": [
+          3,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-02",
+        "home": "尼斯",
+        "away": "PSG",
+        "score": [
+          2,
+          3
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-03",
+        "home": "摩納哥",
+        "away": "歐塞爾",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-04",
+        "home": "朗斯",
+        "away": "圖盧茲",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-05",
+        "home": "里爾",
+        "away": "里昂",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-06",
+        "home": "史特拉斯堡",
+        "away": "布雷斯特",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-07",
+        "home": "巴黎FC",
+        "away": "昂熱",
+        "score": [
+          4,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-08",
+        "home": "洛里昂",
+        "away": "雷恩",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "LIGUE1-2026-27-GW11-09",
+        "home": "馬賽",
+        "away": "勒芒",
+        "score": [
+          2,
+          3
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      }
+    ],
+    "ranks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "fixture": "巴黎FC vs 昂熱",
+          "match_id": "LIGUE1-2026-27-GW11-07",
+          "pick": "主勝",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "尼斯 vs PSG",
+          "match_id": "LIGUE1-2026-27-GW11-02",
+          "pick": "客勝",
+          "score": [
+            2,
+            3
+          ],
+          "actual": "客勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "摩納哥 vs 歐塞爾",
+          "match_id": "LIGUE1-2026-27-GW11-03",
+          "pick": "主勝",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "和",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "fixture": "尼斯 vs PSG",
+          "match_id": "LIGUE1-2026-27-GW11-02",
+          "pick": "大2.5",
+          "score": [
+            2,
+            3
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "FORMAL_PASS_SHADOW"
+        },
+        {
+          "rank": "R2",
+          "fixture": "摩納哥 vs 歐塞爾",
+          "match_id": "LIGUE1-2026-27-GW11-03",
+          "pick": "大2.5",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "FORMAL_PASS_SHADOW"
+        },
+        {
+          "rank": "R3",
+          "fixture": "史特拉斯堡 vs 布雷斯特",
+          "match_id": "LIGUE1-2026-27-GW11-06",
+          "pick": "大2.5",
+          "score": [
+            0,
+            1
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "FORMAL_PASS_SHADOW"
+        }
+      ],
+      "parity": [
+        {
+          "rank": "R1",
+          "fixture": "里爾 vs 里昂",
+          "match_id": "LIGUE1-2026-27-GW11-05",
+          "pick": "雙",
+          "score": [
+            0,
+            1
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "FORMAL_PASS_SHADOW"
+        },
+        {
+          "rank": "R2",
+          "fixture": "巴黎FC vs 昂熱",
+          "match_id": "LIGUE1-2026-27-GW11-07",
+          "pick": "單",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "雙",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "FORMAL_PASS_SHADOW"
+        },
+        {
+          "rank": "R3",
+          "fixture": "史特拉斯堡 vs 布雷斯特",
+          "match_id": "LIGUE1-2026-27-GW11-06",
+          "pick": "單",
+          "score": [
+            0,
+            1
+          ],
+          "actual": "單",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "FORMAL_PASS_SHADOW"
+        }
+      ]
+    },
+    "rank_summaries": {
+      "1X2": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 1,
+        "n": 3,
+        "pending": 0,
+        "class": "FORMAL_PASS_SHADOW"
+      },
+      "parity": {
+        "hit": 1,
+        "n": 3,
+        "pending": 0,
+        "class": "FORMAL_PASS_SHADOW"
+      }
+    },
+    "full_summaries": {
+      "1X2": {
+        "hit": 3,
+        "n": 9,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 5,
+        "n": 9,
+        "pending": 0,
+        "class": "DIRECTION_ONLY_FORMAL_PASS"
+      },
+      "parity": {
+        "hit": 6,
+        "n": 9,
+        "pending": 0,
+        "class": "DIRECTION_ONLY_FORMAL_PASS"
+      }
+    },
+    "pass_flags": {
+      "1X2": false,
+      "OU25": true,
+      "parity": true,
+      "OU25_reason": "FORMAL_SPARSE_SELECTOR_0_TRIGGERS",
+      "parity_reason": "FORMAL_PARITY_SELECTOR_0_TRIGGERS"
+    }
+  },
+  "review": {
+    "errors": {
+      "1X2": [
+        {
+          "fixture": "摩納哥 vs 歐塞爾",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "朗斯 vs 圖盧茲",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "里爾 vs 里昂",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "史特拉斯堡 vs 布雷斯特",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        },
+        {
+          "fixture": "洛里昂 vs 雷恩",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "客勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "馬賽 vs 勒芒",
+          "score": [
+            2,
+            3
+          ],
+          "prediction": "主勝",
+          "actual": "客勝"
+        }
+      ],
+      "OU25": [
+        {
+          "fixture": "摩納哥 vs 歐塞爾",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "朗斯 vs 圖盧茲",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "史特拉斯堡 vs 布雷斯特",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "洛里昂 vs 雷恩",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        }
+      ],
+      "parity": [
+        {
+          "fixture": "摩納哥 vs 歐塞爾",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        },
+        {
+          "fixture": "里爾 vs 里昂",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "巴黎FC vs 昂熱",
+          "score": [
+            4,
+            0
+          ],
+          "prediction": "單",
+          "actual": "雙"
+        }
+      ]
+    },
+    "diagnostics": [
+      "Official 1X2 R1 Paris FC 4-0 and R2 Nice 2-3 hit; R3 Monaco 1-1 draw miss",
+      "OU/parity formal PASS: relative rank results are only shadow diagnostics",
+      "No valid PRE-KICK snapshots for confirm/against analysis"
+    ],
+    "market_swing": "NOT_EVALUABLE_NO_VERIFIED_T60_ODDS",
+    "decisions": [
+      "KEEP original",
+      "WATCH draw/low-total/skew",
+      "TEST on future sealed rounds only",
+      "PROMOTE_NONE"
+    ]
+  },
+  "dashboard_update_package": {
+    "state": "DEFERRED_BY_USER",
+    "main_updated": false,
+    "website_updated": false,
+    "forward_cumulative": "NOT_RECALCULATED_PRIOR_VERIFIED_FORWARD_HISTORY_MISSING",
+    "no_reprediction": true
+  }
+}
