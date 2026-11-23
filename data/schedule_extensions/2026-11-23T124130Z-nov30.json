@@ -1,0 +1,54 @@
+{
+  "schema_version": "FIVE_LEAGUE_FIXTURE_EXTENSION_V1",
+  "append_only": true,
+  "checked_at_utc": "2026-11-23T12:41:30Z",
+  "coverage_complete": false,
+  "notes": "Sky Sports and ONTOUR secondary corroboration; original unchanged",
+  "fixtures": [
+    {
+      "fixture_id": "LALIGA-2026-27-2026-11-30-ESPANYOL-GETAFE",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "league": "LALIGA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Espanyol",
+      "away": "Getafe",
+      "kickoff_at_utc": "2026-11-30T20:00:00Z",
+      "t60_due_at_utc": "2026-11-30T19:00:00.000Z",
+      "source": "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+      "last_verified_at": "2026-11-23T12:41:30Z",
+      "verification_level": "SECONDARY_CROSSCHECKED",
+      "secondary_source": "https://ontourfootball.com/fixtures/2026-11-30"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-2026-11-30-LECCE-ATALANTA",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Lecce",
+      "away": "Atalanta",
+      "kickoff_at_utc": "2026-11-30T17:30:00Z",
+      "t60_due_at_utc": "2026-11-30T16:30:00.000Z",
+      "source": "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+      "last_verified_at": "2026-11-23T12:41:30Z",
+      "verification_level": "SECONDARY_CROSSCHECKED",
+      "secondary_source": "https://ontourfootball.com/fixtures/2026-11-30"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-2026-11-30-CAGLIARI-AC-MILAN",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Cagliari",
+      "away": "AC Milan",
+      "kickoff_at_utc": "2026-11-30T19:45:00Z",
+      "t60_due_at_utc": "2026-11-30T18:45:00.000Z",
+      "source": "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+      "last_verified_at": "2026-11-23T12:41:30Z",
+      "verification_level": "SECONDARY_CROSSCHECKED",
+      "secondary_source": "https://ontourfootball.com/fixtures/2026-11-30"
+    }
+  ]
+}
