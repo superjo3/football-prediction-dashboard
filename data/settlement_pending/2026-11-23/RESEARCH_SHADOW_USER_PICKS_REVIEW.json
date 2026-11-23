@@ -1,0 +1,575 @@
+{
+  "schema": "POSTMATCH_RESEARCH_AND_USER_PICKS_V1",
+  "as_of_taipei": "2026-11-23",
+  "official_result_pool": false,
+  "shadow": {
+    "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+    "formal_betting_status": "PASS_HIGH_CONFIDENCE",
+    "parity_ranks": [
+      {
+        "rank": "R1",
+        "fixture": "Coventry City vs Crystal Palace",
+        "score": [
+          3,
+          2
+        ],
+        "pick": "雙",
+        "actual": "單",
+        "hit": false,
+        "status": "SETTLED"
+      },
+      {
+        "rank": "R2",
+        "fixture": "Tottenham vs Ipswich Town",
+        "score": [
+          2,
+          0
+        ],
+        "pick": "雙",
+        "actual": "雙",
+        "hit": true,
+        "status": "SETTLED"
+      },
+      {
+        "rank": "R3",
+        "fixture": "Liverpool vs Manchester United",
+        "score": [
+          4,
+          0
+        ],
+        "pick": "雙",
+        "actual": "雙",
+        "hit": true,
+        "status": "SETTLED"
+      }
+    ],
+    "summary": {
+      "hits": 2,
+      "denom": 3,
+      "pending": 0,
+      "rate": 66.67
+    }
+  },
+  "laliga": {
+    "track_A": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+    "track_B": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+    "classification": "RESEARCH_ONLY",
+    "fixtures": [
+      {
+        "fixture": "畢爾包 vs 愛斯賓奴",
+        "score": [
+          0,
+          1
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_hit": false,
+        "B": "單",
+        "B_hit": true,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "艾拉維斯 vs 拉科魯尼亞",
+        "score": [
+          3,
+          1
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "單",
+        "A_hit": false,
+        "B": "單",
+        "B_hit": false,
+        "B_rank": "R3",
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "華歷簡奴 vs 華倫西亞",
+        "score": [
+          0,
+          1
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_hit": false,
+        "B": "單",
+        "B_hit": true,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "西維爾 vs 貝迪斯",
+        "score": [
+          1,
+          1
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_hit": true,
+        "B": "雙",
+        "B_hit": true,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "皇家馬德里 vs 切爾達",
+        "score": [
+          2,
+          1
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "單",
+        "A_hit": true,
+        "B": "單",
+        "B_hit": true,
+        "B_rank": "R1",
+        "B_strict_gate": true
+      },
+      {
+        "fixture": "巴塞隆拿 vs 維拉利爾",
+        "score": [
+          3,
+          2
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "單",
+        "A_hit": true,
+        "B": "單",
+        "B_hit": true,
+        "B_rank": "R2",
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "桑坦德 vs 皇家蘇斯達",
+        "score": [
+          3,
+          2
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "單",
+        "A_hit": true,
+        "B": "單",
+        "B_hit": true,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "奧沙辛拿 vs 馬拉加",
+        "score": [
+          1,
+          0
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_hit": false,
+        "B": "雙",
+        "B_hit": false,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "加泰 vs 馬德里體育會",
+        "score": [
+          0,
+          3
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_hit": false,
+        "B": "雙",
+        "B_hit": false,
+        "B_rank": null,
+        "B_strict_gate": false
+      },
+      {
+        "fixture": "利雲特 vs 艾爾切",
+        "score": null,
+        "actual": null,
+        "status": "PENDING",
+        "A": "雙",
+        "A_hit": null,
+        "B": "雙",
+        "B_hit": null,
+        "B_rank": null,
+        "B_strict_gate": false
+      }
+    ],
+    "A_summary": {
+      "hits": 4,
+      "denom": 9,
+      "pending": 1,
+      "rate": 44.44
+    },
+    "B_summary": {
+      "hits": 6,
+      "denom": 9,
+      "pending": 1,
+      "rate": 66.67
+    }
+  },
+  "seriea": {
+    "track_B": "SERIEA-R90-STYLE-REPRO-V1-FROZEN",
+    "track_C": "XUAN-ROBUST-VOTE-V1",
+    "classification": "RESEARCH_SHADOW",
+    "fixtures": [
+      {
+        "fixture": "Como vs Cagliari",
+        "score": [
+          2,
+          0
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": 3,
+        "A_hit": true,
+        "B": "雙",
+        "B_rank": null,
+        "B_hit": true,
+        "C": "單",
+        "C_rank": 1,
+        "C_hit": false
+      },
+      {
+        "fixture": "Lazio vs Lecce",
+        "score": [
+          3,
+          0
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": null,
+        "A_hit": false,
+        "B": "雙",
+        "B_rank": null,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": 2,
+        "C_hit": true
+      },
+      {
+        "fixture": "Parma vs Roma",
+        "score": [
+          1,
+          5
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "單",
+        "A_rank": null,
+        "A_hit": false,
+        "B": "單",
+        "B_rank": 2,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": 3,
+        "C_hit": false
+      },
+      {
+        "fixture": "Napoli vs Torino",
+        "score": [
+          1,
+          0
+        ],
+        "actual": "單",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": 2,
+        "A_hit": false,
+        "B": "單",
+        "B_rank": null,
+        "B_hit": true,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": true
+      },
+      {
+        "fixture": "Juventus vs Venezia",
+        "score": [
+          4,
+          0
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": null,
+        "A_hit": true,
+        "B": "單",
+        "B_rank": null,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": false
+      },
+      {
+        "fixture": "Bologna vs Udinese",
+        "score": [
+          1,
+          1
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "單",
+        "A_rank": null,
+        "A_hit": false,
+        "B": "單",
+        "B_rank": null,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": false
+      },
+      {
+        "fixture": "Sassuolo vs Genoa",
+        "score": [
+          0,
+          2
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": null,
+        "A_hit": true,
+        "B": "單",
+        "B_rank": null,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": false
+      },
+      {
+        "fixture": "Milan vs Frosinone",
+        "score": [
+          5,
+          1
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": 1,
+        "A_hit": true,
+        "B": "單",
+        "B_rank": null,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": false
+      },
+      {
+        "fixture": "Atalanta vs Inter",
+        "score": [
+          4,
+          4
+        ],
+        "actual": "雙",
+        "status": "SETTLED",
+        "A": "雙",
+        "A_rank": null,
+        "A_hit": true,
+        "B": "單",
+        "B_rank": 1,
+        "B_hit": false,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": false
+      },
+      {
+        "fixture": "Monza vs Fiorentina",
+        "score": null,
+        "actual": null,
+        "status": "PENDING",
+        "A": "雙",
+        "A_rank": null,
+        "A_hit": null,
+        "B": "單",
+        "B_rank": 3,
+        "B_hit": null,
+        "C": "單",
+        "C_rank": null,
+        "C_hit": null
+      }
+    ],
+    "A_summary": {
+      "hits": 5,
+      "denom": 9,
+      "pending": 1,
+      "rate": 55.56
+    },
+    "B_summary": {
+      "hits": 2,
+      "denom": 9,
+      "pending": 1,
+      "rate": 22.22
+    },
+    "C_summary": {
+      "hits": 2,
+      "denom": 9,
+      "pending": 1,
+      "rate": 22.22
+    }
+  },
+  "user_picks": {
+    "source": "USER_CHAT_REPORTED_2026-11-17",
+    "fixtures": [
+      {
+        "league": "EPL",
+        "fixture": "Brentford vs Everton",
+        "score": null,
+        "pick": "雙",
+        "actual": null,
+        "status": "PENDING",
+        "hit": null,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "EPL",
+        "fixture": "Chelsea vs Leeds United",
+        "score": [
+          1,
+          4
+        ],
+        "pick": "單",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "EPL",
+        "fixture": "Tottenham vs Ipswich Town",
+        "score": [
+          2,
+          0
+        ],
+        "pick": "雙",
+        "actual": "雙",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "SERIEA",
+        "fixture": "Milan vs Frosinone",
+        "score": [
+          5,
+          1
+        ],
+        "pick": "單",
+        "actual": "雙",
+        "status": "SETTLED",
+        "hit": false,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "SERIEA",
+        "fixture": "Napoli vs Torino",
+        "score": [
+          1,
+          0
+        ],
+        "pick": "單",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "LALIGA",
+        "fixture": "巴塞隆拿 vs 維拉利爾",
+        "score": [
+          3,
+          2
+        ],
+        "pick": "單",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "LALIGA",
+        "fixture": "艾拉維斯 vs 拉科魯尼亞",
+        "score": [
+          3,
+          1
+        ],
+        "pick": "雙",
+        "actual": "雙",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "LALIGA",
+        "fixture": "皇家馬德里 vs 切爾達",
+        "score": [
+          2,
+          1
+        ],
+        "pick": "雙",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": false,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "LIGUE1",
+        "fixture": "里爾 vs 里昂",
+        "score": [
+          0,
+          1
+        ],
+        "pick": "雙",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": false,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      },
+      {
+        "league": "LIGUE1",
+        "fixture": "尼斯 vs PSG",
+        "score": [
+          2,
+          3
+        ],
+        "pick": "單",
+        "actual": "單",
+        "status": "SETTLED",
+        "hit": true,
+        "source": "USER_REPORTED_2026-11-17",
+        "precise_saved_time": "UNVERIFIED"
+      }
+    ],
+    "summary": {
+      "hits": 6,
+      "denom": 9,
+      "pending": 1,
+      "rate": 66.67
+    },
+    "note": "Never mix user selections with Official model results, time verification unavailable."
+  },
+  "review": {
+    "promote": "NONE",
+    "next": "Continue independent forward validation. Full-market bets and match odds were not altered.",
+    "website_sync": "DEFERRED_BY_USER"
+  }
+}
