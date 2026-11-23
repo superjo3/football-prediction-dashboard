@@ -1,0 +1,1781 @@
+{
+  "schema_version": "FIVE_LEAGUE_PREKICK_AUDIT_V1",
+  "run_at": "2026-11-23T12:41:30Z",
+  "source_fixture_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_extensions_read": [
+    {
+      "path": "data/schedule_extensions/2026-11-22T061857+0800.json",
+      "fixtures": 3,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-22T071346+0800.json",
+      "fixtures": 17,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-22T170303+0800-nov29.json",
+      "fixtures": 20,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-23T06-51-22-887Z-espn.json",
+      "fixtures": 5,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-23T06-52-31-492Z-fixture-reconciliation.json",
+      "fixtures": 0,
+      "changes": 1
+    }
+  ],
+  "snapshot_file_checked": "data/market_prekick_snapshots.json",
+  "snapshot_count": 0,
+  "coverage_note": "Seven-day coverage to 2026-11-30 12:41 UTC; independent official verification of all fixtures incomplete. Nov30 added via secondary crosscheck.",
+  "external_schedule_sources": [
+    "https://www.premierleague.com/en/news/4725574",
+    "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+    "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+    "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+    "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+    "https://ontourfootball.com/fixtures/2026-11-30",
+    "https://www.wbookie.com/en/odds?date=2026-11-23",
+    "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+  ],
+  "status_counts": {
+    "HISTORICAL_MISSED_OUTSIDE_24H": 30,
+    "MISSED_T60": 15,
+    "PENDING_NOT_DUE": 56
+  },
+  "audits": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-MANCHESTER-CITY-FULHAM",
+      "league": "EPL",
+      "fixture": "Manchester City vs Fulham",
+      "kickoff_at": "2026-11-21T12:30:00.000Z",
+      "due_at": "2026-11-21T11:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2891.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-BOURNEMOUTH-NOTTINGHAM-FOREST",
+      "league": "EPL",
+      "fixture": "Bournemouth vs Nottingham Forest",
+      "kickoff_at": "2026-11-21T15:00:00.000Z",
+      "due_at": "2026-11-21T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2741.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-ASTON-VILLA-SUNDERLAND",
+      "league": "EPL",
+      "fixture": "Aston Villa vs Sunderland",
+      "kickoff_at": "2026-11-21T15:00:00.000Z",
+      "due_at": "2026-11-21T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2741.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-CHELSEA-LEEDS-UNITED",
+      "league": "EPL",
+      "fixture": "Chelsea vs Leeds United",
+      "kickoff_at": "2026-11-21T15:00:00.000Z",
+      "due_at": "2026-11-21T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2741.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-COVENTRY-CITY-CRYSTAL-PALACE",
+      "league": "EPL",
+      "fixture": "Coventry City vs Crystal Palace",
+      "kickoff_at": "2026-11-21T15:00:00.000Z",
+      "due_at": "2026-11-21T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2741.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-TOTTENHAM-IPSWICH-TOWN",
+      "league": "EPL",
+      "fixture": "Tottenham vs Ipswich Town",
+      "kickoff_at": "2026-11-21T15:00:00.000Z",
+      "due_at": "2026-11-21T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2741.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-21-NEWCASTLE-UNITED-ARSENAL",
+      "league": "EPL",
+      "fixture": "Newcastle United vs Arsenal",
+      "kickoff_at": "2026-11-21T17:30:00.000Z",
+      "due_at": "2026-11-21T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2591.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-HULL-CITY-BRIGHTON",
+      "league": "EPL",
+      "fixture": "Hull City vs Brighton",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1361.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-LIVERPOOL-MANCHESTER-UNITED",
+      "league": "EPL",
+      "fixture": "Liverpool vs Manchester United",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1211.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-23-BRENTFORD-EVERTON",
+      "league": "EPL",
+      "fixture": "Brentford vs Everton",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 438.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-20-BAYERN-MUNICH-COLOGNE",
+      "league": "BUNDESLIGA",
+      "fixture": "Bayern Munich vs Cologne",
+      "kickoff_at": "2026-11-20T19:30:00.000Z",
+      "due_at": "2026-11-20T18:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -3911.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BAYER-LEVERKUSEN-PADERBORN",
+      "league": "BUNDESLIGA",
+      "fixture": "Bayer Leverkusen vs Paderborn",
+      "kickoff_at": "2026-11-21T14:30:00.000Z",
+      "due_at": "2026-11-21T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2771.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-BORUSSIA-MONCHENGLADBACH-BORUSSIA-DORTMUND",
+      "league": "BUNDESLIGA",
+      "fixture": "Borussia Monchengladbach vs Borussia Dortmund",
+      "kickoff_at": "2026-11-21T14:30:00.000Z",
+      "due_at": "2026-11-21T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2771.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-EINTRACHT-FRANKFURT-HOFFENHEIM",
+      "league": "BUNDESLIGA",
+      "fixture": "Eintracht Frankfurt vs Hoffenheim",
+      "kickoff_at": "2026-11-21T14:30:00.000Z",
+      "due_at": "2026-11-21T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2771.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-ELVERSBERG-FREIBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Elversberg vs Freiburg",
+      "kickoff_at": "2026-11-21T14:30:00.000Z",
+      "due_at": "2026-11-21T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2771.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-UNION-BERLIN-RB-LEIPZIG",
+      "league": "BUNDESLIGA",
+      "fixture": "Union Berlin vs RB Leipzig",
+      "kickoff_at": "2026-11-21T14:30:00.000Z",
+      "due_at": "2026-11-21T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2771.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-21-SCHALKE-STUTTGART",
+      "league": "BUNDESLIGA",
+      "fixture": "Schalke vs Stuttgart",
+      "kickoff_at": "2026-11-21T17:30:00.000Z",
+      "due_at": "2026-11-21T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2591.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-AUGSBURG-MAINZ",
+      "league": "BUNDESLIGA",
+      "fixture": "Augsburg vs Mainz",
+      "kickoff_at": "2026-11-22T14:30:00.000Z",
+      "due_at": "2026-11-22T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1331.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-WERDER-BREMEN-HAMBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Werder Bremen vs Hamburg",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1211.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-20-ATHLETIC-CLUB-ESPANYOL",
+      "league": "LALIGA",
+      "fixture": "Athletic Club vs Espanyol",
+      "kickoff_at": "2026-11-20T20:00:00.000Z",
+      "due_at": "2026-11-20T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -3881.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-ALAVES-DEPORTIVO-LA-CORUNA",
+      "league": "LALIGA",
+      "fixture": "Alaves vs Deportivo La Coruna",
+      "kickoff_at": "2026-11-21T13:00:00.000Z",
+      "due_at": "2026-11-21T12:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2861.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-RAYO-VALLECANO-VALENCIA",
+      "league": "LALIGA",
+      "fixture": "Rayo Vallecano vs Valencia",
+      "kickoff_at": "2026-11-21T15:15:00.000Z",
+      "due_at": "2026-11-21T14:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2726.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-SEVILLA-REAL-BETIS",
+      "league": "LALIGA",
+      "fixture": "Sevilla vs Real Betis",
+      "kickoff_at": "2026-11-21T17:30:00.000Z",
+      "due_at": "2026-11-21T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2591.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-21-REAL-MADRID-CELTA-VIGO",
+      "league": "LALIGA",
+      "fixture": "Real Madrid vs Celta Vigo",
+      "kickoff_at": "2026-11-21T20:00:00.000Z",
+      "due_at": "2026-11-21T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2441.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-BARCELONA-VILLARREAL",
+      "league": "LALIGA",
+      "fixture": "Barcelona vs Villarreal",
+      "kickoff_at": "2026-11-22T13:00:00.000Z",
+      "due_at": "2026-11-22T12:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1421.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-RACING-SANTANDER-REAL-SOCIEDAD",
+      "league": "LALIGA",
+      "fixture": "Racing Santander vs Real Sociedad",
+      "kickoff_at": "2026-11-22T15:15:00.000Z",
+      "due_at": "2026-11-22T14:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1286.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-OSASUNA-MALAGA",
+      "league": "LALIGA",
+      "fixture": "Osasuna vs Malaga",
+      "kickoff_at": "2026-11-22T17:30:00.000Z",
+      "due_at": "2026-11-22T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1151.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-GETAFE-ATLETICO-MADRID",
+      "league": "LALIGA",
+      "fixture": "Getafe vs Atletico Madrid",
+      "kickoff_at": "2026-11-22T20:00:00.000Z",
+      "due_at": "2026-11-22T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1001.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-23-LEVANTE-ELCHE",
+      "league": "LALIGA",
+      "fixture": "Levante vs Elche",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 438.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-COMO-CAGLIARI",
+      "league": "SERIEA",
+      "fixture": "Como vs Cagliari",
+      "kickoff_at": "2026-11-21T14:00:00.000Z",
+      "due_at": "2026-11-21T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2801.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-LAZIO-LECCE",
+      "league": "SERIEA",
+      "fixture": "Lazio vs Lecce",
+      "kickoff_at": "2026-11-21T14:00:00.000Z",
+      "due_at": "2026-11-21T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2801.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-PARMA-ROMA",
+      "league": "SERIEA",
+      "fixture": "Parma vs Roma",
+      "kickoff_at": "2026-11-21T17:00:00.000Z",
+      "due_at": "2026-11-21T16:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2621.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-21-NAPOLI-TORINO",
+      "league": "SERIEA",
+      "fixture": "Napoli vs Torino",
+      "kickoff_at": "2026-11-21T19:45:00.000Z",
+      "due_at": "2026-11-21T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2456.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-JUVENTUS-VENEZIA",
+      "league": "SERIEA",
+      "fixture": "Juventus vs Venezia",
+      "kickoff_at": "2026-11-22T11:30:00.000Z",
+      "due_at": "2026-11-22T10:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1511.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-BOLOGNA-UDINESE",
+      "league": "SERIEA",
+      "fixture": "Bologna vs Udinese",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1361.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-SASSUOLO-GENOA",
+      "league": "SERIEA",
+      "fixture": "Sassuolo vs Genoa",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1361.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-MILAN-FROSINONE",
+      "league": "SERIEA",
+      "fixture": "Milan vs Frosinone",
+      "kickoff_at": "2026-11-22T17:00:00.000Z",
+      "due_at": "2026-11-22T16:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1181.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-ATALANTA-INTER",
+      "league": "SERIEA",
+      "fixture": "Atalanta vs Inter",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1016.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-23-MONZA-FIORENTINA",
+      "league": "SERIEA",
+      "fixture": "Monza vs Fiorentina",
+      "kickoff_at": "2026-11-23T19:45:00.000Z",
+      "due_at": "2026-11-23T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 423.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-20-TROYES-LE-HAVRE",
+      "league": "LIGUE1",
+      "fixture": "Troyes vs Le Havre",
+      "kickoff_at": "2026-11-20T19:45:00.000Z",
+      "due_at": "2026-11-20T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -3896.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-NICE-PSG",
+      "league": "LIGUE1",
+      "fixture": "Nice vs PSG",
+      "kickoff_at": "2026-11-21T16:15:00.000Z",
+      "due_at": "2026-11-21T15:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2666.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-MONACO-AUXERRE",
+      "league": "LIGUE1",
+      "fixture": "Monaco vs Auxerre",
+      "kickoff_at": "2026-11-21T19:45:00.000Z",
+      "due_at": "2026-11-21T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2456.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-STRASBOURG-BREST",
+      "league": "LIGUE1",
+      "fixture": "Strasbourg vs Brest",
+      "kickoff_at": "2026-11-21T19:45:00.000Z",
+      "due_at": "2026-11-21T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2456.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LENS-TOULOUSE",
+      "league": "LIGUE1",
+      "fixture": "Lens vs Toulouse",
+      "kickoff_at": "2026-11-21T19:45:00.000Z",
+      "due_at": "2026-11-21T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2456.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-21-LILLE-LYON",
+      "league": "LIGUE1",
+      "fixture": "Lille vs Lyon",
+      "kickoff_at": "2026-11-21T19:45:00.000Z",
+      "due_at": "2026-11-21T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -2456.5,
+      "status": "HISTORICAL_MISSED_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff older than 24 hours; snapshot absent"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-PARIS-FC-ANGERS",
+      "league": "LIGUE1",
+      "fixture": "Paris FC vs Angers",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1361.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-LORIENT-RENNES",
+      "league": "LIGUE1",
+      "fixture": "Lorient vs Rennes",
+      "kickoff_at": "2026-11-22T16:15:00.000Z",
+      "due_at": "2026-11-22T15:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1226.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-MARSEILLE-LE-MANS",
+      "league": "LIGUE1",
+      "fixture": "Marseille vs Le Mans",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": -1016.5,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574",
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30",
+        "https://ontourfootball.com/fixtures/2026-11-30",
+        "https://www.wbookie.com/en/odds?date=2026-11-23",
+        "https://oddsrun.com/match/football/gb/94/12070894/england-premier-league/brentford-vs-everton/"
+      ],
+      "reason": "Kickoff passed without validated pre-kick odds; no post-kick backfill"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-27-NOTTINGHAM-FOREST-CHELSEA",
+      "league": "EPL",
+      "fixture": "Nottingham Forest vs Chelsea",
+      "kickoff_at": "2026-11-27T20:00:00.000Z",
+      "due_at": "2026-11-27T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 6198.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-27-WERDER-BREMEN-BORUSSIA-MONCHENGLADBACH",
+      "league": "BUNDESLIGA",
+      "fixture": "Werder Bremen vs Borussia Monchengladbach",
+      "kickoff_at": "2026-11-27T19:30:00.000Z",
+      "due_at": "2026-11-27T18:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 6168.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-27-LEVANTE-RACING-SANTANDER",
+      "league": "LALIGA",
+      "fixture": "Levante vs Racing Santander",
+      "kickoff_at": "2026-11-27T20:00:00.000Z",
+      "due_at": "2026-11-27T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 6198.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-27-VENEZIA-BOLOGNA",
+      "league": "SERIEA",
+      "fixture": "Venezia vs Bologna",
+      "kickoff_at": "2026-11-27T19:45:00.000Z",
+      "due_at": "2026-11-27T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 6183.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW12-2026-11-27-BREST-PARIS-FC",
+      "league": "LIGUE1",
+      "fixture": "Brest vs Paris FC",
+      "kickoff_at": "2026-11-27T19:45:00.000Z",
+      "due_at": "2026-11-27T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 6183.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-LEEDS-UNITED-COVENTRY-CITY",
+      "league": "EPL",
+      "fixture": "Leeds United vs Coventry City",
+      "kickoff_at": "2026-11-28T15:00:00Z",
+      "due_at": "2026-11-28T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7338.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-MANCHESTER-UNITED-BRENTFORD",
+      "league": "EPL",
+      "fixture": "Manchester United vs Brentford",
+      "kickoff_at": "2026-11-28T15:00:00Z",
+      "due_at": "2026-11-28T14:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7338.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-IPSWICH-TOWN-ASTON-VILLA",
+      "league": "EPL",
+      "fixture": "Ipswich Town vs Aston Villa",
+      "kickoff_at": "2026-11-28T17:30:00Z",
+      "due_at": "2026-11-28T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7488.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-COLOGNE-ELVERSBERG",
+      "league": "BUNDESLIGA",
+      "fixture": "Cologne vs Elversberg",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7248.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-HAMBURG-BAYERN-MUNICH",
+      "league": "BUNDESLIGA",
+      "fixture": "Hamburg vs Bayern Munich",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7248.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-MAINZ-UNION-BERLIN",
+      "league": "BUNDESLIGA",
+      "fixture": "Mainz vs Union Berlin",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7248.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-PADERBORN-SCHALKE",
+      "league": "BUNDESLIGA",
+      "fixture": "Paderborn vs Schalke",
+      "kickoff_at": "2026-11-28T14:30:00.000Z",
+      "due_at": "2026-11-28T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7308.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://products.bundesliga.com/fixtures"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-STUTTGART-EINTRACHT-FRANKFURT",
+      "league": "BUNDESLIGA",
+      "fixture": "Stuttgart vs Eintracht Frankfurt",
+      "kickoff_at": "2026-11-28T16:30:00.000Z",
+      "due_at": "2026-11-28T15:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7428.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-FROSINONE-PARMA",
+      "league": "SERIEA",
+      "fixture": "Frosinone vs Parma",
+      "kickoff_at": "2026-11-28T14:00:00.000Z",
+      "due_at": "2026-11-28T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7278.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-TORINO-LAZIO",
+      "league": "SERIEA",
+      "fixture": "Torino vs Lazio",
+      "kickoff_at": "2026-11-28T17:00:00.000Z",
+      "due_at": "2026-11-28T16:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7458.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-INTER-GENOA",
+      "league": "SERIEA",
+      "fixture": "Inter vs Genoa",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7623.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-REAL-BETIS-RAYO-VALLECANO",
+      "league": "LALIGA",
+      "fixture": "Real Betis vs Rayo Vallecano",
+      "kickoff_at": "2026-11-28T13:00:00.000Z",
+      "due_at": "2026-11-28T12:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7218.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-MALAGA-ATHLETIC-BILBAO",
+      "league": "LALIGA",
+      "fixture": "Malaga vs Athletic Bilbao",
+      "kickoff_at": "2026-11-28T15:15:00.000Z",
+      "due_at": "2026-11-28T14:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7353.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-ELCHE-ATLETICO-MADRID",
+      "league": "LALIGA",
+      "fixture": "Elche vs Atletico Madrid",
+      "kickoff_at": "2026-11-28T17:30:00.000Z",
+      "due_at": "2026-11-28T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7488.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-REAL-MADRID-ALAVES",
+      "league": "LALIGA",
+      "fixture": "Real Madrid vs Alaves",
+      "kickoff_at": "2026-11-28T20:00:00.000Z",
+      "due_at": "2026-11-28T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7638.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-ANGERS-LENS",
+      "league": "LIGUE1",
+      "fixture": "Angers vs Lens",
+      "kickoff_at": "2026-11-28T16:15:00.000Z",
+      "due_at": "2026-11-28T15:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7413.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-LE-HAVRE-STRASBOURG",
+      "league": "LIGUE1",
+      "fixture": "Le Havre vs Strasbourg",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7623.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-LE-MANS-LILLE",
+      "league": "LIGUE1",
+      "fixture": "Le Mans vs Lille",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7623.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-NICE-TROYES",
+      "league": "LIGUE1",
+      "fixture": "Nice vs Troyes",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7623.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-PSG-LORIENT",
+      "league": "LIGUE1",
+      "fixture": "PSG vs Lorient",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7623.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-EVERTON-LIVERPOOL",
+      "league": "EPL",
+      "fixture": "Everton vs Liverpool",
+      "kickoff_at": "2026-11-29T12:00:00.000Z",
+      "due_at": "2026-11-29T11:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8598.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-BRIGHTON-NEWCASTLE",
+      "league": "EPL",
+      "fixture": "Brighton vs Newcastle",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8723.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-CRYSTAL-PALACE-HULL-CITY",
+      "league": "EPL",
+      "fixture": "Crystal Palace vs Hull City",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8723.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-FULHAM-BOURNEMOUTH",
+      "league": "EPL",
+      "fixture": "Fulham vs Bournemouth",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8723.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-SUNDERLAND-TOTTENHAM",
+      "league": "EPL",
+      "fixture": "Sunderland vs Tottenham",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8723.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-ARSENAL-MANCHESTER-CITY",
+      "league": "EPL",
+      "fixture": "Arsenal vs Manchester City",
+      "kickoff_at": "2026-11-29T16:30:00.000Z",
+      "due_at": "2026-11-29T15:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8868.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-FREIBURG-RB-LEIPZIG",
+      "league": "BUNDESLIGA",
+      "fixture": "Freiburg vs RB Leipzig",
+      "kickoff_at": "2026-11-29T14:30:00.000Z",
+      "due_at": "2026-11-29T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8748.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-HOFFENHEIM-AUGSBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Hoffenheim vs Augsburg",
+      "kickoff_at": "2026-11-29T16:30:00.000Z",
+      "due_at": "2026-11-29T15:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8868.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-BORUSSIA-DORTMUND-BAYER-LEVERKUSEN",
+      "league": "BUNDESLIGA",
+      "fixture": "Borussia Dortmund vs Bayer Leverkusen",
+      "kickoff_at": "2026-11-29T18:30:00.000Z",
+      "due_at": "2026-11-29T17:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8988.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-UDINESE-FIORENTINA",
+      "league": "SERIEA",
+      "fixture": "Udinese vs Fiorentina",
+      "kickoff_at": "2026-11-29T11:30:00.000Z",
+      "due_at": "2026-11-29T10:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8568.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-SASSUOLO-NAPOLI",
+      "league": "SERIEA",
+      "fixture": "Sassuolo vs Napoli",
+      "kickoff_at": "2026-11-29T14:00:00.000Z",
+      "due_at": "2026-11-29T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8718.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-ROMA-MONZA",
+      "league": "SERIEA",
+      "fixture": "Roma vs Monza",
+      "kickoff_at": "2026-11-29T17:00:00.000Z",
+      "due_at": "2026-11-29T16:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8898.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-COMO-JUVENTUS",
+      "league": "SERIEA",
+      "fixture": "Como vs Juventus",
+      "kickoff_at": "2026-11-29T19:45:00.000Z",
+      "due_at": "2026-11-29T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 9063.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-VALENCIA-OSASUNA",
+      "league": "LALIGA",
+      "fixture": "Valencia vs Osasuna",
+      "kickoff_at": "2026-11-29T13:00:00.000Z",
+      "due_at": "2026-11-29T12:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8658.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-DEPORTIVO-LA-CORUNA-BARCELONA",
+      "league": "LALIGA",
+      "fixture": "Deportivo La Coruna vs Barcelona",
+      "kickoff_at": "2026-11-29T15:15:00.000Z",
+      "due_at": "2026-11-29T14:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8793.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-CELTA-VIGO-VILLARREAL",
+      "league": "LALIGA",
+      "fixture": "Celta Vigo vs Villarreal",
+      "kickoff_at": "2026-11-29T17:30:00.000Z",
+      "due_at": "2026-11-29T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8928.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-REAL-SOCIEDAD-SEVILLA",
+      "league": "LALIGA",
+      "fixture": "Real Sociedad vs Sevilla",
+      "kickoff_at": "2026-11-29T20:00:00.000Z",
+      "due_at": "2026-11-29T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 9078.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-AUXERRE-MARSEILLE",
+      "league": "LIGUE1",
+      "fixture": "Auxerre vs Marseille",
+      "kickoff_at": "2026-11-29T14:00:00.000Z",
+      "due_at": "2026-11-29T13:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8718.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-TOULOUSE-RENNES",
+      "league": "LIGUE1",
+      "fixture": "Toulouse vs Rennes",
+      "kickoff_at": "2026-11-29T16:15:00.000Z",
+      "due_at": "2026-11-29T15:15:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8853.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-LYON-MONACO",
+      "league": "LIGUE1",
+      "fixture": "Lyon vs Monaco",
+      "kickoff_at": "2026-11-29T19:45:00.000Z",
+      "due_at": "2026-11-29T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 9063.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "EPL-2026-27-ESPN-401879231",
+      "league": "EPL",
+      "fixture": "Brighton & Hove Albion vs Newcastle United",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 8723.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261129"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-ESPN-401884719",
+      "league": "BUNDESLIGA",
+      "fixture": "SC Paderborn 07 vs Schalke 04",
+      "kickoff_at": "2026-11-28T14:30:00.000Z",
+      "due_at": "2026-11-28T13:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 7308.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261128"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-ESPN-401882792",
+      "league": "LALIGA",
+      "fixture": "Espanyol vs Getafe",
+      "kickoff_at": "2026-11-30T20:00:00.000Z",
+      "due_at": "2026-11-30T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10518.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261130"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-ESPN-401875095",
+      "league": "SERIEA",
+      "fixture": "Lecce vs Atalanta",
+      "kickoff_at": "2026-11-30T17:30:00.000Z",
+      "due_at": "2026-11-30T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10368.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261130"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-ESPN-401875019",
+      "league": "SERIEA",
+      "fixture": "Cagliari vs AC Milan",
+      "kickoff_at": "2026-11-30T19:45:00.000Z",
+      "due_at": "2026-11-30T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10503.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261130"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-2026-11-30-ESPANYOL-GETAFE",
+      "league": "LALIGA",
+      "fixture": "Espanyol vs Getafe",
+      "kickoff_at": "2026-11-30T20:00:00Z",
+      "due_at": "2026-11-30T19:00:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10518.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-2026-11-30-LECCE-ATALANTA",
+      "league": "SERIEA",
+      "fixture": "Lecce vs Atalanta",
+      "kickoff_at": "2026-11-30T17:30:00Z",
+      "due_at": "2026-11-30T16:30:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10368.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-2026-11-30-CAGLIARI-AC-MILAN",
+      "league": "SERIEA",
+      "fixture": "Cagliari vs AC Milan",
+      "kickoff_at": "2026-11-30T19:45:00Z",
+      "due_at": "2026-11-30T18:45:00.000Z",
+      "run_at": "2026-11-23T12:41:30Z",
+      "minutes_to_kickoff": 10503.5,
+      "status": "PENDING_NOT_DUE",
+      "attempted_sources": [
+        "https://www.skysports.com/football-scores-fixtures/2026-11-30"
+      ],
+      "reason": "Outside 0–60 min capture window"
+    }
+  ]
+}
