@@ -1,0 +1,1058 @@
+{
+  "schema_version": "FIVE_LEAGUE_PREKICK_AUDIT_V1",
+  "run_at": "2026-11-23T11:47:54Z",
+  "source_fixture_file": "data/fixture_schedule_20261120_20261127.json",
+  "schedule_extensions_read": [
+    {
+      "path": "data/schedule_extensions/2026-11-22T061857+0800.json",
+      "fixtures": 3,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-22T071346+0800.json",
+      "fixtures": 17,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-22T170303+0800-nov29.json",
+      "fixtures": 20,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-23T06-51-22-887Z-espn.json",
+      "fixtures": 5,
+      "changes": 0
+    },
+    {
+      "path": "data/schedule_extensions/2026-11-23T06-52-31-492Z-fixture-reconciliation.json",
+      "fixtures": 0,
+      "changes": 1
+    }
+  ],
+  "snapshot_file_checked": "data/market_prekick_snapshots.json",
+  "snapshot_count": 0,
+  "coverage_note": "66 fixtures carried forward from previously reconciled schedule. Independent live kickoff verification for three November 23 matches. Guardian November 29 and 30 checked for 7-day coverage; no comprehensive official five-league seven-day verification. No fixtures due in 0-60 minutes. No live odds captured.",
+  "external_schedule_sources": [
+    "https://www.theguardian.com/football/fixtures/2026/Nov/29",
+    "https://www.theguardian.com/football/fixtures/2026/Nov/30"
+  ],
+  "status_counts": {
+    "HISTORICAL_OUTSIDE_24H": 1,
+    "MISSED_T60": 15,
+    "PENDING_OUTSIDE_WINDOW": 50
+  },
+  "audits": [
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-JUVENTUS-VENEZIA",
+      "league": "SERIEA",
+      "fixture": "Juventus vs Venezia",
+      "kickoff_at": "2026-11-22T11:30:00.000Z",
+      "due_at": "2026-11-22T10:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1457.9,
+      "status": "HISTORICAL_OUTSIDE_24H",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "Kickoff older than 24 hours; preserved previous missed audit, no retrospective odds",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-BARCELONA-VILLARREAL",
+      "league": "LALIGA",
+      "fixture": "Barcelona vs Villarreal",
+      "kickoff_at": "2026-11-22T13:00:00.000Z",
+      "due_at": "2026-11-22T12:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1367.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-HULL-CITY-BRIGHTON",
+      "league": "EPL",
+      "fixture": "Hull City vs Brighton",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1307.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-BOLOGNA-UDINESE",
+      "league": "SERIEA",
+      "fixture": "Bologna vs Udinese",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1307.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-SASSUOLO-GENOA",
+      "league": "SERIEA",
+      "fixture": "Sassuolo vs Genoa",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1307.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-PARIS-FC-ANGERS",
+      "league": "LIGUE1",
+      "fixture": "Paris FC vs Angers",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1307.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-AUGSBURG-MAINZ",
+      "league": "BUNDESLIGA",
+      "fixture": "Augsburg vs Mainz",
+      "kickoff_at": "2026-11-22T14:30:00.000Z",
+      "due_at": "2026-11-22T13:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1277.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-RACING-SANTANDER-REAL-SOCIEDAD",
+      "league": "LALIGA",
+      "fixture": "Racing Santander vs Real Sociedad",
+      "kickoff_at": "2026-11-22T15:15:00.000Z",
+      "due_at": "2026-11-22T14:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1232.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-LORIENT-RENNES",
+      "league": "LIGUE1",
+      "fixture": "Lorient vs Rennes",
+      "kickoff_at": "2026-11-22T16:15:00.000Z",
+      "due_at": "2026-11-22T15:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1172.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-LIVERPOOL-MANCHESTER-UNITED",
+      "league": "EPL",
+      "fixture": "Liverpool vs Manchester United",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1157.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-WERDER-BREMEN-HAMBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Werder Bremen vs Hamburg",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1157.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-MILAN-FROSINONE",
+      "league": "SERIEA",
+      "fixture": "Milan vs Frosinone",
+      "kickoff_at": "2026-11-22T17:00:00.000Z",
+      "due_at": "2026-11-22T16:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1127.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-OSASUNA-MALAGA",
+      "league": "LALIGA",
+      "fixture": "Osasuna vs Malaga",
+      "kickoff_at": "2026-11-22T17:30:00.000Z",
+      "due_at": "2026-11-22T16:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -1097.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-ATALANTA-INTER",
+      "league": "SERIEA",
+      "fixture": "Atalanta vs Inter",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -962.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-MARSEILLE-LE-MANS",
+      "league": "LIGUE1",
+      "fixture": "Marseille vs Le Mans",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -962.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-GETAFE-ATLETICO-MADRID",
+      "league": "LALIGA",
+      "fixture": "Getafe vs Atletico Madrid",
+      "kickoff_at": "2026-11-22T20:00:00.000Z",
+      "due_at": "2026-11-22T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": -947.9,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No validated snapshot before kickoff; cannot reconstruct T-60 after kickoff",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-23-MONZA-FIORENTINA",
+      "league": "SERIEA",
+      "fixture": "Monza vs Fiorentina",
+      "kickoff_at": "2026-11-23T19:45:00.000Z",
+      "due_at": "2026-11-23T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 477.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "https://programmi.sky.it/sport/calcio/serie-a/dove-vedere-monza-fiorentina"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false,
+      "kickoff_verification": {
+        "verified_at": "2026-11-23T11:47:54Z",
+        "url": "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/",
+        "confirmed": true,
+        "change_detected": false
+      }
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-23-BRENTFORD-EVERTON",
+      "league": "EPL",
+      "fixture": "Brentford vs Everton",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 492.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.evertonfc.com/news/2026/october/22/brentford-v-everton-ticket-news/"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false,
+      "kickoff_verification": {
+        "verified_at": "2026-11-23T11:47:54Z",
+        "url": "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "confirmed": true,
+        "change_detected": false
+      }
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-23-LEVANTE-ELCHE",
+      "league": "LALIGA",
+      "fixture": "Levante vs Elche",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 492.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://sport.sky.it/calcio/liga/partite/2026/giornata-13/levante-elche",
+        "https://conocevalencia.es/es/eventos/levante-ud-elche-cf-noviembre-2026"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false,
+      "kickoff_verification": {
+        "verified_at": "2026-11-23T11:47:54Z",
+        "url": "https://conocevalencia.es/es/eventos/levante-ud-elche-cf-noviembre-2026",
+        "confirmed": true,
+        "change_detected": false
+      }
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-27-WERDER-BREMEN-BORUSSIA-MONCHENGLADBACH",
+      "league": "BUNDESLIGA",
+      "fixture": "Werder Bremen vs Borussia Monchengladbach",
+      "kickoff_at": "2026-11-27T19:30:00.000Z",
+      "due_at": "2026-11-27T18:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 6222.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-27-VENEZIA-BOLOGNA",
+      "league": "SERIEA",
+      "fixture": "Venezia vs Bologna",
+      "kickoff_at": "2026-11-27T19:45:00.000Z",
+      "due_at": "2026-11-27T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 6237.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW12-2026-11-27-BREST-PARIS-FC",
+      "league": "LIGUE1",
+      "fixture": "Brest vs Paris FC",
+      "kickoff_at": "2026-11-27T19:45:00.000Z",
+      "due_at": "2026-11-27T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 6237.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-27-NOTTINGHAM-FOREST-CHELSEA",
+      "league": "EPL",
+      "fixture": "Nottingham Forest vs Chelsea",
+      "kickoff_at": "2026-11-27T20:00:00.000Z",
+      "due_at": "2026-11-27T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 6252.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-27-LEVANTE-RACING-SANTANDER",
+      "league": "LALIGA",
+      "fixture": "Levante vs Racing Santander",
+      "kickoff_at": "2026-11-27T20:00:00.000Z",
+      "due_at": "2026-11-27T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 6252.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-REAL-BETIS-RAYO-VALLECANO",
+      "league": "LALIGA",
+      "fixture": "Real Betis vs Rayo Vallecano",
+      "kickoff_at": "2026-11-28T13:00:00.000Z",
+      "due_at": "2026-11-28T12:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7272.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-COLOGNE-ELVERSBERG",
+      "league": "BUNDESLIGA",
+      "fixture": "Cologne vs Elversberg",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7302.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-HAMBURG-BAYERN-MUNICH",
+      "league": "BUNDESLIGA",
+      "fixture": "Hamburg vs Bayern Munich",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7302.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-MAINZ-UNION-BERLIN",
+      "league": "BUNDESLIGA",
+      "fixture": "Mainz vs Union Berlin",
+      "kickoff_at": "2026-11-28T13:30:00.000Z",
+      "due_at": "2026-11-28T12:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7302.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-FROSINONE-PARMA",
+      "league": "SERIEA",
+      "fixture": "Frosinone vs Parma",
+      "kickoff_at": "2026-11-28T14:00:00.000Z",
+      "due_at": "2026-11-28T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7332.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-PADERBORN-SCHALKE",
+      "league": "BUNDESLIGA",
+      "fixture": "Paderborn vs Schalke",
+      "kickoff_at": "2026-11-28T14:30:00.000Z",
+      "due_at": "2026-11-28T13:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7362.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28",
+        "https://products.bundesliga.com/fixtures"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-ESPN-401884719",
+      "league": "BUNDESLIGA",
+      "fixture": "SC Paderborn 07 vs Schalke 04",
+      "kickoff_at": "2026-11-28T14:30:00.000Z",
+      "due_at": "2026-11-28T13:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7362.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261128"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-LEEDS-UNITED-COVENTRY-CITY",
+      "league": "EPL",
+      "fixture": "Leeds United vs Coventry City",
+      "kickoff_at": "2026-11-28T15:00:00Z",
+      "due_at": "2026-11-28T14:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7392.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-MANCHESTER-UNITED-BRENTFORD",
+      "league": "EPL",
+      "fixture": "Manchester United vs Brentford",
+      "kickoff_at": "2026-11-28T15:00:00Z",
+      "due_at": "2026-11-28T14:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7392.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-MALAGA-ATHLETIC-BILBAO",
+      "league": "LALIGA",
+      "fixture": "Malaga vs Athletic Bilbao",
+      "kickoff_at": "2026-11-28T15:15:00.000Z",
+      "due_at": "2026-11-28T14:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7407.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-ANGERS-LENS",
+      "league": "LIGUE1",
+      "fixture": "Angers vs Lens",
+      "kickoff_at": "2026-11-28T16:15:00.000Z",
+      "due_at": "2026-11-28T15:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7467.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-STUTTGART-EINTRACHT-FRANKFURT",
+      "league": "BUNDESLIGA",
+      "fixture": "Stuttgart vs Eintracht Frankfurt",
+      "kickoff_at": "2026-11-28T16:30:00.000Z",
+      "due_at": "2026-11-28T15:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7482.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-TORINO-LAZIO",
+      "league": "SERIEA",
+      "fixture": "Torino vs Lazio",
+      "kickoff_at": "2026-11-28T17:00:00.000Z",
+      "due_at": "2026-11-28T16:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7512.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-28-IPSWICH-TOWN-ASTON-VILLA",
+      "league": "EPL",
+      "fixture": "Ipswich Town vs Aston Villa",
+      "kickoff_at": "2026-11-28T17:30:00Z",
+      "due_at": "2026-11-28T16:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7542.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/fixtures"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-ELCHE-ATLETICO-MADRID",
+      "league": "LALIGA",
+      "fixture": "Elche vs Atletico Madrid",
+      "kickoff_at": "2026-11-28T17:30:00.000Z",
+      "due_at": "2026-11-28T16:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7542.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-28-INTER-GENOA",
+      "league": "SERIEA",
+      "fixture": "Inter vs Genoa",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7677.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-LE-HAVRE-STRASBOURG",
+      "league": "LIGUE1",
+      "fixture": "Le Havre vs Strasbourg",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7677.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-LE-MANS-LILLE",
+      "league": "LIGUE1",
+      "fixture": "Le Mans vs Lille",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7677.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-NICE-TROYES",
+      "league": "LIGUE1",
+      "fixture": "Nice vs Troyes",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7677.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-28-PSG-LORIENT",
+      "league": "LIGUE1",
+      "fixture": "PSG vs Lorient",
+      "kickoff_at": "2026-11-28T19:45:00.000Z",
+      "due_at": "2026-11-28T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7677.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-28-REAL-MADRID-ALAVES",
+      "league": "LALIGA",
+      "fixture": "Real Madrid vs Alaves",
+      "kickoff_at": "2026-11-28T20:00:00.000Z",
+      "due_at": "2026-11-28T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 7692.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/28"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-UDINESE-FIORENTINA",
+      "league": "SERIEA",
+      "fixture": "Udinese vs Fiorentina",
+      "kickoff_at": "2026-11-29T11:30:00.000Z",
+      "due_at": "2026-11-29T10:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8622.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-EVERTON-LIVERPOOL",
+      "league": "EPL",
+      "fixture": "Everton vs Liverpool",
+      "kickoff_at": "2026-11-29T12:00:00.000Z",
+      "due_at": "2026-11-29T11:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8652.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-VALENCIA-OSASUNA",
+      "league": "LALIGA",
+      "fixture": "Valencia vs Osasuna",
+      "kickoff_at": "2026-11-29T13:00:00.000Z",
+      "due_at": "2026-11-29T12:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8712.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-SASSUOLO-NAPOLI",
+      "league": "SERIEA",
+      "fixture": "Sassuolo vs Napoli",
+      "kickoff_at": "2026-11-29T14:00:00.000Z",
+      "due_at": "2026-11-29T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8772.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-AUXERRE-MARSEILLE",
+      "league": "LIGUE1",
+      "fixture": "Auxerre vs Marseille",
+      "kickoff_at": "2026-11-29T14:00:00.000Z",
+      "due_at": "2026-11-29T13:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8772.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-BRIGHTON-NEWCASTLE",
+      "league": "EPL",
+      "fixture": "Brighton vs Newcastle",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8777.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-CRYSTAL-PALACE-HULL-CITY",
+      "league": "EPL",
+      "fixture": "Crystal Palace vs Hull City",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8777.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-FULHAM-BOURNEMOUTH",
+      "league": "EPL",
+      "fixture": "Fulham vs Bournemouth",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8777.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-SUNDERLAND-TOTTENHAM",
+      "league": "EPL",
+      "fixture": "Sunderland vs Tottenham",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8777.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-ESPN-401879231",
+      "league": "EPL",
+      "fixture": "Brighton & Hove Albion vs Newcastle United",
+      "kickoff_at": "2026-11-29T14:05:00.000Z",
+      "due_at": "2026-11-29T13:05:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8777.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261129"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-FREIBURG-RB-LEIPZIG",
+      "league": "BUNDESLIGA",
+      "fixture": "Freiburg vs RB Leipzig",
+      "kickoff_at": "2026-11-29T14:30:00.000Z",
+      "due_at": "2026-11-29T13:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8802.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-DEPORTIVO-LA-CORUNA-BARCELONA",
+      "league": "LALIGA",
+      "fixture": "Deportivo La Coruna vs Barcelona",
+      "kickoff_at": "2026-11-29T15:15:00.000Z",
+      "due_at": "2026-11-29T14:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8847.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-TOULOUSE-RENNES",
+      "league": "LIGUE1",
+      "fixture": "Toulouse vs Rennes",
+      "kickoff_at": "2026-11-29T16:15:00.000Z",
+      "due_at": "2026-11-29T15:15:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8907.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW12-2026-11-29-ARSENAL-MANCHESTER-CITY",
+      "league": "EPL",
+      "fixture": "Arsenal vs Manchester City",
+      "kickoff_at": "2026-11-29T16:30:00.000Z",
+      "due_at": "2026-11-29T15:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8922.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-HOFFENHEIM-AUGSBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Hoffenheim vs Augsburg",
+      "kickoff_at": "2026-11-29T16:30:00.000Z",
+      "due_at": "2026-11-29T15:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8922.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-ROMA-MONZA",
+      "league": "SERIEA",
+      "fixture": "Roma vs Monza",
+      "kickoff_at": "2026-11-29T17:00:00.000Z",
+      "due_at": "2026-11-29T16:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8952.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-CELTA-VIGO-VILLARREAL",
+      "league": "LALIGA",
+      "fixture": "Celta Vigo vs Villarreal",
+      "kickoff_at": "2026-11-29T17:30:00.000Z",
+      "due_at": "2026-11-29T16:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 8982.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-29-BORUSSIA-DORTMUND-BAYER-LEVERKUSEN",
+      "league": "BUNDESLIGA",
+      "fixture": "Borussia Dortmund vs Bayer Leverkusen",
+      "kickoff_at": "2026-11-29T18:30:00.000Z",
+      "due_at": "2026-11-29T17:30:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 9042.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW13-2026-11-29-COMO-JUVENTUS",
+      "league": "SERIEA",
+      "fixture": "Como vs Juventus",
+      "kickoff_at": "2026-11-29T19:45:00.000Z",
+      "due_at": "2026-11-29T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 9117.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW13-2026-11-29-LYON-MONACO",
+      "league": "LIGUE1",
+      "fixture": "Lyon vs Monaco",
+      "kickoff_at": "2026-11-29T19:45:00.000Z",
+      "due_at": "2026-11-29T18:45:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 9117.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW14-2026-11-29-REAL-SOCIEDAD-SEVILLA",
+      "league": "LALIGA",
+      "fixture": "Real Sociedad vs Sevilla",
+      "kickoff_at": "2026-11-29T20:00:00.000Z",
+      "due_at": "2026-11-29T19:00:00.000Z",
+      "run_at": "2026-11-23T11:47:54Z",
+      "minutes_to_kickoff": 9132.1,
+      "status": "PENDING_OUTSIDE_WINDOW",
+      "attempted_sources": [
+        "https://www.theguardian.com/football/fixtures/2026/Nov/29"
+      ],
+      "reason": "Not in 0–60 minute capture window; no pre-kick odds queried or recorded",
+      "odds_recorded": false
+    }
+  ]
+}
