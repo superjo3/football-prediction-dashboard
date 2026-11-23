@@ -1,0 +1,277 @@
+{
+  "schema_version": "PREKICK_AUDIT_V1",
+  "run_at": "2026-11-23T08:02:01Z",
+  "source_fixture_file": "data/fixture_schedule_20261120_20261127.json",
+  "snapshot_file_checked": "data/market_prekick_snapshots.json",
+  "snapshot_count": 0,
+  "coverage_note": "Schedule extension directory cannot be fetched as a file. Public schedule source confirms Nov 27-29 fixtures, but full seven-day reconciliation remains incomplete. Three Nov 23 fixtures checked against official club/league pages. No 0-60 minute fixtures at execution.",
+  "audits": [
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-HULL-CITY-BRIGHTON",
+      "league": "EPL",
+      "fixture": "Hull City vs Brighton",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1082,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-22-LIVERPOOL-MANCHESTER-UNITED",
+      "league": "EPL",
+      "fixture": "Liverpool vs Manchester United",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -932,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "EPL-2026-27-GW11-2026-11-23-BRENTFORD-EVERTON",
+      "league": "EPL",
+      "fixture": "Brentford vs Everton",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": 718,
+      "status": "NOT_YET_DUE",
+      "attempted_sources": [
+        "https://www.brentfordfc.com/en/brentford-v-everton-ticket-information-26-27",
+        "https://www.premierleague.com/en/news/4725574"
+      ],
+      "reason": "Kickoff confirmed against live official fixture page; outside 0–60 minute pre-kick capture window; no odds recorded"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-AUGSBURG-MAINZ",
+      "league": "BUNDESLIGA",
+      "fixture": "Augsburg vs Mainz",
+      "kickoff_at": "2026-11-22T14:30:00.000Z",
+      "due_at": "2026-11-22T13:30:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1052,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW10-2026-11-22-WERDER-BREMEN-HAMBURG",
+      "league": "BUNDESLIGA",
+      "fixture": "Werder Bremen vs Hamburg",
+      "kickoff_at": "2026-11-22T16:30:00.000Z",
+      "due_at": "2026-11-22T15:30:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -932,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.footballwebpages.co.uk/german-bundesliga/fixtures-results"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-BARCELONA-VILLARREAL",
+      "league": "LALIGA",
+      "fixture": "Barcelona vs Villarreal",
+      "kickoff_at": "2026-11-22T13:00:00.000Z",
+      "due_at": "2026-11-22T12:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1142,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-RACING-SANTANDER-REAL-SOCIEDAD",
+      "league": "LALIGA",
+      "fixture": "Racing Santander vs Real Sociedad",
+      "kickoff_at": "2026-11-22T15:15:00.000Z",
+      "due_at": "2026-11-22T14:15:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1007,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-OSASUNA-MALAGA",
+      "league": "LALIGA",
+      "fixture": "Osasuna vs Malaga",
+      "kickoff_at": "2026-11-22T17:30:00.000Z",
+      "due_at": "2026-11-22T16:30:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -872,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-22-GETAFE-ATLETICO-MADRID",
+      "league": "LALIGA",
+      "fixture": "Getafe vs Atletico Madrid",
+      "kickoff_at": "2026-11-22T20:00:00.000Z",
+      "due_at": "2026-11-22T19:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -722,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://matchdaay.com/league/la-liga/2026/?tab=fixtures"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-GW13-2026-11-23-LEVANTE-ELCHE",
+      "league": "LALIGA",
+      "fixture": "Levante vs Elche",
+      "kickoff_at": "2026-11-23T20:00:00.000Z",
+      "due_at": "2026-11-23T19:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": 718,
+      "status": "NOT_YET_DUE",
+      "attempted_sources": [
+        "https://www.laliga.com/es-PE/partido/temporada-2026-2027-laliga-ea-sports-levante-ud-elche-cf-13"
+      ],
+      "reason": "Kickoff confirmed against live official fixture page; outside 0–60 minute pre-kick capture window; no odds recorded"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-JUVENTUS-VENEZIA",
+      "league": "SERIEA",
+      "fixture": "Juventus vs Venezia",
+      "kickoff_at": "2026-11-22T11:30:00.000Z",
+      "due_at": "2026-11-22T10:30:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1232,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-BOLOGNA-UDINESE",
+      "league": "SERIEA",
+      "fixture": "Bologna vs Udinese",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1082,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-SASSUOLO-GENOA",
+      "league": "SERIEA",
+      "fixture": "Sassuolo vs Genoa",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1082,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-MILAN-FROSINONE",
+      "league": "SERIEA",
+      "fixture": "Milan vs Frosinone",
+      "kickoff_at": "2026-11-22T17:00:00.000Z",
+      "due_at": "2026-11-22T16:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -902,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-22-ATALANTA-INTER",
+      "league": "SERIEA",
+      "fixture": "Atalanta vs Inter",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -737,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://football-italia.net/serie-a-fixtures/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-GW12-2026-11-23-MONZA-FIORENTINA",
+      "league": "SERIEA",
+      "fixture": "Monza vs Fiorentina",
+      "kickoff_at": "2026-11-23T19:45:00.000Z",
+      "due_at": "2026-11-23T18:45:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": 703,
+      "status": "NOT_YET_DUE",
+      "attempted_sources": [
+        "https://www.acmonza.com/en/news/monza-fiorentina-2627-tickets/"
+      ],
+      "reason": "Kickoff confirmed against live official fixture page; outside 0–60 minute pre-kick capture window; no odds recorded"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-PARIS-FC-ANGERS",
+      "league": "LIGUE1",
+      "fixture": "Paris FC vs Angers",
+      "kickoff_at": "2026-11-22T14:00:00.000Z",
+      "due_at": "2026-11-22T13:00:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -1082,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-LORIENT-RENNES",
+      "league": "LIGUE1",
+      "fixture": "Lorient vs Rennes",
+      "kickoff_at": "2026-11-22T16:15:00.000Z",
+      "due_at": "2026-11-22T15:15:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -947,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    },
+    {
+      "fixture_id": "LIGUE1-2026-27-GW11-2026-11-22-MARSEILLE-LE-MANS",
+      "league": "LIGUE1",
+      "fixture": "Marseille vs Le Mans",
+      "kickoff_at": "2026-11-22T19:45:00.000Z",
+      "due_at": "2026-11-22T18:45:00.000Z",
+      "run_at": "2026-11-23T08:02:01Z",
+      "minutes_to_kickoff": -737,
+      "status": "MISSED_T60",
+      "attempted_sources": [
+        "https://www.soccernews.com/soccer-stats/ligue-1/fixtures-and-results/2026-27/"
+      ],
+      "reason": "No verified pre-kick snapshot; previously diagnosed in run_20261123T071300Z.json; no retrospective odds substitution"
+    }
+  ]
+}
