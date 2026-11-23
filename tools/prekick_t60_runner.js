@@ -24,7 +24,10 @@ const aliases = {
   'atletico madrid': 'atletico madrid',
   'borussia dortmund': 'dortmund',
   'monza brianza': 'monza', 'ac monza': 'monza',
-  'fiorentina': 'fiorentina'
+  'fiorentina': 'fiorentina',
+  'brighton hove albion': 'brighton', 'newcastle united': 'newcastle',
+  'sc paderborn 07': 'paderborn', 'paderborn 07': 'paderborn',
+  'schalke 04': 'schalke'
 };
 function norm(s) {
   const v = String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
@@ -78,6 +81,9 @@ function allFixtures() {
           source: c.source || target.source, last_verified_at: c.checked_at_utc || target.last_verified_at}));
         if (x) map.set(x.fixture_id, x);
       }
+    }
+    for (const exclusion of ext.exclusions || []) {
+      if (map.has(exclusion.canonical_fixture_id)) map.delete(exclusion.fixture_id);
     }
   }
   return [...map.values()];
