@@ -1,0 +1,82 @@
+{
+  "schema": "EPL_GW11_DASHBOARD_UPDATE_PACKAGE_V2",
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "settle_source": "data/settlement_pending/2026-11-23/EPL_GW11_20261123_RESULT_ADDENDUM_REVIEW_V2.json",
+  "source_sha": "411807d0adb506ea489ee29ec4f0a26e3bd5106f",
+  "status": {
+    "settlement": "SETTLEMENT_INCOMPLETE",
+    "review": "COMPLETED_FOR_9_FINISHED_MATCHES",
+    "dashboard": "DEFERRED_BY_USER",
+    "research": "SEPARATE"
+  },
+  "data": {
+    "completed": 9,
+    "pending": 1,
+    "pending_fixture": "Brentford vs Everton",
+    "official_ranks": {
+      "1X2": {
+        "correct": 1,
+        "settled": 3,
+        "pending": 0,
+        "rate_pct": 33.33
+      },
+      "OU25": {
+        "correct": 2,
+        "settled": 3,
+        "pending": 0,
+        "rate_pct": 66.67
+      },
+      "parity": {
+        "correct": 1,
+        "settled": 2,
+        "pending": 1,
+        "rate_pct": 50
+      }
+    },
+    "official_full_match": {
+      "1X2": {
+        "correct": 4,
+        "settled": 9,
+        "pending": 1,
+        "rate_pct": 44.44
+      },
+      "OU25": {
+        "correct": 4,
+        "settled": 9,
+        "pending": 1,
+        "rate_pct": 44.44
+      },
+      "parity": {
+        "correct": 5,
+        "settled": 9,
+        "pending": 1,
+        "rate_pct": 55.56
+      }
+    },
+    "shadow_parity_ranks": {
+      "correct": 2,
+      "settled": 3,
+      "pending": 0,
+      "rate_pct": 66.67
+    },
+    "user_parity_picks": {
+      "correct": 2,
+      "settled": 2,
+      "pending": 1,
+      "rate_pct": 100
+    }
+  },
+  "instructions": [
+    "Keep original official prematch directions and ranking unchanged",
+    "Store only final results after kickoff",
+    "Do not mix official, shadow or user picks",
+    "No cumulative until complete and historic forward baseline audited",
+    "Do not claim PRE-KICK odds",
+    "Do not publish website/main until user requests consolidated sync"
+  ],
+  "next_step": "Verify Brentford-Everton final score after 2026-11-24T04:00+08, append Final Result Addendum and settlement, retain this partial record unchanged."
+}
