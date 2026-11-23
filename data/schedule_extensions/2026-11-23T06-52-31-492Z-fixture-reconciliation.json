@@ -1,0 +1,30 @@
+{
+  "schema_version": "FIVE_LEAGUE_FIXTURE_EXTENSION_V1",
+  "append_only": true,
+  "checked_at_utc": "2026-11-23T06:52:31.492Z",
+  "source_name": "ESPN_MATCH_RECONCILIATION_WITH_BUNDESLIGA_OFFICIAL",
+  "notes": "Preserve original historical fixture rows. Two ESPN aliases refer to existing fixtures. Correct Paderborn-S04 time from 13:30 UTC to official 14:30 UTC.",
+  "fixtures": [],
+  "changes": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-PADERBORN-SCHALKE",
+      "previous_kickoff_at_utc": "2026-11-28T13:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "checked_at_utc": "2026-11-23T06:52:31.492Z",
+      "source": "https://products.bundesliga.com/fixtures",
+      "reason": "OFFICIAL_BUNDESLIGA_15_30_CET_EQUALS_14_30_UTC"
+    }
+  ],
+  "exclusions": [
+    {
+      "fixture_id": "EPL-2026-27-ESPN-401879231",
+      "canonical_fixture_id": "EPL-2026-27-GW12-2026-11-29-BRIGHTON-NEWCASTLE",
+      "reason": "DUPLICATE_ESPN_TEAM_ALIAS"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-ESPN-401884719",
+      "canonical_fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-PADERBORN-SCHALKE",
+      "reason": "DUPLICATE_ESPN_TEAM_ALIAS"
+    }
+  ]
+}
