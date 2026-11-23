@@ -1,0 +1,511 @@
+{
+  "schema": "THREE_STAGE_POSTMATCH_V1",
+  "date_taipei": "2026-11-23",
+  "league": "BUNDESLIGA",
+  "gw": 10,
+  "season": "2026-27",
+  "record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+  "original_package_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW10_20261109.json",
+  "source_urls": [
+    "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2026-2027/matchday/10"
+  ],
+  "model_class": "OFFICIAL",
+  "original_prematch_record_untouched": true,
+  "settlement": {
+    "status": "FINAL",
+    "completed": 9,
+    "pending": 0,
+    "fixtures": [
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-01",
+        "home": "拜仁",
+        "away": "科隆",
+        "score": [
+          1,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-02",
+        "home": "勒沃庫森",
+        "away": "柏德博恩",
+        "score": [
+          4,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-03",
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "score": [
+          1,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-04",
+        "home": "柏林聯",
+        "away": "RB萊比錫",
+        "score": [
+          1,
+          5
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-05",
+        "home": "門興",
+        "away": "多特蒙德",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-06",
+        "home": "艾禾斯堡",
+        "away": "弗賴堡",
+        "score": [
+          0,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "小2.5",
+          "parity": "單"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-07",
+        "home": "沙爾克04",
+        "away": "史特加",
+        "score": [
+          0,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-08",
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "score": [
+          3,
+          1
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "match_id": "BUNDESLIGA-2026-27-GW10-09",
+        "home": "雲達不萊梅",
+        "away": "漢堡",
+        "score": [
+          4,
+          0
+        ],
+        "state": "FINAL",
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "original_predictions": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hits": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      }
+    ],
+    "ranks": {
+      "1X2": [
+        {
+          "rank": "R1",
+          "fixture": "拜仁 vs 科隆",
+          "match_id": "BUNDESLIGA-2026-27-GW10-01",
+          "pick": "主勝",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "和",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "勒沃庫森 vs 柏德博恩",
+          "match_id": "BUNDESLIGA-2026-27-GW10-02",
+          "pick": "主勝",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "主勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "門興 vs 多特蒙德",
+          "match_id": "BUNDESLIGA-2026-27-GW10-05",
+          "pick": "客勝",
+          "score": [
+            0,
+            1
+          ],
+          "actual": "客勝",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        }
+      ],
+      "OU25": [
+        {
+          "rank": "R1",
+          "fixture": "拜仁 vs 科隆",
+          "match_id": "BUNDESLIGA-2026-27-GW10-01",
+          "pick": "大2.5",
+          "score": [
+            1,
+            1
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R2",
+          "fixture": "勒沃庫森 vs 柏德博恩",
+          "match_id": "BUNDESLIGA-2026-27-GW10-02",
+          "pick": "大2.5",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "大2.5",
+          "state": "FINAL",
+          "hit": true,
+          "classification": "OFFICIAL"
+        },
+        {
+          "rank": "R3",
+          "fixture": "法蘭克福 vs 霍芬海姆",
+          "match_id": "BUNDESLIGA-2026-27-GW10-03",
+          "pick": "大2.5",
+          "score": [
+            1,
+            0
+          ],
+          "actual": "小2.5",
+          "state": "FINAL",
+          "hit": false,
+          "classification": "OFFICIAL"
+        }
+      ],
+      "parity": []
+    },
+    "rank_summaries": {
+      "1X2": {
+        "hit": 2,
+        "n": 3,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 1,
+        "n": 3,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "parity": {
+        "hit": 0,
+        "n": 0,
+        "pending": 0,
+        "class": "FORMAL_PASS_NO_RANKS"
+      }
+    },
+    "full_summaries": {
+      "1X2": {
+        "hit": 6,
+        "n": 9,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "OU25": {
+        "hit": 4,
+        "n": 9,
+        "pending": 0,
+        "class": "OFFICIAL"
+      },
+      "parity": {
+        "hit": 6,
+        "n": 9,
+        "pending": 0,
+        "class": "DIRECTION_ONLY_FORMAL_PASS"
+      }
+    },
+    "pass_flags": {
+      "1X2": false,
+      "OU25": false,
+      "parity": true,
+      "parity_reason": "PARITY_SKEW_0_ODD_9_EVEN; frozen V2-RG1 direction audit passed, but exact V1 parity-confidence tie-break is unavailable, so official R1/R2/R3 are not forced."
+    }
+  },
+  "review": {
+    "errors": {
+      "1X2": [
+        {
+          "fixture": "拜仁 vs 科隆",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "主勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "沙爾克04 vs 史特加",
+          "score": [
+            0,
+            0
+          ],
+          "prediction": "客勝",
+          "actual": "和"
+        },
+        {
+          "fixture": "奧格斯堡 vs 美因茨",
+          "score": [
+            3,
+            1
+          ],
+          "prediction": "客勝",
+          "actual": "主勝"
+        }
+      ],
+      "OU25": [
+        {
+          "fixture": "拜仁 vs 科隆",
+          "score": [
+            1,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "法蘭克福 vs 霍芬海姆",
+          "score": [
+            1,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "門興 vs 多特蒙德",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "艾禾斯堡 vs 弗賴堡",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        },
+        {
+          "fixture": "沙爾克04 vs 史特加",
+          "score": [
+            0,
+            0
+          ],
+          "prediction": "大2.5",
+          "actual": "小2.5"
+        }
+      ],
+      "parity": [
+        {
+          "fixture": "法蘭克福 vs 霍芬海姆",
+          "score": [
+            1,
+            0
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "門興 vs 多特蒙德",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        },
+        {
+          "fixture": "艾禾斯堡 vs 弗賴堡",
+          "score": [
+            0,
+            1
+          ],
+          "prediction": "雙",
+          "actual": "單"
+        }
+      ]
+    },
+    "diagnostics": [
+      "1X2 R1 Bayern 1-1 Cologne failed; draw risk needs WATCH",
+      "OU R1 Bayern 1-1 and R3 Frankfurt 1-0 failed big direction",
+      "Parity 9 EVEN is frozen but formal PASS, exclude formal R stats"
+    ],
+    "market_swing": "NOT_EVALUABLE_NO_VERIFIED_T60_ODDS",
+    "decisions": [
+      "KEEP original",
+      "WATCH draw/low-total/skew",
+      "TEST on future sealed rounds only",
+      "PROMOTE_NONE"
+    ]
+  },
+  "dashboard_update_package": {
+    "state": "DEFERRED_BY_USER",
+    "main_updated": false,
+    "website_updated": false,
+    "forward_cumulative": "NOT_RECALCULATED_PRIOR_VERIFIED_FORWARD_HISTORY_MISSING",
+    "no_reprediction": true
+  }
+}
