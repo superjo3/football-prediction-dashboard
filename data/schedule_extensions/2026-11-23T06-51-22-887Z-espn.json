@@ -1,0 +1,80 @@
+{
+  "schema_version": "FIVE_LEAGUE_FIXTURE_EXTENSION_V1",
+  "append_only": true,
+  "checked_at_utc": "2026-11-23T06:51:22.887Z",
+  "source_name": "ESPN_PUBLIC_SCOREBOARD",
+  "fixtures": [
+    {
+      "fixture_id": "EPL-2026-27-ESPN-401879231",
+      "fixture_id_type": "ESPN_EVENT_ID",
+      "league": "EPL",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Brighton & Hove Albion",
+      "away": "Newcastle United",
+      "kickoff_at_utc": "2026-11-29T14:05:00.000Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261129",
+      "last_verified_at": "2026-11-23T06:51:22.887Z",
+      "verification_level": "ESPN_API",
+      "t60_due_at_utc": "2026-11-29T13:05:00.000Z"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-ESPN-401884719",
+      "fixture_id_type": "ESPN_EVENT_ID",
+      "league": "BUNDESLIGA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "SC Paderborn 07",
+      "away": "Schalke 04",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261128",
+      "last_verified_at": "2026-11-23T06:51:22.887Z",
+      "verification_level": "ESPN_API",
+      "t60_due_at_utc": "2026-11-28T13:30:00.000Z"
+    },
+    {
+      "fixture_id": "LALIGA-2026-27-ESPN-401882792",
+      "fixture_id_type": "ESPN_EVENT_ID",
+      "league": "LALIGA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Espanyol",
+      "away": "Getafe",
+      "kickoff_at_utc": "2026-11-30T20:00:00.000Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261130",
+      "last_verified_at": "2026-11-23T06:51:22.887Z",
+      "verification_level": "ESPN_API",
+      "t60_due_at_utc": "2026-11-30T19:00:00.000Z"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-ESPN-401875095",
+      "fixture_id_type": "ESPN_EVENT_ID",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Lecce",
+      "away": "Atalanta",
+      "kickoff_at_utc": "2026-11-30T17:30:00.000Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261130",
+      "last_verified_at": "2026-11-23T06:51:22.887Z",
+      "verification_level": "ESPN_API",
+      "t60_due_at_utc": "2026-11-30T16:30:00.000Z"
+    },
+    {
+      "fixture_id": "SERIEA-2026-27-ESPN-401875019",
+      "fixture_id_type": "ESPN_EVENT_ID",
+      "league": "SERIEA",
+      "season": "2026-27",
+      "GW": null,
+      "home": "Cagliari",
+      "away": "AC Milan",
+      "kickoff_at_utc": "2026-11-30T19:45:00.000Z",
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261130",
+      "last_verified_at": "2026-11-23T06:51:22.887Z",
+      "verification_level": "ESPN_API",
+      "t60_due_at_utc": "2026-11-30T18:45:00.000Z"
+    }
+  ],
+  "changes": [],
+  "coverage_complete": true
+}
