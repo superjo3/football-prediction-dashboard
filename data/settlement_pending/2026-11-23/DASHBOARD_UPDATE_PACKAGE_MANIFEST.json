@@ -7,9 +7,9 @@
     {
       "league": "EPL",
       "gw": 11,
-      "status": "SETTLEMENT_INCOMPLETE",
-      "done": 9,
-      "pending": 1,
+      "status": "FINAL",
+      "done": 10,
+      "pending": 0,
       "ranks": {
         "1X2": {
           "hit": 1,
@@ -24,29 +24,29 @@
           "class": "OFFICIAL"
         },
         "parity": {
-          "hit": 1,
-          "n": 2,
-          "pending": 1,
+          "hit": 2,
+          "n": 3,
+          "pending": 0,
           "class": "OFFICIAL"
         }
       },
       "full": {
         "1X2": {
-          "hit": 4,
-          "n": 9,
-          "pending": 1,
+          "hit": 5,
+          "n": 10,
+          "pending": 0,
           "class": "OFFICIAL"
         },
         "OU25": {
           "hit": 4,
-          "n": 9,
-          "pending": 1,
+          "n": 10,
+          "pending": 0,
           "class": "OFFICIAL"
         },
         "parity": {
-          "hit": 5,
-          "n": 9,
-          "pending": 1,
+          "hit": 6,
+          "n": 10,
+          "pending": 0,
           "class": "OFFICIAL"
         }
       }
@@ -242,18 +242,18 @@
   ],
   "policy": "Keep sealed predictions, PASS excluded; Research and Shadow separate; no pre-kick backfill; append-only",
   "pending_games": [
-    "Brentford vs Everton",
     "Levante vs Elche",
     "Monza vs Fiorentina"
   ],
   "latest_EPL_postmatch": {
-    "addendum": "data/settlement_pending/2026-11-23/EPL_GW11_20261123_RESULT_ADDENDUM_REVIEW_V2.json",
-    "package": "data/settlement_pending/2026-11-23/EPL_GW11_DASHBOARD_UPDATE_PACKAGE_PENDING_V2.json",
-    "revision": "V2_RECHECK_WITH_OFFICIAL_SOURCES",
-    "settlement": "SETTLEMENT_INCOMPLETE",
-    "review": "COMPLETED_FOR_9_MATCHES",
+    "addendum": "data/settlement_pending/2026-11-23/EPL_GW11_20261124_FINAL_RESULT_ADDENDUM_REVIEW_V3.json",
+    "package": "data/settlement_pending/2026-11-23/EPL_GW11_DASHBOARD_UPDATE_PACKAGE_FINAL_V3.json",
+    "revision": "V3_FINAL_FT_10_OF_10",
+    "settlement": "FINAL",
+    "review": "FINAL_COMPLETE",
     "sync": "DEFERRED_BY_USER",
     "supersedes_prior_epl_review_for_reporting": true,
     "original_sealed_prediction_unchanged": true
-  }
+  },
+  "latest_EPL_verified_at_taipei": "2026-11-24"
 }
