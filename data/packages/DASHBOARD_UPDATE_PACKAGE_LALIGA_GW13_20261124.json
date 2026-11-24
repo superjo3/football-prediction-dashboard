@@ -1,0 +1,458 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "record_id": "LALIGA-2026-27-GW13-20261124-SETTLEMENT",
+  "parent_record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+  "league": "LaLiga",
+  "season": "2026-27",
+  "gw": 13,
+  "status": "SETTLEMENT_REVIEW_COMPLETE_RESEARCH_ONLY",
+  "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
+  "website_updated": false,
+  "github_updated": false,
+  "integrity": {
+    "A_research_only": true,
+    "B_research_only": true,
+    "official_exact": "NOT_RUN",
+    "pre_kick": "MISSING_NOT_BACKFILLED",
+    "predictions_unchanged": true
+  },
+  "settlement": {
+    "status": "COMPLETE",
+    "completed_matches": 10,
+    "expected_matches": 10,
+    "A": {
+      "record_id": "LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A",
+      "results": [
+        {
+          "fixture": "畢爾包 vs 愛斯賓奴",
+          "score": [
+            0,
+            1
+          ],
+          "actual": {
+            "1X2": "客勝",
+            "OU25": "小2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": false,
+            "OU25": false,
+            "parity": false
+          }
+        },
+        {
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "score": [
+            3,
+            1
+          ],
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "單"
+          },
+          "hit": {
+            "1X2": true,
+            "OU25": false,
+            "parity": false
+          }
+        },
+        {
+          "fixture": "華歷簡奴 vs 華倫西亞",
+          "score": [
+            0,
+            1
+          ],
+          "actual": {
+            "1X2": "客勝",
+            "OU25": "小2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": false,
+            "OU25": true,
+            "parity": false
+          }
+        },
+        {
+          "fixture": "西維爾 vs 貝迪斯",
+          "score": [
+            1,
+            1
+          ],
+          "actual": {
+            "1X2": "和",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "prediction": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": false,
+            "OU25": false,
+            "parity": true
+          }
+        },
+        {
+          "fixture": "皇家馬德里 vs 切爾達",
+          "score": [
+            2,
+            1
+          ],
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hit": {
+            "1X2": true,
+            "OU25": true,
+            "parity": true
+          }
+        },
+        {
+          "fixture": "巴塞隆拿 vs 維拉利爾",
+          "score": [
+            3,
+            2
+          ],
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hit": {
+            "1X2": true,
+            "OU25": true,
+            "parity": true
+          }
+        },
+        {
+          "fixture": "桑坦德 vs 皇家蘇斯達",
+          "score": [
+            3,
+            2
+          ],
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hit": {
+            "1X2": false,
+            "OU25": true,
+            "parity": true
+          }
+        },
+        {
+          "fixture": "奧沙辛拿 vs 馬拉加",
+          "score": [
+            1,
+            0
+          ],
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": true,
+            "OU25": true,
+            "parity": false
+          }
+        },
+        {
+          "fixture": "加泰 vs 馬德里體育會",
+          "score": [
+            0,
+            3
+          ],
+          "actual": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "prediction": {
+            "1X2": "客勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": true,
+            "OU25": false,
+            "parity": false
+          }
+        },
+        {
+          "fixture": "利雲特 vs 艾爾切",
+          "score": [
+            1,
+            1
+          ],
+          "actual": {
+            "1X2": "和",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "prediction": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hit": {
+            "1X2": false,
+            "OU25": false,
+            "parity": true
+          }
+        }
+      ],
+      "round_metrics": {
+        "1X2": {
+          "hits": 5,
+          "n": 10,
+          "pct": 50.0
+        },
+        "OU25": {
+          "hits": 5,
+          "n": 10,
+          "pct": 50.0
+        },
+        "parity": {
+          "hits": 5,
+          "n": 10,
+          "pct": 50.0
+        }
+      },
+      "ranked": {
+        "1x2": {
+          "R1": {
+            "fixture": "皇家馬德里 vs 切爾達",
+            "pick": "主勝",
+            "hit": true
+          },
+          "R2": {
+            "fixture": "巴塞隆拿 vs 維拉利爾",
+            "pick": "主勝",
+            "hit": true
+          },
+          "R3": {
+            "fixture": "畢爾包 vs 愛斯賓奴",
+            "pick": "主勝",
+            "hit": false
+          }
+        },
+        "ou25": {
+          "R1": {
+            "fixture": "巴塞隆拿 vs 維拉利爾",
+            "pick": "大2.5",
+            "hit": true
+          },
+          "R2": {
+            "fixture": "皇家馬德里 vs 切爾達",
+            "pick": "大2.5",
+            "hit": true
+          },
+          "R3": {
+            "fixture": "桑坦德 vs 皇家蘇斯達",
+            "pick": "大2.5",
+            "hit": true
+          }
+        },
+        "parity": {
+          "R1": {
+            "fixture": "桑坦德 vs 皇家蘇斯達",
+            "pick": "單",
+            "hit": true
+          },
+          "R2": {
+            "fixture": "巴塞隆拿 vs 維拉利爾",
+            "pick": "單",
+            "hit": true
+          },
+          "R3": {
+            "fixture": "皇家馬德里 vs 切爾達",
+            "pick": "單",
+            "hit": true
+          }
+        }
+      }
+    },
+    "B": {
+      "record_id": "LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH",
+      "parity": {
+        "hits": 7,
+        "n": 10,
+        "pct": 70.0
+      },
+      "results": [
+        {
+          "fixture": "畢爾包 vs 愛斯賓奴",
+          "score": [
+            0,
+            1
+          ],
+          "actual_parity": "單",
+          "pick": "單",
+          "hit": true
+        },
+        {
+          "fixture": "艾拉維斯 vs 拉科魯尼亞",
+          "score": [
+            3,
+            1
+          ],
+          "actual_parity": "雙",
+          "pick": "單",
+          "hit": false
+        },
+        {
+          "fixture": "華歷簡奴 vs 華倫西亞",
+          "score": [
+            0,
+            1
+          ],
+          "actual_parity": "單",
+          "pick": "單",
+          "hit": true
+        },
+        {
+          "fixture": "西維爾 vs 貝迪斯",
+          "score": [
+            1,
+            1
+          ],
+          "actual_parity": "雙",
+          "pick": "雙",
+          "hit": true
+        },
+        {
+          "fixture": "皇家馬德里 vs 切爾達",
+          "score": [
+            2,
+            1
+          ],
+          "actual_parity": "單",
+          "pick": "單",
+          "hit": true
+        },
+        {
+          "fixture": "巴塞隆拿 vs 維拉利爾",
+          "score": [
+            3,
+            2
+          ],
+          "actual_parity": "單",
+          "pick": "單",
+          "hit": true
+        },
+        {
+          "fixture": "桑坦德 vs 皇家蘇斯達",
+          "score": [
+            3,
+            2
+          ],
+          "actual_parity": "單",
+          "pick": "單",
+          "hit": true
+        },
+        {
+          "fixture": "奧沙辛拿 vs 馬拉加",
+          "score": [
+            1,
+            0
+          ],
+          "actual_parity": "單",
+          "pick": "雙",
+          "hit": false
+        },
+        {
+          "fixture": "加泰 vs 馬德里體育會",
+          "score": [
+            0,
+            3
+          ],
+          "actual_parity": "單",
+          "pick": "雙",
+          "hit": false
+        },
+        {
+          "fixture": "利雲特 vs 艾爾切",
+          "score": [
+            1,
+            1
+          ],
+          "actual_parity": "雙",
+          "pick": "雙",
+          "hit": true
+        }
+      ],
+      "ranked": {
+        "parity": {
+          "R1": {
+            "fixture": "皇家馬德里 vs 切爾達",
+            "pick": "單",
+            "hit": true
+          },
+          "R2": {
+            "fixture": "巴塞隆拿 vs 維拉利爾",
+            "pick": "單",
+            "hit": true
+          },
+          "R3": {
+            "fixture": "艾拉維斯 vs 拉科魯尼亞",
+            "pick": "單",
+            "hit": false
+          }
+        }
+      }
+    }
+  },
+  "review": {
+    "status": "COMPLETE",
+    "A": "KEEP/WATCH research continuity; parity R1/R2/R3 3/3 but full-round 5/10, no promotion",
+    "B": "KEEP as frozen research challenger; parity 7/10, R1/R2 hit, R3 miss; no promotion from one round",
+    "official": "UNCHANGED / NOT_RUN",
+    "pre_kick": "MISSING / NO BACKFILL"
+  },
+  "source_urls": [
+    "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-13"
+  ]
+}
