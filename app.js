@@ -545,19 +545,52 @@ function bundesDual(r,p){
  for(const k of ['phase2_rank','phase12_rank'])if(new Set(xs.map(x=>x[k])).size!==9||xs.some(x=>!Number.isInteger(x[k])||x[k]<1||x[k]>9))return null;
  return c;
 }
-function bundesParityCell(direction,rank,type){
+// Read settled goals from the existing result ledger, never from the prediction/market table.
+function bundesActual(r,f){
+ const fixture=(f.home+' vs '+f.away).replace(/\s+/g,'');
+ const pick=(D.predictions||[]).find(q=>q.record_id===r.id&&String(q.fixture||'').replace(/\s+/g,'')===fixture);
+ const sc=pick?result(pick)?.score:null;
+ if(!Array.isArray(sc)||sc.length!==2||!sc.every(v=>Number.isInteger(v)&&v>=0))return null;
+ return {score:sc,parity:(sc[0]+sc[1])%2?'單':'雙'};
+}
+function bundesParityCell(direction,rank,type,actualParity){
  const r=rank>=1&&rank<=3;
+ const known=actualParity==='單'||actualParity==='雙',correct=known&&direction===actualParity;
  return '<div class="resultcell"><strong>'+esc(direction||'MISSING')+'</strong>'
   +(r?'<span class="ranktag">R'+rank+'</span>':'')
+  +'<span class="outcome '+(known?(correct?'good':'bad'):'muted')+'">'+(known?(correct?'✓ 命中':'× 未中'):'待結算')+'</span>'
   +'<span class="outcome muted">'+esc(type==='official'?'Official · 正式R位PASS':type==='phase2'?'Phase2 · Shadow':'Phase12 · 玄學預覽')+'</span>'
   +(type==='phase12'?'<span class="outcome muted">Research / 未完成正式賽前封存</span>':'')
   +'</div>';
 }
-function bundesV3Cell(x){
- const a=x.p17_direction_proxy,b=x.p18_direction_proxy,agree=a===b,keep=agree&&a==='雙';
+function bundesV3Cell(x,actualParity){
+ const a=x.p17_direction_proxy,b=x.p18_direction_proxy,agree=x.p17_p18_same_proxy===true&&a===b;
+ const keep=x.p17_p18_keep_proxy===true;
+ const known=actualParity==='單'||actualParity==='雙',correct=known&&agree&&a===actualParity;
  return '<div class="resultcell"><strong>P17 '+esc(a)+' / P18 '+esc(b)+'</strong>'
-   +'<span class="outcome">'+(agree?'兩者一致':'兩者不一致')+' · '+(keep?'<span class="good">KEEP 候選</span>':'<span class="muted">PASS</span>')+'</span>'
+   +'<span class="outcome">'+(agree?'兩者同向':'兩者分歧')+' · '+(keep?'<span class="good">三方 KEEP</span>':'<span class="muted">'+(agree?'研究同向':'PASS')+'</span>')+'</span>'
+   +'<span class="outcome '+(agree&&known?(correct?'good':'bad'):'muted')+'">'+(!agree?'方向分歧 · V3不計':!known?'待結算':correct?'✓ 同向命中':'× 同向未中')+'</span>'
    +'<span class="outcome muted">研究代理 · 7項原始特徵缺失 · 非 Exact</span></div>';
+}
+function bundesFourTrackStats(c,p){
+ const scored=(p.fixtures||[]).map(f=>({f,x:c.fixtures.find(x=>x.home===f.home&&x.away===f.away),actual:bundesActual({id:c.record_id},f)})).filter(v=>v.x&&v.actual);
+ const full={n:scored.length,h:scored.filter(v=>v.f.parity===v.actual.parity).length};
+ const agree=scored.filter(v=>v.x.p17_p18_same_proxy===true&&v.x.p17_direction_proxy===v.x.p18_direction_proxy);
+ const gate={n:agree.length,h:agree.filter(v=>v.x.p17_direction_proxy===v.actual.parity).length};
+ const keep=scored.filter(v=>v.x.p17_p18_keep_proxy===true);
+ const keepHit=keep.filter(v=>v.f.parity===v.actual.parity).length;
+ const p17Hit=scored.filter(v=>v.x.p17_direction_proxy===v.actual.parity).length;
+ const p18Hit=scored.filter(v=>v.x.p18_direction_proxy===v.actual.parity).length;
+ const rs=(k)=>{const v=scored.filter(z=>z.x[k]<=3);return v.filter(z=>z.f.parity===z.actual.parity).length+'/'+v.length;};
+ const fmt=v=>v.n?(v.h+'/'+v.n+' = '+(100*v.h/v.n).toFixed(2)+'%'):'待結算';
+ return '<h3>第10輪｜四種單雙預測個別命中率</h3>'
+  +table(['版本','有效預測','命中場數／勝率','精選R位狀態'],[
+   ['<strong>Official V2-RG1</strong>', '全輪單雙（正式）',fmt(full),'正式R1／R2／R3：PASS（不計）'],
+   ['<strong>Phase2 Shadow</strong>','方向同Official，研究排序',fmt(full),'研究前3名：'+rs('phase2_rank')],
+   ['<strong>Phase12 玄學預覽</strong>','方向同Official，研究排序',fmt(full),'研究前3名：'+rs('phase12_rank')],
+   ['<strong>V3 · P17＋P18 同向</strong>','兩者同向才納入；分歧PASS',fmt(gate),'三方同向KEEP：'+keepHit+'/'+keep.length]
+  ])
+  +'<p class="muted">以已核實的逐場比分計算；V3兩套研究代理方向不同的場次不列入分母。P17單獨'+p17Hit+'/'+full.n+'、P18單獨'+p18Hit+'/'+full.n+'，僅供研究對照。Phase12未完成正式賽前封存；V3缺7項原始特徵，均非Exact。研究命中率與Official嚴格前推累計分開，未結算不當作0%。</p>';
 }
 function bundesDualOverview(){
  const c=window.BUNDESLIGA_PARITY_DUAL;
@@ -570,6 +603,7 @@ function bundesDualOverview(){
  const v3=c.fixtures.filter(x=>x.p17_p18_keep_proxy);
  return '<div class="panel"><h2>德甲 GW10 單雙｜三版本研究比較</h2>'
   +'<p><strong>正式 V2-RG1：</strong>9場全雙，正式 R1／R2／R3 為 PASS。以下兩版都是研究順位，不計 Official 命中率。</p>'
+  +bundesFourTrackStats(c,p)
   +table(['排名','Phase2 Shadow（已封存）','Phase12 三術共振（研究預覽）'],rows)
   +'<p><strong>V3 · Phase2 × P17 × P18：</strong>'+v3.length+' / 9場三方同向 KEEP 候選（'+v3.map(x=>esc(x.home+' vs '+x.away)).join('、')+'）；其餘PASS。P17與P18兩者本身同向7/9場，但其中4場共同判單，與主模型判雙不一致。</p>'
   +'<p class="muted">2024–26 R1+R2 歷史回放：Phase2 '+esc(c.history.phase2)+'；Phase12 '+esc(c.history.phase12)+'；V3探索期同向R位35/45（77.78%，覆蓋45/136，並非每輪固定兩場）。V3第10輪為缺少7項原始特徵的研究代理，非Exact，不能將補值穩定度視為命中率。Phase12未完成正式賽前封存；三版不計入Official。</p>'
@@ -624,7 +658,9 @@ function packagePage(id){
   const common=[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25')];
   if(dual){const c=eplParityComparisonCells(r,f);return [...common,c.a,c.b,esc(c.actual),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   if(italian){const x=italian.fixtures.find(x=>x.home===f.home&&x.away===f.away);const actual=Array.isArray(x.score)?'<strong>'+esc(x.score.join('–'))+'</strong><span class="outcome">單雙 '+esc(x.actual_parity)+'</span>':'待結算';return [...common,serieaTripleCell(x.a_direction,x.a_rank,'A'),serieaTripleCell(x.b_direction,x.b_rank,'B'),serieaTripleCell(x.c_direction,x.c_rank,'C'),actual,marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
-  if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away);return [...common,bundesParityCell(f.parity,null,'official'),bundesParityCell(f.parity,x.phase2_rank,'phase2'),bundesParityCell(f.parity,x.phase12_rank,'phase12'),bundesV3Cell(x),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
+  if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away),z=bundesActual(r,f),a=z?.parity||null;
+   const actualCell=z?'<div class="resultcell"><strong>'+esc(z.score.join('–'))+'</strong><span class="outcome">實際單雙：<strong>'+esc(a)+'</strong></span></div>':'<span class="muted">待結算／比分缺失</span>';
+   return [...common,bundesParityCell(f.parity,null,'official',a),bundesParityCell(f.parity,x.phase2_rank,'phase2',a),bundesParityCell(f.parity,x.phase12_rank,'phase12',a),bundesV3Cell(x,a),actualCell,marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   return [...common,esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];
  });
  return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)
@@ -635,7 +671,7 @@ function packagePage(id){
  +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
  +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
  +marketHighOddsPanel(r,fs)
- +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','實際比分／單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變；Phase2 Shadow、Phase12研究預覽、V3 P17/P18研究代理分開顯示。V3共有7場P17/P18同向，僅3場再與主模型同向（KEEP候選），其餘PASS；缺7項原始特徵，非Exact，並非正式封存高信心選場。三種研究均不計Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
+ +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','實際比分／單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','實際比分／單雙','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變。每場實際比分／單雙及各欄✓／×按既有正式賽果表核對。Phase2、Phase12只是單雙排序不同，方向仍與Official一致；V3按P17／P18兩者同向且已完賽的場次計算（分歧PASS），三方KEEP另列。Phase12未完成正式賽前封存，V3缺7項原始特徵而非Exact，研究績效絕不混入Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
  +packageSettlementPanel(p)
  +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
 }
