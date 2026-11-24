@@ -1,14 +1,6 @@
 name: Capture five-league T-60 odds and audit
 on:
-  push:
-    paths:
-      - 'tools/prekick_t60_runner.js'
-      - 'tools/prekick_t60_runner.test.js'
-      - '.github/workflows/capture-five-league-t60.yml'
-  schedule:
-    # GitHub Actions cron is best-effort; actual observed lead time is recorded per fixture.
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Manual-only; automatic T-60 monitoring paused at user request
 
 permissions:
   contents: write
