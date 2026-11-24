@@ -1,0 +1,66 @@
+{
+  "schema": "POSTMATCH_REVIEW_FINAL_V1",
+  "status": "REVIEW_COMPLETE",
+  "round": "LALIGA-2026-27-GW13",
+  "created_date_taipei": "2026-11-24",
+  "linked_addendum": "data/pending-sync/LALIGA_GW13_20261124_SETTLEMENT_FINAL.json",
+  "sample_size": {
+    "completed": 10,
+    "pending": 0
+  },
+  "findings": [
+    {
+      "topic": "PARITY_ACCURACY",
+      "evidence": "Frozen A 5/10=50.0%, Frozen B 7/10=70.0%; last match Levante-Elche 1-1 EVEN correct for both.",
+      "decision": "WATCH",
+      "reason": "Single round research results insufficient to promote B."
+    },
+    {
+      "topic": "RANK_QUALITY",
+      "evidence": "A parity ranks R1,R2,R3 all 1/1 (3/3); B R1,R2 correct, R3 Alaves odd wrong (2/3).",
+      "decision": "KEEP_A_TEST_B",
+      "reason": "Keep exact frozen pre-match rankings; do not reorder from scores."
+    },
+    {
+      "topic": "OTHER_MARKETS_A",
+      "evidence": "A 1X2 5/10; A over/under 2.5 5/10; A 1X2 ranked 2/3, O/U ranks 3/3.",
+      "decision": "WATCH"
+    },
+    {
+      "topic": "DISAGREEMENTS",
+      "evidence": "A and B differed in Athletic-Espanyol and Rayo-Valencia; B chose ODD in both, correctly.",
+      "decision": "TEST",
+      "reason": "Test whether consistent improvement across future independent rounds."
+    },
+    {
+      "topic": "SHARED_ERRORS",
+      "evidence": "Alaves-Deportivo ended EVEN, Osasuna-Malaga ODD, Getafe-Atletico ODD; A and B both wrong on all three parity outcomes.",
+      "decision": "TEST",
+      "reason": "Candidate gating characteristics require chronological holdout confirmation."
+    },
+    {
+      "topic": "PARITY_SKEW",
+      "evidence": "Actual round: 7 ODD / 3 EVEN. A forecast 4 ODD / 6 EVEN; B forecast 6 ODD / 4 EVEN.",
+      "decision": "WATCH",
+      "reason": "Never force single/double proportions or modify past picks."
+    },
+    {
+      "topic": "ODDS_MISSING",
+      "evidence": "OPENPROXY available but consistent Bet365 true opening and T-60 to T-30 PRE-KICK paired odds unavailable.",
+      "decision": "WATCH",
+      "reason": "No defensible OPEN-to-PREKICK odds movement analysis."
+    },
+    {
+      "topic": "MODEL_IDENTITY",
+      "evidence": "A qualitative V2 continuity Research; B fixed EXTENDED Research; both NOT Official Exact.",
+      "decision": "KEEP_SEPARATE"
+    }
+  ],
+  "promotion": "NO_PROMOTION",
+  "next_actions": [
+    "Keep A and B fixed and forward-test future rounds",
+    "Include complete GW13 settlement and review in next user-directed consolidated Dashboard update",
+    "Never modify earlier prematch record or partial snapshots"
+  ],
+  "supersedes_partial_review": "data/pending-sync/LALIGA_GW13_20261123_REVIEW_PARTIAL.json"
+}
