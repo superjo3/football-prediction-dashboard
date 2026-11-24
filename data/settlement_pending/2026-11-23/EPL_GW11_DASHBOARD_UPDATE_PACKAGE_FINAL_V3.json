@@ -1,0 +1,95 @@
+{
+  "schema": "EPL_GW11_DASHBOARD_UPDATE_PACKAGE_FINAL_V3",
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "source": {
+    "result_addendum": "data/settlement_pending/2026-11-23/EPL_GW11_20261124_FINAL_RESULT_ADDENDUM_REVIEW_V3.json",
+    "blob_sha": "a208283b7b6fb7d7fe886f74d608b998e5e0b1c3",
+    "original_prematch": "data/packages/EPL_GW11_OFFICIAL_20261109.json"
+  },
+  "status": {
+    "settlement": "FINAL",
+    "review": "FINAL_COMPLETE",
+    "sync": "DASHBOARD_SYNC_PENDING_USER_APPROVAL",
+    "website_updated": false,
+    "pre_kick_odds": "MISSING",
+    "historical_cumulative": "NOT_RECALCULATED"
+  },
+  "summary": {
+    "total_matches": 10,
+    "official": {
+      "1X2": {
+        "all": {
+          "correct": 5,
+          "settled": 10,
+          "pending": 0,
+          "rate_pct": 50
+        },
+        "ranks": {
+          "correct": 1,
+          "settled": 3,
+          "pending": 0,
+          "rate_pct": 33.33
+        }
+      },
+      "OU25": {
+        "all": {
+          "correct": 4,
+          "settled": 10,
+          "pending": 0,
+          "rate_pct": 40
+        },
+        "ranks": {
+          "correct": 2,
+          "settled": 3,
+          "pending": 0,
+          "rate_pct": 66.67
+        }
+      },
+      "parity": {
+        "all": {
+          "correct": 6,
+          "settled": 10,
+          "pending": 0,
+          "rate_pct": 60
+        },
+        "ranks": {
+          "correct": 2,
+          "settled": 3,
+          "pending": 0,
+          "rate_pct": 66.67
+        }
+      }
+    },
+    "shadow": {
+      "parity": {
+        "correct": 6,
+        "settled": 10,
+        "pending": 0,
+        "rate_pct": 60
+      },
+      "ranked": {
+        "correct": 2,
+        "settled": 3,
+        "pending": 0,
+        "rate_pct": 66.67
+      }
+    },
+    "user_parity": {
+      "correct": 3,
+      "settled": 3,
+      "pending": 0,
+      "rate_pct": 100
+    }
+  },
+  "policy": [
+    "Do not modify prematch frozen predictions or R positions",
+    "Do not mix Shadow or user picks with Official",
+    "OPEN only; no verified T-60 snapshots",
+    "Never merge automatically to main: user requested deferred centralized website update",
+    "Original incomplete reviews retained, this V3 is final superseding addendum"
+  ]
+}
