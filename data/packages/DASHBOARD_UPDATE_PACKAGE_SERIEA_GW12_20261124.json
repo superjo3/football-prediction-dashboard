@@ -1,0 +1,841 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "record_id": "SERIEA-2026-27-GW12-20261124-SETTLEMENT",
+  "parent_record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+  "league": "Serie A",
+  "season": "2026-27",
+  "matchday": 12,
+  "status": "SETTLEMENT_REVIEW_COMPLETE_RESEARCH_ONLY",
+  "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
+  "website_updated": false,
+  "github_updated": false,
+  "settlement": {
+    "record_id": "SERIEA-2026-27-GW12-20261124-SETTLEMENT",
+    "parent_record_id": "SERIEA-2026-27-GW12-20261109-EARLY-MARKETPROXY-RESEARCH",
+    "league": "Serie A",
+    "season": "2026-27",
+    "matchday": 12,
+    "status": "SETTLEMENT_COMPLETE",
+    "completed_matches": 10,
+    "expected_matches": 10,
+    "results": [
+      {
+        "fixture": "Como vs Cagliari",
+        "score": [
+          2,
+          0
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "UNDER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": 2,
+          "rank_OU25": 3,
+          "rank_parity": 3
+        },
+        "B": {
+          "parity": "EVEN",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": 1
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": false,
+            "parity": true
+          },
+          "B": {
+            "parity": true
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Lazio vs Lecce",
+        "score": [
+          3,
+          0
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "ODD"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "EVEN",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": 2
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": true,
+            "parity": false
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": true
+          }
+        }
+      },
+      {
+        "fixture": "Parma vs Roma",
+        "score": [
+          1,
+          5
+        ],
+        "actual": {
+          "1X2": "AWAY",
+          "OU25": "OVER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "AWAY",
+          "OU25": "OVER",
+          "parity": "ODD",
+          "rank_1X2": 1,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": 2
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": 3
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": true,
+            "parity": false
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Napoli vs Torino",
+        "score": [
+          1,
+          0
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "UNDER",
+          "parity": "ODD"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": null,
+          "rank_parity": 2
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": false,
+            "parity": false
+          },
+          "B": {
+            "parity": true
+          },
+          "C": {
+            "parity": true
+          }
+        }
+      },
+      {
+        "fixture": "Juventus vs Venezia",
+        "score": [
+          4,
+          0
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": 3,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": true,
+            "parity": true
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Bologna vs Udinese",
+        "score": [
+          1,
+          1
+        ],
+        "actual": {
+          "1X2": "DRAW",
+          "OU25": "UNDER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "UNDER",
+          "parity": "ODD",
+          "rank_1X2": null,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": false,
+            "OU25": true,
+            "parity": false
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Sassuolo vs Genoa",
+        "score": [
+          0,
+          2
+        ],
+        "actual": {
+          "1X2": "AWAY",
+          "OU25": "UNDER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "DRAW",
+          "OU25": "UNDER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": false,
+            "OU25": true,
+            "parity": true
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Milan vs Frosinone",
+        "score": [
+          5,
+          1
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": 1,
+          "rank_parity": 1
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": true,
+            "OU25": true,
+            "parity": true
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Atalanta vs Inter",
+        "score": [
+          4,
+          4
+        ],
+        "actual": {
+          "1X2": "DRAW",
+          "OU25": "OVER",
+          "parity": "EVEN"
+        },
+        "A": {
+          "1X2": "AWAY",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": 2,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": 1
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": false,
+            "OU25": true,
+            "parity": true
+          },
+          "B": {
+            "parity": false
+          },
+          "C": {
+            "parity": false
+          }
+        }
+      },
+      {
+        "fixture": "Monza vs Fiorentina",
+        "score": [
+          3,
+          0
+        ],
+        "actual": {
+          "1X2": "HOME",
+          "OU25": "OVER",
+          "parity": "ODD"
+        },
+        "A": {
+          "1X2": "AWAY",
+          "OU25": "OVER",
+          "parity": "EVEN",
+          "rank_1X2": null,
+          "rank_OU25": null,
+          "rank_parity": null
+        },
+        "B": {
+          "parity": "ODD",
+          "rank_parity": 3
+        },
+        "C": {
+          "parity": "ODD",
+          "rank_parity": null
+        },
+        "settled": {
+          "A": {
+            "1X2": false,
+            "OU25": true,
+            "parity": false
+          },
+          "B": {
+            "parity": true
+          },
+          "C": {
+            "parity": true
+          }
+        }
+      }
+    ],
+    "summary": {
+      "A": {
+        "1X2": {
+          "hits": 6,
+          "n": 10,
+          "pct": 60.0
+        },
+        "1X2_R": {
+          "R1": {
+            "fixture": "Parma vs Roma",
+            "pick": "AWAY",
+            "hits": 1,
+            "n": 1
+          },
+          "R2": {
+            "fixture": "Como vs Cagliari",
+            "pick": "HOME",
+            "hits": 1,
+            "n": 1
+          },
+          "R3": {
+            "fixture": "Juventus vs Venezia",
+            "pick": "HOME",
+            "hits": 1,
+            "n": 1
+          }
+        },
+        "OU25": {
+          "hits": 8,
+          "n": 10,
+          "pct": 80.0
+        },
+        "OU25_R": {
+          "R1": {
+            "fixture": "Milan vs Frosinone",
+            "pick": "OVER",
+            "hits": 1,
+            "n": 1
+          },
+          "R2": {
+            "fixture": "Atalanta vs Inter",
+            "pick": "OVER",
+            "hits": 1,
+            "n": 1
+          },
+          "R3": {
+            "fixture": "Como vs Cagliari",
+            "pick": "OVER",
+            "hits": 0,
+            "n": 1
+          }
+        },
+        "parity": {
+          "hits": 5,
+          "n": 10,
+          "pct": 50.0
+        },
+        "parity_R": {
+          "R1": {
+            "fixture": "Milan vs Frosinone",
+            "pick": "EVEN",
+            "hits": 1,
+            "n": 1
+          },
+          "R2": {
+            "fixture": "Napoli vs Torino",
+            "pick": "EVEN",
+            "hits": 0,
+            "n": 1
+          },
+          "R3": {
+            "fixture": "Como vs Cagliari",
+            "pick": "EVEN",
+            "hits": 1,
+            "n": 1
+          }
+        }
+      },
+      "B": {
+        "parity": {
+          "hits": 3,
+          "n": 10,
+          "pct": 30.0
+        },
+        "parity_R": {
+          "R1": {
+            "fixture": "Atalanta vs Inter",
+            "pick": "ODD",
+            "hits": 0,
+            "n": 1
+          },
+          "R2": {
+            "fixture": "Parma vs Roma",
+            "pick": "ODD",
+            "hits": 0,
+            "n": 1
+          },
+          "R3": {
+            "fixture": "Monza vs Fiorentina",
+            "pick": "ODD",
+            "hits": 1,
+            "n": 1
+          }
+        }
+      },
+      "C": {
+        "parity": {
+          "hits": 3,
+          "n": 10,
+          "pct": 30.0
+        },
+        "parity_R": {
+          "R1": {
+            "fixture": "Como vs Cagliari",
+            "pick": "ODD",
+            "hits": 0,
+            "n": 1
+          },
+          "R2": {
+            "fixture": "Lazio vs Lecce",
+            "pick": "ODD",
+            "hits": 1,
+            "n": 1
+          },
+          "R3": {
+            "fixture": "Parma vs Roma",
+            "pick": "ODD",
+            "hits": 0,
+            "n": 1
+          }
+        }
+      }
+    },
+    "review": {
+      "actual_parity_distribution": {
+        "EVEN": 7,
+        "ODD": 3
+      },
+      "predicted_parity_distribution": {
+        "A": {
+          "EVEN": 8,
+          "ODD": 2
+        },
+        "B": {
+          "EVEN": 2,
+          "ODD": 8
+        },
+        "C": {
+          "ODD": 10
+        }
+      },
+      "A_vs_alternatives": {
+        "A_vs_B": {
+          "disagreements": 6,
+          "rescued": 2,
+          "damaged": 4,
+          "fixtures": [
+            {
+              "fixture": "Napoli vs Torino",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "ODD",
+              "effect": "rescued"
+            },
+            {
+              "fixture": "Juventus vs Venezia",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Sassuolo vs Genoa",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Milan vs Frosinone",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Atalanta vs Inter",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Monza vs Fiorentina",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "ODD",
+              "effect": "rescued"
+            }
+          ]
+        },
+        "A_vs_C": {
+          "disagreements": 8,
+          "rescued": 3,
+          "damaged": 5,
+          "fixtures": [
+            {
+              "fixture": "Como vs Cagliari",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Lazio vs Lecce",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "ODD",
+              "effect": "rescued"
+            },
+            {
+              "fixture": "Napoli vs Torino",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "ODD",
+              "effect": "rescued"
+            },
+            {
+              "fixture": "Juventus vs Venezia",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Sassuolo vs Genoa",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Milan vs Frosinone",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Atalanta vs Inter",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "EVEN",
+              "effect": "damaged"
+            },
+            {
+              "fixture": "Monza vs Fiorentina",
+              "A": "EVEN",
+              "alternative": "ODD",
+              "actual": "ODD",
+              "effect": "rescued"
+            }
+          ]
+        }
+      },
+      "1X2_errors": [
+        {
+          "fixture": "Bologna vs Udinese",
+          "score": [
+            1,
+            1
+          ],
+          "pick": "HOME",
+          "actual": "DRAW"
+        },
+        {
+          "fixture": "Sassuolo vs Genoa",
+          "score": [
+            0,
+            2
+          ],
+          "pick": "DRAW",
+          "actual": "AWAY"
+        },
+        {
+          "fixture": "Atalanta vs Inter",
+          "score": [
+            4,
+            4
+          ],
+          "pick": "AWAY",
+          "actual": "DRAW"
+        },
+        {
+          "fixture": "Monza vs Fiorentina",
+          "score": [
+            3,
+            0
+          ],
+          "pick": "AWAY",
+          "actual": "HOME"
+        }
+      ],
+      "OU25_errors": [
+        {
+          "fixture": "Como vs Cagliari",
+          "score": [
+            2,
+            0
+          ],
+          "pick": "OVER",
+          "actual": "UNDER"
+        },
+        {
+          "fixture": "Napoli vs Torino",
+          "score": [
+            1,
+            0
+          ],
+          "pick": "OVER",
+          "actual": "UNDER"
+        }
+      ],
+      "draw_analysis": {
+        "draws": [
+          "Bologna vs Udinese",
+          "Atalanta vs Inter"
+        ],
+        "predicted_draws": [
+          "Sassuolo vs Genoa"
+        ],
+        "zero_zero": [],
+        "one_one": [
+          "Bologna vs Udinese"
+        ],
+        "unexpected_home_win": "Monza vs Fiorentina 3-0, A predicted AWAY; significant underdog result"
+      },
+      "market_proxy_gt_1_80": {
+        "1X2": {
+          "hits": 0,
+          "n": 2,
+          "fixtures": [
+            {
+              "fixture": "Sassuolo vs Genoa",
+              "odds": 3.38,
+              "hit": false
+            },
+            {
+              "fixture": "Monza vs Fiorentina",
+              "odds": 2.03,
+              "hit": false
+            }
+          ]
+        },
+        "OU25": {
+          "hits": 2,
+          "n": 2,
+          "fixtures": [
+            {
+              "fixture": "Bologna vs Udinese",
+              "odds": 1.89,
+              "hit": true
+            },
+            {
+              "fixture": "Sassuolo vs Genoa",
+              "odds": 1.88,
+              "hit": true
+            }
+          ]
+        }
+      },
+      "diagnosis": [
+        "Actual 7 EVEN / 3 ODD; B predicted 8 ODD / 2 EVEN, C predicted 10 ODD, creating severe direction skew.",
+        "A predicted 8 EVEN / 2 ODD and has better parity accuracy, but R2 Napoli EVEN was wrong. Do not treat one round as promotion evidence.",
+        "B/C R1/R2/R3 all must remain research/shadow; rank performance failed the target.",
+        "A 1X2 errors cluster around Bologna draw, Sassuolo away upset, Atalanta late draw, and Monza underdog home win.",
+        "A O/U misses Como 2-0 and Napoli 1-0, both low totals despite OVER proxy.",
+        "PRE-KICK is MISSING, so OPEN-to-PREKICK movement, AH confirmations, and bet365 first tick cannot be evaluated.",
+        "Historical proxy prices do not prove bet365 execution prices; >1.80 results are descriptive only."
+      ],
+      "decisions": {
+        "A": "KEEP as archived research baseline; WATCH parity R2 and draw-risk calibration",
+        "B": "REJECT promotion; TEST skew/selection gates on future held-out rounds without rewriting frozen V1",
+        "C": "REJECT promotion; TEST robust-vote direction gate in strict forward evaluation",
+        "official": "KEEP immutable, no GW12 A/B/C official cumulative update",
+        "pre_kick": "MISSING; no backfill"
+      },
+      "integrity": "No outcome-driven changes to original picks, rankings, model parameters or archive."
+    },
+    "pre_kick": "MISSING",
+    "bet365_first_tick": "MISSING",
+    "official_performance_eligible": false,
+    "website_updated": false,
+    "github_updated": false,
+    "source_urls": [
+      "https://www.legaseriea.it/serie-a/news/monza-fiorentina-2026-2027-3-0-cronaca-risultato-gol",
+      "https://www.legaseriea.it/serie-a/news",
+      "https://www.legaseriea.it/serie-a/news/bologna-udinese-2026-2027-1-1-cronaca-risultato-gol",
+      "https://www.legaseriea.it/serie-a/news/sassuolo-genoa-2026-2027-0-2-cronaca-risultato-gol"
+    ]
+  },
+  "model_track_policy": {
+    "A": "EARLY_MARKETPROXY RESEARCH",
+    "B": "FROZEN_CHALLENGER",
+    "C": "XUAN_ROBUST_VOTE_SHADOW",
+    "official": "NOT_UPDATED"
+  },
+  "pre_kick": "MISSING"
+}
