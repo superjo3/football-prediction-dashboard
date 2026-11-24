@@ -1,0 +1,511 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "schema_version": "GW10_SETTLEMENT_REVIEW_STAGING_V1",
+  "created_at": "2026-11-23",
+  "league": "Bundesliga",
+  "season": "2026-27",
+  "gw": 10,
+  "prematch_record_id": "BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL",
+  "prematch_original_repository_path": "data/packages/DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW10_20261109.json",
+  "prematch_original_git_blob_sha": "504dd96d69433d0ecca8458277ab5d9e2116bac9",
+  "existing_master_immutable": true,
+  "predictions_unchanged": true,
+  "model_unchanged": true,
+  "settlement_id": "BUNDESLIGA-2026-27-GW10-20261123-SETTLEMENT-ADDENDUM",
+  "review_id": "BUNDESLIGA-2026-27-GW10-20261123-POSTMATCH-REVIEW",
+  "status": {
+    "settlement": "COMPLETE",
+    "review": "COMPLETE",
+    "dashboard_sync": "PENDING_USER_BATCH",
+    "github_push": "NOT_DONE_PER_USER_INSTRUCTION",
+    "pre_kick": "NOT_EVALUABLE_NO_VALIDATED_SNAPSHOT",
+    "official_parity_r123": "PASS"
+  },
+  "evidence": {
+    "official_results_url": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2026-2027/matchday/10",
+    "league_results_url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/10",
+    "source_frozen_record": "GitHub prematch package, archived 2026-11-09",
+    "closing_odds": "NOT_BACKFILLED"
+  },
+  "counts": {
+    "completed": 9,
+    "unplayed": 0,
+    "actual_draws": 2,
+    "actual_odd": 3,
+    "actual_even": 6,
+    "actual_over25": 4,
+    "actual_under25": 5
+  },
+  "round_metrics": {
+    "1x2": {
+      "hits": 6,
+      "total": 9,
+      "rate": 0.6666666666666666
+    },
+    "ou25": {
+      "hits": 4,
+      "total": 9,
+      "rate": 0.4444444444444444
+    },
+    "parity": {
+      "hits": 6,
+      "total": 9,
+      "rate": 0.6666666666666666
+    }
+  },
+  "ranked": {
+    "1x2": {
+      "R1": {
+        "fixture": "拜仁 vs 科隆",
+        "hit": false
+      },
+      "R2": {
+        "fixture": "勒沃庫森 vs 柏德博恩",
+        "hit": true
+      },
+      "R3": {
+        "fixture": "門興 vs 多特蒙德",
+        "hit": true
+      }
+    },
+    "ou25": {
+      "R1": {
+        "fixture": "拜仁 vs 科隆",
+        "hit": false
+      },
+      "R2": {
+        "fixture": "勒沃庫森 vs 柏德博恩",
+        "hit": true
+      },
+      "R3": {
+        "fixture": "法蘭克福 vs 霍芬海姆",
+        "hit": false
+      }
+    },
+    "parity": {
+      "R1": null,
+      "R2": null,
+      "R3": null
+    }
+  },
+  "strict_forward_cumulative_native": {
+    "1x2": {
+      "before": {
+        "hits": 40,
+        "total": 72
+      },
+      "after": {
+        "hits": 46,
+        "total": 81,
+        "rate": 0.5679012345679012
+      }
+    },
+    "ou25": {
+      "before": {
+        "hits": 52,
+        "total": 72
+      },
+      "after": {
+        "hits": 56,
+        "total": 81,
+        "rate": 0.691358024691358
+      }
+    },
+    "parity": {
+      "before": {
+        "hits": 32,
+        "total": 72
+      },
+      "after": {
+        "hits": 38,
+        "total": 81,
+        "rate": 0.4691358024691358
+      }
+    }
+  },
+  "strict_forward_ranked_cumulative": {
+    "1x2": {
+      "before_hits": 4,
+      "before_total": 5,
+      "current_hits": 2,
+      "current_total": 3,
+      "after_hits": 6,
+      "after_total": 8
+    },
+    "ou25": {
+      "before_hits": 4,
+      "before_total": 5,
+      "current_hits": 1,
+      "current_total": 3,
+      "after_hits": 5,
+      "after_total": 8
+    },
+    "parity_V2_RG1": {
+      "before_hits": 3,
+      "before_total": 5,
+      "current_hits": 0,
+      "current_total": 0,
+      "after_hits": 3,
+      "after_total": 5
+    }
+  },
+  "cross_version_cumulative_recovered_separate": {
+    "1x2": {
+      "hits": 49,
+      "total": 90,
+      "rate": 0.5444444444444444
+    },
+    "ou25": {
+      "hits": 61,
+      "total": 90,
+      "rate": 0.6777777777777778
+    },
+    "parity": {
+      "hits": 45,
+      "total": 90,
+      "rate": 0.5
+    }
+  },
+  "draws_research": {
+    "scope": "CONVERSATION_ONLY_RESEARCH_NOT_OFFICIAL_MODEL",
+    "prediction_created_date": "2026-11-16",
+    "hits": 1,
+    "total": 3,
+    "exact_hits": 0,
+    "exact_total": 3,
+    "picks": [
+      {
+        "rank": "R1",
+        "home": "奧格斯堡",
+        "away": "美因茨",
+        "predicted_score": "1-1",
+        "actual_score": "3-1",
+        "draw_hit": false,
+        "exact_score_hit": false,
+        "scope": "DRAWS_RESEARCH_RECOMMENDATION_SEPARATE_FROM_OFFICIAL_1X2",
+        "prediction_source": "ChatGPT conversation, 2026-11-16 (before GW10)"
+      },
+      {
+        "rank": "R2",
+        "home": "沙爾克04",
+        "away": "史特加",
+        "predicted_score": "2-2",
+        "actual_score": "0-0",
+        "draw_hit": true,
+        "exact_score_hit": false,
+        "scope": "DRAWS_RESEARCH_RECOMMENDATION_SEPARATE_FROM_OFFICIAL_1X2",
+        "prediction_source": "ChatGPT conversation, 2026-11-16 (before GW10)"
+      },
+      {
+        "rank": "R3",
+        "home": "法蘭克福",
+        "away": "霍芬海姆",
+        "predicted_score": "1-1",
+        "actual_score": "1-0",
+        "draw_hit": false,
+        "exact_score_hit": false,
+        "scope": "DRAWS_RESEARCH_RECOMMENDATION_SEPARATE_FROM_OFFICIAL_1X2",
+        "prediction_source": "ChatGPT conversation, 2026-11-16 (before GW10)"
+      }
+    ]
+  },
+  "research_parity_shadow": {
+    "status": "RESEARCH_PROXY_NOT_EXACT",
+    "p17_hits": 6,
+    "p18_hits": 6,
+    "total": 9,
+    "p17p18_agree_fixtures": 7,
+    "p17p18_agree_hits": 5,
+    "phase2_p17_p18_all_even_consensus_keep": 3,
+    "consensus_keep_hits": 3,
+    "not_formal_rank": true,
+    "source": "data/bundesliga_parity_dual_track.json"
+  },
+  "market_move": {
+    "status": "NOT_EVALUABLE",
+    "reason": "No validated PRE-KICK snapshot with same-source odds in consulted repository data/market_prekick_snapshots.json; do not fabricate changes."
+  },
+  "research_next": [
+    "DRAW_RISK_BAYERN_88PCT_FAV_CHECK",
+    "OU_OVER_ONLY_REGIME_FORWARD_TEST",
+    "PARITY_ALL_EVEN_SKEW_FORWARD_DIAGNOSTIC",
+    "P17_P18_CONSENSUS_EXTERNAL_FORWARD_ONLY"
+  ],
+  "review_decisions": {
+    "KEEP": [
+      "original official records immutable",
+      "parity PASS for R1/R2/R3",
+      "Official/Research/Draw picks separate"
+    ],
+    "WATCH": [
+      "1X2 misses 2 draws + Augsburg home",
+      "OU 9 OVER predictions, 5 unders in actual",
+      "parity default 9 EVEN but 3 actual ODD"
+    ],
+    "TEST": [
+      "draw risk 1X2 ranking",
+      "OU over-selection reliability",
+      "odd direction discrimination and sparse selector"
+    ],
+    "PROMOTE": [],
+    "REJECT": [
+      "postmatch direction reversal",
+      "invent PRE-KICK odds",
+      "using SHADOW consensus hit as Official R ranks"
+    ]
+  },
+  "fixtures": [
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-01",
+      "home": "拜仁",
+      "away": "科隆",
+      "score": "1-1",
+      "home_goals": 1,
+      "away_goals": 1,
+      "actual_1x2": "和局",
+      "actual_ou25": "小2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "主勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": false,
+      "hit_ou25": false,
+      "hit_parity": true,
+      "rank_1x2": "R1",
+      "rank_ou25": "R1",
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "雙",
+      "p18_direction_RESEARCH_PROXY": "雙",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": true
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-02",
+      "home": "勒沃庫森",
+      "away": "柏德博恩",
+      "score": "4-0",
+      "home_goals": 4,
+      "away_goals": 0,
+      "actual_1x2": "主勝",
+      "actual_ou25": "大2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "主勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": true,
+      "hit_parity": true,
+      "rank_1x2": "R2",
+      "rank_ou25": "R2",
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "雙",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": false,
+      "p17_p18_agree_RESEARCH_PROXY": false,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-03",
+      "home": "法蘭克福",
+      "away": "霍芬海姆",
+      "score": "1-0",
+      "home_goals": 1,
+      "away_goals": 0,
+      "actual_1x2": "主勝",
+      "actual_ou25": "小2.5",
+      "actual_parity": "單",
+      "frozen_1x2": "主勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": false,
+      "hit_parity": false,
+      "rank_1x2": null,
+      "rank_ou25": "R3",
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "單",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-04",
+      "home": "柏林聯",
+      "away": "RB萊比錫",
+      "score": "1-5",
+      "home_goals": 1,
+      "away_goals": 5,
+      "actual_1x2": "客勝",
+      "actual_ou25": "大2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "客勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": true,
+      "hit_parity": true,
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "雙",
+      "p18_direction_RESEARCH_PROXY": "雙",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": true
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-05",
+      "home": "門興",
+      "away": "多特蒙德",
+      "score": "0-1",
+      "home_goals": 0,
+      "away_goals": 1,
+      "actual_1x2": "客勝",
+      "actual_ou25": "小2.5",
+      "actual_parity": "單",
+      "frozen_1x2": "客勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": false,
+      "hit_parity": false,
+      "rank_1x2": "R3",
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "雙",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": false,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": false,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-06",
+      "home": "艾禾斯堡",
+      "away": "弗賴堡",
+      "score": "0-1",
+      "home_goals": 0,
+      "away_goals": 1,
+      "actual_1x2": "客勝",
+      "actual_ou25": "小2.5",
+      "actual_parity": "單",
+      "frozen_1x2": "客勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": false,
+      "hit_parity": false,
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "單",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-07",
+      "home": "沙爾克04",
+      "away": "史特加",
+      "score": "0-0",
+      "home_goals": 0,
+      "away_goals": 0,
+      "actual_1x2": "和局",
+      "actual_ou25": "小2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "客勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": false,
+      "hit_ou25": false,
+      "hit_parity": true,
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "單",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": false,
+      "p18_hit_RESEARCH_PROXY": false,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-08",
+      "home": "奧格斯堡",
+      "away": "美因茨",
+      "score": "3-1",
+      "home_goals": 3,
+      "away_goals": 1,
+      "actual_1x2": "主勝",
+      "actual_ou25": "大2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "客勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": false,
+      "hit_ou25": true,
+      "hit_parity": true,
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "單",
+      "p18_direction_RESEARCH_PROXY": "單",
+      "p17_hit_RESEARCH_PROXY": false,
+      "p18_hit_RESEARCH_PROXY": false,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": false
+    },
+    {
+      "match_id": "BUNDESLIGA-2026-27-GW10-09",
+      "home": "雲達不萊梅",
+      "away": "漢堡",
+      "score": "4-0",
+      "home_goals": 4,
+      "away_goals": 0,
+      "actual_1x2": "主勝",
+      "actual_ou25": "大2.5",
+      "actual_parity": "雙",
+      "frozen_1x2": "主勝",
+      "frozen_ou25": "大2.5",
+      "frozen_parity": "雙",
+      "hit_1x2": true,
+      "hit_ou25": true,
+      "hit_parity": true,
+      "rank_1x2": null,
+      "rank_ou25": null,
+      "rank_parity": null,
+      "kickoff_time_status": "FROM_SOURCE_PREMATCH_RECORD",
+      "match_status": "FINAL",
+      "p17_direction_RESEARCH_PROXY": "雙",
+      "p18_direction_RESEARCH_PROXY": "雙",
+      "p17_hit_RESEARCH_PROXY": true,
+      "p18_hit_RESEARCH_PROXY": true,
+      "p17_p18_agree_RESEARCH_PROXY": true,
+      "triple_keep_RESEARCH_PROXY": true
+    }
+  ]
+}
