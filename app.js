@@ -197,16 +197,17 @@ function laligaParityComparisonRows(){
   laligaParitySelection(f.B_pick,f.B_rank,f.B_strict_gate,true),
   '<strong>'+esc((100*f.B_p_odd).toFixed(1))+'%</strong><span class="outcome muted">非校準勝率</span>',
   f.diff?'<span class="outcome ambertext">A／B 方向不同</span>':'<span class="outcome muted">同向</span>',
-  '<span class="outcome muted">待結算</span>'
+  Array.isArray(f.score)?'<strong>'+esc(f.score[0]+'–'+f.score[1])+'</strong><span class="outcome">實際 '+esc(f.actual_parity)+' · A '+(f.A_hit?'✓':'✕')+' / B '+(f.B_hit?'✓':'✕')+'</span>':'<span class="outcome muted">待結算</span>'
  ]);
 }
 function laligaParityOverview(){
  const c=laligaParityDualData();if(!c)return '';
+ const settled=c.GW13.settlement?.status==='COMPLETE';
  return '<div class="panel"><div class="heading"><div><h2>西甲 GW13 單雙｜原版 V2 A / 固定 EXTENDED B 同表</h2>'
   +'<p class="sub">A 4單6雙 · B 6單4雙 · 兩版方向不同 '+c.GW13.disagreements+' 場；各自 R1／R2／R3 不混合</p></div>'
   +'<a class="button primary" href="#laligaparity">開啟兩版完整比較 →</a></div>'
   +table(['台灣時間','比賽','A · 原版V2人工研究','B · 固定EXTENDED','B估計 P(單)','差異','賽果'],laligaParityComparisonRows())
-  +'<p class="muted">A／B 均為研究候選，正式高信心 R 位仍 PASS。B 使用 11/9 已封存多莊家代理盤口，不是 Bet365 原始開盤同源。第13輪尚未結算。</p></div>';
+  +(settled?'<p class="muted"><strong>GW13 已結算：</strong>A 單雙 5/10、B 單雙 7/10；A R1/R2/R3 3/3，B 2/3。兩版均為 Research，不計 Official。</p>':'<p class="muted">A／B 均為研究候選，正式高信心 R 位仍 PASS。B 使用 11/9 已封存多莊家代理盤口，不是 Bet365 原始開盤同源。第13輪尚未結算。</p>')+'</div>';
 }
 function laligaParityDualPage(){
  const c=laligaParityDualData();
@@ -606,6 +607,7 @@ function serieaTripleOverview(){
   +'<p class="muted">A＝目前網站既有 GW12 Research；B＝Fixed Runner V1 Challenger；C＝八字＋梅花＋紫微 Robust Vote Shadow。三版分開保存，不混入歷史 Official 命中率。</p>'
   +table(['排名','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote'],[1,2,3].map(rankLine))
   +'<p class="muted">方向分歧：A/B '+ab+' 場 · A/C '+ac+' 場 · B/C '+bc+' 場。</p>'
+  +(c.settlement?.status==='COMPLETE'?'<p class="muted"><strong>GW12 已結算：</strong>A 5/10 · B 3/10 · C 3/10；R1/R2/R3：A 2/3 · B 1/3 · C 1/3。三版身分維持分離。</p>':'')
   +'<a class="button" href="#round/'+esc(c.record_id)+'">查看10場 A／B／C 同表＋賠率 →</a></div>';
 }
 
@@ -620,7 +622,7 @@ function packagePage(id){
  const fixtureRows=fs.map(f=>{
   const common=[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25')];
   if(dual){const c=eplParityComparisonCells(r,f);return [...common,c.a,c.b,esc(c.actual),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
-  if(italian){const x=italian.fixtures.find(x=>x.home===f.home&&x.away===f.away);return [...common,serieaTripleCell(x.a_direction,x.a_rank,'A'),serieaTripleCell(x.b_direction,x.b_rank,'B'),serieaTripleCell(x.c_direction,x.c_rank,'C'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
+  if(italian){const x=italian.fixtures.find(x=>x.home===f.home&&x.away===f.away);const actual=Array.isArray(x.score)?'<strong>'+esc(x.score.join('–'))+'</strong><span class="outcome">單雙 '+esc(x.actual_parity)+'</span>':'待結算';return [...common,serieaTripleCell(x.a_direction,x.a_rank,'A'),serieaTripleCell(x.b_direction,x.b_rank,'B'),serieaTripleCell(x.c_direction,x.c_rank,'C'),actual,marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away);return [...common,bundesParityCell(f.parity,null,'official'),bundesParityCell(f.parity,x.phase2_rank,'phase2'),bundesParityCell(f.parity,x.phase12_rank,'phase12'),bundesV3Cell(x),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   return [...common,esc(f.parity||'MISSING'),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];
  });
@@ -632,7 +634,7 @@ function packagePage(id){
  +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
  +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
  +marketHighOddsPanel(r,fs)
- +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變；Phase2 Shadow、Phase12研究預覽、V3 P17/P18研究代理分開顯示。V3共有7場P17/P18同向，僅3場再與主模型同向（KEEP候選），其餘PASS；缺7項原始特徵，非Exact，並非正式封存高信心選場。三種研究均不計Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
+ +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','實際比分／單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變；Phase2 Shadow、Phase12研究預覽、V3 P17/P18研究代理分開顯示。V3共有7場P17/P18同向，僅3場再與主模型同向（KEEP候選），其餘PASS；缺7項原始特徵，非Exact，並非正式封存高信心選場。三種研究均不計Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
  +packageSettlementPanel(p)
  +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
 }
