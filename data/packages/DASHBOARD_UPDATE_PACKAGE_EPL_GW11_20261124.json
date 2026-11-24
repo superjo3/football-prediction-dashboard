@@ -1,0 +1,371 @@
+{
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "record_id": "EPL-2026-27-GW11-20261124-SETTLEMENT",
+  "parent_record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 11,
+  "status": "SETTLEMENT_REVIEW_COMPLETE",
+  "dashboard_sync_status": "DASHBOARD_SYNC_PENDING",
+  "website_updated": false,
+  "github_updated": false,
+  "integrity": {
+    "prematch_record_immutable": true,
+    "pre_kick": "MISSING_NOT_BACKFILLED",
+    "official_line_counts_forward": true,
+    "shadow_record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+    "shadow_counts_as_official": false
+  },
+  "settlement": {
+    "status": "COMPLETE",
+    "completed_matches": 10,
+    "expected_matches": 10,
+    "results": [
+      {
+        "fixture": "Manchester City vs Fulham",
+        "score": [
+          1,
+          1
+        ],
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "fixture": "Bournemouth vs Nottingham Forest",
+        "score": [
+          2,
+          0
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": true,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "fixture": "Aston Villa vs Sunderland",
+        "score": [
+          0,
+          0
+        ],
+        "actual": {
+          "1X2": "和",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hit": {
+          "1X2": false,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "fixture": "Chelsea vs Leeds United",
+        "score": [
+          1,
+          4
+        ],
+        "actual": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hit": {
+          "1X2": false,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "fixture": "Coventry City vs Crystal Palace",
+        "score": [
+          3,
+          2
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": true,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "fixture": "Tottenham vs Ipswich Town",
+        "score": [
+          2,
+          0
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hit": {
+          "1X2": true,
+          "OU25": false,
+          "parity": false
+        }
+      },
+      {
+        "fixture": "Newcastle United vs Arsenal",
+        "score": [
+          2,
+          2
+        ],
+        "actual": {
+          "1X2": "和",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "單"
+        },
+        "hit": {
+          "1X2": false,
+          "OU25": true,
+          "parity": false
+        }
+      },
+      {
+        "fixture": "Hull City vs Brighton",
+        "score": [
+          2,
+          0
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "客勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": false,
+          "OU25": false,
+          "parity": true
+        }
+      },
+      {
+        "fixture": "Liverpool vs Manchester United",
+        "score": [
+          4,
+          0
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": true,
+          "OU25": true,
+          "parity": true
+        }
+      },
+      {
+        "fixture": "Brentford vs Everton",
+        "score": [
+          4,
+          0
+        ],
+        "actual": {
+          "1X2": "主勝",
+          "OU25": "大2.5",
+          "parity": "雙"
+        },
+        "prediction": {
+          "1X2": "主勝",
+          "OU25": "小2.5",
+          "parity": "雙"
+        },
+        "hit": {
+          "1X2": true,
+          "OU25": false,
+          "parity": true
+        }
+      }
+    ],
+    "round_metrics": {
+      "1X2": {
+        "hits": 5,
+        "n": 10,
+        "pct": 50.0
+      },
+      "OU25": {
+        "hits": 4,
+        "n": 10,
+        "pct": 40.0
+      },
+      "parity": {
+        "hits": 6,
+        "n": 10,
+        "pct": 60.0
+      }
+    },
+    "ranked": {
+      "1X2": {
+        "R1": {
+          "fixture": "Manchester City vs Fulham",
+          "pick": "主勝",
+          "hit": false
+        },
+        "R2": {
+          "fixture": "Hull City vs Brighton",
+          "pick": "客勝",
+          "hit": false
+        },
+        "R3": {
+          "fixture": "Tottenham vs Ipswich Town",
+          "pick": "主勝",
+          "hit": true
+        }
+      },
+      "OU25": {
+        "R1": {
+          "fixture": "Coventry City vs Crystal Palace",
+          "pick": "大2.5",
+          "hit": true
+        },
+        "R2": {
+          "fixture": "Manchester City vs Fulham",
+          "pick": "大2.5",
+          "hit": false
+        },
+        "R3": {
+          "fixture": "Liverpool vs Manchester United",
+          "pick": "大2.5",
+          "hit": true
+        }
+      },
+      "parity": {
+        "R1": {
+          "fixture": "Brentford vs Everton",
+          "pick": "雙",
+          "hit": true
+        },
+        "R2": {
+          "fixture": "Chelsea vs Leeds United",
+          "pick": "單",
+          "hit": true
+        },
+        "R3": {
+          "fixture": "Tottenham vs Ipswich Town",
+          "pick": "單",
+          "hit": false
+        }
+      }
+    },
+    "shadow": {
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "parity": {
+        "hits": 6,
+        "n": 10,
+        "pct": 60.0
+      },
+      "ranked": {
+        "1X2": {},
+        "OU25": {},
+        "parity": {
+          "R1": {
+            "fixture": "Coventry City vs Crystal Palace",
+            "pick": "雙",
+            "hit": false
+          },
+          "R2": {
+            "fixture": "Tottenham vs Ipswich Town",
+            "pick": "雙",
+            "hit": true
+          },
+          "R3": {
+            "fixture": "Liverpool vs Manchester United",
+            "pick": "雙",
+            "hit": true
+          }
+        }
+      }
+    }
+  },
+  "review": {
+    "status": "COMPLETE",
+    "KEEP": [
+      "prematch record immutability",
+      "Official/Shadow separation",
+      "fixed replayable selectors"
+    ],
+    "WATCH": [
+      "1X2 R1/R2 misses",
+      "OU full-round weakness",
+      "parity direction stability"
+    ],
+    "TEST": [
+      "selector/ranking gates only on future held-out rounds"
+    ],
+    "PROMOTE": [],
+    "REJECT": [
+      "hindsight direction flips",
+      "backfilled PRE-KICK",
+      "mixing Shadow into Official"
+    ]
+  },
+  "source_urls": [
+    "https://fantasy.premierleague.com/en/fixtures",
+    "https://www.premierleague.com/en/news/4764886/brentford-score-four-to-beat-10-man-everton"
+  ]
+}
