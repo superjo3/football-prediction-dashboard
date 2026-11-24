@@ -45,7 +45,7 @@
    if(pkg){
      pkg.settlement=Object.assign({},pkg.settlement||{},summaries[rid]||{});
      pkg.postmatch_review=Object.assign({},pkg.postmatch_review||{},reviews[rid]||{});
-     if(!pkg.pre_kick_status||pkg.pre_kick_status==='PENDING')pkg.pre_kick_status='NOT_FOUND_NOT_SETTLED';
+     if(!pkg.pre_kick_status||pkg.pre_kick_status==='PENDING')pkg.pre_kick_status=summaries[rid]?.pre_kick||'MISSING_NOT_BACKFILLED';
    }
  }
  D.LATEST_BY_LEAGUE=Object.assign({},D.LATEST_BY_LEAGUE||{},{EPL:'EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED',BUNDESLIGA:'BUNDESLIGA-2026-27-GW10-20261109-SKEW-AUDIT-FINAL',LIGUE1:'LIGUE1-2026-27-GW11-20261109-MARKETPROXY'});
