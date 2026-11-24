@@ -1,0 +1,49 @@
+{
+  "schema_version": "FIVE_LEAGUE_FIXTURE_EXTENSION_V1",
+  "append_only": true,
+  "checked_at_utc": "2026-11-24T00:47:23.000Z",
+  "fixtures": [],
+  "changes": [
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-COLOGNE-ELVERSBERG",
+      "previous_kickoff_at_utc": "2026-11-28T13:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "checked_at_utc": "2026-11-24T00:47:23.000Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=11&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
+      "reason": "Official DFL UTC schedule; previous audit retained incorrect one-hour-earlier time"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-HAMBURG-BAYERN-MUNICH",
+      "previous_kickoff_at_utc": "2026-11-28T13:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "checked_at_utc": "2026-11-24T00:47:23.000Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=11&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
+      "reason": "Official DFL UTC schedule; previous audit retained incorrect one-hour-earlier time"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-MAINZ-UNION-BERLIN",
+      "previous_kickoff_at_utc": "2026-11-28T13:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "checked_at_utc": "2026-11-24T00:47:23.000Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=11&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
+      "reason": "Official DFL UTC schedule; previous audit retained incorrect one-hour-earlier time"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-PADERBORN-SCHALKE",
+      "previous_kickoff_at_utc": "2026-11-28T13:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T14:30:00.000Z",
+      "checked_at_utc": "2026-11-24T00:47:23.000Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=11&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
+      "reason": "Official DFL UTC schedule; previous audit retained incorrect one-hour-earlier time"
+    },
+    {
+      "fixture_id": "BUNDESLIGA-2026-27-GW11-2026-11-28-STUTTGART-EINTRACHT-FRANKFURT",
+      "previous_kickoff_at_utc": "2026-11-28T16:30:00.000Z",
+      "kickoff_at_utc": "2026-11-28T17:30:00.000Z",
+      "checked_at_utc": "2026-11-24T00:47:23.000Z",
+      "source": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=11&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
+      "reason": "Official DFL UTC schedule; previous audit retained incorrect one-hour-earlier time"
+    }
+  ],
+  "coverage_complete": false
+}
