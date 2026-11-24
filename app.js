@@ -234,8 +234,8 @@ function laligaParityDualData(){
  const ledger=D.predictions.filter(p=>p.record_id===c.A_id);
  let scored=0;
  for(const f of c.GW13.fixtures){
-  const fx=(f.home+' vs '+f.away).replace(/\\s+/g,'');
-  const pred=ledger.find(p=>String(p.fixture||'').replace(/\\s+/g,'')===fx);
+  const fx=(f.home+' vs '+f.away).replace(/\s+/g,'');
+  const pred=ledger.find(p=>String(p.fixture||'').replace(/\s+/g,'')===fx);
   const sc=pred&&result(pred)?.score;
   if(!Array.isArray(sc)||sc.length!==2)continue;
   scored++;
