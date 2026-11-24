@@ -9,7 +9,8 @@ const roundById=new Map(D.rounds.map(r=>[r.id,r]));
 const resultByKey=new Map(D.results.map(r=>[r.record_id+'|'+r.match_id,r]));
 function result(p){return resultByKey.get(p.record_id+'|'+p.match_id)}
 function actual(p,m){const r=result(p);if(!r?.score)return null;const [h,a]=r.score;return m==='1x2'?(h>a?'主勝':h<a?'客勝':'和'):m==='ou25'?(h+a>2?'大':'小'):((h+a)%2?'單':'雙')}
-function hit(p,m){return p.directions[m]&&actual(p,m)!==null?p.directions[m]===actual(p,m):null}
+function normDirection(v,m){const s=String(v??'').trim();if(!s)return null;if(m==='ou25')return /大|over/i.test(s)?'大':/小|under/i.test(s)?'小':s;if(m==='parity')return /單|odd/i.test(s)?'單':/雙|even/i.test(s)?'雙':s;if(m==='1x2')return /主勝|home/i.test(s)?'主勝':/客勝|away/i.test(s)?'客勝':/和|draw/i.test(s)?'和':s;return s}
+function hit(p,m){const a=actual(p,m),v=normDirection(p.directions[m],m);return v&&a!==null?v===normDirection(a,m):null}
 function effective(rid,version='base'){
  const ps=D.predictions.filter(p=>p.record_id===rid).map(p=>({...p,ranks:{...p.ranks},directions:{...p.directions}}));
  for(const u of D.updates.filter(u=>u.record_id===rid))for(const x of u.rank_additions||[]){const p=ps.find(p=>p.match_id===x.match_id);if(p)p.ranks[x.market]=x.rank;}
