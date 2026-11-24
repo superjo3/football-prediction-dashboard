@@ -1,0 +1,662 @@
+{
+  "schema": "EPL_GW11_FINAL_RESULT_ADDENDUM_REVIEW_V3",
+  "revision_type": "APPEND_ONLY_FINAL_COMPLETION",
+  "as_of_taipei": "2026-11-24",
+  "season": "2026-27",
+  "league": "EPL",
+  "GW": 11,
+  "parent_record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+  "original_prematch_package": "data/packages/EPL_GW11_OFFICIAL_20261109.json",
+  "original_prematch_blob_sha": "f673e47200a8f0cad3b9dad8535fc57996189ed2",
+  "prior_settlement_file": "data/settlement_pending/2026-11-23/EPL_GW11_SETTLEMENT_REVIEW.json",
+  "prior_settlement_blob_sha": "2a0b3b848590af1fc7a263bf2acb3857da378d2f",
+  "result_sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4766023/what-we-learned-from-saturdays-matches",
+      "date": "2026-11-21",
+      "matches": "Saturday seven"
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4768488/five-key-lessons-from-sundays-matches",
+      "date": "2026-11-22",
+      "matches": "Sunday two"
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "date": "2026-11-23",
+      "matches": "Brentford-Everton forthcoming"
+    },
+    {
+      "url": "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released",
+      "date": "2026-11-22",
+      "matches": "Matchweek 11 all score cross-check"
+    },
+    {
+      "url": "https://www.tntsports.co.uk/football/premier-league/2026-2027/brentford-everton_mtc21883139/live.shtml",
+      "date": "2026-11-23",
+      "matches": "Brentford 4-0 Everton final"
+    },
+    {
+      "url": "https://www.reuters.com/sports/soccer/everton-manager-moyes-special-night-ruined-by-heavy-defeat-brentford-2026-11-23/",
+      "date": "2026-11-23",
+      "matches": "Independent match result final verification"
+    }
+  ],
+  "stages": {
+    "settlement": {
+      "status": "FINAL",
+      "matches_completed": 10,
+      "matches_pending": 0,
+      "pending": [],
+      "fixtures": [
+        {
+          "match_id": "EPL-2026-27-GW11-01",
+          "home": "Manchester City",
+          "away": "Fulham",
+          "score": [
+            1,
+            1
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "和",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": false,
+            "OU25": false,
+            "parity": true
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-02",
+          "home": "Bournemouth",
+          "away": "Nottingham Forest",
+          "score": [
+            2,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": true,
+            "OU25": false,
+            "parity": true
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-03",
+          "home": "Aston Villa",
+          "away": "Sunderland",
+          "score": [
+            0,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "和",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hits": {
+            "1X2": false,
+            "OU25": false,
+            "parity": false
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-04",
+          "home": "Chelsea",
+          "away": "Leeds United",
+          "score": [
+            1,
+            4
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hits": {
+            "1X2": false,
+            "OU25": true,
+            "parity": true
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-05",
+          "home": "Coventry City",
+          "away": "Crystal Palace",
+          "score": [
+            3,
+            2
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": true,
+            "OU25": true,
+            "parity": false
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-06",
+          "home": "Tottenham",
+          "away": "Ipswich Town",
+          "score": [
+            2,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hits": {
+            "1X2": true,
+            "OU25": false,
+            "parity": false
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-07",
+          "home": "Newcastle United",
+          "away": "Arsenal",
+          "score": [
+            2,
+            2
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "和",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "單"
+          },
+          "hits": {
+            "1X2": false,
+            "OU25": true,
+            "parity": false
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-08",
+          "home": "Hull City",
+          "away": "Brighton",
+          "score": [
+            2,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "客勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": false,
+            "OU25": false,
+            "parity": true
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-09",
+          "home": "Liverpool",
+          "away": "Manchester United",
+          "score": [
+            4,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": true,
+            "OU25": true,
+            "parity": true
+          }
+        },
+        {
+          "match_id": "EPL-2026-27-GW11-10",
+          "home": "Brentford",
+          "away": "Everton",
+          "score": [
+            4,
+            0
+          ],
+          "status": "FINAL",
+          "actual": {
+            "1X2": "主勝",
+            "OU25": "大2.5",
+            "parity": "雙"
+          },
+          "original_picks": {
+            "1X2": "主勝",
+            "OU25": "小2.5",
+            "parity": "雙"
+          },
+          "hits": {
+            "1X2": true,
+            "OU25": false,
+            "parity": true
+          }
+        }
+      ],
+      "official_ranks_and_markets": {
+        "1X2": {
+          "ranks": [
+            {
+              "rank": "R1",
+              "fixture": "Manchester City vs Fulham",
+              "match_id": "EPL-2026-27-GW11-01",
+              "pick": "主勝",
+              "score": [
+                1,
+                1
+              ],
+              "actual": "和",
+              "status": "FINAL",
+              "hit": false,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R2",
+              "fixture": "Hull City vs Brighton",
+              "match_id": "EPL-2026-27-GW11-08",
+              "pick": "客勝",
+              "score": [
+                2,
+                0
+              ],
+              "actual": "主勝",
+              "status": "FINAL",
+              "hit": false,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R3",
+              "fixture": "Tottenham vs Ipswich Town",
+              "match_id": "EPL-2026-27-GW11-06",
+              "pick": "主勝",
+              "score": [
+                2,
+                0
+              ],
+              "actual": "主勝",
+              "status": "FINAL",
+              "hit": true,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            }
+          ],
+          "rank_summary": {
+            "correct": 1,
+            "settled": 3,
+            "pending": 0,
+            "rate_pct": 33.33
+          },
+          "all_match_summary": {
+            "correct": 5,
+            "settled": 10,
+            "pending": 0,
+            "rate_pct": 50
+          }
+        },
+        "OU25": {
+          "ranks": [
+            {
+              "rank": "R1",
+              "fixture": "Coventry City vs Crystal Palace",
+              "match_id": "EPL-2026-27-GW11-05",
+              "pick": "大2.5",
+              "score": [
+                3,
+                2
+              ],
+              "actual": "大2.5",
+              "status": "FINAL",
+              "hit": true,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R2",
+              "fixture": "Manchester City vs Fulham",
+              "match_id": "EPL-2026-27-GW11-01",
+              "pick": "大2.5",
+              "score": [
+                1,
+                1
+              ],
+              "actual": "小2.5",
+              "status": "FINAL",
+              "hit": false,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R3",
+              "fixture": "Liverpool vs Manchester United",
+              "match_id": "EPL-2026-27-GW11-09",
+              "pick": "大2.5",
+              "score": [
+                4,
+                0
+              ],
+              "actual": "大2.5",
+              "status": "FINAL",
+              "hit": true,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            }
+          ],
+          "rank_summary": {
+            "correct": 2,
+            "settled": 3,
+            "pending": 0,
+            "rate_pct": 66.67
+          },
+          "all_match_summary": {
+            "correct": 4,
+            "settled": 10,
+            "pending": 0,
+            "rate_pct": 40
+          }
+        },
+        "parity": {
+          "ranks": [
+            {
+              "rank": "R1",
+              "fixture": "Brentford vs Everton",
+              "match_id": "EPL-2026-27-GW11-10",
+              "pick": "雙",
+              "score": [
+                4,
+                0
+              ],
+              "actual": "雙",
+              "status": "FINAL",
+              "hit": true,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R2",
+              "fixture": "Chelsea vs Leeds United",
+              "match_id": "EPL-2026-27-GW11-04",
+              "pick": "單",
+              "score": [
+                1,
+                4
+              ],
+              "actual": "單",
+              "status": "FINAL",
+              "hit": true,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            },
+            {
+              "rank": "R3",
+              "fixture": "Tottenham vs Ipswich Town",
+              "match_id": "EPL-2026-27-GW11-06",
+              "pick": "單",
+              "score": [
+                2,
+                0
+              ],
+              "actual": "雙",
+              "status": "FINAL",
+              "hit": false,
+              "prematch_formal_status": "PREMATCH_OFFICIAL"
+            }
+          ],
+          "rank_summary": {
+            "correct": 2,
+            "settled": 3,
+            "pending": 0,
+            "rate_pct": 66.67
+          },
+          "all_match_summary": {
+            "correct": 6,
+            "settled": 10,
+            "pending": 0,
+            "rate_pct": 60
+          }
+        }
+      },
+      "model_lineage": "R90-style recovered MARKETPROXY, not R90 Exact",
+      "pass_flags": {
+        "1X2": false,
+        "OU25": false,
+        "parity": false
+      },
+      "completion_basis": "10 of 10 official scheduled fixtures ended FT; last match Brentford 4-0 Everton, 2026-11-23 20:00 GMT"
+    },
+    "review": {
+      "classifications": {
+        "KEEP": [
+          "Freeze original EPL GW11 directions, R ranks and sealed MarketProxy baseline",
+          "Maintain Official vs Shadow separation"
+        ],
+        "WATCH": [
+          "R1 Man City home 1-1 draw and R2 Hull Brighton 2-0 upset: Official 1X2 R1/R2 0/2",
+          "Home favorite and away favorite draw/upset risk; 3 draws among 9 games",
+          "OU overexposure: 9/9 finished games were predicted OVER, only 4/9 exceeded 2.5",
+          "Parity R3 Tottenham odd pick lost against even score 2-0; R1 Brentford 4-0 Everton matched EVEN",
+          "Finished GW11: 1X2 5/10, OU2.5 4/10, parity 6/10; 1X2 R1/R2 0/2; parity R1/R2 2/2"
+        ],
+        "TEST": [
+          "Draw-risk gate and favorite confidence calibration on future walk-forward rounds",
+          "Under/low-tempo gate for OU2.5, no revision based on single matchweek",
+          "Parity selector rank comparisons against frozen R90 Shadow; maintain same-fixture denominator"
+        ],
+        "PROMOTE": [],
+        "REJECT": [
+          "Postmatch changing directions, ranks or R1/R2/R3 to fit realized scores"
+        ]
+      },
+      "rank_diagnostics": {
+        "one_x_two": "OFFICIAL_R1_R2_0_OF_2",
+        "ou25": "OFFICIAL_R1_R2_1_OF_2",
+        "parity": "OFFICIAL_R1_HIT_R2_HIT_R3_MISS"
+      },
+      "settlement_vs_open": "OFFICIAL_OPENPROXY_ONLY",
+      "odds_review": {
+        "records": 0,
+        "source": "data/market_prekick_snapshots.json",
+        "status": "NO_VERIFIED_T60",
+        "OPEN_to_PREKICK": "NOT_EVALUABLE",
+        "confirm_against": "NOT_EVALUABLE",
+        "AH_line_move": "NOT_EVALUABLE"
+      },
+      "decision": "KEEP_OFFICIAL_WATCH_TEST_NO_PROMOTION",
+      "avoid_false_conclusions": "No causal improvement can be claimed without future sealed out-of-sample results and verified PRE-KICK odds",
+      "final_conclusions": [
+        "Single R1 Brentford-Everton 4-0 verified, prediction EVEN hit, 1X2 HOME hit, OU2.5 UNDER missed",
+        "No promotion: review low total/draw guard and selector on future forward rounds only",
+        "Shadow recovered R90 parity official comparison maintained research-only; R1/R2/R3 2/3",
+        "No pre-kick odds present; market movement not evaluable"
+      ]
+    },
+    "shadow_comparison": {
+      "record_id": "EPL-2026-27-GW11-20261109-R90-RECOVERY-SHADOW",
+      "market": "parity",
+      "research_only": true,
+      "formal_selector_status": "PASS_HIGH_CONFIDENCE",
+      "ranked": [
+        {
+          "rank": "R1",
+          "fixture": "Coventry City vs Crystal Palace",
+          "pick": "雙",
+          "score": [
+            3,
+            2
+          ],
+          "actual": "單",
+          "status": "FINAL",
+          "hit": false
+        },
+        {
+          "rank": "R2",
+          "fixture": "Tottenham vs Ipswich Town",
+          "pick": "雙",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "雙",
+          "status": "FINAL",
+          "hit": true
+        },
+        {
+          "rank": "R3",
+          "fixture": "Liverpool vs Manchester United",
+          "pick": "雙",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "雙",
+          "status": "FINAL",
+          "hit": true
+        }
+      ],
+      "rank_summary": {
+        "correct": 2,
+        "settled": 3,
+        "pending": 0,
+        "rate_pct": 66.67
+      },
+      "all_match_summary": {
+        "correct": 6,
+        "settled": 10,
+        "pending": 0,
+        "rate_pct": 60
+      },
+      "do_not_mix_with_official": true
+    },
+    "user_selections": {
+      "picks": [
+        {
+          "fixture": "Brentford vs Everton",
+          "pick": "雙",
+          "score": [
+            4,
+            0
+          ],
+          "actual": "雙",
+          "status": "FINAL",
+          "hit": true,
+          "source": "USER_CHAT_2026-11-17",
+          "source_time_precision": "DAY_ONLY_NOT_VERIFIED"
+        },
+        {
+          "fixture": "Chelsea vs Leeds United",
+          "pick": "單",
+          "score": [
+            1,
+            4
+          ],
+          "actual": "單",
+          "status": "FINAL",
+          "hit": true,
+          "source": "USER_CHAT_2026-11-17",
+          "source_time_precision": "DAY_ONLY_NOT_VERIFIED"
+        },
+        {
+          "fixture": "Tottenham vs Ipswich Town",
+          "pick": "雙",
+          "score": [
+            2,
+            0
+          ],
+          "actual": "雙",
+          "status": "FINAL",
+          "hit": true,
+          "source": "USER_CHAT_2026-11-17",
+          "source_time_precision": "DAY_ONLY_NOT_VERIFIED"
+        }
+      ],
+      "summary": {
+        "correct": 3,
+        "settled": 3,
+        "pending": 0,
+        "rate_pct": 100
+      },
+      "scoring_scope": "SEPARATE_FROM_MODEL",
+      "user_reported_at": "2026-11-17",
+      "precise_time_unverified": true
+    },
+    "dashboard": {
+      "status": "DASHBOARD_SYNC_DEFERRED_BY_USER",
+      "settlement_incomplete": false,
+      "not_eligible_for_complete_round": false,
+      "official_market_snapshot": "OPENPROXY_NOT_PREKICK",
+      "cumulative_forward": "NOT_RECALCULATED",
+      "main_website_unchanged": true,
+      "permitted_future_action": "When user requests consolidated update, import this final addendum and recompute only from frozen pre-match records, keeping Official/Research/Shadow separate",
+      "forward_cumulative": "NOT_RECALCULATED_NEEDS_HISTORICAL_STRICT_FORWARD_AUDIT"
+    }
+  },
+  "integrity": {
+    "sealed_forecasts_modified": false,
+    "previous_settlement_modified": false,
+    "shadow_not_official": true,
+    "pending_excluded": true,
+    "no_pregame_backfill": true
+  },
+  "supersedes_for_reporting": "data/settlement_pending/2026-11-23/EPL_GW11_20261123_RESULT_ADDENDUM_REVIEW_V2.json",
+  "source_verified_at_taipei": "2026-11-24"
+}
