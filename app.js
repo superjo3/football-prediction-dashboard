@@ -230,6 +230,25 @@ function laligaParityDualData(){
  const c=window.LALIGA_PARITY_DUAL;
  if(!c||!c.GW13||!Array.isArray(c.GW13.fixtures)||c.GW13.fixtures.length!==10)return null;
  if(!packageFor(c.A_id)||!packageFor(c.B_id))return null;
+ // Derive post-match facts from the persisted result ledger. Do not alter frozen predictions.
+ const ledger=D.predictions.filter(p=>p.record_id===c.A_id);
+ let scored=0;
+ for(const f of c.GW13.fixtures){
+  const fx=(f.home+' vs '+f.away).replace(/\\s+/g,'');
+  const pred=ledger.find(p=>String(p.fixture||'').replace(/\\s+/g,'')===fx);
+  const sc=pred&&result(pred)?.score;
+  if(!Array.isArray(sc)||sc.length!==2)continue;
+  scored++;
+  f.score=sc;
+  f.actual_parity=(sc[0]+sc[1])%2?'單':'雙';
+  f.A_hit=f.A_pick===f.actual_parity;
+  f.B_hit=f.B_pick===f.actual_parity;
+ }
+ if(scored===10)c.GW13.settlement={...c.GW13.settlement,status:'COMPLETE',
+  A_parity:c.GW13.fixtures.filter(f=>f.A_hit).length+'/10',
+  B_parity:c.GW13.fixtures.filter(f=>f.B_hit).length+'/10',
+  A_R1R2R3:c.GW13.fixtures.filter(f=>f.A_rank&&f.A_hit).length+'/3',
+  B_R1R2R3:c.GW13.fixtures.filter(f=>f.B_rank&&f.B_hit).length+'/3'};
  return c;
 }
 function laligaParitySelection(pick,rank,gate,isB){
