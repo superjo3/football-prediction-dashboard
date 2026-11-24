@@ -1,0 +1,23 @@
+{
+  "schema_version": "FIVE_LEAGUE_FIXTURE_EXTENSION_V1",
+  "append_only": true,
+  "checked_at_utc": "2026-11-24T04:13:09Z",
+  "coverage_complete": false,
+  "fixtures": [
+    {
+      "fixture_id": "EPL-2026-27-GW13-2026-12-01-COVENTRY-CITY-IPSWICH-TOWN",
+      "league": "EPL",
+      "season": "2026-27",
+      "GW": 13,
+      "home": "Coventry City",
+      "away": "Ipswich Town",
+      "kickoff_at_utc": "2026-12-01T20:00:00Z",
+      "t60_due_at_utc": "2026-12-01T19:00:00Z",
+      "source": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-season-2026-27",
+      "secondary_source": "https://www.theguardian.com/football/fixtures/2026/Nov/30",
+      "last_verified_at": "2026-11-24T04:13:09Z",
+      "fixture_id_type": "DERIVED_NOT_OFFICIAL"
+    }
+  ],
+  "changes": []
+}
