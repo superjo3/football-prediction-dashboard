@@ -1,0 +1,61 @@
+{
+  "schema": "EPL_GW12_FIXED_RUNNER_REPRO_AUDIT_V1",
+  "audit_date_taipei": "2026-11-25",
+  "user_question": "Is GW12 produced with the same fully reproducible method as previously required?",
+  "status": "ENGINE_REPRODUCIBLE_INPUT_PROVENANCE_PARTIAL_ONLY",
+  "record_id": "EPL-2026-27-GW12-20261125-FIXED-V1-PROVISIONAL",
+  "sources": {
+    "input": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_INPUT.json",
+    "forecast": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_FORECAST.json",
+    "hashes": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_SHA256SUMS.json",
+    "source_bundle": "EPL_Fixed_TwoTrack_Executor_V1_20261112.zip",
+    "original_GW11_reference": "data/packages/EPL_GW11_OFFICIAL_20261109.json"
+  },
+  "reproduced_by": "Run archived fixed engine on identical GW12 input, frozen model and priors; compared entire output file byte for byte",
+  "identical_files": [
+    {
+      "path": "forecast.json",
+      "sha256": "cb4870a0ddf393994c4cb4eff12ba7ee20ff788ef1efc05044329ca758130ef5",
+      "byte_identical": true
+    },
+    {
+      "path": "MODEL_OUTPUTS.csv",
+      "sha256": "3c7e831385363a4e1e71cdb4d9cdb5a9c74e1a0d56f724b3c8c65ef8f147249",
+      "byte_identical": true
+    }
+  ],
+  "code_hashes": {
+    "runner": "d1a36f5da1594fbdcf39e953bdc4642a229be821351a8376963979e386841b13",
+    "model": "c9142f32d71088fe2cdddd9c8b183962347a7b5aab041921c63eca5667909917",
+    "priors": "d2957668036bb51f21e11851d83a8c2de99fc88883fc8acedb7a89a970602e2c",
+    "input": "a3f970762a46435f640f81dd79320984799d883bf332e476b936b940812ae97a"
+  },
+  "tests": {
+    "GW11_replay": "PASS",
+    "test_pipeline": "10/10 PASS",
+    "GW12_replay_byte_identical": true,
+    "official_direction_and_R_positions_preserved": true,
+    "shadow_direction_and_R_positions_preserved": true
+  },
+  "limitations": {
+    "old_R90_exact_restored": false,
+    "reconstructed_model": "Official R90-style MARKETPROXY fixed from GW11 (not historical R90 Exact); Shadow R90 Math5 reconstruction not historical Exact",
+    "input_source": "External markets and team stats manually consolidated in the GW12 input-generation file, not built through a fully automated independently auditable ingestion pipeline",
+    "source_quote_timestamp": "Individual bookmaker quote timestamps UNVERIFIED; page query/capture time is not individual quote origin time",
+    "bet365_open": "MISSING",
+    "AH": "MISSING",
+    "validated_prekick": "MISSING",
+    "model_accuracy": "75% R1/R2/R3 forward hit rate NOT YET ESTABLISHED",
+    "rank_semantics": "Relative top-3 candidates only, not calibrated high-confidence 75% picks",
+    "status": "PREMATCH_PROVISIONAL_NOT_AUTOMATICALLY_OFFICIAL",
+    "website_main_unchanged_by_this_audit": true
+  },
+  "next_requirements": [
+    "Freeze raw source snapshots and provider timestamps or label inputs as unverified proxy",
+    "Maintain per-match feature provenance and deterministic audit chain",
+    "Preserve prediction sealed before kickoff",
+    "Run time-ordered forward validation; do not promote until 75% achieved with sufficient independent samples"
+  ],
+  "original_prediction_unchanged": true,
+  "website_sync": "DEFERRED_BY_USER"
+}
