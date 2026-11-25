@@ -1,0 +1,505 @@
+{
+  "schema": "EPL_GW12_PREMATCH_PREDICTION_PACKAGE_V1",
+  "package_type": "DASHBOARD_UPDATE_PACKAGE",
+  "created_at_taipei": "2026-11-25",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 12,
+  "record_id": "EPL-2026-27-GW12-20261125-FIXED-V1-PROVISIONAL",
+  "status": {
+    "record": "PREMATCH_FROZEN_PROVISIONAL_NOT_AUTOMATICALLY_OFFICIAL",
+    "model_identity": "EXACT_FROZEN_FIXED_RUNNER_V1_RECOVERED_COMPONENT_NOT_OLD_R90_EXACT",
+    "research": "SHADOW_SEPARATE",
+    "settlement": "NOT_STARTED",
+    "review": "NOT_STARTED",
+    "dashboard": "DEFERRED_BY_USER",
+    "pre_kick": "PENDING",
+    "original_Bet365_first_tick": "MISSING",
+    "ah": "MISSING"
+  },
+  "input_path": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_INPUT.json",
+  "forecast_path": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_FORECAST.json",
+  "integrity": {
+    "input_sha256": "a3f970762a46435f640f81dd79320984799d883bf332e476b936b940812ae97a",
+    "model_sha256": "c9142f32d71088fe2cdddd9c8b183962347a7b5aab041921c63eca5667909917",
+    "prior_sha256": "d2957668036bb51f21e11851d83a8c2de99fc88883fc8acedb7a89a970602e2c",
+    "runner_sha256": "d1a36f5da1594fbdcf39e953bdc4642a229be821351a8376963979e386841b13",
+    "original_projections_immutable": true
+  },
+  "market": {
+    "source_type": "MARKETPROXY_MULTIBOOK_SEARCH_OBSERVATION_NOT_BET365_NOT_OPEN_TICK",
+    "source_url": "https://mx0.betmonitor.com/mobile/odds-comparison/football/england-premier-league/10000070",
+    "source_observed_at_utc": "2026-11-25T07:15:41Z",
+    "provider_timestamp_verified": false,
+    "Bet365_open": "MISSING",
+    "pre_kick": "PENDING",
+    "AH": "MISSING",
+    "selection_odds_gt_1_80_supported_for_1X2_OU": true
+  },
+  "fixtures": [
+    {
+      "match_id": "EPL-2026-27-GW12-01",
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "kickoff_utc": "2026-11-27T20:00:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "單",
+      "rank_parity": null,
+      "shadow_pick_parity": "單",
+      "shadow_rank_parity": 1,
+      "parity_probability_proxy": 0.5106843741521617,
+      "shadow_probability_proxy": 0.50069334256514,
+      "shadow_Q_uncalibrated": 0.5371672228737564,
+      "market_odds": {
+        "1X2": {
+          "home": 2.58,
+          "draw": 3.48,
+          "away": 2.7
+        },
+        "OU25": {
+          "over": 1.74,
+          "under": 2.1
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 2.58,
+      "selected_ou25_odds": 1.74,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-02",
+      "home": "Manchester United",
+      "away": "Brentford",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": 3,
+      "pick_parity": "雙",
+      "rank_parity": null,
+      "shadow_pick_parity": "雙",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.43890723294916256,
+      "shadow_probability_proxy": 0.49356452166353126,
+      "shadow_Q_uncalibrated": 0.47665505558104576,
+      "market_odds": {
+        "1X2": {
+          "home": 2.11,
+          "draw": 3.78,
+          "away": 3.23
+        },
+        "OU25": {
+          "over": 1.55,
+          "under": 2.38
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 2.11,
+      "selected_ou25_odds": 1.55,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-03",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": 1,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "單",
+      "rank_parity": null,
+      "shadow_pick_parity": "單",
+      "shadow_rank_parity": 3,
+      "parity_probability_proxy": 0.5560692192138018,
+      "shadow_probability_proxy": 0.500733491720848,
+      "shadow_Q_uncalibrated": 0.5086998752580721,
+      "market_odds": {
+        "1X2": {
+          "home": 1.5,
+          "draw": 4.6,
+          "away": 6.34
+        },
+        "OU25": {
+          "over": 1.64,
+          "under": 2.27
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.5,
+      "selected_ou25_odds": 1.64,
+      "selected_1x2_odds_over_1_8": false,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-04",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "pick_1x2": "客勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": 2,
+      "pick_parity": "雙",
+      "rank_parity": null,
+      "shadow_pick_parity": "雙",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.45620557135162126,
+      "shadow_probability_proxy": 0.493969459753033,
+      "shadow_Q_uncalibrated": 0.4962913433526135,
+      "market_odds": {
+        "1X2": {
+          "home": 3.61,
+          "draw": 3.91,
+          "away": 1.94
+        },
+        "OU25": {
+          "over": 1.54,
+          "under": 2.44
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.94,
+      "selected_ou25_odds": 1.54,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-05",
+      "home": "Everton",
+      "away": "Liverpool",
+      "kickoff_utc": "2026-11-29T12:00:00Z",
+      "pick_1x2": "客勝",
+      "rank_1x2": 3,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "雙",
+      "rank_parity": 1,
+      "shadow_pick_parity": "單",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.4276030130967752,
+      "shadow_probability_proxy": 0.5073100699783587,
+      "shadow_Q_uncalibrated": 0.4548272346092313,
+      "market_odds": {
+        "1X2": {
+          "home": 4.08,
+          "draw": 3.78,
+          "away": 1.85
+        },
+        "OU25": {
+          "over": 1.68,
+          "under": 2.18
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.85,
+      "selected_ou25_odds": 1.68,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-06",
+      "home": "Sunderland",
+      "away": "Tottenham",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "pick_1x2": "客勝",
+      "rank_1x2": null,
+      "pick_ou25": "小",
+      "rank_ou25": null,
+      "pick_parity": "雙",
+      "rank_parity": 3,
+      "shadow_pick_parity": "單",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.4776030130967752,
+      "shadow_probability_proxy": 0.5010980778204726,
+      "shadow_Q_uncalibrated": 0.4519709992983791,
+      "market_odds": {
+        "1X2": {
+          "home": 3.52,
+          "draw": 3.46,
+          "away": 2.1
+        },
+        "OU25": {
+          "over": 1.99,
+          "under": 1.85
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 2.1,
+      "selected_ou25_odds": 1.85,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": true,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-07",
+      "home": "Crystal Palace",
+      "away": "Hull City",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "雙",
+      "rank_parity": null,
+      "shadow_pick_parity": "雙",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.4673020620025156,
+      "shadow_probability_proxy": 0.48693432401423636,
+      "shadow_Q_uncalibrated": 0.4482455122700529,
+      "market_odds": {
+        "1X2": {
+          "home": 1.87,
+          "draw": 3.83,
+          "away": 4.05
+        },
+        "OU25": {
+          "over": 1.73,
+          "under": 2.11
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.87,
+      "selected_ou25_odds": 1.73,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-08",
+      "home": "Fulham",
+      "away": "Bournemouth",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "雙",
+      "rank_parity": 2,
+      "shadow_pick_parity": "單",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.4331843741521617,
+      "shadow_probability_proxy": 0.5003566645370419,
+      "shadow_Q_uncalibrated": 0.4931423298777577,
+      "market_odds": {
+        "1X2": {
+          "home": 2.62,
+          "draw": 3.52,
+          "away": 2.63
+        },
+        "OU25": {
+          "over": 1.75,
+          "under": 2.09
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 2.62,
+      "selected_ou25_odds": 1.75,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-09",
+      "home": "Brighton",
+      "away": "Newcastle United",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": 2,
+      "pick_ou25": "大",
+      "rank_ou25": 1,
+      "pick_parity": "單",
+      "rank_parity": null,
+      "shadow_pick_parity": "雙",
+      "shadow_rank_parity": 2,
+      "parity_probability_proxy": 0.5177243471608268,
+      "shadow_probability_proxy": 0.49886334579651515,
+      "shadow_Q_uncalibrated": 0.5101238632613088,
+      "market_odds": {
+        "1X2": {
+          "home": 1.56,
+          "draw": 4.5,
+          "away": 5.43
+        },
+        "OU25": {
+          "over": 1.54,
+          "under": 2.45
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.56,
+      "selected_ou25_odds": 1.54,
+      "selected_1x2_odds_over_1_8": false,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-10",
+      "home": "Arsenal",
+      "away": "Manchester City",
+      "kickoff_utc": "2026-11-29T16:30:00Z",
+      "pick_1x2": "主勝",
+      "rank_1x2": null,
+      "pick_ou25": "大",
+      "rank_ou25": null,
+      "pick_parity": "單",
+      "rank_parity": null,
+      "shadow_pick_parity": "雙",
+      "shadow_rank_parity": null,
+      "parity_probability_proxy": 0.5156730817221965,
+      "shadow_probability_proxy": 0.49954901662747186,
+      "shadow_Q_uncalibrated": 0.49184347174351134,
+      "market_odds": {
+        "1X2": {
+          "home": 1.98,
+          "draw": 3.75,
+          "away": 3.65
+        },
+        "OU25": {
+          "over": 1.73,
+          "under": 2.12
+        },
+        "AH": null
+      },
+      "selected_1x2_odds": 1.98,
+      "selected_ou25_odds": 1.73,
+      "selected_1x2_odds_over_1_8": true,
+      "selected_ou25_odds_over_1_8": false,
+      "odds_source_quality": "MULTIBOOK_CACHED_QUOTE_NO_PROVIDER_TIME",
+      "ah_status": "MISSING"
+    }
+  ],
+  "ranks": {
+    "1x2": [
+      {
+        "rank": "R1",
+        "match_id": "EPL-2026-27-GW12-03",
+        "match": "Leeds United vs Coventry City",
+        "pick": "主勝",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R2",
+        "match_id": "EPL-2026-27-GW12-09",
+        "match": "Brighton vs Newcastle United",
+        "pick": "主勝",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R3",
+        "match_id": "EPL-2026-27-GW12-05",
+        "match": "Everton vs Liverpool",
+        "pick": "客勝",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      }
+    ],
+    "ou25": [
+      {
+        "rank": "R1",
+        "match_id": "EPL-2026-27-GW12-09",
+        "match": "Brighton vs Newcastle United",
+        "pick": "大",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R2",
+        "match_id": "EPL-2026-27-GW12-04",
+        "match": "Ipswich Town vs Aston Villa",
+        "pick": "大",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R3",
+        "match_id": "EPL-2026-27-GW12-02",
+        "match": "Manchester United vs Brentford",
+        "pick": "大",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      }
+    ],
+    "parity": [
+      {
+        "rank": "R1",
+        "match_id": "EPL-2026-27-GW12-05",
+        "match": "Everton vs Liverpool",
+        "pick": "雙",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R2",
+        "match_id": "EPL-2026-27-GW12-08",
+        "match": "Fulham vs Bournemouth",
+        "pick": "雙",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      },
+      {
+        "rank": "R3",
+        "match_id": "EPL-2026-27-GW12-06",
+        "match": "Sunderland vs Tottenham",
+        "pick": "雙",
+        "source_status": "RELATIVE_SELECTED_PREMATCH_PROVISIONAL_NOT_BETTING_QUALIFIED"
+      }
+    ]
+  },
+  "shadow": {
+    "label": "R90-MATH5-Q-RECONSTRUCTION-V0-FROZEN",
+    "is_official": false,
+    "ranks": [
+      {
+        "rank": "R1",
+        "match_id": "EPL-2026-27-GW12-01",
+        "pick": "單",
+        "confidence_Q_uncalibrated": 0.5371672228737564
+      },
+      {
+        "rank": "R2",
+        "match_id": "EPL-2026-27-GW12-09",
+        "pick": "雙",
+        "confidence_Q_uncalibrated": 0.5101238632613088
+      },
+      {
+        "rank": "R3",
+        "match_id": "EPL-2026-27-GW12-03",
+        "pick": "單",
+        "confidence_Q_uncalibrated": 0.5086998752580721
+      }
+    ]
+  },
+  "research_goal": "EPL_PARITY_R123_SELECTION_75_V1",
+  "research_promotion": "NO_OUT_OF_SAMPLE_VALIDATION_YET_NOT_PROMOTED",
+  "policy": [
+    "Never rewrite archived GW11, do not retroactively change GW12 directions/ranks after kickoff",
+    "Runner output from trusted original recovered fixed model, verified by GW11 replay and 10 tests",
+    "R1-R3 relative ranks are not calibrated 75% guarantees",
+    "Official and Shadow kept separate",
+    "OPEN/CURRENT market proxy is not original Bet365 open or T-60",
+    "No results or settlements for GW12",
+    "User requests website update later in one centralized batch"
+  ],
+  "flags": {
+    "OU_PREDICTION_SKEW_OVER_COUNT": 9,
+    "PARITY_SKEW": {
+      "odd": 4,
+      "even": 6
+    },
+    "OPEN_TO_PREKICK_NOT_AVAILABLE": true
+  }
+}
