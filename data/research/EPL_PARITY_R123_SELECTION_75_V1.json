@@ -1,0 +1,125 @@
+{
+  "schema": "EPL_PARITY_R123_75_FORWARD_RESEARCH_V1",
+  "created_at_taipei": "2026-11-25",
+  "requested_priority": "R1_R2_R3_OUT_OF_SAMPLE_PARITY_ACCURACY",
+  "league": "EPL",
+  "market": "FULL_TIME_TOTAL_GOALS_ODD_EVEN",
+  "category": "RESEARCH_ONLY_NOT_PROMOTED",
+  "user_goal": {
+    "primary": "R1/R2/R3 qualified selections >= 75% hit rate on strict chronological forward out-of-sample predictions",
+    "assess_per_rank": true,
+    "assess_combined_R123": true,
+    "secondary": "Full-matchday hit rate, evaluated separately; no quota on ODD vs EVEN",
+    "neither_guaranteed_nor_established": true
+  },
+  "frozen_baseline": {
+    "record_id": "EPL-2026-27-GW11-20261109-MARKETPROXY-RECOVERED",
+    "result_addendum": "data/settlement_pending/2026-11-23/EPL_GW11_20261124_FINAL_RESULT_ADDENDUM_REVIEW_V3.json",
+    "latest_one_round_R123": {
+      "hits": 2,
+      "n": 3,
+      "rate_pct": 66.67
+    },
+    "latest_one_round_R12": {
+      "hits": 2,
+      "n": 2,
+      "rate_pct": 100
+    },
+    "all_matches": {
+      "hits": 6,
+      "n": 10,
+      "rate_pct": 60
+    },
+    "interpretation": "A single round is insufficient to establish a >75% long-run rate. No hindsight changes."
+  },
+  "model_trials": [
+    {
+      "id": "BASELINE_OFFICIAL_FROZEN",
+      "role": "control",
+      "method": "Do not modify archived pre-match direction, ranks or model line. Strictly compare same temporal fixtures."
+    },
+    {
+      "id": "SCORE_MATRIX_PARITY_V1",
+      "role": "direction_research",
+      "method": "Using ONLY pre-match features, estimate calibrated scoreline probabilities P(H=i,A=j) with appropriate low-score/draw dependence. P(EVEN)=sum of probabilities where i+j is even; P(ODD)=1-P(EVEN).",
+      "feature_candidates": [
+        "team_attack_defense_prior_only",
+        "pre_kickoff_goals/xG_when_verifiably_available",
+        "draw_probability_calibrated_without_looking_ahead",
+        "OU25_and_AH_odds_only_when_verified_as_of_snapshot",
+        "home_advantage",
+        "uncertainty"
+      ],
+      "guard": "A plain independent-Poisson total-score model is intrinsically weak for parity, as P(EVEN)>=0.5. Require explicit out-of-sample calibration rather than treating draw as automatic EVEN certainty.",
+      "training": "Chronological previous seasons only; never fit using evaluation fixtures"
+    },
+    {
+      "id": "CONSENSUS_AND_GATE_V1",
+      "role": "selection_research",
+      "method": "Compare Official versus already independently sealed R90 Recovery Shadow direction and calibrated probability, select at most 3 qualifying picks based on training-only gate thresholds",
+      "gate_dimensions": [
+        "calibrated_parity_probability_margin",
+        "expected_prediction_uncertainty",
+        "cross_model_agreement",
+        "fixture_entropy",
+        "odds_quality"
+      ],
+      "guard": "Agreement is not proof of reliability; evaluate it separately against no-gate baseline. Shadow remains separate unless promotion passes validation."
+    },
+    {
+      "id": "SCORE_MATRIX_PLUS_SELECTOR_V1",
+      "role": "direction_and_selection",
+      "method": "Derive BOTH directions and qualified R1/R2/R3 from same pre-specified scoreline and selector logic; freeze test implementation and parameter hashes before forward evaluation",
+      "guard": "Changing only R order does not satisfy objective if direction reliability does not improve."
+    }
+  ],
+  "rank_and_pass_policy": {
+    "display_three_relative_candidates_each_round": true,
+    "R1_R2_R3_order": "Deterministic descending calibrated confidence, fixed stable tie-breaker",
+    "official_qualification": "A qualified pick must pass frozen min-confidence and quality gates. Unqualified candidates remain display-only, classed PASS/RESEARCH_NOT_QUALIFIED, and excluded from Official accuracy.",
+    "insufficient_qualifiers": "Do not invent betting-eligible R ranks; record which R1-R3 candidates failed gates.",
+    "no_forced_odd_even_balance": true
+  },
+  "validation": {
+    "data_requirements": "Seek verified 6+ seasons of fixtures, final scores and time-valid inputs; declare MISSING when unavailable.",
+    "split": "Chronological expanding-window or rolling-window walk-forward. Hyperparameter selection uses earlier training/validation blocks only, not the sealed test block.",
+    "no_leakage": "Strictly prohibit using the target result, post-kickoff odds, future matches in rolling form, or full-season normalization calculated from future games.",
+    "baselines": [
+      "frozen_official",
+      "frozen_shadow_separate",
+      "always_even",
+      "market_calibrated_probability_only_when_available"
+    ],
+    "row_unit": "One match, one pre-kickoff immutable record, one final settlement. PASS not counted.",
+    "report": [
+      "R1 correct/n",
+      "R2 correct/n",
+      "R3 correct/n",
+      "R1_R2 correct/n",
+      "R1_R2_R3 correct/n",
+      "PASS and qualified coverage per round",
+      "all-matchday score",
+      "official/shadow independent",
+      "calibration and confidence intervals"
+    ],
+    "candidate_success": "Target >=75% across pooled qualified R1-R3 and inspect each R1/R2/R3 individually with adequate samples, under proper strict forward validation; cannot infer from latest one round.",
+    "minimum_observation_goal": "At least 20 independent matchweeks and 60 qualified predictions for pooled R1-R3 where coverage permits; report per-rank sample count and Wilson 95% intervals; do not promote from a single round.",
+    "promotion_gate": "Only TEST or WATCH until an out-of-sample candidate clears predeclared accuracy, coverage, confidence and reproducibility tests; manual approval before official promotion.",
+    "all_tracks_separate": true
+  },
+  "versioning": {
+    "official_forecast_immutable": true,
+    "freeze_research_parameters_prior_to_test": true,
+    "keep_exact_replay_hashes": true,
+    "no_hindsight_no_overwrite": true,
+    "website_sync": "DEFERRED_BY_USER",
+    "repo_branch": "settlement-pending-20261123"
+  },
+  "execution_status": {
+    "proposal_saved": true,
+    "training_not_run": true,
+    "backtest_not_run": true,
+    "models_not_promoted": true,
+    "reason": "User has chosen research objective; data/feature completeness and strict forward testing have yet to be verified."
+  }
+}
