@@ -1,0 +1,344 @@
+{
+  "schema": "EPL-FIXED-INFERENCE-INPUT-V1",
+  "purpose": "PREMATCH",
+  "league": "EPL",
+  "season": "2026-27",
+  "gw": 12,
+  "record_id": "EPL-2026-27-GW12-20261125-FIXED-V1-PROVISIONAL",
+  "prediction_cutoff_utc": "2026-11-25T07:16:00Z",
+  "first_kickoff_utc": "2026-11-27T20:00:00Z",
+  "fixture_source_url": "https://www.premierleague.com/en/news/4725574",
+  "market_snapshot": {
+    "type": "MARKETPROXY_MULTIBOOK_SEARCH_OBSERVATION_NOT_BET365_NOT_OPEN_TICK",
+    "source_url": "https://mx0.betmonitor.com/mobile/odds-comparison/football/england-premier-league/10000070",
+    "captured_at_utc": "2026-11-25T07:15:41Z",
+    "capture_time_verified": true,
+    "capture_method": "web search snippet visible during this session, provider quote origin time not supplied",
+    "per_price_timestamp_verified": false,
+    "note": "Multi-book current prices observed via publicly indexed source. NOT Bet365 first-tick, NOT PREKICK, NOT provider-timestamped; AH unavailable. Strictly a provisional market-proxy source."
+  },
+  "team_snapshot": {
+    "source_url": "https://thesoccergoals.com/?date=2026-11-25",
+    "captured_at_utc": "2026-11-25T07:15:41Z",
+    "capture_time_verified": true,
+    "through_gw": 11,
+    "note": "11 matches played, GF/GA from as-of GW11 completed standings. Last-match total odd from frozen GW11 final settlement.",
+    "teams": {
+      "Arsenal": {
+        "played": 11,
+        "goals_for": 17,
+        "goals_against": 7,
+        "last_completed_match_total_odd": 0
+      },
+      "Brighton": {
+        "played": 11,
+        "goals_for": 26,
+        "goals_against": 9,
+        "last_completed_match_total_odd": 0
+      },
+      "Manchester City": {
+        "played": 11,
+        "goals_for": 22,
+        "goals_against": 14,
+        "last_completed_match_total_odd": 0
+      },
+      "Liverpool": {
+        "played": 11,
+        "goals_for": 18,
+        "goals_against": 10,
+        "last_completed_match_total_odd": 0
+      },
+      "Bournemouth": {
+        "played": 11,
+        "goals_for": 18,
+        "goals_against": 14,
+        "last_completed_match_total_odd": 0
+      },
+      "Brentford": {
+        "played": 11,
+        "goals_for": 20,
+        "goals_against": 11,
+        "last_completed_match_total_odd": 0
+      },
+      "Leeds United": {
+        "played": 11,
+        "goals_for": 14,
+        "goals_against": 9,
+        "last_completed_match_total_odd": 1
+      },
+      "Chelsea": {
+        "played": 11,
+        "goals_for": 20,
+        "goals_against": 20,
+        "last_completed_match_total_odd": 1
+      },
+      "Everton": {
+        "played": 11,
+        "goals_for": 12,
+        "goals_against": 14,
+        "last_completed_match_total_odd": 0
+      },
+      "Tottenham": {
+        "played": 11,
+        "goals_for": 12,
+        "goals_against": 11,
+        "last_completed_match_total_odd": 0
+      },
+      "Hull City": {
+        "played": 11,
+        "goals_for": 13,
+        "goals_against": 11,
+        "last_completed_match_total_odd": 0
+      },
+      "Aston Villa": {
+        "played": 11,
+        "goals_for": 14,
+        "goals_against": 17,
+        "last_completed_match_total_odd": 0
+      },
+      "Newcastle United": {
+        "played": 11,
+        "goals_for": 15,
+        "goals_against": 18,
+        "last_completed_match_total_odd": 0
+      },
+      "Coventry City": {
+        "played": 11,
+        "goals_for": 13,
+        "goals_against": 21,
+        "last_completed_match_total_odd": 1
+      },
+      "Fulham": {
+        "played": 11,
+        "goals_for": 11,
+        "goals_against": 13,
+        "last_completed_match_total_odd": 0
+      },
+      "Ipswich Town": {
+        "played": 11,
+        "goals_for": 15,
+        "goals_against": 22,
+        "last_completed_match_total_odd": 0
+      },
+      "Nottingham Forest": {
+        "played": 11,
+        "goals_for": 9,
+        "goals_against": 15,
+        "last_completed_match_total_odd": 0
+      },
+      "Sunderland": {
+        "played": 11,
+        "goals_for": 8,
+        "goals_against": 17,
+        "last_completed_match_total_odd": 0
+      },
+      "Manchester United": {
+        "played": 11,
+        "goals_for": 14,
+        "goals_against": 23,
+        "last_completed_match_total_odd": 0
+      },
+      "Crystal Palace": {
+        "played": 11,
+        "goals_for": 12,
+        "goals_against": 27,
+        "last_completed_match_total_odd": 1
+      }
+    }
+  },
+  "fixtures": [
+    {
+      "match_id": "EPL-2026-27-GW12-01",
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "kickoff_utc": "2026-11-27T20:00:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 2.58,
+          "draw": 3.48,
+          "away": 2.7
+        },
+        "OU25": {
+          "over": 1.74,
+          "under": 2.1
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-02",
+      "home": "Manchester United",
+      "away": "Brentford",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 2.11,
+          "draw": 3.78,
+          "away": 3.23
+        },
+        "OU25": {
+          "over": 1.55,
+          "under": 2.38
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-03",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "kickoff_utc": "2026-11-28T15:00:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 1.5,
+          "draw": 4.6,
+          "away": 6.34
+        },
+        "OU25": {
+          "over": 1.64,
+          "under": 2.27
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-04",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "kickoff_utc": "2026-11-28T17:30:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 3.61,
+          "draw": 3.91,
+          "away": 1.94
+        },
+        "OU25": {
+          "over": 1.54,
+          "under": 2.44
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-05",
+      "home": "Everton",
+      "away": "Liverpool",
+      "kickoff_utc": "2026-11-29T12:00:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 4.08,
+          "draw": 3.78,
+          "away": 1.85
+        },
+        "OU25": {
+          "over": 1.68,
+          "under": 2.18
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-06",
+      "home": "Sunderland",
+      "away": "Tottenham",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 3.52,
+          "draw": 3.46,
+          "away": 2.1
+        },
+        "OU25": {
+          "over": 1.99,
+          "under": 1.85
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-07",
+      "home": "Crystal Palace",
+      "away": "Hull City",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 1.87,
+          "draw": 3.83,
+          "away": 4.05
+        },
+        "OU25": {
+          "over": 1.73,
+          "under": 2.11
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-08",
+      "home": "Fulham",
+      "away": "Bournemouth",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 2.62,
+          "draw": 3.52,
+          "away": 2.63
+        },
+        "OU25": {
+          "over": 1.75,
+          "under": 2.09
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-09",
+      "home": "Brighton",
+      "away": "Newcastle United",
+      "kickoff_utc": "2026-11-29T14:05:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 1.56,
+          "draw": 4.5,
+          "away": 5.43
+        },
+        "OU25": {
+          "over": 1.54,
+          "under": 2.45
+        },
+        "AH": null
+      }
+    },
+    {
+      "match_id": "EPL-2026-27-GW12-10",
+      "home": "Arsenal",
+      "away": "Manchester City",
+      "kickoff_utc": "2026-11-29T16:30:00Z",
+      "market_odds": {
+        "1X2": {
+          "home": 1.98,
+          "draw": 3.75,
+          "away": 3.65
+        },
+        "OU25": {
+          "over": 1.73,
+          "under": 2.12
+        },
+        "AH": null
+      }
+    }
+  ],
+  "market_data_notes": {
+    "sources": [
+      "https://mx0.betmonitor.com/mobile/odds-comparison/football/england-premier-league/10000070",
+      "https://www.oddschecker.com/football/leagues-cups/english/premier-league"
+    ],
+    "real_time_bookability": "NOT_APPLICABLE",
+    "bookmaker": "MULTIBOOK_AGGREGATE_NOT_BET365",
+    "snapshot_kind": "EARLY_CURRENT_PROXY",
+    "opening_tick": "MISSING",
+    "pre_kick_snapshot": "PENDING",
+    "AH_line": "MISSING",
+    "web_query_as_of_taipei": "2026-11-25 15:15 +08:00"
+  }
+}
