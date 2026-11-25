@@ -1,0 +1,94 @@
+{
+  "schema": "DASHBOARD_UPDATE_PACKAGE_STAGED_PREMATCH_V1",
+  "record_id": "LALIGA-2026-27-GW14-20261125-RESEARCH-A-B-REBUILT",
+  "league": "LALIGA",
+  "gw": 14,
+  "source_record": "data/prematch/LALIGA_GW14_20261125_RESEARCH_A_B_REBUILT_FROZEN.json",
+  "source_date_taipei": "2026-11-25",
+  "research_only": true,
+  "counts_as_official_forward": false,
+  "valid_for_public_prematch_sync": true,
+  "settlement_status": "NOT_STARTED",
+  "dashboard_sync_status": "HOLD_UNTIL_USER_REQUESTS_CONSOLIDATED_SYNC",
+  "preserve_all_historical_records": true,
+  "parity_direction_counts": {
+    "A": {
+      "odd": 6,
+      "even": 4
+    },
+    "B": {
+      "odd": 8,
+      "even": 2
+    },
+    "REBUILT": {
+      "odd": 10,
+      "even": 0
+    }
+  },
+  "rank_summary": {
+    "A": [
+      {
+        "rank": "R1",
+        "fixture": "皇家馬德里 vs 艾拉維斯",
+        "parity": "單"
+      },
+      {
+        "rank": "R2",
+        "fixture": "拉科魯尼亞 vs 巴塞隆拿",
+        "parity": "單"
+      },
+      {
+        "rank": "R3",
+        "fixture": "艾爾切 vs 馬德里體育會",
+        "parity": "單"
+      }
+    ],
+    "B": [
+      {
+        "rank": "R1",
+        "fixture": "皇家馬德里 vs 艾拉維斯",
+        "parity": "單",
+        "strict_gate": true
+      },
+      {
+        "rank": "R2",
+        "fixture": "拉科魯尼亞 vs 巴塞隆拿",
+        "parity": "單",
+        "strict_gate": true
+      },
+      {
+        "rank": "R3",
+        "fixture": "貝迪斯 vs 華歷簡奴",
+        "parity": "單",
+        "strict_gate": false
+      }
+    ],
+    "REBUILT": [
+      {
+        "rank": "R1",
+        "fixture": "皇家馬德里 vs 艾拉維斯",
+        "parity": "單"
+      },
+      {
+        "rank": "R2",
+        "fixture": "拉科魯尼亞 vs 巴塞隆拿",
+        "parity": "單"
+      },
+      {
+        "rank": "R3",
+        "fixture": "艾爾切 vs 馬德里體育會",
+        "parity": "單"
+      }
+    ]
+  },
+  "market_status": {
+    "date_taipei": "2026-11-25",
+    "source": "https://www.oddstorm.com/odds/league/906-spain-la-liga-primera-division",
+    "type": "BEST_CROSS_BOOK_PROXY_SINGLE_SNAPSHOT",
+    "bet365_first_tick": "MISSING",
+    "bet365_prekick": "MISSING",
+    "ah": "MISSING"
+  },
+  "user_picks": [],
+  "result_addendum": null
+}
