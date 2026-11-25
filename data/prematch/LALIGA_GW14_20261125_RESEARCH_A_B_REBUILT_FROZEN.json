@@ -1,0 +1,593 @@
+{
+  "schema": "LaLiga_GW14_RESEARCH_PREMATCH_V1",
+  "record_id": "LALIGA-2026-27-GW14-20261125-RESEARCH-A-B-REBUILT",
+  "archive_date_taipei": "2026-11-25",
+  "timestamp_precision": "DATE_ONLY",
+  "status": "PREMATCH_FROZEN",
+  "season": "2026-27",
+  "league": "LALIGA",
+  "gw": 14,
+  "scope": "RESEARCH_ONLY_NOT_OFFICIAL",
+  "original_model_promotion": "NONE",
+  "official_parity": "PASS_NOT_RUN",
+  "original_model_overwrite": false,
+  "previous_round_results_used": "GW13_COMPLETE_BEFORE_GW14",
+  "scores_present": false,
+  "market_snapshot": {
+    "date_taipei": "2026-11-25",
+    "source": "https://www.oddstorm.com/odds/league/906-spain-la-liga-primera-division",
+    "type": "BEST_CROSS_BOOK_PROXY_SINGLE_SNAPSHOT",
+    "bet365_first_tick": "MISSING",
+    "bet365_prekick": "MISSING",
+    "ah": "MISSING"
+  },
+  "schedule_source": "https://www.laliga.com/en-GB/laliga-easports/results/2026-27/gameweek-14",
+  "model_metadata": {
+    "A": "V2 original qualitative continuity: unchanged 4-step reasoning, manual decision log; NOT automatic Exact",
+    "B": "Frozen 2020-26 EXTENDED coefficients and standard scaler; new proxy market inputs; R ranked by absolute margin",
+    "REBUILT": "Frozen V1 formula: .30*XOR + .40*(1-Pdraw)*historical P(odd|non-draw) + .30*recent odd rate",
+    "B_GW13_replay": "10/10 matches historical input features and outputs reproduced to <5e-10",
+    "B_gate": "R1 & R2 pass; R3 fails",
+    "REBUILT_gate": "R1 & R2 pass .10 margin; R3 fails"
+  },
+  "baseline_counts": {
+    "A": {
+      "odd": 6,
+      "even": 4
+    },
+    "B": {
+      "odd": 8,
+      "even": 2
+    },
+    "REBUILT": {
+      "odd": 10,
+      "even": 0
+    }
+  },
+  "fixture_count": 10,
+  "fixtures": [
+    {
+      "id": "LALIGA-GW14-01",
+      "home": "利雲特",
+      "away": "桑坦德",
+      "kickoff_taipei": "2026-11-28 04:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          2.19,
+          4.07,
+          3.3
+        ],
+        "over_under_2_5": [
+          1.54,
+          2.76
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "大2.5",
+        "one_rank": null,
+        "ou_rank": "R3",
+        "selected_odds": {
+          "one_x_two": 2.19,
+          "ou_2_5": 1.54
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": null,
+        "decision_reason": "XOR53.1%、近5全場單50%近中性；大球市場64.2%與和局24.4%，低信心單。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.5008,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.54572,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-02",
+      "home": "貝迪斯",
+      "away": "華歷簡奴",
+      "kickoff_taipei": "2026-11-28 21:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          1.67,
+          4.57,
+          5.6
+        ],
+        "over_under_2_5": [
+          1.59,
+          2.55
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "大2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 1.67,
+          "ou_2_5": 1.59
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": false,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": null,
+        "decision_reason": "近5全場單57.1%及大球61.6%偏單，但XOR46.9%反向；低信心單。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": "R3",
+        "p_odd": 0.56769,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.55653,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-03",
+      "home": "馬拉加",
+      "away": "畢爾包",
+      "kickoff_taipei": "2026-11-28 23:15",
+      "odds_marketproxy": {
+        "one_x_two": [
+          5.2,
+          3.9,
+          1.83
+        ],
+        "over_under_2_5": [
+          1.97,
+          2
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "客勝",
+        "ou_2_5": "大2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 1.83,
+          "ou_2_5": 1.97
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": true
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": null,
+        "decision_reason": "近5全場單57.1%、XOR51%近中性、大小球幾近五五；弱單。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.54947,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.55688,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-04",
+      "home": "艾爾切",
+      "away": "馬德里體育會",
+      "kickoff_taipei": "2026-11-29 01:30",
+      "odds_marketproxy": {
+        "one_x_two": [
+          6.6,
+          4.8,
+          1.55
+        ],
+        "over_under_2_5": [
+          1.63,
+          2.53
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "客勝",
+        "ou_2_5": "大2.5",
+        "one_rank": "R3",
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 1.55,
+          "ou_2_5": 1.63
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": false,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": "R3",
+        "decision_reason": "近5全場單57.1%、XOR53.1%、和局20.7%及大球60.8%同向；研究R3。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.53777,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": "R3",
+        "p_odd": 0.57876,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-05",
+      "home": "皇家馬德里",
+      "away": "艾拉維斯",
+      "kickoff_taipei": "2026-11-29 04:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          1.18,
+          11,
+          19.5
+        ],
+        "over_under_2_5": [
+          1.35,
+          3.57
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "大2.5",
+        "one_rank": "R1",
+        "ou_rank": "R2",
+        "selected_odds": {
+          "one_x_two": 1.18,
+          "ou_2_5": 1.35
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": false,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": "R1",
+        "decision_reason": "近5全場單64.3%、XOR53.1%、和局9.2%及大球72.6%同向；研究R1。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": "R1",
+        "p_odd": 0.63082,
+        "strict_gate": true
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": "R1",
+        "p_odd": 0.63633,
+        "formal_parity_margin_gate": true
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-06",
+      "home": "華倫西亞",
+      "away": "奧沙辛拿",
+      "kickoff_taipei": "2026-11-29 21:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          2.28,
+          3.49,
+          3.65
+        ],
+        "over_under_2_5": [
+          2.37,
+          1.74
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "小2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 2.28,
+          "ou_2_5": 1.74
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "雙",
+        "rank": null,
+        "decision_reason": "近5全場單57.1%與XOR49%互相衝突；和局28.7%及小球57.7%偏雙；低信心。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "雙",
+        "rank": null,
+        "p_odd": 0.47041,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.54163,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-07",
+      "home": "拉科魯尼亞",
+      "away": "巴塞隆拿",
+      "kickoff_taipei": "2026-11-29 23:15",
+      "odds_marketproxy": {
+        "one_x_two": [
+          11.5,
+          7.6,
+          1.3
+        ],
+        "over_under_2_5": [
+          1.29,
+          4.33
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "客勝",
+        "ou_2_5": "大2.5",
+        "one_rank": "R2",
+        "ou_rank": "R1",
+        "selected_odds": {
+          "one_x_two": 1.3,
+          "ou_2_5": 1.29
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": false,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "單",
+        "rank": "R2",
+        "decision_reason": "近5全場單64.3%、XOR51%、和局13.3%及大球77.0%偏單；研究R2。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": "R2",
+        "p_odd": 0.59721,
+        "strict_gate": true
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": "R2",
+        "p_odd": 0.61726,
+        "formal_parity_margin_gate": true
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-08",
+      "home": "切爾達",
+      "away": "維拉利爾",
+      "kickoff_taipei": "2026-11-30 01:30",
+      "odds_marketproxy": {
+        "one_x_two": [
+          2.83,
+          3.65,
+          2.59
+        ],
+        "over_under_2_5": [
+          1.84,
+          2.17
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "客勝",
+        "ou_2_5": "大2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 2.59,
+          "ou_2_5": 1.84
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": true
+        }
+      },
+      "A": {
+        "parity": "雙",
+        "rank": null,
+        "decision_reason": "XOR34.7%偏雙而近期全場單57.1%反向；和局27.0%，弱雙與衝突警示。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.52056,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.50392,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-09",
+      "home": "皇家蘇斯達",
+      "away": "西維爾",
+      "kickoff_taipei": "2026-11-30 04:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          2.22,
+          3.82,
+          3.4
+        ],
+        "over_under_2_5": [
+          1.86,
+          2.13
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "大2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 2.22,
+          "ou_2_5": 1.86
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": true
+        }
+      },
+      "A": {
+        "parity": "雙",
+        "rank": null,
+        "decision_reason": "XOR49%略偏雙而近5全場單57.1%反向；和局26%、大小球接近，弱雙。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.52173,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.54998,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    },
+    {
+      "id": "LALIGA-GW14-10",
+      "home": "愛斯賓奴",
+      "away": "加泰",
+      "kickoff_taipei": "2026-12-01 04:00",
+      "odds_marketproxy": {
+        "one_x_two": [
+          2.19,
+          3.35,
+          4.3
+        ],
+        "over_under_2_5": [
+          2.57,
+          1.6
+        ],
+        "odds_source": "OddStorm BEST-CROSSBOOK-NOT-B365",
+        "asian_handicap": "MISSING",
+        "pre_kick": "MISSING"
+      },
+      "market": {
+        "one_x_two": "主勝",
+        "ou_2_5": "小2.5",
+        "one_rank": null,
+        "ou_rank": null,
+        "selected_odds": {
+          "one_x_two": 2.19,
+          "ou_2_5": 1.6
+        },
+        "highlight_ge_1_8": {
+          "one_x_two": true,
+          "ou_2_5": false
+        }
+      },
+      "A": {
+        "parity": "雙",
+        "rank": null,
+        "decision_reason": "近期全場單50%及XOR51%中性，和局30.2%、小球61.6%偏雙。",
+        "exact_auto_replay": false
+      },
+      "B": {
+        "parity": "雙",
+        "rank": null,
+        "p_odd": 0.4896,
+        "strict_gate": false
+      },
+      "REBUILT": {
+        "parity": "單",
+        "rank": null,
+        "p_odd": 0.52149,
+        "formal_parity_margin_gate": false
+      },
+      "score": null,
+      "status": "PREMATCH_FROZEN_RESEARCH_ONLY"
+    }
+  ],
+  "repro_package_sha256_main_json": "10d8c14205b01b15f278dff2be7e922dd68f5db30ad9026749cac35276e21e73",
+  "settlement": "PENDING",
+  "dashboard_sync": "HOLD_FOR_USER_CONSOLIDATED_SYNC"
+}
