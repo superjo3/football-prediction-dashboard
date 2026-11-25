@@ -255,5 +255,18 @@
     "supersedes_prior_epl_review_for_reporting": true,
     "original_sealed_prediction_unchanged": true
   },
-  "latest_EPL_verified_at_taipei": "2026-11-24"
+  "latest_EPL_verified_at_taipei": "2026-11-24",
+  "latest_EPL_prematch": {
+    "record_id": "EPL-2026-27-GW12-20261125-FIXED-V1-PROVISIONAL",
+    "gw": 12,
+    "package": "data/predictions_pending/2026-11-25/EPL_GW12_DASHBOARD_UPDATE_PACKAGE_PENDING.json",
+    "input": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_INPUT.json",
+    "forecast": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_FORECAST.json",
+    "status": "PREMATCH_FROZEN_PROVISIONAL_NOT_AUTOMATICALLY_OFFICIAL",
+    "model": "SAME_EPL_FIXED_RUNNER_V1_FROZEN_NO_RETRAIN",
+    "website_sync": "DEFERRED_BY_USER",
+    "settlement": "NOT_STARTED",
+    "exclude_from_accuracy_denominators": true,
+    "official_research_shadow_separation": true
+  }
 }
