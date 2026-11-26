@@ -40,7 +40,8 @@ window.MODEL_PERFORMANCE_DATA = {
     LALIGA:{
       active:[
         {model:"A · V2 Research Continuity",status:"RESEARCH",scope:"2026-27 GW13 prospective",overall:{h:5,n:10},r1:{h:1,n:1},r2:{h:1,n:1},r3:{h:1,n:1},top2:{h:2,n:2},top3:{h:3,n:3},note:"正式高信心仍PASS；研究順位。"},
-        {model:"B · Fixed EXTENDED",status:"RESEARCH_CHALLENGER",scope:"2026-27 GW13 prospective",overall:{h:7,n:10},r1:{h:1,n:1},r2:{h:1,n:1},r3:{h:0,n:1},top2:{h:2,n:2},top3:{h:2,n:3},note:"六季固定模型；GW13是真正賽前前推。"}
+        {model:"B · Fixed EXTENDED",status:"RESEARCH_CHALLENGER",scope:"2026-27 GW13 prospective",overall:{h:7,n:10},r1:{h:1,n:1},r2:{h:1,n:1},r3:{h:0,n:1},top2:{h:2,n:2},top3:{h:2,n:3},note:"六季固定模型；GW13是真正賽前前推。"},
+        {model:"C · REBUILT V1",status:"RESEARCH_CHALLENGER",scope:"2026-27 GW13 prospective",overall:{h:8,n:10},r1:{h:1,n:1},r2:{h:1,n:1},r3:{h:1,n:1},top2:{h:2,n:2},top3:{h:3,n:3},note:"GW13 賽前封存的新重建研究版，非原版 V2 Exact；GW14 賽前預測尚未結算，不計入勝率。"}
       ],
       historical:[
         {model:"A · V2 Research",status:"HISTORICAL_FROZEN",scope:"GW9–12 original frozen",overall:{h:30,n:40},r1_text:"N/A",r2_text:"N/A",r3_text:"N/A",top2:{h:7,n:8},top3_text:"N/A",note:"只保存R1+R2合計，不能拆成個別R位。"},
