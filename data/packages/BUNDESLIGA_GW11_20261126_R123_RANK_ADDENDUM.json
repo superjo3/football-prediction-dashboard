@@ -1,0 +1,621 @@
+{
+  "record_id": "BUNDESLIGA-2026-27-GW11-20261126-R123-SUPPLEMENT-V1",
+  "parent_record_id": "BUNDESLIGA-2026-27-GW11-20261125-PARTIAL-PREMATCH-REPRO",
+  "date_taipei": "2026-11-26",
+  "status": "PREMATCH_RESEARCH_RANK_SUPPLEMENT_NOT_EXACT",
+  "original_record_unchanged": true,
+  "counts_as_official_forward_result": false,
+  "model_change": "NONE_OFFICIAL; additional research confidence adapter",
+  "training": "Phase49 MKT_LOGIT parameters; refit on 1530 historical rows through 2025-26; entropy base 2 from archived de-vig 1X2",
+  "rules": {
+    "Official 方向代理": "regime*10+abs(p49-.5)",
+    "Phase2": "regime*10+direction-aligned p49",
+    "Phase12": "regime*10+frozen Phase12 calibrator, aligned input from p49 instead of missing V1",
+    "P17 Proxy": "abs(P17_prob_odd_proxy-.5)",
+    "P18 Proxy": "abs(P18_prob_odd_proxy-.5)",
+    "雙術同向敏感度": "eligible two agree; min(abs(p17-.5),abs(p18-.5))",
+    "三方 KEEP 敏感度": "eligible three agree; same min margin",
+    "tie_break": "original source_order ascending; PASS excluded"
+  },
+  "limitations": [
+    "Original V1 confidence unrecovered; first three tracks are supplement ranking only, not original Exact ranking.",
+    "P17/P18 extra-missing-p sensitivity predictions remain unchanged and not original GW10 research continuity.",
+    "Ranking methods not validated as a new combined selector; no claimed 75% probability.",
+    "All directions unchanged. No target match results used."
+  ],
+  "input_sha256": {
+    "GW11_feature_matrix.csv": "a089901e0522afa2c2c02311eb5c6757bfea924245dd44253de54e0527c99d68",
+    "phase49_training.csv": "2b06d713329ff9248b4487c57fa2a68f91813ecc82e9c5ebbe8880205811756d",
+    "P12_Shadow_Frozen_Models.joblib": "13838f06feec3b86a89f4bab57627396fc5d9955c50cd31c5cd5b2e513a5a9db",
+    "DASHBOARD_UPDATE_PACKAGE_BUNDESLIGA_GW11_20261125_PARTIAL.json": "c0803ea6827e1c80fcceb08b1c88526605131e978f5f548e3c1da81ef6581484"
+  },
+  "ranked_picks": {
+    "Official 方向代理": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-04",
+        "fixture": "漢堡 vs 拜仁",
+        "pick": "單",
+        "score": 20.094749694424
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-06",
+        "fixture": "史特加 vs 法蘭克福",
+        "pick": "雙",
+        "score": 10.094187699889
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-08",
+        "fixture": "霍芬海姆 vs 奧格斯堡",
+        "pick": "雙",
+        "score": 10.086244279259
+      }
+    ],
+    "Phase2": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-04",
+        "fixture": "漢堡 vs 拜仁",
+        "pick": "單",
+        "score": 20.594749694424
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-06",
+        "fixture": "史特加 vs 法蘭克福",
+        "pick": "雙",
+        "score": 10.594187699889
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-08",
+        "fixture": "霍芬海姆 vs 奧格斯堡",
+        "pick": "雙",
+        "score": 10.586244279259
+      }
+    ],
+    "Phase12": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-04",
+        "fixture": "漢堡 vs 拜仁",
+        "pick": "單",
+        "score": 20.636662031464
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-09",
+        "fixture": "多特蒙德 vs 勒沃庫森",
+        "pick": "雙",
+        "score": 10.699905341933
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-01",
+        "fixture": "雲達不萊梅 vs 門興",
+        "pick": "雙",
+        "score": 10.689049419148
+      }
+    ],
+    "P17 Proxy": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-05",
+        "fixture": "美因茨 vs 柏林聯",
+        "pick": "雙",
+        "score": 0.2042777018
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-07",
+        "fixture": "弗賴堡 vs RB萊比錫",
+        "pick": "雙",
+        "score": 0.0794324334
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-02",
+        "fixture": "柏德博恩 vs 沙爾克04",
+        "pick": "雙",
+        "score": 0.0647773505
+      }
+    ],
+    "P18 Proxy": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-08",
+        "fixture": "霍芬海姆 vs 奧格斯堡",
+        "pick": "單",
+        "score": 0.1686669229
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-02",
+        "fixture": "柏德博恩 vs 沙爾克04",
+        "pick": "雙",
+        "score": 0.1469787961
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-04",
+        "fixture": "漢堡 vs 拜仁",
+        "pick": "雙",
+        "score": 0.0995218899
+      }
+    ],
+    "雙術同向敏感度": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-02",
+        "fixture": "柏德博恩 vs 沙爾克04",
+        "pick": "雙",
+        "score": 0.0647773505
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-04",
+        "fixture": "漢堡 vs 拜仁",
+        "pick": "雙",
+        "score": 0.0640658454
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-03",
+        "fixture": "科隆 vs 艾禾斯堡",
+        "pick": "單",
+        "score": 0.0215456391
+      }
+    ],
+    "三方 KEEP 敏感度": [
+      {
+        "rank": 1,
+        "match_id": "BUNDESLIGA-2026-27-GW11-02",
+        "fixture": "柏德博恩 vs 沙爾克04",
+        "pick": "雙",
+        "score": 0.0647773505
+      },
+      {
+        "rank": 2,
+        "match_id": "BUNDESLIGA-2026-27-GW11-05",
+        "fixture": "美因茨 vs 柏林聯",
+        "pick": "雙",
+        "score": 0.0185378124
+      },
+      {
+        "rank": 3,
+        "match_id": "BUNDESLIGA-2026-27-GW11-01",
+        "fixture": "雲達不萊梅 vs 門興",
+        "pick": "雙",
+        "score": 0.0041287065
+      }
+    ]
+  },
+  "all_ranks": [
+    {
+      "track": "Official 方向代理",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "單",
+      "score": 20.094749694424
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-06",
+      "fixture": "史特加 vs 法蘭克福",
+      "pick": "雙",
+      "score": 10.094187699889
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-08",
+      "fixture": "霍芬海姆 vs 奧格斯堡",
+      "pick": "雙",
+      "score": 10.086244279259
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-09",
+      "fixture": "多特蒙德 vs 勒沃庫森",
+      "pick": "雙",
+      "score": 10.081344137471
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-07",
+      "fixture": "弗賴堡 vs RB萊比錫",
+      "pick": "雙",
+      "score": 10.078212428351
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 6,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "雙",
+      "score": 10.076204394257
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 7,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 10.070171934571
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 8,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 10.038308224347
+    },
+    {
+      "track": "Official 方向代理",
+      "rank": 9,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.066091580481
+    },
+    {
+      "track": "Phase2",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "單",
+      "score": 20.594749694424
+    },
+    {
+      "track": "Phase2",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-06",
+      "fixture": "史特加 vs 法蘭克福",
+      "pick": "雙",
+      "score": 10.594187699889
+    },
+    {
+      "track": "Phase2",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-08",
+      "fixture": "霍芬海姆 vs 奧格斯堡",
+      "pick": "雙",
+      "score": 10.586244279259
+    },
+    {
+      "track": "Phase2",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-09",
+      "fixture": "多特蒙德 vs 勒沃庫森",
+      "pick": "雙",
+      "score": 10.581344137471
+    },
+    {
+      "track": "Phase2",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-07",
+      "fixture": "弗賴堡 vs RB萊比錫",
+      "pick": "雙",
+      "score": 10.578212428351
+    },
+    {
+      "track": "Phase2",
+      "rank": 6,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "雙",
+      "score": 10.576204394257
+    },
+    {
+      "track": "Phase2",
+      "rank": 7,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 10.570171934571
+    },
+    {
+      "track": "Phase2",
+      "rank": 8,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 10.538308224347
+    },
+    {
+      "track": "Phase2",
+      "rank": 9,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.566091580481
+    },
+    {
+      "track": "Phase12",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "單",
+      "score": 20.636662031464
+    },
+    {
+      "track": "Phase12",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-09",
+      "fixture": "多特蒙德 vs 勒沃庫森",
+      "pick": "雙",
+      "score": 10.699905341933
+    },
+    {
+      "track": "Phase12",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 10.689049419148
+    },
+    {
+      "track": "Phase12",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-06",
+      "fixture": "史特加 vs 法蘭克福",
+      "pick": "雙",
+      "score": 10.673852244704
+    },
+    {
+      "track": "Phase12",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-08",
+      "fixture": "霍芬海姆 vs 奧格斯堡",
+      "pick": "雙",
+      "score": 10.661610832179
+    },
+    {
+      "track": "Phase12",
+      "rank": 6,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "雙",
+      "score": 10.633584709125
+    },
+    {
+      "track": "Phase12",
+      "rank": 7,
+      "match_id": "BUNDESLIGA-2026-27-GW11-07",
+      "fixture": "弗賴堡 vs RB萊比錫",
+      "pick": "雙",
+      "score": 10.620823797205
+    },
+    {
+      "track": "Phase12",
+      "rank": 8,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 10.59302558272
+    },
+    {
+      "track": "Phase12",
+      "rank": 9,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.529419715156
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 0.2042777018
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-07",
+      "fixture": "弗賴堡 vs RB萊比錫",
+      "pick": "雙",
+      "score": 0.0794324334
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.0647773505
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "雙",
+      "score": 0.0640658454
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-08",
+      "fixture": "霍芬海姆 vs 奧格斯堡",
+      "pick": "雙",
+      "score": 0.0604981859
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 6,
+      "match_id": "BUNDESLIGA-2026-27-GW11-06",
+      "fixture": "史特加 vs 法蘭克福",
+      "pick": "雙",
+      "score": 0.0556753684
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 7,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 0.0529795074
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 8,
+      "match_id": "BUNDESLIGA-2026-27-GW11-09",
+      "fixture": "多特蒙德 vs 勒沃庫森",
+      "pick": "雙",
+      "score": 0.0361317515
+    },
+    {
+      "track": "P17 Proxy",
+      "rank": 9,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "單",
+      "score": 0.0215456391
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-08",
+      "fixture": "霍芬海姆 vs 奧格斯堡",
+      "pick": "單",
+      "score": 0.1686669229
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.1469787961
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "雙",
+      "score": 0.0995218899
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-09",
+      "fixture": "多特蒙德 vs 勒沃庫森",
+      "pick": "單",
+      "score": 0.09373072
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-06",
+      "fixture": "史特加 vs 法蘭克福",
+      "pick": "單",
+      "score": 0.0880048094
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 6,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "單",
+      "score": 0.0619172871
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 7,
+      "match_id": "BUNDESLIGA-2026-27-GW11-07",
+      "fixture": "弗賴堡 vs RB萊比錫",
+      "pick": "單",
+      "score": 0.0265933824
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 8,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 0.0185378124
+    },
+    {
+      "track": "P18 Proxy",
+      "rank": 9,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 0.0041287065
+    },
+    {
+      "track": "雙術同向敏感度",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.0647773505
+    },
+    {
+      "track": "雙術同向敏感度",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-04",
+      "fixture": "漢堡 vs 拜仁",
+      "pick": "雙",
+      "score": 0.0640658454
+    },
+    {
+      "track": "雙術同向敏感度",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-03",
+      "fixture": "科隆 vs 艾禾斯堡",
+      "pick": "單",
+      "score": 0.0215456391
+    },
+    {
+      "track": "雙術同向敏感度",
+      "rank": 4,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 0.0185378124
+    },
+    {
+      "track": "雙術同向敏感度",
+      "rank": 5,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 0.0041287065
+    },
+    {
+      "track": "三方 KEEP 敏感度",
+      "rank": 1,
+      "match_id": "BUNDESLIGA-2026-27-GW11-02",
+      "fixture": "柏德博恩 vs 沙爾克04",
+      "pick": "雙",
+      "score": 0.0647773505
+    },
+    {
+      "track": "三方 KEEP 敏感度",
+      "rank": 2,
+      "match_id": "BUNDESLIGA-2026-27-GW11-05",
+      "fixture": "美因茨 vs 柏林聯",
+      "pick": "雙",
+      "score": 0.0185378124
+    },
+    {
+      "track": "三方 KEEP 敏感度",
+      "rank": 3,
+      "match_id": "BUNDESLIGA-2026-27-GW11-01",
+      "fixture": "雲達不萊梅 vs 門興",
+      "pick": "雙",
+      "score": 0.0041287065
+    }
+  ]
+}
