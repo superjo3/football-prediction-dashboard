@@ -227,7 +227,7 @@
   function translate(text){
     let out=String(text??'');
     for(const [re,zh] of rules) out=out.replace(re,(_whole,prefix)=>prefix+zh);
-    out=out.replace(/(英超|德甲|西甲|義甲|法甲)\\s+\\1/g,'$1');
+    out=out.replace(/(英超|德甲|西甲|義甲|法甲)(?:\s*·\s*|\s+)\1/g,'$1');
     return out;
   }
   window.FOOTBALL_ZH_TW=Object.freeze({translate,lexicon:Object.freeze(lexicon)});
