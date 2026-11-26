@@ -100,3 +100,12 @@ verify_v2.py為本版固定基準；日後新增資料須新增相應驗證。ve
 ## EPL 固定單雙雙軌 V1（2026-11-12）
 
 英超 2026–27 單雙 A（GW11 R90-style MARKETPROXY 代理）＋B（R90 Math5-Q Shadow）**固定推論引擎**位於 `tools/epl_fixed_runner_v1/`，包含實際 `.joblib` 權重、固定先驗、GW11 CSV 輸入、完整基準 CSV 與測試。每次 GitHub push 都由 `.github/workflows/verify-epl-fixed-runner.yml` 自動驗證 10 個反後視／可重播測試，以及原封存 GW11 CSV 完全相同的 SHA-256。模型不會因前端 Dashboard 更新而重新訓練，也沒有重寫原始 Official Record。真實 GW12 等輪次仍須有可稽核的賽前資料來源；本執行器**不**是舊 R90 Exact 的重建。完整可攜歷史／推論封存 ZIP 另存於 ChatGPT Library `/R1_R2 Master/EPL_Fixed_Runner_V1_20261112/`。
+
+
+## 強制更新驗收：五大聯賽高賠率標示（2026-11-26）
+每次賽前同步（包含新輪次 overlay、各聯賽輪次頁、五大聯賽最新總覽）必須保留：
+1. 每場 1X2 / OU2.5 所選方向直接顯示封存價格；嚴格 >1.80 用既有琥珀底及標籤。等於 1.80 不觸發，門檻沿用原規格。
+2. 每輪獨立列出所有符合門檻的預測（不只 R1/R2/R3），最新總覽亦列出各聯賽清單；精選 R 位同樣顯示價格與標記。
+3. 逐場 1X2、OU2.5、AH 保留原始比較價；欠缺價格標 MISSING、PRE-KICK 尚未擷取標 PENDING，不推算單雙賠率、不回填終盤、不將混合盤口冒稱 Bet365。
+4. 發布前逐聯賽驗證：所選方向的有效價格數、>1.80 筆數、畫面高亮數、獨立清單筆數須一致；不通過不得宣布同步完成。保存原始封存，禁止改預測或重新訓練。
+5. 最新輪次 JS 使用共用 marketCell / highOddsSummary，切勿再用普通 cell 取代 1X2 / OU2.5。更新後更新 index.html 的 cache key；執行 `node tools/test_latest_high_odds.js`。
