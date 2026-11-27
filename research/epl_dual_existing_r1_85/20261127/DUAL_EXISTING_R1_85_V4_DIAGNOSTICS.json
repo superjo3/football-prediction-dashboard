@@ -1,0 +1,440 @@
+{
+  "schema": "EPL_DUAL_EXISTING_MODEL_R1_85_RESEARCH_V4",
+  "research_status": "EXPLORATORY_NOT_85_VALIDATED",
+  "date_taipei": "2026-11-27",
+  "research_scope": "Existing sealed A (Official R90-style recovered MARKETPROXY) and B (R90 Math5-Q Recovery Shadow) only. No new direction models, no retroactive forecast rewrite.",
+  "goal": "Sparse R1 >85% strict prospectively; 0-or-1 match per round; full PASS permitted.",
+  "source_blobs": [
+    {
+      "path": "data/packages/EPL_GW11_OFFICIAL_20261109.json",
+      "ref": "main",
+      "sha": "f673e47200a8f0cad3b9dad8535fc57996189ed2"
+    },
+    {
+      "path": "data/packages/EPL_GW11_SHADOW_20261109.json",
+      "ref": "main",
+      "sha": "1bbc3afd65dedc52663964b68360923d595950de"
+    },
+    {
+      "path": "data/settlement_pending/2026-11-23/EPL_GW11_20261124_FINAL_RESULT_ADDENDUM_REVIEW_V3.json",
+      "ref": "settlement-pending-20261123",
+      "sha": "a208283b7b6fb7d7fe886f74d608b998e5e0b1c3"
+    },
+    {
+      "path": "data/predictions_pending/2026-11-25/EPL_GW12_FIXED_V1_FORECAST.json",
+      "ref": "settlement-pending-20261123",
+      "sha": "0291e40007b4872b78543a5f9ab18a42007af3bf"
+    }
+  ],
+  "GW11": {
+    "status": "SETTLED",
+    "records": [
+      {
+        "match_id": "EPL-2026-27-GW11-01",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "actual": "雙",
+        "score": [
+          1,
+          1
+        ],
+        "hit_A": true,
+        "hit_B": true
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-02",
+        "home": "Bournemouth",
+        "away": "Nottingham Forest",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "actual": "雙",
+        "score": [
+          2,
+          0
+        ],
+        "hit_A": true,
+        "hit_B": true
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-03",
+        "home": "Aston Villa",
+        "away": "Sunderland",
+        "official": "單",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": false,
+        "actual": "雙",
+        "score": [
+          0,
+          0
+        ],
+        "hit_A": false,
+        "hit_B": true
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-04",
+        "home": "Chelsea",
+        "away": "Leeds United",
+        "official": "單",
+        "shadow": "雙",
+        "rank_A": 2,
+        "rank_B": null,
+        "agree": false,
+        "actual": "單",
+        "score": [
+          1,
+          4
+        ],
+        "hit_A": true,
+        "hit_B": false
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-05",
+        "home": "Coventry City",
+        "away": "Crystal Palace",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": 1,
+        "agree": true,
+        "actual": "單",
+        "score": [
+          3,
+          2
+        ],
+        "hit_A": false,
+        "hit_B": false
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-06",
+        "home": "Tottenham",
+        "away": "Ipswich Town",
+        "official": "單",
+        "shadow": "雙",
+        "rank_A": 3,
+        "rank_B": 2,
+        "agree": false,
+        "actual": "雙",
+        "score": [
+          2,
+          0
+        ],
+        "hit_A": false,
+        "hit_B": true
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-07",
+        "home": "Newcastle United",
+        "away": "Arsenal",
+        "official": "單",
+        "shadow": "單",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "actual": "雙",
+        "score": [
+          2,
+          2
+        ],
+        "hit_A": false,
+        "hit_B": false
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-08",
+        "home": "Hull City",
+        "away": "Brighton",
+        "official": "雙",
+        "shadow": "單",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": false,
+        "actual": "雙",
+        "score": [
+          2,
+          0
+        ],
+        "hit_A": true,
+        "hit_B": false
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-09",
+        "home": "Liverpool",
+        "away": "Manchester United",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": 3,
+        "agree": true,
+        "actual": "雙",
+        "score": [
+          4,
+          0
+        ],
+        "hit_A": true,
+        "hit_B": true
+      },
+      {
+        "match_id": "EPL-2026-27-GW11-10",
+        "home": "Brentford",
+        "away": "Everton",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": 1,
+        "rank_B": null,
+        "agree": true,
+        "actual": "雙",
+        "score": [
+          4,
+          0
+        ],
+        "hit_A": true,
+        "hit_B": true
+      }
+    ]
+  },
+  "GW12": {
+    "status": "PREMATCH_PROVISIONAL_UNSETTLED",
+    "records": [
+      {
+        "match_id": "EPL-2026-27-GW12-01",
+        "home": "Nottingham Forest",
+        "away": "Chelsea",
+        "official": "單",
+        "shadow": "單",
+        "rank_A": null,
+        "rank_B": 1,
+        "agree": true,
+        "official_margin_proxy": 0.010684374152161724,
+        "shadow_margin_proxy": 0.000693342565139976,
+        "shadow_Q_not_calibrated": 0.5371672228737564
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-02",
+        "home": "Manchester United",
+        "away": "Brentford",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "official_margin_proxy": 0.06109276705083744,
+        "shadow_margin_proxy": 0.006435478336468736,
+        "shadow_Q_not_calibrated": 0.47665505558104576
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-03",
+        "home": "Leeds United",
+        "away": "Coventry City",
+        "official": "單",
+        "shadow": "單",
+        "rank_A": null,
+        "rank_B": 3,
+        "agree": true,
+        "official_margin_proxy": 0.05606921921380181,
+        "shadow_margin_proxy": 0.0007334917208480229,
+        "shadow_Q_not_calibrated": 0.5086998752580721
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-04",
+        "home": "Ipswich Town",
+        "away": "Aston Villa",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "official_margin_proxy": 0.043794428648378736,
+        "shadow_margin_proxy": 0.0060305402469669755,
+        "shadow_Q_not_calibrated": 0.4962913433526135
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-05",
+        "home": "Everton",
+        "away": "Liverpool",
+        "official": "雙",
+        "shadow": "單",
+        "rank_A": 1,
+        "rank_B": null,
+        "agree": false,
+        "official_margin_proxy": 0.07239698690322482,
+        "shadow_margin_proxy": 0.007310069978358702,
+        "shadow_Q_not_calibrated": 0.4548272346092313
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-06",
+        "home": "Sunderland",
+        "away": "Tottenham",
+        "official": "雙",
+        "shadow": "單",
+        "rank_A": 3,
+        "rank_B": null,
+        "agree": false,
+        "official_margin_proxy": 0.02239698690322478,
+        "shadow_margin_proxy": 0.0010980778204725539,
+        "shadow_Q_not_calibrated": 0.4519709992983791
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-07",
+        "home": "Crystal Palace",
+        "away": "Hull City",
+        "official": "雙",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": true,
+        "official_margin_proxy": 0.03269793799748438,
+        "shadow_margin_proxy": 0.013065675985763636,
+        "shadow_Q_not_calibrated": 0.4482455122700529
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-08",
+        "home": "Fulham",
+        "away": "Bournemouth",
+        "official": "雙",
+        "shadow": "單",
+        "rank_A": 2,
+        "rank_B": null,
+        "agree": false,
+        "official_margin_proxy": 0.06681562584783829,
+        "shadow_margin_proxy": 0.00035666453704186196,
+        "shadow_Q_not_calibrated": 0.4931423298777577
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-09",
+        "home": "Brighton",
+        "away": "Newcastle United",
+        "official": "單",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": 2,
+        "agree": false,
+        "official_margin_proxy": 0.017724347160826825,
+        "shadow_margin_proxy": 0.0011366542034848548,
+        "shadow_Q_not_calibrated": 0.5101238632613088
+      },
+      {
+        "match_id": "EPL-2026-27-GW12-10",
+        "home": "Arsenal",
+        "away": "Manchester City",
+        "official": "單",
+        "shadow": "雙",
+        "rank_A": null,
+        "rank_B": null,
+        "agree": false,
+        "official_margin_proxy": 0.015673081722196502,
+        "shadow_margin_proxy": 0.00045098337252813536,
+        "shadow_Q_not_calibrated": 0.49184347174351134
+      }
+    ]
+  },
+  "simple_cross_model_diagnostics": [
+    {
+      "id": "A_R1__B_AGREE",
+      "name": "Official R1且Shadow同方向",
+      "GW11_settled": {
+        "matches": [
+          "EPL-2026-27-GW11-10"
+        ],
+        "n": 1,
+        "hits": 1,
+        "rate_pct": 100
+      },
+      "GW12_unsettled": {
+        "matches": [],
+        "n": 0,
+        "status": "PREMATCH_PROVISIONAL_UNSETTLED"
+      }
+    },
+    {
+      "id": "B_R1__A_AGREE",
+      "name": "Shadow R1且Official同方向",
+      "GW11_settled": {
+        "matches": [
+          "EPL-2026-27-GW11-05"
+        ],
+        "n": 1,
+        "hits": 0,
+        "rate_pct": 0
+      },
+      "GW12_unsettled": {
+        "matches": [
+          "EPL-2026-27-GW12-01"
+        ],
+        "n": 1,
+        "status": "PREMATCH_PROVISIONAL_UNSETTLED"
+      }
+    },
+    {
+      "id": "EITHER_R1__AGREE",
+      "name": "任一模型R1且兩模型同方向",
+      "GW11_settled": {
+        "matches": [
+          "EPL-2026-27-GW11-05",
+          "EPL-2026-27-GW11-10"
+        ],
+        "n": 2,
+        "hits": 1,
+        "rate_pct": 50
+      },
+      "GW12_unsettled": {
+        "matches": [
+          "EPL-2026-27-GW12-01"
+        ],
+        "n": 1,
+        "status": "PREMATCH_PROVISIONAL_UNSETTLED"
+      }
+    },
+    {
+      "id": "EITHER_R123__AGREE",
+      "name": "任一模型R1/R2/R3且兩模型同方向",
+      "GW11_settled": {
+        "matches": [
+          "EPL-2026-27-GW11-05",
+          "EPL-2026-27-GW11-09",
+          "EPL-2026-27-GW11-10"
+        ],
+        "n": 3,
+        "hits": 2,
+        "rate_pct": 66.66666666666667
+      },
+      "GW12_unsettled": {
+        "matches": [
+          "EPL-2026-27-GW12-01",
+          "EPL-2026-27-GW12-03"
+        ],
+        "n": 2,
+        "status": "PREMATCH_PROVISIONAL_UNSETTLED"
+      }
+    },
+    {
+      "id": "BOTH_RANKED__AGREE",
+      "name": "兩模型都有R1/R2/R3且同方向",
+      "GW11_settled": {
+        "matches": [],
+        "n": 0,
+        "hits": 0,
+        "rate_pct": null
+      },
+      "GW12_unsettled": {
+        "matches": [],
+        "n": 0,
+        "status": "PREMATCH_PROVISIONAL_UNSETTLED"
+      }
+    }
+  ],
+  "version_limitation": "Recovered fixed engine only has verified two-track live outputs from GW11 and GW12; original historical R90 Exact is not the same model. Existing historical 4180-feature cache cannot be represented as originally sealed A+B forecasts. One settled round insufficient to validate 85%.",
+  "alpha_risk": "These diagnostics were inspected after GW11 results and must not be treated as blind backtest or proof of confidence calibration.",
+  "promotion": "NONE",
+  "dashboard_change": "NONE",
+  "official_model_change": "NONE",
+  "GW11_GW12_original_seals_unchanged": true
+}
