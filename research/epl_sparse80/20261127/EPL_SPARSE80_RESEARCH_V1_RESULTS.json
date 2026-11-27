@@ -1,0 +1,788 @@
+{
+  "schema": "EPL_PARITY_SPARSE80_RESEARCH_V1",
+  "status": "RESEARCH_REPLAY_ONLY_NOT_PREMATCH_FORWARD",
+  "data": {
+    "games": 4180,
+    "seasons": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "season_dates": [
+      {
+        "season": 2015,
+        "first": "2015-08-08",
+        "last": "2016-05-17"
+      },
+      {
+        "season": 2016,
+        "first": "2016-08-13",
+        "last": "2017-05-21"
+      },
+      {
+        "season": 2017,
+        "first": "2017-08-11",
+        "last": "2018-05-13"
+      },
+      {
+        "season": 2018,
+        "first": "2018-08-10",
+        "last": "2019-05-12"
+      },
+      {
+        "season": 2019,
+        "first": "2019-08-09",
+        "last": "2020-07-26"
+      },
+      {
+        "season": 2020,
+        "first": "2020-09-12",
+        "last": "2021-05-23"
+      },
+      {
+        "season": 2021,
+        "first": "2021-08-13",
+        "last": "2022-05-22"
+      },
+      {
+        "season": 2022,
+        "first": "2022-08-05",
+        "last": "2023-05-28"
+      },
+      {
+        "season": 2023,
+        "first": "2023-08-11",
+        "last": "2024-05-19"
+      },
+      {
+        "season": 2024,
+        "first": "2024-08-16",
+        "last": "2025-05-25"
+      },
+      {
+        "season": 2025,
+        "first": "2025-08-15",
+        "last": "2026-05-24"
+      }
+    ],
+    "missing_market_by_year": {
+      "p_over25": {
+        "2015": 380,
+        "2016": 380,
+        "2017": 380,
+        "2018": 380,
+        "2019": 0,
+        "2020": 0,
+        "2021": 1,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "market_lambda": {
+        "2015": 380,
+        "2016": 380,
+        "2017": 380,
+        "2018": 380,
+        "2019": 0,
+        "2020": 0,
+        "2021": 1,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0
+      },
+      "ah_line": {
+        "2015": 380,
+        "2016": 380,
+        "2017": 380,
+        "2018": 380,
+        "2019": 0,
+        "2020": 0,
+        "2021": 0,
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 1
+      }
+    },
+    "artifact_sha256": "51a007f185c4036b3c6e17b1e33b28ebcf82b72cf04e913fc8c2288e429b6d6e",
+    "outcomes_separated": true,
+    "target_score_features_excluded": true,
+    "feature_provenance_not_independently_recaptured": true
+  },
+  "protocol": {
+    "fit_for_2021": "2015-2020",
+    "fit_for_2022": "2015-2021",
+    "fit_for_2023": "2015-2022",
+    "fit_for_2024": "2015-2023",
+    "fit_for_2025": "2015-2024",
+    "selector_hyperparameters_tuned_only_on": "2021-23 model predictions",
+    "untouched_holdout_seasons": [
+      2024,
+      2025
+    ],
+    "high_confidence_sample_rule": "validation >=40 bets and >=15 active rounds",
+    "selection_objective": "max validation Wilson 95% LOWER bound, tie-break by accuracy and coverage",
+    "per_week_cap": 3,
+    "pass": "No match exceeds gate threshold => 0 bets that round",
+    "pre_declared_comparison_models": [
+      "logit_market",
+      "logit_form",
+      "logit_all",
+      "hgb_all",
+      "rf_all"
+    ],
+    "pre_declared_gates": [
+      "any",
+      "agree4",
+      "agree5",
+      "draw_high",
+      "low_over"
+    ],
+    "confidence_thresholds": [
+      0,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.1,
+      0.125
+    ],
+    "note": "Only archived reconstructed features, NO training on 2026-27 GW11 or GW12 results. Holdout not used in search."
+  },
+  "validation": {
+    "num_candidates": 357,
+    "eligible_candidates_with_min_sample": 267,
+    "top_10_pre_holdout": [
+      {
+        "id": "logit_form__draw_high__0.000",
+        "h": 147,
+        "n": 277,
+        "rate": 0.5307,
+        "ci95": [
+          0.4719,
+          0.5886
+        ],
+        "coverage": 0.8099
+      },
+      {
+        "id": "median__agree4__0.020",
+        "h": 172,
+        "n": 329,
+        "rate": 0.5228,
+        "ci95": [
+          0.4689,
+          0.5762
+        ],
+        "coverage": 0.962
+      },
+      {
+        "id": "logit_all__draw_high__0.010",
+        "h": 126,
+        "n": 237,
+        "rate": 0.5316,
+        "ci95": [
+          0.4681,
+          0.5942
+        ],
+        "coverage": 0.693
+      },
+      {
+        "id": "logit_all__draw_high__0.040",
+        "h": 73,
+        "n": 132,
+        "rate": 0.553,
+        "ci95": [
+          0.4679,
+          0.6352
+        ],
+        "coverage": 0.386
+      },
+      {
+        "id": "median__agree4__0.000",
+        "h": 178,
+        "n": 342,
+        "rate": 0.5205,
+        "ci95": [
+          0.4676,
+          0.5729
+        ],
+        "coverage": 1.0
+      },
+      {
+        "id": "median__agree4__0.010",
+        "h": 178,
+        "n": 342,
+        "rate": 0.5205,
+        "ci95": [
+          0.4676,
+          0.5729
+        ],
+        "coverage": 1.0
+      },
+      {
+        "id": "median__any__0.030",
+        "h": 157,
+        "n": 300,
+        "rate": 0.5233,
+        "ci95": [
+          0.4669,
+          0.5792
+        ],
+        "coverage": 0.8772
+      },
+      {
+        "id": "median__agree4__0.030",
+        "h": 153,
+        "n": 292,
+        "rate": 0.524,
+        "ci95": [
+          0.4668,
+          0.5806
+        ],
+        "coverage": 0.8538
+      },
+      {
+        "id": "hgb_all__any__0.070",
+        "h": 122,
+        "n": 230,
+        "rate": 0.5304,
+        "ci95": [
+          0.466,
+          0.5939
+        ],
+        "coverage": 0.6725
+      },
+      {
+        "id": "logit_all__low_over__0.040",
+        "h": 67,
+        "n": 121,
+        "rate": 0.5537,
+        "ci95": [
+          0.4649,
+          0.6393
+        ],
+        "coverage": 0.3538
+      }
+    ],
+    "validation_best": {
+      "id": "logit_form__draw_high__0.000",
+      "h": 147,
+      "n": 277,
+      "rate": 0.5307,
+      "ci95": [
+        0.4719,
+        0.5886
+      ],
+      "coverage_of_R123_slots": 0.8099,
+      "rounds_with_any": 110,
+      "rounds_total": 114,
+      "ranks": {
+        "1": {
+          "hit": 53,
+          "n": 110,
+          "rate": 0.4818
+        },
+        "2": {
+          "hit": 53,
+          "n": 93,
+          "rate": 0.5699
+        },
+        "3": {
+          "hit": 41,
+          "n": 74,
+          "rate": 0.5541
+        }
+      },
+      "odd": 105,
+      "even": 172,
+      "model": "logit_form",
+      "gate": "draw_high",
+      "threshold": 0
+    },
+    "validation_any80_min40": 0
+  },
+  "holdout_selected": {
+    "id": "logit_form__draw_high__0.000",
+    "h": 69,
+    "n": 163,
+    "rate": 0.4233,
+    "ci95": [
+      0.3501,
+      0.5001
+    ],
+    "coverage_of_R123_slots": 0.7149,
+    "rounds_with_any": 68,
+    "rounds_total": 76,
+    "ranks": {
+      "1": {
+        "hit": 29,
+        "n": 68,
+        "rate": 0.4265
+      },
+      "2": {
+        "hit": 20,
+        "n": 56,
+        "rate": 0.3571
+      },
+      "3": {
+        "hit": 20,
+        "n": 39,
+        "rate": 0.5128
+      }
+    },
+    "odd": 86,
+    "even": 77
+  },
+  "holdout_comparisons": [
+    {
+      "id": "logit_market_any_0.00",
+      "h": 105,
+      "n": 228,
+      "rate": 0.4605,
+      "ci95": [
+        0.397,
+        0.5253
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 40,
+          "n": 76,
+          "rate": 0.5263
+        },
+        "2": {
+          "hit": 31,
+          "n": 76,
+          "rate": 0.4079
+        },
+        "3": {
+          "hit": 34,
+          "n": 76,
+          "rate": 0.4474
+        }
+      },
+      "odd": 72,
+      "even": 156
+    },
+    {
+      "id": "logit_form_any_0.00",
+      "h": 117,
+      "n": 228,
+      "rate": 0.5132,
+      "ci95": [
+        0.4486,
+        0.5773
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 43,
+          "n": 76,
+          "rate": 0.5658
+        },
+        "2": {
+          "hit": 38,
+          "n": 76,
+          "rate": 0.5
+        },
+        "3": {
+          "hit": 36,
+          "n": 76,
+          "rate": 0.4737
+        }
+      },
+      "odd": 88,
+      "even": 140
+    },
+    {
+      "id": "logit_all_any_0.00",
+      "h": 114,
+      "n": 228,
+      "rate": 0.5,
+      "ci95": [
+        0.4356,
+        0.5644
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 35,
+          "n": 76,
+          "rate": 0.4605
+        },
+        "2": {
+          "hit": 40,
+          "n": 76,
+          "rate": 0.5263
+        },
+        "3": {
+          "hit": 39,
+          "n": 76,
+          "rate": 0.5132
+        }
+      },
+      "odd": 114,
+      "even": 114
+    },
+    {
+      "id": "hgb_all_any_0.00",
+      "h": 99,
+      "n": 228,
+      "rate": 0.4342,
+      "ci95": [
+        0.3715,
+        0.4991
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 32,
+          "n": 76,
+          "rate": 0.4211
+        },
+        "2": {
+          "hit": 34,
+          "n": 76,
+          "rate": 0.4474
+        },
+        "3": {
+          "hit": 33,
+          "n": 76,
+          "rate": 0.4342
+        }
+      },
+      "odd": 110,
+      "even": 118
+    },
+    {
+      "id": "rf_all_any_0.00",
+      "h": 92,
+      "n": 228,
+      "rate": 0.4035,
+      "ci95": [
+        0.3419,
+        0.4683
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 29,
+          "n": 76,
+          "rate": 0.3816
+        },
+        "2": {
+          "hit": 34,
+          "n": 76,
+          "rate": 0.4474
+        },
+        "3": {
+          "hit": 29,
+          "n": 76,
+          "rate": 0.3816
+        }
+      },
+      "odd": 93,
+      "even": 135
+    },
+    {
+      "id": "mean_any_0.00",
+      "h": 102,
+      "n": 228,
+      "rate": 0.4474,
+      "ci95": [
+        0.3842,
+        0.5122
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 38,
+          "n": 76,
+          "rate": 0.5
+        },
+        "2": {
+          "hit": 33,
+          "n": 76,
+          "rate": 0.4342
+        },
+        "3": {
+          "hit": 31,
+          "n": 76,
+          "rate": 0.4079
+        }
+      },
+      "odd": 100,
+      "even": 128
+    },
+    {
+      "id": "median_any_0.00",
+      "h": 106,
+      "n": 228,
+      "rate": 0.4649,
+      "ci95": [
+        0.4013,
+        0.5297
+      ],
+      "coverage_of_R123_slots": 1.0,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 36,
+          "n": 76,
+          "rate": 0.4737
+        },
+        "2": {
+          "hit": 36,
+          "n": 76,
+          "rate": 0.4737
+        },
+        "3": {
+          "hit": 34,
+          "n": 76,
+          "rate": 0.4474
+        }
+      },
+      "odd": 100,
+      "even": 128
+    },
+    {
+      "id": "median_agree5_0.00",
+      "h": 84,
+      "n": 188,
+      "rate": 0.4468,
+      "ci95": [
+        0.3775,
+        0.5182
+      ],
+      "coverage_of_R123_slots": 0.8246,
+      "rounds_with_any": 73,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 31,
+          "n": 73,
+          "rate": 0.4247
+        },
+        "2": {
+          "hit": 35,
+          "n": 67,
+          "rate": 0.5224
+        },
+        "3": {
+          "hit": 18,
+          "n": 48,
+          "rate": 0.375
+        }
+      },
+      "odd": 62,
+      "even": 126
+    },
+    {
+      "id": "median_agree4_0.00",
+      "h": 104,
+      "n": 227,
+      "rate": 0.4581,
+      "ci95": [
+        0.3946,
+        0.5231
+      ],
+      "coverage_of_R123_slots": 0.9956,
+      "rounds_with_any": 76,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 35,
+          "n": 76,
+          "rate": 0.4605
+        },
+        "2": {
+          "hit": 35,
+          "n": 76,
+          "rate": 0.4605
+        },
+        "3": {
+          "hit": 34,
+          "n": 75,
+          "rate": 0.4533
+        }
+      },
+      "odd": 97,
+      "even": 130
+    },
+    {
+      "id": "median_agree5_0.03",
+      "h": 54,
+      "n": 113,
+      "rate": 0.4779,
+      "ci95": [
+        0.388,
+        0.5692
+      ],
+      "coverage_of_R123_slots": 0.4956,
+      "rounds_with_any": 59,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 26,
+          "n": 59,
+          "rate": 0.4407
+        },
+        "2": {
+          "hit": 21,
+          "n": 36,
+          "rate": 0.5833
+        },
+        "3": {
+          "hit": 7,
+          "n": 18,
+          "rate": 0.3889
+        }
+      },
+      "odd": 37,
+      "even": 76
+    },
+    {
+      "id": "median_agree5_0.05",
+      "h": 17,
+      "n": 35,
+      "rate": 0.4857,
+      "ci95": [
+        0.3299,
+        0.6443
+      ],
+      "coverage_of_R123_slots": 0.1535,
+      "rounds_with_any": 26,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 11,
+          "n": 26,
+          "rate": 0.4231
+        },
+        "2": {
+          "hit": 5,
+          "n": 6,
+          "rate": 0.8333
+        },
+        "3": {
+          "hit": 1,
+          "n": 3,
+          "rate": 0.3333
+        }
+      },
+      "odd": 12,
+      "even": 23
+    },
+    {
+      "id": "median_agree4_0.03",
+      "h": 68,
+      "n": 140,
+      "rate": 0.4857,
+      "ci95": [
+        0.4044,
+        0.5678
+      ],
+      "coverage_of_R123_slots": 0.614,
+      "rounds_with_any": 67,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 30,
+          "n": 67,
+          "rate": 0.4478
+        },
+        "2": {
+          "hit": 26,
+          "n": 48,
+          "rate": 0.5417
+        },
+        "3": {
+          "hit": 12,
+          "n": 25,
+          "rate": 0.48
+        }
+      },
+      "odd": 55,
+      "even": 85
+    },
+    {
+      "id": "median_agree4_0.05",
+      "h": 22,
+      "n": 40,
+      "rate": 0.55,
+      "ci95": [
+        0.3983,
+        0.6929
+      ],
+      "coverage_of_R123_slots": 0.1754,
+      "rounds_with_any": 30,
+      "rounds_total": 76,
+      "ranks": {
+        "1": {
+          "hit": 15,
+          "n": 30,
+          "rate": 0.5
+        },
+        "2": {
+          "hit": 6,
+          "n": 7,
+          "rate": 0.8571
+        },
+        "3": {
+          "hit": 1,
+          "n": 3,
+          "rate": 0.3333
+        }
+      },
+      "odd": 16,
+      "even": 24
+    }
+  ],
+  "holdout_always_even_all": {
+    "h": 384,
+    "n": 760,
+    "rate": 0.5053
+  },
+  "holdout_always_even_first3": {
+    "hits": 123,
+    "n": 228,
+    "rate": 0.5394736842105263
+  },
+  "not_promoted": true,
+  "goal": "Qualified R1+R2+R3 accuracy >80%, adequate coverage and prospective confirmation",
+  "achieved_validated_80": false,
+  "warnings": [
+    "Earlier years 2015-18 lack OU/AH features; imputation not real odds",
+    "Historical feature source/cache not independently audited for chronology and exact bookmaker timestamps",
+    "R90 Shadow GW11 model weights were originally fit using this old historical cache: do not backtest original Shadow on held-out 2024-25 as independent test",
+    "No post-match reranking of existing 2026-27 Official or Shadow results",
+    "Historical held-out seasons may still be non-blind due to earlier research; only NEW prospective future rounds can certify 80%."
+  ]
+}
