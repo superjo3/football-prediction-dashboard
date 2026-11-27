@@ -1,0 +1,107 @@
+{
+  "record_id": "BUNDESLIGA-2026-27-GW11-20261127-SPARSE-TIERS-COMPATIBILITY",
+  "parent_record_id": "BUNDESLIGA-2026-27-GW11-20261125-PARTIAL-PREMATCH-REPRO",
+  "league": "BUNDESLIGA",
+  "gw": 11,
+  "date_taipei": "2026-11-27",
+  "status": "RESEARCH_ONLY / NOT_RUN_MISSING_COMPATIBLE_INPUT",
+  "source": "/R1_R2 Master/BUNDESLIGA_SPARSE_TIERS_POLICY_GW11_20261127.md",
+  "historical_scope": "2024–25 + 2025–26 historical exploratory replay; not prospective",
+  "tiers": [
+    {
+      "id": "ULTRA",
+      "name": "金選 ULTRA",
+      "rule": "S4",
+      "hits": 24,
+      "n": 26,
+      "condition": "共同條件＋P18 FOOT_TIME 同主方向",
+      "status": "NOT_RUN_MISSING_COMPATIBLE_INPUT",
+      "confirmed_keep": 0,
+      "eligible_count": null,
+      "ranked_picks": [],
+      "forward_hits": 0,
+      "forward_n": 0,
+      "settlement_status": "NOT_RUN"
+    },
+    {
+      "id": "PLUS",
+      "name": "高勝率精選 PLUS",
+      "rule": "S1／S4／S6 至少兩條通過",
+      "hits": 35,
+      "n": 40,
+      "condition": "同場至少兩條有效通過；缺值不能當通過",
+      "status": "NOT_RUN_MISSING_COMPATIBLE_INPUT",
+      "confirmed_keep": 0,
+      "eligible_count": null,
+      "ranked_picks": [],
+      "forward_hits": 0,
+      "forward_n": 0,
+      "settlement_status": "NOT_RUN"
+    },
+    {
+      "id": "SPARSE",
+      "name": "一般精選 Sparse",
+      "rule": "S6",
+      "hits": 39,
+      "n": 48,
+      "condition": "共同條件＋去水和局機率 ≤ 29%",
+      "status": "NOT_RUN_MISSING_COMPATIBLE_INPUT",
+      "confirmed_keep": 0,
+      "eligible_count": null,
+      "ranked_picks": [],
+      "forward_hits": 0,
+      "forward_n": 0,
+      "settlement_status": "NOT_RUN"
+    },
+    {
+      "id": "S1",
+      "name": "S1 獨立研究",
+      "rule": "S1",
+      "hits": 27,
+      "n": 32,
+      "condition": "共同條件＋去水大2.5機率 ≥ 55%",
+      "status": "NOT_RUN_MISSING_COMPATIBLE_INPUT",
+      "confirmed_keep": 0,
+      "eligible_count": null,
+      "ranked_picks": [],
+      "forward_hits": 0,
+      "forward_n": 0,
+      "settlement_status": "NOT_RUN"
+    },
+    {
+      "id": "P17_P18",
+      "name": "原 P17 × P18 共振",
+      "rule": "Phase30 組內多數",
+      "hits": 35,
+      "n": 45,
+      "condition": "原 Phase30 組內多數與原 R1/R2；不以代理替代",
+      "status": "NOT_RUN_MISSING_COMPATIBLE_INPUT",
+      "confirmed_keep": 0,
+      "eligible_count": null,
+      "ranked_picks": [],
+      "forward_hits": 0,
+      "forward_n": 0,
+      "settlement_status": "NOT_RUN"
+    }
+  ],
+  "diagnostics": [
+    {
+      "fixture": "史特加 vs 法蘭克福",
+      "supplement_rank": "R2",
+      "direction": "雙",
+      "AHh": -0.75,
+      "pOver25": 0.7504761905,
+      "pDraw": 0.2091177982,
+      "status": "待核：數值條件通過，原順位、P17 組內多數及 P18 FOOT_TIME 未驗證"
+    },
+    {
+      "fixture": "漢堡 vs 拜仁",
+      "supplement_rank": "R1",
+      "direction": "單",
+      "AHh": 2,
+      "status": "不符合 S1/S4/S6 AH 上限（亦不符合 PLUS）；原共振不作判定"
+    }
+  ],
+  "policy": "# 德甲 Sparse Selector 固定觀察規格｜2026-11-27\n\n使用者指定保留金選 ULTRA（S4）、高勝率精選 PLUS（S1/S4/S6 至少兩條通過）、一般精選 Sparse（S6），另保留 S1 及 Phase30 原 P17×P18 組內多數共振。全部為獨立 WATCH/TEST；不升級或改動正式模型，不覆寫歷史。每輪賽前固定列出五線的 R1/R2、觸發與否、逐場方向、有效樣本、PASS/NOT_RUN；Sparse 只篩原 R1/R2，不補名額，R3 不適用。普通各模型仍輸出 R1/R2/R3。各線可全 PASS。獨立前推結算，未執行不得混入命中分母，保留重疊場次，不把相關策略當獨立證據。歷史回放不計入前推勝率。\n\n## 凍結規則（Phase53 原規格）\n- 主方向：AHh >= +1.5 判單，否則雙；原 Phase2 rank <= 2；P17 三張票（FOOTBALL_BAZI:A_older、FOOTBALL_MEIHUA:A_older、FOOTBALL_ZIWEI:A_older）完整且多數同主方向；AHh <= +1.5。不得換成 P17 FOOTBALL_TRIPLE_ASTRO 代理或 Phase49 補充排名。\n- S1：上述共同條件且去水大2.5機率 >= 0.55。2024–26：27/32。\n- ULTRA S4：上述共同條件且 P18 FOOT_TIME:DIRECT:A_2019chart_2021fit_2022gate 單一足球/時間對照模型同主方向。2024–26：24/26。\n- PLUS：S1、S4、S6 同場至少兩條有效通過；缺值不能當通過，未能確定結果標 NOT_RUN。2024–26：35/40。\n- Sparse S6：上述共同條件且去水和局機率 <= 0.29。2024–26：39/48。\n- 原 P17×P18：依 Phase30 原組內多數規格與原 R1/R2，未完整恢復投票實作，不以代理替代。2024–26：35/45。\n- 歷史條件皆為探索後選，非未來保證。參照 `Bundesliga_Phase53_Sparse_Robustness_20261127.zip` README、run.py；原 Phase30 報告。\n\n## GW11 賽前相容性檢查\n來源：2026-11-25 封存 `Bundesliga_GW11_20261125_Partial_Prematch_Repro.zip` 與 2026-11-26 `Bundesliga_GW11_R123_Supplement_20261126.zip`。原 Phase2 V1 信心分數缺失，補充順位使用 Phase49 代理。P17/P18 GW11 是額外缺值敏感度代理且不是原組內多數與原 FOOT_TIME。五線均 NOT_RUN_MISSING_COMPATIBLE_INPUT；確認 KEEP=0，真實合格數未知，非已完整驗證後全PASS，不能計輸贏。\n補充順位僅供數值預篩：R1 漢堡 vs 拜仁，AHh +2.0，不符合 S1/S4/S6 的上限，故亦不符合 PLUS（此排除與原順位無關）。R2 史特加 vs 法蘭克福，AHh -0.75，去水大2.5 0.7504761905、和局 0.2091177982，主方向雙，數值條件皆符合；原順位和 P17 組內多數/P18 FOOT_TIME 未驗證，因此只能列待核候選，不封存為任何金選。不得把 GW11 P17 Proxy 雙或 P18 Proxy 單當作原模型輸入。其餘比賽不以補充排名強行宣告原規則 PASS。未執行預測、未修改網站。",
+  "counts_as_official_forward_result": false
+}
