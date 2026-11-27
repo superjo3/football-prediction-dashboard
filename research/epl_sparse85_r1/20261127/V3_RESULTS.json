@@ -1,0 +1,2026 @@
+{
+  "schema": "EPL_R1_SPARSE_85_MARKET_FORM_REGIMES_V3",
+  "status": "RESEARCH_REPLAY_ONLY_NOT_PROMOTED",
+  "research_date_taipei": "2026-11-27",
+  "goal": "at most one selected high-confidence R1; whole-round PASS allowed; >85% long-run new pre-match walk-forward accuracy",
+  "data": {
+    "n_full_cache": 4180,
+    "n_used": 2280,
+    "target_seasons": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "source_cache": "provenance/EPL_Parity_History_FeatureCache_4180.pkl",
+    "source_sha256": "51a007f185c4036b3c6e17b1e33b28ebcf82b72cf04e913fc8c2288e429b6d6e",
+    "pre_match_fields": [
+      "p_draw",
+      "p_over25",
+      "market_lambda",
+      "fav_prob",
+      "favorite_delta",
+      "ah_abs",
+      "home_goal_form",
+      "away_goal_form",
+      "goal_form_sum",
+      "odd_form_mean",
+      "odd_form_spread",
+      "odd_form_sum10",
+      "league_odd_100",
+      "odd_streak_sum",
+      "odd_streak_absdiff",
+      "rest_diff"
+    ]
+  },
+  "methods": {
+    "discovery_seasons": [
+      2020,
+      2021
+    ],
+    "validation_seasons": [
+      2022,
+      2023
+    ],
+    "reused_benchmark_seasons": [
+      2024,
+      2025
+    ],
+    "candidate_gates": 10392,
+    "rules_with_at_least_18_discovery_picks": 16508,
+    "directions": "both single/odd and double/even",
+    "gate_type": "single or intersection of two different pre-match features; predeclared thresholds",
+    "selected_by": "highest Wilson lower bound on discovery only; validation and benchmark never used for rule selection",
+    "rank_within_week": "For predicted EVEN choose highest draw probability; for predicted ODD choose lowest draw probability; tie break stable sorted fixture order",
+    "qualification": "no eligible match in week -> PASS, max 1 R1 per matchweek",
+    "can_certify_85": false
+  },
+  "highest_discovery_rate_with_n18": {
+    "rate": 0.84211,
+    "rule": "goal_form_sum>=5.5 & odd_form_mean>=0.6",
+    "n": 19
+  },
+  "number_discovery_85_rules": 0,
+  "tiny_exploratory_85_not_eligible": {
+    "count": 75,
+    "best_rule": "odd_form_sum10<=0.9 & odd_streak_sum>=2",
+    "direction": "雙",
+    "discovery": {
+      "hit": 13,
+      "n": 14,
+      "accuracy": 0.92857,
+      "ci95": [
+        0.68531,
+        0.98728
+      ],
+      "per_season": [
+        {
+          "season": 2020,
+          "h": 6,
+          "n": 7
+        },
+        {
+          "season": 2021,
+          "h": 7,
+          "n": 7
+        }
+      ],
+      "pass_rounds": 62,
+      "picks": [
+        {
+          "season": 2020,
+          "round": 2,
+          "fixture": "Southampton - Tottenham",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2863
+        },
+        {
+          "season": 2020,
+          "round": 3,
+          "fixture": "Liverpool - Arsenal",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.1997
+        },
+        {
+          "season": 2020,
+          "round": 6,
+          "fixture": "Wolves - Newcastle",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2727
+        },
+        {
+          "season": 2020,
+          "round": 8,
+          "fixture": "Brighton - Burnley",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2703
+        },
+        {
+          "season": 2020,
+          "round": 26,
+          "fixture": "Leicester - Arsenal",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2798
+        },
+        {
+          "season": 2020,
+          "round": 27,
+          "fixture": "Chelsea - Everton",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2364
+        },
+        {
+          "season": 2020,
+          "round": 32,
+          "fixture": "Man United - Burnley",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.1808
+        },
+        {
+          "season": 2021,
+          "round": 5,
+          "fixture": "Newcastle - Leeds",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2656
+        },
+        {
+          "season": 2021,
+          "round": 16,
+          "fixture": "Leicester - Newcastle",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2308
+        },
+        {
+          "season": 2021,
+          "round": 27,
+          "fixture": "Chelsea - Leicester",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2005
+        },
+        {
+          "season": 2021,
+          "round": 29,
+          "fixture": "Brighton - Liverpool",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.217
+        },
+        {
+          "season": 2021,
+          "round": 30,
+          "fixture": "Liverpool - Man United",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.1892
+        },
+        {
+          "season": 2021,
+          "round": 31,
+          "fixture": "Man United - Leicester",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2105
+        },
+        {
+          "season": 2021,
+          "round": 34,
+          "fixture": "Brighton - Southampton",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2806
+        }
+      ]
+    },
+    "validation": {
+      "hit": 8,
+      "n": 19,
+      "accuracy": 0.42105,
+      "ci95": [
+        0.23142,
+        0.63724
+      ],
+      "per_season": [
+        {
+          "season": 2022,
+          "h": 2,
+          "n": 8
+        },
+        {
+          "season": 2023,
+          "h": 6,
+          "n": 11
+        }
+      ],
+      "pass_rounds": 57,
+      "picks": [
+        {
+          "season": 2022,
+          "round": 4,
+          "fixture": "Arsenal - Fulham",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.165
+        },
+        {
+          "season": 2022,
+          "round": 5,
+          "fixture": "Fulham - Brighton",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2858
+        },
+        {
+          "season": 2022,
+          "round": 8,
+          "fixture": "Nott'm Forest - Fulham",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2891
+        },
+        {
+          "season": 2022,
+          "round": 13,
+          "fixture": "Everton - Crystal Palace",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2989
+        },
+        {
+          "season": 2022,
+          "round": 23,
+          "fixture": "Arsenal - Brentford",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2009
+        },
+        {
+          "season": 2022,
+          "round": 30,
+          "fixture": "Fulham - West Ham",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2944
+        },
+        {
+          "season": 2022,
+          "round": 31,
+          "fixture": "Chelsea - Brighton",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2789
+        },
+        {
+          "season": 2022,
+          "round": 33,
+          "fixture": "Nott'm Forest - Brighton",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.225
+        },
+        {
+          "season": 2023,
+          "round": 8,
+          "fixture": "Brighton - Liverpool",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2504
+        },
+        {
+          "season": 2023,
+          "round": 12,
+          "fixture": "West Ham - Nott'm Forest",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.26
+        },
+        {
+          "season": 2023,
+          "round": 14,
+          "fixture": "Chelsea - Brighton",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2258
+        },
+        {
+          "season": 2023,
+          "round": 27,
+          "fixture": "Burnley - Bournemouth",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2627
+        },
+        {
+          "season": 2023,
+          "round": 28,
+          "fixture": "Liverpool - Man City",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2529
+        },
+        {
+          "season": 2023,
+          "round": 31,
+          "fixture": "Newcastle - Everton",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2534
+        },
+        {
+          "season": 2023,
+          "round": 32,
+          "fixture": "Luton - Bournemouth",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2498
+        },
+        {
+          "season": 2023,
+          "round": 33,
+          "fixture": "West Ham - Fulham",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2633
+        },
+        {
+          "season": 2023,
+          "round": 36,
+          "fixture": "Luton - Everton",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2634
+        },
+        {
+          "season": 2023,
+          "round": 37,
+          "fixture": "Bournemouth - Brentford",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2384
+        },
+        {
+          "season": 2023,
+          "round": 38,
+          "fixture": "Burnley - Nott'm Forest",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2711
+        }
+      ]
+    },
+    "previously_seen_benchmark": {
+      "hit": 12,
+      "n": 28,
+      "accuracy": 0.42857,
+      "ci95": [
+        0.26509,
+        0.60929
+      ],
+      "per_season": [
+        {
+          "season": 2024,
+          "h": 8,
+          "n": 14
+        },
+        {
+          "season": 2025,
+          "h": 4,
+          "n": 14
+        }
+      ],
+      "pass_rounds": 48,
+      "picks": [
+        {
+          "season": 2024,
+          "round": 1,
+          "fixture": "Nott'm Forest - Bournemouth",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2718
+        },
+        {
+          "season": 2024,
+          "round": 2,
+          "fixture": "Brighton - Man United",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2573
+        },
+        {
+          "season": 2024,
+          "round": 3,
+          "fixture": "Ipswich - Fulham",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2711
+        },
+        {
+          "season": 2024,
+          "round": 4,
+          "fixture": "Southampton - Man United",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2357
+        },
+        {
+          "season": 2024,
+          "round": 5,
+          "fixture": "Man City - Arsenal",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2632
+        },
+        {
+          "season": 2024,
+          "round": 6,
+          "fixture": "Wolves - Liverpool",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.1655
+        },
+        {
+          "season": 2024,
+          "round": 7,
+          "fixture": "Crystal Palace - Liverpool",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2105
+        },
+        {
+          "season": 2024,
+          "round": 9,
+          "fixture": "Brighton - Wolves",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2093
+        },
+        {
+          "season": 2024,
+          "round": 21,
+          "fixture": "Everton - Aston Villa",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2962
+        },
+        {
+          "season": 2024,
+          "round": 22,
+          "fixture": "West Ham - Crystal Palace",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.272
+        },
+        {
+          "season": 2024,
+          "round": 24,
+          "fixture": "Man United - Crystal Palace",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2724
+        },
+        {
+          "season": 2024,
+          "round": 25,
+          "fixture": "Brighton - Chelsea",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.263
+        },
+        {
+          "season": 2024,
+          "round": 26,
+          "fixture": "Fulham - Crystal Palace",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2795
+        },
+        {
+          "season": 2024,
+          "round": 33,
+          "fixture": "Everton - Man City",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2592
+        },
+        {
+          "season": 2025,
+          "round": 4,
+          "fixture": "Crystal Palace - Sunderland",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2548
+        },
+        {
+          "season": 2025,
+          "round": 6,
+          "fixture": "Crystal Palace - Liverpool",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.25
+        },
+        {
+          "season": 2025,
+          "round": 7,
+          "fixture": "Chelsea - Liverpool",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2519
+        },
+        {
+          "season": 2025,
+          "round": 8,
+          "fixture": "Tottenham - Aston Villa",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2697
+        },
+        {
+          "season": 2025,
+          "round": 10,
+          "fixture": "Fulham - Wolves",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.271
+        },
+        {
+          "season": 2025,
+          "round": 14,
+          "fixture": "Bournemouth - Everton",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2888
+        },
+        {
+          "season": 2025,
+          "round": 22,
+          "fixture": "Chelsea - Brentford",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2407
+        },
+        {
+          "season": 2025,
+          "round": 25,
+          "fixture": "Newcastle - Brentford",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2727
+        },
+        {
+          "season": 2025,
+          "round": 27,
+          "fixture": "Man City - Newcastle",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.1867
+        },
+        {
+          "season": 2025,
+          "round": 28,
+          "fixture": "Man United - Crystal Palace",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2101
+        },
+        {
+          "season": 2025,
+          "round": 29,
+          "fixture": "Everton - Burnley",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2373
+        },
+        {
+          "season": 2025,
+          "round": 31,
+          "fixture": "Man City - Crystal Palace",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.127
+        },
+        {
+          "season": 2025,
+          "round": 34,
+          "fixture": "Bournemouth - Leeds",
+          "pick": "雙",
+          "actual": "雙",
+          "hit": true,
+          "pre_match_p_draw": 0.2687
+        },
+        {
+          "season": 2025,
+          "round": 35,
+          "fixture": "Brentford - West Ham",
+          "pick": "雙",
+          "actual": "單",
+          "hit": false,
+          "pre_match_p_draw": 0.2523
+        }
+      ]
+    },
+    "WARNING": "Never interpret as 85% out-of-sample; optimized across thousands of filters with fewer than 18 discovery picks.",
+    "validation_85_count_min8": 0,
+    "validation_85_cases": [],
+    "all_three_stages_85_count_min8": 0
+  },
+  "highest_discovery_rules": [
+    {
+      "rule": "goal_form_sum>=5.5 & odd_form_mean>=0.6",
+      "direction": "單",
+      "disc_h": 16,
+      "disc_n": 19,
+      "disc_acc": 0.84211,
+      "disc_lcb": 0.62435
+    },
+    {
+      "rule": "p_over25<=0.65 & away_goal_form<=1.5",
+      "direction": "單",
+      "disc_h": 27,
+      "disc_n": 35,
+      "disc_acc": 0.77143,
+      "disc_lcb": 0.60983
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=1",
+      "direction": "單",
+      "disc_h": 54,
+      "disc_n": 76,
+      "disc_acc": 0.71053,
+      "disc_lcb": 0.6004
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=3",
+      "direction": "單",
+      "disc_h": 54,
+      "disc_n": 76,
+      "disc_acc": 0.71053,
+      "disc_lcb": 0.6004
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=5",
+      "direction": "單",
+      "disc_h": 54,
+      "disc_n": 76,
+      "disc_acc": 0.71053,
+      "disc_lcb": 0.6004
+    },
+    {
+      "rule": "home_goal_form>=2.0 & goal_form_sum<=4.5",
+      "direction": "單",
+      "disc_h": 29,
+      "disc_n": 39,
+      "disc_acc": 0.74359,
+      "disc_lcb": 0.58918
+    },
+    {
+      "rule": "odd_form_sum10>=1.1 & odd_streak_sum>=2",
+      "direction": "單",
+      "disc_h": 46,
+      "disc_n": 65,
+      "disc_acc": 0.70769,
+      "disc_lcb": 0.58804
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_form_mean>=0.4",
+      "direction": "單",
+      "disc_h": 53,
+      "disc_n": 76,
+      "disc_acc": 0.69737,
+      "disc_lcb": 0.58666
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_streak_absdiff<=4",
+      "direction": "單",
+      "disc_h": 53,
+      "disc_n": 76,
+      "disc_acc": 0.69737,
+      "disc_lcb": 0.58666
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_streak_sum>=-2",
+      "direction": "單",
+      "disc_h": 53,
+      "disc_n": 76,
+      "disc_acc": 0.69737,
+      "disc_lcb": 0.58666
+    }
+  ],
+  "primary_frozen_discovery_rule": {
+    "rule": "goal_form_sum>=5.5 & odd_form_mean>=0.6",
+    "direction": "單",
+    "discovery": {
+      "hit": 16,
+      "n": 19,
+      "accuracy": 0.84211,
+      "ci95": [
+        0.62435,
+        0.9448
+      ],
+      "per_season": [
+        {
+          "season": 2020,
+          "h": 9,
+          "n": 10
+        },
+        {
+          "season": 2021,
+          "h": 7,
+          "n": 9
+        }
+      ],
+      "pass_rounds": 57,
+      "picks": [
+        {
+          "season": 2020,
+          "round": 6,
+          "fixture": "Aston Villa - Leeds",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2522
+        },
+        {
+          "season": 2020,
+          "round": 8,
+          "fixture": "Arsenal - Aston Villa",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2323
+        },
+        {
+          "season": 2020,
+          "round": 9,
+          "fixture": "Liverpool - Leicester",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2373
+        },
+        {
+          "season": 2020,
+          "round": 10,
+          "fixture": "West Ham - Aston Villa",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2632
+        },
+        {
+          "season": 2020,
+          "round": 12,
+          "fixture": "Southampton - Sheffield United",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2528
+        },
+        {
+          "season": 2020,
+          "round": 31,
+          "fixture": "West Brom - Southampton",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2867
+        },
+        {
+          "season": 2020,
+          "round": 32,
+          "fixture": "Leicester - West Brom",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2429
+        },
+        {
+          "season": 2020,
+          "round": 33,
+          "fixture": "Man City - Southampton",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.1273
+        },
+        {
+          "season": 2020,
+          "round": 34,
+          "fixture": "Crystal Palace - Man City",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1901
+        },
+        {
+          "season": 2020,
+          "round": 35,
+          "fixture": "West Ham - Everton",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2714
+        },
+        {
+          "season": 2021,
+          "round": 2,
+          "fixture": "Man City - Norwich",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.0861
+        },
+        {
+          "season": 2021,
+          "round": 3,
+          "fixture": "Norwich - Leicester",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2725
+        },
+        {
+          "season": 2021,
+          "round": 4,
+          "fixture": "Leicester - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2373
+        },
+        {
+          "season": 2021,
+          "round": 9,
+          "fixture": "West Ham - Tottenham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2711
+        },
+        {
+          "season": 2021,
+          "round": 12,
+          "fixture": "Wolves - West Ham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2909
+        },
+        {
+          "season": 2021,
+          "round": 17,
+          "fixture": "Chelsea - Everton",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1465
+        },
+        {
+          "season": 2021,
+          "round": 21,
+          "fixture": "Arsenal - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2003
+        },
+        {
+          "season": 2021,
+          "round": 22,
+          "fixture": "Tottenham - Arsenal",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2564
+        },
+        {
+          "season": 2021,
+          "round": 24,
+          "fixture": "Man City - Brentford",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.0995
+        }
+      ]
+    },
+    "validation": {
+      "hit": 9,
+      "n": 23,
+      "accuracy": 0.3913,
+      "ci95": [
+        0.22158,
+        0.59214
+      ],
+      "per_season": [
+        {
+          "season": 2022,
+          "h": 4,
+          "n": 10
+        },
+        {
+          "season": 2023,
+          "h": 5,
+          "n": 13
+        }
+      ],
+      "pass_rounds": 53,
+      "picks": [
+        {
+          "season": 2022,
+          "round": 2,
+          "fixture": "Southampton - Leeds",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2714
+        },
+        {
+          "season": 2022,
+          "round": 5,
+          "fixture": "Southampton - Chelsea",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2355
+        },
+        {
+          "season": 2022,
+          "round": 10,
+          "fixture": "West Ham - Fulham",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2494
+        },
+        {
+          "season": 2022,
+          "round": 16,
+          "fixture": "Tottenham - Leeds",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2258
+        },
+        {
+          "season": 2022,
+          "round": 17,
+          "fixture": "Leeds - Man City",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1592
+        },
+        {
+          "season": 2022,
+          "round": 18,
+          "fixture": "Newcastle - Leeds",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2107
+        },
+        {
+          "season": 2022,
+          "round": 29,
+          "fixture": "Bournemouth - Fulham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.288
+        },
+        {
+          "season": 2022,
+          "round": 33,
+          "fixture": "Leeds - Leicester",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2711
+        },
+        {
+          "season": 2022,
+          "round": 34,
+          "fixture": "Fulham - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.1587
+        },
+        {
+          "season": 2022,
+          "round": 36,
+          "fixture": "Leeds - Newcastle",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2252
+        },
+        {
+          "season": 2023,
+          "round": 4,
+          "fixture": "Arsenal - Man United",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.249
+        },
+        {
+          "season": 2023,
+          "round": 5,
+          "fixture": "Wolves - Liverpool",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1893
+        },
+        {
+          "season": 2023,
+          "round": 6,
+          "fixture": "Luton - Wolves",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2784
+        },
+        {
+          "season": 2023,
+          "round": 14,
+          "fixture": "West Ham - Crystal Palace",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2724
+        },
+        {
+          "season": 2023,
+          "round": 15,
+          "fixture": "Tottenham - West Ham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2273
+        },
+        {
+          "season": 2023,
+          "round": 16,
+          "fixture": "Tottenham - Newcastle",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2504
+        },
+        {
+          "season": 2023,
+          "round": 17,
+          "fixture": "Liverpool - Man United",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1571
+        },
+        {
+          "season": 2023,
+          "round": 18,
+          "fixture": "Man City - Brentford",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.1191
+        },
+        {
+          "season": 2023,
+          "round": 19,
+          "fixture": "Newcastle - Nott'm Forest",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2155
+        },
+        {
+          "season": 2023,
+          "round": 20,
+          "fixture": "Luton - Chelsea",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2249
+        },
+        {
+          "season": 2023,
+          "round": 21,
+          "fixture": "Chelsea - Fulham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.226
+        },
+        {
+          "season": 2023,
+          "round": 23,
+          "fixture": "Chelsea - Wolves",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2383
+        },
+        {
+          "season": 2023,
+          "round": 24,
+          "fixture": "Crystal Palace - Chelsea",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2526
+        }
+      ]
+    },
+    "previously_seen_benchmark": {
+      "hit": 12,
+      "n": 24,
+      "accuracy": 0.5,
+      "ci95": [
+        0.31427,
+        0.68573
+      ],
+      "per_season": [
+        {
+          "season": 2024,
+          "h": 5,
+          "n": 8
+        },
+        {
+          "season": 2025,
+          "h": 7,
+          "n": 16
+        }
+      ],
+      "pass_rounds": 52,
+      "picks": [
+        {
+          "season": 2024,
+          "round": 12,
+          "fixture": "Man City - Tottenham",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2
+        },
+        {
+          "season": 2024,
+          "round": 13,
+          "fixture": "Brighton - Southampton",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.189
+        },
+        {
+          "season": 2024,
+          "round": 18,
+          "fixture": "Nott'm Forest - Tottenham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2543
+        },
+        {
+          "season": 2024,
+          "round": 19,
+          "fixture": "Tottenham - Wolves",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1881
+        },
+        {
+          "season": 2024,
+          "round": 31,
+          "fixture": "Ipswich - Wolves",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2907
+        },
+        {
+          "season": 2024,
+          "round": 33,
+          "fixture": "Aston Villa - Newcastle",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2581
+        },
+        {
+          "season": 2024,
+          "round": 34,
+          "fixture": "Newcastle - Ipswich",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.1261
+        },
+        {
+          "season": 2024,
+          "round": 35,
+          "fixture": "Aston Villa - Fulham",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.253
+        },
+        {
+          "season": 2025,
+          "round": 10,
+          "fixture": "Liverpool - Aston Villa",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.218
+        },
+        {
+          "season": 2025,
+          "round": 12,
+          "fixture": "Burnley - Chelsea",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2101
+        },
+        {
+          "season": 2025,
+          "round": 14,
+          "fixture": "Fulham - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2317
+        },
+        {
+          "season": 2025,
+          "round": 16,
+          "fixture": "Crystal Palace - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2434
+        },
+        {
+          "season": 2025,
+          "round": 17,
+          "fixture": "Aston Villa - Man United",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2628
+        },
+        {
+          "season": 2025,
+          "round": 18,
+          "fixture": "Nott'm Forest - Man City",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2187
+        },
+        {
+          "season": 2025,
+          "round": 19,
+          "fixture": "Man United - Wolves",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1813
+        },
+        {
+          "season": 2025,
+          "round": 20,
+          "fixture": "Aston Villa - Nott'm Forest",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2442
+        },
+        {
+          "season": 2025,
+          "round": 27,
+          "fixture": "Sunderland - Fulham",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2935
+        },
+        {
+          "season": 2025,
+          "round": 30,
+          "fixture": "Liverpool - Tottenham",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.1518
+        },
+        {
+          "season": 2025,
+          "round": 32,
+          "fixture": "Crystal Palace - Newcastle",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2607
+        },
+        {
+          "season": 2025,
+          "round": 33,
+          "fixture": "Chelsea - Man United",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2714
+        },
+        {
+          "season": 2025,
+          "round": 35,
+          "fixture": "Wolves - Sunderland",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2812
+        },
+        {
+          "season": 2025,
+          "round": 36,
+          "fixture": "Liverpool - Chelsea",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2374
+        },
+        {
+          "season": 2025,
+          "round": 37,
+          "fixture": "Bournemouth - Man City",
+          "pick": "單",
+          "actual": "雙",
+          "hit": false,
+          "pre_match_p_draw": 0.2195
+        },
+        {
+          "season": 2025,
+          "round": 38,
+          "fixture": "Brighton - Man United",
+          "pick": "單",
+          "actual": "單",
+          "hit": true,
+          "pre_match_p_draw": 0.2254
+        }
+      ]
+    }
+  },
+  "top30_research_diagnostics": [
+    {
+      "rule": "goal_form_sum>=5.5 & odd_form_mean>=0.6",
+      "direction": "單",
+      "discovery_rank": 1,
+      "discovery": [
+        16,
+        19
+      ],
+      "validation": [
+        9,
+        23
+      ],
+      "validation_rate": 0.3913,
+      "validation_ci": [
+        0.22158,
+        0.59214
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & away_goal_form<=1.5",
+      "direction": "單",
+      "discovery_rank": 2,
+      "discovery": [
+        27,
+        35
+      ],
+      "validation": [
+        10,
+        15
+      ],
+      "validation_rate": 0.66667,
+      "validation_ci": [
+        0.41714,
+        0.84824
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=1",
+      "direction": "單",
+      "discovery_rank": 3,
+      "discovery": [
+        54,
+        76
+      ],
+      "validation": [
+        41,
+        75
+      ],
+      "validation_rate": 0.54667,
+      "validation_ci": [
+        0.43448,
+        0.6543
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=3",
+      "direction": "單",
+      "discovery_rank": 4,
+      "discovery": [
+        54,
+        76
+      ],
+      "validation": [
+        43,
+        76
+      ],
+      "validation_rate": 0.56579,
+      "validation_ci": [
+        0.45386,
+        0.67139
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=5",
+      "direction": "單",
+      "discovery_rank": 5,
+      "discovery": [
+        54,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "home_goal_form>=2.0 & goal_form_sum<=4.5",
+      "direction": "單",
+      "discovery_rank": 6,
+      "discovery": [
+        29,
+        39
+      ],
+      "validation": [
+        13,
+        21
+      ],
+      "validation_rate": 0.61905,
+      "validation_ci": [
+        0.40879,
+        0.79249
+      ]
+    },
+    {
+      "rule": "odd_form_sum10>=1.1 & odd_streak_sum>=2",
+      "direction": "單",
+      "discovery_rank": 7,
+      "discovery": [
+        46,
+        65
+      ],
+      "validation": [
+        25,
+        54
+      ],
+      "validation_rate": 0.46296,
+      "validation_ci": [
+        0.3369,
+        0.59395
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_form_mean>=0.4",
+      "direction": "單",
+      "discovery_rank": 8,
+      "discovery": [
+        53,
+        76
+      ],
+      "validation": [
+        40,
+        73
+      ],
+      "validation_rate": 0.54795,
+      "validation_ci": [
+        0.43424,
+        0.65685
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_streak_absdiff<=4",
+      "direction": "單",
+      "discovery_rank": 9,
+      "discovery": [
+        53,
+        76
+      ],
+      "validation": [
+        36,
+        76
+      ],
+      "validation_rate": 0.47368,
+      "validation_ci": [
+        0.36542,
+        0.58448
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_streak_sum>=-2",
+      "direction": "單",
+      "discovery_rank": 10,
+      "discovery": [
+        53,
+        76
+      ],
+      "validation": [
+        44,
+        75
+      ],
+      "validation_rate": 0.58667,
+      "validation_ci": [
+        0.47367,
+        0.69122
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & odd_streak_sum>=-4",
+      "direction": "單",
+      "discovery_rank": 11,
+      "discovery": [
+        53,
+        76
+      ],
+      "validation": [
+        45,
+        76
+      ],
+      "validation_rate": 0.59211,
+      "validation_ci": [
+        0.47979,
+        0.69556
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & rest_diff<=8",
+      "direction": "單",
+      "discovery_rank": 12,
+      "discovery": [
+        53,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "odd_form_spread>=0.2 & league_odd_100>=0.5",
+      "direction": "雙",
+      "discovery_rank": 13,
+      "discovery": [
+        32,
+        44
+      ],
+      "validation": [
+        12,
+        29
+      ],
+      "validation_rate": 0.41379,
+      "validation_ci": [
+        0.25513,
+        0.59262
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & league_odd_100<=0.55",
+      "direction": "單",
+      "discovery_rank": 14,
+      "discovery": [
+        50,
+        72
+      ],
+      "validation": [
+        37,
+        66
+      ],
+      "validation_rate": 0.56061,
+      "validation_ci": [
+        0.44083,
+        0.67372
+      ]
+    },
+    {
+      "rule": "ah_abs<=1.5 & odd_streak_sum>=-2",
+      "direction": "單",
+      "discovery_rank": 15,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        38,
+        76
+      ],
+      "validation_rate": 0.5,
+      "validation_ci": [
+        0.39033,
+        0.60967
+      ]
+    },
+    {
+      "rule": "fav_prob<=0.75 & odd_streak_sum>=-2",
+      "direction": "單",
+      "discovery_rank": 16,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        38,
+        76
+      ],
+      "validation_rate": 0.5,
+      "validation_ci": [
+        0.39033,
+        0.60967
+      ]
+    },
+    {
+      "rule": "p_draw<=0.27 & p_over25<=0.65",
+      "direction": "單",
+      "discovery_rank": 17,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        41,
+        75
+      ],
+      "validation_rate": 0.54667,
+      "validation_ci": [
+        0.43448,
+        0.6543
+      ]
+    },
+    {
+      "rule": "p_draw<=0.29 & p_over25<=0.65",
+      "direction": "單",
+      "discovery_rank": 18,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_draw<=0.31 & p_over25<=0.65",
+      "direction": "單",
+      "discovery_rank": 19,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_draw<=0.33 & p_over25<=0.65",
+      "direction": "單",
+      "discovery_rank": 20,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65",
+      "direction": "單",
+      "discovery_rank": 21,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & ah_abs>=0.25",
+      "direction": "單",
+      "discovery_rank": 22,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & ah_abs>=0.5",
+      "direction": "單",
+      "discovery_rank": 23,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        40,
+        75
+      ],
+      "validation_rate": 0.53333,
+      "validation_ci": [
+        0.42158,
+        0.64184
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & ah_abs>=0.75",
+      "direction": "單",
+      "discovery_rank": 24,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        39,
+        73
+      ],
+      "validation_rate": 0.53425,
+      "validation_ci": [
+        0.42099,
+        0.64408
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & fav_prob>=0.45",
+      "direction": "單",
+      "discovery_rank": 25,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        41,
+        75
+      ],
+      "validation_rate": 0.54667,
+      "validation_ci": [
+        0.43448,
+        0.6543
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & favorite_delta>=0.1",
+      "direction": "單",
+      "discovery_rank": 26,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        41,
+        75
+      ],
+      "validation_rate": 0.54667,
+      "validation_ci": [
+        0.43448,
+        0.6543
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & favorite_delta>=0.25",
+      "direction": "單",
+      "discovery_rank": 27,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        39,
+        74
+      ],
+      "validation_rate": 0.52703,
+      "validation_ci": [
+        0.41477,
+        0.63661
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & home_goal_form>=1.5",
+      "direction": "單",
+      "discovery_rank": 28,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        41,
+        76
+      ],
+      "validation_rate": 0.53947,
+      "validation_ci": [
+        0.42823,
+        0.64692
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & market_lambda>=2.3",
+      "direction": "單",
+      "discovery_rank": 29,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    },
+    {
+      "rule": "p_over25<=0.65 & market_lambda>=2.6",
+      "direction": "單",
+      "discovery_rank": 30,
+      "discovery": [
+        52,
+        76
+      ],
+      "validation": [
+        42,
+        76
+      ],
+      "validation_rate": 0.55263,
+      "validation_ci": [
+        0.44101,
+        0.65919
+      ]
+    }
+  ],
+  "simple_baseline": {
+    "discovery": {
+      "hit": 32,
+      "n": 76,
+      "rate": 0.42105,
+      "ci95": [
+        0.31649,
+        0.53322
+      ]
+    },
+    "validation": {
+      "hit": 40,
+      "n": 76,
+      "rate": 0.52632,
+      "ci95": [
+        0.41552,
+        0.63458
+      ]
+    },
+    "benchmark": {
+      "hit": 41,
+      "n": 76,
+      "rate": 0.53947,
+      "ci95": [
+        0.42823,
+        0.64692
+      ]
+    }
+  },
+  "warnings": [
+    "2024 and 2025 prior seen in V1/V2, never call these untouched blind holdout",
+    "No historical source quote timestamps independently authenticated",
+    "Data may have synthetic or stale market proxies, not certified bet365",
+    "Any retrospective candidate >85 with tiny n is not proof or acceptance",
+    "GW11/GW12 original pregame predictions never changed"
+  ]
+}
