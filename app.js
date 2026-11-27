@@ -366,6 +366,20 @@ function laligaParityComparisonRows(d){
   row.score?'<strong>'+esc(row.score.join('–'))+'</strong><span class="outcome">實際 '+esc(row.actualParity)+'</span>':'<span class="muted">待結算</span>'
  ]);
 }
+/* LaLiga GW13 source-accurate parity shown in every archive round table. */
+function laligaGw13FourTrackCells(f,d){
+ const key=s=>String(s||'').replace(/\s+/g,'').toLowerCase();
+ const fixture=f.fixture||f.home+' vs '+f.away;
+ const row=d?.rows?.find(x=>key(x.fixture)===key(fixture));
+ const baseId='LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY';
+ const base=D.predictions.find(x=>x.record_id===baseId&&key(x.fixture)===key(fixture));
+ if(!row)return Array(4).fill('<span class="muted">封存紀錄對應缺失</span>').concat(['<span class="muted">比分待核對</span>']);
+ const actual=row.actualParity;
+ const basePick={pick:base?.directions?.parity||null,rank:base?.ranks?.parity||null};
+ const resultCell=row.score?'<div class="resultcell"><strong>'+esc(row.score.join('–'))+'</strong><span class="outcome">實際單雙：'+esc(actual)+'</span></div>':'<span class="muted">待結算／比分缺失</span>';
+ return [laligaParityCell(row.tracks.A,actual),laligaParityCell(row.tracks.B,actual,row.b_gate),
+  laligaParityCell(row.tracks.C,actual),laligaParityCell(basePick,actual),resultCell];
+}
 function laligaParityGw14Rows(d){
  if(!d.gw14||!Array.isArray(d.gw14.rows))return [];
  const keys={A:'A · 定性延續',B:'B · EXTENDED',C:'REBUILT V1'};
@@ -843,8 +857,11 @@ function packagePage(id){
  const dual=r.league==='EPL'&&!r.research_only&&r.gw>=11;
  const italian=serieaTriple(r,p);
  const german=bundesDual(r,p);
+ const laliga13=r.league==='LALIGA'&&r.gw===13;
+ const laligaTracks=laliga13?laligaParityTripleData():null;
  const fixtureRows=fs.map(f=>{
   const common=[esc(f.home+' vs '+f.away),marketPredictionCell(r,f,'1X2'),marketPredictionCell(r,f,'OU25')];
+  if(laliga13)return [...common,...laligaGw13FourTrackCells(f,laligaTracks),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];
   if(dual){const c=eplParityComparisonCells(r,f);return [...common,c.a,c.b,esc(c.actual),marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   if(italian){const x=italian.fixtures.find(x=>x.home===f.home&&x.away===f.away);const actual=Array.isArray(x.score)?'<strong>'+esc(x.score.join('–'))+'</strong><span class="outcome">單雙 '+esc(x.actual_parity)+'</span>':'待結算';return [...common,serieaTripleCell(x.a_direction,x.a_rank,'A'),serieaTripleCell(x.b_direction,x.b_rank,'B'),serieaTripleCell(x.c_direction,x.c_rank,'C'),actual,marketOddsCell(r,f),MyParity.cell(personalContext(r,f))];}
   if(german){const x=german.fixtures.find(x=>x.home===f.home&&x.away===f.away),z=bundesActual(r,f),a=z?.parity||null;
@@ -857,11 +874,11 @@ function packagePage(id){
  +((r.league==='LALIGA'&&r.gw===13)?laligaGw13PerformancePanel():'')
  +(italian?serieaTripleOverview():'')
  +(german?bundesDualOverview():'')
- +((r.id===window.LALIGA_PARITY_DUAL?.A_id||r.id===window.LALIGA_PARITY_DUAL?.B_id)?laligaParityOverview():'')
+ +(laliga13?laligaParityOverview():'')
  +'<div class="panel"><h2>封存狀態與模型</h2>'+meta+'<p>GitHub: '+esc(D.github_status)+'</p><a href="'+esc(r.package_path||'#')+'">原始 Dashboard Package JSON</a></div>'
  +MyParity.panel(personalContexts().filter(c=>c.record_id===id),'我的本輪單雙命中率')
  +marketHighOddsPanel(r,fs)
- +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','實際比分／單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','實際比分／單雙','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變。每場實際比分／單雙及各欄✓／×按既有正式賽果表核對。Phase2、Phase12只是單雙排序不同，方向仍與Official一致；V3按P17／P18兩者同向且已完賽的場次計算（分歧PASS），三方KEEP另列。Phase12未完成正式賽前封存，V3缺7項原始特徵而非Exact，研究績效絕不混入Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':'')+'</div>'
+ +'<div class="panel"><h2>本輪已封存預測與賠率'+(dual?'｜單雙 A／B 同表':italian?'｜義甲單雙 A／B／C 三版同表':german?'｜德甲單雙四欄同表（Official＋三研究線）':laliga13?'｜西甲單雙 A／B／C＋早期基準':'')+'</h2>'+table(dual?['比賽','1X2','大小2.5','A · Official 單雙','B · Recovery Shadow 單雙','實際單雙','賠率／變化','我的單雙']:italian?['比賽','1X2','大小2.5','A · 現行網站版','B · Fixed Runner V1','C · 三術 Robust Vote','實際比分／單雙','賠率／變化','我的單雙']:german?['比賽','1X2','大小2.5','Official 單雙（R位 PASS）','Phase2 Shadow 單雙','Phase12 玄學研究預覽','V3 · P17＋P18 同向','實際比分／單雙','賠率／變化','我的單雙']:laliga13?['比賽','1X2','大小2.5','A · V2 原版單雙','B · EXTENDED 單雙','C · REBUILT 單雙','MARKETPROXY · 早期單雙','實際比分／單雙','賠率／變化','我的單雙']:['比賽','1X2','大小2.5','單雙','賠率／變化','我的單雙'],fixtureRows)+(dual?'<p class="muted">B 為賽前封存 Research，不計 Official 勝率。<a href="#eplparity">查看英超雙版本詳細比較</a></p>':italian?'<p class="muted">A 為原已封存 GW12 Research，並非舊 WF6/R90 Exact；B 為固定可重複 Challenger；C 為三術 Robust Vote Shadow。A/B/C 均分開追蹤，不回寫歷史 Official。賠率、&gt;1.80 標記與我的單雙欄位照舊保留。</p>':german?'<p class="muted">德甲正式V2-RG1不變。每場實際比分／單雙及各欄✓／×按既有正式賽果表核對。Phase2、Phase12只是單雙排序不同，方向仍與Official一致；V3按P17／P18兩者同向且已完賽的場次計算（分歧PASS），三方KEEP另列。Phase12未完成正式賽前封存，V3缺7項原始特徵而非Exact，研究績效絕不混入Official；賠率、1.8標記及PRE-KICK狀態不變。</p>':laliga13?'<p class="muted">GW13 1X2／大小 2.5 與賠率沿用本頁封存來源；單雙 A／B／C／MARKETPROXY 四個原始研究版本獨立顯示，附各自 R 位、命中標記及比分。全部為 Research，不混入 Official；Bet365 PRE-KICK 缺失不補造。<a href="#laligaparity">完整 A／B／C 比較與勝率 →</a></p>':'')+'</div>'
  +packageSettlementPanel(p)
  +'<details class="panel"><summary>獨立查看本輪全部賠率／盤口</summary>'+marketOddsPanel(r,fs)+'</details>';
 }
