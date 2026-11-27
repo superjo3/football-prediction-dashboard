@@ -290,6 +290,47 @@ function laligaParityStat(d,k,rank=null){
 function laligaParityRate(stat){
  return stat.n?'<strong>'+stat.h+'/'+stat.n+'</strong>（'+(100*stat.h/stat.n).toFixed(1)+'%）':'<span class="muted">尚未結算</span>';
 }
+/* LaLiga GW13: one ledger-derived row per original Research method; never count
+   the same physical fixture twice inside a model, and never merge Official. */
+function laligaGw13PerformancePanel(){
+ const definitions=[
+  {label:'A · V2 人工延續',id:'LALIGA-2026-27-GW13-20261116-V2-RESEARCH-CONTINUITY-A',type:'Research'},
+  {label:'B · 固定 EXTENDED',id:'LALIGA-2026-27-GW13-20261117-EXTENDED-FROZEN-PROXY-RESEARCH',type:'Research'},
+  {label:'C · REBUILT V1',id:'LALIGA-2026-27-GW13-20261116-V2-RESEARCH-REBUILT-V1',type:'Research'},
+  {label:'MARKETPROXY · 早期基準',id:'LALIGA-2026-27-GW13-20261109-RESEARCH-MARKETPROXY',type:'Research 基準（不併入 A/B/C）'}
+ ];
+ const resultRows=definitions.map(d=>{
+  const items=D.predictions.filter(x=>x.record_id===d.id);
+  const unique=new Map();
+  for(const p of items)if(p.match_id&&!unique.has(p.match_id))unique.set(p.match_id,p);
+  const stats={overall:{h:0,n:0},R1:{h:0,n:0},R2:{h:0,n:0},R3:{h:0,n:0}};
+  let settled=0;
+  for(const p of unique.values()){
+   const score=result(p)?.score;
+   if(!Array.isArray(score)||score.length!==2||!score.every(v=>Number.isInteger(v)&&v>=0))continue;
+   settled++;
+   const pick=p.directions?.parity;
+   if(pick!=='單'&&pick!=='雙')continue;
+   const hit=pick===((score[0]+score[1])%2?'單':'雙');
+   stats.overall.n++;stats.overall.h+=Number(hit);
+   const rank=Number(p.ranks?.parity);
+   if(rank>=1&&rank<=3){
+    const k='R'+rank;
+    stats[k].n++;stats[k].h+=Number(hit);
+   }
+  }
+  const fmt=o=>o.n?'<strong>'+o.h+'/'+o.n+'</strong>（'+(100*o.h/o.n).toFixed(1)+'%）':'<span class="muted">PASS / 未結算</span>';
+  const top2={h:stats.R1.h+stats.R2.h,n:stats.R1.n+stats.R2.n};
+  const top3={h:top2.h+stats.R3.h,n:top2.n+stats.R3.n};
+  return ['<strong>'+esc(d.label)+'</strong><span class="outcome muted">'+esc(d.type)+'</span>',
+   settled+'/10',fmt(stats.overall),fmt(stats.R1),fmt(stats.R2),fmt(stats.R3),fmt(top2),fmt(top3)];
+ });
+ return '<div class="panel"><h2>西甲 GW13｜全部單雙研究方法勝率（分別結算）</h2>'
+  +'<p class="muted">每個模型各有10場，不合併成20／30／40場。逐場依原封存 Record ID＋Match ID 找比分；不修改賽前預測。下表為GW13單輪統計，非跨季長期85%金選績效。</p>'
+  +table(['版本／身分','比分完成','整輪單雙','R1','R2','R3','R1＋R2','R1～R3'],resultRows)
+  +'<p class="muted">A、B、C 與 MARKETPROXY 均為 Research，不計 Official；MARKETPROXY 是早期基準。R 位只計原封存順位，PASS 不計。B 的1X2與大小2.5原本未預測，不能補算。</p>'
+  +'<p><a href="#laligaparity">查看西甲 A／B／C 完整逐場對照 →</a></p></div>';
+}
 function laligaParityStatsTable(d){
  const keys=['A','B','C'];
  const metric=(name,rank)=>[name,...keys.map(k=>laligaParityRate(laligaParityStat(d,k,rank)))];
@@ -370,7 +411,7 @@ function laligaParityDualPage(){
  return heading('LALIGA / PARITY A+B+C','西甲單雙 · A／B／C 三模型對照','2026–27 · 全場單雙方向、R1／R2／R3、逐場比分、整輪與前推累計勝率分開核算。')
   +'<div class="notice"><strong>A：</strong>V2 定性延續，非原版 Exact 自動重播。<strong>B：</strong>六季固定 EXTENDED，使用代理盤口。<strong>C：</strong>V2 REBUILT V1，獨立凍結重建方法。三條都是 Research，正式高信心依封存規則 PASS／NOT_RUN。沒有擅自改模型或預測。</div>'
   +top
-  +laligaParityStatsTable(d)
+  +laligaGw13PerformancePanel()
   +'<div class="panel"><h2>GW13｜三條模型逐場賽後對答案（各 10 場）</h2>'
   +table(['台灣時間','比賽','A · V2','B · EXTENDED','C · REBUILT','分歧','正式比分'],laligaParityComparisonRows(d))
   +'<p class="muted">GW13 A、B、C 各自封存研究模型；同一場比分只做一次賽後事實核對，不以版本數充當比賽場數。</p></div>'
@@ -813,6 +854,7 @@ function packagePage(id){
  });
  return heading(r.league+' / GW'+p.gw,names[r.league]+' 第 '+p.gw+' 輪',p.research_only?'Research · RESEARCH_ONLY · 不計入 official 統計':'正式封存 Package',`<a class="button" href="#league/${r.league}">返回聯賽</a>`)
  +packageSummary(id)
+ +((r.league==='LALIGA'&&r.gw===13)?laligaGw13PerformancePanel():'')
  +(italian?serieaTripleOverview():'')
  +(german?bundesDualOverview():'')
  +((r.id===window.LALIGA_PARITY_DUAL?.A_id||r.id===window.LALIGA_PARITY_DUAL?.B_id)?laligaParityOverview():'')
