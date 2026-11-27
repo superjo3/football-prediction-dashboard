@@ -1,0 +1,33 @@
+{
+  "schema": "LALIGA_GOLD_R1_ONLY_SHADOW_V1",
+  "league": "LALIGA",
+  "season": "2026-27",
+  "gw": 14,
+  "record_id": "LALIGA-2026-27-GW14-20261127-GOLD-R1-ONLY-SHADOW-PASS",
+  "record_created_date_taipei": "2026-11-27",
+  "status": "PREMATCH_SHADOW_SELECTOR_PASS",
+  "research_only": true,
+  "counts_as_official_forward_result": false,
+  "previous_archive": "LALIGA-2026-27-GW14-20261125-RESEARCH-A-B-REBUILT",
+  "original_predictions_unchanged": true,
+  "selector_name": "SPARSE_GOLD_R1_ONLY_85_UNVALIDATED",
+  "selector_state": "NO_VALIDATED_RULE",
+  "max_picks_per_gw": 1,
+  "minimum_target_accuracy": 0.85,
+  "selection": {
+    "R1": "PASS",
+    "R2": "NOT_REQUIRED",
+    "R3": "NOT_REQUIRED",
+    "selected_fixtures": [],
+    "trigger_count": 0,
+    "reason": "No precommitted LaLiga parity R1 selection rule has demonstrated >=85% accuracy on genuinely independent forward outcomes. No forced pick."
+  },
+  "settlement": null,
+  "source_research": "research/LALIGA_GOLD_R1_85_NEW_DIRECTION_NEGATIVE_AUDIT_20261127.md",
+  "notes": [
+    "No hindsight selection from GW13 scores",
+    "No claims of 85% historical forward win rate",
+    "Separate from A/B/C and Official",
+    "No odds, results, or market predictions fabricated"
+  ]
+}
